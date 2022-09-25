@@ -2,9 +2,8 @@
 remote_theme: daattali/beautiful-jekyll
 title: Puget Sound Repeater Roundabout
 description: The weekend of November 19th, make some noise on our local repeaters!
-author:
-  name: Quentin K7DRQ
-  email: k7drq@psrg.org
+author: Quentin K7DRQ
+author_email: "k7drq@psrg.org"
 
 navigation_header:
   - title: Repeater Roundabout rules
