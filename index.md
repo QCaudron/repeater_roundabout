@@ -1,6 +1,7 @@
 ---
 title: Puget Sound Repeater Roundabout
-subtitle: Get to know the local repeaters this November
+subtitle: Get to know the local repeaters this November.
+layout: minimal
 ---
 
 The Puget Sound Repeater Roundabout is a weekend-long event held on many of our local repeaters. The goal is to meet new people and work repeaters you might not usually key up. Light up the airwaves and make some noise on the great repeaters in the Puget Sound area!
@@ -12,18 +13,7 @@ The Puget Sound Repeater Roundabout is a weekend-long event held on many of our 
 
 1. **Eligibility**. Anyone with a ham radio license can participate! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 2. **Exchange**. The exchange must include your name, a mention of the "Puget Sound Repeater Roundabout", and a _received_ signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit)). This must be how well _your signal_ sounds on the repeater, not how well you hear the repeater!
-3. **Repeaters**. Only participating repeaters in the list below are eligible for scoring points in the Repeater Roundabout. 
-
-
-# List of participating repeaters
-
-Please stick to repeaters on this list, we don't want to upset anyone who did not want to participate in the contest on their repeater.
-
-| Name                       | Callsign | Location | Mode | Output freq (MHz) | Offset (MHz) | Tone (Hz) |
-|:---------------------------|:---------|:---------|:-----|------------------:|-------------:|----------:|
-| Puget Sound Repeater Group | WW7PSR   | Seattle  | FM   | 146.960           | -0.6         | 103.5     |
-| Puget Sound Repeater Group | WW7PSR   | Seattle  | FM   | 52.87             | -1.7         | 103.5     |
-| Puget Sound Repeater Group | WW7PSR   | Seattle  | DMR  | 440.775           | +5.0         | CC 2      |
+3. **Repeaters**. Only [participating repeaters in this list](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to upset anyone who did not want to participate in the contest on their repeater.
 
 
 # Scoring
