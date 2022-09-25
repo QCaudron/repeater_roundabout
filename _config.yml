@@ -1,4 +1,5 @@
-#theme: jekyll-theme-cayman
-remote_theme: daattali/beautiful-jekyll
+# theme: jekyll-theme-cayman
+# remote_theme: daattali/beautiful-jekyll
+remote_theme: alshedivat/al-folio
 title: Puget Sound Repeater Roundabout
 description: The weekend of November 19th, make some noise on our local repeaters!
