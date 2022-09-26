@@ -1,7 +1,6 @@
 ---
 title: Participating Repeaters
 subtitle: Repeaters joining in the Repeater Roundabout fun.
-layout: minimal
 permalink: /repeaters
 ---
 
