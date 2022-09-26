@@ -66,4 +66,4 @@ Can I arrange a contact beforehand ?
 : Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine.
 
 Can I use Echolink or Allstar ?
-: You sure can ! The rules are the same, and nothing changes in the way you log your contacts. If the repeater has Echolink or Allstar, you can use it to make your contact.
+: You sure can ! The rules are the same, and nothing changes in the way you log your contacts. If a repeater has Echolink or Allstar, you can use it to make your contact.
