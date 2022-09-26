@@ -7,14 +7,10 @@ The Puget Sound Repeater Roundabout is a weekend-long event held on many of our 
 
 **The Puget Sound Repeater Roundabout will begin on November 19th at 00:00, and end on November 20th at 23:59, Pacific time.**
 
-
-# Rules
-
-### Eligibility
-
 Anyone with a ham radio license can participate! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-### Exchange
+
+# Exchange
 
 - Your name
 - A mention of the "Puget Sound Repeater Roundabout"
@@ -29,9 +25,8 @@ This is a minimal contact that you might see on the PSRG's 2m repeater; it inclu
 - **Station 1** : Thanks Jack, good copy. Thanks for the contact, and 73! KI7RMU, this is K7DRQ.
 - **Station 2** : Sounds good! 73 from KI7RMU.
 
-<br />
 
-### Repeaters
+# Repeaters
 
 Only [participating repeaters in this list](/psrg_repeater_roundabout/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to upset anyone who did not want to participate in the contest on their repeater.
 
@@ -73,3 +68,5 @@ Is there a prize ?
 Can I arrange a contact beforehand ?
 : Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine.
 
+Can I use Echolink or Allstar ?
+: You sure can !
