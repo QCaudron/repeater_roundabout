@@ -22,8 +22,6 @@ The exchange must include
 - a mention of the "Puget Sound Repeater Roundabout", and 
 - a _received_ signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit)). This must be how well _your signal_ sounds on the repeater, not how well you hear the repeater!
 
-{::options parse_block_html="true" /}
-
 <details><summary>Click here for an example QSO.</summary>
 <p>
 
