@@ -12,7 +12,7 @@ Anyone with a ham radio license can participate! You don't even have to be local
 
 # Repeaters
 
-Only [participating repeaters in this list](/psrg_repeater_roundabout/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to upset anyone who did not want to participate in the contest on their repeater.
+Only [participating repeaters](/psrg_repeater_roundabout/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
 
 
 # Exchange
@@ -30,7 +30,7 @@ Feel free to chat about anything and everything, though! The goal is to have a c
 
 You score one point for each repeater you make a contact on. Multiple contacts on the same repeater do not provide more points.
 
-**Bonus** : Collect 'em all ! If you make a contact on *all repeaters* with the same callsign (for systems with at least two repeaters), your point score doubles for that system. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log a contact all three of them, you score six points instead of three.
+**Bonus : Collect 'em all !** If you make a contact on *all repeaters* with the same callsign on the list of participating repeaters (for systems with at least two repeaters), your point score doubles for that system. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater, all under the callsign WW7PSR. If you log a contact all three of them, you score six points instead of three.
 
 
 # Logging
@@ -48,11 +48,11 @@ Here's an example log file :
 
 | Date    | Time  | Callsign | Report  | Repeater | Frequency |
 |:--------|:------|:---------|--------:|:--------:|----------:|
-| July 30 | 11:32 | KI7RMU   |     CM5 | WW7PSR   | 146.960   |
-| July 30 | 17:02 | KD7DK    |      59 | WW7PSR   | 52.87     |
-| July 31 | 08:51 | K7RCH    |     CM4 | W7AW     | 145.130   |
-| July 31 | 13:16 | KX2CW    |     CM2 | WW7SEA   | 444.550   |
-| July 31 | 13:16 | KD7WGN   |      45 | K7LED    | 224.12    |
+| Nov 19  | 11:32 | KI7RMU   |     CM5 | WW7PSR   | 146.960   |
+| Nov 19  | 17:02 | KD7DK    |      59 | WW7PSR   | 52.87     |
+| Nov 20  | 08:51 | K7RCH    |     CM4 | W7AW     | 145.130   |
+| Nov 20  | 13:16 | KX2CW    |     CM2 | WW7SEA   | 444.550   |
+| Nov 20  | 13:16 | KD7WGN   |      45 | K7LED    | 224.12    |
 
 Send logs to [k7drq@psrg.org](mailto:k7drq@psrg.org) for scoring! After the contest, a leaderboard will be published. Logs must be returned to K7DRQ by November 27th to qualify.
 
@@ -66,4 +66,4 @@ Can I arrange a contact beforehand ?
 : Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine.
 
 Can I use Echolink or Allstar ?
-: You sure can !
+: You sure can ! The rules are the same, and nothing changes in the way you log your contacts. If the repeater has Echolink or Allstar, you can use it to make your contact.
