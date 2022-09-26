@@ -12,11 +12,13 @@ Anyone with a ham radio license can participate! You don't even have to be local
 
 # Exchange
 
-- Your name
-- A mention of the "Puget Sound Repeater Roundabout"
-- A _received_ signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit)). This must be how well _your signal_ sounds on the repeater, not how well you hear the repeater!
+You should exchage
 
-This is a minimal contact that you might see on the PSRG's 2m repeater; it includes the required name and signal report. Feel free to chat about anything and everything, though! The goal is to have a conversation.
+- your name
+- a mention of the "Puget Sound Repeater Roundabout"
+- a _received_ signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit)). This must be how well _your signal_ sounds on the repeater, not how well you hear the repeater!
+
+This is a minimal contact that you might see on the PSRG's 2m repeater; it includes the required name and signal report.
 
 - **Station 1** : Hello PSRG! This is K7DRQ, looking for a contact on this repeater for the Puget Sound Repeater Roundabout. Is there anyone on frequency?
 - **Station 2** : K7DRQ, this is KI7RMU.
@@ -24,6 +26,8 @@ This is a minimal contact that you might see on the PSRG's 2m repeater; it inclu
 - **Station 2** : Hi Quentin, I’m Jack. You’re a little in the noise, you’re probably 3 by 5. How do you copy ?
 - **Station 1** : Thanks Jack, good copy. Thanks for the contact, and 73! KI7RMU, this is K7DRQ.
 - **Station 2** : Sounds good! 73 from KI7RMU.
+
+Feel free to chat about anything and everything, though! The goal is to have a conversation.
 
 
 # Repeaters
