@@ -23,6 +23,7 @@ The exchange must include
 - a _received_ signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit)). This must be how well _your signal_ sounds on the repeater, not how well you hear the repeater!
 
 <details><summary>Click here for an example QSO.</summary>
+
 This is a minimal contact that you might see on the PSRG's 2m repeater; it includes the required name and signal report. Feel free to chat about anything and everything, though! The goal is to have a conversation.
 
 - **Station 1** : Hello PSRG! This is K7DRQ, looking for a contact on this repeater for the Puget Sound Repeater Roundabout. Is there anyone on frequency?
@@ -53,6 +54,7 @@ You score one point for each repeater you make a contact on. Multiple contacts o
 - **the repeater's output frequency**
 
 <details><summary>Click here for a sample log sheet.</summary>
+
 | Date    | Time  | Callsign | Name | Report  | Repeater | Frequency |
 |:--------|:------|:---------|:-----|--------:|:--------:|----------:|
 | July 30 | 11:32 | KI7RMU   | Jack |     CM5 | WW7PSR   | 146.960   |
