@@ -10,29 +10,20 @@ The Puget Sound Repeater Roundabout is a weekend-long event held on many of our 
 Anyone with a ham radio license can participate! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
 
+# Repeaters
+
+Only [participating repeaters in this list](/psrg_repeater_roundabout/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to upset anyone who did not want to participate in the contest on their repeater.
+
+
 # Exchange
 
-You should exchage
+You should exchange
 
 - your name
 - a mention of the "Puget Sound Repeater Roundabout"
 - a _received_ signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit)). This must be how well _your signal_ sounds on the repeater, not how well you hear the repeater!
 
-This is a minimal contact that you might hear during this contest; it includes the required name and signal report.
-
-- **You** : Hello PSRG! This is K7DRQ, looking for a contact on this repeater for the Puget Sound Repeater Roundabout. Is there anyone on frequency?
-- **Them** : K7DRQ, this is KI7RMU.
-- **You** : KI7RMU, this is K7DRQ. Thanks for coming back to me. My name is Quentin! Back to you, KI7RMU -- how's my signal on this repeater?
-- **Them** : Hi Quentin, I’m Jack. You’re a little in the noise, you’re probably 3 by 5. How do you copy ?
-- **You** : Thanks Jack, good copy. Thanks for the contact, and 73! KI7RMU, this is K7DRQ.
-- **Them** : Sounds good! 73 from KI7RMU.
-
 Feel free to chat about anything and everything, though! The goal is to have a conversation.
-
-
-# Repeaters
-
-Only [participating repeaters in this list](/psrg_repeater_roundabout/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to upset anyone who did not want to participate in the contest on their repeater.
 
 
 # Scoring
