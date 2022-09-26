@@ -6,5 +6,5 @@ author: Quentin K7DRQ
 author_email: "k7drq@psrg.org"
 
 navbar-links:
-  Rules: "/psrg_repeater_roundabout"
-  Participating Repeaters: "/psrg_repeater_roundabout/repeaters"
+  Rules: "/"
+  Participating Repeaters: "/repeaters"
