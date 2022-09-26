@@ -6,10 +6,6 @@ description: The weekend of November 19th, get to know our local repeaters!
 author: Quentin K7DRQ
 author_email: "k7drq@psrg.org"
 
-markdown: kramdown
-kramdown:
-  parse_block_html: true
-
 navbar-links:
   Rules: "/"
   Participating Repeaters: "/repeaters"
