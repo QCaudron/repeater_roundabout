@@ -60,7 +60,8 @@ You score one point for each repeater you make a contact on. Multiple contacts o
 - **the repeater's callsign**
 - **the repeater's output frequency**
 
-<details><summary>Click here for a sample log sheet.</summary>
+<details>
+<summary>Click here for a sample log sheet.</summary>
 
 | Date    | Time  | Callsign | Name | Report  | Repeater | Frequency |
 |:--------|:------|:---------|:-----|--------:|:--------:|----------:|
@@ -69,6 +70,7 @@ You score one point for each repeater you make a contact on. Multiple contacts o
 | July 31 | 08:51 | K7RCH    | Rich |     CM4 | W7AW     | 145.130   |
 | July 31 | 13:16 | KX2CW    | Joan |     CM2 | WW7SEA   | 444.550   |
 | July 31 | 13:16 | KD7WGN   | Lee  |      45 | K7LED    | 224.12    |
+
 </details>
 
 You must use [this spreadsheet](https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing) for logging, to make it easier to calculate your points. To get started, click on `File`, then `Make a copy` or `Download`.
