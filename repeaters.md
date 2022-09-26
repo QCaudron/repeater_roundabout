@@ -1,7 +1,6 @@
 ---
 title: Participating Repeaters
 subtitle: Repeaters joining in the Repeater Roundabout fun.
-permalink: /psrg_repeater_roundabout/repeaters
 ---
 
 The following repeaters are participating in the Repeater Roundabout.
