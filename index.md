@@ -22,6 +22,8 @@ The exchange must include
 - a mention of the "Puget Sound Repeater Roundabout", and 
 - a _received_ signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit)). This must be how well _your signal_ sounds on the repeater, not how well you hear the repeater!
 
+{::options parse_block_html="true" /}
+
 <details>
 <summary>Click here for an example QSO.</summary>
 
@@ -35,6 +37,8 @@ This is a minimal contact that you might see on the PSRG's 2m repeater; it inclu
 - **Station 2** : Sounds good! 73 from KI7RMU.
 
 </details>
+
+{::options parse_block_html="false" /}
 
 #### Repeaters
 
@@ -55,6 +59,8 @@ You score one point for each repeater you make a contact on. Multiple contacts o
 - **the repeater's callsign**
 - **the repeater's output frequency**
 
+{::options parse_block_html="true" /}
+
 <details>
 <summary>Click here for a sample log sheet.</summary>
 
@@ -67,6 +73,9 @@ You score one point for each repeater you make a contact on. Multiple contacts o
 | July 31 | 13:16 | KD7WGN   | Lee  |      45 | K7LED    | 224.12    |
 
 </details>
+<br />
+
+{::options parse_block_html="false" /}
 
 You must use [this spreadsheet](https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing) for logging, to make it easier to calculate your points. To get started, click on `File`, then `Make a copy` or `Download`.
 
