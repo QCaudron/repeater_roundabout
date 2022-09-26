@@ -13,4 +13,4 @@ The following repeaters are participating in the Repeater Roundabout.
 | Puget Sound Repeater Group | WW7PSR   | Seattle  | FM   | 52.87             | -1.7         | 103.5     |
 | Puget Sound Repeater Group | WW7PSR   | Seattle  | DMR  | 440.775           | +5.0         | CC 2      |
 
-[Return to the rules page.](/)
+[Return to the rules page.](/psrg_repeater_roundabout)
