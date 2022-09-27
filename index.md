@@ -12,7 +12,7 @@ Anyone with a ham radio license can participate! You don't even have to be local
 
 # Repeaters
 
-Only [participating repeaters](/psrg_repeater_roundabout/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
+Only [participating repeaters](/repeater_roundabout/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
 
 
 # Exchange
