@@ -14,6 +14,8 @@ Anyone with a ham radio license can participate! You don't even have to be local
 
 Only [participating repeaters](/repeater_roundabout/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
 
+Please ensure that there is no ongoing activity on a repeater (such as a net) before you call for contacts. We cannot interfere with normal operation.
+
 
 # Exchange
 
