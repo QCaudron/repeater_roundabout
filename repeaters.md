@@ -35,4 +35,4 @@ Highline ARC
 : [Highline Amateur Radio Club](https://highlinearc.org)
 
 Marrowstone
-: [Marrowstone Island Amateur Radio Club](https://marrowstoneislandarc.org)
+: [Marrowstone Island Amateur Radio Club](https://www.qrz.com/db/AA7MI)
