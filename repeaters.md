@@ -14,9 +14,13 @@ The following repeaters are participating in the Repeater Roundabout.
 | Shoreline ACS | W7AUX    | Shoreline | FM   | 440.300      | +5.0         | 103.5     |
 | Shoreline ACS | W7AUX    | Shoreline | FM   | 224.020      | -1.6         | 103.5     |
 
+Please ensure you do not interfere with the repeater's normal operation, including regular nets.
+
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
 ---
+
+### Clubs and repeater associations
 
 PSRG
 : [Puget Sound Repeater Group](https://psrg.org)
