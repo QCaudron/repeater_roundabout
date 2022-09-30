@@ -5,14 +5,17 @@ subtitle: Repeaters joining in the Repeater Roundabout fun.
 
 The following repeaters are participating in the Repeater Roundabout.
 
-| Name          | Callsign | Location  | Mode | Output (MHz) | Offset (MHz) | Tone (Hz) |
-|:--------------|:---------|:----------|:-----|-------------:|-------------:|----------:|
-| PSRG          | WW7PSR   | Seattle   | FM   | 146.960      | -0.6         | 103.5     |
-| PSRG          | WW7PSR   | Seattle   | FM   | 52.870       | -1.7         | 103.5     |
-| PSRG          | WW7PSR   | Seattle   | DMR  | 440.775      | +5.0         | CC 2      |
-| Shoreline ACS | W7AUX    | Shoreline | FM   | 442.825      | +5.0         | 103.5     |
-| Shoreline ACS | W7AUX    | Shoreline | FM   | 440.300      | +5.0         | 103.5     |
-| Shoreline ACS | W7AUX    | Shoreline | FM   | 224.020      | -1.6         | 103.5     |
+| Name          | Callsign | Location           | Mode | Output (MHz) | Offset (MHz) | Tone (Hz) |
+|:--------------|:---------|:-------------------|:-----|-------------:|-------------:|----------:|
+| PSRG          | WW7PSR   | Seattle            | FM   | 146.960      | -0.6         | 103.5     |
+| PSRG          | WW7PSR   | Seattle            | FM   | 52.870       | -1.7         | 103.5     |
+| PSRG          | WW7PSR   | Seattle            | DMR  | 440.775      | +5.0         | CC 2      |
+| Shoreline ACS | W7AUX    | Shoreline          | FM   | 442.825      | +5.0         | 103.5     |
+| Shoreline ACS | W7AUX    | Shoreline          | FM   | 440.300      | +5.0         | 103.5     |
+| Shoreline ACS | W7AUX    | Shoreline          | FM   | 224.020      | -1.6         | 103.5     |
+| Highline ARC  | NC7G     | SeaTac             | FM   | 146.660      | -0.6         | 103.5     |
+| Highline ARC  | WA7ST    | SeaTac             | FM   | 443.100      | +5.0         | 103.5     |
+| Marrowstone   | AA7MI    | Marrowstone Island | FM   | 440.725      | +5.0         | 114.8     |
 
 Please ensure you do not interfere with the repeater's normal operation, including regular nets.
 
@@ -27,3 +30,9 @@ PSRG
 
 Shoreline ACS
 : [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs/)
+
+Highline ARC
+: [Highline Amateur Radio Club](https://highlinearc.org)
+
+Marrowstone
+: [Marrowstone Island Amateur Radio Club](https://marrowstoneislandarc.org)

@@ -32,7 +32,7 @@ Feel free to chat about anything and everything, though! The goal is to have a c
 
 You score one point for each repeater you make a contact on. Multiple contacts on the same repeater do not provide more points.
 
-**Bonus : Collect 'em all !** If you make a contact on *all repeaters* with the same callsign on the list of participating repeaters (for systems with at least two repeaters), your point score doubles for that system. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater, all under the callsign WW7PSR. If you log a contact all three of them, you score six points instead of three.
+**Bonus : Collect 'em all !** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score doubles for that system. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log a contact all three of them, you score six points instead of three.
 
 
 # Logging
