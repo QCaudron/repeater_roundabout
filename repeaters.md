@@ -17,7 +17,6 @@ The following repeaters are participating in the Repeater Roundabout.
 | Highline ARC  | WA7ST    | SeaTac             | FM   | 443.100      | +5.0         | 103.5     |
 | Marrowstone   | AA7MI    | Marrowstone Island | FM   | 440.725      | +5.0         | 114.8     |
 | BEARONS       | W7FLY    | Lynnwood           | FM   | 443.925      | +5.0         | 100.0     |
-<!-- | WWDXC         | W7DX     | Redmond            | FM   | 147.000      | -0.6         | 103.5     | -->
 
 Please ensure you do not interfere with the repeater's normal operation, including regular nets.
 
@@ -41,6 +40,9 @@ Marrowstone
 
 BEARONS
 : [Boeing Employees Amateur Radio Operators North Society](https://w7flybearons.org/)
+
+
+<!-- | WWDXC         | W7DX     | Redmond            | FM   | 147.000      | -0.6         | 103.5     | -->
 
 <!-- WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org) -->
