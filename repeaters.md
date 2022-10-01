@@ -3,28 +3,26 @@ title: Participating Repeaters
 subtitle: Repeaters joining in the Repeater Roundabout fun.
 ---
 
-The following repeaters are participating in the Repeater Roundabout.
+The following repeaters are participating in the Repeater Roundabout. Please ensure you **do not interfere** with the repeater's normal operation, including regular nets.
 
-| Group Name    | Callsign | Location           | Mode  | Output (MHz) | Offset (MHz) | Tone (Hz) |
-|:--------------|:---------|:-------------------|:------|-------------:|-------------:|----------:|
-| PSRG          | WW7PSR   | Seattle            | FM    | 146.960      | -0.6         | 103.5     |
-| PSRG          | WW7PSR   | Seattle            | FM    | 52.870       | -1.7         | 103.5     |
-| PSRG          | WW7PSR   | Seattle            | DMR   | 440.775      | +5.0         | CC 2      |
-| Shoreline ACS | W7AUX    | Shoreline          | FM    | 442.825      | +5.0         | 103.5     |
-| Shoreline ACS | W7AUX    | Shoreline          | FM    | 440.300      | +5.0         | 103.5     |
-| Shoreline ACS | W7AUX    | Shoreline          | FM    | 224.020      | -1.6         | 103.5     |
-| Highline ARC  | NC7G     | SeaTac             | FM    | 146.660      | -0.6         | 103.5     |
-| Highline ARC  | WA7ST    | SeaTac             | FM    | 443.100      | +5.0         | 103.5     |
-| Marrowstone   | AA7MI    | Marrowstone Island | FM    | 440.725      | +5.0         | 114.8     |
-| BEARONS       | W7FLY    | Lynnwood           | FM    | 443.925      | +5.0         | 100.0     |
-| WWDXC         | W7DX     | Redmond            | FM    | 147.000      | -0.6         | 103.5     |
-| Bainbridge    | W7PNC    | Bainbridge Island  | FM    | 444.475      | +5.0         | 103.5     |
-| Bainbridge    | W7PNC    | Bainbridge Island  | FM    | 53.430       | -1.7         | 100.0     |
-| Bainbridge    | W7PNC    | Bainbridge Island  | DSTAR | 444.5625     | +5.0         | (A)       |
-| Bainbridge    | W7PNC    | Bainbridge Island  | DSTAR | 1290.500     | -20.0        | (B)       |
-
-
-Please ensure you do not interfere with the repeater's normal operation, including regular nets.
+| Group Name    | Callsign | Location         | Mode  | Output (MHz) | Offset (MHz) | Tone (Hz) |
+|:--------------|:---------|:-----------------|:------|-------------:|-------------:|----------:|
+| PSRG          | WW7PSR   | Seattle          | FM    | 146.960      | -0.6         | 103.5     |
+| PSRG          | WW7PSR   | Seattle          | FM    | 52.870       | -1.7         | 103.5     |
+| PSRG          | WW7PSR   | Seattle          | DMR   | 440.775      | +5.0         | CC 2      |
+| Shoreline ACS | W7AUX    | Shoreline        | FM    | 442.825      | +5.0         | 103.5     |
+| Shoreline ACS | W7AUX    | Shoreline        | FM    | 440.300      | +5.0         | 103.5     |
+| Shoreline ACS | W7AUX    | Shoreline        | FM    | 224.020      | -1.6         | 103.5     |
+| Highline ARC  | NC7G     | SeaTac           | FM    | 146.660      | -0.6         | 103.5     |
+| Highline ARC  | WA7ST    | SeaTac           | FM    | 443.100      | +5.0         | 103.5     |
+| Marrowstone   | AA7MI    | Marrowstone Isl. | FM    | 440.725      | +5.0         | 114.8     |
+| BEARONS       | W7FLY    | Lynnwood         | FM    | 443.925      | +5.0         | 100.0     |
+| WWDXC         | W7DX     | Redmond          | FM    | 147.000      | -0.6         | 103.5     |
+| Bainbridge    | W7PNC    | Bainbridge Isl.  | FM    | 444.475      | +5.0         | 103.5     |
+| Bainbridge    | W7PNC    | Bainbridge Isl.  | FM    | 53.430       | -1.7         | 100.0     |
+| Bainbridge    | W7PNC    | Bainbridge Isl.  | DSTAR | 444.5625     | +5.0         |           |
+| Bainbridge    | W7PNC    | Bainbridge Isl.  | DSTAR | 1290.500     | -20.0        |           |
+| K7DK          | K7DK     | Buck Mtn.        | FM    | 440.950      | +5.0         | 110.9     |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -52,3 +50,6 @@ WWDXC
 
 Bainbridge
 : [Bainbridge Island Amateur Radio Club](https://www.w7npc.org/)
+
+K7DK
+: Mark K7DK
