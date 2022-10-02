@@ -18,10 +18,10 @@ The following repeaters are participating in the Repeater Roundabout. Please ens
 | Marrowstone   | AA7MI    | Marrowstone Island | FM    | 440.725      | +5.0         | 114.8     |
 | BEARONS       | W7FLY    | Lynnwood           | FM    | 443.925      | +5.0         | 100.0     |
 | WWDXC         | W7DX     | Redmond            | FM    | 147.000      | -0.6         | 103.5     |
-| Bainbridge    | W7PNC    | Bainbridge Island  | FM    | 444.475      | +5.0         | 103.5     |
-| Bainbridge    | W7PNC    | Bainbridge Island  | FM    | 53.430       | -1.7         | 100.0     |
-| Bainbridge    | W7PNC    | Bainbridge Island  | DSTAR | 444.5625     | +5.0         |           |
-| Bainbridge    | W7PNC    | Bainbridge Island  | DSTAR | 1290.500     | -20.0        |           |
+| Bainbridge    | W7NPC    | Bainbridge Island  | FM    | 444.475      | +5.0         | 103.5     |
+| Bainbridge    | W7NPC    | Bainbridge Island  | FM    | 53.430       | -1.7         | 100.0     |
+| Bainbridge    | W7NPC    | Bainbridge Island  | DSTAR | 444.5625     | +5.0         |           |
+| Bainbridge    | W7NPC    | Bainbridge Island  | DSTAR | 1290.500     | -20.0        |           |
 | K7DK          | K7DK     | Buck Mtn.          | FM    | 440.950      | +5.0         | 110.9     |
 | LWH           | K7LWH    | Kirkland           | FM    | 145.490      | -0.6         | 103.5     |
 
