@@ -10,6 +10,7 @@ navbar-links:
   Rules: "/"
   Participating Repeaters: "/repeaters"
   Map: "/map"
+  Chirp file: "https://raw.githubusercontent.com/QCaudron/repeater_roundabout/main/rr_frequencies.csv"
   Log Sheet: "https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing"
 
 avatar: "/assets/logo.png"
