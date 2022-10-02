@@ -4,12 +4,12 @@ subtitle: Some location magic.
 head-extra: leaflet.html
 ---
 
-The locations for these repeaters are sourced from RepeaterBook. If any are incorrect, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) to have them updated on this map; please also update the repeater's information on RepeaterBook.
+The locations for these repeaters are approximate, and sourced from RepeaterBook.
 
 <div id="map" style="height: 800px;"></div>
 
 <script>
-var map = L.map('map').setView([47.6, -122.09], 8);
+var map = L.map('map').setView([47.7, -122.35], 8);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -18,8 +18,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker([47.62400055, -122.31500244]).bindPopup("WW7PSR 52.870, 146.960, 440.775").addTo(map);
 
-L.marker([47.76779938, -122.35299683]).bindPopup("W7AUX 442.825").addTo(map);
-L.marker([47.75669861, -122.34600067]).bindPopup("W7AUX 224.020, 440.300").addTo(map);
+L.marker([47.76224899, -122.3494988]).bindPopup("W7AUX 224.020, 440.300, 442.825").addTo(map);
 
 L.marker([47.45080185, -122.28700256]).bindPopup("NC7G 146.660, WA7ST 443.100").addTo(map);
 
