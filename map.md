@@ -1,6 +1,8 @@
 ---
 title: Repeater Map
 subtitle: Some location magic.
+ext-js: [https://unpkg.com/leaflet@1.9.1/dist/leaflet.js]
+ext-css: [https://unpkg.com/leaflet@1.9.1/dist/leaflet.css]
 ---
 
 <div id="map" style="height: 300px;"></div>
