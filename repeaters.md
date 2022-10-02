@@ -5,7 +5,7 @@ subtitle: Repeaters joining in the Repeater Roundabout fun.
 
 The following repeaters are participating in the Repeater Roundabout. Please ensure you **do not interfere** with the repeater's normal operation, including regular nets.
 
-You can get a general idea for the repeaters' locations with the [repeater map](/repeater_roundabout/map).
+You can get a general idea for the repeaters' locations on the [repeater map](/repeater_roundabout/map).
 
 | Group Name    | Callsign | Location           | Mode  | Output (MHz) | Offset (MHz) | Tone (Hz) |
 |:--------------|:---------|:-------------------|:------|-------------:|-------------:|----------:|
