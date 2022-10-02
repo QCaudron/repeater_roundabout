@@ -10,3 +10,9 @@ navbar-links:
   Rules: "/"
   Participating Repeaters: "/repeaters"
   Log Sheet: "https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing"
+
+ext-js:
+  - https://unpkg.com/leaflet@1.9.1/dist/leaflet.js
+
+ext-css:
+  - https://unpkg.com/leaflet@1.9.1/dist/leaflet.css
