@@ -6,10 +6,10 @@ head-extra: leaflet.html
 
 The locations for these repeaters are approximate, and sourced from RepeaterBook.
 
-<div id="map" style="height: 800px;"></div>
+<div id="map" style="height: 800px; border-radius: 400px;"></div>
 
 <script>
-var map = L.map('map').setView([47.7, -122.35], 8);
+var map = L.map('map').setView([47.7, -122.35], 9);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
