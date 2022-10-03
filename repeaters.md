@@ -27,7 +27,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | K7DK          | K7DK     | Buck Mtn.          | FM    | 440.950      | +5.0         | 110.9     |
 | Lake Wash.    | K7LWH    | Kirkland           | FM    | 145.490      | -0.6         | 103.5     |
 | K7PP          | K7PP     | Bremerton          | FM    | 441.200      | +5.0         | 123.0     |
-| N9VW          | N9VW     | Issaquah           | FM    | 441.200      | +5.0         | 123.0     |
+| N9VW          | N9VW     | Issaquah           | FM    | 53.830       | -1.7         | 123.0     |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
