@@ -5,7 +5,7 @@ subtitle: Repeaters joining in the Repeater Roundabout fun.
 
 The following repeaters are participating in the Repeater Roundabout. Please ensure you **do not interfere** with the repeater's normal operation, including regular nets.
 
-You can get a general idea for the repeaters' locations on the [repeater map](/repeater_roundabout/map). If you program your radio with Chirp, check out our [Chirp .csv file](https://raw.githubusercontent.com/QCaudron/repeater_roundabout/main/rr_frequencies.csv) for all FM frequencies below.
+You can get a general idea for the repeaters' locations on the [repeater map](/map). If you program your radio with Chirp, check out our [Chirp .csv file](https://raw.githubusercontent.com/QCaudron/repeater_roundabout/main/rr_frequencies.csv) for all FM frequencies below.
 
 | Group Name    | Callsign | Location           | Mode  | Output (MHz) | Offset (MHz) | Tone (Hz) |
 |:--------------|:---------|:-------------------|:------|-------------:|-------------:|----------:|
