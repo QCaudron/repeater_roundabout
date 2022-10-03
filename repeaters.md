@@ -26,6 +26,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/r
 | Bainbridge    | W7NPC    | Bainbridge Island  | DSTAR | 1290.500     | -20.0        |           |
 | K7DK          | K7DK     | Buck Mtn.          | FM    | 440.950      | +5.0         | 110.9     |
 | LWH           | K7LWH    | Kirkland           | FM    | 145.490      | -0.6         | 103.5     |
+| K7PP          | K7PP     | Bremerton          | FM    | 441.200      | +5.0         | 123.0     |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 

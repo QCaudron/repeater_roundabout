@@ -34,4 +34,6 @@ L.marker([47.68849945, -122.15599823]).bindPopup("K7LWH 145.490").addTo(map);
 
 L.marker([48.05830002, -122.68800354]).bindPopup("AA7MI 440.725").addTo(map);
 
+L.marker([47.54869843, -122.78600311]).bindPopup("K7PP 441.200").addTo(map);
+
 </script>
