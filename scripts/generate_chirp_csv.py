@@ -81,4 +81,4 @@ if __name__ == "__main__":
         df = parse_markdown_table(f.read())
 
     df = format_df_for_chirp(df)
-    df.to_csv("../assets/rr_frequencies.csv")
+    df.to_csv("assets/rr_frequencies.csv")
