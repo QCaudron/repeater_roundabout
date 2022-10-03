@@ -25,7 +25,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/r
 | Bainbridge    | W7NPC    | Bainbridge Island  | DSTAR | 444.5625     | +5.0         |           |
 | Bainbridge    | W7NPC    | Bainbridge Island  | DSTAR | 1290.500     | -20.0        |           |
 | K7DK          | K7DK     | Buck Mtn.          | FM    | 440.950      | +5.0         | 110.9     |
-| LWH           | K7LWH    | Kirkland           | FM    | 145.490      | -0.6         | 103.5     |
+| Lake Wash.    | K7LWH    | Kirkland           | FM    | 145.490      | -0.6         | 103.5     |
 | K7PP          | K7PP     | Bremerton          | FM    | 441.200      | +5.0         | 123.0     |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
@@ -56,7 +56,10 @@ Bainbridge
 : [Bainbridge Island Amateur Radio Club](https://www.w7npc.org/)
 
 K7DK
-: Mark K7DK
+: [Mark K7DK](https://www.qrz.com/db/K7DK)
 
-LWH
+Lake Wash.
 : [Lake Washington Ham Club](http://www.lakewashingtonhamclub.org/)
+
+K7PP
+: [Peter K7PP](https://www.qrz.com/db/K7PP)
