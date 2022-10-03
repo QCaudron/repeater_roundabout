@@ -38,4 +38,8 @@ L.marker([47.54869843, -122.78600311]).bindPopup("K7PP 441.200").addTo(map);
 
 L.marker([47.53010178, -122.03299713]).bindPopup("N9VW 53.830").addTo(map);
 
+L.marker([47.60430145, -122.33000183]).bindPopup("WW7SEA 444.550").addTo(map);
+
+L.marker([47.63249969, -122.35600281]).bindPopup("WW7SEA 444.700").addTo(map);
+
 </script>
