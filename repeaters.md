@@ -71,4 +71,4 @@ N9VW
 : [Steve N9VW](https://www.qrz.com/db/N9VW)
 
 WW7SEA
-: [Barry WW7SEA's Western Washington Repeater System](https://www.qrz.com/db/WW7SEA)
+: [Barry K7PAL's Western Washington Repeater System](https://www.qrz.com/db/WW7SEA)
