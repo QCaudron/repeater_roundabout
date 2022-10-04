@@ -25,8 +25,8 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df = df.loc[df["Mode"] == "FM"]  # only FM repeaters
 
     # Set the offset direction and value
-    df["Duplex"] = df["Offset (MHz)"].str[0]  # + or -, first char of Offset
-    df["Offset"] = df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}")
+    df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
+    df = df.assign(Offset=df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}"))
 
     # Some columns can be reused
     df["Comment"] = df["Callsign"] + " - " + df["Output (MHz)"]
@@ -79,6 +79,8 @@ if __name__ == "__main__":
 
     with open("repeaters.md", "r") as f:
         df = parse_markdown_table(f.read())
+
+    print(f"Found {len(df)} repeaters in the table")
 
     df = format_df_for_chirp(df)
     df.to_csv("assets/rr_frequencies.csv")
