@@ -30,6 +30,9 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | N9VW          | N9VW     | Issaquah           | FM     | 53.830       | -1.7         | 123.0     |
 | WW7SEA        | WW7SEA   | Seattle            | FM     | 444.700      | +5.0         | 103.5     |
 | WW7SEA        | WW7SEA   | Seattle            | Fusion | 444.425      | +5.0         | 141.3     |
+| BEARS         | K7NWS    | Issaquah           | FM     | 145.330      | -0.6         | 179.9     |
+| BEARS         | K7NWS    | Issaquah           | FM     | 224.340      | -1.6         | 110.9     |
+| BEARS         | K7NWS    | Issaquah           | DMR    | 442.075      | +5.0         | CC 2      |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -72,3 +75,6 @@ N9VW
 
 WW7SEA
 : [Barry K7PAL's Western Washington Repeater System](https://www.qrz.com/db/WW7SEA)
+
+BEARS
+: [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)

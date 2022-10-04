@@ -42,4 +42,6 @@ L.marker([47.60430145, -122.33000183]).bindPopup("WW7SEA 444.550").addTo(map);
 
 L.marker([47.63249969, -122.35600281]).bindPopup("WW7SEA 444.700").addTo(map);
 
+L.marker([47.50389862, -121.97599792]).bindPopup("K7NWS 145.330, 224.340, 442.075").addTo(map);
+
 </script>
