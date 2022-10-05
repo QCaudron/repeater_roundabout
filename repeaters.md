@@ -67,19 +67,19 @@ Bainbridge
 : [Bainbridge Island Amateur Radio Club](https://www.w7npc.org/)
 
 K7DK
-: [Mark K7DK](https://www.qrz.com/db/K7DK)
+: [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
 
 Lake Wash.
 : [Lake Washington Ham Club](http://www.lakewashingtonhamclub.org/)
 
 K7PP
-: [Peter K7PP](https://www.qrz.com/db/K7PP)
+: [Peter K7PP's repeater network](http://www.k7pp.itgo.com/)
 
 N9VW
-: [Steve N9VW](https://www.qrz.com/db/N9VW)
+: [Steve N9VW's repeater system](https://www.qrz.com/db/N9VW)
 
 WW7SEA
-: [Barry K7PAL's Western Washington Repeater System](https://www.qrz.com/db/WW7SEA)
+: [Barry K7PAL's Western Washington repeater system](https://www.qrz.com/db/WW7SEA)
 
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)
