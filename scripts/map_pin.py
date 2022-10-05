@@ -5,7 +5,7 @@ import requests
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("id_code", help="ID code from repeaterbook.com", type=str)
+    parser.add_argument("id_code", help="ID code from repeaterbook.com", type=str, nargs="+")
     return parser.parse_args()
 
 
@@ -25,4 +25,6 @@ def create_js(id_code: str):
 if __name__ == "__main__":
 
     args = parse_args()
-    print(create_js(args.id_code))
+
+    for code in args.id_code:
+        print(create_js(code))

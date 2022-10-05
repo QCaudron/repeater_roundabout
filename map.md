@@ -46,4 +46,8 @@ L.marker([47.50389862, -121.97599792]).bindPopup("K7NWS 145.330, 224.340, 442.07
 
 L.marker([47.48820114, -121.94699860]).bindPopup("K7LED 146.820, 224.120").addTo(map);
 
+L.marker([46.84009933, -122.25599670]).bindPopup("W7EAT 146.700").addTo(map);
+L.marker([46.86700058, -122.26599884]).bindPopup("W7EAT 224.180").addTo(map);
+L.marker([47.49570084, -121.78700256]).bindPopup("W7EAT 442.725").addTo(map);
+
 </script>
