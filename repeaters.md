@@ -33,6 +33,8 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | BEARS         | K7NWS    | Issaquah           | FM     | 145.330      | -0.6         | 179.9     |
 | BEARS         | K7NWS    | Issaquah           | FM     | 224.340      | -1.6         | 110.9     |
 | BEARS         | K7NWS    | Issaquah           | DMR    | 442.075      | +5.0         | CC 2      |
+| Mike & Key    | K7LED    | Issaquah           | FM     | 146.820      | -0.6         | 103.5     |
+| Mike & Key    | K7LED    | Issaquah           | FM     | 224.120      | -1.6         | 103.5     |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -78,3 +80,6 @@ WW7SEA
 
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)
+
+Mike & Key
+: [Mike and Key Amateur Radio Club](https://mikeandkey.org/)
