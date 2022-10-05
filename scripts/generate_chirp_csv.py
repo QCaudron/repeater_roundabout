@@ -80,7 +80,8 @@ if __name__ == "__main__":
     with open("repeaters.md", "r") as f:
         df = parse_markdown_table(f.read())
 
-    print(f"Found {len(df)} repeaters in the table")
+    print(df["Mode"].value_counts())
+    print(f"Total: {len(df)}")
 
     df = format_df_for_chirp(df)
     df.to_csv("assets/rr_frequencies.csv")
