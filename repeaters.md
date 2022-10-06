@@ -36,8 +36,8 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | Mike & Key    | K7LED    | Issaquah           | FM     | 146.820      | -0.6         | 103.5     |
 | Mike & Key    | K7LED    | Issaquah           | FM     | 224.120      | -1.6         | 103.5     |
 | Eatonville    | W7EAT    | Eatonville         | FM     | 146.700      | -0.6         | 103.5     |
-| Eatonville    | W7EAT    | Eatonville         | FM     | 224.180      | -1.6         | 103.5     |
-| Eatonville    | W7EAT    | North Bend         | FM     | 442.725      | +5.0         | 103.5     |
+| Eatonville    | W7EAT    | Graham             | FM     | 224.180      | -1.6         | 103.5     |
+| Eatonville    | W7EAT    | Eatonville         | FM     | 442.725      | +5.0         | 103.5     |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
