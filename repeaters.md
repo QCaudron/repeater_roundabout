@@ -38,6 +38,10 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | Eatonville    | W7EAT    | Eatonville         | FM     | 146.700      | -0.6         | 103.5     |
 | Eatonville    | W7EAT    | Graham             | FM     | 224.180      | -1.6         | 103.5     |
 | Eatonville    | W7EAT    | Eatonville         | FM     | 442.725      | +5.0         | 103.5     |
+| RCTacoma      | W7DK     | Tacoma             | FM     | 147.280      | +0.6         | 103.5     |
+| RCTacoma      | W7DK     | Tacoma             | FM     | 440.625      | +5.0         | 103.5     |
+| RCTacoma      | W7DK     | Tacoma             | FM     | 145.210      | -0.6         | 141.3     |
+| RCTacoma      | W7DK     | Crawford Mtn.      | FM     | 147.380      | +0.6         | 103.5     |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -89,3 +93,6 @@ Mike & Key
 
 Eatonville
 : [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)
+
+RCTacoma
+: [Radio Club of Tacoma](http://www.w7dk.org/)
