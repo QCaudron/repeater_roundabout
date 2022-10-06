@@ -99,4 +99,4 @@ RCTacoma
 : [Radio Club of Tacoma](http://www.w7dk.org/)
 
 Pierce ARES
-: [Pierce County ARES](www.piercecountyares.net)
+: [Pierce County ARES](http://www.piercecountyares.net)
