@@ -42,6 +42,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | RCTacoma      | W7DK     | Tacoma             | FM     | 440.625      | +5.0         | 103.5     |
 | RCTacoma      | W7DK     | Tacoma             | FM     | 145.210      | -0.6         | 141.3     |
 | RCTacoma      | W7DK     | Crawford Mtn.      | FM     | 147.380      | +0.6         | 103.5     |
+| Pierce ARES   | W7AAO    | Grass Mtn.         | FM     | 145.370      | -0.6         | 136.5     |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -96,3 +97,6 @@ Eatonville
 
 RCTacoma
 : [Radio Club of Tacoma](http://www.w7dk.org/)
+
+Pierce ARES
+: [Pierce County ARES](www.piercecountyares.net)

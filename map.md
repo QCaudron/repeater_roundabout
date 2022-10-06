@@ -53,4 +53,6 @@ L.marker([47.25289917, -122.44400024]).bindPopup("W7DK 147.280, 440.625").addTo(
 L.marker([47.27870178, -122.51200104]).bindPopup("W7DK 145.210").addTo(map);
 L.marker([46.84310150, -122.76300049]).bindPopup("W7DK 147.380").addTo(map);
 
+L.marker([47.19979858, -121.75599670]).bindPopup("W7AAO 145.370").addTo(map);
+
 </script>
