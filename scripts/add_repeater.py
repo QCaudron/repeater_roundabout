@@ -1,25 +1,32 @@
 import argparse
+from collections import defaultdict
 from typing import Tuple
 
+import numpy as np
 import pandas as pd
 import requests
+from scipy.cluster.hierarchy import linkage, fcluster
+from scipy.spatial.distance import pdist
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--name", help="Name of the repeater system", type=str, required=True)
-    parser.add_argument("--loc", help="A general location", type=str, required=True)
-    parser.add_argument("--id", help="ID code from repeaterbook.com", type=str)
-    parser.add_argument("--mode", help="Mode", type=str, default="FM")
-    parser.add_argument("--call", help="Callsign", type=str, default=None)
-    parser.add_argument("--freq", help="Output frequency", type=str, default=None)
-    parser.add_argument("--offset", help="Offset", type=str, default=None)
-    parser.add_argument("--tone", help="Tone", type=str, default=None)
+    parser.add_argument("--name", type=str, required=True)
+    parser.add_argument("--loc", type=str, required=True)
+    parser.add_argument("--id", type=str, default=None)
+    parser.add_argument("--mode", type=str, default="FM")
+    parser.add_argument("--call", type=str, default=None)
+    parser.add_argument("--freq", type=str, default=None)
+    parser.add_argument("--offset", type=str, default=None)
+    parser.add_argument("--tone", type=str, default=None)
     parser.add_argument("--lat", type=float, default=None)
     parser.add_argument("--lon", type=float, default=None)
+    parser.add_argument("--long_name", type=str, default=None)
+    parser.add_argument("--url", type=str, default=None)
     return parser.parse_args()
 
 
-def parse_repeaterbook(id_code: str) -> Tuple:
+def repeater_from_repeaterbook(id_code: str) -> Tuple:
     """
     Extract a bunch of repeater information from RepeaterBook.
 
@@ -33,6 +40,9 @@ def parse_repeaterbook(id_code: str) -> Tuple:
     Tuple
         A tuple of the form (callsign, frequency, offset, latlong, tone).
     """
+
+    if id_code is None:
+        return {}
     
     url = f"https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID={id_code}"
     source = requests.get(url)
@@ -58,41 +68,194 @@ def parse_repeaterbook(id_code: str) -> Tuple:
     except SyntaxError:
         pass
 
-    return call, freq, latlong, offset, tone
+    repeater = {
+        "Callsign": call,
+        "Output (MHz)": freq,
+        "Offset (MHz)": offset,
+        "Tone (Hz)": tone,
+        "Coordinates": latlong,
+    }
+
+    return repeater
+
+
+def repeater_from_args(args):
+
+    repeater = {
+        "Group Name": args.name,
+        "Callsign": args.call,
+        "Location": args.loc,
+        "Mode": args.mode,
+        "Output (MHz)": args.freq, 
+        "Offset (MHz)": args.offset,
+        "Tone (Hz)": args.tone,
+        "Coordinates": [args.lat, args.lon],
+        "Long Name": args.long_name,
+        "Website": args.url,
+    }
+
+    repeater = {key: val for key, val in repeater.items() if val}
+    return repeater
+
+
+def generate_repeater_df(args) -> pd.DataFrame:
+
+    repeaterbook = repeater_from_repeaterbook(args.id)
+    repeaterargs = repeater_from_args(args)
+    repeater = {**repeaterbook, **repeaterargs}
+
+    df = pd.read_json("assets/repeaters.json", dtype=False)
+    df = df.append(repeater, ignore_index=True)
+    df = df.reset_index(drop=True)
+    df.to_json("assets/repeaters.json", orient="records", indent=4)
+
+    return df
+
+
+def write_index_md(df: pd.DataFrame) -> None:
+
+    with open("assets/templates/index.md", "r") as f:
+        index = f.read()
+
+    index = index.replace("{{ n_repeaters }}", str(len(df)))
+
+    with open("index.md", "w") as f:
+        f.write(index)
+
+
+def write_repeaters_md(df: pd.DataFrame) -> None:
+
+    # Create the main markdown table
+    table_cols = ["Group Name", "Callsign", "Location", "Mode", "Output (MHz)", "Offset (MHz)", "Tone (Hz)"]
+    table = df[table_cols].to_markdown(
+        index=False, 
+        disable_numparse=True, 
+        colalign=["left", "left", "left", "left", "right", "right", "right"]
+    )
+
+    # Create a list of short-name-to-long-description mappings
+    association_text = ""
+    associations = df.groupby("Group Name")[["Long Name", "Website"]].first()
+    for short, long, url in associations.to_records():
+        association_text += f"{short}\n: [{long}]({url})\n\n"
+
+    # Write the markdown file from template
+    with open("assets/templates/repeaters.md", "r") as f:
+        maps = f.read()
+    maps = maps.replace("{{ table }}", table)
+    maps = maps.replace("{{ associations }}", association_text)
+    with open("repeaters.md", "w") as f:
+        f.write(maps)
+
+
+def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
+
+    coords = np.array(df["Coordinates"].to_list())
+    dist = pdist(coords)
+    allocations = fcluster(linkage(dist, method="complete"), threshold, criterion="distance")
+
+    clusters = defaultdict(list)
+    for idx, allocation in enumerate(allocations):
+        clusters[allocation].append(df.iloc[idx][["Callsign", "Output (MHz)", "Coordinates"]].to_dict())
+
+    pins = []
+
+    for cluster in clusters.values():
+    
+        msg = ""
+        for repeater in cluster:
+            msg += f"{repeater['Callsign']} {repeater['Output (MHz)']}<br>"
+
+        if len(msg):
+            coords = np.mean([repeater["Coordinates"] for repeater in cluster], axis=0)
+            coords = f"[{coords[0]:.10f}, {coords[1]:.10f}]"
+            pins.append(f"L.marker({coords}).bindPopup('{msg}').addTo(map);")
+
+    pins = "\n".join(pins)
+
+    with open("assets/templates/map.md", "r") as f:
+        maps_md = f.read()
+    with open("assets/templates/map.html", "r") as f:
+        maps_html = f.read()
+
+    maps_md = maps_md.replace("{{ repeater_pins }}", pins)
+    maps_html = maps_html.replace("{{ repeater_pins }}", pins)
+
+    with open("map.md", "w") as f:
+        f.write(maps_md)
+    with open("demo_map.html", "w") as f:
+        f.write(maps_html)
+
+
+def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
+
+    # Only format FM channels; we can't handle DMR or D-Star at the moment
+    df = df.loc[df["Mode"] == "FM"]  # only FM repeaters
+
+    # Set the offset direction and value
+    df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
+    df = df.assign(Offset=df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}"))
+
+    # Some columns can be reused
+    df["Comment"] = df["Callsign"] + " - " + df["Output (MHz)"]
+    df = df.rename(columns={
+        "Callsign": "Name",
+        "Output (MHz)": "Frequency",
+        "Tone (Hz)": "rToneFreq",
+    })
+
+    # Set some constant basics that are required for Chirp to read the file
+    df["Tone"] = "Tone"
+    df["cToneFreq"] = "88.5"
+    df["DtcsCode"] = "023"
+    df["DtcsPolarity"] = "NN"
+    df["TStep"] = "5.00"
+    
+    # The following columns are null
+    for col in ["Skip", "URCALL", "RPT1CALL", "RPT2CALL", "DVCODE"]:
+        df[col] = None
+
+    # Most radios don't have a channel 0, so start the index at 1
+    df.index = range(1, len(df) + 1)
+    df.index.name = "Location"
+
+    # Order columns as Chirp expects
+    df = df[[
+        "Name",
+        "Frequency",
+        "Duplex",
+        "Offset",
+        "Tone",
+        "rToneFreq",
+        "cToneFreq",
+        "DtcsCode",
+        "DtcsPolarity",
+        "Mode",
+        "TStep",
+        "Skip",
+        "Comment",
+        "URCALL",
+        "RPT1CALL",
+        "RPT2CALL",
+        "DVCODE",
+    ]]
+
+    return df
+
+
+def write_chirp_csv(df: pd.DataFrame) -> None:
+
+    df = format_df_for_chirp(df)
+    df.to_csv("assets/rr_frequencies.csv")
 
 
 if __name__ == "__main__":
 
     args = parse_args()
 
-    if args.id is not None:
-        call, freq, latlong, offset, tone = parse_repeaterbook(args.id)
-    else:
-        call, freq, latlong, offset, tone = None, None, None, None, None
+    df = generate_repeater_df(args)
 
-    results = {
-        "Group Name": args.name,
-        "Callsign": args.call if args.call else call,
-        "Location": args.loc,
-        "Mode": args.mode,
-        "Output (MHz)": args.freq if args.freq else freq, 
-        "Offset (MHz)": args.offset if args.offset else offset,
-        "Tone (Hz)": args.tone if args.tone else tone,
-        "Coordinates": [args.lat, args.lon] if args.lat and args.lon else latlong,
-    }
-
-    df = pd.read_json("assets/repeaters.json", dtype=False)
-    df = df.append(results, ignore_index=True)
-    df.to_json("assets/repeaters.json", orient="records", indent=4)
-
-    table = df.drop(
-        columns=["Coordinates"]
-    ).to_markdown(
-        index=False, 
-        disable_numparse=True, 
-        colalign=["left", "left", "left", "left", "right", "right", "right"]
-    )
-    with open("assets/repeaters_template.md", "r") as f:
-        maps = f.read().replace("{{ table }}", table)
-    with open("repeaters.md", "w") as f:
-        f.write(maps)
+    write_index_md(df)
+    write_repeaters_md(df)
+    write_map_md(df)
+    write_chirp_csv(df)

@@ -44,8 +44,8 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | RCTacoma      | W7DK       | Crawford Mtn.      | FM     |        147.380 |           +0.6 |       103.5 |
 | Pierce ARES   | W7AAO      | Grass Mtn.         | FM     |        145.370 |           -0.6 |       136.5 |
 | SeaTac        | WW7STR     | Tiger Mtn.         | NBFM   |        146.875 |           -0.6 |       103.5 |
-| SeaTac        | WW7STR     | Cougar Mtn.        | FM     |        224.440 |           -1.6 |       103.5 |
 | SeaTac        | WW7STR     | Tiger Mtn.         | FM     |        443.050 |           +5.0 |       103.5 |
+| SeaTac        | WW7STR     | Cougar Mtn.        | FM     |        224.440 |           -1.6 |       103.5 |
 | SeaTac        | WW7STR     | Cougar Mtn.        | FM     |       927.2125 |          -25.0 |       114.8 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
@@ -54,56 +54,57 @@ If you have a repeater you'd like to have added to the list, please contact [Que
 
 ### Clubs and repeater associations
 
-PSRG
-: [Puget Sound Repeater Group](https://psrg.org)
-
-Shoreline ACS
-: [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs/)
-
-Highline ARC
-: [Highline Amateur Radio Club](https://highlinearc.org)
-
-Marrowstone
-: [Marrowstone Island Amateur Radio Club](https://www.qrz.com/db/AA7MI)
-
 BEARONS
-: [Boeing Employees Amateur Radio Operators North Society](https://w7flybearons.org/)
-
-WWDXC
-: [Western Washington DX Club](https://www.wwdxc.org)
-
-Bainbridge
-: [Bainbridge Island Amateur Radio Club](https://www.w7npc.org/)
-
-K7DK
-: [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
-
-Lake Wash.
-: [Lake Washington Ham Club](http://www.lakewashingtonhamclub.org/)
-
-K7PP
-: [Peter K7PP's repeater network](http://www.k7pp.itgo.com/)
-
-N9VW
-: [Steve N9VW's repeater system](https://www.qrz.com/db/N9VW)
-
-WW7SEA
-: [Barry K7PAL's Western Washington repeater system](https://www.qrz.com/db/WW7SEA)
+: [Boeing Employees Amateur Radio Operators North Society](https://w7flybearons.org)
 
 BEARS
-: [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)
+: [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears)
 
-Mike & Key
-: [Mike and Key Amateur Radio Club](https://mikeandkey.org/)
+Bainbridge
+: [Bainbridge Island Amateur Radio Club](https://www.w7npc.org)
 
 Eatonville
 : [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)
 
-RCTacoma
-: [Radio Club of Tacoma](http://www.w7dk.org/)
+Highline ARC
+: [Highline Amateur Radio Club](https://highlinearc.org)
+
+K7DK
+: [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
+
+K7PP
+: [Peter K7PP's repeater network](http://www.k7pp.itgo.com)
+
+Lake Wash.
+: [Lake Washington Ham Club](http://www.lakewashingtonhamclub.org)
+
+Marrowstone
+: [Marrowstone Island Amateur Radio Club](https://www.qrz.com/db/AA7MI)
+
+Mike & Key
+: [Mike and Key Amateur Radio Club](https://mikeandkey.org)
+
+N9VW
+: [Steve N9VW's repeater system](https://www.qrz.com/db/N9VW)
+
+PSRG
+: [Puget Sound Repeater Group](http://www.psrg.org/)
 
 Pierce ARES
 : [Pierce County ARES](http://www.piercecountyares.net)
 
+RCTacoma
+: [Radio Club of Tacoma](http://www.w7dk.org)
+
 SeaTac
-: [SeaTac Repeater Association](https://seatacra.com/)
+: [SeaTac Repeater Association](https://seatacra.com)
+
+Shoreline ACS
+: [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs)
+
+WW7SEA
+: [Barry K7PAL's Western Washington repeater system](https://www.qrz.com/db/WW7SEA)
+
+WWDXC
+: [Western Washington DX Club](https://www.wwdxc.org)
+
