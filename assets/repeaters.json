@@ -317,7 +317,7 @@
     {
         "Group Name": "BEARS",
         "Callsign": "K7NWS",
-        "Location": "West Tiger Mtn.",
+        "Location": "Tiger Mtn.",
         "Mode": "FM",
         "Output (MHz)": "145.330",
         "Offset (MHz)": "-0.6",
@@ -332,7 +332,7 @@
     {
         "Group Name": "BEARS",
         "Callsign": "K7NWS",
-        "Location": "West Tiger Mtn.",
+        "Location": "Tiger Mtn.",
         "Mode": "FM",
         "Output (MHz)": "224.340",
         "Offset (MHz)": "-1.6",
@@ -347,7 +347,7 @@
     {
         "Group Name": "BEARS",
         "Callsign": "K7NWS",
-        "Location": "West Tiger Mtn.",
+        "Location": "Tiger Mtn.",
         "Mode": "DMR",
         "Output (MHz)": "442.075",
         "Offset (MHz)": "+5.0",
@@ -362,7 +362,7 @@
     {
         "Group Name": "Mike & Key",
         "Callsign": "K7LED",
-        "Location": "East Tiger Mtn.",
+        "Location": "Tiger Mtn.",
         "Mode": "FM",
         "Output (MHz)": "146.820",
         "Offset (MHz)": "-0.6",
@@ -377,7 +377,7 @@
     {
         "Group Name": "Mike & Key",
         "Callsign": "K7LED",
-        "Location": "East Tiger Mtn.",
+        "Location": "Tiger Mtn.",
         "Mode": "FM",
         "Output (MHz)": "224.120",
         "Offset (MHz)": "-1.6",
@@ -512,7 +512,7 @@
     {
         "Group Name": "SeaTac",
         "Callsign": "WW7STR",
-        "Location": "East Tiger Mtn.",
+        "Location": "Tiger Mtn.",
         "Mode": "NBFM",
         "Output (MHz)": "146.875",
         "Offset (MHz)": "-0.6",
@@ -527,7 +527,7 @@
     {
         "Group Name": "SeaTac",
         "Callsign": "WW7STR",
-        "Location": "East Tiger Mtn.",
+        "Location": "Tiger Mtn.",
         "Mode": "FM",
         "Output (MHz)": "443.050",
         "Offset (MHz)": "+5.0",

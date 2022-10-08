@@ -30,11 +30,11 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | N9VW          | N9VW       | Issaquah           | FM     |         53.830 |           -1.7 |       123.0 |
 | WW7SEA        | WW7SEA     | Seattle            | FM     |        444.700 |           +5.0 |       103.5 |
 | WW7SEA        | WW7SEA     | Seattle            | Fusion |        444.425 |           +5.0 |       141.3 |
-| BEARS         | K7NWS      | West Tiger Mtn.    | FM     |        145.330 |           -0.6 |       179.9 |
-| BEARS         | K7NWS      | West Tiger Mtn.    | FM     |        224.340 |           -1.6 |       110.9 |
-| BEARS         | K7NWS      | West Tiger Mtn.    | DMR    |        442.075 |           +5.0 |        CC 2 |
-| Mike & Key    | K7LED      | East Tiger Mtn.    | FM     |        146.820 |           -0.6 |       103.5 |
-| Mike & Key    | K7LED      | East Tiger Mtn.    | FM     |        224.120 |           -1.6 |       103.5 |
+| BEARS         | K7NWS      | Tiger Mtn.         | FM     |        145.330 |           -0.6 |       179.9 |
+| BEARS         | K7NWS      | Tiger Mtn.         | FM     |        224.340 |           -1.6 |       110.9 |
+| BEARS         | K7NWS      | Tiger Mtn.         | DMR    |        442.075 |           +5.0 |        CC 2 |
+| Mike & Key    | K7LED      | Tiger Mtn.         | FM     |        146.820 |           -0.6 |       103.5 |
+| Mike & Key    | K7LED      | Tiger Mtn.         | FM     |        224.120 |           -1.6 |       103.5 |
 | Eatonville    | W7EAT      | Eatonville         | FM     |        146.700 |           -0.6 |       103.5 |
 | Eatonville    | W7EAT      | Graham             | FM     |        224.180 |           -1.6 |       103.5 |
 | Eatonville    | W7EAT      | Eatonville         | FM     |        442.725 |           +5.0 |       103.5 |
@@ -43,8 +43,8 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | RCTacoma      | W7DK       | Tacoma             | FM     |        145.210 |           -0.6 |       141.3 |
 | RCTacoma      | W7DK       | Crawford Mtn.      | FM     |        147.380 |           +0.6 |       103.5 |
 | Pierce ARES   | W7AAO      | Grass Mtn.         | FM     |        145.370 |           -0.6 |       136.5 |
-| SeaTac        | WW7STR     | East Tiger Mtn.    | NBFM   |        146.875 |           -0.6 |       103.5 |
-| SeaTac        | WW7STR     | East Tiger Mtn.    | FM     |        443.050 |           +5.0 |       103.5 |
+| SeaTac        | WW7STR     | Tiger Mtn.         | NBFM   |        146.875 |           -0.6 |       103.5 |
+| SeaTac        | WW7STR     | Tiger Mtn.         | FM     |        443.050 |           +5.0 |       103.5 |
 | SeaTac        | WW7STR     | Cougar Mtn.        | FM     |        224.440 |           -1.6 |       103.5 |
 | SeaTac        | WW7STR     | Cougar Mtn.        | FM     |       927.2125 |          -25.0 |       114.8 |
 
