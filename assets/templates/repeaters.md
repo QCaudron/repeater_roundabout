@@ -11,6 +11,9 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
+[^dmr]: For information on our local DMR repeaters, see [SeattleDMR](http://seattledmr.org/) and [PNWDigital](https://pnwdigital.net/).
+[^nbfm]: This repeater operates in *narrow-band* FM mode; please use the 12.5 KHz deviation setting on your radio.
+
 ---
 
 ### Clubs and repeater associations
