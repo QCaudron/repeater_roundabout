@@ -54,8 +54,8 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
 
     # Otherwise, parse the arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument("--name", type=str, required=True)
-    parser.add_argument("--loc", type=str, required=True)
+    parser.add_argument("--name", type=str, default=None)
+    parser.add_argument("--loc", type=str, default=None)
     parser.add_argument("--id", type=str, default=None)
     parser.add_argument("--call", type=str, default=None)
     parser.add_argument("--freq", type=str, default=None)
@@ -66,6 +66,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     parser.add_argument("--lon", type=float, default=None)
     parser.add_argument("--long_name", type=str, default=None)
     parser.add_argument("--url", type=str, default=None)
+    parser.add_argument("--regen", action="store_true")
     return parser.parse_args()
 
 
@@ -174,6 +175,9 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
         A dataframe of known repeaters from assets/repeaters.json 
         combined with a new repeater taken from user input.
     """
+
+    if args.regen:
+        return pd.read_json("assets/repeaters.json", dtype=False)
 
     # Combine RepeaterBook info with user input
     repeaterbook = repeater_from_repeaterbook(args.id)
