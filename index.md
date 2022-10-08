@@ -9,7 +9,7 @@ The Puget Sound Repeater Roundabout is a weekend-long event held on many of our 
 
 Anyone with a ham radio license can participate! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Saturday October 08 at 12:02.
+> This page was last updated on Saturday October 08 at 15:07.
 
 
 # Repeaters
@@ -51,7 +51,7 @@ You must use [this spreadsheet](https://docs.google.com/spreadsheets/d/1Frz6BoFU
 Here's an example log file :
 
 | Date    | Time  | Callsign | Report  | Repeater | Frequency |
-|:--------|:------|:---------|--------:|:--------:|----------:|
+|:--------|:------|:---------|--------:|:---------|----------:|
 | Nov 19  | 11:32 | KI7RMU   |     CM5 | WW7PSR   | 146.960   |
 | Nov 19  | 17:02 | KD7DK    |      59 | WW7PSR   | 52.87     |
 | Nov 20  | 08:51 | K7RCH    |     CM4 | W7AW     | 145.130   |
