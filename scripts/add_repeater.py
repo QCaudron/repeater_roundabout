@@ -7,13 +7,15 @@ import requests
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--name", help="Name of the repeater system", type=str, required=True)
-    parser.add_argument("--id", help="ID code from repeaterbook.com", type=str, required=True)
     parser.add_argument("--loc", help="A general location", type=str, required=True)
+    parser.add_argument("--id", help="ID code from repeaterbook.com", type=str)
     parser.add_argument("--mode", help="Mode", type=str, default="FM")
     parser.add_argument("--call", help="Callsign", type=str, default=None)
     parser.add_argument("--freq", help="Output frequency", type=str, default=None)
     parser.add_argument("--offset", help="Offset", type=str, default=None)
     parser.add_argument("--tone", help="Tone", type=str, default=None)
+    parser.add_argument("--lat", type=float, default=None)
+    parser.add_argument("--lon", type=float, default=None)
     return parser.parse_args()
 
 
@@ -62,9 +64,11 @@ def parse_repeaterbook(id_code: str) -> Tuple:
 if __name__ == "__main__":
 
     args = parse_args()
-    parse_repeaterbook(args.id)
 
-    call, freq, latlong, offset, tone = parse_repeaterbook(args.id)
+    if args.id is not None:
+        call, freq, latlong, offset, tone = parse_repeaterbook(args.id)
+    else:
+        call, freq, latlong, offset, tone = None, None, None, None, None
 
     results = {
         "Group Name": args.name,
@@ -74,10 +78,10 @@ if __name__ == "__main__":
         "Output (MHz)": args.freq if args.freq else freq, 
         "Offset (MHz)": args.offset if args.offset else offset,
         "Tone (Hz)": args.tone if args.tone else tone,
-        "Coordinates": latlong,
+        "Coordinates": [args.lat, args.lon] if args.lat and args.lon else latlong,
     }
 
-    df = pd.read_json("assets/repeaters.json")
+    df = pd.read_json("assets/repeaters.json", dtype=False)
     df = df.append(results, ignore_index=True)
     df.to_json("assets/repeaters.json", orient="records", indent=4)
 

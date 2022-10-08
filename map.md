@@ -55,4 +55,6 @@ L.marker([46.84310150, -122.76300049]).bindPopup("W7DK 147.380").addTo(map);
 
 L.marker([47.19979858, -121.75599670]).bindPopup("W7AAO 145.370").addTo(map);
 
+L.marker([47.488486, -121.946564]).bindPopup("WW7STR 146.875, 443.050").addTo(map);
+L.marker([47.540297, -122.099856]).bindPopup("WW7STR 224.440, 927.2125").addTo(map);
 </script>
