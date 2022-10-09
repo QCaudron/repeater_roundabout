@@ -36,7 +36,7 @@
         "Mode": "DMR [^dmr]",
         "Output (MHz)": "440.775",
         "Offset (MHz)": "+5.0",
-        "Tone (Hz)": "CC2 TS1 Seattle1 (TG 803153)",
+        "Tone (Hz)": "CC2/TS1 Seattle1 (TG 803153)",
         "Coordinates": [
             47.62400055,
             -122.31500244
@@ -351,7 +351,7 @@
         "Mode": "DMR [^dmr]",
         "Output (MHz)": "442.075",
         "Offset (MHz)": "+5.0",
-        "Tone (Hz)": "CC2 TS1 BEARS1 (TG 312488)",
+        "Tone (Hz)": "CC2/TS1 BEARS1 (TG 312488)",
         "Coordinates": [
             47.50389862,
             -121.97599792

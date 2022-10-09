@@ -11,7 +11,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 |:--------------|:-----------|:-------------------|:-------------|---------------:|---------------:|-----------------------------:|
 | PSRG          | WW7PSR     | Seattle            | FM           |        146.960 |           -0.6 |                        103.5 |
 | PSRG          | WW7PSR     | Seattle            | FM           |         52.870 |           -1.7 |                        103.5 |
-| PSRG          | WW7PSR     | Seattle            | DMR [^dmr]   |        440.775 |           +5.0 | CC2 TS1 Seattle1 (TG 803153) |
+| PSRG          | WW7PSR     | Seattle            | DMR [^dmr]   |        440.775 |           +5.0 | CC2/TS1 Seattle1 (TG 803153) |
 | Shoreline ACS | W7AUX      | Shoreline          | FM           |        442.825 |           +5.0 |                        103.5 |
 | Shoreline ACS | W7AUX      | Shoreline          | FM           |        440.300 |           +5.0 |                        103.5 |
 | Shoreline ACS | W7AUX      | Shoreline          | FM           |        224.020 |           -1.6 |                        103.5 |
@@ -32,7 +32,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | WW7SEA        | WW7SEA     | Seattle            | Fusion       |        444.425 |           +5.0 |                        141.3 |
 | BEARS         | K7NWS      | Tiger Mtn.         | FM           |        145.330 |           -0.6 |                        179.9 |
 | BEARS         | K7NWS      | Tiger Mtn.         | FM           |        224.340 |           -1.6 |                        110.9 |
-| BEARS         | K7NWS      | Tiger Mtn.         | DMR [^dmr]   |        442.075 |           +5.0 |   CC2 TS1 BEARS1 (TG 312488) |
+| BEARS         | K7NWS      | Tiger Mtn.         | DMR [^dmr]   |        442.075 |           +5.0 |   CC2/TS1 BEARS1 (TG 312488) |
 | Mike & Key    | K7LED      | Tiger Mtn.         | FM           |        146.820 |           -0.6 |                        103.5 |
 | Mike & Key    | K7LED      | Tiger Mtn.         | FM           |        224.120 |           -1.6 |                        103.5 |
 | Eatonville    | W7EAT      | Eatonville         | FM           |        146.700 |           -0.6 |                        103.5 |
