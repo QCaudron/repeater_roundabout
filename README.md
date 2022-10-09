@@ -24,7 +24,7 @@ This script can be called directly, in which case it will prompt you for repeate
 - Callsign (`--call`): The repeater's callsign (for example, `WW7PSR`)
 - Frequency (`--freq`): The repeater's frequency (for example, `146.960`)
 - Offset (`--offset`): The repeater's offset, in MHz (for example, `+0.6`)
-- Tone (`--tone`): The repeater's tone, in Hz (for example, `103.5`); for DMR repeaters, use something like `CC 2` for the color code
+- Tone (`--tone`): The repeater's tone, in Hz (for example, `103.5`); for DMR repeaters, use something like `CC2/TS1 BEARS1 TG/312488` for color code, time slot, and talk group name and number
 - Mode (`--mode`): The repeater's mode (for example, `FM` or `DMR`); defaults to `FM` if not provided
 - Latitude (`--lat`): The repeater's latitude, in decimal degrees (for example, `47.6062`)
 - Longitude (`--lon`): The repeater's longitude, in decimal degrees (for example, `-122.3321`)
