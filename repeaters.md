@@ -47,11 +47,15 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | SeaTac        | WW7STR     | Tiger Mtn.         | FM           |        443.050 |           +5.0 |                        103.5 |
 | SeaTac        | WW7STR     | Cougar Mtn.        | FM           |        224.440 |           -1.6 |                        103.5 |
 | SeaTac        | WW7STR     | Cougar Mtn.        | FM           |       927.2125 |          -25.0 |                        114.8 |
+| Seattle ACS   | W7ACS      | Seattle            | FM           |        442.300 |           +5.0 |                        141.3 |
+| Seattle ACS   | W7ACS      | Seattle            | FM           |        444.550 |           +5.0 |                        141.3 |
+| Seattle ACS   | W7ACS      | Seattle            | FM           |        442.875 |           +5.0 |                        141.3 |
+| Seattle ACS   | W7ACS      | Seattle            | FM           |        443.475 |           +5.0 |                        141.3 |
+| Seattle ACS   | W7ACS      | Seattle            | FM           |        443.650 |           +5.0 |                        141.3 |
+| Seattle ACS   | W7ACS      | Seattle            | FM           |        440.600 |           +5.0 |                        141.3 |
+| Seattle ACS   | W7ACS      | Seattle            | FM           |        443.200 |           +5.0 |                        141.3 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
-
-[^dmr]: For information on our local DMR repeaters, see [SeattleDMR](http://seattledmr.org/) and [PNWDigital](https://pnwdigital.net/).
-[^nbfm]: This repeater operates in *narrow-band* FM mode; please use the 12.5 KHz deviation setting on your radio.
 
 ---
 
@@ -102,6 +106,9 @@ RCTacoma
 SeaTac
 : [SeaTac Repeater Association](https://seatacra.com)
 
+Seattle ACS
+: [Seattle Auxiliary Communications Service](https://www.seattleacs.org/)
+
 Shoreline ACS
 : [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs)
 
@@ -112,3 +119,8 @@ WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org)
 
 
+
+---
+
+[^dmr]: For information on our local DMR repeaters, see [SeattleDMR](http://seattledmr.org/) and [PNWDigital](https://pnwdigital.net/).
+[^nbfm]: This repeater operates in *narrow-band* FM mode; please use the 12.5 KHz deviation setting on your radio.

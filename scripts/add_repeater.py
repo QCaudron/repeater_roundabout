@@ -26,6 +26,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     if len(sys.argv) == 1:
         name = input("Group Name: ") or None
         loc = input("Location: ") or None
+        id = input("RepeaterBook ID: ") or None
         call = input("Callsign: ") or None
         freq = input("Frequency (MHz): ") or None
         offset = input("Offset (MHz): ") or None
@@ -39,6 +40,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
         args = {
             "name": name,
             "loc": loc,
+            "id": id,
             "call": call,
             "freq": freq,
             "offset": offset,
@@ -48,6 +50,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
             "lon": lon,
             "long_name": long_name,
             "url": url,
+            "regen": False,
         }
 
         return SimpleNamespace(**args)
@@ -150,7 +153,7 @@ def repeater_from_args(args: Union[argparse.Namespace, SimpleNamespace]) -> dict
         "Output (MHz)": args.freq, 
         "Offset (MHz)": args.offset,
         "Tone (Hz)": args.tone,
-        "Coordinates": [args.lat, args.lon],
+        "Coordinates": [args.lat, args.lon] if args.lat and args.lon else None,
         "Long Name": args.long_name,
         "Website": args.url,
     }

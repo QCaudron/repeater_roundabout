@@ -568,5 +568,110 @@
         ],
         "Long Name": "SeaTac Repeater Association",
         "Website": "https:\/\/seatacra.com"
+    },
+    {
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "442.300",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
+            47.5882,
+            -122.31558
+        ],
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
+    },
+    {
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "444.550",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
+            47.60430145,
+            -122.33000183
+        ],
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
+    },
+    {
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "442.875",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
+            47.62360001,
+            -122.31500244
+        ],
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
+    },
+    {
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "443.475",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
+            47.60620117,
+            -122.33200073
+        ],
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
+    },
+    {
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "443.650",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
+            47.72990036,
+            -122.33699799
+        ],
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
+    },
+    {
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "440.600",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
+            47.77193,
+            -122.28101
+        ],
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
+    },
+    {
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "443.200",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
+            47.52099991,
+            -122.34300232
+        ],
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
     }
 ]
