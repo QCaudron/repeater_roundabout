@@ -51,9 +51,9 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | Seattle ACS   | W7ACS      | Seattle            | FM           |        444.550 |           +5.0 |                      141.3 |
 | Seattle ACS   | W7ACS      | Seattle            | FM           |        442.875 |           +5.0 |                      141.3 |
 | Seattle ACS   | W7ACS      | Seattle            | FM           |        443.475 |           +5.0 |                      141.3 |
-| Seattle ACS   | W7ACS      | Seattle            | FM           |        443.650 |           +5.0 |                      141.3 |
-| Seattle ACS   | W7ACS      | Seattle            | FM           |        440.600 |           +5.0 |                      141.3 |
-| Seattle ACS   | W7ACS      | Seattle            | FM           |        443.200 |           +5.0 |                      141.3 |
+| Seattle ACS   | W7ACS      | Shoreline          | FM           |        443.650 |           +5.0 |                      141.3 |
+| Seattle ACS   | W7ACS      | Lake Forest Park   | FM           |        440.600 |           +5.0 |                      141.3 |
+| Seattle ACS   | W7ACS      | White Center       | FM           |        443.200 |           +5.0 |                      141.3 |
 | Jefferson ARC | W7JCR      | Port Townsend      | FM           |        145.150 |           -0.6 |                      114.8 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
