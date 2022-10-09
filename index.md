@@ -9,12 +9,12 @@ The Puget Sound Repeater Roundabout is a weekend-long event held on many of our 
 
 Anyone with a ham radio license can participate! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Saturday October 08 at 18:02.
+> This page was last updated on Saturday October 08 at 18:07.
 
 
 # Repeaters
 
-Only these [45 participating repeaters](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
+Only these [45 participating repeaters from 19 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
 
 Please ensure that there is no ongoing activity on a repeater (such as a net) before you call for contacts. We cannot interfere with normal operation.
 

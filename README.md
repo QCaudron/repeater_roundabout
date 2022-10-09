@@ -15,7 +15,7 @@ The files in `assets/templates/` are used to generate the pages on the site.
 
 ## Adding a repeater
 
-To add a repeater, you should call `python scripts/add_repeater.py`. This script will prompt you for the repeater's information, and will add it to the `assets/repeaters.json` file containing all known repeaters, as well as regenerating the `assets/rr_frequencies.csv` file for CHIRP use. 
+To add a repeater, you should call `python scripts/update.py`. This script will prompt you for the repeater's information, and will add it to the `assets/repeaters.json` file containing all known repeaters, as well as regenerating the `assets/rr_frequencies.csv` file for CHIRP use. 
 
 This script can be called directly, in which case it will prompt you for repeater information, or you can call it by passing the following arguments to the command-line for the same effect.
 
@@ -31,15 +31,15 @@ This script can be called directly, in which case it will prompt you for repeate
 - Long name (`--long_name`): The full name of the group that runs the repeater (for example, `Puget Sound Repeater Group` or `Shoreline Amateur Communication Society`)
 - Website (`--url`): The URL of the group's website (for example, `https://psrg.org` or `https://shorelineacs.org`); please include the `http://` prefix
 
-For example, you may call `python scripts/add_repeater.py` to be prompted to enter all of this information, or call
+For example, you may call `python scripts/update.py` to be prompted to enter all of this information, or call
 
 ```bash
-python scripts/add_repeater --name PSRG --loc Seattle --freq 146.960 --offset -0.6 --tone 103.5 --lat 47.623963 --lon -122.315173 --long_name "Puget Sound Repeater Group" --url https://psrg.org
+python scripts/update --name PSRG --loc Seattle --freq 146.960 --offset -0.6 --tone 103.5 --lat 47.623963 --lon -122.315173 --long_name "Puget Sound Repeater Group" --url https://psrg.org
 ```
 
 ## Regenerating the site
 
-If any changes are made to `repeaters.json` or to template files, you can regenerate the website's root `.md` files without adding a new repeater by calling `python scripts/add_repeater.py --regen`.
+If any changes are made to `repeaters.json` or to template files, you can regenerate the website's root `.md` files without adding a new repeater by calling `python scripts/update.py --regen`.
 
 
 ## Contributing

@@ -91,14 +91,14 @@ def repeater_from_repeaterbook(id_code: str) -> dict:
     # If no ID is provided, don't get any info from RepeaterBook
     if id_code is None:
         return {}
-    
+
     # Otherwise, grab repeater info
     url = f"https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID={id_code}"
     source = requests.get(url)
 
     # Extract various pieces of information
     call = source.text.split("msResult.php?call=")[1].split("&")[0]
-    
+
     freq = source.text.split("Downlink:</td>\n<td>")[1].split("</td>")[0]
     freq = f"{float(freq):.04f}"
     if freq[-1] == "0":
@@ -112,7 +112,7 @@ def repeater_from_repeaterbook(id_code: str) -> dict:
     latlong = source.text.split("center: ")[1].split("\n")[0][:-1]
 
     tone = source.text.split("Uplink Tone:</td>\n<td>")[1].split("</td")[0]
-    
+
     # Try cleaning up lat / long into a Python list
     try:
         latlong = eval(latlong)
@@ -150,7 +150,7 @@ def repeater_from_args(args: Union[argparse.Namespace, SimpleNamespace]) -> dict
         "Callsign": args.call,
         "Location": args.loc,
         "Mode": args.mode,
-        "Output (MHz)": args.freq, 
+        "Output (MHz)": args.freq,
         "Offset (MHz)": args.offset,
         "Tone (Hz)": args.tone,
         "Coordinates": [args.lat, args.lon] if args.lat and args.lon else None,
@@ -163,7 +163,9 @@ def repeater_from_args(args: Union[argparse.Namespace, SimpleNamespace]) -> dict
     return repeater
 
 
-def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd.DataFrame:
+def generate_repeater_df(
+    args: Union[argparse.Namespace, SimpleNamespace]
+) -> pd.DataFrame:
     """
     Create a DataFrame of repeaters from known repeaters combined with user input.
 
@@ -175,7 +177,7 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
     Returns
     -------
     pd.DataFrame
-        A dataframe of known repeaters from assets/repeaters.json 
+        A dataframe of known repeaters from assets/repeaters.json
         combined with a new repeater taken from user input.
     """
 
@@ -219,15 +221,19 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
-    df = df.assign(Offset=df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}"))
+    df = df.assign(
+        Offset=df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}")
+    )
 
     # Some columns can be reused
     df["Comment"] = df["Callsign"] + " - " + df["Output (MHz)"]
-    df = df.rename(columns={
-        "Callsign": "Name",
-        "Output (MHz)": "Frequency",
-        "Tone (Hz)": "rToneFreq",
-    })
+    df = df.rename(
+        columns={
+            "Callsign": "Name",
+            "Output (MHz)": "Frequency",
+            "Tone (Hz)": "rToneFreq",
+        }
+    )
 
     # Set some constant basics that are required for Chirp to read the file
     df["Tone"] = "Tone"
@@ -235,7 +241,7 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df["DtcsCode"] = "023"
     df["DtcsPolarity"] = "NN"
     df["TStep"] = "5.00"
-    
+
     # The following columns are null
     for col in ["Skip", "URCALL", "RPT1CALL", "RPT2CALL", "DVCODE"]:
         df[col] = None
@@ -245,25 +251,27 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df.index.name = "Location"
 
     # Order columns as Chirp expects
-    df = df[[
-        "Name",
-        "Frequency",
-        "Duplex",
-        "Offset",
-        "Tone",
-        "rToneFreq",
-        "cToneFreq",
-        "DtcsCode",
-        "DtcsPolarity",
-        "Mode",
-        "TStep",
-        "Skip",
-        "Comment",
-        "URCALL",
-        "RPT1CALL",
-        "RPT2CALL",
-        "DVCODE",
-    ]]
+    df = df[
+        [
+            "Name",
+            "Frequency",
+            "Duplex",
+            "Offset",
+            "Tone",
+            "rToneFreq",
+            "cToneFreq",
+            "DtcsCode",
+            "DtcsPolarity",
+            "Mode",
+            "TStep",
+            "Skip",
+            "Comment",
+            "URCALL",
+            "RPT1CALL",
+            "RPT2CALL",
+            "DVCODE",
+        ]
+    ]
 
     return df
 
@@ -286,6 +294,7 @@ def write_index_md(df: pd.DataFrame) -> None:
     # Fill in the number of repeaters and the updated date
     index = index.replace("{{ n_repeaters }}", str(len(df)))
     index = index.replace("{{ date_updated }}", now)
+    index = index.replace("{{ n_groups }}", str(df["Group Name"].nunique()))
 
     with open("index.md", "w") as f:
         f.write(index)
@@ -302,11 +311,19 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
     """
 
     # Create the main markdown table
-    table_cols = ["Group Name", "Callsign", "Location", "Mode", "Output (MHz)", "Offset (MHz)", "Tone (Hz)"]
+    table_cols = [
+        "Group Name",
+        "Callsign",
+        "Location",
+        "Mode",
+        "Output (MHz)",
+        "Offset (MHz)",
+        "Tone (Hz)",
+    ]
     table = df[table_cols].to_markdown(
-        index=False, 
-        disable_numparse=True, 
-        colalign=["left", "left", "left", "left", "right", "right", "right"]
+        index=False,
+        disable_numparse=True,
+        colalign=["left", "left", "left", "left", "right", "right", "right"],
     )
 
     # Create a list of short-name-to-long-description mappings
@@ -338,16 +355,20 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
 
     coords = np.array(df["Coordinates"].to_list())
     dist = pdist(coords)
-    allocations = fcluster(linkage(dist, method="complete"), threshold, criterion="distance")
+    allocations = fcluster(
+        linkage(dist, method="complete"), threshold, criterion="distance"
+    )
 
     clusters = defaultdict(list)
     for idx, allocation in enumerate(allocations):
-        clusters[allocation].append(df.iloc[idx][["Callsign", "Output (MHz)", "Coordinates"]].to_dict())
+        clusters[allocation].append(
+            df.iloc[idx][["Callsign", "Output (MHz)", "Coordinates"]].to_dict()
+        )
 
     pins = []
 
     for cluster in clusters.values():
-    
+
         msg = ""
         for repeater in cluster:
             msg += f"{repeater['Callsign']} {repeater['Output (MHz)']}<br>"
