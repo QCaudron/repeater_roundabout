@@ -16,7 +16,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-L.marker([47.6239004150, -122.3150024400]).bindPopup('WW7PSR 146.960<br>WW7PSR 52.870<br>WW7PSR 440.775<br>W7ACS 442.875<br>').addTo(map);
+L.marker([47.6171693850, -122.3181346817]).bindPopup('WW7PSR 146.960<br>WW7PSR 52.870<br>WW7PSR 440.775<br>W7ACS 442.300<br>W7ACS 444.550<br>W7ACS 442.875<br>').addTo(map);
 L.marker([47.7622489900, -122.3494988000]).bindPopup('W7AUX 442.825<br>W7AUX 440.300<br>W7AUX 224.020<br>').addTo(map);
 L.marker([47.4508018500, -122.2870025600]).bindPopup('NC7G 146.660<br>WA7ST 443.100<br>').addTo(map);
 L.marker([48.0583000200, -122.6880035400]).bindPopup('AA7MI 440.725<br>').addTo(map);
@@ -37,8 +37,8 @@ L.marker([47.2787017800, -122.5120010400]).bindPopup('W7DK 145.210<br>').addTo(m
 L.marker([46.8431015000, -122.7630004900]).bindPopup('W7DK 147.380<br>').addTo(map);
 L.marker([47.1997985800, -121.7559967000]).bindPopup('W7AAO 145.370<br>').addTo(map);
 L.marker([47.5402970000, -122.0998560000]).bindPopup('WW7STR 224.440<br>WW7STR 927.2125<br>').addTo(map);
-L.marker([47.5995675400, -122.3258608533]).bindPopup('W7ACS 442.300<br>W7ACS 444.550<br>W7ACS 443.475<br>').addTo(map);
-L.marker([47.7299003600, -122.3369979900]).bindPopup('W7ACS 443.650<br>').addTo(map);
+L.marker([47.6510101000, -122.3893988000]).bindPopup('W7ACS 443.475<br>').addTo(map);
+L.marker([47.6901190000, -122.3177855000]).bindPopup('W7ACS 443.650<br>').addTo(map);
 L.marker([47.7719300000, -122.2810100000]).bindPopup('W7ACS 440.600<br>').addTo(map);
 L.marker([47.5209999100, -122.3430023200]).bindPopup('W7ACS 443.200<br>').addTo(map);
 L.marker([48.1170005800, -122.7600021400]).bindPopup('W7JCR 145.150<br>').addTo(map);
