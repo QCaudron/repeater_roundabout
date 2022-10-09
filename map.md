@@ -9,7 +9,7 @@ The locations for these repeaters are approximate, and sourced from RepeaterBook
 <div id="map" style="height: 730px; border-radius: 500px;"></div>
 
 <script>
-var map = L.map('map').setView([47.48, -122.5], 9);
+var map = L.map('map').setView([47.54, -122.4], 9);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -41,5 +41,6 @@ L.marker([47.5995675400, -122.3258608533]).bindPopup('W7ACS 442.300<br>W7ACS 444
 L.marker([47.7299003600, -122.3369979900]).bindPopup('W7ACS 443.650<br>').addTo(map);
 L.marker([47.7719300000, -122.2810100000]).bindPopup('W7ACS 440.600<br>').addTo(map);
 L.marker([47.5209999100, -122.3430023200]).bindPopup('W7ACS 443.200<br>').addTo(map);
+L.marker([48.1170005800, -122.7600021400]).bindPopup('W7JCR 145.150<br>').addTo(map);
 
 </script>

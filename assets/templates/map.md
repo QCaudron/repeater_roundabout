@@ -9,7 +9,7 @@ The locations for these repeaters are approximate, and sourced from RepeaterBook
 <div id="map" style="height: 730px; border-radius: 500px;"></div>
 
 <script>
-var map = L.map('map').setView([47.48, -122.5], 9);
+var map = L.map('map').setView([47.54, -122.4], 9);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
