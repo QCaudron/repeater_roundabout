@@ -688,5 +688,20 @@
         ],
         "Long Name": "Jefferson County Amateur Radio Club",
         "Website": "https:\/\/w7jcr.wordpress.com\/"
+    },
+    {
+        "Group Name": "Newcastle",
+        "Callsign": "W7RNK",
+        "Location": "Cougar Mtn.",
+        "Mode": "DSTAR",
+        "Output (MHz)": "147.995",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "",
+        "Coordinates": [
+            47.540297,
+            -122.099856
+        ],
+        "Long Name": "Newcastle DSTAR Club",
+        "Website": "http:\/\/newcastle-dstar.com\/"
     }
 ]

@@ -55,6 +55,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | Seattle ACS   | W7ACS      | Lake Forest Park   | FM           |        440.600 |           +5.0 |                      141.3 |
 | Seattle ACS   | W7ACS      | White Center       | FM           |        443.200 |           +5.0 |                      141.3 |
 | Jefferson ARC | W7JCR      | Port Townsend      | FM           |        145.150 |           -0.6 |                      114.8 |
+| Newcastle     | W7RNK      | Cougar Mtn.        | DSTAR        |        147.995 |           -0.6 |                            |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -97,6 +98,9 @@ Mike & Key
 
 N9VW
 : [Steve N9VW's repeater system](https://www.qrz.com/db/N9VW)
+
+Newcastle
+: [Newcastle DSTAR Club](http://newcastle-dstar.com/)
 
 PSRG
 : [Puget Sound Repeater Group](http://www.psrg.org/)

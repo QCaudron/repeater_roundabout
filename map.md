@@ -36,7 +36,7 @@ L.marker([47.2528991700, -122.4440002400]).bindPopup('W7DK 147.280<br>W7DK 440.6
 L.marker([47.2787017800, -122.5120010400]).bindPopup('W7DK 145.210<br>').addTo(map);
 L.marker([46.8431015000, -122.7630004900]).bindPopup('W7DK 147.380<br>').addTo(map);
 L.marker([47.1997985800, -121.7559967000]).bindPopup('W7AAO 145.370<br>').addTo(map);
-L.marker([47.5402970000, -122.0998560000]).bindPopup('WW7STR 224.440<br>WW7STR 927.2125<br>').addTo(map);
+L.marker([47.5402970000, -122.0998560000]).bindPopup('WW7STR 224.440<br>WW7STR 927.2125<br>W7RNK 147.995<br>').addTo(map);
 L.marker([47.6510101000, -122.3893988000]).bindPopup('W7ACS 443.475<br>').addTo(map);
 L.marker([47.6901190000, -122.3177855000]).bindPopup('W7ACS 443.650<br>').addTo(map);
 L.marker([47.7719300000, -122.2810100000]).bindPopup('W7ACS 440.600<br>').addTo(map);
