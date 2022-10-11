@@ -66,6 +66,8 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | PSEnergy        | W7PSE      | Sumner             | FM           |        443.625 |           +5.0 |                      103.5 |
 | PSEnergy        | W7PSE      | Olympia            | FM           |        145.150 |           -0.6 |                      103.5 |
 | PSEnergy        | W7PSE      | Stampede           | FM           |        442.725 |           +5.0 |                      103.5 |
+| N7OEP           | N7OEP      | Baldi Mtn.         | FM           |         53.330 |           -1.7 |                      100.0 |
+| N7OEP           | N7OEP      | Baldi Mtn.         | Fusion       |        440.075 |           +5.0 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -117,6 +119,9 @@ Marrowstone
 
 Mike & Key
 : [Mike and Key Amateur Radio Club](https://mikeandkey.org)
+
+N7OEP
+: [Tom N7OEP's repeater system](https://www.qrz.com/db/n7oep)
 
 N9VW
 : [Steve N9VW's repeater system](https://www.qrz.com/db/N9VW)

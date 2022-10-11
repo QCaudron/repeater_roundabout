@@ -848,10 +848,40 @@
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            47.279242, 
+            47.279242,
             -121.348744
         ],
         "Long Name":"Puget Sound Energy Amateur Radio Group",
         "Website":"http:\/\/pseares.com\/"
+    },
+    {
+        "Group Name":"N7OEP",
+        "Callsign":"N7OEP",
+        "Location":"Baldi Mtn.",
+        "Mode":"FM",
+        "Output (MHz)":"53.330",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.22119904,
+            -121.85099792
+        ],
+        "Long Name":"Tom N7OEP's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/n7oep"
+    },
+    {
+        "Group Name":"N7OEP",
+        "Callsign":"N7OEP",
+        "Location":"Baldi Mtn.",
+        "Mode":"Fusion",
+        "Output (MHz)":"440.075",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.22119904,
+            -121.85099792
+        ],
+        "Long Name":"Tom N7OEP's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/n7oep"
     }
 ]
