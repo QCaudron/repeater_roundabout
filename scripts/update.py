@@ -111,7 +111,10 @@ def repeater_from_repeaterbook(id_code: str) -> dict:
 
     latlong = source.text.split("center: ")[1].split("\n")[0][:-1]
 
-    tone = source.text.split("Uplink Tone:</td>\n<td>")[1].split("</td")[0]
+    try:
+        tone = source.text.split("Uplink Tone:</td>\n<td>")[1].split("</td")[0]
+    except IndexError:
+        tone = None
 
     # Try cleaning up lat / long into a Python list
     try:
