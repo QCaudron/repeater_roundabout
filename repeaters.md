@@ -63,6 +63,9 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | Chehalis Valley | K7PG       | Penning Hill       | FM           |        145.430 |           -0.6 |                      110.9 |
 | Kingston        | NW7DR      | Kingston           | DSTAR        |       147.4625 |           -1.0 |                            |
 | Kingston        | NW7DR      | Kingston           | FM           |        444.725 |           +5.0 |                      123.0 |
+| PSEnergy        | W7PSE      | Sumner             | FM           |        443.625 |           +5.0 |                      103.5 |
+| PSEnergy        | W7PSE      | Olympia            | FM           |        145.150 |           -0.6 |                      103.5 |
+| PSEnergy        | W7PSE      | Stampede           | FM           |        442.725 |           +5.0 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -120,6 +123,9 @@ N9VW
 
 Newcastle
 : [Newcastle DSTAR Club](http://newcastle-dstar.com/)
+
+PSEnergy
+: [Puget Sound Energy Amateur Radio Group](http://pseares.com/)
 
 PSRG
 : [Puget Sound Repeater Group](http://www.psrg.org/)

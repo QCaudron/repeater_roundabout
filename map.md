@@ -48,5 +48,8 @@ L.marker([46.4880981400, -123.2149963400]).bindPopup('K7PG 147.060<br>').addTo(m
 L.marker([46.6619987500, -122.9639968900]).bindPopup('K7PG 145.430<br>').addTo(map);
 L.marker([47.8089300000, -122.4928300000]).bindPopup('NW7DR 147.4625<br>').addTo(map);
 L.marker([47.8439760000, -122.5427530000]).bindPopup('NW7DR 444.725<br>').addTo(map);
+L.marker([47.2032012900, -122.2399978600]).bindPopup('W7PSE 443.625<br>').addTo(map);
+L.marker([47.0378990200, -122.9010009800]).bindPopup('W7PSE 145.150<br>').addTo(map);
+L.marker([47.2792420000, -121.3487440000]).bindPopup('W7PSE 442.725<br>').addTo(map);
 
 </script>

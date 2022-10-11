@@ -808,5 +808,50 @@
         ],
         "Long Name":"Greater Kingston Radio Club",
         "Website":"https:\/\/gkrc.groups.io"
+    },
+    {
+        "Group Name":"PSEnergy",
+        "Callsign":"W7PSE",
+        "Location":"Sumner",
+        "Mode":"FM",
+        "Output (MHz)":"443.625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.20320129,
+            -122.23999786
+        ],
+        "Long Name":"Puget Sound Energy Amateur Radio Group",
+        "Website":"http:\/\/pseares.com\/"
+    },
+    {
+        "Group Name":"PSEnergy",
+        "Callsign":"W7PSE",
+        "Location":"Olympia",
+        "Mode":"FM",
+        "Output (MHz)":"145.150",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.03789902,
+            -122.90100098
+        ],
+        "Long Name":"Puget Sound Energy Amateur Radio Group",
+        "Website":"http:\/\/pseares.com\/"
+    },
+    {
+        "Group Name":"PSEnergy",
+        "Callsign":"W7PSE",
+        "Location":"Stampede",
+        "Mode":"FM",
+        "Output (MHz)":"442.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.279242, 
+            -121.348744
+        ],
+        "Long Name":"Puget Sound Energy Amateur Radio Group",
+        "Website":"http:\/\/pseares.com\/"
     }
 ]
