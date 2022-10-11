@@ -68,6 +68,10 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | PSEnergy        | W7PSE      | Stampede           | FM           |        442.725 |           +5.0 |                      103.5 |
 | N7OEP           | N7OEP      | Baldi Mtn.         | FM           |         53.330 |           -1.7 |                      100.0 |
 | N7OEP           | N7OEP      | Baldi Mtn.         | Fusion       |        440.075 |           +5.0 |                      103.5 |
+| West Seattle    | W7AW       | West Seattle       | FM           |        145.130 |           -0.6 |                      103.5 |
+| West Seattle    | W7AW       | West Seattle       | FM           |        441.800 |           +5.0 |                      141.3 |
+| West Seattle    | W7AW       | West Seattle       | DMR          |        440.975 |           +5.0 |     CC2/TS1 Local1 TG/3181 |
+| SCARC           | W7PIG      | Camano Island      | FM           |        223.880 |           -1.6 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -141,6 +145,9 @@ Pierce ARES
 RCTacoma
 : [Radio Club of Tacoma](http://www.w7dk.org)
 
+SCARC
+: [Stanwood Camano Amateur Radio Club](https://www.scarcwa.org/)
+
 SeaTac
 : [SeaTac Repeater Association](https://seatacra.com)
 
@@ -155,6 +162,9 @@ WW7SEA
 
 WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org)
+
+West Seattle
+: [West Seattle Amateur Radio Club](https://w7aw.org/)
 
 
 
