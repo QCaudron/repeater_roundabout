@@ -80,6 +80,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | MBARC           | K7SKW      | Bellingham         | FM           |        443.750 |           +5.0 |                      103.5 |
 | MBARC           | K7SKW      | Bellingham         | FM           |        147.160 |           +0.6 |                      103.5 |
 | MBARC           | K7SKW      | Bellingham         | Fusion       |        443.650 |           +5.0 |                      103.5 |
+| RASC            | N7GDE      | Lyman Hill         | FM           |        145.190 |           -0.6 |                      127.3 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -152,6 +153,9 @@ PSRG
 
 Pierce ARES
 : [Pierce County ARES](http://www.piercecountyares.net)
+
+RASC
+: [Radio Amateurs of Skagit Valley](http://www.rasconline.com/)
 
 RCTacoma
 : [Radio Club of Tacoma](http://www.w7dk.org)

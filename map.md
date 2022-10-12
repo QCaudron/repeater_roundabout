@@ -59,5 +59,6 @@ L.marker([47.9979496000, -122.1944999650]).bindPopup('WA7LAW 147.180<br>WA7LAW 4
 L.marker([48.6777000400, -122.8315010050]).bindPopup('K7SKW 146.740<br>K7SKW 444.050<br>').addTo(map);
 L.marker([48.7821006800, -122.3700027500]).bindPopup('K7SKW 443.750<br>').addTo(map);
 L.marker([48.8017997750, -122.4614982650]).bindPopup('K7SKW 147.160<br>K7SKW 443.650<br>').addTo(map);
+L.marker([48.5833015400, -122.1449966400]).bindPopup('N7GDE 145.190<br>').addTo(map);
 
 </script>

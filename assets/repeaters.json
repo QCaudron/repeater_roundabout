@@ -1063,5 +1063,20 @@
         ],
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/"
+    },
+    {
+        "Group Name":"RASC",
+        "Callsign":"N7GDE",
+        "Location":"Lyman Hill",
+        "Mode":"FM",
+        "Output (MHz)":"145.190",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.58330154,
+            -122.14499664
+        ],
+        "Long Name":"Radio Amateurs of Skagit Valley",
+        "Website":"http:\/\/www.rasconline.com\/"
     }
 ]
