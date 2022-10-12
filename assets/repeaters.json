@@ -988,5 +988,80 @@
         ],
         "Long Name":"Snohomish County Hams Club",
         "Website":"http:\/\/www.wa7law.org\/"
+    },
+    {
+        "Group Name":"MBARC",
+        "Callsign":"K7SKW",
+        "Location":"Orcas Island",
+        "Mode":"FM",
+        "Output (MHz)":"146.740",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.67779922,
+            -122.83200073
+        ],
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/"
+    },
+    {
+        "Group Name":"MBARC",
+        "Callsign":"K7SKW",
+        "Location":"Orcas Island",
+        "Mode":"FM",
+        "Output (MHz)":"444.050",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.67760086,
+            -122.83100128
+        ],
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/"
+    },
+    {
+        "Group Name":"MBARC",
+        "Callsign":"K7SKW",
+        "Location":"Bellingham",
+        "Mode":"FM",
+        "Output (MHz)":"443.750",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.78210068,
+            -122.37000275
+        ],
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/"
+    },
+    {
+        "Group Name":"MBARC",
+        "Callsign":"K7SKW",
+        "Location":"Bellingham",
+        "Mode":"FM",
+        "Output (MHz)":"147.160",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.80189896,
+            -122.46099854
+        ],
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/"
+    },
+    {
+        "Group Name":"MBARC",
+        "Callsign":"K7SKW",
+        "Location":"Bellingham",
+        "Mode":"Fusion",
+        "Output (MHz)":"443.650",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.80170059,
+            -122.46199799
+        ],
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/"
     }
 ]

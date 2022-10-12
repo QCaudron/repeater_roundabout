@@ -5,7 +5,7 @@ subtitle: Repeaters joining in the Repeater Roundabout fun.
 
 The following repeaters are participating in the Repeater Roundabout. Please ensure you **do not interfere** with the repeater's normal operation, including regular nets.
 
-You can get a general idea for the repeaters' locations on the [repeater map](/map). If you program your radio with Chirp, check out our [Chirp .csv file](https://raw.githubusercontent.com/QCaudron/repeater_roundabout/main/assets/rr_frequencies.csv) for all FM frequencies below.
+You can get a general idea for the repeaters' locations on the [repeater map](/map). If you program your radio with Chirp, check out our [Chirp .csv file](https://raw.githubusercontent.com/QCaudron/repeater_roundabout/main/assets/rr_frequencies.csv) for all FM and Fusion frequencies below.
 
 | Group Name      | Callsign   | Location           | Mode         |   Output (MHz) |   Offset (MHz) |                  Tone (Hz) |
 |:----------------|:-----------|:-------------------|:-------------|---------------:|---------------:|---------------------------:|
@@ -75,6 +75,11 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | SCARC           | W7PIG      | Camano Island      | FM           |        147.360 |           +0.6 |                      127.3 |
 | Snohomish       | WA7LAW     | Everett            | FM           |        147.180 |           +0.6 |                      103.5 |
 | Snohomish       | WA7LAW     | Everett            | Fusion       |        444.575 |           +5.0 |                      103.5 |
+| MBARC           | K7SKW      | Orcas Island       | FM           |        146.740 |           -0.6 |                      103.5 |
+| MBARC           | K7SKW      | Orcas Island       | FM           |        444.050 |           +5.0 |                      103.5 |
+| MBARC           | K7SKW      | Bellingham         | FM           |        443.750 |           +5.0 |                      103.5 |
+| MBARC           | K7SKW      | Bellingham         | FM           |        147.160 |           +0.6 |                      103.5 |
+| MBARC           | K7SKW      | Bellingham         | Fusion       |        443.650 |           +5.0 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -117,6 +122,9 @@ Kingston
 
 Lake Wash.
 : [Lake Washington Ham Club](http://www.lakewashingtonhamclub.org)
+
+MBARC
+: [Mount Baker Amateur Radio Club](https://mbarc.groups.io/)
 
 Maple Valley
 : [Maple Valley Emergency Repeater Association](https://www.qrz.com/db/kf7npl)
