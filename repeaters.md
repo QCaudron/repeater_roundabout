@@ -74,7 +74,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | SCARC           | W7PIG      | Camano Island      | FM           |        223.880 |           -1.6 |                      103.5 |
 | SCARC           | W7PIG      | Camano Island      | FM           |        147.360 |           +0.6 |                      127.3 |
 | Snohomish       | WA7LAW     | Everett            | FM           |        147.180 |           +0.6 |                      103.5 |
-| Snohomish       | WA7LAW     | Everett            | FM           |        444.575 |           +5.0 |                      103.5 |
+| Snohomish       | WA7LAW     | Everett            | Fusion       |        444.575 |           +5.0 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 

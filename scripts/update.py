@@ -222,8 +222,9 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df["Mode"] = df["Mode"].str.replace(r" \[.+\]", "")
 
     # Only format FM channels; we can't handle DMR or D-Star at the moment
-    df = df.loc[df["Mode"].isin(["FM", "NBFM"])]  # only FM repeaters
+    df = df.loc[df["Mode"].isin(["FM", "NBFM", "Fusion"])]  # only FM repeaters
     df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
+    df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
