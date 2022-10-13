@@ -81,6 +81,14 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | MBARC           | K7SKW      | Bellingham         | FM           |        147.160 |           +0.6 |                      103.5 |
 | MBARC           | K7SKW      | Bellingham         | Fusion       |        443.650 |           +5.0 |                      103.5 |
 | RASC            | N7GDE      | Lyman Hill         | FM           |        145.190 |           -0.6 |                      127.3 |
+| Snohomish ACS   | WA7DEM     | Lynnwood           | FM           |        146.780 |           -0.6 |                       D172 |
+| Snohomish ACS   | WA7DEM     | Marysville         | FM           |        224.380 |           -1.6 |                      103.5 |
+| Snohomish ACS   | WA7DEM     | Clearview          | FM           |        442.975 |           +5.0 |                       D172 |
+| Snohomish ACS   | WA7DEM     | Mountlake Terrace  | FM           |        443.725 |           +5.0 |                      103.5 |
+| Snohomish ACS   | WA7DEM     | Granite Falls      | FM           |         146.92 |           -0.6 |                      123.0 |
+| Snohomish ACS   | WA7DEM     | Clinton            | FM           |        440.375 |           +5.0 |                      103.5 |
+| Snohomish ACS   | WA7DEM     | Edmonds            | NBFM [^nbfm] |        444.025 |           +5.0 |                      156.7 |
+| Snohomish ACS   | WA7DEM     | Darrington         | FM           |        444.300 |           +5.0 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -174,6 +182,9 @@ Shoreline ACS
 
 Snohomish
 : [Snohomish County Hams Club](http://www.wa7law.org/)
+
+Snohomish ACS
+: [Snohomish County Auxiliary Communications Service](https://www.wa7dem.info/)
 
 WW7SEA
 : [Barry K7PAL's Western Washington repeater system](https://www.qrz.com/db/WW7SEA)
