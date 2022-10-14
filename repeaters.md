@@ -57,7 +57,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | Jefferson ARC   | W7JCR      | Port Townsend      | FM           |        145.150 |           -0.6 |                      114.8 |
 | Newcastle       | W7RNK      | Cougar Mtn.        | DSTAR        |        147.995 |           -0.6 |                            |
 | Maple Valley    | KF7NPL     | Maple Valley       | FM           |        147.260 |           +0.6 |                      103.5 |
-| Maple Valley    | KF7NPL     | Maple Valley       | FM           |        442.675 |           +5.0 |                        nan |
+| Maple Valley    | KF7NPL     | Maple Valley       | DSTAR        |        442.675 |           +5.0 |                            |
 | Capitol Peak    | K7CPR      | Capitol Peak       | FM           |        145.470 |           -0.6 |                      100.0 |
 | Chehalis Valley | K7PG       | Boistfort Peak     | FM           |        147.060 |           +0.6 |                      110.9 |
 | Chehalis Valley | K7PG       | Penning Hill       | FM           |        145.430 |           -0.6 |                      110.9 |
@@ -89,6 +89,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | Snohomish ACS   | WA7DEM     | Clinton            | FM           |        440.375 |           +5.0 |                      103.5 |
 | Snohomish ACS   | WA7DEM     | Edmonds            | NBFM [^nbfm] |        444.025 |           +5.0 |                      156.7 |
 | Snohomish ACS   | WA7DEM     | Darrington         | FM           |        444.300 |           +5.0 |                      103.5 |
+| NEMCo           | NE7MC      | Kenmore            | FM           |        442.000 |           +5.0 |                      141.3 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -149,6 +150,9 @@ N7OEP
 
 N9VW
 : [Steve N9VW's repeater system](https://www.qrz.com/db/N9VW)
+
+NEMCo
+: [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
 
 Newcastle
 : [Newcastle DSTAR Club](http://newcastle-dstar.com/)

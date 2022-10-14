@@ -67,5 +67,6 @@ L.marker([47.7882003800, -122.3089981100]).bindPopup('WA7DEM 443.725<br>').addTo
 L.marker([48.1369500000, -121.9814000000]).bindPopup('WA7DEM 146.92<br>').addTo(map);
 L.marker([47.9585000000, -122.3750000000]).bindPopup('WA7DEM 440.375<br>').addTo(map);
 L.marker([48.2494400000, -121.5694900000]).bindPopup('WA7DEM 444.300<br>').addTo(map);
+L.marker([47.7376770000, -122.2307900000]).bindPopup('NE7MC 442.000<br>').addTo(map);
 
 </script>

@@ -723,10 +723,10 @@
         "Group Name": "Maple Valley",
         "Callsign": "KF7NPL",
         "Location": "Maple Valley",
-        "Mode": "FM",
+        "Mode": "DSTAR",
         "Output (MHz)": "442.675",
         "Offset (MHz)": "+5.0",
-        "Tone (Hz)": null,
+        "Tone (Hz)": "",
         "Coordinates": [
             47.36610031,
             -122.04499817
@@ -1198,5 +1198,20 @@
         ],
         "Long Name": "Snohomish County Auxiliary Communications Service",
         "Website": "https:\/\/www.wa7dem.info\/"
+    },
+    {
+        "Group Name": "NEMCo",
+        "Callsign": "NE7MC",
+        "Location": "Kenmore",
+        "Mode": "FM",
+        "Output (MHz)": "442.000",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
+            47.737677,
+            -122.23079
+        ],
+        "Long Name": "Northshore Emergency Management Coalition",
+        "Website": "https:\/\/www.northshoreemc.com\/"
     }
 ]
