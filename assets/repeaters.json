@@ -90,7 +90,7 @@
         "Website": "https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs"
     },
     {
-        "Group Name": "Highline ARC",
+        "Group Name": "Highline",
         "Callsign": "NC7G",
         "Location": "SeaTac",
         "Mode": "FM",
@@ -105,7 +105,7 @@
         "Website": "https:\/\/highlinearc.org"
     },
     {
-        "Group Name": "Highline ARC",
+        "Group Name": "Highline",
         "Callsign": "WA7ST",
         "Location": "SeaTac",
         "Mode": "FM",
@@ -675,7 +675,7 @@
         "Website": "https:\/\/www.seattleacs.org\/"
     },
     {
-        "Group Name": "Jefferson ARC",
+        "Group Name": "Jefferson",
         "Callsign": "W7JCR",
         "Location": "Port Townsend",
         "Mode": "FM",
@@ -750,7 +750,7 @@
         "Website": "http:\/\/47repeater.com\/"
     },
     {
-        "Group Name": "Chehalis Valley",
+        "Group Name": "Chehalis",
         "Callsign": "K7PG",
         "Location": "Boistfort Peak",
         "Mode": "FM",
@@ -765,7 +765,7 @@
         "Website": "https:\/\/cvars.org\/"
     },
     {
-        "Group Name": "Chehalis Valley",
+        "Group Name": "Chehalis",
         "Callsign": "K7PG",
         "Location": "Penning Hill",
         "Mode": "FM",
