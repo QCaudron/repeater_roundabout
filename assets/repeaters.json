@@ -1309,8 +1309,8 @@
         "Callsign":"WA7FW",
         "Location":"Federal Way",
         "Mode":"FM",
-        "Output (MHz)":"146.760",
-        "Offset (MHz)":"-0.6",
+        "Output (MHz)":"442.950",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
             47.32229996,

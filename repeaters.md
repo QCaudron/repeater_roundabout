@@ -96,7 +96,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | San Juan      | N7JN       | San Juan Island    | DSTAR        |       442.4625 |           +5.0 |                            |
 | Federal Way   | WA7FW      | Federal Way        | FM           |        147.040 |           +0.6 |                      103.5 |
 | Federal Way   | WA7FW      | Federal Way        | FM           |        146.760 |           -0.6 |                      103.5 |
-| Federal Way   | WA7FW      | Federal Way        | FM           |        146.760 |           -0.6 |                      103.5 |
+| Federal Way   | WA7FW      | Federal Way        | FM           |        442.950 |           +5.0 |                      103.5 |
 | Federal Way   | WA7FW      | Federal Way        | DSTAR        |        146.840 |           -0.6 |                            |
 | Federal Way   | WA7FW      | Federal Way        | DSTAR        |        443.850 |           +5.0 |                            |
 
