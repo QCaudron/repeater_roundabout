@@ -12,9 +12,9 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | PSRG          | WW7PSR     | Seattle            | FM           |        146.960 |           -0.6 |                      103.5 |
 | PSRG          | WW7PSR     | Seattle            | FM           |         52.870 |           -1.7 |                      103.5 |
 | PSRG          | WW7PSR     | Seattle            | DMR [^dmr]   |        440.775 |           +5.0 | CC2/TS1 Seattle1 TG/803153 |
-| Shoreline ACS | W7AUX      | Shoreline          | FM           |        442.825 |           +5.0 |                      103.5 |
-| Shoreline ACS | W7AUX      | Shoreline          | FM           |        440.300 |           +5.0 |                      103.5 |
-| Shoreline ACS | W7AUX      | Shoreline          | FM           |        224.020 |           -1.6 |                      103.5 |
+| Shoreline     | W7AUX      | Shoreline          | FM           |        442.825 |           +5.0 |                      103.5 |
+| Shoreline     | W7AUX      | Shoreline          | FM           |        440.300 |           +5.0 |                      103.5 |
+| Shoreline     | W7AUX      | Shoreline          | FM           |        224.020 |           -1.6 |                      103.5 |
 | Highline      | NC7G       | SeaTac             | FM           |        146.660 |           -0.6 |                      103.5 |
 | Highline      | WA7ST      | SeaTac             | FM           |        443.100 |           +5.0 |                      103.5 |
 | Marrowstone   | AA7MI      | Marrowstone Island | FM           |        440.725 |           +5.0 |                      114.8 |
@@ -90,6 +90,10 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | Snohomish ACS | WA7DEM     | Edmonds            | NBFM [^nbfm] |        444.025 |           +5.0 |                      156.7 |
 | Snohomish ACS | WA7DEM     | Darrington         | FM           |        444.300 |           +5.0 |                      103.5 |
 | NEMCo         | NE7MC      | Kenmore            | FM           |        442.000 |           +5.0 |                      141.3 |
+| San Juan      | N7JN       | San Juan Island    | FM           |        146.700 |           -0.6 |                      131.8 |
+| San Juan      | N7JN       | Orcas Island       | FM           |        224.480 |           -1.6 |                      103.5 |
+| San Juan      | N7JN       | San Juan Island    | FM           |        145.250 |           -0.6 |                            |
+| San Juan      | N7JN       | San Juan Island    | FM           |       442.4625 |           +5.0 |                            |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -175,13 +179,16 @@ RCTacoma
 SCARC
 : [Stanwood Camano Amateur Radio Club](https://www.scarcwa.org/)
 
+San Juan
+: [San Juan County Amateur Radio Society](https://sjcars.wordpress.com/)
+
 SeaTac
 : [SeaTac Repeater Association](https://seatacra.com)
 
 Seattle ACS
 : [Seattle Auxiliary Communications Service](https://www.seattleacs.org/)
 
-Shoreline ACS
+Shoreline
 : [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs)
 
 Snohomish

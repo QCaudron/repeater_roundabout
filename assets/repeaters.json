@@ -45,7 +45,7 @@
         "Website": "http:\/\/www.psrg.org\/"
     },
     {
-        "Group Name": "Shoreline ACS",
+        "Group Name": "Shoreline",
         "Callsign": "W7AUX",
         "Location": "Shoreline",
         "Mode": "FM",
@@ -60,7 +60,7 @@
         "Website": "https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs"
     },
     {
-        "Group Name": "Shoreline ACS",
+        "Group Name": "Shoreline",
         "Callsign": "W7AUX",
         "Location": "Shoreline",
         "Mode": "FM",
@@ -75,7 +75,7 @@
         "Website": "https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/"
     },
     {
-        "Group Name": "Shoreline ACS",
+        "Group Name": "Shoreline",
         "Callsign": "W7AUX",
         "Location": "Shoreline",
         "Mode": "FM",
@@ -1213,5 +1213,65 @@
         ],
         "Long Name": "Northshore Emergency Management Coalition",
         "Website": "https:\/\/www.northshoreemc.com\/"
+    },
+    {
+        "Group Name": "San Juan",
+        "Callsign": "N7JN",
+        "Location": "San Juan Island",
+        "Mode": "FM",
+        "Output (MHz)": "146.700",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "131.8",
+        "Coordinates": [
+            48.5603981,
+            -123.12000275
+        ],
+        "Long Name": "San Juan County Amateur Radio Society",
+        "Website": "https:\/\/sjcars.wordpress.com\/"
+    },
+    {
+        "Group Name": "San Juan",
+        "Callsign": "N7JN",
+        "Location": "Orcas Island",
+        "Mode": "FM",
+        "Output (MHz)": "224.480",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
+            48.67779922,
+            -122.83200073
+        ],
+        "Long Name": "San Juan County Amateur Radio Society",
+        "Website": "https:\/\/sjcars.wordpress.com\/"
+    },
+    {
+        "Group Name": "San Juan",
+        "Callsign": "N7JN",
+        "Location": "San Juan Island",
+        "Mode": "FM",
+        "Output (MHz)": "145.250",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "",
+        "Coordinates": [
+            48.53430176,
+            -123.01699829
+        ],
+        "Long Name": "San Juan County Amateur Radio Society",
+        "Website": "https:\/\/sjcars.wordpress.com\/"
+    },
+    {
+        "Group Name": "San Juan",
+        "Callsign": "N7JN",
+        "Location": "San Juan Island",
+        "Mode": "FM",
+        "Output (MHz)": "442.4625",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "",
+        "Coordinates": [
+            48.53430176,
+            -123.01699829
+        ],
+        "Long Name": "San Juan County Amateur Radio Society",
+        "Website": "https:\/\/sjcars.wordpress.com\/"
     }
 ]
