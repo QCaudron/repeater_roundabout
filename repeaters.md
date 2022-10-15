@@ -94,6 +94,11 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | San Juan      | N7JN       | Orcas Island       | FM           |        224.480 |           -1.6 |                      103.5 |
 | San Juan      | N7JN       | San Juan Island    | DSTAR        |        145.250 |           -0.6 |                            |
 | San Juan      | N7JN       | San Juan Island    | DSTAR        |       442.4625 |           +5.0 |                            |
+| Federal Way   | WA7FW      | Federal Way        | FM           |        147.040 |           +0.6 |                      103.5 |
+| Federal Way   | WA7FW      | Federal Way        | FM           |        146.760 |           -0.6 |                      103.5 |
+| Federal Way   | WA7FW      | Federal Way        | FM           |        146.760 |           -0.6 |                      103.5 |
+| Federal Way   | WA7FW      | Federal Way        | DSTAR        |        146.840 |           -0.6 |                            |
+| Federal Way   | WA7FW      | Federal Way        | DSTAR        |        443.850 |           +5.0 |                            |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -118,6 +123,9 @@ Chehalis
 
 Eatonville
 : [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)
+
+Federal Way
+: [Federal Way Amateur Radio Club](https://www.fwarc.org/)
 
 Highline
 : [Highline Amateur Radio Club](https://highlinearc.org)
