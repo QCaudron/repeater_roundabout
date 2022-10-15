@@ -92,8 +92,8 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | NEMCo         | NE7MC      | Kenmore            | FM           |        442.000 |           +5.0 |                      141.3 |
 | San Juan      | N7JN       | San Juan Island    | FM           |        146.700 |           -0.6 |                      131.8 |
 | San Juan      | N7JN       | Orcas Island       | FM           |        224.480 |           -1.6 |                      103.5 |
-| San Juan      | N7JN       | San Juan Island    | FM           |        145.250 |           -0.6 |                            |
-| San Juan      | N7JN       | San Juan Island    | FM           |       442.4625 |           +5.0 |                            |
+| San Juan      | N7JN       | San Juan Island    | DSTAR        |        145.250 |           -0.6 |                            |
+| San Juan      | N7JN       | San Juan Island    | DSTAR        |       442.4625 |           +5.0 |                            |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
