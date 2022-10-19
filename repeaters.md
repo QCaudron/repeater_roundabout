@@ -104,6 +104,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | WA7TBP        | N7KGJ      | Squak Mtn.        | FM           |        444.525 |           +5.0 |                      103.5 |
 | West Sound    | N7IG       | Port Orchard      | FM           |        145.390 |           -0.6 |                       88.5 |
 | Kitsap ARC    | KC7Z       | Silverdale        | FM           |        444.075 |           +5.0 |                      103.5 |
+| MCARC         | N7SK       | Shelton           | FM           |        146.720 |           -0.6 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -155,6 +156,9 @@ Lake Wash.
 
 MBARC
 : [Mount Baker Amateur Radio Club](https://mbarc.groups.io/)
+
+MCARC
+: [Mason County Amateur Radio Club](https://mc-arc.org/)
 
 Maple Valley
 : [Maple Valley Emergency Repeater Association](https://www.qrz.com/db/kf7npl)
