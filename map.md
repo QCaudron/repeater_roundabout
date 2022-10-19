@@ -74,5 +74,6 @@ L.marker([47.3223495500, -122.3125019075]).bindPopup('WA7FW 147.040<br>WA7FW 146
 L.marker([47.3507995600, -122.3229980500]).bindPopup('WA7FW 443.850<br>').addTo(map);
 L.marker([47.6299300000, -121.9500800000]).bindPopup('WA7TBP 223.960<br>').addTo(map);
 L.marker([47.5404014600, -122.6360015900]).bindPopup('N7IG 145.390<br>').addTo(map);
+L.marker([47.6445007300, -122.6949996900]).bindPopup('KC7Z 444.075<br>').addTo(map);
 
 </script>

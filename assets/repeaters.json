@@ -1408,5 +1408,20 @@
         ],
         "Long Name": "West Sound Amateur Radio Club",
         "Website": "http:\/\/www.n7ig.org\/"
+    },
+    {
+        "Group Name": "Kitsap ARC",
+        "Callsign": "KC7Z",
+        "Location": "Silverdale",
+        "Mode": "FM",
+        "Output (MHz)": "444.075",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
+            47.64450073,
+            -122.69499969
+        ],
+        "Long Name": "Kitsap County Amateur Radio Club",
+        "Website": "https:\/\/kcarc.org\/"
     }
 ]

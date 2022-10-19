@@ -103,6 +103,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | WA7TBP        | WA7TBP     | Carnation         | FM           |        223.960 |           -1.6 |                      123.0 |
 | WA7TBP        | N7KGJ      | Squak Mtn.        | FM           |        444.525 |           +5.0 |                      103.5 |
 | West Sound    | N7IG       | Port Orchard      | FM           |        145.390 |           -0.6 |                       88.5 |
+| Kitsap ARC    | KC7Z       | Silverdale        | FM           |        444.075 |           +5.0 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -145,6 +146,9 @@ K7PP
 
 Kingston
 : [Greater Kingston Radio Club](https://gkrc.groups.io)
+
+Kitsap ARC
+: [Kitsap County Amateur Radio Club](https://kcarc.org/)
 
 Lake Wash.
 : [Lake Washington Ham Club](http://www.lakewashingtonhamclub.org)
