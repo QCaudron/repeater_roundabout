@@ -22,7 +22,7 @@ L.marker([47.4508018500, -122.2870025600]).bindPopup('NC7G 146.660<br>WA7ST 443.
 L.marker([48.0583000200, -122.6880035400]).bindPopup('AA7MI 440.725<br>').addTo(map);
 L.marker([47.8566093400, -122.2836761500]).bindPopup('W7FLY 443.925<br>').addTo(map);
 L.marker([47.6748100000, -122.0534360000]).bindPopup('W7DX 147.000<br>').addTo(map);
-L.marker([47.6557998700, -122.5479965200]).bindPopup('W7NPC 444.475<br>W7NPC 53.430<br>W7NPC 444.5625<br>W7NPC 1290.500<br>').addTo(map);
+L.marker([47.6557998700, -122.5479965200]).bindPopup('W7NPC 53.430<br>W7NPC 444.475<br>W7NPC 444.5625<br>W7NPC 1290.500<br>').addTo(map);
 L.marker([47.7724990800, -122.9300003100]).bindPopup('K7DK 440.950<br>').addTo(map);
 L.marker([47.6884994500, -122.1559982300]).bindPopup('K7LWH 145.490<br>').addTo(map);
 L.marker([47.5486984300, -122.7860031100]).bindPopup('K7PP 441.200<br>').addTo(map);
