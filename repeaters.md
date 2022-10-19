@@ -99,6 +99,10 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | Federal Way   | WA7FW      | Federal Way        | FM           |        442.950 |           +5.0 |                      103.5 |
 | Federal Way   | WA7FW      | Federal Way        | DSTAR        |        146.840 |           -0.6 |                            |
 | Federal Way   | WA7FW      | Federal Way        | DSTAR        |        443.850 |           +5.0 |                            |
+| SnoVARC       | KE7GFZ     | Cougar Mtn.        | FM           |        441.825 |           +5.0 |                      103.5 |
+| WA7TBP        | WA7TBP     | Carnation          | FM           |        223.960 |           -1.6 |                      123.0 |
+| WA7TBP        | N7KGJ      | Squak Mtn.         | FM           |        444.525 |           +5.0 |                      103.5 |
+| West Sound    | N7IG       | Port Orchard       | FM           |        145.390 |           -0.6 |                       88.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -199,11 +203,17 @@ Seattle ACS
 Shoreline
 : [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs)
 
+SnoVARC
+: [Snoqualmie Valley Amateur Radio Club](https://snovarc.org/)
+
 Snohomish
 : [Snohomish County Hams Club](http://www.wa7law.org/)
 
 Snohomish ACS
 : [Snohomish County Auxiliary Communications Service](https://www.wa7dem.info/)
+
+WA7TBP
+: [Tom WA7TBP's repeater system](https://www.qrz.com/db/wa7tbp)
 
 WW7SEA
 : [Barry K7PAL's Western Washington repeater system](https://www.qrz.com/db/WW7SEA)
@@ -213,6 +223,9 @@ WWDXC
 
 West Seattle
 : [West Seattle Amateur Radio Club](https://w7aw.org/)
+
+West Sound
+: [West Sound Amateur Radio Club](http://www.n7ig.org/)
 
 
 

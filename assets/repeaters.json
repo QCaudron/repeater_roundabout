@@ -1348,5 +1348,65 @@
         ],
         "Long Name":"Federal Way Amateur Radio Club",
         "Website":"https:\/\/www.fwarc.org\/"
+    },
+    {
+        "Group Name":"SnoVARC",
+        "Callsign":"KE7GFZ",
+        "Location":"Cougar Mtn.",
+        "Mode":"FM",
+        "Output (MHz)":"441.825",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.55590057,
+            -122.11599731
+        ],
+        "Long Name":"Snoqualmie Valley Amateur Radio Club",
+        "Website":"https:\/\/snovarc.org\/"
+    },
+    {
+        "Group Name":"WA7TBP",
+        "Callsign":"WA7TBP",
+        "Location":"Carnation",
+        "Mode":"FM",
+        "Output (MHz)":"223.960",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.62993,
+            -121.95008
+        ],
+        "Long Name":"Tom WA7TBP's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/wa7tbp"
+    },
+    {
+        "Group Name":"WA7TBP",
+        "Callsign":"N7KGJ",
+        "Location":"Squak Mtn.",
+        "Mode":"FM",
+        "Output (MHz)":"444.525",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.50419998,
+            -122.04699707
+        ],
+        "Long Name":"Tom WA7TBP's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/wa7tbp"
+    },
+    {
+        "Group Name":"West Sound",
+        "Callsign":"N7IG",
+        "Location":"Port Orchard",
+        "Mode":"FM",
+        "Output (MHz)":"145.390",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.54040146,
+            -122.63600159
+        ],
+        "Long Name":"West Sound Amateur Radio Club",
+        "Website":"http:\/\/www.n7ig.org\/"
     }
 ]

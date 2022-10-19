@@ -26,7 +26,7 @@ L.marker([47.6557998700, -122.5479965200]).bindPopup('W7NPC 444.475<br>W7NPC 53.
 L.marker([47.7724990800, -122.9300003100]).bindPopup('K7DK 440.950<br>').addTo(map);
 L.marker([47.6884994500, -122.1559982300]).bindPopup('K7LWH 145.490<br>').addTo(map);
 L.marker([47.5486984300, -122.7860031100]).bindPopup('K7PP 441.200<br>').addTo(map);
-L.marker([47.5301017800, -122.0329971300]).bindPopup('N9VW 53.830<br>').addTo(map);
+L.marker([47.5171508800, -122.0399971000]).bindPopup('N9VW 53.830<br>N7KGJ 444.525<br>').addTo(map);
 L.marker([47.6321506500, -122.3549995450]).bindPopup('WW7SEA 444.700<br>WW7SEA 444.425<br>').addTo(map);
 L.marker([47.5038986200, -121.9759979200]).bindPopup('K7NWS 145.330<br>K7NWS 224.340<br>K7NWS 442.075<br>').addTo(map);
 L.marker([47.4883435700, -121.9467813000]).bindPopup('K7LED 146.820<br>K7LED 224.120<br>WW7STR 146.875<br>WW7STR 443.050<br>').addTo(map);
@@ -36,7 +36,7 @@ L.marker([47.2528991700, -122.4440002400]).bindPopup('W7DK 147.280<br>W7DK 440.6
 L.marker([47.2787017800, -122.5120010400]).bindPopup('W7DK 145.210<br>').addTo(map);
 L.marker([46.8431015000, -122.7630004900]).bindPopup('W7DK 147.380<br>').addTo(map);
 L.marker([47.1997985800, -121.7559967000]).bindPopup('W7AAO 145.370<br>').addTo(map);
-L.marker([47.5402970000, -122.0998560000]).bindPopup('WW7STR 224.440<br>WW7STR 927.2125<br>W7RNK 147.995<br>').addTo(map);
+L.marker([47.5441978925, -122.1038913275]).bindPopup('WW7STR 224.440<br>WW7STR 927.2125<br>W7RNK 147.995<br>KE7GFZ 441.825<br>').addTo(map);
 L.marker([47.6510101000, -122.3893988000]).bindPopup('W7ACS 443.475<br>').addTo(map);
 L.marker([47.6901190000, -122.3177855000]).bindPopup('W7ACS 443.650<br>').addTo(map);
 L.marker([47.7719300000, -122.2810100000]).bindPopup('W7ACS 440.600<br>').addTo(map);
@@ -72,5 +72,7 @@ L.marker([48.5603981000, -123.1200027500]).bindPopup('N7JN 146.700<br>').addTo(m
 L.marker([48.5343017600, -123.0169982900]).bindPopup('N7JN 145.250<br>N7JN 442.4625<br>').addTo(map);
 L.marker([47.3223495500, -122.3125019075]).bindPopup('WA7FW 147.040<br>WA7FW 146.760<br>WA7FW 442.950<br>WA7FW 146.840<br>').addTo(map);
 L.marker([47.3507995600, -122.3229980500]).bindPopup('WA7FW 443.850<br>').addTo(map);
+L.marker([47.6299300000, -121.9500800000]).bindPopup('WA7TBP 223.960<br>').addTo(map);
+L.marker([47.5404014600, -122.6360015900]).bindPopup('N7IG 145.390<br>').addTo(map);
 
 </script>
