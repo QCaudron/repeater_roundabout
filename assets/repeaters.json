@@ -1438,5 +1438,50 @@
         ],
         "Long Name":"Mason County Amateur Radio Club",
         "Website":"https:\/\/mc-arc.org\/"
+    },
+    {
+        "Group Name":"OARS",
+        "Callsign":"NT7H",
+        "Location":"Olympia",
+        "Mode":"FM",
+        "Output (MHz)":"147.360",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.02799988,
+            -122.89700317
+        ],
+        "Long Name":"Olympia Amateur Radio Society",
+        "Website":"http:\/\/olyham.blogspot.com\/"
+    },
+    {
+        "Group Name":"OARS",
+        "Callsign":"NT7H",
+        "Location":"Crawford Mtn.",
+        "Mode":"FM",
+        "Output (MHz)":"224.460",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.84280014,
+            -122.76499939
+        ],
+        "Long Name":"Olympia Amateur Radio Society",
+        "Website":"http:\/\/olyham.blogspot.com\/"
+    },
+    {
+        "Group Name":"OARS",
+        "Callsign":"NT7H",
+        "Location":"Crawford Mtn.",
+        "Mode":"FM",
+        "Output (MHz)":"441.400",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.84289932,
+            -122.76499939
+        ],
+        "Long Name":"Olympia Amateur Radio Society",
+        "Website":"http:\/\/olyham.blogspot.com\/"
     }
 ]

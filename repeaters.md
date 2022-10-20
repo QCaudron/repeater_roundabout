@@ -105,6 +105,9 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | West Sound    | N7IG       | Port Orchard      | FM           |        145.390 |           -0.6 |                       88.5 |
 | Kitsap ARC    | KC7Z       | Silverdale        | FM           |        444.075 |           +5.0 |                      103.5 |
 | MCARC         | N7SK       | Shelton           | FM           |        146.720 |           -0.6 |                      103.5 |
+| OARS          | NT7H       | Olympia           | FM           |        147.360 |           +0.6 |                      103.5 |
+| OARS          | NT7H       | Crawford Mtn.     | FM           |        224.460 |           -1.6 |                      103.5 |
+| OARS          | NT7H       | Crawford Mtn.     | FM           |        441.400 |           +5.0 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -180,6 +183,9 @@ NEMCo
 
 Newcastle
 : [Newcastle DSTAR Club](http://newcastle-dstar.com/)
+
+OARS
+: [Olympia Amateur Radio Society](http://olyham.blogspot.com/)
 
 PSEnergy
 : [Puget Sound Energy Amateur Radio Group](http://pseares.com/)
