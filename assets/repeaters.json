@@ -1483,5 +1483,50 @@
         ],
         "Long Name":"Olympia Amateur Radio Society",
         "Website":"http:\/\/olyham.blogspot.com\/"
+    },
+    {
+        "Group Name":"WWRG",
+        "Callsign":"W7SIX",
+        "Location":"Capitol Peak",
+        "Mode":"FM",
+        "Output (MHz)":"53.570",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.97309875,
+            -123.13500214
+        ],
+        "Long Name":"Western Washington Repeater Group",
+        "Website":null
+    },
+    {
+        "Group Name":"WWRG",
+        "Callsign":"W7SIX",
+        "Location":"Grass Mtn.",
+        "Mode":"FM",
+        "Output (MHz)":"53.870",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.20000076,
+            -121.75499725
+        ],
+        "Long Name":"Western Washington Repeater Group",
+        "Website":null
+    },
+    {
+        "Group Name":"WWRG",
+        "Callsign":"W7SIX",
+        "Location":"Capitol Peak",
+        "Mode":"FM",
+        "Output (MHz)":"927.300",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            46.97309875,
+            -123.13500214
+        ],
+        "Long Name":"Western Washington Repeater Group",
+        "Website":null
     }
 ]

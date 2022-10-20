@@ -108,6 +108,9 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | OARS          | NT7H       | Olympia           | FM           |        147.360 |           +0.6 |                      103.5 |
 | OARS          | NT7H       | Crawford Mtn.     | FM           |        224.460 |           -1.6 |                      103.5 |
 | OARS          | NT7H       | Crawford Mtn.     | FM           |        441.400 |           +5.0 |                      103.5 |
+| WWRG          | W7SIX      | Capitol Peak      | FM           |         53.570 |           -1.7 |                      100.0 |
+| WWRG          | W7SIX      | Grass Mtn.        | FM           |         53.870 |           -1.7 |                      100.0 |
+| WWRG          | W7SIX      | Capitol Peak      | FM           |        927.300 |          -25.0 |                      114.8 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -234,6 +237,9 @@ WW7SEA
 
 WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org)
+
+WWRG
+: [Western Washington Repeater Group](None)
 
 West Seattle
 : [West Seattle Amateur Radio Club](https://w7aw.org/)
