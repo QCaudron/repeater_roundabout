@@ -111,6 +111,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | WWRG          | W7SIX      | Capitol Peak      | FM           |         53.570 |           -1.7 |                      100.0 |
 | WWRG          | W7SIX      | Grass Mtn.        | FM           |         53.870 |           -1.7 |                      100.0 |
 | WWRG          | W7SIX      | Capitol Peak      | NBFM [^nbfm] |        927.300 |          -25.0 |                      114.8 |
+| NMARES        | NM7E       | Belfair           | FM           |        145.170 |           -0.6 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -183,6 +184,9 @@ N9VW
 
 NEMCo
 : [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
+
+NMARES
+: [North Mason Amateur Radio Emergency Service Club](https://nmaresc.wordpress.com/)
 
 Newcastle
 : [Newcastle DSTAR Club](http://newcastle-dstar.com/)
