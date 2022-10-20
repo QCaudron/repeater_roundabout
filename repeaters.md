@@ -46,7 +46,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | SeaTac        | WW7STR     | Tiger Mtn.        | NBFM [^nbfm] |        146.875 |           -0.6 |                      103.5 |
 | SeaTac        | WW7STR     | Tiger Mtn.        | FM           |        443.050 |           +5.0 |                      103.5 |
 | SeaTac        | WW7STR     | Cougar Mtn.       | FM           |        224.440 |           -1.6 |                      103.5 |
-| SeaTac        | WW7STR     | Cougar Mtn.       | FM           |       927.2125 |          -25.0 |                      114.8 |
+| SeaTac        | WW7STR     | Cougar Mtn.       | NBFM [^nbfm] |       927.2125 |          -25.0 |                      114.8 |
 | Seattle ACS   | W7ACS      | Seattle           | FM           |        442.300 |           +5.0 |                      141.3 |
 | Seattle ACS   | W7ACS      | Seattle           | FM           |        444.550 |           +5.0 |                      141.3 |
 | Seattle ACS   | W7ACS      | Seattle           | FM           |        442.875 |           +5.0 |                      141.3 |
@@ -110,7 +110,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | OARS          | NT7H       | Crawford Mtn.     | FM           |        441.400 |           +5.0 |                      103.5 |
 | WWRG          | W7SIX      | Capitol Peak      | FM           |         53.570 |           -1.7 |                      100.0 |
 | WWRG          | W7SIX      | Grass Mtn.        | FM           |         53.870 |           -1.7 |                      100.0 |
-| WWRG          | W7SIX      | Capitol Peak      | FM           |        927.300 |          -25.0 |                      114.8 |
+| WWRG          | W7SIX      | Capitol Peak      | NBFM [^nbfm] |        927.300 |          -25.0 |                      114.8 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
