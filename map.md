@@ -77,5 +77,6 @@ L.marker([47.5404014600, -122.6360015900]).bindPopup('N7IG 145.390<br>').addTo(m
 L.marker([47.6445007300, -122.6949996900]).bindPopup('KC7Z 444.075<br>').addTo(map);
 L.marker([47.2150993300, -123.1009979200]).bindPopup('N7SK 146.720<br>').addTo(map);
 L.marker([47.3866150000, -122.8609950000]).bindPopup('NM7E 145.170<br>').addTo(map);
+L.marker([48.2125015300, -122.7050018300]).bindPopup('W7AVM 146.860<br>').addTo(map);
 
 </script>
