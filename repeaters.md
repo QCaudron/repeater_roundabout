@@ -112,7 +112,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | WWRG            | W7SIX      | Grass Mtn.        | FM          |         53.870 |           -1.7 |                      100.0 |
 | WWRG            | W7SIX      | Capitol Peak      | NBFM[^nbfm] |        927.300 |          -25.0 |                      114.8 |
 | North Mason     | NM7E       | Belfair           | FM          |        145.170 |           -0.6 |                      103.5 |
-| Island Country  | W7AVM      | Whidbey Isl.      | FM          |        146.860 |           -0.6 |                      127.3 |
+| Island County   | W7AVM      | Whidbey Isl.      | FM          |        146.860 |           -0.6 |                      127.3 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -144,7 +144,7 @@ Federal Way
 Highline
 : [Highline Amateur Radio Club](https://highlinearc.org)
 
-Island Country
+Island County
 : [Island County Amateur Radio Club](https://www.w7avm.org/)
 
 Jefferson
