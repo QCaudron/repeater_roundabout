@@ -1558,5 +1558,20 @@
         ],
         "Long Name": "Island County Amateur Radio Club",
         "Website": "https:\/\/www.w7avm.org\/"
+    },
+    {
+        "Group Name": "N7KN",
+        "Callsign": "N7KN",
+        "Location": "Whidbey Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "441.425",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "110.9",
+        "Coordinates": [
+            48.0982722,
+            -122.5731977
+        ],
+        "Long Name": "Charlie N7KN's repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/N7KN"
     }
 ]

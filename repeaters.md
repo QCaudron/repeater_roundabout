@@ -113,6 +113,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | WWRG            | W7SIX      | Capitol Peak      | NBFM[^nbfm] |        927.300 |          -25.0 |                      114.8 |
 | North Mason     | NM7E       | Belfair           | FM          |        145.170 |           -0.6 |                      103.5 |
 | Island County   | W7AVM      | Whidbey Isl.      | FM          |        146.860 |           -0.6 |                      127.3 |
+| N7KN            | N7KN       | Whidbey Isl.      | FM          |        441.425 |           +5.0 |                      110.9 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -179,6 +180,9 @@ Mike & Key
 
 Mount Baker
 : [Mount Baker Amateur Radio Club](https://mbarc.groups.io/)
+
+N7KN
+: [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)
 
 N7OEP
 : [Tom N7OEP's repeater system](https://www.qrz.com/db/n7oep)
