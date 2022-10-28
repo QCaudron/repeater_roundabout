@@ -114,6 +114,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | North Mason     | NM7E       | Belfair           | FM          |        145.170 |           -0.6 |                      103.5 |
 | Island County   | W7AVM      | Whidbey Isl.      | FM          |        146.860 |           -0.6 |                      127.3 |
 | N7KN            | N7KN       | Whidbey Isl.      | FM          |        441.425 |           +5.0 |                      110.9 |
+| Roy             | WA7ROY     | Roy               | FM          |        444.175 |           +5.0 |                      123.0 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -210,6 +211,9 @@ PSRG
 
 Pierce
 : [Pierce County ARES](http://www.piercecountyares.net)
+
+Roy
+: [Roy Area Communications Network](https://www.qrz.com/db/WA7ROY)
 
 San Juan
 : [San Juan County Amateur Radio Society](https://sjcars.wordpress.com/)
