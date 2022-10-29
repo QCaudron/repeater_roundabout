@@ -3,6 +3,10 @@ title: Puget Sound Repeater Roundabout
 subtitle: Get to know the local repeaters this November.
 ---
 
+**BREAKING** : We will hold an information and Q&A session on **Tuesday, November 15th, at 7pm.** [Join us here](https://us06web.zoom.us/j/85351557045?pwd=akJQVmlEYTNTbjJJRmlzTHhpZzVaQT09).
+
+---
+
 The Puget Sound Repeater Roundabout is a weekend-long event held on many of our local repeaters. The goal is to meet new people and work repeaters you might not usually key up. Light up the airwaves and make some noise on the great repeaters in the Puget Sound area!
 
 **The Puget Sound Repeater Roundabout will begin on November 19th, 2022 at 00:00, and end on November 20th, 2022 at 23:59, Pacific time.**
