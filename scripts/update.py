@@ -249,6 +249,12 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df["DtcsPolarity"] = "NN"
     df["TStep"] = "5.00"
 
+    # DCS tones are different, so go back and fix that
+    dcs = df["rToneFreq"].str.startswith("D")
+    df.loc[dcs, "Tone"] = "DTCS"
+    df.loc[dcs, "DtcsCode"] = df.loc[dcs, "rToneFreq"].str[1:4]
+    df.loc[dcs, "rToneFreq"] = "88.5"
+
     # The following columns are null
     for col in ["Skip", "URCALL", "RPT1CALL", "RPT2CALL", "DVCODE"]:
         df[col] = None
