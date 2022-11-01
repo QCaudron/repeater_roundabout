@@ -5,7 +5,7 @@ This repo manages the website for the [Repeater Roundabout](https://repeaterroun
 
 ## Template files
 
-The files in `assets/templates/` are used to generate the pages on the site. 
+The files in `assets/templates/` are used to generate the pages on the site.
 
 - `assets/templates/index.md` is the homepage; template elements include `{{ n_repeaters }}` and `{{ date_updated }}`.
 - `assets/templates/repeaters.md` is the repeaters page; template elements include `{{ table }}` (a table of repeaters with frequencies and such) and `{{ associations }}` (a list naming and linking each group contributing their repeaters).
@@ -15,7 +15,7 @@ The files in `assets/templates/` are used to generate the pages on the site.
 
 ## Adding a repeater
 
-To add a repeater, you should call `python scripts/update.py`. This script will prompt you for the repeater's information, and will add it to the `assets/repeaters.json` file containing all known repeaters, as well as regenerating the `assets/rr_frequencies.csv` file for CHIRP use. 
+To add a repeater, you should call `python scripts/update.py`. This script will prompt you for the repeater's information, and will add it to the `assets/repeaters.json` file containing all known repeaters, as well as regenerating the `assets/rr_frequencies.csv` file for CHIRP use.
 
 This script can be called directly, in which case it will prompt you for repeater information, or you can call it by passing the following arguments to the command-line for the same effect.
 
@@ -45,3 +45,19 @@ If any changes are made to `repeaters.json` or to template files, you can regene
 ## Contributing
 
 Contributions are welcome -- please open a pull request against a feature branch, or open an issue if you have any questions or suggestions.
+
+## Python Environment
+
+The scripts in this repo use Python3.  In order to install the dependencies, it
+is recommended to create a python virtual environment with the appropriate
+dependencies installed.
+
+```
+$ python -m venv .env        # Create a local Virtual Environment
+                             # Possibly use "python3" if python defaults to
+                             # version 2.
+
+$ source .env/bin/activate   # Activate it
+
+$ pip install -r requirements.txt
+```
