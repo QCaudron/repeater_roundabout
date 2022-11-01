@@ -3,9 +3,9 @@ title: Programming Files
 subtitle: Program your radios with Repeater Roundabout repeaters.
 ---
 
-# Chirp 
+# [Chirp](https://raw.githubusercontent.com/QCaudron/repeater_roundabout/main/assets/rr_frequencies.csv) contains all participating FM, NBFM, and Fusion repeaters. [Chirp](https://chirp.danplanet.com/projects/chirp/wiki/Home)
 
-[This CSV](https://raw.githubusercontent.com/QCaudron/repeater_roundabout/main/assets/rr_frequencies.csv) contains all participating FM, NBFM, and Fusion repeaters. [Chirp](https://chirp.danplanet.com/projects/chirp/wiki/Home) is a free, open-source tool that can program a huge number of radios.
+This CSV contains all participating FM, NBFM, and Fusion repeaters. [Chirp](https://chirp.danplanet.com/projects/chirp/wiki/Home) is a free, open-source tool that can program a huge number of radios.
 
 
 # AnyTone D878
