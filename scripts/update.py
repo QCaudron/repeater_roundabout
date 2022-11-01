@@ -219,7 +219,7 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     # Remove footnotes from the Mode column
-    df["Mode"] = df["Mode"].str.replace(r" \[.+\]", "")
+    df = df.assign(Mode=df["Mode"].str.replace(r" \[.+\]", "", regex=True))
 
     # Only format FM channels; we can't handle DMR or D-Star at the moment
     df = df.loc[df["Mode"].isin(["FM", "NBFM[^nbfm]", "Fusion"])]  # only FM repeaters
