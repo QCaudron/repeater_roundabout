@@ -190,11 +190,11 @@ def generate_repeater_df(
     # Combine RepeaterBook info with user input
     repeaterbook = repeater_from_repeaterbook(args.id)
     repeaterargs = repeater_from_args(args)
-    repeater = {**repeaterbook, **repeaterargs}
+    repeater = pd.DataFrame.from_records([{**repeaterbook, **repeaterargs}])
 
     # Combine with known repeaters
     df = pd.read_json("assets/repeaters.json", dtype=False)
-    df = df.append(repeater, ignore_index=True)
+    df = pd.concat([df, repeater], ignore_index=True)
 
     # Save a new known repeaters file
     df = df.reset_index(drop=True)

@@ -105,6 +105,7 @@ You can get a general idea for the repeaters' locations on the [repeater map](/m
 | West Sound      | N7IG       | Port Orchard      | FM          |        145.390 |           -0.6 |                       88.5 |
 | Kitsap          | KC7Z       | Silverdale        | FM          |        444.075 |           +5.0 |                      103.5 |
 | Mason County    | N7SK       | Shelton           | FM          |        146.720 |           -0.6 |                      103.5 |
+| Mason County    | N7SK       | Shelton           | FM          |        443.250 |           +5.0 |                      100.0 |
 | Olympia         | NT7H       | Olympia           | FM          |        147.360 |           +0.6 |                      103.5 |
 | Olympia         | NT7H       | Crawford Mtn.     | FM          |        224.460 |           -1.6 |                      103.5 |
 | Olympia         | NT7H       | Crawford Mtn.     | FM          |        441.400 |           +5.0 |                      103.5 |
