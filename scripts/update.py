@@ -203,6 +203,14 @@ def generate_repeater_df(
     return df
 
 
+def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Return dataframe with Mode column footnotes removed.
+    """
+
+    return df.assign(Mode=df["Mode"].str.replace(r"\[.+\]", "", regex=True))
+
+
 def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     """
     Format a DataFrame of repeaters for use in CHIRP.
@@ -215,15 +223,94 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     Returns
     -------
     pd.DataFrame
-        The FM and NBFM repeaters, formatted for CHIRP.
+        The FM repeaters, formatted for CHIRP.
     """
 
-    # Remove footnotes from the Mode column
-    df = df.assign(Mode=df["Mode"].str.replace(r" \[.+\]", "", regex=True))
-
     # Only format FM channels; we can't handle DMR or D-Star at the moment
-    df = df.loc[df["Mode"].isin(["FM", "NBFM[^nbfm]", "Fusion"])]  # only FM repeaters
-    df.loc[df["Mode"] == "NBFM[^nbfm]", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
+    df = df.loc[df["Mode"].isin(["FM", "NBFM", "Fusion"])].copy()  # only FM repeaters
+    df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
+    df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
+
+    # Set the offset direction and value
+    df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
+    df = df.assign(
+        Offset=df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}")
+    )
+
+    # Some columns can be reused
+    df["Comment"] = df["Callsign"] + " - " + df["Output (MHz)"]
+    df = df.rename(
+        columns={
+            "Callsign": "Name",
+            "Output (MHz)": "Frequency",
+            "Tone (Hz)": "rToneFreq",
+        }
+    )
+
+    # Set some constant basics that are required for Chirp to read the file
+    df["Tone"] = "Tone"
+    df["cToneFreq"] = "88.5"
+    df["DtcsCode"] = "023"
+    df["DtcsPolarity"] = "NN"
+    df["TStep"] = "5.00"
+
+    # DCS tones are different, so go back and fix that
+    dcs = df["rToneFreq"].str.startswith("D")
+    df.loc[dcs, "Tone"] = "DTCS"
+    df.loc[dcs, "DtcsCode"] = df.loc[dcs, "rToneFreq"].str[1:4]
+    df.loc[dcs, "rToneFreq"] = "88.5"
+
+    # The following columns are null
+    for col in ["Skip", "URCALL", "RPT1CALL", "RPT2CALL", "DVCODE"]:
+        df[col] = None
+
+    # Most radios don't have a channel 0, so start the index at 1
+    df.index = range(1, len(df) + 1)
+    df.index.name = "Location"
+
+    # Order columns as Chirp expects
+    df = df[
+        [
+            "Name",
+            "Frequency",
+            "Duplex",
+            "Offset",
+            "Tone",
+            "rToneFreq",
+            "cToneFreq",
+            "DtcsCode",
+            "DtcsPolarity",
+            "Mode",
+            "TStep",
+            "Skip",
+            "Comment",
+            "URCALL",
+            "RPT1CALL",
+            "RPT2CALL",
+            "DVCODE",
+        ]
+    ]
+
+    return df
+
+def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Format a DataFrame of repeaters for use in Anytone D878.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+
+    Returns
+    -------
+    pd.DataFrame
+        The FM and NBFM repeaters, and DMR repeaters, formatted for Anytone D878.
+    """
+
+    # Format FM and DMR channels.
+    df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR"])].copy()
+    df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
     df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
 
     # Set the offset direction and value
@@ -421,6 +508,20 @@ def write_chirp_csv(df: pd.DataFrame) -> None:
     df.to_csv("assets/rr_frequencies.csv")
 
 
+def write_d878_csv(df: pd.DataFrame) -> None:
+    """
+    Write the Anytone D878 csv file.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+    """
+
+    df = format_df_for_chirp(df)
+    df.to_csv("assets/d878.csv")
+
+
 if __name__ == "__main__":
 
     args = parse_args()
@@ -430,4 +531,7 @@ if __name__ == "__main__":
     write_index_md(df)
     write_repeaters_md(df)
     write_map_md(df)
+
+    df = remove_df_footnotes(df)
     write_chirp_csv(df)
+    write_d878_csv(df)
