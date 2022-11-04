@@ -310,8 +310,6 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
 
     # Format FM and DMR channels.
     df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR"])].copy()
-    df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
-    df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
@@ -353,23 +351,19 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     # Order columns as Chirp expects
     df = df[
         [
-            "Name",
-            "Frequency",
-            "Duplex",
-            "Offset",
-            "Tone",
-            "rToneFreq",
-            "cToneFreq",
-            "DtcsCode",
-            "DtcsPolarity",
-            "Mode",
-            "TStep",
-            "Skip",
-            "Comment",
-            "URCALL",
-            "RPT1CALL",
-            "RPT2CALL",
-            "DVCODE",
+            "No.",
+            "Channel Name",
+            "Receive Frequency",
+            "Transmit Frequency",
+            "Channel Type",
+            "Band Width",
+            "CTCSS/DCS Encode",
+            "Contact",
+            "Contact TG/DMR ID",
+            "Color Code",
+            "Slot",
+            "Scan List",
+            "DMR MODE"
         ]
     ]
 
