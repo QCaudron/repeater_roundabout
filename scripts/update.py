@@ -308,66 +308,36 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
         The FM and NBFM repeaters, and DMR repeaters, formatted for Anytone D878.
     """
 
-    # Format FM and DMR channels.
-    df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR"])].copy()
+    # Select FM and DMR channels.
+    df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR"])]
 
-    # Set the offset direction and value
-    df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
-    df = df.assign(
-        Offset=df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}")
-    )
+    df_878 = df["Callsign"].copy()
+    df_878.columns = ["Channel Name"]
 
-    # Some columns can be reused
-    df["Comment"] = df["Callsign"] + " - " + df["Output (MHz)"]
-    df = df.rename(
-        columns={
-            "Callsign": "Name",
-            "Output (MHz)": "Frequency",
-            "Tone (Hz)": "rToneFreq",
-        }
-    )
-
-    # Set some constant basics that are required for Chirp to read the file
-    df["Tone"] = "Tone"
-    df["cToneFreq"] = "88.5"
-    df["DtcsCode"] = "023"
-    df["DtcsPolarity"] = "NN"
-    df["TStep"] = "5.00"
-
-    # DCS tones are different, so go back and fix that
-    dcs = df["rToneFreq"].str.startswith("D")
-    df.loc[dcs, "Tone"] = "DTCS"
-    df.loc[dcs, "DtcsCode"] = df.loc[dcs, "rToneFreq"].str[1:4]
-    df.loc[dcs, "rToneFreq"] = "88.5"
-
-    # The following columns are null
-    for col in ["Skip", "URCALL", "RPT1CALL", "RPT2CALL", "DVCODE"]:
-        df[col] = None
-
-    # Most radios don't have a channel 0, so start the index at 1
-    df.index = range(1, len(df) + 1)
-    df.index.name = "Location"
+    # Number channels from 1 ...
+    df_878.index = range(1, len(df) + 1)
+    df_878.index.name = "No."
 
     # Order columns as Chirp expects
-    df = df[
-        [
-            "No.",
-            "Channel Name",
-            "Receive Frequency",
-            "Transmit Frequency",
-            "Channel Type",
-            "Band Width",
-            "CTCSS/DCS Encode",
-            "Contact",
-            "Contact TG/DMR ID",
-            "Color Code",
-            "Slot",
-            "Scan List",
-            "DMR MODE"
-        ]
-    ]
+    # df = df[
+    #     [
+    #         "No.",
+    #         "Channel Name",
+    #         "Receive Frequency",
+    #         "Transmit Frequency",
+    #         "Channel Type",
+    #         "Band Width",
+    #         "CTCSS/DCS Encode",
+    #         "Contact",
+    #         "Contact TG/DMR ID",
+    #         "Color Code",
+    #         "Slot",
+    #         "Scan List",
+    #         "DMR MODE"
+    #     ]
+    # ]
 
-    return df
+    return df_878
 
 
 def write_index_md(df: pd.DataFrame) -> None:
@@ -512,7 +482,7 @@ def write_d878_csv(df: pd.DataFrame) -> None:
         All of the repeaters.
     """
 
-    df = format_df_for_chirp(df)
+    df = format_df_for_d878(df)
     df.to_csv("assets/d878.csv")
 
 
