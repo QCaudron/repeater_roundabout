@@ -367,6 +367,9 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_dmr, "Color Code"] = dmr_codes["color"]
     df_878.loc[is_dmr, "Slot"] = dmr_codes["slot"]
 
+    # TODO: Need to programatically generate a "scan list" csv file in order to be able
+    # to scan all the frequencies in the Roundabout.  For now - a dummy file added to
+    # ./assets.
     df_878["Scan List"] = "Roundabout"
 
 
