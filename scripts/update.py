@@ -376,6 +376,35 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     return df_878
 
 
+def get_talk_groups_from_seattledmr() -> pd.DataFrame:
+    """
+    Generate a DataFrame of talk groups from the SeattleDMR website.
+
+    Returns
+    -------
+    pd.DataFrame
+        The talk group dataframe.
+    """
+
+    # Pull the table from the website
+    all_tables = pd.read_html("https://seattledmr.org/")
+    df = all_tables[1]
+
+    # Rename columns, add in missing columns
+    df = df.rename(
+        columns={
+            "Talkgroup": "Name",
+            "Number": "Radio ID",
+        }
+    )
+    df["Call Type"] = "Group Call"
+    df["Call Alert"] = "None"
+    df["No."] = [str(i) for i in range(1, len(df) + 1)]
+
+    df = df[["No.", "Radio ID", "Name", "Call Type", "Call Alert"]]
+    return df
+
+
 def write_index_md(df: pd.DataFrame) -> None:
     """
     Write the index.md file.
@@ -522,10 +551,22 @@ def write_d878_zip(df: pd.DataFrame) -> None:
         All of the repeaters.
     """
 
+    # Main repeater info file d878.csv
     df = format_df_for_d878(df)
     df.to_csv("assets/programming_files/d878.csv")
-    # TODO : scanlist and talk groups files here
 
+    # Talk groups
+    talk_groups = get_talk_groups_from_seattledmr()
+    talk_groups.to_csv(
+        "assets/programming_files/d878-talk-groups.csv",
+        index=False,
+        quoting=1,  # csv.QUOTE_ALL -- this ensures all values are double-quoted
+    )
+
+    # TODO
+    # d878-scanlist.csv
+
+    # Zip everything together into d878.zip
     with ZipFile("assets/programming_files/d878.zip", "w") as zipf:
         zipf.write("assets/programming_files/d878.csv", arcname="d878.csv")
         zipf.write(
