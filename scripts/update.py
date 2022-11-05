@@ -228,14 +228,14 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
 
     print("Generating generic CHIRP CSV file.")
 
-    total_repeaters = len(df.index)
+    total_repeaters = len(df)
 
     # Only format FM channels; we can't handle DMR or D-Star at the moment
     df = df.loc[df["Mode"].isin(["FM", "NBFM", "Fusion"])].copy()  # only FM repeaters
     df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
     df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
 
-    print(f"{len(df.index)} compatible repeaters (out of {total_repeaters} total).")
+    print(f"{len(df)} compatible repeaters (out of {total_repeaters} total).")
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
@@ -316,7 +316,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     print("Generating Anytone D878 CSV file.")
-    total_repeaters = len(df.index)
+    total_repeaters = len(df)
 
     # Select FM, DMR and Fusion (in FM compat mode) channels.
     df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR", "Fusion"])].copy()
@@ -329,7 +329,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df = pd.concat([df_2m, df_70cm])
     df.index = list(range(1, len(df) + 1))
 
-    print(f"{len(df.index)} compatible repeaters (out of {total_repeaters} total).")
+    print(f"{len(df)} compatible repeaters (out of {total_repeaters} total).")
 
     df_878 = pd.DataFrame()
 
