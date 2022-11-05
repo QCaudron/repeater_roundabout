@@ -58,7 +58,11 @@ $ python -m venv .env        # Create a local Virtual Environment
                              # Possibly use "python3" if python defaults to
                              # version 2.
 
-$ source .env/bin/activate   # Activate it
+$ source .env/bin/activate   # Activate it (Mac or Linux)
+
+OR
+
+$ .\.env\Scripts\activate    # (Windows/Powershell)
 
 $ pip install -r requirements.txt
 ```
