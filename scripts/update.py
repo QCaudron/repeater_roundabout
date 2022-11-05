@@ -4,6 +4,7 @@ from collections import defaultdict
 from datetime import datetime
 from types import SimpleNamespace
 from typing import Union
+from zipfile import ZipFile
 
 import numpy as np
 import pandas as pd
@@ -507,7 +508,7 @@ def write_chirp_csv(df: pd.DataFrame) -> None:
     df.to_csv("assets/rr_frequencies.csv")
 
 
-def write_d878_csv(df: pd.DataFrame) -> None:
+def write_d878_zip(df: pd.DataFrame) -> None:
     """
     Write the Anytone D878 csv file.
 
@@ -519,6 +520,12 @@ def write_d878_csv(df: pd.DataFrame) -> None:
 
     df = format_df_for_d878(df)
     df.to_csv("assets/d878.csv")
+    # TODO : scanlist and talk groups files here
+
+    with ZipFile("assets/d878.zip", "w") as zipf:
+        zipf.write("assets/d878.csv", arcname="d878.csv")
+        zipf.write("assets/d878-scanlist.csv", arcname="d878-scanlist.csv")
+        zipf.write("assets/d878-talk-groups.csv", arcname="d878-talk-groups.csv")
 
 
 if __name__ == "__main__":
@@ -533,4 +540,4 @@ if __name__ == "__main__":
 
     df = remove_df_footnotes(df)
     write_chirp_csv(df)
-    write_d878_csv(df)
+    write_d878_zip(df)

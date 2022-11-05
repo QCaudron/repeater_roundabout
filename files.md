@@ -8,19 +8,24 @@ In order to make the contesting life a little easier, we provide some files you 
 | Download | Type | FM | DMR | DSTAR | Fusion |
 |:--------:|:-----|:--:|:---:|:-----:|:------:|
 | <a href="assets/rr_frequencies.csv" download><img src="assets/download-solid.svg" height="30px" /></a> | [Chirp](https://chirp.danplanet.com/projects/chirp/wiki/Home) | <img src="assets/check-solid.svg" height="20px" /> | | | <img src="assets/check-solid.svg" height="20px" /> |
-| <a href="assets/d878.csv" download><img src="assets/download-solid.svg" height="30px" /></a> | [AnyTone AT-D878](https://support.bridgecomsystems.com/anytone-878-v2-model-cps-firmware-downloads) | <img src="assets/check-solid.svg" height="20px" /> | <img src="assets/check-solid.svg" height="20px" /> | | |
+| <a href="assets/d878.zip" download><img src="assets/download-solid.svg" height="30px" /></a> | [AnyTone AT-D878](https://support.bridgecomsystems.com/anytone-878-v2-model-cps-firmware-downloads) | <img src="assets/check-solid.svg" height="20px" /> | <img src="assets/check-solid.svg" height="20px" /> | | |
 | <a href="#" download><img src="assets/download-solid.svg" height="30px" /></a> | Icom IC-705 | <img src="assets/check-solid.svg" height="20px" /> | | <img src="assets/check-solid.svg" height="20px" /> | |
 
-## Anytone D878 Instructions
 
-You will actually need to download multiple files to program the AnyTone AT-D878 radio.
+## Chirp help
 
-1. <a href="assets/d878-talk-groups.CSV" download>Talk Groups</a> - If you want to use the DMR repeaters on
-  this list, you will need to have the defined list of talk groups in addition to the channel information in
-  the main download (above).
-2. <a href="assets/d878-scanlist.CSV" download>Scan List</a> - If you want to use the scanner in the radio
-  to scan across all the repeaters in the Roundabout, you will also need to import this file.
+1. First, you'll want to check that Chirp [supports your radio](https://chirp.danplanet.com/projects/chirp/wiki/Supported_Radios). 
+2. You will need a programming cable that works with your radio. Chirp has [a guide on the subject](https://chirp.danplanet.com/projects/chirp/wiki/CableGuide), and Dave Casler KE0OG has [a video on the subject](https://www.youtube.com/watch?v=nzkFVtyttKM) for some of the common Chinese radios.
+3. At this point, assuming [you have Chirp installed](https://chirp.danplanet.com/projects/chirp/wiki/Download), you are ready to test [cloning from your radio](https://chirp.danplanet.com/projects/chirp/wiki/Beginners_Guide) and writing our <a href="assets/rr_frequencies.csv" download>CSV file</a>. Dave Casler has [a good video to get you started](https://www.youtube.com/watch?v=Mrpqq-xi00g).
 
-  When you open the CPS software, tools/import menu and select each of the files you've downloaded
-  in the appropriate category (Channel, Scan List, and/or Talk Groups).  Then use the 
-  Program/Write to Radio menu to send the program to your D878.
+For more information, check out [Chirp's Wiki](https://chirp.danplanet.com/projects/chirp/wiki/Home).
+
+
+## AnyTone D878 instructions
+
+Our <a href="assets/d878.zip" download>download for the D878</a> is a zip file containing three files :
+- `d878.csv` contains all of the repeater information (frequencies, offsets, tones)
+- `d878-talk-groups.csv` contains a set of talk group definitions for the DMR repeaters
+- `d878-scanlist.csv` contains information that allows you to scan across all repeaters in the Roundabout
+
+When you open the CPS software, go to the `Tools > Import` menu and select each of the files you've downloaded in the appropriate category (Channel, Scan List, and/or Talk Groups). Then use the `Program > Write to Radio` menu to send the program to your D878.
