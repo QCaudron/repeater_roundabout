@@ -318,8 +318,8 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     print("Generating Anytone D878 CSV file.")
     total_repeaters = len(df.index)
 
-    # Select FM and DMR channels.
-    df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR"])].copy()
+    # Select FM, DMR and Fusion (in FM compat mode) channels.
+    df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR", "Fusion"])].copy()
     numeric_columns = ["Output (MHz)", "Offset (MHz)"]
     df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
     df_2m = df.loc[(df["Output (MHz)"] > 144.0) & (df["Output (MHz)"] < 148.0)]
@@ -347,10 +347,10 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_dmr, "DMR MODE"] = "1"
     df_878.loc[~is_dmr, "DMR MODE"] = "0"
     
-    # Both DMR and NMFM are "narrow"
-    is_widefm = df["Mode"] == "FM"
+    # Both DMR and NBFM are "narrow"
+    is_widefm = df["Mode"].isin(["FM", "Fusion"])
     df_878.loc[is_widefm, "Band Width"] = "25K"
-    df_878.loc[~is_widefm, "Band Width"] = "12.K"
+    df_878.loc[~is_widefm, "Band Width"] = "12.5K"
 
     is_dcs = df["Tone (Hz)"].str.startswith("D")
     # TODO: Use regexp for DCS tone number between D and '[' in string?
@@ -371,26 +371,6 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     # to scan all the frequencies in the Roundabout.  For now - a dummy file added to
     # ./assets.
     df_878["Scan List"] = "Roundabout"
-
-
-    # Order columns as Chirp expects
-    # df = df[
-    #     [
-    #         "No.",
-    #         "Channel Name",
-    #         "Receive Frequency",
-    #         "Transmit Frequency",
-    #         "Channel Type",
-    #         "Band Width",
-    #         "CTCSS/DCS Encode",
-    #         "Contact",
-    #         "Contact TG/DMR ID",
-    #         "Color Code",
-    #         "Slot",
-    #         "Scan List",
-    #         "DMR MODE"
-    #     ]
-    # ]
 
     return df_878
 
