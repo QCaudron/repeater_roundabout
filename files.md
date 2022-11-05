@@ -3,7 +3,7 @@ title: Programming Files
 subtitle: Program your radios with Repeater Roundabout repeaters.
 ---
 
-In order to make the contesting life a little easier, we provide some files you can use to program your radios. These files are automatically generated each time a new repeater is added. Many thanks to [Mike K7MCK](https://www.qrz.com/db/k7mck) for contributing code to generate the AnyTone and Icom files.
+In order to make the contesting life a little easier, we provide some files you can use to program your radios. These files are automatically generated each time a new repeater is added. Many thanks to [Mike K7MCK](https://www.qrz.com/db/k7mck) for contributing code to generate the AnyTone D878 files.
 
 | Download | Type | FM | DMR | DSTAR | Fusion |
 |:--------:|:-----|:--:|:---:|:-----:|:------:|

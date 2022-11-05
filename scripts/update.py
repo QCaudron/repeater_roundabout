@@ -226,8 +226,6 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
         The FM repeaters, formatted for CHIRP.
     """
 
-    print("Generating generic CHIRP CSV file.")
-
     total_repeaters = len(df)
 
     # Only format FM channels; we can't handle DMR or D-Star at the moment
@@ -235,7 +233,7 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
     df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
 
-    print(f"{len(df)} compatible repeaters (out of {total_repeaters} total).")
+    print(f"Chirp : {len(df)} of {total_repeaters} compatible repeaters.")
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
@@ -299,6 +297,7 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
 
     return df
 
+
 def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     """
     Format a DataFrame of repeaters for use in Anytone D878.
@@ -315,7 +314,6 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
         formatted for Anytone D878.
     """
 
-    print("Generating Anytone D878 CSV file.")
     total_repeaters = len(df)
 
     # Select FM, DMR and Fusion (in FM compat mode) channels.
@@ -329,7 +327,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df = pd.concat([df_2m, df_70cm])
     df.index = list(range(1, len(df) + 1))
 
-    print(f"{len(df)} compatible repeaters (out of {total_repeaters} total).")
+    print(f"AnyTone D878 : {len(df)} of {total_repeaters} compatible repeaters.")
 
     df_878 = pd.DataFrame()
 
@@ -346,7 +344,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     # Not sure why this seemingly redundant column is in the format?
     df_878.loc[is_dmr, "DMR MODE"] = "1"
     df_878.loc[~is_dmr, "DMR MODE"] = "0"
-    
+
     # Both DMR and NBFM are "narrow"
     is_widefm = df["Mode"].isin(["FM", "Fusion"])
     df_878.loc[is_widefm, "Band Width"] = "25K"
@@ -359,7 +357,9 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_dmr, "CTCSS/DCS Encode"] = None
 
     # Parse Tone string with DMR attributes: e.g., "CC2/TS1 BEARS1 TG/312488"
-    dmr_codes = df.loc[is_dmr, "Tone (Hz)"].str.extract(r'CC(?P<color>\d+)\/TS(?P<slot>[12]) (?P<contact>\S+) TG\/(?P<id>\d+)')
+    dmr_codes = df.loc[is_dmr, "Tone (Hz)"].str.extract(
+        r"CC(?P<color>\d+)\/TS(?P<slot>[12]) (?P<contact>\S+) TG\/(?P<id>\d+)"
+    )
     df_878.loc[is_dmr, "Contact"] = dmr_codes["contact"]
     df_878.loc[is_dmr, "Contact TG/DMR ID"] = dmr_codes["id"]
     # Bug in CPS software - fails if Color Code column is empty - even for analog channels!
