@@ -450,23 +450,26 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
     df : pd.DataFrame
         All of the repeaters.
     threshold : float, optional
-        Repeaters are combined into a single pin if less than this distance apart, by default 0.03.
+        Repeaters are combined into a single pin if less
+        than this distance apart, by default 0.03.
     """
 
+    # Hierarchically cluster repeater lat / long pairs
     coords = np.array(df["Coordinates"].to_list())
     dist = pdist(coords)
     allocations = fcluster(
         linkage(dist, method="complete"), threshold, criterion="distance"
     )
 
+    # Assign each repeater's info to a cluster
     clusters = defaultdict(list)
     for idx, allocation in enumerate(allocations):
         clusters[allocation].append(
             df.iloc[idx][["Callsign", "Output (MHz)", "Coordinates"]].to_dict()
         )
 
+    # For each cluster, create a pin on the map as LeafletJS plaintext
     pins = []
-
     for cluster in clusters.values():
 
         msg = ""
@@ -480,6 +483,7 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
 
     pins = "\n".join(pins)
 
+    # Write the LeafletJS code to map templates
     with open("assets/templates/map.md", "r") as f:
         maps_md = f.read()
     with open("assets/templates/map.html", "r") as f:
@@ -505,7 +509,7 @@ def write_chirp_csv(df: pd.DataFrame) -> None:
     """
 
     df = format_df_for_chirp(df)
-    df.to_csv("assets/rr_frequencies.csv")
+    df.to_csv("assets/programming_files/rr_frequencies.csv")
 
 
 def write_d878_zip(df: pd.DataFrame) -> None:
@@ -519,13 +523,18 @@ def write_d878_zip(df: pd.DataFrame) -> None:
     """
 
     df = format_df_for_d878(df)
-    df.to_csv("assets/d878.csv")
+    df.to_csv("assets/programming_files/d878.csv")
     # TODO : scanlist and talk groups files here
 
-    with ZipFile("assets/d878.zip", "w") as zipf:
-        zipf.write("assets/d878.csv", arcname="d878.csv")
-        zipf.write("assets/d878-scanlist.csv", arcname="d878-scanlist.csv")
-        zipf.write("assets/d878-talk-groups.csv", arcname="d878-talk-groups.csv")
+    with ZipFile("assets/programming_files/d878.zip", "w") as zipf:
+        zipf.write("assets/programming_files/d878.csv", arcname="d878.csv")
+        zipf.write(
+            "assets/programming_files/d878-scanlist.csv", arcname="d878-scanlist.csv"
+        )
+        zipf.write(
+            "assets/programming_files/d878-talk-groups.csv",
+            arcname="d878-talk-groups.csv",
+        )
 
 
 if __name__ == "__main__":
