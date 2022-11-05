@@ -203,6 +203,14 @@ def generate_repeater_df(
     return df
 
 
+def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Return dataframe with Mode column footnotes removed.
+    """
+
+    return df.assign(Mode=df["Mode"].str.replace(r"\[.+\]", "", regex=True))
+
+
 def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     """
     Format a DataFrame of repeaters for use in CHIRP.
@@ -215,16 +223,19 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     Returns
     -------
     pd.DataFrame
-        The FM and NBFM repeaters, formatted for CHIRP.
+        The FM repeaters, formatted for CHIRP.
     """
 
-    # Remove footnotes from the Mode column
-    df = df.assign(Mode=df["Mode"].str.replace(r" \[.+\]", "", regex=True))
+    print("Generating generic CHIRP CSV file.")
+
+    total_repeaters = len(df)
 
     # Only format FM channels; we can't handle DMR or D-Star at the moment
-    df = df.loc[df["Mode"].isin(["FM", "NBFM[^nbfm]", "Fusion"])]  # only FM repeaters
-    df.loc[df["Mode"] == "NBFM[^nbfm]", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
+    df = df.loc[df["Mode"].isin(["FM", "NBFM", "Fusion"])].copy()  # only FM repeaters
+    df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
     df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
+
+    print(f"{len(df)} compatible repeaters (out of {total_repeaters} total).")
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
@@ -287,6 +298,81 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     ]
 
     return df
+
+def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Format a DataFrame of repeaters for use in Anytone D878.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+
+    Returns
+    -------
+    pd.DataFrame
+        The FM and NBFM repeaters, and DMR repeaters in the 2m and 70cm bands,
+        formatted for Anytone D878.
+    """
+
+    print("Generating Anytone D878 CSV file.")
+    total_repeaters = len(df)
+
+    # Select FM, DMR and Fusion (in FM compat mode) channels.
+    df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR", "Fusion"])].copy()
+    numeric_columns = ["Output (MHz)", "Offset (MHz)"]
+    df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
+    df_2m = df.loc[(df["Output (MHz)"] > 144.0) & (df["Output (MHz)"] < 148.0)]
+    df_70cm = df.loc[(df["Output (MHz)"] > 430.0) & (df["Output (MHz)"] < 450.0)]
+
+    # Number channels from 1 ...
+    df = pd.concat([df_2m, df_70cm])
+    df.index = list(range(1, len(df) + 1))
+
+    print(f"{len(df)} compatible repeaters (out of {total_repeaters} total).")
+
+    df_878 = pd.DataFrame()
+
+    df_878.index.name = "No."
+    df_878["Channel Name"] = df["Callsign"]
+    df_878["Receive Frequency"] = df["Output (MHz)"]
+    df_878["Transmit Frequency"] = df["Output (MHz)"] + df["Offset (MHz)"]
+
+    df_878 = df_878.round(3)
+
+    is_dmr = df["Mode"] == "DMR"
+    df_878.loc[is_dmr, "Channel Type"] = "D-Digital"
+    df_878.loc[~is_dmr, "Channel Type"] = "A-Analog"
+    # Not sure why this seemingly redundant column is in the format?
+    df_878.loc[is_dmr, "DMR MODE"] = "1"
+    df_878.loc[~is_dmr, "DMR MODE"] = "0"
+    
+    # Both DMR and NBFM are "narrow"
+    is_widefm = df["Mode"].isin(["FM", "Fusion"])
+    df_878.loc[is_widefm, "Band Width"] = "25K"
+    df_878.loc[~is_widefm, "Band Width"] = "12.5K"
+
+    is_dcs = df["Tone (Hz)"].str.startswith("D")
+    # TODO: Use regexp for DCS tone number between D and '[' in string?
+    df_878.loc[is_dcs, "CTCSS/DCS Encode"] = "D" + df["Tone (Hz)"].str[1:4] + "N"
+    df_878.loc[~is_dcs, "CTCSS/DCS Encode"] = df["Tone (Hz)"]
+    df_878.loc[is_dmr, "CTCSS/DCS Encode"] = None
+
+    # Parse Tone string with DMR attributes: e.g., "CC2/TS1 BEARS1 TG/312488"
+    dmr_codes = df.loc[is_dmr, "Tone (Hz)"].str.extract(r'CC(?P<color>\d+)\/TS(?P<slot>[12]) (?P<contact>\S+) TG\/(?P<id>\d+)')
+    df_878.loc[is_dmr, "Contact"] = dmr_codes["contact"]
+    df_878.loc[is_dmr, "Contact TG/DMR ID"] = dmr_codes["id"]
+    # Bug in CPS software - fails if Color Code column is empty - even for analog channels!
+    df_878["Color Code"] = 1
+    df_878.loc[is_dmr, "Color Code"] = dmr_codes["color"]
+    df_878.loc[is_dmr, "Slot"] = dmr_codes["slot"]
+
+    # TODO: Need to programatically generate a "scan list" csv file in order to be able
+    # to scan all the frequencies in the Roundabout.  For now - a dummy file added to
+    # ./assets.
+    df_878["Scan List"] = "Roundabout"
+
+    return df_878
 
 
 def write_index_md(df: pd.DataFrame) -> None:
@@ -421,6 +507,20 @@ def write_chirp_csv(df: pd.DataFrame) -> None:
     df.to_csv("assets/rr_frequencies.csv")
 
 
+def write_d878_csv(df: pd.DataFrame) -> None:
+    """
+    Write the Anytone D878 csv file.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+    """
+
+    df = format_df_for_d878(df)
+    df.to_csv("assets/d878.csv")
+
+
 if __name__ == "__main__":
 
     args = parse_args()
@@ -430,4 +530,7 @@ if __name__ == "__main__":
     write_index_md(df)
     write_repeaters_md(df)
     write_map_md(df)
+
+    df = remove_df_footnotes(df)
     write_chirp_csv(df)
+    write_d878_csv(df)
