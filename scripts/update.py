@@ -343,6 +343,9 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     is_dmr = df["Mode"] == "DMR"
     df_878.loc[is_dmr, "Channel Type"] = "D-Digital"
     df_878.loc[~is_dmr, "Channel Type"] = "A-Analog"
+    # Not sure why this seemingly redundant column is in the format?
+    df_878.loc[is_dmr, "DMR_MODE"] = "1"
+    df_878.loc[~is_dmr, "DMR_MODE"] = "0"
     
     # Both DMR and NMFM are "narrow"
     is_widefm = df["Mode"] == "FM"
@@ -355,9 +358,14 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[~is_dcs, "CTCSS/DCS Encode"] = df["Tone (Hz)"]
     df_878.loc[is_dmr, "CTCSS/DCS Encode"] = None
 
+
     # Parse Tone string with DMR attributes: e.g., "CC2/TS1 BEARS1 TG/312488"
-    dmr_codes = df.loc[is_dmr]["Tone (Hz)"].str.extract(r'CC(?P<cc>\d+)\/TS(?P<ts>[12]) (?P<name>\S+) TG\/(?P<num>\d+)')
-    print(dmr_codes)
+    dmr_codes = df.loc[is_dmr]["Tone (Hz)"].str.extract(r'CC(?P<color>\d+)\/TS(?P<slot>[12]) (?P<contact>\S+) TG\/(?P<id>\d+)')
+    df_878.loc[is_dmr, "Contact"] = dmr_codes["contact"]
+    df_878.loc[is_dmr, "Contact TG/DMR ID"] = dmr_codes["id"]
+    df_878.loc[is_dmr, "Color Code"] = dmr_codes["color"]
+    df_878.loc[is_dmr, "Slot"] = dmr_codes["slot"]
+
 
     # Order columns as Chirp expects
     # df = df[
