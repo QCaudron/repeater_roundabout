@@ -13,7 +13,7 @@ The Puget Sound Repeater Roundabout is a weekend-long event held on many of our 
 
 Anyone with a ham radio license can participate! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Thursday November 03 at 12:06.
+> This page was last updated on Friday November 04 at 20:46.
 
 
 # Repeaters
