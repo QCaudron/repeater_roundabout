@@ -359,7 +359,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_dmr, "CTCSS/DCS Encode"] = None
 
     # Parse Tone string with DMR attributes: e.g., "CC2/TS1 BEARS1 TG/312488"
-    dmr_codes = df.loc[is_dmr]["Tone (Hz)"].str.extract(r'CC(?P<color>\d+)\/TS(?P<slot>[12]) (?P<contact>\S+) TG\/(?P<id>\d+)')
+    dmr_codes = df.loc[is_dmr, "Tone (Hz)"].str.extract(r'CC(?P<color>\d+)\/TS(?P<slot>[12]) (?P<contact>\S+) TG\/(?P<id>\d+)')
     df_878.loc[is_dmr, "Contact"] = dmr_codes["contact"]
     df_878.loc[is_dmr, "Contact TG/DMR ID"] = dmr_codes["id"]
     # Bug in CPS software - fails if Color Code column is empty - even for analog channels!
