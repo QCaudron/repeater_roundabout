@@ -353,6 +353,11 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     # TODO: Use regexp for DCS tone number between D and '[' in string?
     df_878.loc[is_dcs, "CTCSS/DCS Encode"] = "D" + df["Tone (Hz)"].str[1:4] + "N"
     df_878.loc[~is_dcs, "CTCSS/DCS Encode"] = df["Tone (Hz)"]
+    df_878.loc[is_dmr, "CTCSS/DCS Encode"] = None
+
+    # Parse Tone string with DMR attributes: e.g., "CC2/TS1 BEARS1 TG/312488"
+    dmr_codes = df.loc[is_dmr]["Tone (Hz)"].str.extract(r'CC(?P<cc>\d+)\/TS(?P<ts>[12]) (?P<name>\S+) TG\/(?P<num>\d+)')
+    print(dmr_codes)
 
     # Order columns as Chirp expects
     # df = df[
