@@ -226,10 +226,16 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
         The FM repeaters, formatted for CHIRP.
     """
 
+    print("Generating generic CHIRP CSV file.")
+
+    total_repeaters = len(df.index)
+
     # Only format FM channels; we can't handle DMR or D-Star at the moment
     df = df.loc[df["Mode"].isin(["FM", "NBFM", "Fusion"])].copy()  # only FM repeaters
     df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
     df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
+
+    print(f"{len(df.index)} compatible repeaters (out of {total_repeaters} total).")
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
@@ -305,18 +311,43 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     Returns
     -------
     pd.DataFrame
-        The FM and NBFM repeaters, and DMR repeaters, formatted for Anytone D878.
+        The FM and NBFM repeaters, and DMR repeaters in the 2m and 70cm bands,
+        formatted for Anytone D878.
     """
 
-    # Select FM and DMR channels.
-    df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR"])]
+    print("Generating Anytone D878 CSV file.")
+    total_repeaters = len(df.index)
 
-    df_878 = df["Callsign"].copy()
-    df_878.columns = ["Channel Name"]
+    # Select FM and DMR channels.
+    df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR"])].copy()
+    numeric_columns = ["Output (MHz)", "Offset (MHz)"]
+    df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
+    df_2m = df.loc[(df["Output (MHz)"] > 144.0) & (df["Output (MHz)"] < 148.0)]
+    df_70cm = df.loc[(df["Output (MHz)"] > 430.0) & (df["Output (MHz)"] < 450.0)]
 
     # Number channels from 1 ...
-    df_878.index = range(1, len(df) + 1)
+    df = pd.concat([df_2m, df_70cm])
+    df.index = list(range(1, len(df) + 1))
+
+    print(f"{len(df.index)} compatible repeaters (out of {total_repeaters} total).")
+
+    df_878 = pd.DataFrame()
+
     df_878.index.name = "No."
+    df_878["Channel Name"] = df["Callsign"]
+    df_878["Receive Frequency"] = df["Output (MHz)"]
+    df_878["Transmit Frequency"] = df["Output (MHz)"] + df["Offset (MHz)"]
+
+    is_dmr = df["Mode"] == "DMR"
+    df_878.loc[is_dmr, "Channel Type"] = "D-Digital"
+    df_878.loc[~is_dmr, "Channel Type"] = "A-Analog"
+    
+    # Both DMR and NMFM are "narrow"
+    is_widefm = df["Mode"] == "FM"
+    df_878.loc[is_widefm, "Band Width"] = "25K"
+    df_878.loc[~is_widefm, "Band Width"] = "12.K"
+
+    df_878 = df_878.round(3)
 
     # Order columns as Chirp expects
     # df = df[
