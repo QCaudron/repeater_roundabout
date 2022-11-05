@@ -338,6 +338,8 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878["Receive Frequency"] = df["Output (MHz)"]
     df_878["Transmit Frequency"] = df["Output (MHz)"] + df["Offset (MHz)"]
 
+    df_878 = df_878.round(3)
+
     is_dmr = df["Mode"] == "DMR"
     df_878.loc[is_dmr, "Channel Type"] = "D-Digital"
     df_878.loc[~is_dmr, "Channel Type"] = "A-Analog"
@@ -347,7 +349,10 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_widefm, "Band Width"] = "25K"
     df_878.loc[~is_widefm, "Band Width"] = "12.K"
 
-    df_878 = df_878.round(3)
+    is_dcs = df["Tone (Hz)"].str.startswith("D")
+    # TODO: Use regexp for DCS tone number between D and '[' in string?
+    df_878.loc[is_dcs, "CTCSS/DCS Encode"] = "D" + df["Tone (Hz)"].str[1:4] + "N"
+    df_878.loc[~is_dcs, "CTCSS/DCS Encode"] = df["Tone (Hz)"]
 
     # Order columns as Chirp expects
     # df = df[
