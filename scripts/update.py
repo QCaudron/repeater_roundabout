@@ -361,6 +361,11 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     dmr_codes = df.loc[is_dmr, "Tone (Hz)"].str.extract(
         r"CC(?P<color>\d+)\/TS(?P<slot>[12]) (?P<contact>\S+) TG\/(?P<id>\d+)"
     )
+    dmr_codes["contact"] = dmr_codes["contact"].str.replace(
+        r"(?P<name>[a-zA-Z]+)(?P<number>\d+)",
+        lambda x: f"{x.group('name')} {x.group('number')}",
+        regex=True,
+    )  # space out the name and number : "BEARS1" -> "BEARS 1"
     df_878.loc[is_dmr, "Contact"] = dmr_codes["contact"]
     df_878.loc[is_dmr, "Contact TG/DMR ID"] = dmr_codes["id"]
     # Bug in CPS software - fails if Color Code column is empty - even for analog channels!
