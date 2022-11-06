@@ -59,8 +59,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | Maple Valley    | KF7NPL     | Maple Valley      | FM          |        147.260 |           +0.6 |                      103.5 |
 | Maple Valley    | KF7NPL     | Maple Valley      | DSTAR       |        442.675 |           +5.0 |                            |
 | Capitol Peak    | K7CPR      | Capitol Peak      | FM          |        145.470 |           -0.6 |                      100.0 |
-| Chehalis        | K7PG       | Boistfort Peak    | FM          |        147.060 |           +0.6 |                      110.9 |
-| Chehalis        | K7PG       | Penning Hill      | FM          |        145.430 |           -0.6 |                      110.9 |
+| Chehalis        | K7PG       | Baw Faw Peak      | FM          |        147.060 |           +0.6 |                      110.9 |
 | Kingston        | NW7DR      | Kingston          | DSTAR       |       147.4625 |           -1.0 |                            |
 | Kingston        | NW7DR      | Kingston          | FM          |        444.725 |           +5.0 |                      123.0 |
 | PSEnergy        | W7PSE      | Sumner            | FM          |        443.625 |           +5.0 |                      103.5 |

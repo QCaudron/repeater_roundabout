@@ -45,7 +45,6 @@ L.marker([48.1170005800, -122.7600021400]).bindPopup('W7JCR 145.150<br>').addTo(
 L.marker([47.3768501300, -122.0529975900]).bindPopup('KF7NPL 147.260<br>KF7NPL 442.675<br>').addTo(map);
 L.marker([46.9730987500, -123.1350021400]).bindPopup('K7CPR 145.470<br>W7SIX 53.570<br>W7SIX 927.300<br>').addTo(map);
 L.marker([46.4880981400, -123.2149963400]).bindPopup('K7PG 147.060<br>').addTo(map);
-L.marker([46.6619987500, -122.9639968900]).bindPopup('K7PG 145.430<br>').addTo(map);
 L.marker([47.8089300000, -122.4928300000]).bindPopup('NW7DR 147.4625<br>').addTo(map);
 L.marker([47.8439760000, -122.5427530000]).bindPopup('NW7DR 444.725<br>').addTo(map);
 L.marker([47.2032012900, -122.2399978600]).bindPopup('W7PSE 443.625<br>').addTo(map);

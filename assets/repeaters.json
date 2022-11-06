@@ -752,7 +752,7 @@
     {
         "Group Name":"Chehalis",
         "Callsign":"K7PG",
-        "Location":"Boistfort Peak",
+        "Location":"Baw Faw Peak",
         "Mode":"FM",
         "Output (MHz)":"147.060",
         "Offset (MHz)":"+0.6",
@@ -760,21 +760,6 @@
         "Coordinates":[
             46.48809814,
             -123.21499634
-        ],
-        "Long Name":"Chehalis Valley Amateur Radio Society",
-        "Website":"https:\/\/cvars.org\/"
-    },
-    {
-        "Group Name":"Chehalis",
-        "Callsign":"K7PG",
-        "Location":"Penning Hill",
-        "Mode":"FM",
-        "Output (MHz)":"145.430",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"110.9",
-        "Coordinates":[
-            46.66199875,
-            -122.96399689
         ],
         "Long Name":"Chehalis Valley Amateur Radio Society",
         "Website":"https:\/\/cvars.org\/"
