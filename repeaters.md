@@ -105,6 +105,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | Kitsap          | KC7Z       | Silverdale        | FM          |        444.075 |           +5.0 |                      103.5 |
 | Mason County    | N7SK       | Shelton           | FM          |        146.720 |           -0.6 |                      103.5 |
 | Mason County    | N7SK       | Shelton           | FM          |        443.250 |           +5.0 |                      100.0 |
+| Mason County    | N7SK       | Shelton           | FM          |       927.4125 |          -25.0 |                      114.8 |
 | Olympia         | NT7H       | Olympia           | FM          |        147.360 |           +0.6 |                      103.5 |
 | Olympia         | NT7H       | Crawford Mtn.     | FM          |        224.460 |           -1.6 |                      103.5 |
 | Olympia         | NT7H       | Crawford Mtn.     | FM          |        441.400 |           +5.0 |                      103.5 |
