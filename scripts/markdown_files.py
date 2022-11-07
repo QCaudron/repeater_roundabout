@@ -52,10 +52,23 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
         "Offset (MHz)",
         "Tone (Hz)",
     ]
-    table = df[table_cols].to_markdown(
-        index=False,
-        disable_numparse=True,
-        colalign=["left", "left", "left", "left", "left", "right", "right", "right"],
+    table = (
+        df[table_cols]
+        .rename(columns={"Group Name": "Group"})
+        .to_markdown(
+            index=False,
+            disable_numparse=True,
+            colalign=[
+                "left",
+                "left",
+                "left",
+                "left",
+                "left",
+                "right",
+                "right",
+                "right",
+            ],
+        )
     )
 
     # Create a list of short-name-to-long-description mappings
@@ -101,7 +114,7 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
         )
 
     # For each cluster, create a pin on the map as LeafletJS plaintext
-    pins = []
+    pins_list = []
     for cluster in clusters.values():
 
         msg = ""
@@ -110,10 +123,10 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
 
         if len(msg):
             coords = np.mean([repeater["Coordinates"] for repeater in cluster], axis=0)
-            coords = f"[{coords[0]:.10f}, {coords[1]:.10f}]"
-            pins.append(f"L.marker({coords}).bindPopup('{msg}').addTo(map);")
+            coords_str = f"[{coords[0]:.10f}, {coords[1]:.10f}]"
+            pins_list.append(f"L.marker({coords_str}).bindPopup('{msg}').addTo(map);")
 
-    pins = "\n".join(pins)
+    pins = "\n".join(pins_list)
 
     # Write the LeafletJS code to map templates
     with open("assets/templates/map.md", "r") as f:

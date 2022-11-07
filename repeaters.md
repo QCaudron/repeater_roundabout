@@ -7,7 +7,7 @@ The following repeaters are participating in the Repeater Roundabout. Please ens
 
 Get started by [programming your radio](/files), and check out the repeaters' locations on the [repeater map](/map).
 
-| RR#   | Group Name      | Callsign   | Location          | Mode        |   Output (MHz) |   Offset (MHz) |                  Tone (Hz) |
+| RR#   | Group           | Callsign   | Location          | Mode        |   Output (MHz) |   Offset (MHz) |                  Tone (Hz) |
 |:------|:----------------|:-----------|:------------------|:------------|---------------:|---------------:|---------------------------:|
 | 1     | PSRG            | WW7PSR     | Seattle           | FM          |        146.960 |           -0.6 |                      103.5 |
 | 2     | PSRG            | WW7PSR     | Seattle           | FM          |         52.870 |           -1.7 |                      103.5 |
