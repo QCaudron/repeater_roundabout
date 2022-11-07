@@ -285,3 +285,24 @@ def write_d878_zip(df: pd.DataFrame) -> None:
             "assets/programming_files/d878-talk-groups.csv",
             arcname="d878-talk-groups.csv",
         )
+
+
+def write_generic_csv(df: pd.DataFrame) -> None:
+    """
+    Write a generic CSV file containing all repeaters.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+    """
+
+    df.index = df["RR#"]
+    df.index.name = "Channel"
+    df = df.sort_index()
+
+    (
+        df.drop(["Group Name", "Website", "RR#", "Coordinates"], axis=1)
+        .rename(columns={"Long Name": "Group"})
+        .to_csv("assets/programming_files/all_rr_frequencies.csv")
+    )

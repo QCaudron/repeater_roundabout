@@ -12,6 +12,7 @@ These files are automatically generated each time a new repeater is added. Many 
 | <a href="assets/programming_files/rr_frequencies.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | [Chirp](https://chirp.danplanet.com/projects/chirp/wiki/Home) | <img src="assets/images/check-solid.svg" height="20px" /> | | | <img src="assets/images/check-solid.svg" height="20px" /> |
 | <a href="assets/programming_files/d878.zip" download><img src="assets/images/download-solid.svg" height="30px" /></a> | [AnyTone AT-D878](https://support.bridgecomsystems.com/anytone-878-v2-model-cps-firmware-downloads) | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | | |
 | <a href="assets/programming_files/icom.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | [Icom IC-705](https://www.icomjapan.com/support/firmware_driver/3067/) | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> | |
+| <a href="assets/programming_files/all_rr_frequencies.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | All repeaters | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> |
 
 <br />
 
@@ -56,7 +57,7 @@ go to the `Tools > Import` menu and select each of the files you've downloaded
 in the appropriate category (Channel, Scan List, and/or Talk Groups). Then use
 the `Program > Write to Radio` menu to send the program to your D878.
 
-## Icom-705 Instructions
+## Icom IC-705 instructions
 
 *These have been tested with the Icom-705.  If you have an Icom 7300 (or other Icom radio), please
 let us know if this file is also compatible with your radio.*
@@ -70,3 +71,8 @@ let us know if this file is also compatible with your radio.*
    repeater roundup channels.
 6. Select the new group and use the `File > Import > Group` menu and select the
    downloaded <a href="asserts/programming_files/icom.csv">icom.csv</a>file.
+
+
+## All repeaters
+
+This file contains frequencies for all repeaters, not formatted for any particular program. You should be able to modify it for your radio of choice.

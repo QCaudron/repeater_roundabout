@@ -7,7 +7,12 @@ import pandas as pd
 import requests
 
 from markdown_files import write_index_md, write_map_md, write_repeaters_md
-from programming_files import write_chirp_csv, write_d878_zip, write_icom_csv
+from programming_files import (
+    write_chirp_csv,
+    write_d878_zip,
+    write_generic_csv,
+    write_icom_csv,
+)
 
 
 def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
@@ -230,3 +235,4 @@ if __name__ == "__main__":
     write_chirp_csv(df)
     write_icom_csv(df)
     write_d878_zip(df)
+    write_generic_csv(df)
