@@ -10,4 +10,4 @@ jobs:
   verify_d878_line_endings:
     runs-on: ubuntu-latest
     steps:
-      - run: python scripts/test_d878_line_endings.py
+      - run: python scripts/test_crlf.py
