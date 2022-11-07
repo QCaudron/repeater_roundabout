@@ -226,7 +226,7 @@ Seattle ACS
 : [Seattle Auxiliary Communications Service](https://www.seattleacs.org/)
 
 Shoreline
-: [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs)
+: [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs/)
 
 Skagit Valley
 : [Radio Amateurs of Skagit Valley](http://www.rasconline.com/)
