@@ -36,7 +36,7 @@ Feel free to chat about anything and everything, though! The goal is to have a c
 
 # Scoring
 
-You score one point for each repeater you make a contact on. Multiple contacts on the same repeater do not provide more points.
+You score one point for each repeater you make a contact on. Multiple contacts on the same repeater do not provide more points. The person you contact does not necessarily have to be participating in the Repeater Roundabout -- any contact counts.
 
 **Bonus : Collect 'em all !** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score doubles for that system. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log a contact on all three of them, you score six points instead of three.
 
