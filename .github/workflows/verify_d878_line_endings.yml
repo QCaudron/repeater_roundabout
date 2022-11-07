@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Verify D878 line endings
+        uses: actions/checkout@v2
         run: python ./.github/test_crlf.py
