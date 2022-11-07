@@ -70,9 +70,9 @@ let us know if this file is also compatible with your radio.*
 5. Click on `Memory CH > <<Add Group>>` to create a new group of memory channels for the
    repeater roundup channels.
 6. Select the new group and use the `File > Import > Group` menu and select the
-   downloaded <a href="asserts/programming_files/icom.csv">icom.csv</a>file.
+   downloaded <a href="asserts/programming_files/icom.csv" download>icom.csv</a>file.
 
 
 ## All repeaters
 
-This file contains frequencies for all repeaters, not formatted for any particular program. You should be able to modify it for your radio of choice.
+<a href="assets/programming_files/all_rr_frequencies.csv" download>This file</a> contains frequencies for all repeaters, not formatted for any particular program. You should be able to modify it for your radio of choice.
