@@ -523,8 +523,10 @@ def write_d878_zip(df: pd.DataFrame) -> None:
     """
 
     df = format_df_for_d878(df)
-    df.to_csv("assets/programming_files/d878.csv")
-    # TODO : scanlist and talk groups files here
+    # D878 CPS software requires CR/LF line endings
+    df.to_csv("assets/programming_files/d878.csv", lineterminator="\r\n")
+
+    # TODO : generate scanlist and talk groups files here
 
     with ZipFile("assets/programming_files/d878.zip", "w") as zipf:
         zipf.write("assets/programming_files/d878.csv", arcname="d878.csv")
