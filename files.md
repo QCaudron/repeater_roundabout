@@ -63,7 +63,7 @@ let us know if this file is also compatible with your radio.*
    Software](https://www.icomjapan.com/support/firmware_driver/3067/).
 2. Connect a USB cable from your computer to the Icom 705.
 3. Use the `COM Port > Setting...` command to select the COM port used by the USB connection.
-4. Use the `Clone < Read <- TR` menu to duplicate the Icom's settings to your computer.
+4. Use the `Clone > Read <- TR` menu to duplicate the Icom's settings to your computer.
 5. Click on `Memory CH > <<Add Group>>` to create a new group of memory channels for the
    repeater roundup channels.
 6. Select the new group and use the `File > Import > Group` menu and select the
