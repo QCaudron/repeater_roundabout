@@ -1,6 +1,68 @@
+from typing import Literal, List
 from zipfile import ZipFile
 
 import pandas as pd
+
+
+band_definitions = {
+    "6m": (50, 54),
+    "2m": (144, 148),
+    "1.25m": (220, 225),
+    "70cm": (420, 450),
+    "33cm": (900, 930),
+    "23cm": (1240, 1300),
+}
+
+BANDS = Literal["6m", "2m", "1.25m", "70cm", "33cm", "23cm"]
+
+
+def filter_by_band(df: pd.DataFrame, bands: List[BANDS]) -> pd.DataFrame:
+    """
+    Filter a DataFrame of repeaters by a given band.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+    bands : list of bands {"6m", "2m", "1.25m", "70cm", "33cm", "23cm"}
+        Bands to include in the output DataFrame.
+
+    Returns
+    -------
+    pd.DataFrame
+        Repeaters in the given bands.
+    """
+
+    band_dfs = []
+    for band in bands:
+        band_dfs.append(
+            df.loc[
+                (df["Output (MHz)"].astype(float) > band_definitions[band][0])
+                & (df["Output (MHz)"].astype(float) < band_definitions[band][1])
+            ].copy()
+        )
+
+    return pd.concat(band_dfs).sort_index()
+
+
+def filter_by_mode(df: pd.DataFrame, modes: List[str]) -> pd.DataFrame:
+    """
+    Filter a DataFrame of repeaters by a given mode.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+    modes : list of modes
+        Modes to include in the output DataFrame.
+
+    Returns
+    -------
+    pd.DataFrame
+        Repeaters in the given modes.
+    """
+
+    return df.loc[df["Mode"].isin(modes)].sort_index().copy()
 
 
 def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
@@ -21,7 +83,7 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     total_repeaters = len(df)
 
     # Only format FM channels; we can't handle DMR or D-Star at the moment
-    df = df.loc[df["Mode"].isin(["FM", "NBFM", "Fusion"])].copy()  # only FM repeaters
+    df = filter_by_mode(df, ["FM", "NBFM", "Fusion"])  # only FM repeaters
     df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
     df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
 
@@ -108,19 +170,17 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
 
     total_repeaters = len(df)
 
-    # Select FM, DMR and Fusion (in FM compat mode) channels.
-    df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR", "Fusion"])].copy()
-
-    # Restrict to available bands
-    numeric_columns = ["Output (MHz)", "Offset (MHz)"]
-    df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
-    df_2m = df.loc[(df["Output (MHz)"] > 144.0) & (df["Output (MHz)"] < 148.0)]
-    df_70cm = df.loc[(df["Output (MHz)"] > 430.0) & (df["Output (MHz)"] < 450.0)]
+    # Select FM, DMR and Fusion (in FM compat mode) channels in the 2m or 70cm bands.
+    df = filter_by_mode(df, ["FM", "NBFM", "DMR", "Fusion"])
+    df = filter_by_band(df, ["2m", "70cm"])
 
     # Set the RR number as the channel number
-    df = pd.concat([df_2m, df_70cm])
     df.index = df["RR#"]
     df = df.sort_index()
+
+    # Treat output and offset as numerical values (to sum them later)
+    numeric_columns = ["Output (MHz)", "Offset (MHz)"]
+    df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
 
     print(f"AnyTone D878: {len(df)} compatible repeaters (out of {total_repeaters}).")
 
@@ -189,18 +249,14 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     total_repeaters = len(df)
 
     # Select FM and Fusion (in FM compat mode) channels.
-    df = df.loc[df["Mode"].isin(["FM", "NBFM", "Fusion"])].copy()
+    df = filter_by_mode(df, ["FM", "NBFM", "Fusion"])
+    df = filter_by_band(df, ["6m", "2m", "1.25m", "70cm"])
 
-    # Restrict to available bands
+    # Treat output and offset as numerical values
     numeric_columns = ["Output (MHz)", "Offset (MHz)"]
     df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
-    df_6m = df.loc[(df["Output (MHz)"] > 50.0) & (df["Output (MHz)"] < 54.0)]
-    df_2m = df.loc[(df["Output (MHz)"] > 144.0) & (df["Output (MHz)"] < 148.0)]
-    df_125cm = df.loc[(df["Output (MHz)"] > 222.0) & (df["Output (MHz)"] < 225.0)]
-    df_70cm = df.loc[(df["Output (MHz)"] > 430.0) & (df["Output (MHz)"] < 450.0)]
 
     # Set the RR number as the channel number
-    df = pd.concat([df_6m, df_2m, df_125cm, df_70cm])
     df.index = df["RR#"]
     df = df.sort_index()
 
