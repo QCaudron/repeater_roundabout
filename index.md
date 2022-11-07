@@ -13,7 +13,7 @@ The Puget Sound Repeater Roundabout is a weekend-long event held on many of our 
 
 Anyone with a ham radio license can participate! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Sunday November 06 at 18:38.
+> This page was last updated on Sunday November 06 at 20:37.
 
 
 # Repeaters
@@ -48,19 +48,19 @@ You should log
 - the date and time (in Pacific time) of the contact
 - the callsign of the person you contacted
 - their signal report for your signal
-- the repeater's callsign and output frequency
+- the repeater's Repeater Roundabout number (RR#) -- see the [repeaters page](/repeaters) page
 
 You must use [this spreadsheet](https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing) for logging, to make it easier to calculate your points. To get started, click on `File`, then `Make a copy` or `Download`.
 
 Here's an example log file :
 
-| Date    | Time  | Callsign | Report  | Repeater | Frequency |
-|:--------|:------|:---------|--------:|:---------|----------:|
-| Nov 19  | 11:32 | KI7RMU   |     CM5 | WW7PSR   | 146.960   |
-| Nov 19  | 17:02 | KD7DK    |      59 | WW7PSR   | 52.87     |
-| Nov 20  | 08:51 | K7RCH    |     CM4 | W7AW     | 145.130   |
-| Nov 20  | 13:16 | KX2CW    |     CM2 | WW7SEA   | 444.550   |
-| Nov 20  | 13:16 | KD7WGN   |      45 | K7LED    | 224.12    |
+| Date    | Time  | Callsign | Report  | RR# |
+|:--------|:------|:---------|--------:|:----|
+| Nov 19  | 11:32 | KI7RMU   |     CM5 | 1   |
+| Nov 19  | 17:02 | KD7DK    |      59 | 35  |
+| Nov 20  | 08:51 | K7RCH    |     CM4 | 57  |
+| Nov 20  | 13:16 | KX2CW    |     CM2 | 22  |
+| Nov 20  | 13:16 | KD7WGN   |      45 | 102 |
 
 Send logs to [k7drq@psrg.org](mailto:k7drq@psrg.org) for scoring! After the contest, a leaderboard will be published. Logs must be returned to K7DRQ by November 27th to qualify.
 

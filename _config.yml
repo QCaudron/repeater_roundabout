@@ -16,3 +16,6 @@ navbar-links:
 avatar: "/assets/images/logo.png"
 
 gtag: "G-N7S873N5DC"
+
+css:
+  - assets/css/style.css

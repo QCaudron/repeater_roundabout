@@ -1,0 +1,108 @@
+Channel,Callsign,Location,Mode,Output (MHz),Offset (MHz),Tone (Hz),Group
+1,WW7PSR,Seattle,FM,146.960,-0.6,103.5,Puget Sound Repeater Group
+2,WW7PSR,Seattle,FM,52.870,-1.7,103.5,Puget Sound Repeater Group
+3,WW7PSR,Seattle,DMR,440.775,+5.0,CC2/TS1 Seattle1 TG/803153,Puget Sound Repeater Group
+4,W7AUX,Shoreline,FM,442.825,+5.0,103.5,Shoreline Auxiliary Communications Service
+5,W7AUX,Shoreline,FM,440.300,+5.0,103.5,Shoreline Auxiliary Communications Service
+6,W7AUX,Shoreline,FM,224.020,-1.6,103.5,Shoreline Auxiliary Communications Service
+7,NC7G,SeaTac,FM,146.660,-0.6,103.5,Highline Amateur Radio Club
+8,WA7ST,SeaTac,FM,443.100,+5.0,103.5,Highline Amateur Radio Club
+9,AA7MI,Marrowstone Isl.,FM,440.725,+5.0,114.8,Marrowstone Island Amateur Radio Club
+10,W7FLY,Lynnwood,FM,443.925,+5.0,100.0,Boeing Employees Amateur Radio Operators North Society
+11,W7DX,Redmond,FM,147.000,-0.6,103.5,Western Washington DX Club
+12,W7NPC,Bainbridge Isl.,FM,53.430,-1.7,100.0,Bainbridge Island Amateur Radio Club
+13,W7NPC,Bainbridge Isl.,FM,444.475,+5.0,103.5,Bainbridge Island Amateur Radio Club
+14,W7NPC,Bainbridge Isl.,DSTAR,444.5625,+5.0,,Bainbridge Island Amateur Radio Club
+15,W7NPC,Bainbridge Isl.,DSTAR,1290.500,-20.0,,Bainbridge Island Amateur Radio Club
+16,K7DK,Buck Mtn.,FM,440.950,+5.0,110.9,Mark K7DK's repeater system
+17,K7LWH,Kirkland,FM,145.490,-0.6,103.5,Lake Washington Ham Club
+18,K7PP,Gold Mtn.,FM,441.200,+5.0,123.0,Peter K7PP's repeater network
+19,N9VW,Issaquah,FM,53.830,-1.7,123.0,Steve N9VW's repeater system
+20,WW7SEA,Seattle,FM,444.700,+5.0,103.5,Barry K7PAL's Western Washington repeater system
+21,WW7SEA,Seattle,Fusion,444.425,+5.0,141.3,Barry K7PAL's Western Washington repeater system
+22,K7NWS,Tiger Mtn.,FM,145.330,-0.6,179.9,Boeing Employees Amateur Radio Society
+23,K7NWS,Tiger Mtn.,FM,224.340,-1.6,110.9,Boeing Employees Amateur Radio Society
+24,K7NWS,Tiger Mtn.,DMR,442.075,+5.0,CC2/TS1 BEARS1 TG/312488,Boeing Employees Amateur Radio Society
+25,K7LED,Tiger Mtn.,FM,146.820,-0.6,103.5,Mike and Key Amateur Radio Club
+26,K7LED,Tiger Mtn.,FM,224.120,-1.6,103.5,Mike and Key Amateur Radio Club
+27,W7EAT,Eatonville,FM,146.700,-0.6,103.5,Eatonville Amateur Radio Club
+28,W7EAT,Graham,FM,224.180,-1.6,103.5,Eatonville Amateur Radio Club
+29,W7EAT,Eatonville,FM,442.725,+5.0,103.5,Eatonville Amateur Radio Club
+30,W7DK,Tacoma,FM,147.280,+0.6,103.5,Radio Club of Tacoma
+31,W7DK,Tacoma,FM,440.625,+5.0,103.5,Radio Club of Tacoma
+32,W7DK,Tacoma,FM,145.210,-0.6,141.3,Radio Club of Tacoma
+33,W7DK,Crawford Mtn.,FM,147.380,+0.6,103.5,Radio Club of Tacoma
+34,W7AAO,Grass Mtn.,FM,145.370,-0.6,136.5,Pierce County ARES
+35,WW7STR,Tiger Mtn.,NBFM,146.875,-0.6,103.5,SeaTac Repeater Association
+36,WW7STR,Tiger Mtn.,FM,443.050,+5.0,103.5,SeaTac Repeater Association
+37,WW7STR,Cougar Mtn.,FM,224.440,-1.6,103.5,SeaTac Repeater Association
+38,WW7STR,Cougar Mtn.,NBFM,927.2125,-25.0,114.8,SeaTac Repeater Association
+39,W7ACS,Seattle,FM,442.300,+5.0,141.3,Seattle Auxiliary Communications Service
+40,W7ACS,Seattle,FM,444.550,+5.0,141.3,Seattle Auxiliary Communications Service
+41,W7ACS,Seattle,FM,442.875,+5.0,141.3,Seattle Auxiliary Communications Service
+42,W7ACS,Seattle,FM,443.475,+5.0,141.3,Seattle Auxiliary Communications Service
+43,W7ACS,North Seattle,FM,443.650,+5.0,141.3,Seattle Auxiliary Communications Service
+44,W7ACS,Lake Forest Park,FM,440.600,+5.0,141.3,Seattle Auxiliary Communications Service
+45,W7ACS,White Center,FM,443.200,+5.0,141.3,Seattle Auxiliary Communications Service
+46,W7JCR,Port Townsend,FM,145.150,-0.6,114.8,Jefferson County Amateur Radio Club
+47,W7RNK,Cougar Mtn.,DSTAR,147.995,-0.6,,Newcastle DSTAR Club
+48,KF7NPL,Maple Valley,FM,147.260,+0.6,103.5,Maple Valley Emergency Repeater Association
+49,KF7NPL,Maple Valley,DSTAR,442.675,+5.0,,Maple Valley Emergency Repeater Association
+50,K7CPR,Capitol Peak,FM,145.470,-0.6,100.0,Capitol Peak Repeater Group
+51,K7PG,Baw Faw Peak,FM,147.060,+0.6,110.9,Chehalis Valley Amateur Radio Society
+52,NW7DR,Kingston,DSTAR,147.4625,-1.0,,Greater Kingston Radio Club
+53,NW7DR,Kingston,FM,444.725,+5.0,123.0,Greater Kingston Radio Club
+54,W7PSE,Sumner,FM,443.625,+5.0,103.5,Puget Sound Energy Amateur Radio Group
+55,W7PSE,Olympia,FM,145.150,-0.6,103.5,Puget Sound Energy Amateur Radio Group
+56,W7PSE,Stampede,FM,442.725,+5.0,103.5,Puget Sound Energy Amateur Radio Group
+57,N7OEP,Baldi Mtn.,FM,53.330,-1.7,100.0,Tom N7OEP's repeater system
+58,N7OEP,Baldi Mtn.,Fusion,440.075,+5.0,103.5,Tom N7OEP's repeater system
+59,W7AW,West Seattle,FM,145.130,-0.6,103.5,West Seattle Amateur Radio Club
+60,W7AW,West Seattle,FM,441.800,+5.0,141.3,West Seattle Amateur Radio Club
+61,W7AW,West Seattle,DMR,440.975,+5.0,CC2/TS1 Local1 TG/3181,West Seattle Amateur Radio Club
+62,W7PIG,Camano Isl.,FM,223.880,-1.6,103.5,Stanwood Camano Amateur Radio Club
+63,W7PIG,Camano Isl.,FM,147.360,+0.6,127.3,Stanwood Camano Amateur Radio Club
+64,WA7LAW,Everett,FM,147.180,+0.6,103.5,Snohomish County Hams Club
+65,WA7LAW,Everett,Fusion,444.575,+5.0,103.5,Snohomish County Hams Club
+66,K7SKW,Orcas Isl.,FM,146.740,-0.6,103.5,Mount Baker Amateur Radio Club
+67,K7SKW,Orcas Isl.,FM,444.050,+5.0,103.5,Mount Baker Amateur Radio Club
+68,K7SKW,Bellingham,FM,443.750,+5.0,103.5,Mount Baker Amateur Radio Club
+69,K7SKW,Bellingham,FM,147.160,+0.6,103.5,Mount Baker Amateur Radio Club
+70,K7SKW,Bellingham,Fusion,443.650,+5.0,103.5,Mount Baker Amateur Radio Club
+71,N7GDE,Lyman Hill,FM,145.190,-0.6,127.3,Radio Amateurs of Skagit Valley
+72,WA7DEM,Lynnwood,FM,146.780,-0.6,D172[^dcs],Snohomish County Auxiliary Communications Service
+73,WA7DEM,Marysville,FM,224.380,-1.6,103.5,Snohomish County Auxiliary Communications Service
+74,WA7DEM,Clearview,FM,442.975,+5.0,D172[^dcs],Snohomish County Auxiliary Communications Service
+75,WA7DEM,Mountlake Terrace,FM,443.725,+5.0,103.5,Snohomish County Auxiliary Communications Service
+76,WA7DEM,Granite Falls,FM,146.92,-0.6,123.0,Snohomish County Auxiliary Communications Service
+77,WA7DEM,Clinton,FM,440.375,+5.0,103.5,Snohomish County Auxiliary Communications Service
+78,WA7DEM,Edmonds,NBFM,444.025,+5.0,156.7,Snohomish County Auxiliary Communications Service
+79,WA7DEM,Darrington,FM,444.300,+5.0,103.5,Snohomish County Auxiliary Communications Service
+80,NE7MC,Kenmore,FM,442.000,+5.0,141.3,Northshore Emergency Management Coalition
+81,N7JN,San Juan Isl.,FM,146.700,-0.6,131.8,San Juan County Amateur Radio Society
+82,N7JN,Orcas Isl.,FM,224.480,-1.6,103.5,San Juan County Amateur Radio Society
+83,N7JN,San Juan Isl.,DSTAR,145.250,-0.6,,San Juan County Amateur Radio Society
+84,N7JN,San Juan Isl.,DSTAR,442.4625,+5.0,,San Juan County Amateur Radio Society
+85,WA7FW,Federal Way,FM,147.040,+0.6,103.5,Federal Way Amateur Radio Club
+86,WA7FW,Federal Way,FM,146.760,-0.6,103.5,Federal Way Amateur Radio Club
+87,WA7FW,Federal Way,FM,442.950,+5.0,103.5,Federal Way Amateur Radio Club
+88,WA7FW,Federal Way,DSTAR,146.840,-0.6,,Federal Way Amateur Radio Club
+89,WA7FW,Federal Way,DSTAR,443.850,+5.0,,Federal Way Amateur Radio Club
+90,KE7GFZ,Cougar Mtn.,FM,441.825,+5.0,103.5,Snoqualmie Valley Amateur Radio Club
+91,WA7TBP,Carnation,FM,223.960,-1.6,123.0,Tom WA7TBP's repeater system
+92,N7KGJ,Squak Mtn.,FM,444.525,+5.0,103.5,Tom WA7TBP's repeater system
+93,N7IG,Port Orchard,FM,145.390,-0.6,88.5,West Sound Amateur Radio Club
+94,KC7Z,Silverdale,FM,444.075,+5.0,103.5,Kitsap County Amateur Radio Club
+95,N7SK,Shelton,FM,146.720,-0.6,103.5,Mason County Amateur Radio Club
+96,N7SK,Shelton,FM,443.250,+5.0,100.0,Mason County Amateur Radio Club
+97,N7SK,Shelton,FM,927.4125,-25.0,114.8,Mason County Amateur Radio Club
+98,NT7H,Olympia,FM,147.360,+0.6,103.5,Olympia Amateur Radio Society
+99,NT7H,Crawford Mtn.,FM,224.460,-1.6,103.5,Olympia Amateur Radio Society
+100,NT7H,Crawford Mtn.,FM,441.400,+5.0,103.5,Olympia Amateur Radio Society
+101,W7SIX,Capitol Peak,FM,53.570,-1.7,100.0,Western Washington Repeater Group
+102,W7SIX,Grass Mtn.,FM,53.870,-1.7,100.0,Western Washington Repeater Group
+103,W7SIX,Capitol Peak,NBFM,927.300,-25.0,114.8,Western Washington Repeater Group
+104,NM7E,Belfair,FM,145.170,-0.6,103.5,North Mason Amateur Radio Emergency Service Club
+105,W7AVM,Whidbey Isl.,FM,146.860,-0.6,127.3,Island County Amateur Radio Club
+106,N7KN,Whidbey Isl.,FM,441.425,+5.0,110.9,Charlie N7KN's repeater system
+107,WA7ROY,Roy,FM,444.175,+5.0,123.0,Roy Area Communications Network
