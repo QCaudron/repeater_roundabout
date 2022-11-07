@@ -234,7 +234,7 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
     df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
 
-    print(f"Chirp : {len(df)} of {total_repeaters} compatible repeaters.")
+    print(f"Chirp: {len(df)} compatible repeaters (out of {total_repeaters}).")
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
@@ -311,14 +311,15 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     Returns
     -------
     pd.DataFrame
-        The FM and NBFM repeaters, and DMR repeaters in the 2m and 70cm bands,
-        formatted for Anytone D878.
+        The repeaters in the 2m and 70cm bands, formatted for Anytone D878.
     """
 
     total_repeaters = len(df)
 
     # Select FM, DMR and Fusion (in FM compat mode) channels.
     df = df.loc[df["Mode"].isin(["FM", "NBFM", "DMR", "Fusion"])].copy()
+
+    # Restrict to available bands
     numeric_columns = ["Output (MHz)", "Offset (MHz)"]
     df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
     df_2m = df.loc[(df["Output (MHz)"] > 144.0) & (df["Output (MHz)"] < 148.0)]
@@ -328,7 +329,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df = pd.concat([df_2m, df_70cm])
     df.index = list(range(1, len(df) + 1))
 
-    print(f"AnyTone D878 : {len(df)} of {total_repeaters} compatible repeaters.")
+    print(f"AnyTone D878: {len(df)} compatible repeaters (out of {total_repeaters}).")
 
     df_878 = pd.DataFrame()
 
@@ -374,6 +375,66 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878["Scan List"] = "Roundabout"
 
     return df_878
+
+def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Format a DataFrame of repeaters for use in Icom 878 CSV format.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+
+    Returns
+    -------
+    pd.DataFrame
+        The Icom-compativle repeaters formatted for the Icom.
+        (Tested with Icom-705 - may work for others).
+    """
+
+    total_repeaters = len(df)
+
+    # Select FM and Fusion (in FM compat mode) channels.
+    df = df.loc[df["Mode"].isin(["FM", "NBFM", "Fusion"])].copy()
+
+    # Restrict to available bands
+    numeric_columns = ["Output (MHz)", "Offset (MHz)"]
+    df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
+    df_6m = df.loc[(df["Output (MHz)"] > 50.0) & (df["Output (MHz)"] < 54.0)]
+    df_2m = df.loc[(df["Output (MHz)"] > 144.0) & (df["Output (MHz)"] < 148.0)]
+    df_125cm = df.loc[(df["Output (MHz)"] > 222.0) & (df["Output (MHz)"] < 225.0)]
+    df_70cm = df.loc[(df["Output (MHz)"] > 430.0) & (df["Output (MHz)"] < 450.0)]
+
+    # Number channels from 1 ...
+    df = pd.concat([df_6m, df_2m, df_125cm, df_70cm])
+    df.index = list(range(1, len(df) + 1))
+
+    print(f"Icom (705): {len(df)} compatible repeaters (out of {total_repeaters}).")
+
+    df_icom = pd.DataFrame()
+
+    df_icom.index.name = "CH No"
+    df_icom["Name"] = df["Callsign"]
+    df_icom["Mode"] = "FM"
+    df_icom["Frequency"] = df["Output (MHz)"]
+    df_icom["Dup"] = "DUP+"
+    df_icom.loc[df["Offset (MHz)"] < 0, "Dup"] = "DUP-"
+    df_icom["Offset"] = df["Offset (MHz)"].abs()
+
+    # Icom Filters are (1) 15kHz wide and (2) 10kHz wide.
+    df_icom["Filter"] = "1"
+    df_icom.loc[df["Mode"] == "NBFM", "Filter"] = "2"
+
+    df_icom = df_icom.round(3)
+
+    is_dcs = df["Tone (Hz)"].str.startswith("D")
+    # TODO: Use regexp for DCS tone number between D and '[' in string?
+    df_icom.loc[~is_dcs, "TONE"] = "TONE"
+    df_icom.loc[~is_dcs, "Repeater Tone"] = df["Tone (Hz)"] + "Hz"
+    df_icom.loc[is_dcs, "TONE"] = "DTCS"
+    df_icom.loc[is_dcs, "DTCS Code"] = df["Tone (Hz)"].str[1:4]
+
+    return df_icom
 
 
 def write_index_md(df: pd.DataFrame) -> None:
@@ -512,6 +573,20 @@ def write_chirp_csv(df: pd.DataFrame) -> None:
     df.to_csv("assets/programming_files/rr_frequencies.csv")
 
 
+def write_icom_csv(df: pd.DataFrame) -> None:
+    """
+    Write Icom (705 - maybe others) CSV import file.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+    """
+
+    df = format_df_for_icom(df)
+    df.to_csv("assets/programming_files/icom.csv")
+
+
 def write_d878_zip(df: pd.DataFrame) -> None:
     """
     Write the Anytone D878 csv file.
@@ -549,4 +624,5 @@ if __name__ == "__main__":
 
     df = remove_df_footnotes(df)
     write_chirp_csv(df)
+    write_icom_csv(df)
     write_d878_zip(df)
