@@ -182,7 +182,7 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     Returns
     -------
     pd.DataFrame
-        The Icom-compativle repeaters formatted for the Icom.
+        The Icom-compatible repeaters formatted for the Icom.
         (Tested with Icom-705 - may work for others).
     """
 
@@ -196,11 +196,10 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
     df_6m = df.loc[(df["Output (MHz)"] > 50.0) & (df["Output (MHz)"] < 54.0)]
     df_2m = df.loc[(df["Output (MHz)"] > 144.0) & (df["Output (MHz)"] < 148.0)]
-    df_125cm = df.loc[(df["Output (MHz)"] > 222.0) & (df["Output (MHz)"] < 225.0)]
     df_70cm = df.loc[(df["Output (MHz)"] > 430.0) & (df["Output (MHz)"] < 450.0)]
 
     # Set the RR number as the channel number
-    df = pd.concat([df_6m, df_2m, df_125cm, df_70cm])
+    df = pd.concat([df_6m, df_2m, df_70cm])
     df.index = df["RR#"]
     df = df.sort_index()
 
