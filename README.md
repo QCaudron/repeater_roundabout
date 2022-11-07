@@ -1,3 +1,6 @@
+[![.github/workflows/verify_d878_line_endings.yml](https://github.com/QCaudron/repeater_roundabout/actions/workflows/verify_d878_line_endings.yml/badge.svg?branch=main)](https://github.com/QCaudron/repeater_roundabout/actions/workflows/verify_d878_line_endings.yml)
+
+
 # Repeater Roundabout
 
 This repo manages the website for the [Repeater Roundabout](https://repeaterroundabout.com). The `main` branch is automatically deployed to the production site; it is built using Jekyll to generate static HTML pages from the Markdown files in the root directory. These Markdown files are generated programmatically from the `assets/templates` directory, which contains the templates for the various pages on the site, and from information contained in `assets/repeaters.json`.
