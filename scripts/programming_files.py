@@ -1,10 +1,10 @@
-from typing import Literal, List
+from typing import List, Literal
 from zipfile import ZipFile
 
 import pandas as pd
 
 
-band_definitions = {
+BAND_DEFINITIONS = {
     "6m": (50, 54),
     "2m": (144, 148),
     "1.25m": (220, 225),
@@ -37,8 +37,8 @@ def filter_by_band(df: pd.DataFrame, bands: List[BANDS]) -> pd.DataFrame:
     for band in bands:
         band_dfs.append(
             df.loc[
-                (df["Output (MHz)"].astype(float) > band_definitions[band][0])
-                & (df["Output (MHz)"].astype(float) < band_definitions[band][1])
+                (df["Output (MHz)"].astype(float) > BAND_DEFINITIONS[band][0])
+                & (df["Output (MHz)"].astype(float) < BAND_DEFINITIONS[band][1])
             ].copy()
         )
 
