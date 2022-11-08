@@ -2,3 +2,5 @@
 .env
 *.pyc
 *.pdf
+logs
+contest_scores.csv
