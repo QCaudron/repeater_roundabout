@@ -242,15 +242,15 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     Returns
     -------
     pd.DataFrame
-        The Icom-compativle repeaters formatted for the Icom.
+        The Icom-compatible repeaters formatted for the Icom.
         (Tested with Icom-705 - may work for others).
     """
 
     total_repeaters = len(df)
 
     # Select FM and Fusion (in FM compat mode) channels.
-    df = filter_by_mode(df, ["FM", "NBFM", "Fusion"])
-    df = filter_by_band(df, ["6m", "2m", "1.25m", "70cm"])
+    df = filter_by_mode(df, ["FM", "NBFM", "Fusion", "DSTAR"])
+    df = filter_by_band(df, ["6m", "2m", "70cm"])
 
     # Treat output and offset as numerical values
     numeric_columns = ["Output (MHz)", "Offset (MHz)"]
@@ -263,18 +263,24 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     print(f"Icom IC-705: {len(df)} compatible repeaters (out of {total_repeaters}).")
 
     df_icom = pd.DataFrame()
+    is_dstar = df["Mode"] == "DSTAR"
 
     df_icom.index.name = "CH No"
     df_icom["Name"] = df["Callsign"]
     df_icom["Mode"] = "FM"
+    df_icom.loc[is_dstar, "Mode"] = "DV"
     df_icom["Frequency"] = df["Output (MHz)"]
     df_icom["Dup"] = "DUP+"
     df_icom.loc[df["Offset (MHz)"] < 0, "Dup"] = "DUP-"
     df_icom["Offset"] = df["Offset (MHz)"].abs()
+    df_icom.loc[is_dstar, "RPT1 Call Sign"] = df.apply(dstar_callsign, axis=1)
+    df_icom.loc[is_dstar, "RPT2 Call Sign"] = df.apply(dstar_callsign_2, axis=1)
 
     # Icom Filters are (1) 15kHz wide and (2) 10kHz wide.
     df_icom["Filter"] = "1"
     df_icom.loc[df["Mode"] == "NBFM", "Filter"] = "2"
+    # DSTAR is 6.25kHz wide - use the 7KHz filter.
+    df_icom.loc[is_dstar, "Filter"] = "3"
 
     df_icom = df_icom.round(3)
 
@@ -286,6 +292,87 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     df_icom.loc[is_dcs, "DTCS Code"] = df["Tone (Hz)"].str[1:4]
 
     return df_icom
+
+
+def dstar_callsign_format(callsign: str, module: str) -> str:
+    """
+    Format a callsign for use in DSTAR.
+
+    Parameters
+    ----------
+    callsign : str
+        The callsign to format.
+    module : str
+        Module is one of 'A' 1.2 GHz, 'B' 70cm, or 'C' 2m.
+
+    Returns
+    -------
+    str
+        The formatted callsign - 8 characters long with module as the 8th character.
+    """
+    return f"{callsign:7s}{module}"
+
+
+def dstar_module_from_frequency(frequency: float) -> str:
+    """
+    Determine the DSTAR module from a frequency.
+
+    Parameters
+    ----------
+    frequency : float
+        The frequency to check.
+
+    Returns
+    -------
+    str
+        The DSTAR module - one of 'A' 1.2 GHz, 'B' 70cm, or 'C' 2m.
+    """
+
+    if frequency < 148.0:
+        return "C"
+    elif frequency < 450.0:
+        return "B"
+    else:
+        return "A"
+
+
+def dstar_callsign(row: pd.Series) -> str:
+    """
+    Generate a DSTAR callsign from the repeater callsign and output frequency.
+
+    Parameters
+    ----------
+    row : pd.Series
+        The row of the DataFrame.
+
+    Returns
+    -------
+    str
+        The properly formatted DSTAR callsign.
+    """
+    callsign = row["Callsign"]
+    frequency = row["Output (MHz)"]
+    return dstar_callsign_format(callsign, dstar_module_from_frequency(frequency))
+
+
+def dstar_callsign_2(row: pd.Series) -> str:
+    """
+    Generate a DSTAR callsign from the repeater callsign and output frequency
+    for RPT2 callsign column.
+
+    Parameters
+    ----------
+    row : pd.Series
+        The row of the DataFrame.
+
+    Returns
+    -------
+    str
+        The properly formatted DSTAR callsign.
+    """
+
+    callsign = row["Callsign"]
+    return dstar_callsign_format(callsign, "G")
 
 
 def write_chirp_csv(df: pd.DataFrame) -> None:
