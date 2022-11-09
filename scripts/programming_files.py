@@ -1,5 +1,6 @@
 from typing import List, Literal
 from zipfile import ZipFile
+import math
 
 import pandas as pd
 
@@ -14,6 +15,9 @@ BAND_DEFINITIONS = {
 }
 
 BANDS = Literal["6m", "2m", "1.25m", "70cm", "33cm", "23cm"]
+
+DOWNTOWN_SEATTLE = (47.6062, -122.3321)
+METRO_DISTANCE = 20
 
 
 def filter_by_band(df: pd.DataFrame, bands: List[BANDS]) -> pd.DataFrame:
@@ -63,6 +67,35 @@ def filter_by_mode(df: pd.DataFrame, modes: List[str]) -> pd.DataFrame:
     """
 
     return df.loc[df["Mode"].isin(modes)].sort_index().copy()
+
+
+def distance_between(p1: tuple[float, float], p2: tuple[float, float]) -> float:
+    """
+    Calculate the distance between two points.
+
+    Parameters
+    ----------
+    p1 : tuple of floats
+        Latitude and longitude of the first point.
+    p2 : tuple of floats
+        Latitude and longitude of the second point.
+
+    Returns
+    -------
+    float
+        Distance between the two points in miles.
+    """
+
+    # Convert to radians
+    p1 = (math.radians(p1[0]), math.radians(p1[1]))
+    p2 = (math.radians(p2[0]), math.radians(p2[1]))
+
+    # Calculate the distance
+    dlon = p2[1] - p1[1]
+    dlat = p2[0] - p1[0]
+    a = (math.sin(dlat / 2)) ** 2 + math.cos(p1[0]) * math.cos(p2[0]) * (math.sin(dlon / 2)) ** 2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    return 3959.0 * c
 
 
 def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
@@ -222,10 +255,11 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_dmr, "Color Code"] = dmr_codes["color"]
     df_878.loc[is_dmr, "Slot"] = dmr_codes["slot"]
 
-    # TODO: Need to programatically generate a "scan list" csv file in order to be able
-    # to scan all the frequencies in the Roundabout.  For now - a dummy file added to
-    # ./assets.
-    df_878["Scan List"] = "Roundabout"
+    is_metro = df.apply(lambda x: distance_between(x["Coordinates"], DOWNTOWN_SEATTLE) < METRO_DISTANCE, axis=1)
+    df_878.loc[is_metro, "Scan List"] = "Metro"
+    is_north = df.apply(lambda x: x["Coordinates"][0] > DOWNTOWN_SEATTLE[0], axis=1)
+    df_878.loc[~is_metro & is_north, "Scan List"] = "North"
+    df_878.loc[~is_metro & ~is_north, "Scan List"] = "South"
 
     return df_878
 
@@ -417,7 +451,33 @@ def write_d878_zip(df: pd.DataFrame) -> None:
     # D878 CPS software requires CR/LF line endings
     df.to_csv("assets/programming_files/d878.csv", lineterminator="\r\n")
 
-    # TODO : generate scanlist and talk groups files here
+    # Generate a scan list for each region
+    scan_lists = {region: df.loc[df["Scan List"] == region] for region in df["Scan List"].unique()}
+    rows = []
+    for region, df_channels in scan_lists.items():
+        names = "|".join(df_channels["Channel Name"].tolist())
+        rx_freqs = "|".join(df_channels["Receive Frequency"].astype(str).tolist())
+        tx_freqs = "|".join(df_channels["Transmit Frequency"].astype(str).tolist())
+        rows.append({"Scan List Name": region,
+                     "Scan Channel Member": names,
+                     "Scan Channel Member RX Frequency": rx_freqs,
+                     "Scan Channel Member TX Frequency": tx_freqs
+                     })
+    df_scanlist = pd.DataFrame(rows)
+    df_scanlist.index.name = "No."
+    df_scanlist.index = df_scanlist.index + 1
+    df_scanlist.to_csv("assets/programming_files/d878-scanlist.csv", lineterminator="\r\n")
+
+    # List of used Talk Groups needed (not DRY - but Talk Groups don't import if not present!)
+    talk_groups = {id: df.loc[df["Contact TG/DMR ID"] == id, "Contact"].iloc[0] for id in df["Contact TG/DMR ID"].dropna().unique()}
+    rows = [{"Radio ID": id, "Name": talk_groups[id]} for id in talk_groups]
+    rows.append({"Radio ID": 9998, "Name": "Parrot"})
+    rows.append({"Radio ID": 9999, "Name": "Audio Test"})
+    df_talkgroups = pd.DataFrame(rows)
+    df_talkgroups["Call Type"] = "Group Call"
+    df_talkgroups.index.name = "No."
+    df_talkgroups.index = df_talkgroups.index + 1
+    df_talkgroups.to_csv("assets/programming_files/d878-talk-groups.csv", lineterminator="\r\n")
 
     with ZipFile("assets/programming_files/d878.zip", "w") as zipf:
         zipf.write("assets/programming_files/d878.csv", arcname="d878.csv")
