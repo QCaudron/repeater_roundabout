@@ -452,7 +452,7 @@ def write_d878_zip(df: pd.DataFrame) -> None:
     df.to_csv("assets/programming_files/d878.csv", lineterminator="\r\n")
 
     # Generate a scan list for each region
-    scan_lists = {region: df[df["Scan List"] == region] for region in df["Scan List"].unique()}
+    scan_lists = {region: df.loc[df["Scan List"] == region] for region in df["Scan List"].unique()}
     rows = []
     for region, df_channels in scan_lists.items():
         names = "|".join(df_channels["Channel Name"].tolist())
