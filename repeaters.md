@@ -79,7 +79,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 68    | Mount Baker     | K7SKW      | Bellingham        | FM          |        443.750 |           +5.0 |                      103.5 |
 | 69    | Mount Baker     | K7SKW      | Bellingham        | FM          |        147.160 |           +0.6 |                      103.5 |
 | 70    | Mount Baker     | K7SKW      | Bellingham        | Fusion      |        443.650 |           +5.0 |                      103.5 |
-| 71    | Skagit Valley   | N7GDE      | Lyman Hill        | FM          |        145.190 |           -0.6 |                      127.3 |
+| 71    | Skagit County   | N7GDE      | Lyman Hill        | FM          |        145.190 |           -0.6 |                      127.3 |
 | 72    | Snohomish ACS   | WA7DEM     | Lynnwood          | FM          |        146.780 |           -0.6 |                 D172[^dcs] |
 | 73    | Snohomish ACS   | WA7DEM     | Marysville        | FM          |        224.380 |           -1.6 |                      103.5 |
 | 74    | Snohomish ACS   | WA7DEM     | Clearview         | FM          |        442.975 |           +5.0 |                 D172[^dcs] |
@@ -228,8 +228,8 @@ Seattle ACS
 Shoreline
 : [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs/)
 
-Skagit Valley
-: [Radio Amateurs of Skagit Valley](http://www.rasconline.com/)
+Skagit County
+: [Radio Amateurs of Skagit County](http://www.rasconline.com/)
 
 SnoVARC
 : [Snoqualmie Valley Amateur Radio Club](https://snovarc.org/)

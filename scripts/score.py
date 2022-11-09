@@ -59,7 +59,7 @@ if __name__ == "__main__":
         bonus_points = worked["Bonus Points"].sum()
 
         # Save this person's contest scores
-        contest_scores[callsign] = {
+        contest_scores[callsign.upper()] = {
             "Entries": n_entries,
             "Duplicates": n_duplicates,
             "Base Score": base_score,
