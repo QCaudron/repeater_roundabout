@@ -69,7 +69,7 @@ Channel,Callsign,Location,Mode,Output (MHz),Offset (MHz),Tone (Hz),Group
 68,K7SKW,Bellingham,FM,443.750,+5.0,103.5,Mount Baker Amateur Radio Club
 69,K7SKW,Bellingham,FM,147.160,+0.6,103.5,Mount Baker Amateur Radio Club
 70,K7SKW,Bellingham,Fusion,443.650,+5.0,103.5,Mount Baker Amateur Radio Club
-71,N7GDE,Lyman Hill,FM,145.190,-0.6,127.3,Radio Amateurs of Skagit Valley
+71,N7GDE,Lyman Hill,FM,145.190,-0.6,127.3,Radio Amateurs of Skagit County
 72,WA7DEM,Lynnwood,FM,146.780,-0.6,D172[^dcs],Snohomish County Auxiliary Communications Service
 73,WA7DEM,Marysville,FM,224.380,-1.6,103.5,Snohomish County Auxiliary Communications Service
 74,WA7DEM,Clearview,FM,442.975,+5.0,D172[^dcs],Snohomish County Auxiliary Communications Service
