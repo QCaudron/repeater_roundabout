@@ -468,6 +468,17 @@ def write_d878_zip(df: pd.DataFrame) -> None:
     df_scanlist.index = df_scanlist.index + 1
     df_scanlist.to_csv("assets/programming_files/d878-scanlist.csv", lineterminator="\r\n")
 
+    # List of used Talk Groups needed (not DRY - but Talk Groups don't import if not present!)
+    talk_groups = {id: df.loc[df["Contact TG/DMR ID"] == id, "Contact"].iloc[0] for id in df["Contact TG/DMR ID"].dropna().unique()}
+    rows = [{"Radio ID": id, "Name": talk_groups[id]} for id in talk_groups]
+    rows.append({"Radio ID": 9998, "Name": "Parrot"})
+    rows.append({"Radio ID": 9999, "Name": "Audio Test"})
+    df_talkgroups = pd.DataFrame(rows)
+    df_talkgroups["Call Type"] = "Group Call"
+    df_talkgroups.index.name = "No."
+    df_talkgroups.index = df_talkgroups.index + 1
+    df_talkgroups.to_csv("assets/programming_files/d878-talk-groups.csv", lineterminator="\r\n")
+
     with ZipFile("assets/programming_files/d878.zip", "w") as zipf:
         zipf.write("assets/programming_files/d878.csv", arcname="d878.csv")
         zipf.write(
