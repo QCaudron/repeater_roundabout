@@ -1,3 +1,5 @@
+from types import SimpleNamespace
+
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -9,10 +11,7 @@ from shapely.geometry import Polygon
 from programming_files import BAND_DEFINITIONS
 from update import generate_repeater_df
 
-
-# Dummy arguments namespace
-class Args:
-    regen = True
+args = SimpleNamespace(regen=True)
 
 
 def band(freq: float) -> str:
@@ -42,7 +41,6 @@ if __name__ == "__main__":
     statistics = {}
 
     # Generate the complete repeater dataframe with a band column
-    args = Args()
     df = generate_repeater_df(args)
     df["Band"] = df["Output (MHz)"].astype(float).apply(band)
 

@@ -1,0 +1,9 @@
+[tool.black]
+line-length = 99
+
+[tool.isort]
+profile = "black"
+known_first_party = ["markdown_files", "programming_files", "score", "stats", "update"]
+
+[tool.mypy]
+ignore_missing_imports = true

@@ -1,16 +1,15 @@
 from pathlib import Path
+from types import SimpleNamespace
 
 import pandas as pd
 
 from update import generate_repeater_df
 
-
 logs_dir = Path("logs")
 logs_files = logs_dir.glob("*.csv")
 
 
-class Args:
-    regen = True
+args = SimpleNamespace(regen=True)
 
 
 if __name__ == "__main__":
@@ -19,8 +18,7 @@ if __name__ == "__main__":
         raise FileNotFoundError(f"{logs_dir} does not exist.")
 
     # Load the repeater data
-    mock_args = Args()
-    repeaters = generate_repeater_df(mock_args)
+    repeaters = generate_repeater_df(args)
     repeaters.index = repeaters["RR#"]
 
     # A mapping between RR# and club name
@@ -68,6 +66,6 @@ if __name__ == "__main__":
         }
 
     # Save the contest scores
-    contest_scores = pd.DataFrame(contest_scores).T.sort_values("Total Score", ascending=False)
-    print(contest_scores)
-    contest_scores.to_csv("contest_scores.csv")
+    contest_scores_df = pd.DataFrame(contest_scores).T.sort_values("Total Score", ascending=False)
+    print(contest_scores_df)
+    contest_scores_df.to_csv("contest_scores.csv")

@@ -1,9 +1,8 @@
+import math
 from typing import List, Literal
 from zipfile import ZipFile
-import math
 
 import pandas as pd
-
 
 BAND_DEFINITIONS = {
     "6m": (50, 54),
@@ -254,7 +253,8 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_dmr, "Slot"] = dmr_codes["slot"]
 
     is_metro = df.apply(
-        lambda x: distance_between(x["Coordinates"], DOWNTOWN_SEATTLE) < METRO_DISTANCE, axis=1
+        lambda x: distance_between(x["Coordinates"], DOWNTOWN_SEATTLE) < METRO_DISTANCE,
+        axis=1,
     )
     df_878.loc[is_metro, "Scan List"] = "Metro"
     is_north = df.apply(lambda x: x["Coordinates"][0] > DOWNTOWN_SEATTLE[0], axis=1)
