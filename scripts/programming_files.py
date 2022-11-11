@@ -124,9 +124,7 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
-    df = df.assign(
-        Offset=df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}")
-    )
+    df = df.assign(Offset=df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}"))
 
     # Some columns can be reused
     df["Comment"] = df["Callsign"] + " - " + df["Output (MHz)"]
@@ -224,7 +222,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878["Receive Frequency"] = df["Output (MHz)"]
     df_878["Transmit Frequency"] = df["Output (MHz)"] + df["Offset (MHz)"]
 
-    df_878 = df_878.round(3)
+    df_878 = df_878.round(4)
 
     is_dmr = df["Mode"] == "DMR"
     df_878.loc[is_dmr, "Channel Type"] = "D-Digital"
@@ -255,7 +253,9 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_dmr, "Color Code"] = dmr_codes["color"]
     df_878.loc[is_dmr, "Slot"] = dmr_codes["slot"]
 
-    is_metro = df.apply(lambda x: distance_between(x["Coordinates"], DOWNTOWN_SEATTLE) < METRO_DISTANCE, axis=1)
+    is_metro = df.apply(
+        lambda x: distance_between(x["Coordinates"], DOWNTOWN_SEATTLE) < METRO_DISTANCE, axis=1
+    )
     df_878.loc[is_metro, "Scan List"] = "Metro"
     is_north = df.apply(lambda x: x["Coordinates"][0] > DOWNTOWN_SEATTLE[0], axis=1)
     df_878.loc[~is_metro & is_north, "Scan List"] = "North"
@@ -316,7 +316,7 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     # DSTAR is 6.25kHz wide - use the 7KHz filter.
     df_icom.loc[is_dstar, "Filter"] = "3"
 
-    df_icom = df_icom.round(3)
+    df_icom = df_icom.round(4)
 
     is_dcs = df["Tone (Hz)"].str.startswith("D")
     # TODO: Use regexp for DCS tone number between D and '[' in string?
@@ -458,18 +458,24 @@ def write_d878_zip(df: pd.DataFrame) -> None:
         names = "|".join(df_channels["Channel Name"].tolist())
         rx_freqs = "|".join(df_channels["Receive Frequency"].astype(str).tolist())
         tx_freqs = "|".join(df_channels["Transmit Frequency"].astype(str).tolist())
-        rows.append({"Scan List Name": region,
-                     "Scan Channel Member": names,
-                     "Scan Channel Member RX Frequency": rx_freqs,
-                     "Scan Channel Member TX Frequency": tx_freqs
-                     })
+        rows.append(
+            {
+                "Scan List Name": region,
+                "Scan Channel Member": names,
+                "Scan Channel Member RX Frequency": rx_freqs,
+                "Scan Channel Member TX Frequency": tx_freqs,
+            }
+        )
     df_scanlist = pd.DataFrame(rows)
     df_scanlist.index.name = "No."
     df_scanlist.index = df_scanlist.index + 1
     df_scanlist.to_csv("assets/programming_files/d878-scanlist.csv", lineterminator="\r\n")
 
     # List of used Talk Groups needed (not DRY - but Talk Groups don't import if not present!)
-    talk_groups = {id: df.loc[df["Contact TG/DMR ID"] == id, "Contact"].iloc[0] for id in df["Contact TG/DMR ID"].dropna().unique()}
+    talk_groups = {
+        id: df.loc[df["Contact TG/DMR ID"] == id, "Contact"].iloc[0]
+        for id in df["Contact TG/DMR ID"].dropna().unique()
+    }
     rows = [{"Radio ID": id, "Name": talk_groups[id]} for id in talk_groups]
     rows.append({"Radio ID": 9998, "Name": "Parrot"})
     rows.append({"Radio ID": 9999, "Name": "Audio Test"})
@@ -481,9 +487,7 @@ def write_d878_zip(df: pd.DataFrame) -> None:
 
     with ZipFile("assets/programming_files/d878.zip", "w") as zipf:
         zipf.write("assets/programming_files/d878.csv", arcname="d878.csv")
-        zipf.write(
-            "assets/programming_files/d878-scanlist.csv", arcname="d878-scanlist.csv"
-        )
+        zipf.write("assets/programming_files/d878-scanlist.csv", arcname="d878-scanlist.csv")
         zipf.write(
             "assets/programming_files/d878-talk-groups.csv",
             arcname="d878-talk-groups.csv",

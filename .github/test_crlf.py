@@ -21,5 +21,5 @@ if __name__ == "__main__":
                 print(f"{file} may not have CRLF line endings.")
                 all_is_well = False
 
-    # if not all_is_well:
-    #     sys.exit(1)
+    if not all_is_well:
+        sys.exit(1)

@@ -69,9 +69,7 @@ if __name__ == "__main__":
 
     # Transform the lat / long coordinates into a spatial frame
     gdf = gpd.GeoDataFrame(geometry=[poly]).set_crs(epsg=4326).to_crs("EPSG:5070")
-    statistics["Area (square miles)"] = (
-        gdf.area[0] * 0.386102 / 1e6
-    )  # area in square miles
+    statistics["Area (square miles)"] = gdf.area[0] * 0.386102 / 1e6  # area in square miles
     statistics["Area (% of state)"] = statistics["Area (square miles)"] / 71362 * 100
 
     # Generate a plot of the convex hull
@@ -88,10 +86,7 @@ if __name__ == "__main__":
         locations = f.readlines()
     locations = [line for line in locations if line.strip().startswith("L.marker")]
     coords = np.array(
-        [
-            np.fromstring(line.split("[")[1].split("]")[0], sep=", ")
-            for line in locations
-        ]
+        [np.fromstring(line.split("[")[1].split("]")[0], sep=", ") for line in locations]
     )
 
     # Transform to spatial frame of reference and compute the distance matrix

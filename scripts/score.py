@@ -68,8 +68,6 @@ if __name__ == "__main__":
         }
 
     # Save the contest scores
-    contest_scores = pd.DataFrame(contest_scores).T.sort_values(
-        "Total Score", ascending=False
-    )
+    contest_scores = pd.DataFrame(contest_scores).T.sort_values("Total Score", ascending=False)
     print(contest_scores)
     contest_scores.to_csv("contest_scores.csv")

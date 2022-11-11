@@ -169,9 +169,7 @@ def repeater_from_args(args: Union[argparse.Namespace, SimpleNamespace]) -> dict
     return repeater
 
 
-def generate_repeater_df(
-    args: Union[argparse.Namespace, SimpleNamespace]
-) -> pd.DataFrame:
+def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd.DataFrame:
     """
     Create a DataFrame of repeaters from known repeaters combined with user input.
 

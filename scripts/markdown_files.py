@@ -102,9 +102,7 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
     # Hierarchically cluster repeater lat / long pairs
     coords = np.array(df["Coordinates"].to_list())
     dist = pdist(coords)
-    allocations = fcluster(
-        linkage(dist, method="complete"), threshold, criterion="distance"
-    )
+    allocations = fcluster(linkage(dist, method="complete"), threshold, criterion="distance")
 
     # Assign each repeater's info to a cluster
     clusters = defaultdict(list)
