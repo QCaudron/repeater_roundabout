@@ -31,6 +31,7 @@
             div.className = 'spectrum';
             spectraContainer.appendChild(div);
             let s = new Spectrum(repeaters, band, div, customizer.params);
+            spectra.push(s);
         }
 
         customizer.on(() => {
