@@ -1,0 +1,1 @@
+{"version":3,"file":"spectrum.js","sourceRoot":"","sources":["../../src/spectrum.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,CAAC;AAEpB,MAAM,QAAQ;IACV;QACI,OAAO,CAAC,GAAG,CAAC,UAAU,CAAC,CAAC;IAC5B,CAAC;CACJ","sourcesContent":["export { Spectrum };\n\nclass Spectrum {\n    constructor() {\n        console.log(\"Spectrum\");\n    }\n}\n"]}

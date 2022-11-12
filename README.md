@@ -53,6 +53,8 @@ The scripts in this repo use Python3.  In order to install the dependencies, it
 is recommended to create a python virtual environment with the appropriate
 dependencies installed.
 
+Note that Python version 3.9 or higher is required.
+
 ```
 $ python -m venv .env        # Create a local Virtual Environment
                              # Possibly use "python3" if python defaults to
@@ -65,4 +67,19 @@ OR
 $ .\.env\Scripts\activate    # (Windows/Powershell)
 
 $ pip install -r requirements.txt
+```
+
+## Typescript Development Environment
+
+To compile TypeScript to JavaScript the tool chain includes, node/npm.
+We install TypeScript locally in `node_packages` so we have a consistent
+version between contributors.
+
+```
+# Assumes you have nvm [installed](https://github.com/nvm-sh/nvm)
+$ nvm use         # Looks in the .nvmrc file to select the current version of node
+
+$ npm install     # Install the node packages we use (TypeScript)
+
+$ npx tsc         # Compile the TypeScript files in src to assets/scripts.
 ```

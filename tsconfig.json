@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "ES6",
+      "moduleResolution":"Node",
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "assets/scripts",
+      "sourceMap": true,
+      "inlineSources": true,
+      "allowSyntheticDefaultImports": true
+    },
+    "include": ["src/**/*"],
+  }
