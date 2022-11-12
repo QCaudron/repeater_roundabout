@@ -2,19 +2,22 @@
 
 div.spectrum div.channel {
     text-align: center;
+    background-color: black;
 }
 
 div.spectrum span.freq {
     font-family: 'Roboto Mono';
     font-size: 4rem;
+    color: white;
 }
 
 div.spectrum span.chz {
     font-family: 'Roboto Mono';
     font-size: 2rem;
+    color: white;
 }
 
 div.spectrum {
     width: 900px;
-    margin: 0 auto;
+    margin: 1em auto;
 }

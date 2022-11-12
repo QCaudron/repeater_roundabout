@@ -11,8 +11,7 @@
 
 <body>
     <h1>Spectrum Test</h1>
-    <div class="spectrum" id="6m"></div>
-    <div class="spectrum" id="2m"></div>
+    <div id="spectra"></div>
 
     <script type="module">
         import { Spectrum } from './assets/js/spectrum.js';
@@ -24,19 +23,20 @@
 
         let customizer = new Customizer(document.body);
 
-        let s2m = new Spectrum(
-            repeaters, BANDS[0],
-            document.getElementById('2m'),
-            customizer.params);
+        let spectraContainer = document.getElementById('spectra');
+        let spectra = [];
 
-        let s6m = new Spectrum(
-            repeaters, BANDS[1],
-            document.getElementById('6m'),
-            customizer.params);
+        for (let band of BANDS) {
+            let div = document.createElement('div');
+            div.className = 'spectrum';
+            spectraContainer.appendChild(div);
+            let s = new Spectrum(repeaters, band, div, customizer.params);
+        }
 
         customizer.on(() => {
-            s6m.refresh();
-            s2m.refresh();
+            for (let s of spectra) {
+                s.refresh();
+            }
         });
     </script>
 </body>
