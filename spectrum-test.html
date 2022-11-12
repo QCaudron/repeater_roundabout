@@ -18,25 +18,27 @@
         import { Spectrum } from './assets/js/spectrum.js';
         import { Customizer } from './assets/js/spectrum-customizer.js';
 
+        import { readRepeaters, BANDS } from './assets/js/bands.js';
+
+        let repeaters = await readRepeaters();
+
         let customizer = new Customizer(document.body);
 
         let s2m = new Spectrum(
+            repeaters, BANDS[0],
             document.getElementById('2m'),
-            { band: [144, 148] },
             customizer.params);
 
         let s6m = new Spectrum(
+            repeaters, BANDS[1],
             document.getElementById('6m'),
-            { band: [50, 54] },
             customizer.params);
 
         customizer.on(() => {
             s6m.refresh();
             s2m.refresh();
         });
-
-
-        </script>
+    </script>
 </body>
 
 </html>

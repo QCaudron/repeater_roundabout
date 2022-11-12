@@ -1,8 +1,4 @@
-export { Spectrum, SpectrumOptions, UIParams };
-
-interface SpectrumOptions {
-    band: [number, number];
-}
+export { Spectrum, UIParams, Band, Zone };
 
 interface UIParams {
     width: number,
@@ -16,8 +12,6 @@ interface UIParams {
     outputBandColor: string, // color
     inputBandColor: string,  // color
 };
-
-const REPEATERS = "https://raw.githubusercontent.com/QCaudron/repeater_roundabout/main/assets/repeaters.json";
 
 let canvas: HTMLCanvasElement;
 let freq: HTMLElement;
@@ -44,30 +38,11 @@ interface Repeater {
   output: number
 }
 
-interface RoundaboutRep {
-    "Group Name": string,
-    Callsign: string,
-    Location: string,
-    Mode: string,
-    "Output (MHz)": string,
-    "Offset (MHz)": string,
-    "Tone (Hz)": string,
-    Coordinates: [number, number],
-    "Long Name": string,
-    Website: string,
+interface Band {
+    name: string,
+    extent: [number, number],
+    zones: Zone[],
 }
-
-const twoMeterZones: Zone[] = [
-  // {name: 'CW', min: 144.0, max: 144.1, color: 'gray'},
-  // {name: 'SSB', min: 144.1, max: 144.275, color: 'darkorange'},
-  {name: 'FM Inputs', min: 144.5, max: 144.9, type: 'fmInputBand'},
-  {name: 'FM Outputs', min: 145.1, max: 145.49, type: 'fmOutputBand'},
-  {name: 'FM Inputs', min: 146.01, max: 146.4, type: 'fmInputBand'},
-  {name: 'FM Outputs', min: 146.62, max: 147.38, type: 'fmOutputBand'},
-  {name: 'FM Inputs', min: 147.61, max: 147.99, type: 'fmInputBand'},
-  {name: 'VNBD Inputs', min: 147.40625, max: 147.50625, type: 'fmInputBand'},
-  {name: 'VNBD Outputs', min: 146.40625, max: 146.50625, type: 'fmOutputBand'},
-];
 
 class Spectrum {
     canvas: HTMLCanvasElement;
@@ -75,19 +50,24 @@ class Spectrum {
     ctx: CanvasRenderingContext2D;
     freq: HTMLSpanElement;
     chz: HTMLSpanElement;
-    options: SpectrumOptions;
+    band: Band;
     params: UIParams;
     repeaters: Repeater[] | undefined;
 
-    constructor(parent: HTMLElement, options: SpectrumOptions, params: UIParams) {
-        console.log(`Spectrum ${options}`);
-        this.options = options;
+    constructor(
+        repeaters: Repeater[],
+        band: Band,
+        parent: HTMLElement,
+        params: UIParams) {
+        console.log(`Spectrum ${band.name}`);
+        this.repeaters = repeaters;
+        this.band = band;
         this.params = params;
 
         parent.insertAdjacentHTML(
             'beforeend',
             `<div class="channel">
-                <span class="freq">${options.band[0]}</span><span class="chz">0</span>
+                <span class="freq">${band.extent[0]}</span><span class="chz">0</span>
             </div>
 
             <canvas></canvas>
@@ -101,21 +81,9 @@ class Spectrum {
         this.init();
     }
 
-    async init() {
-        console.log("Fetching data...");
-        let response = await fetch(REPEATERS);
-        let repeatersRaw = await response.json();
-        console.log("Parsing data...");
-        this.repeaters = repeatersRaw.map((r: RoundaboutRep) => {
-            let callsign = r['Callsign'];
-            let output = parseFloat(r['Output (MHz)']);
-            let offset = parseFloat(r['Offset (MHz)']);
-            let input = parseFloat((output + offset).toFixed(4));
-            return { callsign, input, output };
-        });
-
+    init() {
         this.refresh();
-        this.updateChannel(this.options.band[0]);
+        this.updateChannel(this.band.extent[0]);
 
         this.canvas.addEventListener('mousemove', (e) => {
             this.updateChannel(this.freqFromX(e.offsetX));
@@ -136,11 +104,11 @@ class Spectrum {
         this.ctx.fillStyle = this.params.background;
         this.ctx.fillRect(0, 0, this.params.width, this.params.height);
 
-        for (let zone of twoMeterZones) {
+        for (let zone of this.band.zones) {
           this.drawZone(zone);
         }
 
-        let [bandMin, bandMax] = this.options.band;
+        let [bandMin, bandMax] = this.band.extent;
         for (let repeater of this.repeaters!) {
           if (repeater.output < bandMin || repeater.output > bandMax) {
             continue;
@@ -183,12 +151,12 @@ class Spectrum {
       }
 
       scaleX(f: number): number {
-        let [bandMin, bandMax] = this.options.band;
+        let [bandMin, bandMax] = this.band.extent;
         return this.params.width * (f - bandMin) / (bandMax - bandMin);
       }
 
       freqFromX(x: number): number {
-        let [bandMin, bandMax] = this.options.band;
+        let [bandMin, bandMax] = this.band.extent;
         let f = bandMin + (x / this.params.width) * (bandMax - bandMin);
         return f;
       }
