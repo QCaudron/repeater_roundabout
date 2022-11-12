@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #spectrum {
+        width: 900px;
+        margin: 0 auto;
+        border: 1px solid black;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Mono:wght@500&display=swap');
+
+    .display {
+        text-align: center;
+    }
+
+    #freq {
+        font-family: 'Roboto Mono';
+        font-size: 4rem;
+    }
+
+    #chz {
+        font-family: 'Roboto Mono';
+        font-size: 2rem;
+    }
+</style>
+
 <body>
+    <h1>Spectrum Test</h1>
+    <div id="spectrum">
+        <div class="display"><span id="freq">146.960</span><span id="chz">0</span></div>
+
+        <canvas id="canvas"></canvas>
+
+        <div id="channel"></div>
+    </div>
+
     <script type="module">
         import { Spectrum } from './assets/js/spectrum.js';
-         let s = new Spectrum();
+        let s = new Spectrum();
     </script>
 </body>
+
 </html>
