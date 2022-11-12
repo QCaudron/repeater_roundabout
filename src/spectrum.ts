@@ -111,7 +111,7 @@ class Spectrum {
             let input = parseFloat((output + offset).toFixed(4));
             return { callsign, input, output };
         });
-          
+
         this.refresh();
 
         this.canvas.addEventListener('mousemove', (e) => {
@@ -134,20 +134,20 @@ class Spectrum {
         for (let elt of document.querySelectorAll('.spectrum-channel') as NodeListOf<HTMLElement>) {
           elt.style.width = `${this.params.width}px`;
         }
-      
+
         // Track changes to color pallette
         typeColor.set('fmInputBand', this.params.inputBandColor);
         typeColor.set('fmOutputBand', this.params.outputBandColor);
         typeColor.set('fmInput', this.params.inputColor);
         typeColor.set('fmOutput', this.params.outputColor);
-      
+
         this.ctx.fillStyle = this.params.background;
         this.ctx.fillRect(0, 0, this.params.width, this.params.height);
-      
+
         for (let zone of twoMeterZones) {
           this.drawZone(zone);
         }
-      
+
         for (let repeater of this.repeaters!) {
           if (repeater.output < 144 || repeater.output > 148) {
             continue;
@@ -180,7 +180,7 @@ class Spectrum {
         let [bandMin, bandMax] = this.options.band;
         return this.params.width * (f - bandMin) / (bandMax - bandMin);
       }
-      
+
       freqFromX(x: number): number {
         let [bandMin, bandMax] = this.options.band;
         let f = bandMin + (x / this.params.width) * (bandMax - bandMin);
@@ -192,7 +192,7 @@ function repeaterFromFreq(f: number, kHzSlop: number, repeaters: Repeater[]): [R
     let best: Repeater | null = null;
     let distBest: number = 1000;
     let bestF: number = 144.0;
-  
+
     for (let repeater of repeaters) {
       for (let fT of [repeater.input, repeater.output]) {
         if (!best || Math.abs(f - fT) < distBest) {
@@ -203,10 +203,10 @@ function repeaterFromFreq(f: number, kHzSlop: number, repeaters: Repeater[]): [R
         }
       }
     }
-  
+
     if (distBest > kHzSlop/1000) {
       return [null, f];
     }
-  
+
     return [best, bestF];
   }
