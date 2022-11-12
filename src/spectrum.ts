@@ -140,8 +140,9 @@ class Spectrum {
           this.drawZone(zone);
         }
 
+        let [bandMin, bandMax] = this.options.band;
         for (let repeater of this.repeaters!) {
-          if (repeater.output < 144 || repeater.output > 148) {
+          if (repeater.output < bandMin || repeater.output > bandMax) {
             continue;
           }
           // console.log(`${repeater.callsign}: ${repeater.output} ${repeater.input}`);
@@ -196,7 +197,7 @@ class Spectrum {
 function repeaterFromFreq(f: number, kHzSlop: number, repeaters: Repeater[]): [Repeater | null, number] {
     let best: Repeater | null = null;
     let distBest: number = 1000;
-    let bestF: number = 144.0;
+    let bestF: number = 0;
 
     for (let repeater of repeaters) {
       for (let fT of [repeater.input, repeater.output]) {

@@ -11,6 +11,7 @@
 
 <body>
     <h1>Spectrum Test</h1>
+    <div class="spectrum" id="6m"></div>
     <div class="spectrum" id="2m"></div>
 
     <script type="module">
@@ -24,7 +25,13 @@
             { band: [144, 148] },
             customizer.params);
 
+        let s6m = new Spectrum(
+            document.getElementById('6m'),
+            { band: [50, 54] },
+            customizer.params);
+
         customizer.on(() => {
+            s6m.refresh();
             s2m.refresh();
         });
 
