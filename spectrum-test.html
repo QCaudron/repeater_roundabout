@@ -11,7 +11,7 @@
 
 <body>
     <h1>Spectrum Test</h1>
-    <div id="2m-spectrum"></div>
+    <div class="spectrum" id="2m"></div>
 
     <script type="module">
         import { Spectrum } from './assets/js/spectrum.js';
@@ -20,7 +20,7 @@
         let customizer = new Customizer(document.body);
 
         let s2m = new Spectrum(
-            document.getElementById('2m-spectrum'),
+            document.getElementById('2m'),
             { band: [144, 148] },
             customizer.params);
 

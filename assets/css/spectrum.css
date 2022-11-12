@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Mono:wght@500&display=swap');
 
-.spectrum-channel {
+div.spectrum div.channel {
     text-align: center;
 }
 
-.spectrum-freq {
+div.spectrum span.freq {
     font-family: 'Roboto Mono';
     font-size: 4rem;
 }
 
-.spectrum-chz {
+div.spectrum span.chz {
     font-family: 'Roboto Mono';
     font-size: 2rem;
+}
+
+div.spectrum {
+    width: 900px;
+    margin: 0 auto;
 }

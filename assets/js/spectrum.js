@@ -24,16 +24,17 @@ class Spectrum {
         console.log(`Spectrum ${options}`);
         this.options = options;
         this.params = params;
-        parent.insertAdjacentHTML('beforeend', `<div class="spectrum-channel">
-                <span class="spectrum-freq">${options.band[0]}</span><span class="spectrum-chz">0</span>
+        parent.insertAdjacentHTML('beforeend', `<div class="channel">
+                <span class="freq">${options.band[0]}</span><span class="chz">0</span>
             </div>
 
-            <canvas class="spectrum-canvas"></canvas>
+            <canvas></canvas>
             `);
-        this.canvas = parent.querySelector(".spectrum-canvas");
+        this.canvas = parent.querySelector("canvas");
         this.ctx = this.canvas.getContext('2d');
-        this.freq = parent.querySelector('.spectrum-freq');
-        this.chz = parent.querySelector('.spectrum-chz');
+        this.channel = parent.querySelector("div.channel");
+        this.freq = parent.querySelector('span.freq');
+        this.chz = parent.querySelector('span.chz');
         this.init();
     }
     async init() {
@@ -49,22 +50,15 @@ class Spectrum {
             return { callsign, input, output };
         });
         this.refresh();
+        this.updateChannel(this.options.band[0]);
         this.canvas.addEventListener('mousemove', (e) => {
-            let [r, f] = repeaterFromFreq(this.freqFromX(e.offsetX), this.params.fmBW, this.repeaters);
-            let displayed = f.toFixed(4);
-            this.freq.innerText = displayed.slice(0, -1);
-            this.chz.innerText = displayed.slice(-1);
-            if (r !== null) {
-                console.log(r);
-            }
+            this.updateChannel(this.freqFromX(e.offsetX));
         });
     }
     refresh() {
         this.canvas.height = this.params.height;
         this.canvas.width = this.params.width;
-        for (let elt of document.querySelectorAll('.spectrum-channel')) {
-            elt.style.width = `${this.params.width}px`;
-        }
+        this.channel.style.width = `${this.params.width}px`;
         // Track changes to color pallette
         typeColor.set('fmInputBand', this.params.inputBandColor);
         typeColor.set('fmOutputBand', this.params.outputBandColor);
@@ -92,6 +86,15 @@ class Spectrum {
                 max: repeater.input + this.params.fmBW / 2 / 1000,
                 type: 'fmInput'
             });
+        }
+    }
+    updateChannel(freq) {
+        let [r, f] = repeaterFromFreq(freq, this.params.fmBW, this.repeaters);
+        let displayed = f.toFixed(4);
+        this.freq.innerText = displayed.slice(0, -1);
+        this.chz.innerText = displayed.slice(-1);
+        if (r !== null) {
+            console.log(r);
         }
     }
     drawZone(zone) {
