@@ -1,24 +1,6 @@
 export { Spectrum };
-class Spectrum {
-    constructor() {
-        console.log("Spectrum");
-    }
-}
-import { Pane } from "https://cdn.skypack.dev/tweakpane@3.1.0";
+;
 const REPEATERS = "https://raw.githubusercontent.com/QCaudron/repeater_roundabout/main/assets/repeaters.json";
-// Tweakpane parameters
-const params = {
-    width: 800,
-    height: 70,
-    background: 'rgb(0, 0, 0)',
-    fmBW: 16,
-    vnbDigBW: 12.5,
-    unbDigBW: 6.25,
-    outputColor: 'rgb(0, 0, 255)',
-    inputColor: 'rgb(255, 0, 0)',
-    outputBandColor: 'rgb(0, 0, 128)',
-    inputBandColor: 'rgb(128, 0, 0)',
-};
 let canvas;
 let freq;
 let chz;
@@ -37,100 +19,99 @@ const twoMeterZones = [
     { name: 'VNBD Inputs', min: 147.40625, max: 147.50625, type: 'fmInputBand' },
     { name: 'VNBD Outputs', min: 146.40625, max: 146.50625, type: 'fmOutputBand' },
 ];
-function createPane(container) {
-    const pane = new Pane({ container });
-    // pane.registerPlugin(EssentialsPlugin);
-    const fParams = pane.addFolder({ title: 'Params' });
-    fParams.addInput(params, 'width', { min: 200, max: 1200, step: 10 });
-    fParams.addInput(params, 'height', { min: 30, max: 400, step: 10 });
-    fParams.addInput(params, 'fmBW', { min: 1, max: 20, step: 0.5 });
-    fParams.addInput(params, 'background', { view: 'color' });
-    fParams.addInput(params, 'outputColor', { view: 'color' });
-    fParams.addInput(params, 'inputColor', { view: 'color' });
-    fParams.addInput(params, 'outputBandColor', { view: 'color' });
-    fParams.addInput(params, 'inputBandColor', { view: 'color' });
-    pane.on('change', (ev) => {
-        refresh();
-    });
-}
-async function main() {
-    canvas = document.getElementById("canvas");
-    freq = document.getElementById("freq");
-    chz = document.getElementById("chz");
-    createPane(document.body);
-    canvas.addEventListener('mousemove', (e) => {
-        let [r, f] = repeaterFromFreq(freqFromX(e.offsetX));
-        let displayed = f.toFixed(4);
-        freq.innerText = displayed.slice(0, -1);
-        chz.innerText = displayed.slice(-1);
-        if (r !== null) {
-            console.log(r);
-        }
-    });
-    console.log("Fetching data...");
-    let response = await fetch(REPEATERS);
-    let repeatersRaw = await response.json();
-    console.log("Parsing data...");
-    repeaters = repeatersRaw.map((r) => {
-        let callsign = r['Callsign'];
-        let output = parseFloat(r['Output (MHz)']);
-        let offset = parseFloat(r['Offset (MHz)']);
-        let input = parseFloat((output + offset).toFixed(4));
-        return { callsign, input, output };
-    });
-    refresh();
-}
-function refresh() {
-    canvas.height = params.height;
-    canvas.width = params.width;
-    for (let elt of document.querySelectorAll('.display')) {
-        elt.style.width = `${params.width}px`;
+class Spectrum {
+    constructor(parent, options, params) {
+        console.log(`Spectrum ${options}`);
+        this.options = options;
+        this.params = params;
+        parent.insertAdjacentHTML('beforeend', `<div class="spectrum-channel">
+                <span class="spectrum-freq">${options.band[0]}</span><span class="spectrum-chz">0</span>
+            </div>
+
+            <canvas class="spectrum-canvas"></canvas>
+            `);
+        this.canvas = parent.querySelector(".spectrum-canvas");
+        this.ctx = this.canvas.getContext('2d');
+        this.freq = parent.querySelector('.spectrum-freq');
+        this.chz = parent.querySelector('.spectrum-chz');
+        this.init();
     }
-    // Track changes to color pallette
-    typeColor.set('fmInputBand', params.inputBandColor);
-    typeColor.set('fmOutputBand', params.outputBandColor);
-    typeColor.set('fmInput', params.inputColor);
-    typeColor.set('fmOutput', params.outputColor);
-    const ctx = canvas.getContext('2d');
-    ctx.fillStyle = params.background;
-    ctx.fillRect(0, 0, params.width, params.height);
-    for (let zone of twoMeterZones) {
-        drawZone(ctx, zone);
-    }
-    for (let repeater of repeaters) {
-        if (repeater.output < 144 || repeater.output > 148) {
-            continue;
-        }
-        // console.log(`${repeater.callsign}: ${repeater.output} ${repeater.input}`);
-        drawZone(ctx, {
-            name: repeater.callsign,
-            min: repeater.output - params.fmBW / 2 / 1000,
-            max: repeater.output + params.fmBW / 2 / 1000,
-            type: 'fmOutput'
+    async init() {
+        console.log("Fetching data...");
+        let response = await fetch(REPEATERS);
+        let repeatersRaw = await response.json();
+        console.log("Parsing data...");
+        this.repeaters = repeatersRaw.map((r) => {
+            let callsign = r['Callsign'];
+            let output = parseFloat(r['Output (MHz)']);
+            let offset = parseFloat(r['Offset (MHz)']);
+            let input = parseFloat((output + offset).toFixed(4));
+            return { callsign, input, output };
         });
-        drawZone(ctx, {
-            name: repeater.callsign,
-            min: repeater.input - params.fmBW / 2 / 1000,
-            max: repeater.input + params.fmBW / 2 / 1000,
-            type: 'fmInput'
+        this.refresh();
+        this.canvas.addEventListener('mousemove', (e) => {
+            let [r, f] = repeaterFromFreq(this.freqFromX(e.offsetX), this.params.fmBW, this.repeaters);
+            let displayed = f.toFixed(4);
+            this.freq.innerText = displayed.slice(0, -1);
+            this.chz.innerText = displayed.slice(-1);
+            if (r !== null) {
+                console.log(r);
+            }
         });
     }
+    refresh() {
+        this.canvas.height = this.params.height;
+        this.canvas.width = this.params.width;
+        for (let elt of document.querySelectorAll('.spectrum-channel')) {
+            elt.style.width = `${this.params.width}px`;
+        }
+        // Track changes to color pallette
+        typeColor.set('fmInputBand', this.params.inputBandColor);
+        typeColor.set('fmOutputBand', this.params.outputBandColor);
+        typeColor.set('fmInput', this.params.inputColor);
+        typeColor.set('fmOutput', this.params.outputColor);
+        this.ctx.fillStyle = this.params.background;
+        this.ctx.fillRect(0, 0, this.params.width, this.params.height);
+        for (let zone of twoMeterZones) {
+            this.drawZone(zone);
+        }
+        for (let repeater of this.repeaters) {
+            if (repeater.output < 144 || repeater.output > 148) {
+                continue;
+            }
+            // console.log(`${repeater.callsign}: ${repeater.output} ${repeater.input}`);
+            this.drawZone({
+                name: repeater.callsign,
+                min: repeater.output - this.params.fmBW / 2 / 1000,
+                max: repeater.output + this.params.fmBW / 2 / 1000,
+                type: 'fmOutput'
+            });
+            this.drawZone({
+                name: repeater.callsign,
+                min: repeater.input - this.params.fmBW / 2 / 1000,
+                max: repeater.input + this.params.fmBW / 2 / 1000,
+                type: 'fmInput'
+            });
+        }
+    }
+    drawZone(zone) {
+        const xMin = this.scaleX(zone.min);
+        const xMax = this.scaleX(zone.max);
+        // console.log(`${zone.name}: ${xMin}-${xMax}`);
+        this.ctx.fillStyle = typeColor.get(zone.type);
+        this.ctx.fillRect(xMin, 0, xMax - xMin, this.params.height);
+    }
+    scaleX(f) {
+        let [bandMin, bandMax] = this.options.band;
+        return this.params.width * (f - bandMin) / (bandMax - bandMin);
+    }
+    freqFromX(x) {
+        let [bandMin, bandMax] = this.options.band;
+        let f = bandMin + (x / this.params.width) * (bandMax - bandMin);
+        return f;
+    }
 }
-function drawZone(ctx, zone) {
-    const xMin = scaleX(zone.min);
-    const xMax = scaleX(zone.max);
-    // console.log(`${zone.name}: ${xMin}-${xMax}`);
-    ctx.fillStyle = typeColor.get(zone.type);
-    ctx.fillRect(xMin, 0, xMax - xMin, params.height);
-}
-function scaleX(f) {
-    return params.width * (f - bandMin) / (bandMax - bandMin);
-}
-function freqFromX(x) {
-    let f = bandMin + (x / params.width) * (bandMax - bandMin);
-    return f;
-}
-function repeaterFromFreq(f) {
+function repeaterFromFreq(f, kHzSlop, repeaters) {
     let best = null;
     let distBest = 1000;
     let bestF = 144.0;
@@ -144,10 +125,9 @@ function repeaterFromFreq(f) {
             }
         }
     }
-    if (distBest > params.fmBW / 1000) {
+    if (distBest > kHzSlop / 1000) {
         return [null, f];
     }
     return [best, bestF];
 }
-main();
 //# sourceMappingURL=spectrum.js.map
