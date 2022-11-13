@@ -81,6 +81,22 @@ const BANDS: Band[] = [
             { name: 'FM Outputs', min: 440.9125, max: 445.0, type: 'fmOutputBand' },
             { name: 'FM Outputs', min: 440.0, max: 440.7, type: 'fmOutputBand' },
         ],
+    },
+    {
+        name: "33cm",
+        extent: [902, 928],
+        zones: [
+            { name: 'FM Inputs', min: 902.3, max: 903.0, type: 'fmInputBand' },
+            { name: 'FM Outputs', min: 927.3, max: 928.0, type: 'fmOutputBand' },
+        ],
+    },
+    {
+        name: "23cm",
+        extent: [1240, 1300],
+        zones: [
+            { name: 'FM Inputs', min: 1270.0, max: 1275.0, type: 'fmInputBand' },
+            { name: 'FM Outputs', min: 1290.0, max: 1295.0, type: 'fmOutputBand' },
+        ],
     }
 ];
 
