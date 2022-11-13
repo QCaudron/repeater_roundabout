@@ -1,6 +1,6 @@
 ---
 title: Submit Logs
-subtitle: Send in your logs for scoring
+subtitle: Send in your logs for scoring.
 ---
 
 ## When ?

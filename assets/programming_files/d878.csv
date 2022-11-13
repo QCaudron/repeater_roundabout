@@ -78,3 +78,5 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 105,W7AVM,146.86,146.26,A-Analog,0,25K,127.3,,,1,,North
 106,N7KN,441.425,446.425,A-Analog,0,25K,110.9,,,1,,North
 107,WA7ROY,444.175,449.175,A-Analog,0,25K,123.0,,,1,,South
+108,W7MIR,147.16,147.76,A-Analog,0,25K,146.2,,,1,,Metro
+109,W7MIR,440.15,445.15,A-Analog,0,25K,103.5,,,1,,Metro
