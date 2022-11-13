@@ -1,4 +1,4 @@
-Channel,Callsign,Location,Mode,Output (MHz),Offset (MHz),Tone (Hz),Group
+RR#,Callsign,Location,Mode,Output (MHz),Offset (MHz),Tone (Hz),Group
 1,WW7PSR,Seattle,FM,146.960,-0.6,103.5,Puget Sound Repeater Group
 2,WW7PSR,Seattle,FM,52.870,-1.7,103.5,Puget Sound Repeater Group
 3,WW7PSR,Seattle,DMR,440.775,+5.0,CC2/TS1 Seattle1 TG/803153,Puget Sound Repeater Group
@@ -106,3 +106,5 @@ Channel,Callsign,Location,Mode,Output (MHz),Offset (MHz),Tone (Hz),Group
 105,W7AVM,Whidbey Isl.,FM,146.860,-0.6,127.3,Island County Amateur Radio Club
 106,N7KN,Whidbey Isl.,FM,441.425,+5.0,110.9,Charlie N7KN's repeater system
 107,WA7ROY,Roy,FM,444.175,+5.0,123.0,Roy Area Communications Network
+108,W7MIR,Mercer Isl.,FM,147.160,+0.6,146.2,Mercer Island Radio Operators
+109,W7MIR,Mercer Isl.,FM,440.150,+5.0,103.5,Mercer Island Radio Operators

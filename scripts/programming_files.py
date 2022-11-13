@@ -505,7 +505,7 @@ def write_generic_csv(df: pd.DataFrame) -> None:
     """
 
     df.index = df["RR#"]
-    df.index.name = "Channel"
+    df.index.name = "RR#"
     df = df.sort_index()
 
     (

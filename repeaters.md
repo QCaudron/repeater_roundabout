@@ -116,6 +116,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 105   | Island County   | W7AVM      | Whidbey Isl.      | FM          |        146.860 |           -0.6 |                      127.3 |
 | 106   | N7KN            | N7KN       | Whidbey Isl.      | FM          |        441.425 |           +5.0 |                      110.9 |
 | 107   | Roy             | WA7ROY     | Roy               | FM          |        444.175 |           +5.0 |                      123.0 |
+| 108   | MIRO            | W7MIR      | Mercer Isl.       | FM          |        147.160 |           +0.6 |                      146.2 |
+| 109   | MIRO            | W7MIR      | Mercer Isl.       | FM          |        440.150 |           +5.0 |                      103.5 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -167,6 +169,9 @@ Kitsap
 
 Lake Wash.
 : [Lake Washington Ham Club](http://www.lakewashingtonhamclub.org)
+
+MIRO
+: [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
 
 Maple Valley
 : [Maple Valley Emergency Repeater Association](https://www.qrz.com/db/kf7npl)
