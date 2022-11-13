@@ -13,15 +13,16 @@ class Spectrum {
         this.repeaters = repeaters;
         this.band = band;
         this.params = params;
-        parent.insertAdjacentHTML('beforeend', `<div class="channel">
-                <span class="freq">${band.extent[0]}</span><span class="chz">0</span>
-            </div>
-
-            <canvas></canvas>
-            `);
-        this.canvas = parent.querySelector("canvas");
+        parent.insertAdjacentHTML('beforeend', `<div class="spectrum">
+              <div class="channel">
+                  <span class="freq">${band.extent[0]}</span><span class="chz">0</span>
+              </div>
+              <canvas></canvas>
+            </div>`);
+        this.outer = parent.lastChild;
+        console.log(this.outer);
+        this.canvas = this.outer.querySelector("canvas");
         this.ctx = this.canvas.getContext('2d');
-        this.channel = parent.querySelector("div.channel");
         this.freq = parent.querySelector('span.freq');
         this.chz = parent.querySelector('span.chz');
         this.init();
@@ -36,7 +37,7 @@ class Spectrum {
     refresh() {
         this.canvas.height = this.params.height;
         this.canvas.width = this.params.width;
-        this.channel.style.width = `${this.params.width}px`;
+        this.outer.style.width = `${this.params.width}px`;
         // Track changes to color pallette
         typeColor.set('fmInputBand', this.params.inputBandColor);
         typeColor.set('fmOutputBand', this.params.outputBandColor);

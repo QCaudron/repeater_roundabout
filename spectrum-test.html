@@ -27,10 +27,7 @@
         let spectra = [];
 
         for (let band of BANDS) {
-            let div = document.createElement('div');
-            div.className = 'spectrum';
-            spectraContainer.appendChild(div);
-            let s = new Spectrum(repeaters, band, div, customizer.params);
+            let s = new Spectrum(repeaters, band, spectraContainer, customizer.params);
             spectra.push(s);
         }
 

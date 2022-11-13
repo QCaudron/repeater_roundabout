@@ -45,8 +45,8 @@ interface Band {
 }
 
 class Spectrum {
+    outer: HTMLDivElement;
     canvas: HTMLCanvasElement;
-    channel: HTMLDivElement;
     ctx: CanvasRenderingContext2D;
     freq: HTMLSpanElement;
     chz: HTMLSpanElement;
@@ -66,16 +66,18 @@ class Spectrum {
 
         parent.insertAdjacentHTML(
             'beforeend',
-            `<div class="channel">
-                <span class="freq">${band.extent[0]}</span><span class="chz">0</span>
-            </div>
+            `<div class="spectrum">
+              <div class="channel">
+                  <span class="freq">${band.extent[0]}</span><span class="chz">0</span>
+              </div>
+              <canvas></canvas>
+            </div>`);
 
-            <canvas></canvas>
-            `);
 
-        this.canvas = parent.querySelector("canvas") as HTMLCanvasElement;
+        this.outer = parent.lastChild as HTMLDivElement;
+        this.canvas = this.outer.querySelector("canvas") as HTMLCanvasElement;
         this.ctx = this.canvas.getContext('2d')!;
-        this.channel = parent.querySelector("div.channel")!;
+
         this.freq = parent.querySelector('span.freq') as HTMLSpanElement;
         this.chz = parent.querySelector('span.chz') as HTMLSpanElement;
         this.init();
@@ -93,7 +95,7 @@ class Spectrum {
     refresh() {
         this.canvas.height = this.params.height;
         this.canvas.width = this.params.width;
-        this.channel.style.width = `${this.params.width}px`;
+        this.outer.style.width = `${this.params.width}px`;
 
         // Track changes to color pallette
         typeColor.set('fmInputBand', this.params.inputBandColor);

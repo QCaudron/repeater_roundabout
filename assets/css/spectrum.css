@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Mono:wght@500&display=swap');
 
+div.spectrum {
+    margin: 1em auto;
+}
+
 div.spectrum div.channel {
     text-align: center;
     background-color: black;
@@ -17,7 +21,7 @@ div.spectrum span.chz {
     color: white;
 }
 
-div.spectrum {
+#spectra {
     width: 900px;
-    margin: 1em auto;
+    margin: 0 auto;
 }
