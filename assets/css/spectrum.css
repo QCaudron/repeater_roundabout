@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Mono:wght@500&display=swap');
 
 div.spectrum {
+    font-family: 'Roboto Mono';
+    color: white;
     margin: 1em auto;
 }
 
@@ -10,15 +12,11 @@ div.spectrum div.channel {
 }
 
 div.spectrum span.freq {
-    font-family: 'Roboto Mono';
     font-size: 4rem;
-    color: white;
 }
 
 div.spectrum span.chz {
-    font-family: 'Roboto Mono';
     font-size: 2rem;
-    color: white;
 }
 
 #spectra {

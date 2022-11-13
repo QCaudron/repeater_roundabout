@@ -20,7 +20,6 @@ class Spectrum {
               <canvas></canvas>
             </div>`);
         this.outer = parent.lastChild;
-        console.log(this.outer);
         this.canvas = this.outer.querySelector("canvas");
         this.ctx = this.canvas.getContext('2d');
         this.freq = parent.querySelector('span.freq');
