@@ -22,8 +22,8 @@ class Spectrum {
         this.outer = parent.lastChild;
         this.canvas = this.outer.querySelector("canvas");
         this.ctx = this.canvas.getContext('2d');
-        this.freq = parent.querySelector('span.freq');
-        this.chz = parent.querySelector('span.chz');
+        this.freq = this.outer.querySelector('span.freq');
+        this.chz = this.outer.querySelector('span.chz');
         this.init();
     }
     init() {

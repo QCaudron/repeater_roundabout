@@ -78,8 +78,8 @@ class Spectrum {
         this.canvas = this.outer.querySelector("canvas") as HTMLCanvasElement;
         this.ctx = this.canvas.getContext('2d')!;
 
-        this.freq = parent.querySelector('span.freq') as HTMLSpanElement;
-        this.chz = parent.querySelector('span.chz') as HTMLSpanElement;
+        this.freq = this.outer.querySelector('span.freq') as HTMLSpanElement;
+        this.chz = this.outer.querySelector('span.chz') as HTMLSpanElement;
         this.init();
     }
 
