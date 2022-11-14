@@ -5,14 +5,16 @@ async function readRepeaters() {
     let response = await fetch(REPEATERS);
     let repeatersRaw = await response.json();
     console.log("Parsing data...");
+    let id = 0;
     let repeaters = repeatersRaw.map((r) => {
+        id += 1;
         let callsign = r['Callsign'];
         let org = r['Long Name'];
         let output = parseFloat(r['Output (MHz)']);
         let offset = parseFloat(r['Offset (MHz)']);
         let input = parseFloat((output + offset).toFixed(4));
         let tone = r['Tone (Hz)'].replace(/\[.*\]/g, '');
-        return { callsign, input, output, tone, org };
+        return { id, callsign, input, output, tone, org };
     });
     return repeaters;
 }

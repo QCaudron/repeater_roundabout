@@ -27,6 +27,7 @@ interface Zone {
 const typeColor: Map<string, string> = new Map();
 
 interface Repeater {
+    id: number,
     callsign: string,
     input: number,
     output: number,
@@ -149,7 +150,7 @@ class Spectrum {
         this.chz.innerText = displayed.slice(-1);
         if (r !== null) {
             this.info.innerHTML =
-                `${r.callsign}` +
+                `${r.callsign} (${r.id})` +
                 `<br><span class="output">output: ${smartRound(r.output, 3, 4)}</span>` +
                 `<br><span class="input">input: ${smartRound(r.input, 3, 4)}</span>` +
                 `<br><span class="tone">tone: ${r.tone}</span>`;
