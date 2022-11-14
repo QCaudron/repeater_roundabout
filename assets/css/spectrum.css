@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Mono:wght@500&display=swap');
+
+div.spectrum {
+    font-family: 'Roboto Mono';
+    color: white;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.spectrum canvas {
+    width: 100%;
+}
+
+div.spectrum div.channel {
+    text-align: center;
+    background-color: black;
+    min-height: 6rem;
+}
+
+div.spectrum div.info {
+    position: absolute;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    top: 0.25rem;
+    left: 0.75rem;
+    width: 25%;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.spectrum span.input {
+    color: red;
+}
+
+div.spectrum span.output {
+    color: blue;
+}
+
+div.spectrum span.tone {
+    color: green;
+}
+
+div.spectrum div.org {
+    position: absolute;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    top: 0.25rem;
+    right: 0.75rem;
+    text-align: right;
+    width: 50%;
+    height: 2rem;
+}
+
+div.spectrum span.freq {
+    font-size: 4rem;
+    position: relative;
+    bottom: -1rem;
+}
+
+div.spectrum span.chz {
+    font-size: 2rem;
+    position: relative;
+    bottom: -1rem;
+}
+
+#spectra {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+ul.tabs {
+    position: relative;
+    font-family: 'Roboto Mono';
+    font-size: 2rem;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+ul.tabs li {
+    list-style: none;
+    padding: 0 1rem 0.75rem 1rem;
+    margin: 0 3px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: lightgray;
+    position: relative;
+    bottom: -0.75rem;
+}
+
+ul.tabs li:first-child {
+    margin-left: 1rem;
+}
+
+ul.tabs li.selected {
+    color: yellow;
+    background: black;
+}
+
+ul.tabs li:not(.selected):hover {
+    color: white;
+    background: black;
+}

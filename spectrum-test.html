@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/spectrum.css">
+</head>
+
+<body>
+    <h1>Spectrum Test</h1>
+
+    <div id="spectra">
+    </div>
+
+    <script type="module">
+        import { Spectrum } from './assets/js/spectrum.js';
+        import { Customizer } from './assets/js/spectrum-customizer.js';
+        import { Tabs } from './assets/js/tabs.js';
+
+        import { readRepeaters, BANDS } from './assets/js/bands.js';
+
+        let repeaters = await readRepeaters();
+
+        let customizer = new Customizer(document.body);
+
+        let spectraContainer = document.getElementById('spectra');
+        const tabs = new Tabs(spectraContainer);
+        let spectra = [];
+
+        for (let band of BANDS) {
+            let s = new Spectrum(repeaters, band, customizer.params);
+            tabs.addTab(band.name, s.outer);
+            spectra.push(s);
+        }
+
+        tabs.injectContent();
+
+        customizer.on(() => {
+            for (let s of spectra) {
+                s.refresh();
+            }
+        });
+    </script>
+</body>
+
+</html>

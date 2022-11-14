@@ -20,3 +20,4 @@ gtag: "G-N7S873N5DC"
 
 site-css:
   - assets/css/style.css
+  - assets/css/spectrum.css
