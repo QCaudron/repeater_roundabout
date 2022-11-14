@@ -15,3 +15,6 @@ for (let band of BANDS) {
 }
 
 tabs.injectContent();
+
+// Default to 2meter band
+tabs.select(1);

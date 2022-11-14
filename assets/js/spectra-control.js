@@ -10,4 +10,6 @@ for (let band of BANDS) {
     tabs.addTab(band.name, s.outer);
 }
 tabs.injectContent();
+// Default to 2meter band
+tabs.select(1);
 //# sourceMappingURL=spectra-control.js.map
