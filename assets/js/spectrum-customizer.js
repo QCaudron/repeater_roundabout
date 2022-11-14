@@ -1,5 +1,5 @@
 import { Pane } from "https://cdn.skypack.dev/tweakpane@3.1.0";
-export { Customizer };
+export { Customizer, params };
 // Tweakpane parameters
 const params = {
     width: 900,
