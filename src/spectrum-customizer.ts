@@ -1,7 +1,7 @@
 import { Pane } from "https://cdn.skypack.dev/tweakpane@3.1.0";
 import { UIParams } from "./spectrum.js";
 
-export { Customizer };
+export { Customizer, params };
 
 // Tweakpane parameters
 const params: UIParams = {
