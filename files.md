@@ -38,7 +38,11 @@ programming a large number of radios.
    download>CSV file</a>. Dave Casler has [a good video to get you
    started](https://www.youtube.com/watch?v=Mrpqq-xi00g).
 
-For more information, check out [Chirp's Wiki](https://chirp.danplanet.com/projects/chirp/wiki/Home).
+For more information, check out [Chirp's Wiki](https://chirp.danplanet.com/projects/chirp/wiki/Home). 
+
+Here's a great video from [Mike, K7MCK](https://www.qrz.com/db/K7MCK) giving you some help in programming your radio specifically for the Repeater Roundabout.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ytdd6lbrIMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## AnyTone D878 instructions
