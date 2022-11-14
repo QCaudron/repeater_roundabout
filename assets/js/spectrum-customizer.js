@@ -3,7 +3,7 @@ export { Customizer, params };
 // Tweakpane parameters
 const params = {
     width: 900,
-    height: 80,
+    height: 100,
     background: 'rgb(0, 0, 0)',
     fmBW: 16,
     vnbDigBW: 12.5,
