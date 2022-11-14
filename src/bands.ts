@@ -77,7 +77,8 @@ const BANDS: Band[] = [
     },
     {
         name: "70cm",
-        extent: [430, 450],
+        // Only show the part of the band that has repeaters for clarity.
+        extent: [440, 450],
         zones: [
             { name: 'FM Inputs', min: 445.0, max: 450.0, type: 'fmInputBand' },
             { name: 'FM Outputs', min: 440.9125, max: 445.0, type: 'fmOutputBand' },
@@ -94,7 +95,8 @@ const BANDS: Band[] = [
     },
     {
         name: "23cm",
-        extent: [1240, 1300],
+        // Only show the part of the band that has repeaters for clarity.
+        extent: [1270, 1300],
         zones: [
             { name: 'FM Inputs', min: 1270.0, max: 1275.0, type: 'fmInputBand' },
             { name: 'FM Outputs', min: 1290.0, max: 1295.0, type: 'fmOutputBand' },

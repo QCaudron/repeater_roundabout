@@ -8,6 +8,7 @@ class Spectrum {
         console.log(`Spectrum ${band.name}`);
         this.repeaters = repeaters;
         this.band = band;
+        this.cursor = band.extent[0];
         this.params = params;
         parent.insertAdjacentHTML('beforeend', `<div class="spectrum">
               <div class="info"></div>
@@ -39,6 +40,7 @@ class Spectrum {
         typeColor.set('fmOutputBand', this.params.outputBandColor);
         typeColor.set('fmInput', this.params.inputColor);
         typeColor.set('fmOutput', this.params.outputColor);
+        typeColor.set('cursor', 'greenyellow');
         this.draw();
     }
     draw() {
@@ -66,6 +68,11 @@ class Spectrum {
                 type: 'fmInput'
             });
         }
+        this.drawZone({
+            name: '',
+            min: this.cursor, max: this.cursor,
+            type: 'cursor'
+        });
     }
     updateChannel(freq) {
         let [r, f] = this.repeaterFromFreq(freq);
@@ -84,6 +91,8 @@ class Spectrum {
             this.info.innerText = '';
             this.org.innerText = '';
         }
+        this.cursor = f;
+        this.draw();
     }
     drawZone(zone) {
         let xMin = this.scaleX(zone.min);
@@ -93,8 +102,18 @@ class Spectrum {
             xMin = (xMax + xMin) / 2 - 0.5;
             xMax = xMin + 1;
         }
-        this.ctx.fillStyle = typeColor.get(zone.type);
-        this.ctx.fillRect(xMin, 0, xMax - xMin, this.params.height);
+        if (zone.type == 'cursor') {
+            this.ctx.strokeStyle = typeColor.get(zone.type);
+            this.ctx.setLineDash([5, 5]);
+            this.ctx.beginPath();
+            this.ctx.moveTo((xMin + xMax) / 2, 0);
+            this.ctx.lineTo((xMin + xMax) / 2, this.params.height);
+            this.ctx.stroke();
+        }
+        else {
+            this.ctx.fillStyle = typeColor.get(zone.type);
+            this.ctx.fillRect(xMin, 0, xMax - xMin, this.params.height);
+        }
     }
     scaleX(f) {
         let [bandMin, bandMax] = this.band.extent;
