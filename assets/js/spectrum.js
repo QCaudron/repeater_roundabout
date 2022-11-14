@@ -4,21 +4,23 @@ export { Spectrum };
 const SLOP = 5;
 const typeColor = new Map();
 class Spectrum {
-    constructor(repeaters, band, parent, params) {
+    constructor(repeaters, band, params) {
         console.log(`Spectrum ${band.name}`);
         this.repeaters = repeaters;
         this.band = band;
         this.cursor = band.extent[0];
         this.params = params;
-        parent.insertAdjacentHTML('beforeend', `<div class="spectrum">
+        this.outer = document.createElement('div');
+        this.outer.className = 'spectrum';
+        this.outer.innerHTML =
+            `<div class="spectrum">
               <div class="info"></div>
               <div class="org"></div>
               <div class="channel">
                   <span class="freq">${band.extent[0]}</span><span class="chz">0</span>
               </div>
               <canvas></canvas>
-            </div>`);
-        this.outer = parent.lastChild;
+            </div>`;
         this.canvas = this.outer.querySelector("canvas");
         this.ctx = this.canvas.getContext('2d');
         this.info = this.outer.querySelector("div.info");
@@ -28,13 +30,14 @@ class Spectrum {
         this.refresh();
         this.updateChannel(this.band.extent[0]);
         this.canvas.addEventListener('mousemove', (e) => {
-            this.updateChannel(this.freqFromX(e.offsetX));
+            // Scale x coordinate according to browser window scaling.
+            let x = e.offsetX / this.canvas.offsetWidth * this.params.width;
+            this.updateChannel(this.freqFromX(x));
         });
     }
     refresh() {
         this.canvas.height = this.params.height;
         this.canvas.width = this.params.width;
-        this.outer.style.width = `${this.params.width}px`;
         // Track changes to color pallette
         typeColor.set('fmInputBand', this.params.inputBandColor);
         typeColor.set('fmOutputBand', this.params.outputBandColor);

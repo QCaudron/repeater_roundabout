@@ -2,8 +2,8 @@ import { Pane } from "https://cdn.skypack.dev/tweakpane@3.1.0";
 export { Customizer };
 // Tweakpane parameters
 const params = {
-    width: 800,
-    height: 70,
+    width: 900,
+    height: 80,
     background: 'rgb(0, 0, 0)',
     fmBW: 16,
     vnbDigBW: 12.5,
@@ -19,7 +19,7 @@ class Customizer {
         this.pane = new Pane({ container });
         this.params = params;
         const fParams = this.pane.addFolder({ title: 'Params' });
-        fParams.addInput(params, 'width', { min: 200, max: 1200, step: 10 });
+        // fParams.addInput(params, 'width', { min: 200, max: 1200, step: 10 });
         fParams.addInput(params, 'height', { min: 30, max: 400, step: 10 });
         fParams.addInput(params, 'fmBW', { min: 1, max: 20, step: 0.5 });
         fParams.addInput(params, 'background', { view: 'color' });

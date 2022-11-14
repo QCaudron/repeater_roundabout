@@ -56,7 +56,6 @@ class Spectrum {
     constructor(
         repeaters: Repeater[],
         band: Band,
-        parent: HTMLElement,
         params: UIParams) {
         console.log(`Spectrum ${band.name}`);
         this.repeaters = repeaters;
@@ -64,8 +63,9 @@ class Spectrum {
         this.cursor = band.extent[0];
         this.params = params;
 
-        parent.insertAdjacentHTML(
-            'beforeend',
+        this.outer = document.createElement('div');
+        this.outer.className = 'spectrum';
+        this.outer.innerHTML =
             `<div class="spectrum">
               <div class="info"></div>
               <div class="org"></div>
@@ -73,10 +73,9 @@ class Spectrum {
                   <span class="freq">${band.extent[0]}</span><span class="chz">0</span>
               </div>
               <canvas></canvas>
-            </div>`);
+            </div>`;
 
 
-        this.outer = parent.lastChild as HTMLDivElement;
         this.canvas = this.outer.querySelector("canvas") as HTMLCanvasElement;
         this.ctx = this.canvas.getContext('2d')!;
 
@@ -89,14 +88,15 @@ class Spectrum {
         this.updateChannel(this.band.extent[0]);
 
         this.canvas.addEventListener('mousemove', (e) => {
-            this.updateChannel(this.freqFromX(e.offsetX));
+            // Scale x coordinate according to browser window scaling.
+            let x = e.offsetX / this.canvas.offsetWidth * this.params.width;
+            this.updateChannel(this.freqFromX(x));
         });
     }
 
     refresh() {
         this.canvas.height = this.params.height;
         this.canvas.width = this.params.width;
-        this.outer.style.width = `${this.params.width}px`;
 
         // Track changes to color pallette
         typeColor.set('fmInputBand', this.params.inputBandColor);

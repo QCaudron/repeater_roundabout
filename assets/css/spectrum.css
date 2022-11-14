@@ -3,8 +3,12 @@
 div.spectrum {
     font-family: 'Roboto Mono';
     color: white;
-    margin: 1em auto;
+    margin: 0 auto;
     position: relative;
+}
+
+div.spectrum canvas {
+    width: 100%;
 }
 
 div.spectrum div.channel {
@@ -58,6 +62,42 @@ div.spectrum span.chz {
 }
 
 #spectra {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0 1rem;
+}
+
+ul.tabs {
+    position: relative;
+    font-family: 'Roboto Mono';
+    font-size: 2rem;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.tabs li {
+    list-style: none;
+    padding: 0 1rem 0.75rem 1rem;
+    margin: 0 3px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: lightgray;
+    position: relative;
+    bottom: -0.75rem;
+}
+
+ul.tabs li:first-child {
+    margin-left: 1rem;
+}
+
+ul.tabs li.selected {
+    color: yellow;
+    background: black;
+}
+
+ul.tabs li:not(.selected):hover {
+    color: white;
+    background: black;
 }
