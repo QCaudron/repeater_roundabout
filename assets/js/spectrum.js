@@ -1,11 +1,7 @@
 export { Spectrum };
 ;
-let canvas;
-let freq;
-let chz;
-let repeaters;
-const bandMin = 144.0;
-const bandMax = 148.0;
+// Pixel precision for hovering over frequency.
+const SLOP = 5;
 const typeColor = new Map();
 class Spectrum {
     constructor(repeaters, band, parent, params) {
@@ -72,7 +68,7 @@ class Spectrum {
         }
     }
     updateChannel(freq) {
-        let [r, f] = repeaterFromFreq(freq, this.params.fmBW * 2, this.repeaters);
+        let [r, f] = this.repeaterFromFreq(freq);
         let displayed = f.toFixed(4);
         this.freq.innerText = displayed.slice(0, -1);
         this.chz.innerText = displayed.slice(-1);
@@ -90,9 +86,13 @@ class Spectrum {
         }
     }
     drawZone(zone) {
-        const xMin = this.scaleX(zone.min);
-        const xMax = this.scaleX(zone.max);
-        // console.log(`${zone.name}: ${xMin}-${xMax}`);
+        let xMin = this.scaleX(zone.min);
+        let xMax = this.scaleX(zone.max);
+        // At least one unit of width
+        if (xMax - xMin < 1) {
+            xMin = (xMax + xMin) / 2 - 0.5;
+            xMax = xMin + 1;
+        }
         this.ctx.fillStyle = typeColor.get(zone.type);
         this.ctx.fillRect(xMin, 0, xMax - xMin, this.params.height);
     }
@@ -105,25 +105,25 @@ class Spectrum {
         let f = bandMin + (x / this.params.width) * (bandMax - bandMin);
         return f;
     }
-}
-function repeaterFromFreq(f, kHzSlop, repeaters) {
-    let best = null;
-    let distBest = 1000;
-    let bestF = 0;
-    for (let repeater of repeaters) {
-        for (let fT of [repeater.input, repeater.output]) {
-            if (!best || Math.abs(f - fT) < distBest) {
-                best = repeater;
-                distBest = Math.abs(f - fT);
-                bestF = fT;
-                continue;
+    repeaterFromFreq(f) {
+        let best = null;
+        let distBest = 1000;
+        let bestF = 0;
+        for (let repeater of this.repeaters) {
+            for (let fT of [repeater.input, repeater.output]) {
+                if (!best || Math.abs(f - fT) < distBest) {
+                    best = repeater;
+                    distBest = Math.abs(f - fT);
+                    bestF = fT;
+                    continue;
+                }
             }
         }
+        if (Math.abs(this.scaleX(f) - this.scaleX(bestF)) > SLOP) {
+            return [null, f];
+        }
+        return [best, bestF];
     }
-    if (distBest > kHzSlop / 1000) {
-        return [null, f];
-    }
-    return [best, bestF];
 }
 function smartRound(n, minDigits, maxDigits) {
     let digits = maxDigits;

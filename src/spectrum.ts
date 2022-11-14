@@ -13,13 +13,8 @@ interface UIParams {
     inputBandColor: string,  // color
 };
 
-let canvas: HTMLCanvasElement;
-let freq: HTMLElement;
-let chz: HTMLElement;
-let repeaters: Repeater[];
-
-const bandMin = 144.0;
-const bandMax = 148.0;
+// Pixel precision for hovering over frequency.
+const SLOP = 5;
 
 interface Zone {
     name: string;
@@ -56,7 +51,7 @@ class Spectrum {
     chz: HTMLSpanElement;
     band: Band;
     params: UIParams;
-    repeaters: Repeater[] | undefined;
+    repeaters: Repeater[];
 
     constructor(
         repeaters: Repeater[],
@@ -119,7 +114,7 @@ class Spectrum {
         }
 
         let [bandMin, bandMax] = this.band.extent;
-        for (let repeater of this.repeaters!) {
+        for (let repeater of this.repeaters) {
             if (repeater.output < bandMin || repeater.output > bandMax) {
                 continue;
             }
@@ -140,10 +135,7 @@ class Spectrum {
     }
 
     updateChannel(freq: number) {
-        let [r, f] = repeaterFromFreq(
-            freq,
-            this.params.fmBW * 2,
-            this.repeaters!);
+        let [r, f] = this.repeaterFromFreq(freq);
         let displayed = f.toFixed(4);
         this.freq.innerText = displayed.slice(0, -1);
         this.chz.innerText = displayed.slice(-1);
@@ -162,9 +154,13 @@ class Spectrum {
     }
 
     drawZone(zone: Zone) {
-        const xMin = this.scaleX(zone.min);
-        const xMax = this.scaleX(zone.max);
-        // console.log(`${zone.name}: ${xMin}-${xMax}`);
+        let xMin = this.scaleX(zone.min);
+        let xMax = this.scaleX(zone.max);
+        // At least one unit of width
+        if (xMax - xMin < 1) {
+            xMin = (xMax + xMin) / 2 - 0.5;
+            xMax = xMin + 1;
+        }
         this.ctx.fillStyle = typeColor.get(zone.type)!;
         this.ctx.fillRect(xMin, 0, xMax - xMin, this.params.height);
     }
@@ -179,30 +175,32 @@ class Spectrum {
         let f = bandMin + (x / this.params.width) * (bandMax - bandMin);
         return f;
     }
-}
 
-function repeaterFromFreq(f: number, kHzSlop: number, repeaters: Repeater[]): [Repeater | null, number] {
-    let best: Repeater | null = null;
-    let distBest: number = 1000;
-    let bestF: number = 0;
+    repeaterFromFreq(f: number): [Repeater | null, number] {
+        let best: Repeater | null = null;
+        let distBest: number = 1000;
+        let bestF: number = 0;
 
-    for (let repeater of repeaters) {
-        for (let fT of [repeater.input, repeater.output]) {
-            if (!best || Math.abs(f - fT) < distBest) {
-                best = repeater;
-                distBest = Math.abs(f - fT);
-                bestF = fT;
-                continue;
+        for (let repeater of this.repeaters) {
+            for (let fT of [repeater.input, repeater.output]) {
+                if (!best || Math.abs(f - fT) < distBest) {
+                    best = repeater;
+                    distBest = Math.abs(f - fT);
+                    bestF = fT;
+                    continue;
+                }
             }
         }
-    }
 
-    if (distBest > kHzSlop / 1000) {
-        return [null, f];
-    }
+        if (Math.abs(this.scaleX(f) - this.scaleX(bestF)) > SLOP) {
+            return [null, f];
+        }
 
-    return [best, bestF];
+        return [best, bestF];
+    }
 }
+
+
 
 function smartRound(n: number, minDigits: number, maxDigits: number) {
     let digits = maxDigits;
