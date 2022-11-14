@@ -14,7 +14,7 @@ These files are automatically generated each time a new repeater is added. Many 
 | <a href="assets/programming_files/icom.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | [Icom IC-705](https://www.icomjapan.com/support/firmware_driver/3067/) | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> |
 | <a href="assets/programming_files/all_rr_frequencies.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | All repeaters | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> |
 
-<br />
+<p></p>
 
 
 ## Chirp help
@@ -44,6 +44,8 @@ Here's a great video from [Mike, K7MCK](https://www.qrz.com/db/K7MCK) giving you
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ytdd6lbrIMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<p></p>
+
 
 ## AnyTone D878 instructions
 
@@ -71,6 +73,8 @@ software](https://support.bridgecomsystems.com/anytone-878-v2-model-cps-firmware
    <br>You can also enter "Roundabout" as the Zone Name (optional).
 3. Then use the `Program > Write to Radio` menu to send the program to your D878.
 
+<p></p>
+
 
 
 ## Icom IC-705 instructions
@@ -87,6 +91,8 @@ let us know if this file is also compatible with your radio.*
    repeater roundup channels.
 6. Select the new group and use the `File > Import > Group` menu and select the
    downloaded <a href="asserts/programming_files/icom.csv" download>icom.csv</a>file.
+
+<p></p>
 
 
 ## All repeaters
