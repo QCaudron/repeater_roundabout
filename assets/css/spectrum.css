@@ -4,19 +4,57 @@ div.spectrum {
     font-family: 'Roboto Mono';
     color: white;
     margin: 1em auto;
+    position: relative;
 }
 
 div.spectrum div.channel {
     text-align: center;
     background-color: black;
+    min-height: 6rem;
+}
+
+div.spectrum div.info {
+    position: absolute;
+    text-align: left;
+    font-size: 1rem;
+    top: 0.25rem;
+    left: 0.75rem;
+    width: 25%;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.spectrum span.input {
+    color: red;
+}
+
+div.spectrum span.output {
+    color: blue;
+}
+
+div.spectrum span.tone {
+    color: green;
+}
+
+div.spectrum div.org {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.75rem;
+    text-align: right;
+    width: 50%;
+    height: 2rem;
 }
 
 div.spectrum span.freq {
     font-size: 4rem;
+    position: relative;
+    bottom: -1rem;
 }
 
 div.spectrum span.chz {
     font-size: 2rem;
+    position: relative;
+    bottom: -1rem;
 }
 
 #spectra {

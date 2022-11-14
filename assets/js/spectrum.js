@@ -14,6 +14,8 @@ class Spectrum {
         this.band = band;
         this.params = params;
         parent.insertAdjacentHTML('beforeend', `<div class="spectrum">
+              <div class="info"></div>
+              <div class="org"></div>
               <div class="channel">
                   <span class="freq">${band.extent[0]}</span><span class="chz">0</span>
               </div>
@@ -22,11 +24,10 @@ class Spectrum {
         this.outer = parent.lastChild;
         this.canvas = this.outer.querySelector("canvas");
         this.ctx = this.canvas.getContext('2d');
+        this.info = this.outer.querySelector("div.info");
+        this.org = this.outer.querySelector("div.org");
         this.freq = this.outer.querySelector('span.freq');
         this.chz = this.outer.querySelector('span.chz');
-        this.init();
-    }
-    init() {
         this.refresh();
         this.updateChannel(this.band.extent[0]);
         this.canvas.addEventListener('mousemove', (e) => {
@@ -42,6 +43,9 @@ class Spectrum {
         typeColor.set('fmOutputBand', this.params.outputBandColor);
         typeColor.set('fmInput', this.params.inputColor);
         typeColor.set('fmOutput', this.params.outputColor);
+        this.draw();
+    }
+    draw() {
         this.ctx.fillStyle = this.params.background;
         this.ctx.fillRect(0, 0, this.params.width, this.params.height);
         for (let zone of this.band.zones) {
@@ -68,12 +72,21 @@ class Spectrum {
         }
     }
     updateChannel(freq) {
-        let [r, f] = repeaterFromFreq(freq, this.params.fmBW, this.repeaters);
+        let [r, f] = repeaterFromFreq(freq, this.params.fmBW * 2, this.repeaters);
         let displayed = f.toFixed(4);
         this.freq.innerText = displayed.slice(0, -1);
         this.chz.innerText = displayed.slice(-1);
         if (r !== null) {
-            console.log(r);
+            this.info.innerHTML =
+                `${r.callsign}` +
+                    `<br><span class="output">output: ${smartRound(r.output, 3, 4)}</span>` +
+                    `<br><span class="input">input: ${smartRound(r.input, 3, 4)}</span>` +
+                    `<br><span class="tone">tone: ${r.tone}</span>`;
+            this.org.innerHTML = `${r.org}`;
+        }
+        else {
+            this.info.innerText = '';
+            this.org.innerText = '';
         }
     }
     drawZone(zone) {
@@ -111,5 +124,14 @@ function repeaterFromFreq(f, kHzSlop, repeaters) {
         return [null, f];
     }
     return [best, bestF];
+}
+function smartRound(n, minDigits, maxDigits) {
+    let digits = maxDigits;
+    let result = n.toFixed(maxDigits);
+    while (digits > minDigits && result.endsWith('0')) {
+        digits--;
+        result = n.toFixed(digits);
+    }
+    return result;
 }
 //# sourceMappingURL=spectrum.js.map

@@ -7,14 +7,24 @@ async function readRepeaters() {
     console.log("Parsing data...");
     let repeaters = repeatersRaw.map((r) => {
         let callsign = r['Callsign'];
+        let org = r['Long Name'];
         let output = parseFloat(r['Output (MHz)']);
         let offset = parseFloat(r['Offset (MHz)']);
         let input = parseFloat((output + offset).toFixed(4));
-        return { callsign, input, output };
+        let tone = r['Tone (Hz)'].replace(/\[.*\]/g, '');
+        return { callsign, input, output, tone, org };
     });
     return repeaters;
 }
 const BANDS = [
+    {
+        name: "6m",
+        extent: [50, 54],
+        zones: [
+            { name: 'FM Inputs', min: 51.1, max: 52.29, type: 'fmInputBand' },
+            { name: 'FM Outputs', min: 52.8, max: 53.99, type: 'fmOutputBand' },
+        ],
+    },
     {
         name: "2m",
         extent: [144, 148],
@@ -28,14 +38,6 @@ const BANDS = [
             { name: 'FM Inputs', min: 147.61, max: 147.99, type: 'fmInputBand' },
             { name: 'VNBD Inputs', min: 147.40625, max: 147.50625, type: 'fmInputBand' },
             { name: 'VNBD Outputs', min: 146.40625, max: 146.50625, type: 'fmOutputBand' },
-        ],
-    },
-    {
-        name: "6m",
-        extent: [50, 54],
-        zones: [
-            { name: 'FM Inputs', min: 51.1, max: 52.29, type: 'fmInputBand' },
-            { name: 'FM Outputs', min: 52.8, max: 53.99, type: 'fmOutputBand' },
         ],
     },
     {

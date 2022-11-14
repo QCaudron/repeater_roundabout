@@ -22,20 +22,22 @@ const bandMin = 144.0;
 const bandMax = 148.0;
 
 interface Zone {
-  name: string;
-  type:
+    name: string;
+    type:
     'fmInputBand' | 'fmOutputBand' |
     'fmInput' | 'fmOutput';
-  min: number,
-  max: number
+    min: number,
+    max: number
 }
 
 const typeColor: Map<string, string> = new Map();
 
 interface Repeater {
-  callsign: string,
-  input: number,
-  output: number
+    callsign: string,
+    input: number,
+    output: number,
+    tone: string,
+    org: string
 }
 
 interface Band {
@@ -48,6 +50,8 @@ class Spectrum {
     outer: HTMLDivElement;
     canvas: HTMLCanvasElement;
     ctx: CanvasRenderingContext2D;
+    info: HTMLDivElement;
+    org: HTMLDivElement;
     freq: HTMLSpanElement;
     chz: HTMLSpanElement;
     band: Band;
@@ -67,6 +71,8 @@ class Spectrum {
         parent.insertAdjacentHTML(
             'beforeend',
             `<div class="spectrum">
+              <div class="info"></div>
+              <div class="org"></div>
               <div class="channel">
                   <span class="freq">${band.extent[0]}</span><span class="chz">0</span>
               </div>
@@ -78,12 +84,11 @@ class Spectrum {
         this.canvas = this.outer.querySelector("canvas") as HTMLCanvasElement;
         this.ctx = this.canvas.getContext('2d')!;
 
+        this.info = this.outer.querySelector("div.info") as HTMLDivElement;
+        this.org = this.outer.querySelector("div.org") as HTMLDivElement;
         this.freq = this.outer.querySelector('span.freq') as HTMLSpanElement;
         this.chz = this.outer.querySelector('span.chz') as HTMLSpanElement;
-        this.init();
-    }
 
-    init() {
         this.refresh();
         this.updateChannel(this.band.extent[0]);
 
@@ -102,66 +107,78 @@ class Spectrum {
         typeColor.set('fmOutputBand', this.params.outputBandColor);
         typeColor.set('fmInput', this.params.inputColor);
         typeColor.set('fmOutput', this.params.outputColor);
+        this.draw();
+    }
 
+    draw() {
         this.ctx.fillStyle = this.params.background;
         this.ctx.fillRect(0, 0, this.params.width, this.params.height);
 
         for (let zone of this.band.zones) {
-          this.drawZone(zone);
+            this.drawZone(zone);
         }
 
         let [bandMin, bandMax] = this.band.extent;
         for (let repeater of this.repeaters!) {
-          if (repeater.output < bandMin || repeater.output > bandMax) {
-            continue;
-          }
-          // console.log(`${repeater.callsign}: ${repeater.output} ${repeater.input}`);
-          this.drawZone({
-            name: repeater.callsign,
-            min: repeater.output - this.params.fmBW/2/1000,
-            max: repeater.output + this.params.fmBW/2/1000,
-            type: 'fmOutput'
-          });
-          this.drawZone({
-            name: repeater.callsign,
-            min: repeater.input - this.params.fmBW/2/1000,
-            max: repeater.input + this.params.fmBW/2/1000,
-            type: 'fmInput'
-          });
-        }
-      }
-
-      updateChannel(freq: number) {
-            let [r, f] = repeaterFromFreq(
-                freq,
-                this.params.fmBW,
-                this.repeaters!);
-            let displayed = f.toFixed(4);
-            this.freq.innerText = displayed.slice(0, -1);
-            this.chz.innerText = displayed.slice(-1);
-            if (r !== null) {
-                console.log(r);
+            if (repeater.output < bandMin || repeater.output > bandMax) {
+                continue;
             }
+            // console.log(`${repeater.callsign}: ${repeater.output} ${repeater.input}`);
+            this.drawZone({
+                name: repeater.callsign,
+                min: repeater.output - this.params.fmBW / 2 / 1000,
+                max: repeater.output + this.params.fmBW / 2 / 1000,
+                type: 'fmOutput'
+            });
+            this.drawZone({
+                name: repeater.callsign,
+                min: repeater.input - this.params.fmBW / 2 / 1000,
+                max: repeater.input + this.params.fmBW / 2 / 1000,
+                type: 'fmInput'
+            });
         }
+    }
 
-      drawZone(zone: Zone) {
+    updateChannel(freq: number) {
+        let [r, f] = repeaterFromFreq(
+            freq,
+            this.params.fmBW * 2,
+            this.repeaters!);
+        let displayed = f.toFixed(4);
+        this.freq.innerText = displayed.slice(0, -1);
+        this.chz.innerText = displayed.slice(-1);
+        if (r !== null) {
+            this.info.innerHTML =
+                `${r.callsign}` +
+                `<br><span class="output">output: ${smartRound(r.output, 3, 4)}</span>` +
+                `<br><span class="input">input: ${smartRound(r.input, 3, 4)}</span>` +
+                `<br><span class="tone">tone: ${r.tone}</span>`;
+
+            this.org.innerHTML = `${r.org}`;
+        } else {
+            this.info.innerText = '';
+            this.org.innerText = '';
+        }
+    }
+
+    drawZone(zone: Zone) {
         const xMin = this.scaleX(zone.min);
         const xMax = this.scaleX(zone.max);
         // console.log(`${zone.name}: ${xMin}-${xMax}`);
         this.ctx.fillStyle = typeColor.get(zone.type)!;
         this.ctx.fillRect(xMin, 0, xMax - xMin, this.params.height);
-      }
+    }
 
-      scaleX(f: number): number {
+    scaleX(f: number): number {
         let [bandMin, bandMax] = this.band.extent;
         return this.params.width * (f - bandMin) / (bandMax - bandMin);
-      }
+    }
 
-      freqFromX(x: number): number {
+    freqFromX(x: number): number {
         let [bandMin, bandMax] = this.band.extent;
         let f = bandMin + (x / this.params.width) * (bandMax - bandMin);
         return f;
-      }
+    }
 }
 
 function repeaterFromFreq(f: number, kHzSlop: number, repeaters: Repeater[]): [Repeater | null, number] {
@@ -170,19 +187,29 @@ function repeaterFromFreq(f: number, kHzSlop: number, repeaters: Repeater[]): [R
     let bestF: number = 0;
 
     for (let repeater of repeaters) {
-      for (let fT of [repeater.input, repeater.output]) {
-        if (!best || Math.abs(f - fT) < distBest) {
-          best = repeater;
-          distBest = Math.abs(f - fT);
-          bestF = fT;
-          continue;
+        for (let fT of [repeater.input, repeater.output]) {
+            if (!best || Math.abs(f - fT) < distBest) {
+                best = repeater;
+                distBest = Math.abs(f - fT);
+                bestF = fT;
+                continue;
+            }
         }
-      }
     }
 
-    if (distBest > kHzSlop/1000) {
-      return [null, f];
+    if (distBest > kHzSlop / 1000) {
+        return [null, f];
     }
 
     return [best, bestF];
-  }
+}
+
+function smartRound(n: number, minDigits: number, maxDigits: number) {
+    let digits = maxDigits;
+    let result = n.toFixed(maxDigits);
+    while (digits > minDigits && result.endsWith('0')) {
+        digits--;
+        result = n.toFixed(digits);
+    }
+    return result;
+}
