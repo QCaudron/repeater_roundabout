@@ -3,6 +3,8 @@ title: Participating Repeaters
 subtitle: Repeaters joining in the Repeater Roundabout fun.
 ---
 
+<div id="spectra"></div>
+
 The following repeaters are participating in the Repeater Roundabout. Please ensure you **do not interfere** with the repeater's normal operation, including regular nets.
 
 Get started by [programming your radio](/files), and check out the repeaters' locations on the [repeater map](/map).
@@ -24,7 +26,5 @@ If you have a repeater you'd like to have added to the list, please contact [Que
 [^dcs]: These repeaters use [Digital Coded Squelch (DCS)](https://www.hamradioschool.com/post/get-the-right-signal-tone) tones.
 
 <!-- Load Javascript for Spectrum Display -->
-<script type="module">
-import { Spectrum } from './assets/js/spectrum.js';
-let s = new Spectrum();
+<script type="module" src="./assets/js/spectra-control.js">
 </script>
