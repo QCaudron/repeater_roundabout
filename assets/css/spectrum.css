@@ -21,6 +21,7 @@ div.spectrum div.info {
     position: absolute;
     text-align: left;
     font-size: 1rem;
+    line-height: 1.1rem;
     top: 0.25rem;
     left: 0.75rem;
     width: 25%;
@@ -42,6 +43,8 @@ div.spectrum span.tone {
 
 div.spectrum div.org {
     position: absolute;
+    font-size: 1rem;
+    line-height: 1.1rem;
     top: 0.25rem;
     right: 0.75rem;
     text-align: right;
