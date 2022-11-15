@@ -17,4 +17,4 @@ Once you're done logging, save your spreadsheet as a commas-separated values fil
 
 ## How ?
 
-You can submit your logs by submitting [this form](https://forms.gle/iF9uJVYNo6fEdUS36) where you can link or upload your spreadsheet. 
+[Submit your logs here](https://forms.gle/iF9uJVYNo6fEdUS36).
