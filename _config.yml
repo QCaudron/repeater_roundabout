@@ -12,7 +12,7 @@ navbar-links:
   Map: "/map"
   Programming Files: "/files"
   Log Sheet: "https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing"
-  # Submit Logs: "/submit_logs"
+  Submit Logs: "/submit_logs"
 
 avatar: "/assets/images/logo.png"
 

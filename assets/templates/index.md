@@ -48,7 +48,7 @@ You should log
 - the date and time (in Pacific time) of the contact
 - the callsign of the person you contacted
 - their signal report for your signal
-- the repeater's Repeater Roundabout number (RR#) -- see the [repeaters page](/repeaters) page
+- the repeater's Repeater Roundabout number (RR#) -- see the [repeaters page](/repeaters).
 
 You must use [this spreadsheet](https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing) for logging, to make it easier to calculate your points. To get started, click on `File`, then `Make a copy` or `Download`.
 
@@ -62,7 +62,7 @@ Here's an example log file :
 | Nov 20  | 13:16 | KX2CW    |     CM2 | 22  |
 | Nov 20  | 13:16 | KD7WGN   |      45 | 102 |
 
-Send logs to [k7drq@psrg.org](mailto:k7drq@psrg.org) for scoring! After the contest, a leaderboard will be published. Logs must be returned to K7DRQ by November 27th to qualify.
+Logs can be submitted [on this page](/submit_logs). After the contest, a leaderboard will be published on this website. Logs must be returned to K7DRQ by November 27th to qualify.
 
 
 # FAQ
@@ -75,3 +75,9 @@ Can I arrange a contact beforehand ?
 
 Can I use Echolink or Allstar ?
 : You sure can ! The rules are the same, and nothing changes in the way you log your contacts. If a repeater has Echolink or Allstar, you can use it to make your contact.
+
+Will each repeater have a club member monitoring ?
+: No -- these contacts are as organic as possible. Get on a repeater, ask to chat to someone, and see what happens. If you're lucky, you'll find someone who's also participating in the Repeater Roundabout, and you can share your progress. If they aren't, you can still chat about anything and everything, and the contact still counts.
+
+Can I send logs in ADIF format ?
+: No, sorry. The [spreadsheet](https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing) is the only way to log your contacts.
