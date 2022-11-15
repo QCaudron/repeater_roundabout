@@ -159,7 +159,7 @@ def repeater_from_args(args: Union[argparse.Namespace, SimpleNamespace]) -> dict
         "Output (MHz)": args.freq,
         "Offset (MHz)": args.offset,
         "Tone (Hz)": args.tone,
-        "Coordinates": [args.lat, args.lon] if args.lat and args.lon else None,
+        "Coordinates": [float(args.lat), float(args.lon)] if args.lat and args.lon else None,
         "Long Name": args.long_name,
         "Website": args.url,
     }

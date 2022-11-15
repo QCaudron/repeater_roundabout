@@ -1633,5 +1633,65 @@
         ],
         "Long Name":"Mercer Island Radio Operators",
         "Website":"https:\/\/miro.cmivolunteers.org\/"
+    },
+    {
+        "Group Name":"PNW220",
+        "Callsign":"N7RIG",
+        "Location":"Lyman Hill",
+        "Mode":"FM",
+        "Output (MHz)":"224.780",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            48.5945015,
+            -122.16000366
+        ],
+        "Long Name":"Pacific Northwest 220Mhz Repeater Network",
+        "Website":"http:\/\/pnw220.net\/"
+    },
+    {
+        "Group Name":"PNW220",
+        "Callsign":"WA7FUS",
+        "Location":"Lake Forest Park",
+        "Mode":"FM",
+        "Output (MHz)":"224.220",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.75659943,
+            -122.28099823
+        ],
+        "Long Name":"Pacific Northwest 220Mhz Repeater Network",
+        "Website":"http:\/\/pnw220.net\/"
+    },
+    {
+        "Group Name":"W7WRG",
+        "Callsign":"W7WRG",
+        "Location":"Grass Mtn.",
+        "Mode":"FM",
+        "Output (MHz)":"224.88",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.20406,
+            -121.795688
+        ],
+        "Long Name":"Western Washington Radio Group",
+        "Website":"http:\/\/pnw220.net\/"
+    },
+    {
+        "Group Name":"W7WRG",
+        "Callsign":"W7WRG",
+        "Location":"Baw Faw Peak",
+        "Mode":"FM",
+        "Output (MHz)":"224.080",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.48789978,
+            -123.21399689
+        ],
+        "Long Name":"Western Washington Radio Group",
+        "Website":"http:\/\/pnw220.net\/"
     }
 ]

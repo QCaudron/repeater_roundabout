@@ -120,6 +120,10 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 107   | Roy             | WA7ROY     | Roy               | FM          |        444.175 |           +5.0 |                      123.0 |
 | 108   | MIRO            | W7MIR      | Mercer Isl.       | FM          |        147.160 |           +0.6 |                      146.2 |
 | 109   | MIRO            | W7MIR      | Mercer Isl.       | FM          |        440.150 |           +5.0 |                      103.5 |
+| 110   | PNW220          | N7RIG      | Lyman Hill        | FM          |        224.780 |           -1.6 |                      123.0 |
+| 111   | PNW220          | WA7FUS     | Lake Forest Park  | FM          |        224.220 |           -1.6 |                      123.0 |
+| 112   | W7WRG           | W7WRG      | Grass Mtn.        | FM          |         224.88 |           -1.6 |                      123.0 |
+| 113   | W7WRG           | W7WRG      | Baw Faw Peak      | FM          |        224.080 |           -1.6 |                      123.0 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
@@ -211,6 +215,9 @@ Northshore
 Olympia
 : [Olympia Amateur Radio Society](http://olyham.blogspot.com/)
 
+PNW220
+: [Pacific Northwest 220Mhz Repeater Network](http://pnw220.net/)
+
 PSEnergy
 : [Puget Sound Energy Amateur Radio Group](http://pseares.com/)
 
@@ -252,6 +259,9 @@ Stanwood Camano
 
 Tacoma
 : [Radio Club of Tacoma](http://www.w7dk.org)
+
+W7WRG
+: [Western Washington Radio Group](http://pnw220.net/)
 
 WA7TBP
 : [Tom WA7TBP's repeater system](https://www.qrz.com/db/wa7tbp)

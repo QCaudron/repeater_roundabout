@@ -108,3 +108,7 @@ RR#,Callsign,Location,Mode,Output (MHz),Offset (MHz),Tone (Hz),Group
 107,WA7ROY,Roy,FM,444.175,+5.0,123.0,Roy Area Communications Network
 108,W7MIR,Mercer Isl.,FM,147.160,+0.6,146.2,Mercer Island Radio Operators
 109,W7MIR,Mercer Isl.,FM,440.150,+5.0,103.5,Mercer Island Radio Operators
+110,N7RIG,Lyman Hill,FM,224.780,-1.6,123.0,Pacific Northwest 220Mhz Repeater Network
+111,WA7FUS,Lake Forest Park,FM,224.220,-1.6,123.0,Pacific Northwest 220Mhz Repeater Network
+112,W7WRG,Grass Mtn.,FM,224.88,-1.6,123.0,Western Washington Radio Group
+113,W7WRG,Baw Faw Peak,FM,224.080,-1.6,123.0,Western Washington Radio Group
