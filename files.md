@@ -59,13 +59,11 @@ Run the [CPS
 software](https://support.bridgecomsystems.com/anytone-878-v2-model-cps-firmware-downloads):
 
 1. Select the `Tools > Import` menu and select each of the files you've downloaded in the
-   appropriate category (Channel, Scan List, and/or Talk Groups).
+appropriate category (Channel, Scan List, and/or Talk Groups).
 2. Add all the channels to a Zone:
    <br>Click on the Zone in the side-panel
    <br>Double click the No. 1 Zone row - you should see this Zone dialog:
-
    <img style="width: 50%; display: block; margin: 1em auto;" src="assets/images/zone-dialog.png">
-
    Select all the channels by selecting the first channel and then SHIFT-selecting the last channel.
    <br>Press the `>>` button to copy all the channels to the zone.
    <br>You can also enter "Roundabout" as the Zone Name (optional).
