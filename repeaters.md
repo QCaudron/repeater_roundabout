@@ -5,7 +5,7 @@ subtitle: Repeaters joining in the Repeater Roundabout fun.
 
 <div id="spectra"></div>
 
-<p style="margin: 5px 2rem; font-size: 12px; text-align:center; font-style: italic;">
+<p style="margin: 5px 2rem; font-size: 0.9rem; text-align:center; font-style: italic;">
 The band plans above show repeater output frequencies in <span style="color: blue;">BLUE</span> and
 their input frequencies in <span style="color: red;">RED</span>.  Hover your mouse over the band to
 display the repeater information for each displayed frequency.
@@ -17,8 +17,8 @@ interfere** with the repeater's normal operation, including regular nets.
 Get started by [programming your radio](/files), and check out the repeaters' locations on the
 [repeater map](/map).
 
-[AllStar and Echolink Information](https://docs.google.com/spreadsheets/d/15P5zgdEZhchNI1Vu2DLTpo1CVxMiYSrBG7GhCbF3lbw/edit?usp=sharing)
-is available for some repeaters (thanks to Jeff, [AB6MB](https://www.qrz.com/db/AB6MB)).
+[AllStar and Echolink information](https://docs.google.com/spreadsheets/d/15P5zgdEZhchNI1Vu2DLTpo1CVxMiYSrBG7GhCbF3lbw/edit?usp=sharing)
+is available for some repeaters, thanks to [Jeff AB6MB](https://www.qrz.com/db/AB6MB).
 
 | RR#   | Group           | Callsign   | Location          | Mode        |   Output (MHz) |   Offset (MHz) |                  Tone (Hz) |
 |:------|:----------------|:-----------|:------------------|:------------|---------------:|---------------:|---------------------------:|
@@ -135,8 +135,6 @@ is available for some repeaters (thanks to Jeff, [AB6MB](https://www.qrz.com/db/
 | 111   | PNW220          | WA7FUS     | Lake Forest Park  | FM          |        224.220 |           -1.6 |                      123.0 |
 | 112   | W7WRG           | W7WRG      | Grass Mtn.        | FM          |        224.880 |           -1.6 |                      123.0 |
 | 113   | W7WRG           | W7WRG      | Baw Faw Peak      | FM          |        224.080 |           -1.6 |                      123.0 |
-
-If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.
 
 ---
 
