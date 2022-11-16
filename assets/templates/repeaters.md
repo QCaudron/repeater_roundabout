@@ -5,6 +5,10 @@ subtitle: Repeaters joining in the Repeater Roundabout fun.
 
 <div id="spectra"></div>
 
+*The band plans above show repeater output frequencies in <span style="color: blue">BLUE</span> and
+their input frequencies in <span style="color: red">RED</span>.  Hover your mouse over the band to
+display the repeater information for each displayed frequency.*
+
 The following repeaters are participating in the Repeater Roundabout. Please ensure you **do not interfere** with the repeater's normal operation, including regular nets.
 
 Get started by [programming your radio](/files), and check out the repeaters' locations on the [repeater map](/map).
