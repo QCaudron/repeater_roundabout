@@ -5,7 +5,7 @@ subtitle: Get to know the local repeaters this November.
 
 Watch the recording from our [info and Q&A session here](https://drive.google.com/file/d/1bRL7d3Y-zLzoZUB_6MOqZDBjNtBnw_II/view?usp=share_link). 
 
-We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !
+**We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !**
 
 ---
 
@@ -15,7 +15,7 @@ The Puget Sound Repeater Roundabout is a weekend-long event held on many of our 
 
 Anyone with a ham radio license can participate! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Tuesday November 15 at 22:09.
+> This page was last updated on Tuesday November 15 at 22:28.
 
 
 # Repeaters
@@ -31,14 +31,14 @@ You should exchange
 
 - your name
 - a mention of the "Puget Sound Repeater Roundabout"
-- a _received_ signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit)). This must be how well _your signal_ sounds on the repeater, not how well you hear the repeater!
+- a signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit))
 
 Feel free to chat about anything and everything, though! The goal is to have a conversation.
 
 
 # Scoring
 
-You score one point for each repeater you make a contact on. Multiple contacts on the same repeater do not provide more points. The person you contact does not necessarily have to be participating in the Repeater Roundabout -- any contact counts.
+You score one point for each repeater you make a contact on. Multiple contacts on the same repeater do not provide more points, but you might be helping others get some points, so do answer their calls if you hear them ! The person you contact does not necessarily have to be participating in the Repeater Roundabout for you to score a point -- any contact counts.
 
 **Bonus : Collect 'em all !** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score doubles for that system. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log a contact on all three of them, you score six points instead of three.
 
