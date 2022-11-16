@@ -10,9 +10,10 @@ navbar-links:
   Rules: "/"
   Repeaters: "/repeaters"
   Map: "/map"
-  Programming Files: "/files"
+  Radio Files: "/files"
   Log Sheet: "https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing"
   Submit Logs: "/submit_logs"
+  Chat: "https://discord.gg/Hss7YNRj"
 
 avatar: "/assets/images/logo.png"
 

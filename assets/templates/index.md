@@ -3,7 +3,9 @@ title: Puget Sound Repeater Roundabout
 subtitle: Get to know the local repeaters this November.
 ---
 
-**BREAKING** : We will hold an information and Q&A session on **Tuesday, November 15th, at 7pm.** [Join us here](https://us06web.zoom.us/j/85351557045?pwd=akJQVmlEYTNTbjJJRmlzTHhpZzVaQT09).
+Watch the recording from our [info and Q&A session here](https://drive.google.com/file/d/1bRL7d3Y-zLzoZUB_6MOqZDBjNtBnw_II/view?usp=share_link). 
+
+We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !
 
 ---
 
