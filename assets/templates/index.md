@@ -3,7 +3,7 @@ title: Puget Sound Repeater Roundabout
 subtitle: Get to know the local repeaters this November.
 ---
 
-Watch the recording from our [info and Q&A session here](https://drive.google.com/file/d/1bRL7d3Y-zLzoZUB_6MOqZDBjNtBnw_II/view?usp=share_link). 
+Watch the recording from our [info and Q&A session here](https://youtu.be/XSwAS7nX8os). 
 
 **We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !**
 
