@@ -122,7 +122,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 109   | MIRO            | W7MIR      | Mercer Isl.       | FM          |        440.150 |           +5.0 |                      103.5 |
 | 110   | PNW220          | N7RIG      | Lyman Hill        | FM          |        224.780 |           -1.6 |                      123.0 |
 | 111   | PNW220          | WA7FUS     | Lake Forest Park  | FM          |        224.220 |           -1.6 |                      123.0 |
-| 112   | W7WRG           | W7WRG      | Grass Mtn.        | FM          |         224.88 |           -1.6 |                      123.0 |
+| 112   | W7WRG           | W7WRG      | Grass Mtn.        | FM          |        224.880 |           -1.6 |                      123.0 |
 | 113   | W7WRG           | W7WRG      | Baw Faw Peak      | FM          |        224.080 |           -1.6 |                      123.0 |
 
 If you have a repeater you'd like to have added to the list, please contact [Quentin K7DRQ](mailto:k7drq@psrg.org) with the repeater's information.

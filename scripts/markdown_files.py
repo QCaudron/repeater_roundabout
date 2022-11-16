@@ -108,7 +108,7 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
     clusters = defaultdict(list)
     for idx, allocation in enumerate(allocations):
         clusters[allocation].append(
-            df.iloc[idx][["Callsign", "Output (MHz)", "Coordinates"]].to_dict()
+            df.iloc[idx][["Callsign", "Output (MHz)", "Coordinates", "RR#"]].to_dict()
         )
 
     # For each cluster, create a pin on the map as LeafletJS plaintext
@@ -117,7 +117,8 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
 
         msg = ""
         for repeater in cluster:
-            msg += f"{repeater['Callsign']} {repeater['Output (MHz)']}<br>"
+            msg += f"RR# {repeater['RR#']} - {repeater['Callsign']} "
+            msg += f"({repeater['Output (MHz)']})<br>"
 
         if len(msg):
             coords = np.mean([repeater["Coordinates"] for repeater in cluster], axis=0)
