@@ -5,10 +5,10 @@ subtitle: Repeaters joining in the Repeater Roundabout fun.
 
 <div id="spectra"></div>
 
-<p style="font-size: 12px text-align:center;">
-*The band plans above show repeater output frequencies in <span style="color: blue">BLUE</span> and
-their input frequencies in <span style="color: red">RED</span>.  Hover your mouse over the band to
-display the repeater information for each displayed frequency.*
+<p style="margin: 5px 2rem; font-size: 12px; text-align:center; font-style: italic;">
+The band plans above show repeater output frequencies in <span style="color: blue;">BLUE</span> and
+their input frequencies in <span style="color: red;">RED</span>.  Hover your mouse over the band to
+display the repeater information for each displayed frequency.
 </p>
 
 The following repeaters are participating in the Repeater Roundabout. Please ensure you **do not
