@@ -192,7 +192,7 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
         combined with a new repeater taken from user input.
     """
 
-    if args.regen:
+    if args.regen or args.score:
         df = pd.read_json("assets/repeaters.json", dtype=False)
         df["RR#"] = df.index + 1
         return df
