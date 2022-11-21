@@ -60,10 +60,10 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
         index = f.read()
 
     # Fill in the number of repeaters and the updated date
+    index = index.replace("{{ index_content }}", index_content)
     index = index.replace("{{ date_updated }}", now)
     index = index.replace("{{ n_repeaters }}", str(len(df)))
     index = index.replace("{{ n_groups }}", str(df["Group Name"].nunique()))
-    index = index.replace("{{ index_content }}", index_content)
 
     with open("index.md", "w") as f:
         f.write(index)

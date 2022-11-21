@@ -17,7 +17,6 @@ Please ensure that there is no ongoing activity on a repeater (such as a net) be
 
 You should exchange
 
-- your name
 - a mention of the "Puget Sound Repeater Roundabout"
 - a signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit))
 
@@ -70,4 +69,4 @@ Will each repeater have a club member monitoring ?
 : No -- these contacts are as organic as possible. Get on a repeater, ask to chat to someone, and see what happens. If you're lucky, you'll find someone who's also participating in the Repeater Roundabout, and you can share your progress. If they aren't, you can still chat about anything and everything, and the contact still counts.
 
 Can I send logs in ADIF format ?
-: No, sorry. The [spreadsheet](https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing) is the only way to log your contacts.
+: No, sorry. The [spreadsheet](https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing) is the only way to log your contacts. See the [logging page](/logging) for more information.
