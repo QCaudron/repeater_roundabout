@@ -32,7 +32,7 @@ def signal_report_to_readability(report: str) -> Optional[int]:
             ^
             CM  # starts with "CM"
             ([1-5])  # followed by a number from 1 to 5 -- this is what we return
-            \+?  # optionally followed by a plus sign ( CM5+)
+            \+?  # optionally followed by a plus sign ( CM5+ )
             (?:.\d)?  # optionally followed by a decimal and a number ( CM4.5 )
             $
         """,
@@ -45,7 +45,8 @@ def signal_report_to_readability(report: str) -> Optional[int]:
         r"""
             ^
             ([1-5])  # a number from 1 to 5 -- this is what we return
-            [x-]?  # optionally followed by an x or a dash ( 5x9, 4-9 )
+            [-x/]?  # optionally followed by an x, a dash, or a slash ( 5x9, 4-9, 3/5 )
+            (?:\ by\ )?  # optionally followed by " by " ( 5 by 9 )
             [1-9]  # followed by a number from 1 to 9, which we throw away
             \+?  # optionally followed by a plus sign ( 59+ )
             $
@@ -93,14 +94,14 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
 
     for file in logs_files:
 
-        callsign = file.stem
+        callsign = file.stem.split(" ")[0].split(",")[0]
         logs = pd.read_csv(file, index_col=[0])
         n_entries = len(logs)
 
         # Clean up the log sheet
-        logs = logs.drop_duplicates(subset=["RR#"], keep="first")
         logs = logs.astype({"Signal Report": str, "RR#": int})
-        all_logs.append(logs.copy())
+        all_logs.append(logs.copy())  # save pre-deduped logs for activation counts
+        logs = logs.drop_duplicates(subset=["RR#"], keep="first")
         n_duplicates = n_entries - len(logs)
         base_score = len(logs)
 
@@ -129,9 +130,9 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
         }
 
     # Save the contest scores
-    contest_scores_df = pd.DataFrame(contest_scores).T.sort_values("Total Score", ascending=False)
-    print(contest_scores_df)
-    contest_scores_df.to_csv("contest_scores.csv")
+    leaderboard = pd.DataFrame(contest_scores).T.sort_values("Total Score", ascending=False)
+    print(leaderboard)
+    leaderboard.to_csv("contest_scores.csv")
 
     # Merge all logs with repeater data
     repeater_cols = ["RR#", "Long Name", "Output (MHz)", "Location"]
@@ -146,21 +147,36 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
     # Attempt to clean up signal reports
     logs_df["Readability"] = logs_df["Signal Report"].apply(signal_report_to_readability)
 
-    # Calculate the number of activations per repeater and per club
+    # Calculate the number of activations per repeater
     agg_cols = {
         "Name": "first",
-        "Location": "first",
         "Frequency": "first",
         "Time": "count",
         "Readability": "mean",
     }
-    repeater_activations = (
+    by_repeater = (
         logs_df.groupby("RR#")
         .agg(agg_cols)
-        .sort_values(["Name", "Frequency"])
-        .rename(columns={"Time": "Activations"})
+        .rename(columns={"Time": "Activations", "Name": "Group"})
+        .sort_values(["Activations", "Group", "Frequency"], ascending=False)
+        .reset_index(drop=True)
+        .round({"Readability": 2})
     )
-    club_activations = repeater_activations.groupby("Name")["Activations"].sum()
+    by_repeater.index = by_repeater.index + 1
+    by_repeater.index.name = "Position"
+    by_repeater["Frequency"] = by_repeater["Frequency"].round(3)
+
+    # Calculate the number of activations per club
+    by_club = (
+        by_repeater.groupby("Group")["Activations"]
+        .sum()
+        .to_frame()
+        .sort_values(["Activations", "Group"], ascending=[False, True])
+        .reset_index(drop=False)  # index contains the club name
+    )
+    by_club.index = by_club.index + 1
+    by_club.index.name = "Position"
 
     # TODO
     # Return dfs for scoring, repeater activations, and club activations
+    return leaderboard, by_repeater.to_markdown(disable_numparse=True), by_club.to_markdown()

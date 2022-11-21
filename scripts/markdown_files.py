@@ -8,7 +8,7 @@ from scipy.spatial.distance import pdist
 
 from score import score_competition
 
-index_content = """
+ongoing_index_content = """
 # Joining the Repeater Roundabout
 
 To get started, check out the [Rules](./rules) page. 
@@ -24,19 +24,28 @@ Join our [Discord chat server](https://discord.gg/Hss7YNRj) to chat with other p
 
 
 results_index_content = """
+The contest is over ! Many thanks to those who participated; we hope you had fun. Check back next year for the next Repeater Roundabout !
+
+Please don't hesitate to send us your thoughts and feedback, either by email at [k7drq@psrg.org](mailto:k7drq@psrg.org) or on our [Discord server](https://discord.gg/Hss7YNRj).
+
 # Leaderboard
 
-Many congratulations to our winner, {{ winning_station }} ! The leaderboard is now closed.
+Many congratulations to our winner, [{{ winning_station }}](http://qrz.com/db/{{ winning_station }}) !
 
 {{ leaderboard }}
 
 # Club Standings
 
+These are the total number of activations on the repeaters belonging to each club, including duplicate contacts on the same repeater.
+
 {{ club_standings }}
 
 # Repeater Standings
 
+This table shows how many contacts were made on each repeater, including duplicates. The Readability score is the average signal report across all reports for that repeater -- it's the number of the CM report, or the R in an RS(T) report.
+
 {{ repeater_standings }}
+
 """
 
 
@@ -54,7 +63,12 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
     """
 
     if score_results:
-        leaderboard, by_club, by_repeater = score_competition(df)
+        leaderboard, by_repeater, by_club = score_competition(df)
+        index_content = results_index_content  # write the results data to the index
+    else:
+        leaderboard = pd.DataFrame([0])
+        by_club, by_repeater = "", ""
+        index_content = ongoing_index_content  # write the ongoing contest text to the index
 
     now = datetime.now().strftime("%A %B %d at %H:%M")
 
@@ -66,6 +80,10 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
     index = index.replace("{{ date_updated }}", now)
     index = index.replace("{{ n_repeaters }}", str(len(df)))
     index = index.replace("{{ n_groups }}", str(df["Group Name"].nunique()))
+    index = index.replace("{{ leaderboard }}", leaderboard.to_markdown())
+    index = index.replace("{{ club_standings }}", by_club)
+    index = index.replace("{{ repeater_standings }}", by_repeater)
+    index = index.replace("{{ winning_station }}", str(leaderboard.index[0]))
 
     with open("index.md", "w") as f:
         f.write(index)
