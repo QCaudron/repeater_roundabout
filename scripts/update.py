@@ -6,7 +6,12 @@ from typing import Union
 import pandas as pd
 import requests
 
-from markdown_files import write_index_md, write_map_md, write_repeaters_md
+from markdown_files import (
+    write_index_md,
+    write_map_md,
+    write_repeaters_md,
+    write_rules_md,
+)
 from programming_files import (
     write_chirp_csv,
     write_d878_zip,
@@ -54,6 +59,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
             "long_name": long_name,
             "url": url,
             "regen": False,
+            "score": False,
         }
 
         return SimpleNamespace(**args)
@@ -73,6 +79,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     parser.add_argument("--long_name", type=str, default=None)
     parser.add_argument("--url", type=str, default=None)
     parser.add_argument("--regen", action="store_true")
+    parser.add_argument("--score", action="store_true")
     return parser.parse_args()
 
 
@@ -225,8 +232,9 @@ if __name__ == "__main__":
 
     df = generate_repeater_df(args)
 
-    write_index_md(df)
+    write_index_md(df, args.score)
     write_repeaters_md(df)
+    write_rules_md(df)
     write_map_md(df)
 
     df = remove_df_footnotes(df)

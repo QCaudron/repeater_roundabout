@@ -1,17 +1,11 @@
 import re
 from pathlib import Path
-from types import SimpleNamespace
-from typing import Optional
+from typing import Optional, Tuple
 
 import pandas as pd
 
-from update import generate_repeater_df
-
 logs_dir = Path("logs")
 logs_files = logs_dir.glob("*.csv")
-
-
-args = SimpleNamespace(regen=True)
 
 
 def signal_report_to_readability(report: str) -> Optional[int]:
@@ -35,7 +29,7 @@ def signal_report_to_readability(report: str) -> Optional[int]:
     # Will match CM4, CM5+, CM3.5, CM4.5+
     is_cm = re.fullmatch(
         r"""
-            ^  
+            ^
             CM  # starts with "CM"
             ([1-5])  # followed by a number from 1 to 5 -- this is what we return
             \+?  # optionally followed by a plus sign ( CM5+)
@@ -67,13 +61,25 @@ def signal_report_to_readability(report: str) -> Optional[int]:
     return None  # if no match, return None
 
 
-if __name__ == "__main__":
+def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """
+    Score the competition and return the results.
+
+    Parameters
+    ----------
+    repeaters : pd.DataFrame
+        All the repeaters.
+
+    Returns
+    -------
+    Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]
+        _description_
+    """
 
     if not logs_dir.exists():
         raise FileNotFoundError(f"{logs_dir} does not exist.")
 
     # Load the repeater data
-    repeaters = generate_repeater_df(args)
     repeaters.index = repeaters["RR#"]
 
     # A mapping between RR# and club name
@@ -155,3 +161,6 @@ if __name__ == "__main__":
         .rename(columns={"Time": "Activations"})
     )
     club_activations = repeater_activations.groupby("Name")["Activations"].sum()
+
+    # TODO
+    # Return dfs for scoring, repeater activations, and club activations

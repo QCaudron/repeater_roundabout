@@ -1,1697 +1,1697 @@
 [
     {
-        "Group Name":"PSRG",
-        "Callsign":"WW7PSR",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"146.960",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "PSRG",
+        "Callsign": "WW7PSR",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "146.960",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.62400055,
             -122.31500244
         ],
-        "Long Name":"Puget Sound Repeater Group",
-        "Website":"http:\/\/www.psrg.org\/"
+        "Long Name": "Puget Sound Repeater Group",
+        "Website": "http:\/\/www.psrg.org\/"
     },
     {
-        "Group Name":"PSRG",
-        "Callsign":"WW7PSR",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"52.870",
-        "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "PSRG",
+        "Callsign": "WW7PSR",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "52.870",
+        "Offset (MHz)": "-1.7",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.62400055,
             -122.31500244
         ],
-        "Long Name":"Puget Sound Repeater Group",
-        "Website":"http:\/\/www.psrg.org\/"
+        "Long Name": "Puget Sound Repeater Group",
+        "Website": "http:\/\/www.psrg.org\/"
     },
     {
-        "Group Name":"PSRG",
-        "Callsign":"WW7PSR",
-        "Location":"Seattle",
-        "Mode":"DMR[^dmr]",
-        "Output (MHz)":"440.775",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"CC2\/TS1 Seattle1 TG\/803153",
-        "Coordinates":[
+        "Group Name": "PSRG",
+        "Callsign": "WW7PSR",
+        "Location": "Seattle",
+        "Mode": "DMR[^dmr]",
+        "Output (MHz)": "440.775",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "CC2\/TS1 Seattle1 TG\/803153",
+        "Coordinates": [
             47.62400055,
             -122.31500244
         ],
-        "Long Name":"Puget Sound Repeater Group",
-        "Website":"http:\/\/www.psrg.org\/"
+        "Long Name": "Puget Sound Repeater Group",
+        "Website": "http:\/\/www.psrg.org\/"
     },
     {
-        "Group Name":"Shoreline",
-        "Callsign":"W7AUX",
-        "Location":"Shoreline",
-        "Mode":"FM",
-        "Output (MHz)":"442.825",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Shoreline",
+        "Callsign": "W7AUX",
+        "Location": "Shoreline",
+        "Mode": "FM",
+        "Output (MHz)": "442.825",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.76224899,
             -122.3494988
         ],
-        "Long Name":"Shoreline Auxiliary Communications Service",
-        "Website":"https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/"
+        "Long Name": "Shoreline Auxiliary Communications Service",
+        "Website": "https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/"
     },
     {
-        "Group Name":"Shoreline",
-        "Callsign":"W7AUX",
-        "Location":"Shoreline",
-        "Mode":"FM",
-        "Output (MHz)":"440.300",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Shoreline",
+        "Callsign": "W7AUX",
+        "Location": "Shoreline",
+        "Mode": "FM",
+        "Output (MHz)": "440.300",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.76224899,
             -122.3494988
         ],
-        "Long Name":"Shoreline Auxiliary Communications Service",
-        "Website":"https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/"
+        "Long Name": "Shoreline Auxiliary Communications Service",
+        "Website": "https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/"
     },
     {
-        "Group Name":"Shoreline",
-        "Callsign":"W7AUX",
-        "Location":"Shoreline",
-        "Mode":"FM",
-        "Output (MHz)":"224.020",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Shoreline",
+        "Callsign": "W7AUX",
+        "Location": "Shoreline",
+        "Mode": "FM",
+        "Output (MHz)": "224.020",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.76224899,
             -122.3494988
         ],
-        "Long Name":"Shoreline Auxiliary Communications Service",
-        "Website":"https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/"
+        "Long Name": "Shoreline Auxiliary Communications Service",
+        "Website": "https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/"
     },
     {
-        "Group Name":"Highline",
-        "Callsign":"NC7G",
-        "Location":"SeaTac",
-        "Mode":"FM",
-        "Output (MHz)":"146.660",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Highline",
+        "Callsign": "NC7G",
+        "Location": "SeaTac",
+        "Mode": "FM",
+        "Output (MHz)": "146.660",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.45080185,
             -122.28700256
         ],
-        "Long Name":"Highline Amateur Radio Club",
-        "Website":"https:\/\/highlinearc.org"
+        "Long Name": "Highline Amateur Radio Club",
+        "Website": "https:\/\/highlinearc.org"
     },
     {
-        "Group Name":"Highline",
-        "Callsign":"WA7ST",
-        "Location":"SeaTac",
-        "Mode":"FM",
-        "Output (MHz)":"443.100",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Highline",
+        "Callsign": "WA7ST",
+        "Location": "SeaTac",
+        "Mode": "FM",
+        "Output (MHz)": "443.100",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.45080185,
             -122.28700256
         ],
-        "Long Name":"Highline Amateur Radio Club",
-        "Website":"https:\/\/highlinearc.org"
+        "Long Name": "Highline Amateur Radio Club",
+        "Website": "https:\/\/highlinearc.org"
     },
     {
-        "Group Name":"Marrowstone",
-        "Callsign":"AA7MI",
-        "Location":"Marrowstone Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"440.725",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"114.8",
-        "Coordinates":[
+        "Group Name": "Marrowstone",
+        "Callsign": "AA7MI",
+        "Location": "Marrowstone Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "440.725",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "114.8",
+        "Coordinates": [
             48.05830002,
             -122.68800354
         ],
-        "Long Name":"Marrowstone Island Amateur Radio Club",
-        "Website":"https:\/\/www.qrz.com\/db\/AA7MI"
+        "Long Name": "Marrowstone Island Amateur Radio Club",
+        "Website": "https:\/\/www.qrz.com\/db\/AA7MI"
     },
     {
-        "Group Name":"BEARONS",
-        "Callsign":"W7FLY",
-        "Location":"Lynnwood",
-        "Mode":"FM",
-        "Output (MHz)":"443.925",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
+        "Group Name": "BEARONS",
+        "Callsign": "W7FLY",
+        "Location": "Lynnwood",
+        "Mode": "FM",
+        "Output (MHz)": "443.925",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "100.0",
+        "Coordinates": [
             47.85660934,
             -122.28367615
         ],
-        "Long Name":"Boeing Employees Amateur Radio Operators North Society",
-        "Website":"https:\/\/w7flybearons.org"
+        "Long Name": "Boeing Employees Amateur Radio Operators North Society",
+        "Website": "https:\/\/w7flybearons.org"
     },
     {
-        "Group Name":"WWDXC",
-        "Callsign":"W7DX",
-        "Location":"Redmond",
-        "Mode":"FM",
-        "Output (MHz)":"147.000",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "WWDXC",
+        "Callsign": "W7DX",
+        "Location": "Redmond",
+        "Mode": "FM",
+        "Output (MHz)": "147.000",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.67481,
             -122.053436
         ],
-        "Long Name":"Western Washington DX Club",
-        "Website":"https:\/\/www.wwdxc.org"
+        "Long Name": "Western Washington DX Club",
+        "Website": "https:\/\/www.wwdxc.org"
     },
     {
-        "Group Name":"Bainbridge",
-        "Callsign":"W7NPC",
-        "Location":"Bainbridge Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"53.430",
-        "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
+        "Group Name": "Bainbridge",
+        "Callsign": "W7NPC",
+        "Location": "Bainbridge Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "53.430",
+        "Offset (MHz)": "-1.7",
+        "Tone (Hz)": "100.0",
+        "Coordinates": [
             47.65579987,
             -122.54799652
         ],
-        "Long Name":"Bainbridge Island Amateur Radio Club",
-        "Website":"https:\/\/www.w7npc.org"
+        "Long Name": "Bainbridge Island Amateur Radio Club",
+        "Website": "https:\/\/www.w7npc.org"
     },
     {
-        "Group Name":"Bainbridge",
-        "Callsign":"W7NPC",
-        "Location":"Bainbridge Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"444.475",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Bainbridge",
+        "Callsign": "W7NPC",
+        "Location": "Bainbridge Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "444.475",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.65579987,
             -122.54799652
         ],
-        "Long Name":"Bainbridge Island Amateur Radio Club",
-        "Website":"https:\/\/www.w7npc.org"
+        "Long Name": "Bainbridge Island Amateur Radio Club",
+        "Website": "https:\/\/www.w7npc.org"
     },
     {
-        "Group Name":"Bainbridge",
-        "Callsign":"W7NPC",
-        "Location":"Bainbridge Isl.",
-        "Mode":"DSTAR",
-        "Output (MHz)":"444.5625",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"",
-        "Coordinates":[
+        "Group Name": "Bainbridge",
+        "Callsign": "W7NPC",
+        "Location": "Bainbridge Isl.",
+        "Mode": "DSTAR",
+        "Output (MHz)": "444.5625",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "",
+        "Coordinates": [
             47.65579987,
             -122.54799652
         ],
-        "Long Name":"Bainbridge Island Amateur Radio Club",
-        "Website":"https:\/\/www.w7npc.org"
+        "Long Name": "Bainbridge Island Amateur Radio Club",
+        "Website": "https:\/\/www.w7npc.org"
     },
     {
-        "Group Name":"Bainbridge",
-        "Callsign":"W7NPC",
-        "Location":"Bainbridge Isl.",
-        "Mode":"DSTAR",
-        "Output (MHz)":"1290.500",
-        "Offset (MHz)":"-20.0",
-        "Tone (Hz)":"",
-        "Coordinates":[
+        "Group Name": "Bainbridge",
+        "Callsign": "W7NPC",
+        "Location": "Bainbridge Isl.",
+        "Mode": "DSTAR",
+        "Output (MHz)": "1290.500",
+        "Offset (MHz)": "-20.0",
+        "Tone (Hz)": "",
+        "Coordinates": [
             47.65579987,
             -122.54799652
         ],
-        "Long Name":"Bainbridge Island Amateur Radio Club",
-        "Website":"https:\/\/www.w7npc.org"
+        "Long Name": "Bainbridge Island Amateur Radio Club",
+        "Website": "https:\/\/www.w7npc.org"
     },
     {
-        "Group Name":"K7DK",
-        "Callsign":"K7DK",
-        "Location":"Buck Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"440.950",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"110.9",
-        "Coordinates":[
+        "Group Name": "K7DK",
+        "Callsign": "K7DK",
+        "Location": "Buck Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "440.950",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "110.9",
+        "Coordinates": [
             47.77249908,
             -122.93000031
         ],
-        "Long Name":"Mark K7DK's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/K7DK"
+        "Long Name": "Mark K7DK's repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/K7DK"
     },
     {
-        "Group Name":"Lake Wash.",
-        "Callsign":"K7LWH",
-        "Location":"Kirkland",
-        "Mode":"FM",
-        "Output (MHz)":"145.490",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Lake Wash.",
+        "Callsign": "K7LWH",
+        "Location": "Kirkland",
+        "Mode": "FM",
+        "Output (MHz)": "145.490",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.68849945,
             -122.15599823
         ],
-        "Long Name":"Lake Washington Ham Club",
-        "Website":"http:\/\/www.lakewashingtonhamclub.org"
+        "Long Name": "Lake Washington Ham Club",
+        "Website": "http:\/\/www.lakewashingtonhamclub.org"
     },
     {
-        "Group Name":"K7PP",
-        "Callsign":"K7PP",
-        "Location":"Gold Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"441.200",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "K7PP",
+        "Callsign": "K7PP",
+        "Location": "Gold Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "441.200",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             47.54869843,
             -122.78600311
         ],
-        "Long Name":"Peter K7PP's repeater network",
-        "Website":"http:\/\/www.k7pp.itgo.com"
+        "Long Name": "Peter K7PP's repeater network",
+        "Website": "http:\/\/www.k7pp.itgo.com"
     },
     {
-        "Group Name":"N9VW",
-        "Callsign":"N9VW",
-        "Location":"Issaquah",
-        "Mode":"FM",
-        "Output (MHz)":"53.830",
-        "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "N9VW",
+        "Callsign": "N9VW",
+        "Location": "Issaquah",
+        "Mode": "FM",
+        "Output (MHz)": "53.830",
+        "Offset (MHz)": "-1.7",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             47.53010178,
             -122.03299713
         ],
-        "Long Name":"Steve N9VW's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/N9VW"
+        "Long Name": "Steve N9VW's repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/N9VW"
     },
     {
-        "Group Name":"WW7SEA",
-        "Callsign":"WW7SEA",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"444.700",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "WW7SEA",
+        "Callsign": "WW7SEA",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "444.700",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.63249969,
             -122.35600281
         ],
-        "Long Name":"Barry K7PAL's Western Washington repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA"
+        "Long Name": "Barry K7PAL's Western Washington repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/WW7SEA"
     },
     {
-        "Group Name":"WW7SEA",
-        "Callsign":"WW7SEA",
-        "Location":"Seattle",
-        "Mode":"Fusion",
-        "Output (MHz)":"444.425",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "WW7SEA",
+        "Callsign": "WW7SEA",
+        "Location": "Seattle",
+        "Mode": "Fusion",
+        "Output (MHz)": "444.425",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.63180161,
             -122.35399628
         ],
-        "Long Name":"Barry K7PAL's Western Washington repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA"
+        "Long Name": "Barry K7PAL's Western Washington repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/WW7SEA"
     },
     {
-        "Group Name":"BEARS",
-        "Callsign":"K7NWS",
-        "Location":"Tiger Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"145.330",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"179.9",
-        "Coordinates":[
+        "Group Name": "BEARS",
+        "Callsign": "K7NWS",
+        "Location": "Tiger Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "145.330",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "179.9",
+        "Coordinates": [
             47.50389862,
             -121.97599792
         ],
-        "Long Name":"Boeing Employees Amateur Radio Society",
-        "Website":"https:\/\/sites.google.com\/site\/k7nwsbears"
+        "Long Name": "Boeing Employees Amateur Radio Society",
+        "Website": "https:\/\/sites.google.com\/site\/k7nwsbears"
     },
     {
-        "Group Name":"BEARS",
-        "Callsign":"K7NWS",
-        "Location":"Tiger Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"224.340",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"110.9",
-        "Coordinates":[
+        "Group Name": "BEARS",
+        "Callsign": "K7NWS",
+        "Location": "Tiger Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "224.340",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "110.9",
+        "Coordinates": [
             47.50389862,
             -121.97599792
         ],
-        "Long Name":"Boeing Employees Amateur Radio Society",
-        "Website":"https:\/\/sites.google.com\/site\/k7nwsbears"
+        "Long Name": "Boeing Employees Amateur Radio Society",
+        "Website": "https:\/\/sites.google.com\/site\/k7nwsbears"
     },
     {
-        "Group Name":"BEARS",
-        "Callsign":"K7NWS",
-        "Location":"Tiger Mtn.",
-        "Mode":"DMR[^dmr]",
-        "Output (MHz)":"442.075",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"CC2\/TS1 BEARS1 TG\/312488",
-        "Coordinates":[
+        "Group Name": "BEARS",
+        "Callsign": "K7NWS",
+        "Location": "Tiger Mtn.",
+        "Mode": "DMR[^dmr]",
+        "Output (MHz)": "442.075",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "CC2\/TS1 BEARS1 TG\/312488",
+        "Coordinates": [
             47.50389862,
             -121.97599792
         ],
-        "Long Name":"Boeing Employees Amateur Radio Society",
-        "Website":"https:\/\/sites.google.com\/site\/k7nwsbears"
+        "Long Name": "Boeing Employees Amateur Radio Society",
+        "Website": "https:\/\/sites.google.com\/site\/k7nwsbears"
     },
     {
-        "Group Name":"Mike & Key",
-        "Callsign":"K7LED",
-        "Location":"Tiger Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"146.820",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Mike & Key",
+        "Callsign": "K7LED",
+        "Location": "Tiger Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "146.820",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.48820114,
             -121.9469986
         ],
-        "Long Name":"Mike and Key Amateur Radio Club",
-        "Website":"https:\/\/mikeandkey.org"
+        "Long Name": "Mike and Key Amateur Radio Club",
+        "Website": "https:\/\/mikeandkey.org"
     },
     {
-        "Group Name":"Mike & Key",
-        "Callsign":"K7LED",
-        "Location":"Tiger Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"224.120",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Mike & Key",
+        "Callsign": "K7LED",
+        "Location": "Tiger Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "224.120",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.48820114,
             -121.9469986
         ],
-        "Long Name":"Mike and Key Amateur Radio Club",
-        "Website":"https:\/\/mikeandkey.org"
+        "Long Name": "Mike and Key Amateur Radio Club",
+        "Website": "https:\/\/mikeandkey.org"
     },
     {
-        "Group Name":"Eatonville",
-        "Callsign":"W7EAT",
-        "Location":"Eatonville",
-        "Mode":"FM",
-        "Output (MHz)":"146.700",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Eatonville",
+        "Callsign": "W7EAT",
+        "Location": "Eatonville",
+        "Mode": "FM",
+        "Output (MHz)": "146.700",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             46.843101,
             -122.314956
         ],
-        "Long Name":"Eatonville Amateur Radio Club",
-        "Website":"https:\/\/www.qrz.com\/db\/W7EAT"
+        "Long Name": "Eatonville Amateur Radio Club",
+        "Website": "https:\/\/www.qrz.com\/db\/W7EAT"
     },
     {
-        "Group Name":"Eatonville",
-        "Callsign":"W7EAT",
-        "Location":"Graham",
-        "Mode":"FM",
-        "Output (MHz)":"224.180",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Eatonville",
+        "Callsign": "W7EAT",
+        "Location": "Graham",
+        "Mode": "FM",
+        "Output (MHz)": "224.180",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.053156,
             -122.294825
         ],
-        "Long Name":"Eatonville Amateur Radio Club",
-        "Website":"https:\/\/www.qrz.com\/db\/W7EAT"
+        "Long Name": "Eatonville Amateur Radio Club",
+        "Website": "https:\/\/www.qrz.com\/db\/W7EAT"
     },
     {
-        "Group Name":"Eatonville",
-        "Callsign":"W7EAT",
-        "Location":"Eatonville",
-        "Mode":"FM",
-        "Output (MHz)":"442.725",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Eatonville",
+        "Callsign": "W7EAT",
+        "Location": "Eatonville",
+        "Mode": "FM",
+        "Output (MHz)": "442.725",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             46.843101,
             -122.314956
         ],
-        "Long Name":"Eatonville Amateur Radio Club",
-        "Website":"https:\/\/www.qrz.com\/db\/W7EAT"
+        "Long Name": "Eatonville Amateur Radio Club",
+        "Website": "https:\/\/www.qrz.com\/db\/W7EAT"
     },
     {
-        "Group Name":"Tacoma",
-        "Callsign":"W7DK",
-        "Location":"Tacoma",
-        "Mode":"FM",
-        "Output (MHz)":"147.280",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Tacoma",
+        "Callsign": "W7DK",
+        "Location": "Tacoma",
+        "Mode": "FM",
+        "Output (MHz)": "147.280",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.25289917,
             -122.44400024
         ],
-        "Long Name":"Radio Club of Tacoma",
-        "Website":"http:\/\/www.w7dk.org"
+        "Long Name": "Radio Club of Tacoma",
+        "Website": "http:\/\/www.w7dk.org"
     },
     {
-        "Group Name":"Tacoma",
-        "Callsign":"W7DK",
-        "Location":"Tacoma",
-        "Mode":"FM",
-        "Output (MHz)":"440.625",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Tacoma",
+        "Callsign": "W7DK",
+        "Location": "Tacoma",
+        "Mode": "FM",
+        "Output (MHz)": "440.625",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.25289917,
             -122.44400024
         ],
-        "Long Name":"Radio Club of Tacoma",
-        "Website":"http:\/\/www.w7dk.org"
+        "Long Name": "Radio Club of Tacoma",
+        "Website": "http:\/\/www.w7dk.org"
     },
     {
-        "Group Name":"Tacoma",
-        "Callsign":"W7DK",
-        "Location":"Tacoma",
-        "Mode":"FM",
-        "Output (MHz)":"145.210",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "Tacoma",
+        "Callsign": "W7DK",
+        "Location": "Tacoma",
+        "Mode": "FM",
+        "Output (MHz)": "145.210",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.27870178,
             -122.51200104
         ],
-        "Long Name":"Radio Club of Tacoma",
-        "Website":"http:\/\/www.w7dk.org"
+        "Long Name": "Radio Club of Tacoma",
+        "Website": "http:\/\/www.w7dk.org"
     },
     {
-        "Group Name":"Tacoma",
-        "Callsign":"W7DK",
-        "Location":"Crawford Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"147.380",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Tacoma",
+        "Callsign": "W7DK",
+        "Location": "Crawford Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "147.380",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             46.8431015,
             -122.76300049
         ],
-        "Long Name":"Radio Club of Tacoma",
-        "Website":"http:\/\/www.w7dk.org"
+        "Long Name": "Radio Club of Tacoma",
+        "Website": "http:\/\/www.w7dk.org"
     },
     {
-        "Group Name":"Pierce",
-        "Callsign":"W7AAO",
-        "Location":"Grass Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"145.370",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"136.5",
-        "Coordinates":[
+        "Group Name": "Pierce",
+        "Callsign": "W7AAO",
+        "Location": "Grass Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "145.370",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "136.5",
+        "Coordinates": [
             47.19979858,
             -121.7559967
         ],
-        "Long Name":"Pierce County ARES",
-        "Website":"http:\/\/www.piercecountyares.net"
+        "Long Name": "Pierce County ARES",
+        "Website": "http:\/\/www.piercecountyares.net"
     },
     {
-        "Group Name":"SeaTac",
-        "Callsign":"WW7STR",
-        "Location":"Tiger Mtn.",
-        "Mode":"NBFM[^nbfm]",
-        "Output (MHz)":"146.875",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "SeaTac",
+        "Callsign": "WW7STR",
+        "Location": "Tiger Mtn.",
+        "Mode": "NBFM[^nbfm]",
+        "Output (MHz)": "146.875",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.488486,
             -121.946564
         ],
-        "Long Name":"SeaTac Repeater Association",
-        "Website":"https:\/\/seatacra.com"
+        "Long Name": "SeaTac Repeater Association",
+        "Website": "https:\/\/seatacra.com"
     },
     {
-        "Group Name":"SeaTac",
-        "Callsign":"WW7STR",
-        "Location":"Tiger Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"443.050",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "SeaTac",
+        "Callsign": "WW7STR",
+        "Location": "Tiger Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "443.050",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.488486,
             -121.946564
         ],
-        "Long Name":"SeaTac Repeater Association",
-        "Website":"https:\/\/seatacra.com"
+        "Long Name": "SeaTac Repeater Association",
+        "Website": "https:\/\/seatacra.com"
     },
     {
-        "Group Name":"SeaTac",
-        "Callsign":"WW7STR",
-        "Location":"Cougar Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"224.440",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "SeaTac",
+        "Callsign": "WW7STR",
+        "Location": "Cougar Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "224.440",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.540297,
             -122.099856
         ],
-        "Long Name":"SeaTac Repeater Association",
-        "Website":"https:\/\/seatacra.com"
+        "Long Name": "SeaTac Repeater Association",
+        "Website": "https:\/\/seatacra.com"
     },
     {
-        "Group Name":"SeaTac",
-        "Callsign":"WW7STR",
-        "Location":"Cougar Mtn.",
-        "Mode":"NBFM[^nbfm]",
-        "Output (MHz)":"927.2125",
-        "Offset (MHz)":"-25.0",
-        "Tone (Hz)":"114.8",
-        "Coordinates":[
+        "Group Name": "SeaTac",
+        "Callsign": "WW7STR",
+        "Location": "Cougar Mtn.",
+        "Mode": "NBFM[^nbfm]",
+        "Output (MHz)": "927.2125",
+        "Offset (MHz)": "-25.0",
+        "Tone (Hz)": "114.8",
+        "Coordinates": [
             47.540297,
             -122.099856
         ],
-        "Long Name":"SeaTac Repeater Association",
-        "Website":"https:\/\/seatacra.com"
+        "Long Name": "SeaTac Repeater Association",
+        "Website": "https:\/\/seatacra.com"
     },
     {
-        "Group Name":"Seattle ACS",
-        "Callsign":"W7ACS",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"442.300",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "442.300",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.6031132,
             -122.3187965
         ],
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/"
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
     },
     {
-        "Group Name":"Seattle ACS",
-        "Callsign":"W7ACS",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"444.550",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "444.550",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.60430145,
             -122.33000183
         ],
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/"
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
     },
     {
-        "Group Name":"Seattle ACS",
-        "Callsign":"W7ACS",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"442.875",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "442.875",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.62360001,
             -122.31500244
         ],
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/"
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
     },
     {
-        "Group Name":"Seattle ACS",
-        "Callsign":"W7ACS",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"443.475",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "443.475",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.6510101,
             -122.3893988
         ],
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/"
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
     },
     {
-        "Group Name":"Seattle ACS",
-        "Callsign":"W7ACS",
-        "Location":"North Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"443.650",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "North Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "443.650",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.690119,
             -122.3177855
         ],
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/"
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
     },
     {
-        "Group Name":"Seattle ACS",
-        "Callsign":"W7ACS",
-        "Location":"Lake Forest Park",
-        "Mode":"FM",
-        "Output (MHz)":"440.600",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "Lake Forest Park",
+        "Mode": "FM",
+        "Output (MHz)": "440.600",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.77193,
             -122.28101
         ],
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/"
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
     },
     {
-        "Group Name":"Seattle ACS",
-        "Callsign":"W7ACS",
-        "Location":"White Center",
-        "Mode":"FM",
-        "Output (MHz)":"443.200",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "Seattle ACS",
+        "Callsign": "W7ACS",
+        "Location": "White Center",
+        "Mode": "FM",
+        "Output (MHz)": "443.200",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.52099991,
             -122.34300232
         ],
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/"
+        "Long Name": "Seattle Auxiliary Communications Service",
+        "Website": "https:\/\/www.seattleacs.org\/"
     },
     {
-        "Group Name":"Jefferson",
-        "Callsign":"W7JCR",
-        "Location":"Port Townsend",
-        "Mode":"FM",
-        "Output (MHz)":"145.150",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"114.8",
-        "Coordinates":[
+        "Group Name": "Jefferson",
+        "Callsign": "W7JCR",
+        "Location": "Port Townsend",
+        "Mode": "FM",
+        "Output (MHz)": "145.150",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "114.8",
+        "Coordinates": [
             48.11700058,
             -122.76000214
         ],
-        "Long Name":"Jefferson County Amateur Radio Club",
-        "Website":"https:\/\/w7jcr.wordpress.com\/"
+        "Long Name": "Jefferson County Amateur Radio Club",
+        "Website": "https:\/\/w7jcr.wordpress.com\/"
     },
     {
-        "Group Name":"Newcastle",
-        "Callsign":"W7RNK",
-        "Location":"Cougar Mtn.",
-        "Mode":"DSTAR",
-        "Output (MHz)":"147.995",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"",
-        "Coordinates":[
+        "Group Name": "Newcastle",
+        "Callsign": "W7RNK",
+        "Location": "Cougar Mtn.",
+        "Mode": "DSTAR",
+        "Output (MHz)": "147.995",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "",
+        "Coordinates": [
             47.540297,
             -122.099856
         ],
-        "Long Name":"Newcastle DSTAR Club",
-        "Website":"http:\/\/newcastle-dstar.com\/"
+        "Long Name": "Newcastle DSTAR Club",
+        "Website": "http:\/\/newcastle-dstar.com\/"
     },
     {
-        "Group Name":"Maple Valley",
-        "Callsign":"KF7NPL",
-        "Location":"Maple Valley",
-        "Mode":"FM",
-        "Output (MHz)":"147.260",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Maple Valley",
+        "Callsign": "KF7NPL",
+        "Location": "Maple Valley",
+        "Mode": "FM",
+        "Output (MHz)": "147.260",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.38759995,
             -122.06099701
         ],
-        "Long Name":"Maple Valley Emergency Repeater Association",
-        "Website":"https:\/\/www.qrz.com\/db\/kf7npl"
+        "Long Name": "Maple Valley Emergency Repeater Association",
+        "Website": "https:\/\/www.qrz.com\/db\/kf7npl"
     },
     {
-        "Group Name":"Maple Valley",
-        "Callsign":"KF7NPL",
-        "Location":"Maple Valley",
-        "Mode":"DSTAR",
-        "Output (MHz)":"442.675",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"",
-        "Coordinates":[
+        "Group Name": "Maple Valley",
+        "Callsign": "KF7NPL",
+        "Location": "Maple Valley",
+        "Mode": "DSTAR",
+        "Output (MHz)": "442.675",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "",
+        "Coordinates": [
             47.36610031,
             -122.04499817
         ],
-        "Long Name":"Maple Valley Emergency Repeater Association",
-        "Website":"https:\/\/www.qrz.com\/db\/kf7npl"
+        "Long Name": "Maple Valley Emergency Repeater Association",
+        "Website": "https:\/\/www.qrz.com\/db\/kf7npl"
     },
     {
-        "Group Name":"Capitol Peak",
-        "Callsign":"K7CPR",
-        "Location":"Capitol Peak",
-        "Mode":"FM",
-        "Output (MHz)":"145.470",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
+        "Group Name": "Capitol Peak",
+        "Callsign": "K7CPR",
+        "Location": "Capitol Peak",
+        "Mode": "FM",
+        "Output (MHz)": "145.470",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "100.0",
+        "Coordinates": [
             46.97309875,
             -123.13500214
         ],
-        "Long Name":"Capitol Peak Repeater Group",
-        "Website":"http:\/\/47repeater.com\/"
+        "Long Name": "Capitol Peak Repeater Group",
+        "Website": "http:\/\/47repeater.com\/"
     },
     {
-        "Group Name":"Chehalis",
-        "Callsign":"K7PG",
-        "Location":"Baw Faw Peak",
-        "Mode":"FM",
-        "Output (MHz)":"147.060",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"110.9",
-        "Coordinates":[
+        "Group Name": "Chehalis",
+        "Callsign": "K7PG",
+        "Location": "Baw Faw Peak",
+        "Mode": "FM",
+        "Output (MHz)": "147.060",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "110.9",
+        "Coordinates": [
             46.48809814,
             -123.21499634
         ],
-        "Long Name":"Chehalis Valley Amateur Radio Society",
-        "Website":"https:\/\/cvars.org\/"
+        "Long Name": "Chehalis Valley Amateur Radio Society",
+        "Website": "https:\/\/cvars.org\/"
     },
     {
-        "Group Name":"Kingston",
-        "Callsign":"NW7DR",
-        "Location":"Kingston",
-        "Mode":"DSTAR",
-        "Output (MHz)":"147.4625",
-        "Offset (MHz)":"-1.0",
-        "Tone (Hz)":"",
-        "Coordinates":[
+        "Group Name": "Kingston",
+        "Callsign": "NW7DR",
+        "Location": "Kingston",
+        "Mode": "DSTAR",
+        "Output (MHz)": "147.4625",
+        "Offset (MHz)": "-1.0",
+        "Tone (Hz)": "",
+        "Coordinates": [
             47.80893,
             -122.49283
         ],
-        "Long Name":"Greater Kingston Radio Club",
-        "Website":"https:\/\/gkrc.groups.io"
+        "Long Name": "Greater Kingston Radio Club",
+        "Website": "https:\/\/gkrc.groups.io"
     },
     {
-        "Group Name":"Kingston",
-        "Callsign":"NW7DR",
-        "Location":"Kingston",
-        "Mode":"FM",
-        "Output (MHz)":"444.725",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "Kingston",
+        "Callsign": "NW7DR",
+        "Location": "Kingston",
+        "Mode": "FM",
+        "Output (MHz)": "444.725",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             47.843976,
             -122.542753
         ],
-        "Long Name":"Greater Kingston Radio Club",
-        "Website":"https:\/\/gkrc.groups.io"
+        "Long Name": "Greater Kingston Radio Club",
+        "Website": "https:\/\/gkrc.groups.io"
     },
     {
-        "Group Name":"PSEnergy",
-        "Callsign":"W7PSE",
-        "Location":"Sumner",
-        "Mode":"FM",
-        "Output (MHz)":"443.625",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "PSEnergy",
+        "Callsign": "W7PSE",
+        "Location": "Sumner",
+        "Mode": "FM",
+        "Output (MHz)": "443.625",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.20320129,
             -122.23999786
         ],
-        "Long Name":"Puget Sound Energy Amateur Radio Group",
-        "Website":"http:\/\/pseares.com\/"
+        "Long Name": "Puget Sound Energy Amateur Radio Group",
+        "Website": "http:\/\/pseares.com\/"
     },
     {
-        "Group Name":"PSEnergy",
-        "Callsign":"W7PSE",
-        "Location":"Olympia",
-        "Mode":"FM",
-        "Output (MHz)":"145.150",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "PSEnergy",
+        "Callsign": "W7PSE",
+        "Location": "Olympia",
+        "Mode": "FM",
+        "Output (MHz)": "145.150",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.03789902,
             -122.90100098
         ],
-        "Long Name":"Puget Sound Energy Amateur Radio Group",
-        "Website":"http:\/\/pseares.com\/"
+        "Long Name": "Puget Sound Energy Amateur Radio Group",
+        "Website": "http:\/\/pseares.com\/"
     },
     {
-        "Group Name":"PSEnergy",
-        "Callsign":"W7PSE",
-        "Location":"Stampede",
-        "Mode":"FM",
-        "Output (MHz)":"442.725",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "PSEnergy",
+        "Callsign": "W7PSE",
+        "Location": "Stampede",
+        "Mode": "FM",
+        "Output (MHz)": "442.725",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.279242,
             -121.348744
         ],
-        "Long Name":"Puget Sound Energy Amateur Radio Group",
-        "Website":"http:\/\/pseares.com\/"
+        "Long Name": "Puget Sound Energy Amateur Radio Group",
+        "Website": "http:\/\/pseares.com\/"
     },
     {
-        "Group Name":"N7OEP",
-        "Callsign":"N7OEP",
-        "Location":"Baldi Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"53.330",
-        "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
+        "Group Name": "N7OEP",
+        "Callsign": "N7OEP",
+        "Location": "Baldi Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "53.330",
+        "Offset (MHz)": "-1.7",
+        "Tone (Hz)": "100.0",
+        "Coordinates": [
             47.22119904,
             -121.85099792
         ],
-        "Long Name":"Tom N7OEP's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/n7oep"
+        "Long Name": "Tom N7OEP's repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/n7oep"
     },
     {
-        "Group Name":"N7OEP",
-        "Callsign":"N7OEP",
-        "Location":"Baldi Mtn.",
-        "Mode":"Fusion",
-        "Output (MHz)":"440.075",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "N7OEP",
+        "Callsign": "N7OEP",
+        "Location": "Baldi Mtn.",
+        "Mode": "Fusion",
+        "Output (MHz)": "440.075",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.22119904,
             -121.85099792
         ],
-        "Long Name":"Tom N7OEP's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/n7oep"
+        "Long Name": "Tom N7OEP's repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/n7oep"
     },
     {
-        "Group Name":"West Seattle",
-        "Callsign":"W7AW",
-        "Location":"West Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"145.130",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "West Seattle",
+        "Callsign": "W7AW",
+        "Location": "West Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "145.130",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.540412,
             -122.378271
         ],
-        "Long Name":"West Seattle Amateur Radio Club",
-        "Website":"https:\/\/w7aw.org\/"
+        "Long Name": "West Seattle Amateur Radio Club",
+        "Website": "https:\/\/w7aw.org\/"
     },
     {
-        "Group Name":"West Seattle",
-        "Callsign":"W7AW",
-        "Location":"West Seattle",
-        "Mode":"FM",
-        "Output (MHz)":"441.800",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "West Seattle",
+        "Callsign": "W7AW",
+        "Location": "West Seattle",
+        "Mode": "FM",
+        "Output (MHz)": "441.800",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.54040146,
             -122.37799835
         ],
-        "Long Name":"West Seattle Amateur Radio Club",
-        "Website":"https:\/\/w7aw.org\/"
+        "Long Name": "West Seattle Amateur Radio Club",
+        "Website": "https:\/\/w7aw.org\/"
     },
     {
-        "Group Name":"West Seattle",
-        "Callsign":"W7AW",
-        "Location":"West Seattle",
-        "Mode":"DMR",
-        "Output (MHz)":"440.975",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"CC2\/TS1 Local1 TG\/3181",
-        "Coordinates":[
+        "Group Name": "West Seattle",
+        "Callsign": "W7AW",
+        "Location": "West Seattle",
+        "Mode": "DMR",
+        "Output (MHz)": "440.975",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "CC2\/TS1 Local1 TG\/3181",
+        "Coordinates": [
             47.52099991,
             -122.34300232
         ],
-        "Long Name":"West Seattle Amateur Radio Club",
-        "Website":"https:\/\/w7aw.org\/"
+        "Long Name": "West Seattle Amateur Radio Club",
+        "Website": "https:\/\/w7aw.org\/"
     },
     {
-        "Group Name":"Stanwood Camano",
-        "Callsign":"W7PIG",
-        "Location":"Camano Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"223.880",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Stanwood Camano",
+        "Callsign": "W7PIG",
+        "Location": "Camano Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "223.880",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             48.19150162,
             -122.51499939
         ],
-        "Long Name":"Stanwood Camano Amateur Radio Club",
-        "Website":"https:\/\/www.scarcwa.org\/"
+        "Long Name": "Stanwood Camano Amateur Radio Club",
+        "Website": "https:\/\/www.scarcwa.org\/"
     },
     {
-        "Group Name":"Stanwood Camano",
-        "Callsign":"W7PIG",
-        "Location":"Camano Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"147.360",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"127.3",
-        "Coordinates":[
+        "Group Name": "Stanwood Camano",
+        "Callsign": "W7PIG",
+        "Location": "Camano Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "147.360",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "127.3",
+        "Coordinates": [
             48.22499847,
             -122.5
         ],
-        "Long Name":"Stanwood Camano Amateur Radio Club",
-        "Website":"https:\/\/scarcwa.org\/"
+        "Long Name": "Stanwood Camano Amateur Radio Club",
+        "Website": "https:\/\/scarcwa.org\/"
     },
     {
-        "Group Name":"Snohomish",
-        "Callsign":"WA7LAW",
-        "Location":"Everett",
-        "Mode":"FM",
-        "Output (MHz)":"147.180",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Snohomish",
+        "Callsign": "WA7LAW",
+        "Location": "Everett",
+        "Mode": "FM",
+        "Output (MHz)": "147.180",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.9978981,
             -122.19499969
         ],
-        "Long Name":"Snohomish County Hams Club",
-        "Website":"http:\/\/www.wa7law.org\/"
+        "Long Name": "Snohomish County Hams Club",
+        "Website": "http:\/\/www.wa7law.org\/"
     },
     {
-        "Group Name":"Snohomish",
-        "Callsign":"WA7LAW",
-        "Location":"Everett",
-        "Mode":"Fusion",
-        "Output (MHz)":"444.575",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Snohomish",
+        "Callsign": "WA7LAW",
+        "Location": "Everett",
+        "Mode": "Fusion",
+        "Output (MHz)": "444.575",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.9980011,
             -122.19400024
         ],
-        "Long Name":"Snohomish County Hams Club",
-        "Website":"http:\/\/www.wa7law.org\/"
+        "Long Name": "Snohomish County Hams Club",
+        "Website": "http:\/\/www.wa7law.org\/"
     },
     {
-        "Group Name":"Mount Baker",
-        "Callsign":"K7SKW",
-        "Location":"Orcas Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"146.740",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Mount Baker",
+        "Callsign": "K7SKW",
+        "Location": "Orcas Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "146.740",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             48.67779922,
             -122.83200073
         ],
-        "Long Name":"Mount Baker Amateur Radio Club",
-        "Website":"https:\/\/mbarc.groups.io\/"
+        "Long Name": "Mount Baker Amateur Radio Club",
+        "Website": "https:\/\/mbarc.groups.io\/"
     },
     {
-        "Group Name":"Mount Baker",
-        "Callsign":"K7SKW",
-        "Location":"Orcas Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"444.050",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Mount Baker",
+        "Callsign": "K7SKW",
+        "Location": "Orcas Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "444.050",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             48.67760086,
             -122.83100128
         ],
-        "Long Name":"Mount Baker Amateur Radio Club",
-        "Website":"https:\/\/mbarc.groups.io\/"
+        "Long Name": "Mount Baker Amateur Radio Club",
+        "Website": "https:\/\/mbarc.groups.io\/"
     },
     {
-        "Group Name":"Mount Baker",
-        "Callsign":"K7SKW",
-        "Location":"Bellingham",
-        "Mode":"FM",
-        "Output (MHz)":"443.750",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Mount Baker",
+        "Callsign": "K7SKW",
+        "Location": "Bellingham",
+        "Mode": "FM",
+        "Output (MHz)": "443.750",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             48.78210068,
             -122.37000275
         ],
-        "Long Name":"Mount Baker Amateur Radio Club",
-        "Website":"https:\/\/mbarc.groups.io\/"
+        "Long Name": "Mount Baker Amateur Radio Club",
+        "Website": "https:\/\/mbarc.groups.io\/"
     },
     {
-        "Group Name":"Mount Baker",
-        "Callsign":"K7SKW",
-        "Location":"Bellingham",
-        "Mode":"FM",
-        "Output (MHz)":"147.160",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Mount Baker",
+        "Callsign": "K7SKW",
+        "Location": "Bellingham",
+        "Mode": "FM",
+        "Output (MHz)": "147.160",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             48.80189896,
             -122.46099854
         ],
-        "Long Name":"Mount Baker Amateur Radio Club",
-        "Website":"https:\/\/mbarc.groups.io\/"
+        "Long Name": "Mount Baker Amateur Radio Club",
+        "Website": "https:\/\/mbarc.groups.io\/"
     },
     {
-        "Group Name":"Mount Baker",
-        "Callsign":"K7SKW",
-        "Location":"Bellingham",
-        "Mode":"Fusion",
-        "Output (MHz)":"443.650",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Mount Baker",
+        "Callsign": "K7SKW",
+        "Location": "Bellingham",
+        "Mode": "Fusion",
+        "Output (MHz)": "443.650",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             48.80170059,
             -122.46199799
         ],
-        "Long Name":"Mount Baker Amateur Radio Club",
-        "Website":"https:\/\/mbarc.groups.io\/"
+        "Long Name": "Mount Baker Amateur Radio Club",
+        "Website": "https:\/\/mbarc.groups.io\/"
     },
     {
-        "Group Name":"Skagit County",
-        "Callsign":"N7GDE",
-        "Location":"Lyman Hill",
-        "Mode":"FM",
-        "Output (MHz)":"145.190",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"127.3",
-        "Coordinates":[
+        "Group Name": "Skagit County",
+        "Callsign": "N7GDE",
+        "Location": "Lyman Hill",
+        "Mode": "FM",
+        "Output (MHz)": "145.190",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "127.3",
+        "Coordinates": [
             48.58330154,
             -122.14499664
         ],
-        "Long Name":"Radio Amateurs of Skagit County",
-        "Website":"http:\/\/www.rasconline.com\/"
+        "Long Name": "Radio Amateurs of Skagit County",
+        "Website": "http:\/\/www.rasconline.com\/"
     },
     {
-        "Group Name":"Snohomish ACS",
-        "Callsign":"WA7DEM",
-        "Location":"Lynnwood",
-        "Mode":"FM",
-        "Output (MHz)":"146.780",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"D172[^dcs]",
-        "Coordinates":[
+        "Group Name": "Snohomish ACS",
+        "Callsign": "WA7DEM",
+        "Location": "Lynnwood",
+        "Mode": "FM",
+        "Output (MHz)": "146.780",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "D172[^dcs]",
+        "Coordinates": [
             47.82089996,
             -122.31500244
         ],
-        "Long Name":"Snohomish County Auxiliary Communications Service",
-        "Website":"https:\/\/www.wa7dem.info\/"
+        "Long Name": "Snohomish County Auxiliary Communications Service",
+        "Website": "https:\/\/www.wa7dem.info\/"
     },
     {
-        "Group Name":"Snohomish ACS",
-        "Callsign":"WA7DEM",
-        "Location":"Marysville",
-        "Mode":"FM",
-        "Output (MHz)":"224.380",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Snohomish ACS",
+        "Callsign": "WA7DEM",
+        "Location": "Marysville",
+        "Mode": "FM",
+        "Output (MHz)": "224.380",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             48.05179977,
             -122.17700195
         ],
-        "Long Name":"Snohomish County Auxiliary Communications Service",
-        "Website":"https:\/\/www.wa7dem.info\/"
+        "Long Name": "Snohomish County Auxiliary Communications Service",
+        "Website": "https:\/\/www.wa7dem.info\/"
     },
     {
-        "Group Name":"Snohomish ACS",
-        "Callsign":"WA7DEM",
-        "Location":"Clearview",
-        "Mode":"FM",
-        "Output (MHz)":"442.975",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"D172[^dcs]",
-        "Coordinates":[
+        "Group Name": "Snohomish ACS",
+        "Callsign": "WA7DEM",
+        "Location": "Clearview",
+        "Mode": "FM",
+        "Output (MHz)": "442.975",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "D172[^dcs]",
+        "Coordinates": [
             47.91289902,
             -122.09799957
         ],
-        "Long Name":"Snohomish County Auxiliary Communications Service",
-        "Website":"https:\/\/www.wa7dem.info\/"
+        "Long Name": "Snohomish County Auxiliary Communications Service",
+        "Website": "https:\/\/www.wa7dem.info\/"
     },
     {
-        "Group Name":"Snohomish ACS",
-        "Callsign":"WA7DEM",
-        "Location":"Mountlake Terrace",
-        "Mode":"FM",
-        "Output (MHz)":"443.725",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Snohomish ACS",
+        "Callsign": "WA7DEM",
+        "Location": "Mountlake Terrace",
+        "Mode": "FM",
+        "Output (MHz)": "443.725",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.78820038,
             -122.30899811
         ],
-        "Long Name":"Snohomish County Auxiliary Communications Service",
-        "Website":"https:\/\/www.wa7dem.info\/"
+        "Long Name": "Snohomish County Auxiliary Communications Service",
+        "Website": "https:\/\/www.wa7dem.info\/"
     },
     {
-        "Group Name":"Snohomish ACS",
-        "Callsign":"WA7DEM",
-        "Location":"Granite Falls",
-        "Mode":"FM",
-        "Output (MHz)":"146.92",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "Snohomish ACS",
+        "Callsign": "WA7DEM",
+        "Location": "Granite Falls",
+        "Mode": "FM",
+        "Output (MHz)": "146.92",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             48.13695,
             -121.9814
         ],
-        "Long Name":"Snohomish County Auxiliary Communications Service",
-        "Website":"https:\/\/www.wa7dem.info\/"
+        "Long Name": "Snohomish County Auxiliary Communications Service",
+        "Website": "https:\/\/www.wa7dem.info\/"
     },
     {
-        "Group Name":"Snohomish ACS",
-        "Callsign":"WA7DEM",
-        "Location":"Clinton",
-        "Mode":"FM",
-        "Output (MHz)":"440.375",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Snohomish ACS",
+        "Callsign": "WA7DEM",
+        "Location": "Clinton",
+        "Mode": "FM",
+        "Output (MHz)": "440.375",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.9585,
             -122.375
         ],
-        "Long Name":"Snohomish County Auxiliary Communications Service",
-        "Website":"https:\/\/www.wa7dem.info\/"
+        "Long Name": "Snohomish County Auxiliary Communications Service",
+        "Website": "https:\/\/www.wa7dem.info\/"
     },
     {
-        "Group Name":"Snohomish ACS",
-        "Callsign":"WA7DEM",
-        "Location":"Edmonds",
-        "Mode":"NBFM[^nbfm]",
-        "Output (MHz)":"444.025",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"156.7",
-        "Coordinates":[
+        "Group Name": "Snohomish ACS",
+        "Callsign": "WA7DEM",
+        "Location": "Edmonds",
+        "Mode": "NBFM[^nbfm]",
+        "Output (MHz)": "444.025",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "156.7",
+        "Coordinates": [
             47.8035,
             -122.3346
         ],
-        "Long Name":"Snohomish County Auxiliary Communications Service",
-        "Website":"https:\/\/www.wa7dem.info\/"
+        "Long Name": "Snohomish County Auxiliary Communications Service",
+        "Website": "https:\/\/www.wa7dem.info\/"
     },
     {
-        "Group Name":"Snohomish ACS",
-        "Callsign":"WA7DEM",
-        "Location":"Darrington",
-        "Mode":"FM",
-        "Output (MHz)":"444.300",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Snohomish ACS",
+        "Callsign": "WA7DEM",
+        "Location": "Darrington",
+        "Mode": "FM",
+        "Output (MHz)": "444.300",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             48.24944,
             -121.56949
         ],
-        "Long Name":"Snohomish County Auxiliary Communications Service",
-        "Website":"https:\/\/www.wa7dem.info\/"
+        "Long Name": "Snohomish County Auxiliary Communications Service",
+        "Website": "https:\/\/www.wa7dem.info\/"
     },
     {
-        "Group Name":"Northshore",
-        "Callsign":"NE7MC",
-        "Location":"Kenmore",
-        "Mode":"FM",
-        "Output (MHz)":"442.000",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
+        "Group Name": "Northshore",
+        "Callsign": "NE7MC",
+        "Location": "Kenmore",
+        "Mode": "FM",
+        "Output (MHz)": "442.000",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "Coordinates": [
             47.737677,
             -122.23079
         ],
-        "Long Name":"Northshore Emergency Management Coalition",
-        "Website":"https:\/\/www.northshoreemc.com\/"
+        "Long Name": "Northshore Emergency Management Coalition",
+        "Website": "https:\/\/www.northshoreemc.com\/"
     },
     {
-        "Group Name":"San Juan",
-        "Callsign":"N7JN",
-        "Location":"San Juan Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"146.700",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"131.8",
-        "Coordinates":[
+        "Group Name": "San Juan",
+        "Callsign": "N7JN",
+        "Location": "San Juan Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "146.700",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "131.8",
+        "Coordinates": [
             48.5603981,
             -123.12000275
         ],
-        "Long Name":"San Juan County Amateur Radio Society",
-        "Website":"https:\/\/sjcars.wordpress.com\/"
+        "Long Name": "San Juan County Amateur Radio Society",
+        "Website": "https:\/\/sjcars.wordpress.com\/"
     },
     {
-        "Group Name":"San Juan",
-        "Callsign":"N7JN",
-        "Location":"Orcas Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"224.480",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "San Juan",
+        "Callsign": "N7JN",
+        "Location": "Orcas Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "224.480",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             48.67779922,
             -122.83200073
         ],
-        "Long Name":"San Juan County Amateur Radio Society",
-        "Website":"https:\/\/sjcars.wordpress.com\/"
+        "Long Name": "San Juan County Amateur Radio Society",
+        "Website": "https:\/\/sjcars.wordpress.com\/"
     },
     {
-        "Group Name":"San Juan",
-        "Callsign":"N7JN",
-        "Location":"San Juan Isl.",
-        "Mode":"DSTAR",
-        "Output (MHz)":"145.250",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"",
-        "Coordinates":[
+        "Group Name": "San Juan",
+        "Callsign": "N7JN",
+        "Location": "San Juan Isl.",
+        "Mode": "DSTAR",
+        "Output (MHz)": "145.250",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "",
+        "Coordinates": [
             48.53430176,
             -123.01699829
         ],
-        "Long Name":"San Juan County Amateur Radio Society",
-        "Website":"https:\/\/sjcars.wordpress.com\/"
+        "Long Name": "San Juan County Amateur Radio Society",
+        "Website": "https:\/\/sjcars.wordpress.com\/"
     },
     {
-        "Group Name":"San Juan",
-        "Callsign":"N7JN",
-        "Location":"San Juan Isl.",
-        "Mode":"DSTAR",
-        "Output (MHz)":"442.4625",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"",
-        "Coordinates":[
+        "Group Name": "San Juan",
+        "Callsign": "N7JN",
+        "Location": "San Juan Isl.",
+        "Mode": "DSTAR",
+        "Output (MHz)": "442.4625",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "",
+        "Coordinates": [
             48.53430176,
             -123.01699829
         ],
-        "Long Name":"San Juan County Amateur Radio Society",
-        "Website":"https:\/\/sjcars.wordpress.com\/"
+        "Long Name": "San Juan County Amateur Radio Society",
+        "Website": "https:\/\/sjcars.wordpress.com\/"
     },
     {
-        "Group Name":"Federal Way",
-        "Callsign":"WA7FW",
-        "Location":"Federal Way",
-        "Mode":"FM",
-        "Output (MHz)":"147.040",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Federal Way",
+        "Callsign": "WA7FW",
+        "Location": "Federal Way",
+        "Mode": "FM",
+        "Output (MHz)": "147.040",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.32229996,
             -122.31300354
         ],
-        "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"https:\/\/www.fwarc.org\/"
+        "Long Name": "Federal Way Amateur Radio Club",
+        "Website": "https:\/\/www.fwarc.org\/"
     },
     {
-        "Group Name":"Federal Way",
-        "Callsign":"WA7FW",
-        "Location":"Federal Way",
-        "Mode":"FM",
-        "Output (MHz)":"146.760",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Federal Way",
+        "Callsign": "WA7FW",
+        "Location": "Federal Way",
+        "Mode": "FM",
+        "Output (MHz)": "146.760",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.32229996,
             -122.31300354
         ],
-        "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"https:\/\/www.fwarc.org\/"
+        "Long Name": "Federal Way Amateur Radio Club",
+        "Website": "https:\/\/www.fwarc.org\/"
     },
     {
-        "Group Name":"Federal Way",
-        "Callsign":"WA7FW",
-        "Location":"Federal Way",
-        "Mode":"FM",
-        "Output (MHz)":"442.950",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Federal Way",
+        "Callsign": "WA7FW",
+        "Location": "Federal Way",
+        "Mode": "FM",
+        "Output (MHz)": "442.950",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.32229996,
             -122.31300354
         ],
-        "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"https:\/\/www.fwarc.org\/"
+        "Long Name": "Federal Way Amateur Radio Club",
+        "Website": "https:\/\/www.fwarc.org\/"
     },
     {
-        "Group Name":"Federal Way",
-        "Callsign":"WA7FW",
-        "Location":"Federal Way",
-        "Mode":"DSTAR",
-        "Output (MHz)":"146.840",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"",
-        "Coordinates":[
+        "Group Name": "Federal Way",
+        "Callsign": "WA7FW",
+        "Location": "Federal Way",
+        "Mode": "DSTAR",
+        "Output (MHz)": "146.840",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "",
+        "Coordinates": [
             47.32249832,
             -122.31099701
         ],
-        "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"https:\/\/www.fwarc.org\/"
+        "Long Name": "Federal Way Amateur Radio Club",
+        "Website": "https:\/\/www.fwarc.org\/"
     },
     {
-        "Group Name":"Federal Way",
-        "Callsign":"WA7FW",
-        "Location":"Federal Way",
-        "Mode":"DSTAR",
-        "Output (MHz)":"443.850",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"",
-        "Coordinates":[
+        "Group Name": "Federal Way",
+        "Callsign": "WA7FW",
+        "Location": "Federal Way",
+        "Mode": "DSTAR",
+        "Output (MHz)": "443.850",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "",
+        "Coordinates": [
             47.35079956,
             -122.32299805
         ],
-        "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"https:\/\/www.fwarc.org\/"
+        "Long Name": "Federal Way Amateur Radio Club",
+        "Website": "https:\/\/www.fwarc.org\/"
     },
     {
-        "Group Name":"SnoVARC",
-        "Callsign":"KE7GFZ",
-        "Location":"Cougar Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"441.825",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "SnoVARC",
+        "Callsign": "KE7GFZ",
+        "Location": "Cougar Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "441.825",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.55590057,
             -122.11599731
         ],
-        "Long Name":"Snoqualmie Valley Amateur Radio Club",
-        "Website":"https:\/\/snovarc.org\/"
+        "Long Name": "Snoqualmie Valley Amateur Radio Club",
+        "Website": "https:\/\/snovarc.org\/"
     },
     {
-        "Group Name":"WA7TBP",
-        "Callsign":"WA7TBP",
-        "Location":"Carnation",
-        "Mode":"FM",
-        "Output (MHz)":"223.960",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "WA7TBP",
+        "Callsign": "WA7TBP",
+        "Location": "Carnation",
+        "Mode": "FM",
+        "Output (MHz)": "223.960",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             47.62993,
             -121.95008
         ],
-        "Long Name":"Tom WA7TBP's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/wa7tbp"
+        "Long Name": "Tom WA7TBP's repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/wa7tbp"
     },
     {
-        "Group Name":"WA7TBP",
-        "Callsign":"N7KGJ",
-        "Location":"Squak Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"444.525",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "WA7TBP",
+        "Callsign": "N7KGJ",
+        "Location": "Squak Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "444.525",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.50419998,
             -122.04699707
         ],
-        "Long Name":"Tom WA7TBP's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/wa7tbp"
+        "Long Name": "Tom WA7TBP's repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/wa7tbp"
     },
     {
-        "Group Name":"West Sound",
-        "Callsign":"N7IG",
-        "Location":"Port Orchard",
-        "Mode":"FM",
-        "Output (MHz)":"145.390",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"88.5",
-        "Coordinates":[
+        "Group Name": "West Sound",
+        "Callsign": "N7IG",
+        "Location": "Port Orchard",
+        "Mode": "FM",
+        "Output (MHz)": "145.390",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "88.5",
+        "Coordinates": [
             47.54040146,
             -122.63600159
         ],
-        "Long Name":"West Sound Amateur Radio Club",
-        "Website":"http:\/\/www.n7ig.org\/"
+        "Long Name": "West Sound Amateur Radio Club",
+        "Website": "http:\/\/www.n7ig.org\/"
     },
     {
-        "Group Name":"Kitsap",
-        "Callsign":"KC7Z",
-        "Location":"Silverdale",
-        "Mode":"FM",
-        "Output (MHz)":"444.075",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Kitsap",
+        "Callsign": "KC7Z",
+        "Location": "Silverdale",
+        "Mode": "FM",
+        "Output (MHz)": "444.075",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.64450073,
             -122.69499969
         ],
-        "Long Name":"Kitsap County Amateur Radio Club",
-        "Website":"https:\/\/kcarc.org\/"
+        "Long Name": "Kitsap County Amateur Radio Club",
+        "Website": "https:\/\/kcarc.org\/"
     },
     {
-        "Group Name":"Mason County",
-        "Callsign":"N7SK",
-        "Location":"Shelton",
-        "Mode":"FM",
-        "Output (MHz)":"146.720",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Mason County",
+        "Callsign": "N7SK",
+        "Location": "Shelton",
+        "Mode": "FM",
+        "Output (MHz)": "146.720",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.21509933,
             -123.10099792
         ],
-        "Long Name":"Mason County Amateur Radio Club",
-        "Website":"https:\/\/mc-arc.org\/"
+        "Long Name": "Mason County Amateur Radio Club",
+        "Website": "https:\/\/mc-arc.org\/"
     },
     {
-        "Group Name":"Mason County",
-        "Callsign":"N7SK",
-        "Location":"Shelton",
-        "Mode":"FM",
-        "Output (MHz)":"443.250",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
+        "Group Name": "Mason County",
+        "Callsign": "N7SK",
+        "Location": "Shelton",
+        "Mode": "FM",
+        "Output (MHz)": "443.250",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "100.0",
+        "Coordinates": [
             47.21509933,
             -123.10099792
         ],
-        "Long Name":"Mason County Amateur Radio Club",
-        "Website":"https:\/\/mc-arc.org\/"
+        "Long Name": "Mason County Amateur Radio Club",
+        "Website": "https:\/\/mc-arc.org\/"
     },
     {
-        "Group Name":"Mason County",
-        "Callsign":"N7SK",
-        "Location":"Shelton",
-        "Mode":"FM",
-        "Output (MHz)":"927.4125",
-        "Offset (MHz)":"-25.0",
-        "Tone (Hz)":"114.8",
-        "Coordinates":[
+        "Group Name": "Mason County",
+        "Callsign": "N7SK",
+        "Location": "Shelton",
+        "Mode": "FM",
+        "Output (MHz)": "927.4125",
+        "Offset (MHz)": "-25.0",
+        "Tone (Hz)": "114.8",
+        "Coordinates": [
             47.21509933,
             -123.10099792
         ],
-        "Long Name":"Mason County Amateur Radio Club",
-        "Website":"https:\/\/mc-arc.org\/"
+        "Long Name": "Mason County Amateur Radio Club",
+        "Website": "https:\/\/mc-arc.org\/"
     },
     {
-        "Group Name":"Olympia",
-        "Callsign":"NT7H",
-        "Location":"Olympia",
-        "Mode":"FM",
-        "Output (MHz)":"147.360",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Olympia",
+        "Callsign": "NT7H",
+        "Location": "Olympia",
+        "Mode": "FM",
+        "Output (MHz)": "147.360",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.02799988,
             -122.89700317
         ],
-        "Long Name":"Olympia Amateur Radio Society",
-        "Website":"http:\/\/olyham.blogspot.com\/"
+        "Long Name": "Olympia Amateur Radio Society",
+        "Website": "http:\/\/olyham.blogspot.com\/"
     },
     {
-        "Group Name":"Olympia",
-        "Callsign":"NT7H",
-        "Location":"Crawford Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"224.460",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Olympia",
+        "Callsign": "NT7H",
+        "Location": "Crawford Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "224.460",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             46.84280014,
             -122.76499939
         ],
-        "Long Name":"Olympia Amateur Radio Society",
-        "Website":"http:\/\/olyham.blogspot.com\/"
+        "Long Name": "Olympia Amateur Radio Society",
+        "Website": "http:\/\/olyham.blogspot.com\/"
     },
     {
-        "Group Name":"Olympia",
-        "Callsign":"NT7H",
-        "Location":"Crawford Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"441.400",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "Olympia",
+        "Callsign": "NT7H",
+        "Location": "Crawford Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "441.400",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             46.84289932,
             -122.76499939
         ],
-        "Long Name":"Olympia Amateur Radio Society",
-        "Website":"http:\/\/olyham.blogspot.com\/"
+        "Long Name": "Olympia Amateur Radio Society",
+        "Website": "http:\/\/olyham.blogspot.com\/"
     },
     {
-        "Group Name":"WWRG",
-        "Callsign":"W7SIX",
-        "Location":"Capitol Peak",
-        "Mode":"FM",
-        "Output (MHz)":"53.570",
-        "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
+        "Group Name": "WWRG",
+        "Callsign": "W7SIX",
+        "Location": "Capitol Peak",
+        "Mode": "FM",
+        "Output (MHz)": "53.570",
+        "Offset (MHz)": "-1.7",
+        "Tone (Hz)": "100.0",
+        "Coordinates": [
             46.97309875,
             -123.13500214
         ],
-        "Long Name":"Western Washington Repeater Group",
-        "Website":""
+        "Long Name": "Western Washington Repeater Group",
+        "Website": ""
     },
     {
-        "Group Name":"WWRG",
-        "Callsign":"W7SIX",
-        "Location":"Grass Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"53.870",
-        "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
+        "Group Name": "WWRG",
+        "Callsign": "W7SIX",
+        "Location": "Grass Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "53.870",
+        "Offset (MHz)": "-1.7",
+        "Tone (Hz)": "100.0",
+        "Coordinates": [
             47.20000076,
             -121.75499725
         ],
-        "Long Name":"Western Washington Repeater Group",
-        "Website":""
+        "Long Name": "Western Washington Repeater Group",
+        "Website": ""
     },
     {
-        "Group Name":"WWRG",
-        "Callsign":"W7SIX",
-        "Location":"Capitol Peak",
-        "Mode":"NBFM[^nbfm]",
-        "Output (MHz)":"927.300",
-        "Offset (MHz)":"-25.0",
-        "Tone (Hz)":"114.8",
-        "Coordinates":[
+        "Group Name": "WWRG",
+        "Callsign": "W7SIX",
+        "Location": "Capitol Peak",
+        "Mode": "NBFM[^nbfm]",
+        "Output (MHz)": "927.300",
+        "Offset (MHz)": "-25.0",
+        "Tone (Hz)": "114.8",
+        "Coordinates": [
             46.97309875,
             -123.13500214
         ],
-        "Long Name":"Western Washington Repeater Group",
-        "Website":""
+        "Long Name": "Western Washington Repeater Group",
+        "Website": ""
     },
     {
-        "Group Name":"North Mason",
-        "Callsign":"NM7E",
-        "Location":"Belfair",
-        "Mode":"FM",
-        "Output (MHz)":"145.170",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "North Mason",
+        "Callsign": "NM7E",
+        "Location": "Belfair",
+        "Mode": "FM",
+        "Output (MHz)": "145.170",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.386615,
             -122.860995
         ],
-        "Long Name":"North Mason Amateur Radio Emergency Service Club",
-        "Website":"https:\/\/nmaresc.wordpress.com\/"
+        "Long Name": "North Mason Amateur Radio Emergency Service Club",
+        "Website": "https:\/\/nmaresc.wordpress.com\/"
     },
     {
-        "Group Name":"Island County",
-        "Callsign":"W7AVM",
-        "Location":"Whidbey Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"146.860",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"127.3",
-        "Coordinates":[
+        "Group Name": "Island County",
+        "Callsign": "W7AVM",
+        "Location": "Whidbey Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "146.860",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "127.3",
+        "Coordinates": [
             48.21250153,
             -122.70500183
         ],
-        "Long Name":"Island County Amateur Radio Club",
-        "Website":"https:\/\/www.w7avm.org\/"
+        "Long Name": "Island County Amateur Radio Club",
+        "Website": "https:\/\/www.w7avm.org\/"
     },
     {
-        "Group Name":"N7KN",
-        "Callsign":"N7KN",
-        "Location":"Whidbey Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"441.425",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"110.9",
-        "Coordinates":[
+        "Group Name": "N7KN",
+        "Callsign": "N7KN",
+        "Location": "Whidbey Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "441.425",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "110.9",
+        "Coordinates": [
             48.0982722,
             -122.5731977
         ],
-        "Long Name":"Charlie N7KN's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/N7KN"
+        "Long Name": "Charlie N7KN's repeater system",
+        "Website": "https:\/\/www.qrz.com\/db\/N7KN"
     },
     {
-        "Group Name":"Roy",
-        "Callsign":"WA7ROY",
-        "Location":"Roy",
-        "Mode":"FM",
-        "Output (MHz)":"444.175",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "Roy",
+        "Callsign": "WA7ROY",
+        "Location": "Roy",
+        "Mode": "FM",
+        "Output (MHz)": "444.175",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             46.97937,
             -122.43997
         ],
-        "Long Name":"Roy Area Communications Network",
-        "Website":"https:\/\/www.qrz.com\/db\/WA7ROY"
+        "Long Name": "Roy Area Communications Network",
+        "Website": "https:\/\/www.qrz.com\/db\/WA7ROY"
     },
     {
-        "Group Name":"MIRO",
-        "Callsign":"W7MIR",
-        "Location":"Mercer Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"147.160",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"146.2",
-        "Coordinates":[
+        "Group Name": "MIRO",
+        "Callsign": "W7MIR",
+        "Location": "Mercer Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "147.160",
+        "Offset (MHz)": "+0.6",
+        "Tone (Hz)": "146.2",
+        "Coordinates": [
             47.568367,
             -122.220729
         ],
-        "Long Name":"Mercer Island Radio Operators",
-        "Website":"https:\/\/miro.cmivolunteers.org\/"
+        "Long Name": "Mercer Island Radio Operators",
+        "Website": "https:\/\/miro.cmivolunteers.org\/"
     },
     {
-        "Group Name":"MIRO",
-        "Callsign":"W7MIR",
-        "Location":"Mercer Isl.",
-        "Mode":"FM",
-        "Output (MHz)":"440.150",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
+        "Group Name": "MIRO",
+        "Callsign": "W7MIR",
+        "Location": "Mercer Isl.",
+        "Mode": "FM",
+        "Output (MHz)": "440.150",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
             47.568367,
             -122.220729
         ],
-        "Long Name":"Mercer Island Radio Operators",
-        "Website":"https:\/\/miro.cmivolunteers.org\/"
+        "Long Name": "Mercer Island Radio Operators",
+        "Website": "https:\/\/miro.cmivolunteers.org\/"
     },
     {
-        "Group Name":"PNW220",
-        "Callsign":"N7RIG",
-        "Location":"Lyman Hill",
-        "Mode":"FM",
-        "Output (MHz)":"224.780",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "PNW220",
+        "Callsign": "N7RIG",
+        "Location": "Lyman Hill",
+        "Mode": "FM",
+        "Output (MHz)": "224.780",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             48.5945015,
             -122.16000366
         ],
-        "Long Name":"Pacific Northwest 220Mhz Repeater Network",
-        "Website":"http:\/\/pnw220.net\/"
+        "Long Name": "Pacific Northwest 220Mhz Repeater Network",
+        "Website": "http:\/\/pnw220.net\/"
     },
     {
-        "Group Name":"PNW220",
-        "Callsign":"WA7FUS",
-        "Location":"Lake Forest Park",
-        "Mode":"FM",
-        "Output (MHz)":"224.220",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "PNW220",
+        "Callsign": "WA7FUS",
+        "Location": "Lake Forest Park",
+        "Mode": "FM",
+        "Output (MHz)": "224.220",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             47.75659943,
             -122.28099823
         ],
-        "Long Name":"Pacific Northwest 220Mhz Repeater Network",
-        "Website":"http:\/\/pnw220.net\/"
+        "Long Name": "Pacific Northwest 220Mhz Repeater Network",
+        "Website": "http:\/\/pnw220.net\/"
     },
     {
-        "Group Name":"W7WRG",
-        "Callsign":"W7WRG",
-        "Location":"Grass Mtn.",
-        "Mode":"FM",
-        "Output (MHz)":"224.880",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "W7WRG",
+        "Callsign": "W7WRG",
+        "Location": "Grass Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "224.880",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             47.20406,
             -121.795688
         ],
-        "Long Name":"Western Washington Radio Group",
-        "Website":"http:\/\/pnw220.net\/"
+        "Long Name": "Western Washington Radio Group",
+        "Website": "http:\/\/pnw220.net\/"
     },
     {
-        "Group Name":"W7WRG",
-        "Callsign":"W7WRG",
-        "Location":"Baw Faw Peak",
-        "Mode":"FM",
-        "Output (MHz)":"224.080",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
+        "Group Name": "W7WRG",
+        "Callsign": "W7WRG",
+        "Location": "Baw Faw Peak",
+        "Mode": "FM",
+        "Output (MHz)": "224.080",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "123.0",
+        "Coordinates": [
             46.48789978,
             -123.21399689
         ],
-        "Long Name":"Western Washington Radio Group",
-        "Website":"http:\/\/pnw220.net\/"
+        "Long Name": "Western Washington Radio Group",
+        "Website": "http:\/\/pnw220.net\/"
     }
 ]

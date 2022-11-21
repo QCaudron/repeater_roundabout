@@ -7,12 +7,12 @@ author: Quentin K7DRQ (k7drq@psrg.org)
 author_email: "k7drq@psrg.org"
 
 navbar-links:
-  Rules: "/"
+  Home: "/"
+  Rules: "/rules"
   Repeaters: "/repeaters"
   Map: "/map"
   Radio Files: "/files"
-  Log Sheet: "https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing"
-  Submit Logs: "/submit_logs"
+  Logging: "/logging"
   Chat: "https://discord.gg/Hss7YNRj"
 
 avatar: "/assets/images/logo.png"
