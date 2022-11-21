@@ -8,6 +8,30 @@ logs_dir = Path("logs")
 logs_files = logs_dir.glob("*.csv")
 
 
+def at_least_three_decimals(frequency: float) -> str:
+    """
+    Turn a frequency into a string with at least three decimal places.
+    147.96 -> "147.960"
+    444.5625 -> "444.5625"
+
+    Parameters
+    ----------
+    frequency : float
+        The frequency as a float.
+
+    Returns
+    -------
+    str
+        The frequency as a string, with at least three decimal places
+        including trailing zeros.
+    """
+
+    frequency_str = f"{frequency:.4f}"
+    if frequency_str.endswith("0"):
+        return frequency_str[:-1]
+    return frequency_str
+
+
 def signal_report_to_readability(report: str) -> Optional[int]:
     """
     A rough interpretation of signal reports into numerical values.
@@ -135,21 +159,25 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
     leaderboard.to_csv("contest_scores.csv")
 
     # Merge all logs with repeater data
-    repeater_cols = ["RR#", "Long Name", "Output (MHz)", "Location"]
+    repeater_cols = ["RR#", "Long Name", "Output (MHz)", "Location", "Website"]
     logs_df = (
         pd.concat(all_logs, ignore_index=True)
         .merge(repeaters[repeater_cols], left_on="RR#", right_index=True)
         .drop(columns=["RR#_x", "RR#_y"])
-        .rename(columns={"Long Name": "Name", "Output (MHz)": "Frequency"})
+        .rename(columns={"Long Name": "Group", "Output (MHz)": "Frequency"})
         .astype({"Frequency": float})
     )
 
     # Attempt to clean up signal reports
     logs_df["Readability"] = logs_df["Signal Report"].apply(signal_report_to_readability)
 
+    # Bring URLs into club names
+    logs_df["Group"] = logs_df.apply(lambda row: f"[{row['Group']}]({row['Website']})", axis=1)
+    logs_df = logs_df.drop(columns=["Website"])
+
     # Calculate the number of activations per repeater
     agg_cols = {
-        "Name": "first",
+        "Group": "first",
         "Frequency": "first",
         "Time": "count",
         "Readability": "mean",
@@ -157,14 +185,14 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
     by_repeater = (
         logs_df.groupby("RR#")
         .agg(agg_cols)
-        .rename(columns={"Time": "Activations", "Name": "Group"})
-        .sort_values(["Activations", "Group", "Frequency"], ascending=False)
+        .rename(columns={"Time": "Activations"})
+        .sort_values(["Activations", "Group", "Frequency"], ascending=[False, True, True])
         .reset_index(drop=True)
         .round({"Readability": 2})
     )
     by_repeater.index = by_repeater.index + 1
     by_repeater.index.name = "Position"
-    by_repeater["Frequency"] = by_repeater["Frequency"].round(3)
+    by_repeater["Frequency"] = by_repeater["Frequency"].apply(at_least_three_decimals)
 
     # Calculate the number of activations per club
     by_club = (
