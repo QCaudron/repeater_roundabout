@@ -7,9 +7,10 @@ This repo manages the website for the [Repeater Roundabout](https://repeaterroun
 
 The files in `assets/templates/` are used to generate the pages on the site.
 
-- `assets/templates/index.md` is the homepage; template elements include `{{ n_repeaters }}` and `{{ date_updated }}`.
+- `assets/templates/index.md` is the homepage; template elements include `{{ date_updated }}` and `{{ index_content }}`, which is populated by either ongoing contest information or leaderboard data, depending on arguments passed to `scripts/update.py` (specifically, the `--score` argument, which triggers a leaderboard calculation).
 - `assets/templates/repeaters.md` is the repeaters page; template elements include `{{ table }}` (a table of repeaters with frequencies and such) and `{{ associations }}` (a list naming and linking each group contributing their repeaters).
 - `assets/templates/map.md` is the map page; template elements include `{{ repeater_pins }}` (a list of pins for each repeater on the map); this template is filled with Leaflet code to generate the map.
+- `assets/templates/rules.md` contains the rules for the event; template elements include `{{ n_repeaters }}` and `{{ n_groups }}`.
 - `assets/templates/map.html` is for local development only; it generates `demo_map.html` which is not styled and is not used in production, but can be opened in a browser to see the map locally and ensure it is correctly centered and zoomed.
 
 
@@ -21,6 +22,7 @@ This script can be called directly, in which case it will prompt you for repeate
 
 - Group name (`--name`): The short name of the group that runs one or more repeaters (for example, `PSRG` or `Shoreline ACS`)
 - Location (`--loc`): The general location of the repeater (for example, `Seattle` or `Buck Mtn.`)
+- RepeaterBook ID (`--id`): The ID of the repeater on RepeaterBook (an integer you can find at the very end of the URL)
 - Callsign (`--call`): The repeater's callsign (for example, `WW7PSR`)
 - Frequency (`--freq`): The repeater's frequency (for example, `146.960`)
 - Offset (`--offset`): The repeater's offset, in MHz (for example, `+0.6`)
@@ -37,9 +39,16 @@ For example, you may call `python scripts/update.py` to be prompted to enter all
 python scripts/update --name PSRG --loc Seattle --freq 146.960 --offset -0.6 --tone 103.5 --lat 47.623963 --lon -122.315173 --long_name "Puget Sound Repeater Group" --url https://psrg.org
 ```
 
+If you provide a RepeaterBook ID, all but the Group Name, Location, Long Name, and Website are populated from RepeaterBook. The easiest way to add a repeater is to call `python scripts/update.py`, enter in both a group name and a general location, the RepeaterBook ID, and hit enter a bunch of times to accept the empty defaults, which will be overwritten by RepeaterBook data. Once you get to Long Name, you will need to provide that and the group's Website yourself.
+
 ## Regenerating the site
 
 If any changes are made to `repeaters.json` or to template files, you can regenerate the website's root `.md` files without adding a new repeater by calling `python scripts/update.py --regen`.
+
+
+## Populating the leaderboards
+
+When the competition is over, call `python scripts/update.py --score` to have the index page populated with the leaderboards, rather than ongoing contest information.
 
 
 ## Contributing
