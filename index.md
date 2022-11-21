@@ -5,9 +5,11 @@ subtitle: Get to know the local repeaters this November.
 
 # News
 
+**The contest is now closed ! Please [send your logs](./logging) for scoring.** Don't worry about removing duplicates -- we'll take care of that. Even if you've only made a handful of contacts, we'd love your logs !
+
 Watch the recording from our [info and Q&A session here](https://youtu.be/XSwAS7nX8os). 
 
-**We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !**
+We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !
 
 ---
 
@@ -19,14 +21,14 @@ The Repeater Roundabout is a weekend-long event held on many of our local repeat
 
 Anyone with a ham radio license can participate ! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Sunday November 20 at 19:41.
+> This page was last updated on Monday November 21 at 12:43.
 
 ---
 
 
 # Joining the Repeater Roundabout
 
-To get started, check out the [Rules](./rules) page. 
+To get started, check out the [Rules](./rules) page.
 
 Then, check out the list of [113 participating repeaters](./repeaters) from across 50 radio groups that you'll play on during the contest. You can also [view the map](./map) to see where the repeaters are located.
 
@@ -35,4 +37,5 @@ We provide [files to program your radios](./files) with Chirp and other software
 Visit the [logging page](./logging) to log your contacts and submit your logs for scoring.
 
 Join our [Discord chat server](https://discord.gg/Hss7YNRj) to chat with other participants, arrange skeds, and get help.
+
 

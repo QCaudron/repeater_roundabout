@@ -118,7 +118,7 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
 
     for file in logs_files:
 
-        callsign = file.stem.split(" ")[0].split(",")[0]
+        callsign = file.stem.split(" ")[0].split(",")[0].split("-")[0]
         logs = pd.read_csv(file, index_col=[0])
         n_entries = len(logs)
 
@@ -154,9 +154,14 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
         }
 
     # Save the contest scores
-    leaderboard = pd.DataFrame(contest_scores).T.sort_values("Total Score", ascending=False)
+    leaderboard = (
+        pd.DataFrame(contest_scores)
+        .T.sort_values(["Total Score", "Base Score", "Entries"], ascending=False)
+        .reset_index(drop=False)
+        .rename(columns={"index": "Callsign"})
+    )
+    leaderboard.index = leaderboard.index + 1
     print(leaderboard)
-    leaderboard.to_csv("contest_scores.csv")
 
     # Merge all logs with repeater data
     repeater_cols = ["RR#", "Long Name", "Output (MHz)", "Location", "Website"]
@@ -191,7 +196,6 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
         .round({"Readability": 2})
     )
     by_repeater.index = by_repeater.index + 1
-    by_repeater.index.name = "Position"
     by_repeater["Frequency"] = by_repeater["Frequency"].apply(at_least_three_decimals)
 
     # Calculate the number of activations per club
@@ -203,7 +207,6 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
         .reset_index(drop=False)  # index contains the club name
     )
     by_club.index = by_club.index + 1
-    by_club.index.name = "Position"
 
     # TODO
     # Return dfs for scoring, repeater activations, and club activations

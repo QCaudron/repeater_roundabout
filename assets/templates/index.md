@@ -5,9 +5,11 @@ subtitle: Get to know the local repeaters this November.
 
 # News
 
+**The contest is now closed ! Please [send your logs](./logging) for scoring.** Don't worry about removing duplicates -- we'll take care of that. Even if you've only made a handful of contacts, we'd love your logs !
+
 Watch the recording from our [info and Q&A session here](https://youtu.be/XSwAS7nX8os). 
 
-**We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !**
+We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !
 
 ---
 

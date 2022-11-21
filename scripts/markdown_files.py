@@ -11,7 +11,7 @@ from score import score_competition
 ongoing_index_content = """
 # Joining the Repeater Roundabout
 
-To get started, check out the [Rules](./rules) page. 
+To get started, check out the [Rules](./rules) page.
 
 Then, check out the list of [{{ n_repeaters }} participating repeaters](./repeaters) from across {{ n_groups }} radio groups that you'll play on during the contest. You can also [view the map](./map) to see where the repeaters are located.
 
@@ -20,7 +20,8 @@ We provide [files to program your radios](./files) with Chirp and other software
 Visit the [logging page](./logging) to log your contacts and submit your logs for scoring.
 
 Join our [Discord chat server](https://discord.gg/Hss7YNRj) to chat with other participants, arrange skeds, and get help.
-"""
+
+"""  # noqa: E501
 
 
 results_index_content = """
@@ -46,7 +47,7 @@ This table shows how many contacts were made on each repeater, including duplica
 
 {{ repeater_standings }}
 
-"""
+"""  # noqa: E501
 
 
 def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
