@@ -9,6 +9,8 @@ from scipy.spatial.distance import pdist
 from score import score_competition
 
 index_content = """
+# Joining the Repeater Roundabout
+
 To get started, check out the [Rules](./rules) page. 
 
 Then, check out the list of [{{ n_repeaters }} participating repeaters](./repeaters) from across {{ n_groups }} radio groups that you'll play on during the contest. You can also [view the map](./maps) to see where the repeaters are located.

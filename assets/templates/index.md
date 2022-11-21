@@ -3,11 +3,15 @@ title: Repeater Roundabout
 subtitle: Get to know the local repeaters this November.
 ---
 
+# News
+
 Watch the recording from our [info and Q&A session here](https://youtu.be/XSwAS7nX8os). 
 
 **We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !**
 
 ---
+
+# About
 
 The Repeater Roundabout is a weekend-long event held on many of our local repeaters. The goal is to meet new people and work repeaters you might not usually key up. Light up the airwaves and make some noise on the great repeaters in the Puget Sound area!
 
