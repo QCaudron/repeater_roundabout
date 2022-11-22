@@ -7,9 +7,7 @@ subtitle: Get to know the local repeaters this November.
 
 **The contest is now closed ! Please [send your logs](./logging) for scoring.** Don't worry about removing duplicates -- we'll take care of that. Even if you've only made a handful of contacts, we'd love your logs !
 
-Watch the recording from our [info and Q&A session here](https://youtu.be/XSwAS7nX8os). 
-
-We also have a new [Discord server](https://discord.gg/Hss7YNRj) for chatting, skeds, and getting help !
+Join us for a **[feedback and retrospective meeting](https://us06web.zoom.us/j/81213138989?pwd=VkwxY1FEOFV5ajhTMzA4aHY2NXhXQT09)** on December 6th, at 18:30 Pacific time. We'd like to hear what went well and what could be improved, in anticipation of next year's event.
 
 ---
 
