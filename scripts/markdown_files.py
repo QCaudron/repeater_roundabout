@@ -41,11 +41,15 @@ Many congratulations to our winner, [{{ winning_station }}](http://qrz.com/db/{{
 
 {{ leaderboard }}
 
+<br />
+
 ## Club Standings
 
 These are the total number of activations on the repeaters belonging to each club, including duplicate contacts on the same repeater.
 
 {{ club_standings }}
+
+<br />
 
 ## Repeater Standings
 

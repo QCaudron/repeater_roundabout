@@ -76,6 +76,8 @@ Many congratulations to our winner, [K7MCK](http://qrz.com/db/K7MCK) !
 | 33 | W6OAT         |         2 |            1 |            1 |              0 |             1 |
 | 34 | KK7EV         |         1 |            0 |            1 |              0 |             1 |
 
+<br />
+
 ## Club Standings
 
 These are the total number of activations on the repeaters belonging to each club, including duplicate contacts on the same repeater.
@@ -131,6 +133,8 @@ These are the total number of activations on the repeaters belonging to each clu
 | 47 | [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)                                     |             2 |
 | 48 | [Steve N9VW's repeater system](https://www.qrz.com/db/N9VW)                                       |             2 |
 | 49 | [Western Washington Radio Group](http://pnw220.net/)                                              |             2 |
+
+<br />
 
 ## Repeater Standings
 
