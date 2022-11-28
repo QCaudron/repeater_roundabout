@@ -50,11 +50,14 @@ def signal_report_to_readability(report: str) -> Optional[int]:
         The readability of a signal report, or None if it couldn't be interpreted.
     """
 
+    report = report.upper().strip().replace("?", "")
+
     # Will match CM4, CM5+, CM3.5, CM4.5+
     is_cm = re.fullmatch(
         r"""
             ^
-            CM  # starts with "CM"
+            (?:CM)?  # starts with "CM"
+            [- ]?  # optional hyphen ( "CM-4" ) or space ( "CM 4" )
             ([1-5])  # followed by a number from 1 to 5 -- this is what we return
             \+?  # optionally followed by a plus sign ( CM5+ )
             (?:.\d)?  # optionally followed by a decimal and a number ( CM4.5 )
@@ -69,7 +72,7 @@ def signal_report_to_readability(report: str) -> Optional[int]:
         r"""
             ^
             ([1-5])  # a number from 1 to 5 -- this is what we return
-            [-x/]?  # optionally followed by an x, a dash, or a slash ( 5x9, 4-9, 3/5 )
+            [-xX/]?  # optionally followed by an x, a dash, or a slash ( 5x9, 4-9, 3/5 )
             (?:\ by\ )?  # optionally followed by " by " ( 5 by 9 )
             [1-9]  # followed by a number from 1 to 9, which we throw away
             \+?  # optionally followed by a plus sign ( 59+ )
@@ -83,6 +86,8 @@ def signal_report_to_readability(report: str) -> Optional[int]:
         return int(is_cm.group(1))
     if is_rst:
         return int(is_rst.group(1))
+
+    print(f"Unable to parse '{report}'.")
     return None  # if no match, return None
 
 
@@ -120,6 +125,7 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
 
         callsign = file.stem.split(" ")[0].split(",")[0].split("-")[0]
         logs = pd.read_csv(file, index_col=[0])
+        logs["Logger"] = callsign
         n_entries = len(logs)
 
         # Clean up the log sheet
@@ -161,7 +167,6 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
         .rename(columns={"index": "Callsign"})
     )
     leaderboard.index = leaderboard.index + 1
-    print(leaderboard)
 
     # Merge all logs with repeater data
     repeater_cols = ["RR#", "Long Name", "Output (MHz)", "Location", "Website"]
@@ -175,6 +180,9 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
 
     # Attempt to clean up signal reports
     logs_df["Readability"] = logs_df["Signal Report"].apply(signal_report_to_readability)
+    if logs_df["Readability"].isna().any():
+        errors_in = ", ".join(logs_df.loc[logs_df["Readability"].isna(), "Logger"].unique())
+        print(f"Errors in signal reports : {errors_in}")
 
     # Bring URLs into club names
     logs_df["Group"] = logs_df.apply(lambda row: f"[{row['Group']}]({row['Website']})", axis=1)
@@ -208,6 +216,21 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
     )
     by_club.index = by_club.index + 1
 
-    # TODO
-    # Return dfs for scoring, repeater activations, and club activations
-    return leaderboard, by_repeater.to_markdown(disable_numparse=True), by_club.to_markdown()
+    # Some stats :
+    stats = {
+        "Number of participants who submitted logs": len(leaderboard),
+        "Total number of contacts made": f"{len(logs_df):,}",
+        "Number of unique operators contacted": logs_df["Contact's Callsign"].nunique(),
+        "Number of repeaters activated": len(by_repeater),
+    }
+    stats_msg = "\n".join(f"- {key} : {val}" for key, val in stats.items())
+    print(stats_msg)
+
+    return (
+        leaderboard,
+        by_repeater.to_markdown(
+            disable_numparse=True, colalign=["right", "left", "right", "right", "right"]
+        ),
+        by_club.to_markdown(colalign=["right", "left", "right"]),
+        stats_msg,
+    )

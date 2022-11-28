@@ -282,7 +282,7 @@ WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org)
 
 WWRG
-: [Western Washington Repeater Group]()
+: [Western Washington Repeater Group](https://www.qrz.com/db/W7SIX)
 
 West Seattle
 : [West Seattle Amateur Radio Club](https://w7aw.org/)

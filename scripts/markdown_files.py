@@ -29,6 +29,10 @@ The contest is over ! Many thanks to those who participated; we hope you had fun
 
 Please don't hesitate to send us your thoughts and feedback, either by email at [k7drq@psrg.org](mailto:k7drq@psrg.org) or on our [Discord server](https://discord.gg/Hss7YNRj).
 
+Here are some stats on the contest, based on the logs received. These numbers are underestimates, because we are missing a good number of logs !
+
+{{ stats }}
+
 # Leaderboard
 
 Many congratulations to our winner, [{{ winning_station }}](http://qrz.com/db/{{ winning_station }}) !
@@ -64,11 +68,11 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
     """
 
     if score_results:
-        leaderboard, by_repeater, by_club = score_competition(df)
+        leaderboard, by_repeater, by_club, stats = score_competition(df)
         index_content = results_index_content  # write the results data to the index
     else:
         leaderboard = pd.DataFrame([0])
-        by_club, by_repeater = "", ""
+        by_club, by_repeater, stats = "", "", ""
         index_content = ongoing_index_content  # write the ongoing contest text to the index
 
     now = datetime.now().strftime("%A %B %d at %H:%M")
@@ -84,7 +88,8 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
     index = index.replace("{{ leaderboard }}", leaderboard.to_markdown())
     index = index.replace("{{ club_standings }}", by_club)
     index = index.replace("{{ repeater_standings }}", by_repeater)
-    index = index.replace("{{ winning_station }}", str(leaderboard.index[0]))
+    index = index.replace("{{ winning_station }}", str(leaderboard.iloc[0]["Callsign"]))
+    index = index.replace("{{ stats }}", stats)
 
     with open("index.md", "w") as f:
         f.write(index)
