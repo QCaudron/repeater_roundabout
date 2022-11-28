@@ -17,7 +17,7 @@ The Repeater Roundabout is a weekend-long event held on many of our local repeat
 
 Anyone with a ham radio license can participate ! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Monday November 28 at 10:54.
+> This page was last updated on Monday November 28 at 13:27.
 
 ---
 
@@ -34,6 +34,8 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 - Total number of contacts made : 1,113
 - Number of unique operators contacted : 273
 - Number of repeaters activated : 94
+
+<br />
 
 ## Leaderboard
 
