@@ -5,8 +5,6 @@ subtitle: Get to know the local repeaters this November.
 
 # News
 
-**The contest is now closed ! Please [send your logs](./logging) for scoring.** Don't worry about removing duplicates -- we'll take care of that. Even if you've only made a handful of contacts, we'd love your logs !
-
 Join us for a **[feedback and retrospective meeting](https://us06web.zoom.us/j/81213138989?pwd=VkwxY1FEOFV5ajhTMzA4aHY2NXhXQT09)** on December 6th, at 18:30 Pacific time. We'd like to hear what went well and what could be improved, in anticipation of next year's event.
 
 ---
@@ -19,10 +17,12 @@ The Repeater Roundabout is a weekend-long event held on many of our local repeat
 
 Anyone with a ham radio license can participate ! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Monday November 28 at 10:44.
+> This page was last updated on Monday November 28 at 10:54.
 
 ---
 
+
+# Results
 
 The contest is over ! Many thanks to those who participated; we hope you had fun. Check back next year for the next Repeater Roundabout !
 
@@ -35,7 +35,7 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 - Number of unique operators contacted : 273
 - Number of repeaters activated : 94
 
-# Leaderboard
+## Leaderboard
 
 Many congratulations to our winner, [K7MCK](http://qrz.com/db/K7MCK) !
 
@@ -76,7 +76,7 @@ Many congratulations to our winner, [K7MCK](http://qrz.com/db/K7MCK) !
 | 33 | W6OAT         |         2 |            1 |            1 |              0 |             1 |
 | 34 | KK7EV         |         1 |            0 |            1 |              0 |             1 |
 
-# Club Standings
+## Club Standings
 
 These are the total number of activations on the repeaters belonging to each club, including duplicate contacts on the same repeater.
 
@@ -132,7 +132,7 @@ These are the total number of activations on the repeaters belonging to each clu
 | 48 | [Steve N9VW's repeater system](https://www.qrz.com/db/N9VW)                                       |             2 |
 | 49 | [Western Washington Radio Group](http://pnw220.net/)                                              |             2 |
 
-# Repeater Standings
+## Repeater Standings
 
 This table shows how many contacts were made on each repeater, including duplicates. The Readability score is the average signal report across all reports for that repeater -- it's the number of the CM report, or the R in an RS(T) report.
 

@@ -25,6 +25,8 @@ Join our [Discord chat server](https://discord.gg/Hss7YNRj) to chat with other p
 
 
 results_index_content = """
+# Results
+
 The contest is over ! Many thanks to those who participated; we hope you had fun. Check back next year for the next Repeater Roundabout !
 
 Please don't hesitate to send us your thoughts and feedback, either by email at [k7drq@psrg.org](mailto:k7drq@psrg.org) or on our [Discord server](https://discord.gg/Hss7YNRj).
@@ -33,19 +35,19 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 
 {{ stats }}
 
-# Leaderboard
+## Leaderboard
 
 Many congratulations to our winner, [{{ winning_station }}](http://qrz.com/db/{{ winning_station }}) !
 
 {{ leaderboard }}
 
-# Club Standings
+## Club Standings
 
 These are the total number of activations on the repeaters belonging to each club, including duplicate contacts on the same repeater.
 
 {{ club_standings }}
 
-# Repeater Standings
+## Repeater Standings
 
 This table shows how many contacts were made on each repeater, including duplicates. The Readability score is the average signal report across all reports for that repeater -- it's the number of the CM report, or the R in an RS(T) report.
 
