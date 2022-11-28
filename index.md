@@ -17,7 +17,7 @@ The Repeater Roundabout is a weekend-long event held on many of our local repeat
 
 Anyone with a ham radio license can participate ! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Monday November 28 at 13:27.
+> This page was last updated on Monday November 28 at 14:12.
 
 ---
 
@@ -39,44 +39,44 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 
 ## Leaderboard
 
-Many congratulations to our winner, [K7MCK](http://qrz.com/db/K7MCK) !
+Many congratulations to our winner, [K7MCK](https://www.qrz.com/db/K7MCK) !
 
-|    | Callsign      |   Entries |   Duplicates |   Base Score |   Bonus Points |   Total Score |
-|---:|:--------------|----------:|-------------:|-------------:|---------------:|--------------:|
-|  1 | K7MCK         |        92 |           20 |           72 |             28 |           100 |
-|  2 | N7OMS         |        98 |           31 |           67 |             22 |            89 |
-|  3 | K7DRQ         |       107 |           47 |           60 |             19 |            79 |
-|  4 | W7MKE         |        98 |           36 |           62 |             15 |            77 |
-|  5 | W7EDE         |        53 |            0 |           53 |              9 |            62 |
-|  6 | KK7AIP        |        72 |           24 |           48 |             13 |            61 |
-|  7 | WB7J          |        58 |            9 |           49 |             11 |            60 |
-|  8 | KI7RMU        |        52 |            4 |           48 |              6 |            54 |
-|  9 | AE7GG         |        44 |            0 |           44 |              6 |            50 |
-| 10 | KG7ODB        |        42 |            0 |           42 |              8 |            50 |
-| 11 | KB7RYY        |        46 |            6 |           40 |              7 |            47 |
-| 12 | K7WFB         |        34 |            1 |           33 |              4 |            37 |
-| 13 | W7ITL         |        40 |           10 |           30 |              4 |            34 |
-| 14 | AG7LR         |        31 |            2 |           29 |              2 |            31 |
-| 15 | K7CRZ         |        26 |            0 |           26 |              4 |            30 |
-| 16 | AH6EZ         |        22 |            0 |           22 |              2 |            24 |
-| 17 | K7PJP         |        27 |            6 |           21 |              2 |            23 |
-| 18 | KE7NOR        |        19 |            3 |           16 |              2 |            18 |
-| 19 | K9BDC         |        12 |            0 |           12 |              5 |            17 |
-| 20 | KI7AUH        |        23 |            7 |           16 |              0 |            16 |
-| 21 | AI7OZ         |        14 |            0 |           14 |              2 |            16 |
-| 22 | AB6MB         |        14 |            0 |           14 |              0 |            14 |
-| 23 | NU7J          |        22 |            9 |           13 |              0 |            13 |
-| 24 | KX2CW         |        11 |            4 |            7 |              2 |             9 |
-| 25 | W7VXS         |        10 |            4 |            6 |              3 |             9 |
-| 26 | N7BRR         |         5 |            0 |            5 |              4 |             9 |
-| 27 | KB8BMY_KK7IJZ |         8 |            2 |            6 |              0 |             6 |
-| 28 | K7CDQ         |         8 |            4 |            4 |              0 |             4 |
-| 29 | W7JSM         |         6 |            2 |            4 |              0 |             4 |
-| 30 | KM6SO         |         4 |            2 |            2 |              2 |             4 |
-| 31 | WS7A          |         8 |            6 |            2 |              0 |             2 |
-| 32 | K7RMZ         |         4 |            2 |            2 |              0 |             2 |
-| 33 | W6OAT         |         2 |            1 |            1 |              0 |             1 |
-| 34 | KK7EV         |         1 |            0 |            1 |              0 |             1 |
+|    | Callsign                                              |   Entries |   Duplicates |   Base Score |   Bonus Points |   Total Score |
+|---:|:------------------------------------------------------|----------:|-------------:|-------------:|---------------:|--------------:|
+|  1 | [K7MCK](https://www.qrz.com/db/K7MCK)                 |        92 |           20 |           72 |             28 |           100 |
+|  2 | [N7OMS](https://www.qrz.com/db/N7OMS)                 |        98 |           31 |           67 |             22 |            89 |
+|  3 | [K7DRQ](https://www.qrz.com/db/K7DRQ)                 |       107 |           47 |           60 |             19 |            79 |
+|  4 | [W7MKE](https://www.qrz.com/db/W7MKE)                 |        98 |           36 |           62 |             15 |            77 |
+|  5 | [W7EDE](https://www.qrz.com/db/W7EDE)                 |        53 |            0 |           53 |              9 |            62 |
+|  6 | [KK7AIP](https://www.qrz.com/db/KK7AIP)               |        72 |           24 |           48 |             13 |            61 |
+|  7 | [WB7J](https://www.qrz.com/db/WB7J)                   |        58 |            9 |           49 |             11 |            60 |
+|  8 | [KI7RMU](https://www.qrz.com/db/KI7RMU)               |        52 |            4 |           48 |              6 |            54 |
+|  9 | [AE7GG](https://www.qrz.com/db/AE7GG)                 |        44 |            0 |           44 |              6 |            50 |
+| 10 | [KG7ODB](https://www.qrz.com/db/KG7ODB)               |        42 |            0 |           42 |              8 |            50 |
+| 11 | [KB7RYY](https://www.qrz.com/db/KB7RYY)               |        46 |            6 |           40 |              7 |            47 |
+| 12 | [K7WFB](https://www.qrz.com/db/K7WFB)                 |        34 |            1 |           33 |              4 |            37 |
+| 13 | [W7ITL](https://www.qrz.com/db/W7ITL)                 |        40 |           10 |           30 |              4 |            34 |
+| 14 | [AG7LR](https://www.qrz.com/db/AG7LR)                 |        31 |            2 |           29 |              2 |            31 |
+| 15 | [K7CRZ](https://www.qrz.com/db/K7CRZ)                 |        26 |            0 |           26 |              4 |            30 |
+| 16 | [AH6EZ](https://www.qrz.com/db/AH6EZ)                 |        22 |            0 |           22 |              2 |            24 |
+| 17 | [K7PJP](https://www.qrz.com/db/K7PJP)                 |        27 |            6 |           21 |              2 |            23 |
+| 18 | [KE7NOR](https://www.qrz.com/db/KE7NOR)               |        19 |            3 |           16 |              2 |            18 |
+| 19 | [K9BDC](https://www.qrz.com/db/K9BDC)                 |        12 |            0 |           12 |              5 |            17 |
+| 20 | [KI7AUH](https://www.qrz.com/db/KI7AUH)               |        23 |            7 |           16 |              0 |            16 |
+| 21 | [AI7OZ](https://www.qrz.com/db/AI7OZ)                 |        14 |            0 |           14 |              2 |            16 |
+| 22 | [AB6MB](https://www.qrz.com/db/AB6MB)                 |        14 |            0 |           14 |              0 |            14 |
+| 23 | [NU7J](https://www.qrz.com/db/NU7J)                   |        22 |            9 |           13 |              0 |            13 |
+| 24 | [KX2CW](https://www.qrz.com/db/KX2CW)                 |        11 |            4 |            7 |              2 |             9 |
+| 25 | [W7VXS](https://www.qrz.com/db/W7VXS)                 |        10 |            4 |            6 |              3 |             9 |
+| 26 | [N7BRR](https://www.qrz.com/db/N7BRR)                 |         5 |            0 |            5 |              4 |             9 |
+| 27 | [KB8BMY_KK7IJZ](https://www.qrz.com/db/KB8BMY_KK7IJZ) |         8 |            2 |            6 |              0 |             6 |
+| 28 | [K7CDQ](https://www.qrz.com/db/K7CDQ)                 |         8 |            4 |            4 |              0 |             4 |
+| 29 | [W7JSM](https://www.qrz.com/db/W7JSM)                 |         6 |            2 |            4 |              0 |             4 |
+| 30 | [KM6SO](https://www.qrz.com/db/KM6SO)                 |         4 |            2 |            2 |              2 |             4 |
+| 31 | [WS7A](https://www.qrz.com/db/WS7A)                   |         8 |            6 |            2 |              0 |             2 |
+| 32 | [K7RMZ](https://www.qrz.com/db/K7RMZ)                 |         4 |            2 |            2 |              0 |             2 |
+| 33 | [W6OAT](https://www.qrz.com/db/W6OAT)                 |         2 |            1 |            1 |              0 |             1 |
+| 34 | [KK7EV](https://www.qrz.com/db/KK7EV)                 |         1 |            0 |            1 |              0 |             1 |
 
 <br />
 

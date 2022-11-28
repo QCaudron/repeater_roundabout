@@ -39,7 +39,7 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 
 ## Leaderboard
 
-Many congratulations to our winner, [{{ winning_station }}](http://qrz.com/db/{{ winning_station }}) !
+Many congratulations to our winner, {{ winning_station }} !
 
 {{ leaderboard }}
 

@@ -167,6 +167,9 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
         .rename(columns={"index": "Callsign"})
     )
     leaderboard.index = leaderboard.index + 1
+    leaderboard["Callsign"] = leaderboard["Callsign"].apply(
+        lambda call: f"[{call}](https://www.qrz.com/db/{call})"
+    )
 
     # Merge all logs with repeater data
     repeater_cols = ["RR#", "Long Name", "Output (MHz)", "Location", "Website"]
