@@ -58,9 +58,7 @@ Contributions are welcome -- please open a pull request against a feature branch
 
 ## Python Environment
 
-The scripts in this repo use Python3.  In order to install the dependencies, it
-is recommended to create a python virtual environment with the appropriate
-dependencies installed.
+The scripts in this repo use Python3. In order to install the dependencies, it is recommended to create a python virtual environment with the appropriate dependencies installed.
 
 Note that Python version 3.9 or higher is required.
 
@@ -80,9 +78,7 @@ $ pip install -r requirements.txt
 
 ## Typescript Development Environment
 
-To compile TypeScript to JavaScript the tool chain includes, node/npm.
-We install TypeScript locally in `node_packages` so we have a consistent
-version between contributors.
+To compile TypeScript to JavaScript the tool chain includes, node/npm. We install TypeScript locally in `node_packages` so we have a consistent version between contributors.
 
 ```
 # Assumes you have nvm [installed](https://github.com/nvm-sh/nvm)
