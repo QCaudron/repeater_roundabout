@@ -91,7 +91,7 @@ def signal_report_to_readability(report: str) -> Optional[int]:
     return None  # if no match, return None
 
 
-def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, str, str, str]:
     """
     Score the competition and return the results.
 
@@ -102,8 +102,14 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFra
 
     Returns
     -------
-    Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]
-        _description_
+    pd.DataFrame
+        The participant leaderboard.
+    str
+        A markdown-formatted table representation of the club leaderboard.
+    str
+        A markdown-formatted table representation of the repeater leaderboard.
+    str
+        A markdown-formatted bullet list of some statistics about the contest.
     """
 
     if not logs_dir.exists():
