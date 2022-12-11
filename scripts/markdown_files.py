@@ -19,7 +19,7 @@ We provide [files to program your radios](./files) with Chirp and other software
 
 Visit the [logging page](./logging) to log your contacts and submit your logs for scoring.
 
-Join our [Discord chat server](https://discord.gg/Hss7YNRj) to chat with other participants, arrange skeds, and get help.
+Join our [Discord chat server](https://discord.gg/BBpbESxSCm) to chat with other participants, arrange skeds, and get help.
 
 """  # noqa: E501
 
@@ -29,7 +29,7 @@ results_index_content = """
 
 The contest is over ! Many thanks to those who participated; we hope you had fun. Check back next year for the next Repeater Roundabout !
 
-Please don't hesitate to send us your thoughts and feedback, either by email at [k7drq@psrg.org](mailto:k7drq@psrg.org) or on our [Discord server](https://discord.gg/Hss7YNRj).
+Please don't hesitate to send us your thoughts and feedback, either by email at [k7drq@psrg.org](mailto:k7drq@psrg.org) or on our [Discord server](https://discord.gg/BBpbESxSCm).
 
 Here are some stats on the contest, based on the logs received. These numbers are underestimates, because we are missing a good number of logs !
 
@@ -96,7 +96,7 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
     index = index.replace("{{ leaderboard }}", leaderboard.to_markdown())
     index = index.replace("{{ club_standings }}", by_club)
     index = index.replace("{{ repeater_standings }}", by_repeater)
-    index = index.replace("{{ winning_station }}", str(leaderboard.iloc[0]["Callsign"]))
+    index = index.replace("{{ winning_station }}", str(leaderboard.iloc[0].get("Callsign")))
     index = index.replace("{{ stats }}", stats)
 
     with open("index.md", "w") as f:

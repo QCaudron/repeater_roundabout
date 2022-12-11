@@ -1,5 +1,5 @@
 import math
-from typing import List, Literal
+from typing import Literal
 from zipfile import ZipFile
 
 import pandas as pd
@@ -19,7 +19,7 @@ DOWNTOWN_SEATTLE = (47.6062, -122.3321)
 METRO_DISTANCE = 20
 
 
-def filter_by_band(df: pd.DataFrame, bands: List[BANDS]) -> pd.DataFrame:
+def filter_by_band(df: pd.DataFrame, bands: list[BANDS]) -> pd.DataFrame:
     """
     Filter a DataFrame of repeaters by a given band.
 
@@ -48,7 +48,7 @@ def filter_by_band(df: pd.DataFrame, bands: List[BANDS]) -> pd.DataFrame:
     return pd.concat(band_dfs).sort_index()
 
 
-def filter_by_mode(df: pd.DataFrame, modes: List[str]) -> pd.DataFrame:
+def filter_by_mode(df: pd.DataFrame, modes: list[str]) -> pd.DataFrame:
     """
     Filter a DataFrame of repeaters by a given mode.
 
