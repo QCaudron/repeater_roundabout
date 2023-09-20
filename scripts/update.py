@@ -1,5 +1,6 @@
 import argparse
 import sys
+from pathlib import Path
 from types import SimpleNamespace
 from typing import Union
 
@@ -44,6 +45,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
         lon = input("Longitude: ") or None
         long_name = input("Long Name: ") or None
         url = input("Website: ") or None
+        exclude = input("Exclude from contest: ") or None
 
         args = {
             "name": name,
@@ -58,6 +60,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
             "lon": lon,
             "long_name": long_name,
             "url": url,
+            "exclude": exclude,
             "regen": False,
             "score": False,
         }
@@ -78,6 +81,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     parser.add_argument("--lon", type=float, default=None)
     parser.add_argument("--long_name", type=str, default=None)
     parser.add_argument("--url", type=str, default=None)
+    parser.add_argument("--exclude", action="store_true")
     parser.add_argument("--regen", action="store_true")
     parser.add_argument("--score", action="store_true")
     return parser.parse_args()
@@ -119,7 +123,9 @@ def repeater_from_repeaterbook(id_code: str) -> dict:
     if offset[0] != "-":
         offset = f"+{offset}"
 
-    latlong = source.text.split("center: ")[1].split("\n")[0][:-1]
+    latlong = source.text.split("center: ")[1].split("\n")[0].strip()[:-1]
+    if latlong.endswith(","):
+        latlong = latlong[:-1]
 
     try:
         tone = source.text.split("Uplink Tone:</td>\n<td>")[1].split("</td")[0]
@@ -138,6 +144,7 @@ def repeater_from_repeaterbook(id_code: str) -> dict:
         "Offset (MHz)": offset,
         "Tone (Hz)": tone,
         "Coordinates": latlong,
+        "RepeaterBook ID": id_code,
     }
 
     return repeater
@@ -169,6 +176,7 @@ def repeater_from_args(args: Union[argparse.Namespace, SimpleNamespace]) -> dict
         "Coordinates": [float(args.lat), float(args.lon)] if args.lat and args.lon else None,
         "Long Name": args.long_name,
         "Website": args.url,
+        "Exclude": args.exclude,
     }
 
     # Remove any empty values
@@ -203,6 +211,9 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
     repeater = pd.DataFrame.from_records([{**repeaterbook, **repeaterargs}])
 
     # Combine with known repeaters
+    if not Path("assets/repeaters.json").exists():
+        with open("assets/repeaters.json", "w") as f:
+            f.write("{}")
     df = pd.read_json("assets/repeaters.json", dtype=False)
     df = pd.concat([df, repeater], ignore_index=True)
 
@@ -222,7 +233,6 @@ def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
     """
     Return dataframe with Mode column footnotes removed.
     """
-
     return df.assign(Mode=df["Mode"].str.replace(r"\[.+\]", "", regex=True))
 
 

@@ -113,13 +113,16 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     total_repeaters = len(df)
+    
+    # Remove repeaters not in the contest
+    df = df.loc[df["Exclude"].isna()]
 
     # Only format FM channels; we can't handle DMR or D-Star at the moment
     df = filter_by_mode(df, ["FM", "NBFM", "Fusion"])  # only FM repeaters
     df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
     df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
 
-    print(f"Chirp: {len(df)} compatible repeaters (out of {total_repeaters}).")
+    print(f"Chirp: {len(df)} compatible repeaters (out of {total_repeaters} known).")
 
     # Set the offset direction and value
     df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
@@ -199,6 +202,9 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     total_repeaters = len(df)
+    
+    # Remove repeaters not in the contest
+    df = df.loc[df["Exclude"].isna()]
 
     # Select FM, DMR and Fusion (in FM compat mode) channels in the 2m or 70cm bands.
     df = filter_by_mode(df, ["FM", "NBFM", "DMR", "Fusion"])
@@ -212,7 +218,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     numeric_columns = ["Output (MHz)", "Offset (MHz)"]
     df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
 
-    print(f"AnyTone D878: {len(df)} compatible repeaters (out of {total_repeaters}).")
+    print(f"AnyTone D878: {len(df)} compatible repeaters (out of {total_repeaters} known).")
 
     df_878 = pd.DataFrame()
 
@@ -281,6 +287,9 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     total_repeaters = len(df)
+    
+    # Remove repeaters not in the contest
+    df = df.loc[df["Exclude"].isna()]
 
     # Select FM and Fusion (in FM compat mode) channels.
     df = filter_by_mode(df, ["FM", "NBFM", "Fusion", "DSTAR"])
@@ -294,7 +303,7 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     df.index = df["RR#"]
     df = df.sort_index()
 
-    print(f"Icom IC-705: {len(df)} compatible repeaters (out of {total_repeaters}).")
+    print(f"Icom IC-705: {len(df)} compatible repeaters (out of {total_repeaters} known).")
 
     df_icom = pd.DataFrame()
     is_dstar = df["Mode"] == "DSTAR"
@@ -418,7 +427,6 @@ def write_chirp_csv(df: pd.DataFrame) -> None:
     df : pd.DataFrame
         All of the repeaters.
     """
-
     df = format_df_for_chirp(df)
     df.to_csv("assets/programming_files/rr_frequencies.csv")
 
@@ -504,12 +512,8 @@ def write_generic_csv(df: pd.DataFrame) -> None:
         All of the repeaters.
     """
 
-    df.index = df["RR#"]
-    df.index.name = "RR#"
-    df = df.sort_index()
-
     (
-        df.drop(["Group Name", "Website", "RR#", "Coordinates"], axis=1)
+        df.drop(columns=["Group Name", "Website", "RR#", "Coordinates"], axis=1)
         .rename(columns={"Long Name": "Group"})
         .to_csv("assets/programming_files/all_rr_frequencies.csv")
     )

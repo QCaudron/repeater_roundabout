@@ -192,6 +192,10 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
         than this distance apart, by default 0.03.
     """
 
+    # Skip writing a map if there aren't at least two repeaters
+    if len(df) < 10:
+        return
+
     # Hierarchically cluster repeater lat / long pairs
     coords = np.array(df["Coordinates"].to_list())
     dist = pdist(coords)
