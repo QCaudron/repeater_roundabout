@@ -17,9 +17,6 @@ interfere** with the repeater's normal operation, including regular nets.
 Get started by [programming your radio](/files), and check out the repeaters' locations on the
 [repeater map](/map).
 
-[AllStar and Echolink information](https://docs.google.com/spreadsheets/d/15P5zgdEZhchNI1Vu2DLTpo1CVxMiYSrBG7GhCbF3lbw/edit?usp=sharing)
-is available for some repeaters, thanks to [Jeff AB6MB](https://www.qrz.com/db/AB6MB).
-
 | RR#   | Group         | Callsign   | Location         | Mode      |   Output (MHz) |   Offset (MHz) |                  Tone (Hz) |
 |:------|:--------------|:-----------|:-----------------|:----------|---------------:|---------------:|---------------------------:|
 | 1     | PSRG          | WW7PSR     | Seattle          | FM        |        146.960 |           -0.6 |                      103.5 |
