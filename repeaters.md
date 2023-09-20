@@ -61,6 +61,7 @@ is available for some repeaters, thanks to [Jeff AB6MB](https://www.qrz.com/db/A
 | 37    | Lake Wash.    | K7LWH      | Kirkland         | FM        |        224.360 |           -1.6 |                      103.5 |
 | 38    | Lake Wash.    | K7LWH      | Kirkland         | FM        |        441.075 |           +5.0 |                      103.5 |
 | 39    | BEARONS       | W7FLY      | Lynnwood         | FM        |        443.925 |           +5.0 |                      100.0 |
+| 40    | Northshore    | NE7MC      | Kenmore          | FM        |        442.000 |           +5.0 |                      141.3 |
 
 ---
 
@@ -98,6 +99,9 @@ Marrowstone
 
 N7KN
 : [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)
+
+Northshore
+: [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
 
 OARS
 : [Olympia Amateur Radio Society](https://www.olyham.org/)

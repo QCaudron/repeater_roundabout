@@ -29,3 +29,4 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 36,K7LWH,145.49,144.89,A-Analog,0,25K,103.5,,,1,,Metro
 38,K7LWH,441.075,446.075,A-Analog,0,25K,103.5,,,1,,Metro
 39,W7FLY,443.925,448.925,A-Analog,0,25K,100.0,,,1,,Metro
+40,NE7MC,442.0,447.0,A-Analog,0,25K,141.3,,,1,,Metro

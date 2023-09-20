@@ -660,5 +660,21 @@
         "Long Name": "Boeing Employees Amateur Radio Operators North Society",
         "Website": "https:\/\/w7flybearons.org",
         "Exclude": null
+    },
+    {
+        "Group Name": "Northshore",
+        "Callsign": "NE7MC",
+        "Location": "Kenmore",
+        "Mode": "FM",
+        "Output (MHz)": "442.000",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "141.3",
+        "RepeaterBook ID": "19962",
+        "Coordinates": [
+            47.737677,
+            -122.23079
+        ],
+        "Long Name": "Northshore Emergency Management Coalition",
+        "Website": "https:\/\/www.northshoreemc.com\/"
     }
 ]
