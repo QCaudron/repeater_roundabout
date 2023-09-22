@@ -30,3 +30,8 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 38,K7LWH,441.075,446.075,A-Analog,0,25K,103.5,,,1,,Metro
 39,W7FLY,443.925,448.925,A-Analog,0,25K,100.0,,,1,,Metro
 40,NE7MC,442.0,447.0,A-Analog,0,25K,141.3,,,1,,Metro
+41,WW7STR,146.875,146.275,D-Digital,1,12.5K,,Local1,3181,1,1,Metro
+43,WW7STR,441.55,446.55,A-Analog,0,25K,103.5,,,1,,Metro
+44,WW7STR,443.05,448.05,A-Analog,0,25K,103.5,,,1,,Metro
+46,N3KPU,145.23,144.63,A-Analog,0,25K,146.2,,,1,,South
+47,KE7YYD,442.75,447.75,A-Analog,0,25K,146.2,,,1,,South

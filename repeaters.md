@@ -59,6 +59,13 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 38    | Lake Wash.    | K7LWH      | Kirkland         | FM        |        441.075 |           +5.0 |                      103.5 |
 | 39    | BEARONS       | W7FLY      | Lynnwood         | FM        |        443.925 |           +5.0 |                      100.0 |
 | 40    | Northshore    | NE7MC      | Kenmore          | FM        |        442.000 |           +5.0 |                      141.3 |
+| 41    | SeaTac        | WW7STR     | Tiger Mtn.       | DMR[^dmr] |        146.875 |           -0.6 |     CC1/TS1 Local1 TG/3181 |
+| 42    | SeaTac        | WW7STR     | Cougar Mtn.      | FM        |        224.440 |           -1.6 |                      103.5 |
+| 43    | SeaTac        | WW7STR     | Cougar Mtn.      | FM        |        441.550 |           +5.0 |                      103.5 |
+| 44    | SeaTac        | WW7STR     | Tiger Mtn.       | FM        |        443.050 |           +5.0 |                      103.5 |
+| 45    | SeaTac        | WW7STR     | Cougar Mtn.      | FM        |       927.2125 |          -25.0 |                      114.8 |
+| 46    | N3KPU         | N3KPU      | Graham           | FM        |        145.230 |           -0.6 |                      146.2 |
+| 47    | MAMC          | KE7YYD     | JBLM             | FM        |        442.750 |           +5.0 |                      146.2 |
 
 ---
 
@@ -88,11 +95,17 @@ Kitsap
 Lake Wash.
 : [Lake Washington Ham Club](https://lakewashingtonhamclub.org/)
 
+MAMC
+: [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
+
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
 
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://www.qrz.com/db/AA7MI)
+
+N3KPU
+: [Michael N3KPU's repeater system](https://www.qrz.com/db/N3KPU)
 
 N7KN
 : [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)
@@ -108,6 +121,9 @@ PSRG
 
 RASC
 : [Radio Amateurs of Skagit Valley](http://rasconline.com/)
+
+SeaTac
+: [SeaTac Repeater Association](https://seatacra.com/)
 
 Seattle ACS
 : [Seattle Auxiliary Communications Service](https://www.seattleacs.org/)

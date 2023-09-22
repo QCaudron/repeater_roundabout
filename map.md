@@ -40,5 +40,9 @@ L.marker([47.6884994500, -122.1559982300]).bindPopup('RR# 35 - K7LWH (53.170)<br
 L.marker([47.6814994800, -122.2089996300]).bindPopup('RR# 37 - K7LWH (224.360)<br>RR# 38 - K7LWH (441.075)<br>').addTo(map);
 L.marker([47.8566093400, -122.2836761500]).bindPopup('RR# 39 - W7FLY (443.925)<br>').addTo(map);
 L.marker([47.7376770000, -122.2307900000]).bindPopup('RR# 40 - NE7MC (442.000)<br>').addTo(map);
+L.marker([47.4890273500, -121.9525130500]).bindPopup('RR# 41 - WW7STR (146.875)<br>RR# 44 - WW7STR (443.050)<br>').addTo(map);
+L.marker([47.5455996167, -122.1046651167]).bindPopup('RR# 42 - WW7STR (224.440)<br>RR# 43 - WW7STR (441.550)<br>RR# 45 - WW7STR (927.2125)<br>').addTo(map);
+L.marker([47.0528984100, -122.2939987200]).bindPopup('RR# 46 - N3KPU (145.230)<br>').addTo(map);
+L.marker([47.1091003400, -122.5530014000]).bindPopup('RR# 47 - KE7YYD (442.750)<br>').addTo(map);
 
 </script>
