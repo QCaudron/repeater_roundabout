@@ -66,6 +66,13 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 45    | SeaTac        | WW7STR     | Cougar Mtn.      | FM        |       927.2125 |          -25.0 |                      114.8 |
 | 46    | N3KPU         | N3KPU      | Graham           | FM        |        145.230 |           -0.6 |                      146.2 |
 | 47    | MAMC          | KE7YYD     | JBLM             | FM        |        442.750 |           +5.0 |                      146.2 |
+| 48    | W7TJL         | W7TJL      | Gig Harbor       | FM        |        224.200 |           -1.6 |                      123.0 |
+| 49    | FWARC         | WA7FW      | Federal Way      | FM        |        147.040 |           +0.6 |                      103.5 |
+| 50    | Mount Baker   | K7SKW      | Orcas Isl.       | FM        |        146.740 |           -0.6 |                      103.5 |
+| 51    | Mount Baker   | K7SKW      | Orcas Isl.       | FM        |        444.050 |           +5.0 |                      103.5 |
+| 52    | Mount Baker   | K7SKW      | Bellingham       | FM        |        443.750 |           +5.0 |                      103.5 |
+| 53    | Mount Baker   | K7SKW      | Bellingham       | FM        |        147.160 |           +0.6 |                      103.5 |
+| 54    | Mount Baker   | K7SKW      | Bellingham       | Fusion    |        443.650 |           +5.0 |                      103.5 |
 
 ---
 
@@ -76,6 +83,9 @@ BEARONS
 
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears)
+
+FWARC
+: [Federal Way Amateur Radio Club](https://fwarc.org/)
 
 HARC
 : [Highline Amateur Radio Club](https://www.highlinearc.org/)
@@ -104,6 +114,9 @@ MIRO
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://www.qrz.com/db/AA7MI)
 
+Mount Baker
+: [Mount Baker Amateur Radio Club](https://mbarc.groups.io/)
+
 N3KPU
 : [Michael N3KPU's repeater system](https://www.qrz.com/db/N3KPU)
 
@@ -130,6 +143,9 @@ Seattle ACS
 
 Shoreline
 : [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs/)
+
+W7TJL
+: [Tom W7TJL's repeater system](https://www.qrz.com/db/W7TJL)
 
 WA7TBP
 : [Tom WA7TBP's repeater system](https://www.qrz.com/db/wa7tbp)
