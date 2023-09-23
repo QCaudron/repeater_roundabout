@@ -137,7 +137,7 @@ OARS
 : [Olympia Amateur Radio Society](https://www.olyham.org/)
 
 PARET
-: [Peninsula Amateur Radio Emergency Team](https://www.qrz.com/db/KA7EOC)
+: [Peninsula Amateur Radio Emergency Team](https://piercecountyares.net/)
 
 PSRG
 : [Puget Sound Repeater Group](http://psrg.org)
