@@ -366,7 +366,7 @@
             -122.69499969
         ],
         "RepeaterBook ID": null,
-        "Group Name": "Kitsap",
+        "Group Name": "KCARC",
         "Location": "Silverdale",
         "Mode": "FM",
         "Long Name": "Kitsap County Amateur Radio Club",
@@ -383,7 +383,7 @@
             -122.70500183
         ],
         "RepeaterBook ID": null,
-        "Group Name": "Island County",
+        "Group Name": "ICARC",
         "Location": "Whidbey Isl.",
         "Mode": "FM",
         "Long Name": "Island County Amateur Radio Club",
@@ -442,40 +442,6 @@
         "Exclude": null
     },
     {
-        "Callsign": "WW7SEA",
-        "Output (MHz)": "444.550",
-        "Offset (MHz)": "+5.0",
-        "Tone (Hz)": "141.3",
-        "Coordinates": [
-            47.60430145,
-            -122.33000183
-        ],
-        "RepeaterBook ID": "3146",
-        "Group Name": "WW7SEA",
-        "Location": "Seattle",
-        "Mode": "FM",
-        "Long Name": "Barry K7PAL's Western Washington repeater system",
-        "Website": "https:\/\/www.qrz.com\/db\/ww7sea",
-        "Exclude": "1"
-    },
-    {
-        "Callsign": "WW7SEA",
-        "Output (MHz)": "444.425",
-        "Offset (MHz)": "+5.0",
-        "Tone (Hz)": "141.3",
-        "Coordinates": [
-            47.63180161,
-            -122.35399628
-        ],
-        "RepeaterBook ID": "6962",
-        "Group Name": "WW7SEA",
-        "Location": "Seattle",
-        "Mode": "FM",
-        "Long Name": "Barry K7PAL's Western Washington repeater system",
-        "Website": "https:\/\/www.qrz.com\/db\/ww7sea",
-        "Exclude": "1"
-    },
-    {
         "Callsign": "W7AUX",
         "Output (MHz)": "442.825",
         "Offset (MHz)": "+5.0",
@@ -485,7 +451,7 @@
             -122.3494988
         ],
         "RepeaterBook ID": null,
-        "Group Name": "Shoreline",
+        "Group Name": "Shoreline ACS",
         "Location": "Shoreline",
         "Mode": "FM",
         "Long Name": "Shoreline Auxiliary Communications Service",
@@ -502,7 +468,7 @@
             -122.3494988
         ],
         "RepeaterBook ID": null,
-        "Group Name": "Shoreline",
+        "Group Name": "Shoreline ACS",
         "Location": "Shoreline",
         "Mode": "FM",
         "Long Name": "Shoreline Auxiliary Communications Service",
@@ -519,7 +485,7 @@
             -122.3494988
         ],
         "RepeaterBook ID": null,
-        "Group Name": "Shoreline",
+        "Group Name": "Shoreline ACS",
         "Location": "Shoreline",
         "Mode": "FM",
         "Long Name": "Shoreline Auxiliary Communications Service",
@@ -587,7 +553,7 @@
             -122.15599823
         ],
         "RepeaterBook ID": "165",
-        "Group Name": "Lake Wash.",
+        "Group Name": "LWHC",
         "Location": "Kirkland",
         "Mode": "FM",
         "Long Name": "Lake Washington Ham Club",
@@ -604,7 +570,7 @@
             -122.15599823
         ],
         "RepeaterBook ID": null,
-        "Group Name": "Lake Wash.",
+        "Group Name": "LWHC",
         "Location": "Kirkland",
         "Mode": "FM",
         "Long Name": "Lake Washington Ham Club",
@@ -621,7 +587,7 @@
             -122.20899963
         ],
         "RepeaterBook ID": "5326",
-        "Group Name": "Lake Wash.",
+        "Group Name": "LWHC",
         "Location": "Kirkland",
         "Mode": "FM",
         "Long Name": "Lake Washington Ham Club",
@@ -638,7 +604,7 @@
             -122.20899963
         ],
         "RepeaterBook ID": "162",
-        "Group Name": "Lake Wash.",
+        "Group Name": "LWHC",
         "Location": "Kirkland",
         "Mode": "FM",
         "Long Name": "Lake Washington Ham Club",
