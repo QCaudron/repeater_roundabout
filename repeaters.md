@@ -73,6 +73,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 52    | Mount Baker   | K7SKW      | Bellingham       | FM        |        443.750 |           +5.0 |                      103.5 |
 | 53    | Mount Baker   | K7SKW      | Bellingham       | FM        |        147.160 |           +0.6 |                      103.5 |
 | 54    | Mount Baker   | K7SKW      | Bellingham       | Fusion    |        443.650 |           +5.0 |                      103.5 |
+| 55    | PARET         | KA7EOC     | Gig Harbor       | FM        |        145.350 |           -0.6 |                      103.5 |
 
 ---
 
@@ -128,6 +129,9 @@ Northshore
 
 OARS
 : [Olympia Amateur Radio Society](https://www.olyham.org/)
+
+PARET
+: [Peninsula Amateur Radio Emergency Team](https://www.qrz.com/db/KA7EOC)
 
 PSRG
 : [Puget Sound Repeater Group](http://psrg.org)
