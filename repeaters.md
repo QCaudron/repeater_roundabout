@@ -76,13 +76,15 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 55    | MBARC          | K7SKW      | Orcas Isl.       | FM        |        444.050 |           +5.0 |                      103.5 |
 | 56    | MBARC          | K7SKW      | Bellingham       | FM        |        443.750 |           +5.0 |                      103.5 |
 | 57    | MBARC          | K7SKW      | Bellingham       | FM        |        147.160 |           +0.6 |                      103.5 |
-| 58    | MBARC          | K7SKW      | Bellingham       | Fusion    |        443.650 |           +5.0 |                      103.5 |
+| 58    | MBARC          | K7SKW      | Bellingham       | YSF       |        443.650 |           +5.0 |                      103.5 |
 | 59    | PARET          | KA7EOC     | Gig Harbor       | FM        |        145.350 |           -0.6 |                      103.5 |
 | 60    | MCARC          | N7SK       | Shelton          | FM        |        146.720 |           -0.6 |                      103.5 |
 | 61    | MCARC          | N7SK       | Shelton          | FM        |        443.250 |           +5.0 |                      100.0 |
 | 62    | MCARC          | N7SK       | Shelton          | FM        |       927.4125 |          -25.0 |                      114.8 |
-| 63    | Snohomish      | WA7LAW     | Everett          | FM        |        147.180 |           +0.6 |                      103.5 |
-| 64    | Snohomish      | WA7LAW     | Everett          | Fusion    |        444.575 |           +5.0 |                      103.5 |
+| 63    | SCHC           | WA7LAW     | Everett          | FM        |        147.180 |           +0.6 |                      103.5 |
+| 64    | SCHC           | WA7LAW     | Everett          | YSF       |        444.575 |           +5.0 |                      103.5 |
+| 65    | NMARES         | NM7E       | Belfair          | FM        |        145.170 |           -0.6 |                      103.5 |
+| 66    | NMARES         | NM7E       | Belfair          | FM        |        224.260 |           -1.6 |                      103.5 |
 
 ---
 
@@ -136,6 +138,9 @@ N3KPU
 N7KN
 : [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)
 
+NMARES
+: [North Mason Amateur Radio Emergency Service Club](https://nmaresc.wordpress.com/)
+
 Northshore EMC
 : [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
 
@@ -149,7 +154,10 @@ PSRG
 : [Puget Sound Repeater Group](http://psrg.org)
 
 RASC
-: [Radio Amateurs of Skagit Valley](http://rasconline.com/)
+: [Radio Amateurs of Skagit County](http://rasconline.com/)
+
+SCHC
+: [Snohomish County Hams Club](http://www.wa7law.org/)
 
 SeaTac
 : [SeaTac Repeater Association](https://seatacra.com/)
@@ -159,9 +167,6 @@ Seattle ACS
 
 Shoreline ACS
 : [Shoreline Auxiliary Communications Service](https://sites.google.com/a/w7aux.org/shoreline-acs/)
-
-Snohomish
-: [Snohomish County Hams Club](http://www.wa7law.org/)
 
 W7TJL
 : [Tom W7TJL's repeater system](https://www.qrz.com/db/W7TJL)

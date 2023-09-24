@@ -97,7 +97,7 @@
         "Group Name":"RASC",
         "Location":"Lyman Hill",
         "Mode":"FM",
-        "Long Name":"Radio Amateurs of Skagit Valley",
+        "Long Name":"Radio Amateurs of Skagit County",
         "Website":"http:\/\/rasconline.com\/",
         "Exclude":null
     },
@@ -980,7 +980,7 @@
         "RepeaterBook ID":null,
         "Group Name":"MBARC",
         "Location":"Bellingham",
-        "Mode":"Fusion",
+        "Mode":"YSF",
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/",
         "Exclude":null
@@ -1063,7 +1063,7 @@
             -122.19499969
         ],
         "RepeaterBook ID":null,
-        "Group Name":"Snohomish",
+        "Group Name":"SCHC",
         "Location":"Everett",
         "Mode":"FM",
         "Long Name":"Snohomish County Hams Club",
@@ -1080,11 +1080,45 @@
             -122.19400024
         ],
         "RepeaterBook ID":null,
-        "Group Name":"Snohomish",
+        "Group Name":"SCHC",
         "Location":"Everett",
-        "Mode":"Fusion",
+        "Mode":"YSF",
         "Long Name":"Snohomish County Hams Club",
         "Website":"http:\/\/www.wa7law.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"145.170",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.386615,
+            -122.860995
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NMARES",
+        "Location":"Belfair",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"224.260",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.386615,
+            -122.860995
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NMARES",
+        "Location":"Belfair",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
         "Exclude":null
     }
 ]
