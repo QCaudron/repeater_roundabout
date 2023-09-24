@@ -45,3 +45,7 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 57,K7SKW,147.16,147.76,A-Analog,0,25K,103.5,,,1,,North
 58,K7SKW,443.65,448.65,A-Analog,0,25K,103.5,,,1,,North
 59,KA7EOC,145.35,144.75,A-Analog,0,25K,103.5,,,1,,Metro
+60,N7SK,146.72,146.12,A-Analog,0,25K,103.5,,,1,,South
+61,N7SK,443.25,448.25,A-Analog,0,25K,100.0,,,1,,South
+63,WA7LAW,147.18,147.78,A-Analog,0,25K,103.5,,,1,,North
+64,WA7LAW,444.575,449.575,A-Analog,0,25K,103.5,,,1,,North

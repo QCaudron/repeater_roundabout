@@ -202,6 +202,7 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
 
     if args.regen or args.score:
         df = pd.read_json("assets/repeaters.json", dtype=False)
+        df.to_json("assets/repeaters.json", orient="records", indent=4)
         df["RR#"] = df.index + 1
         return df
 
@@ -219,7 +220,7 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
 
     # Save a new known repeaters file
     df = df.reset_index(drop=True)
-    df.to_json("assets/repeaters.json", orient="records", indent=4)
+    df.to_json("assets/repeaters.json", orient="columns")
 
     # Assign a Repeater Roundabout number to each repeater
     # This shouldn't be in the .json because it's not a repeater attribute
