@@ -797,5 +797,65 @@
         "Long Name":"Madigan Army Medical Center",
         "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
         "Exclude":null
+    },
+    {
+        "Group Name": "Eatonville",
+        "Callsign": "W7EAT",
+        "Location": "Eatonville",
+        "Mode": "FM",
+        "Output (MHz)": "146.700",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
+            46.843101,
+            -122.314956
+        ],
+        "Long Name": "Eatonville Amateur Radio Club",
+        "Website": "https:\/\/www.qrz.com\/db\/W7EAT"
+    },
+    {
+        "Group Name": "Eatonville",
+        "Callsign": "W7EAT",
+        "Location": "Graham",
+        "Mode": "FM",
+        "Output (MHz)": "224.180",
+        "Offset (MHz)": "-1.6",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
+            47.053156,
+            -122.294825
+        ],
+        "Long Name": "Eatonville Amateur Radio Club",
+        "Website": "https:\/\/www.qrz.com\/db\/W7EAT"
+    },
+    {
+        "Group Name": "Eatonville",
+        "Callsign": "W7EAT",
+        "Location": "Eatonville",
+        "Mode": "FM",
+        "Output (MHz)": "442.725",
+        "Offset (MHz)": "+5.0",
+        "Tone (Hz)": "103.5",
+        "Coordinates": [
+            46.843101,
+            -122.314956
+        ],
+        "Long Name": "Eatonville Amateur Radio Club",
+        "Website": "https:\/\/www.qrz.com\/db\/W7EAT"
+    },
+    {
+        "Group Name": "Pierce",
+        "Callsign": "W7AAO",
+        "Location": "Grass Mtn.",
+        "Mode": "FM",
+        "Output (MHz)": "145.370",
+        "Offset (MHz)": "-0.6",
+        "Tone (Hz)": "136.5",
+        "Coordinates": [
+            47.19979858,
+            -121.7559967
+        ],
+        "Long Name": "Pierce County ARES",
+        "Website": "http:\/\/www.piercecountyares.net"
     }
 ]
