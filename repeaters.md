@@ -85,6 +85,10 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 64    | SCHC           | WA7LAW     | Everett          | YSF       |        444.575 |           +5.0 |                      103.5 |
 | 65    | NMARES         | NM7E       | Belfair          | FM        |        145.170 |           -0.6 |                      103.5 |
 | 66    | NMARES         | NM7E       | Belfair          | FM        |        224.260 |           -1.6 |                      103.5 |
+| 67    | Eatonville     | W7EAT      | Eatonville       | FM        |        146.700 |           -0.6 |                      103.5 |
+| 68    | Eatonville     | W7EAT      | Graham           | FM        |        224.180 |           -1.6 |                      103.5 |
+| 69    | Eatonville     | W7EAT      | Eatonville       | FM        |        442.725 |           +5.0 |                      103.5 |
+| 70    | Pierce         | W7AAO      | Grass Mtn.       | FM        |        145.370 |           -0.6 |                      136.5 |
 
 ---
 
@@ -95,6 +99,9 @@ BEARONS
 
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears)
+
+Eatonville
+: [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)
 
 FWARC
 : [Federal Way Amateur Radio Club](https://fwarc.org/)
@@ -152,6 +159,9 @@ PARET
 
 PSRG
 : [Puget Sound Repeater Group](http://psrg.org)
+
+Pierce
+: [Pierce County ARES](http://www.piercecountyares.net)
 
 RASC
 : [Radio Amateurs of Skagit County](http://rasconline.com/)

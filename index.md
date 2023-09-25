@@ -18,7 +18,7 @@ The Repeater Roundabout is a weekend-long event held on many of our local repeat
 
 Anyone with a ham radio license can participate ! You don't even have to be local; stations may participate over Echolink or Allstar if they are available.
 
-> This page was last updated on Sunday September 24 at 16:11.
+> This page was last updated on Monday September 25 at 09:28.
 
 ---
 
@@ -27,7 +27,7 @@ Anyone with a ham radio license can participate ! You don't even have to be loca
 
 To get started, check out the [Rules](./rules) page.
 
-Then, check out the list of [66 participating repeaters](./repeaters) from across 29 radio groups that you'll play on during the contest. You can also [view the map](./map) to see where the repeaters are located.
+Then, check out the list of [70 participating repeaters](./repeaters) from across 31 radio groups that you'll play on during the contest. You can also [view the map](./map) to see where the repeaters are located.
 
 We provide [files to program your radios](./files) with Chirp and other software.
 

@@ -42,7 +42,7 @@ L.marker([47.8566093400, -122.2836761500]).bindPopup('RR# 37 - W7FLY (443.925)<b
 L.marker([47.7376770000, -122.2307900000]).bindPopup('RR# 38 - NE7MC (442.000)<br>').addTo(map);
 L.marker([47.4890273500, -121.9525130500]).bindPopup('RR# 39 - WW7STR (146.875)<br>RR# 42 - WW7STR (443.050)<br>').addTo(map);
 L.marker([47.5455996167, -122.1046651167]).bindPopup('RR# 40 - WW7STR (224.440)<br>RR# 41 - WW7STR (441.550)<br>RR# 43 - WW7STR (927.2125)<br>').addTo(map);
-L.marker([47.0528984100, -122.2939987200]).bindPopup('RR# 44 - N3KPU (145.230)<br>').addTo(map);
+L.marker([47.0530272050, -122.2944118600]).bindPopup('RR# 44 - N3KPU (145.230)<br>RR# 68 - W7EAT (224.180)<br>').addTo(map);
 L.marker([47.1091003400, -122.5530014000]).bindPopup('RR# 45 - KE7YYD (442.750)<br>').addTo(map);
 L.marker([47.3928350000, -122.6022500000]).bindPopup('RR# 46 - W7TJL (224.200)<br>RR# 59 - KA7EOC (145.350)<br>').addTo(map);
 L.marker([47.3181753175, -122.3155021675]).bindPopup('RR# 47 - WA7FW (147.040)<br>RR# 48 - WA7FW (146.760)<br>RR# 49 - WA7FW (442.950)<br>RR# 53 - WA7FW (1290.100)<br>').addTo(map);
@@ -54,5 +54,7 @@ L.marker([48.8017997750, -122.4614982650]).bindPopup('RR# 57 - K7SKW (147.160)<b
 L.marker([47.2150993300, -123.1009979200]).bindPopup('RR# 60 - N7SK (146.720)<br>RR# 61 - N7SK (443.250)<br>RR# 62 - N7SK (927.4125)<br>').addTo(map);
 L.marker([47.9979496000, -122.1944999650]).bindPopup('RR# 63 - WA7LAW (147.180)<br>RR# 64 - WA7LAW (444.575)<br>').addTo(map);
 L.marker([47.3866150000, -122.8609950000]).bindPopup('RR# 65 - NM7E (145.170)<br>RR# 66 - NM7E (224.260)<br>').addTo(map);
+L.marker([46.8431010000, -122.3149560000]).bindPopup('RR# 67 - W7EAT (146.700)<br>RR# 69 - W7EAT (442.725)<br>').addTo(map);
+L.marker([47.1997985800, -121.7559967000]).bindPopup('RR# 70 - W7AAO (145.370)<br>').addTo(map);
 
 </script>
