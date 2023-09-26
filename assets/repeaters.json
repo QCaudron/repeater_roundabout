@@ -437,7 +437,7 @@
         "Group Name":"WW7SEA",
         "Location":"Seattle",
         "Mode":"FM",
-        "Long Name":"Barry K7PAL's Western Washington repeater system",
+        "Long Name":"Barry K7PAL's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
         "Exclude":null
     },
@@ -1187,6 +1187,74 @@
         "Mode":"FM",
         "Long Name":"Pierce County ARES",
         "Website":"http:\/\/www.piercecountyares.net",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LED",
+        "Output (MHz)":"146.820",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48820114,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"302",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/index.php",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LED",
+        "Output (MHz)":"224.120",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48839951,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"441",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/index.php",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7HJR",
+        "Output (MHz)":"444.650",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            47.48839951,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"260",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/index.php",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KB7CNN",
+        "Output (MHz)":"1292.200",
+        "Offset (MHz)":"-20.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48839951,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"222",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/index.php",
         "Exclude":null
     }
 ]

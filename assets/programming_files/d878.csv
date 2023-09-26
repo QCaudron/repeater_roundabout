@@ -51,3 +51,5 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 67,W7EAT,146.7,146.1,A-Analog,0,25K,103.5,,,1,,South
 69,W7EAT,442.725,447.725,A-Analog,0,25K,103.5,,,1,,South
 70,W7AAO,145.37,144.77,A-Analog,0,25K,136.5,,,1,,South
+71,K7LED,146.82,146.22,A-Analog,0,25K,103.5,,,1,,Metro
+73,WA7HJR,444.65,449.65,A-Analog,0,25K,131.8,,,1,,Metro
