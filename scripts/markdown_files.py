@@ -179,7 +179,7 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
         f.write(maps)
 
 
-def write_map_md(df: pd.DataFrame, threshold: float = 0.03) -> None:
+def write_map_md(df: pd.DataFrame, threshold: float = 0.005) -> None:
     """
     Write the map.md file.
 
