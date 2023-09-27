@@ -25,9 +25,9 @@ Feel free to chat about anything and everything, though !
 
 # Scoring
 
-- You score one point for each contact you make on any repeater in this list. Multiple contacts on the same repeater count this year, so feel free to "run" a repeater ! The person you contact does not necessarily have to be participating in the Repeater Roundabout for you to score a point -- any contact counts.
-- Collect 'em all ! If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score doubles for that system. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log a contact on all three of them, you score six points instead of three.
-- It pays to QRP. If you're running 5W or less, the points you score are doubled.
+- **One point per contact.** You score one point for each contact you make on any repeater in this list. Multiple contacts on the same repeater count this year, so feel free to "run" a repeater ! Treat this like "running a frequency" during a contest. Also note that the person you contact does not necessarily have to be participating in the Repeater Roundabout for you to score a point -- any contact counts.
+- **Collect 'em all !** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score doubles for that system. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log a contact on all three of them, you score six points instead of three.
+- **It pays to QRP.** If you're running 5W or less, the points you score are doubled.
 
 
 # Logging
@@ -61,10 +61,10 @@ Is there a prize ?
 : Fame and fortune await you ! Or at least fame. There might be a trophy too.
 
 Can I arrange a contact beforehand ?
-: Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine.
+: Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine. We have a [Discord system](https://discord.gg/BBpbESxSCm) that's a great place to arrange a sked, or see who's around to find you on a repeater.
 
-Can I use Echolink or Allstar ?
-: You sure can ! The rules are the same, and nothing changes in the way you log your contacts. If a repeater has Echolink or Allstar, you can use it to make your contact.
+Can I use Echolink, Allstar, or IRLP ?
+: You sure can ! The rules are the same, and nothing changes in the way you log your contacts. If a repeater has Echolink, Allstar, or IRLP, you can use it to make your contact.
 
 Will each repeater have a club member monitoring ?
 : Perhaps ! This will come down to club strategy. Get on a repeater, ask to chat to someone, and see what happens. If you're lucky, you'll find someone who's also participating in the Repeater Roundabout, and you can share your progress. If they aren't, you can still chat about anything and everything, and the contact still counts.
