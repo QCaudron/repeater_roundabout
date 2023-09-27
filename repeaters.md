@@ -12,7 +12,8 @@ display the repeater information for each displayed frequency.
 </p>
 
 The following repeaters are participating in the Repeater Roundabout. Please ensure you **do not
-interfere** with the repeater's normal operation, including regular nets.
+interfere** with the repeater's normal operation, including regular nets. If someone on the repeater
+asks you to hold off on making contacts, please come back later.
 
 Get started by [programming your radio](/files), and check out the repeaters' locations on the
 [repeater map](/map).

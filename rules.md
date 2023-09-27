@@ -46,11 +46,11 @@ Here's an example log file :
 
 | Date   | Time  | Callsign | Report | RR#  |  QRP  |
 | :----- | :---- | :------- | -----: | :--- | :---: |
-| Nov 19 | 11:32 | KI7RMU   |    CM5 | 1    |   X   |
-| Nov 19 | 17:02 | KD7DK    |     59 | 35   |   X   |
-| Nov 20 | 08:51 | K7RCH    |    CM4 | 57   |       |
-| Nov 20 | 13:16 | KX2CW    |    CM2 | 22   |   X   |
-| Nov 20 | 13:16 | KD7WGN   |     45 | 102  |       |
+| Nov 11 | 11:32 | KI7RMU   |    CM5 | 1    |   X   |
+| Nov 11 | 17:02 | KD7DK    |     59 | 35   |   X   |
+| Nov 12 | 08:51 | WB7J     |    CM4 | 57   |       |
+| Nov 12 | 13:16 | K7MCK    |    CM2 | 22   |   X   |
+| Nov 12 | 13:16 | KD7WGN   |     45 | 102  |       |
 
 Logs can be submitted [on this page](/logging). After the contest, a leaderboard will be published on this website. Logs must be returned to K7DRQ by November 20th to qualify.
 
