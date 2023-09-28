@@ -517,5 +517,5 @@ def write_generic_csv(df: pd.DataFrame) -> None:
         .drop(columns=["Group Name", "Website", "RR#", "Coordinates"], axis=1)
         .rename(columns={"Long Name": "Group"})
     )
-    # df.index = df.index + 1
+    df.index = df.index + 1
     df.to_csv("assets/programming_files/all_rr_frequencies.csv")
