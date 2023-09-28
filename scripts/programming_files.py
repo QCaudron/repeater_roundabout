@@ -512,8 +512,10 @@ def write_generic_csv(df: pd.DataFrame) -> None:
         All of the repeaters.
     """
 
-    (
-        df.drop(columns=["Group Name", "Website", "RR#", "Coordinates"], axis=1)
+    df = (
+        df.copy()
+        .drop(columns=["Group Name", "Website", "RR#", "Coordinates"], axis=1)
         .rename(columns={"Long Name": "Group"})
-        .to_csv("assets/programming_files/all_rr_frequencies.csv")
     )
+    # df.index = df.index + 1
+    df.to_csv("assets/programming_files/all_rr_frequencies.csv")

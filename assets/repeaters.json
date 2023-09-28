@@ -85,6 +85,23 @@
         "Exclude":null
     },
     {
+        "Callsign":"K7DK",
+        "Output (MHz)":"440.950",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            47.77249908,
+            -122.93000031
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7DK",
+        "Location":"Buck Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mark K7DK's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K7DK",
+        "Exclude":null
+    },
+    {
         "Callsign":"N7GDE",
         "Output (MHz)":"145.190",
         "Offset (MHz)":"-0.6",
@@ -1255,6 +1272,74 @@
         "Mode":"FM",
         "Long Name":"Mike & Key Amateur Radio Club",
         "Website":"https:\/\/www.mikeandkey.org\/index.php",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"53.430",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.65579987,
+            -122.54799652
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Bainbridge",
+        "Location":"Bainbridge Isl.",
+        "Mode":"FM",
+        "Long Name":"Bainbridge Island Amateur Radio Club",
+        "Website":"https:\/\/www.w7npc.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"444.475",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.65579987,
+            -122.54799652
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Bainbridge",
+        "Location":"Bainbridge Isl.",
+        "Mode":"FM",
+        "Long Name":"Bainbridge Island Amateur Radio Club",
+        "Website":"https:\/\/www.w7npc.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"444.5625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.65579987,
+            -122.54799652
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Bainbridge",
+        "Location":"Bainbridge Isl.",
+        "Mode":"DSTAR",
+        "Long Name":"Bainbridge Island Amateur Radio Club",
+        "Website":"https:\/\/www.w7npc.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"1290.500",
+        "Offset (MHz)":"-20.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.65579987,
+            -122.54799652
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Bainbridge",
+        "Location":"Bainbridge Isl.",
+        "Mode":"DSTAR",
+        "Long Name":"Bainbridge Island Amateur Radio Club",
+        "Website":"https:\/\/www.w7npc.org",
         "Exclude":null
     }
 ]
