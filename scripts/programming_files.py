@@ -118,9 +118,9 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df = df.loc[df["Exclude"].isna()]
 
     # Only format FM channels; we can't handle DMR or D-Star at the moment
-    df = filter_by_mode(df, ["FM", "NBFM", "Fusion"])  # only FM repeaters
+    df = filter_by_mode(df, ["FM", "NBFM", "YSF"])  # only FM repeaters
     df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
-    df.loc[df["Mode"] == "Fusion", "Mode"] = "FM"  # Fusion -> FM for Chirp
+    df.loc[df["Mode"] == "YSF", "Mode"] = "FM"  # YSF -> FM for Chirp
 
     print(f"Chirp: {len(df)} compatible repeaters (out of {total_repeaters} known).")
 
@@ -206,8 +206,8 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     # Remove repeaters not in the contest
     df = df.loc[df["Exclude"].isna()]
 
-    # Select FM, DMR and Fusion (in FM compat mode) channels in the 2m or 70cm bands.
-    df = filter_by_mode(df, ["FM", "NBFM", "DMR", "Fusion"])
+    # Select FM, DMR and YSF (in FM compat mode) channels in the 2m or 70cm bands.
+    df = filter_by_mode(df, ["FM", "NBFM", "DMR", "YSF"])
     df = filter_by_band(df, ["2m", "70cm"])
 
     # Set the RR number as the channel number
@@ -237,7 +237,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[~is_dmr, "DMR MODE"] = "0"
 
     # Both DMR and NBFM are "narrow"
-    is_widefm = df["Mode"].isin(["FM", "Fusion"])
+    is_widefm = df["Mode"].isin(["FM", "YSF"])
     df_878.loc[is_widefm, "Band Width"] = "25K"
     df_878.loc[~is_widefm, "Band Width"] = "12.5K"
 
@@ -291,8 +291,8 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     # Remove repeaters not in the contest
     df = df.loc[df["Exclude"].isna()]
 
-    # Select FM and Fusion (in FM compat mode) channels.
-    df = filter_by_mode(df, ["FM", "NBFM", "Fusion", "DSTAR"])
+    # Select FM and YSF (in FM compat mode) channels.
+    df = filter_by_mode(df, ["FM", "NBFM", "YSF", "DSTAR"])
     df = filter_by_band(df, ["6m", "2m", "70cm"])
 
     # Treat output and offset as numerical values
