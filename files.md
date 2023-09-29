@@ -7,17 +7,32 @@ In order to make the contesting life a little easier, here are some files you ca
 
 These files are automatically generated each time a new repeater is added. Many thanks to [Mike K7MCK](https://www.qrz.com/db/k7mck) for contributing code to generate the AnyTone D878 and Icom IC-705 files, and for the videos you see below on programming your radios specifically for the Repeater Roundabout.
 
-| Download | Type | FM | DMR | DSTAR | Fusion |
-|:--------:|:-----|:--:|:---:|:-----:|:------:|
-| <a href="assets/programming_files/rr_frequencies.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | [Chirp](https://chirp.danplanet.com/projects/chirp/wiki/Home) | <img src="assets/images/check-solid.svg" height="20px" /> | | | <img src="assets/images/check-solid.svg" height="20px" /> |
-| <a href="assets/programming_files/d878.zip" download><img src="assets/images/download-solid.svg" height="30px" /></a> | [AnyTone AT-D878](https://support.bridgecomsystems.com/anytone-878-v2-model-cps-firmware-downloads) | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> |
-| <a href="assets/programming_files/icom.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | [Icom IC-705](https://www.icomjapan.com/support/firmware_driver/3067/) | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> |
-| <a href="assets/programming_files/all_rr_frequencies.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | All repeaters | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> |
+
+## Downloading files
+
+Which file do you need ?
+
+- The <a href="assets/programming_files/all_rr_frequencies.csv" download><b>All Repeaters</b></a> file contains every repeater that is participating in the Repeater Roundabout. It is not formatted for any particular radio, but you should be able to modify it for your radio of choice.
+- The <a href="assets/programming_files/rr_frequencies.csv" download><b>Chirp</b></a> file is helpful for radios that are programmable by Chirp. It does not include DMR or DSTAR repeaters.
+- The [**AnyTone D878**](assets/programming_files/d878.zip) file is specifically for the AnyTone D878 radio. It includes DMR and YSF repeaters.
+- The [**Icom IC-705**](assets/programming_files/icom.csv) file is specifically for the Icom IC-705 radio. It includes DSTAR and YSF repeaters.
 
 <p style="margin-bottom: 1rem; margin-top: 0"><br /></p>
 
+| Click to download | Type | FM | DMR | DSTAR | Fusion |
+|:--------:|:-----|:--:|:---:|:-----:|:------:|
+| <a href="assets/programming_files/all_rr_frequencies.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | All repeaters | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> |
+| <a href="assets/programming_files/rr_frequencies.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | Chirp | <img src="assets/images/check-solid.svg" height="20px" /> | | | <img src="assets/images/check-solid.svg" height="20px" /> |
+| <a href="assets/programming_files/d878.zip" download><img src="assets/images/download-solid.svg" height="30px" /></a> | AnyTone AT-D878 | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> |
+| <a href="assets/programming_files/icom.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | Icom IC-705 | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> |
 
-## Chirp help
+<p style="margin-bottom: 1rem; margin-top: 0"><br /></p>
+
+## Help programming radios
+
+
+
+### Chirp
 
 [Chirp](https://chirp.danplanet.com/projects/chirp/wiki/Home) is a free, open-source tool for
 programming a large number of radios.
@@ -45,7 +60,7 @@ For more information, check out [Chirp's Wiki](https://chirp.danplanet.com/proje
 <p style="margin-bottom: 1rem; margin-top: 0"><br /></p>
 
 
-## AnyTone D878 instructions
+### AnyTone D878
 
 Our <a href="assets/programming_files/d878.zip" download>download for the
 D878</a> is a zip file containing three files :
@@ -75,7 +90,7 @@ appropriate category (Channel, Scan List, and/or Talk Groups).
 
 
 
-## Icom IC-705 instructions
+### Icom IC-705
 
 *These have been tested with the Icom-705.  If you have an Icom 7300 (or other Icom radio), please
 let us know if this file is also compatible with your radio.*
@@ -91,8 +106,3 @@ let us know if this file is also compatible with your radio.*
    downloaded <a href="asserts/programming_files/icom.csv" download>icom.csv</a>file.
 
 <p style="margin-bottom: 1rem; margin-top: 0"><br /></p>
-
-
-## All repeaters
-
-<a href="assets/programming_files/all_rr_frequencies.csv" download>This file</a> contains frequencies for all repeaters, not formatted for any particular program. You should be able to modify it for your radio of choice.

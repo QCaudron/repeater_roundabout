@@ -28,7 +28,7 @@ Feel free to chat about anything and everything, though !
 
 - **One point per contact.** You score one point for each contact you make on any repeater in this list. Multiple contacts on the same repeater count this year, so feel free to "run" a repeater ! Treat this like "running a frequency" during a contest. Also note that the person you contact does not necessarily have to be participating in the Repeater Roundabout for you to score a point -- any non-duplicate contact counts. Note that *duplicate contacts with the same person, on the same repeater, do not count*.
 - **It pays to QRP.** If you're running 5W or less, the contact is worth double.
-- **Collect 'em all !** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score for that system is multiplied by the number of repeaters. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log 10 points across PSRG repeaters, but you've hit each of them at least once, that's worth 30 points instead. If you hit all 8 W7ACS repeaters, you get an 8x multiplier for your points on them.
+- **Collect 'em all !** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score for that system is multiplied by the number of repeaters. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log 10 points across PSRG repeaters, but you've hit each of them at least once, that's worth 30 points instead. If you hit all 7 W7ACS repeaters, you get a 7x multiplier for your points on them.
 
 
 # Logging
