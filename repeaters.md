@@ -45,61 +45,60 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 23    | KCARC          | KC7Z       | Silverdale       | FM        |        444.075 |           +5.0 |                      103.5 |
 | 24    | ICARC          | W7AVM      | Whidbey Isl.     | FM        |        146.860 |           -0.6 |                      127.3 |
 | 25    | N7KN           | N7KN       | Whidbey Isl.     | FM        |        441.425 |           +5.0 |                      110.9 |
-| 26    | K7DK           | K7DK       | Buck Mtn.        | FM        |        440.950 |           +5.0 |                      110.9 |
-| 27    | WW7SEA         | WW7SEA     | Seattle          | FM        |        444.700 |           +5.0 |                      103.5 |
-| 28    | Shoreline ACS  | W7AUX      | Shoreline        | FM        |        442.825 |           +5.0 |                      103.5 |
-| 29    | Shoreline ACS  | W7AUX      | Shoreline        | FM        |        440.300 |           +5.0 |                      103.5 |
-| 30    | Shoreline ACS  | W7AUX      | Shoreline        | FM        |        224.020 |           -1.6 |                      103.5 |
-| 31    | BEARS          | K7NWS      | Tiger Mtn.       | FM        |        145.330 |           -0.6 |                      179.9 |
-| 32    | BEARS          | K7NWS      | Tiger Mtn.       | FM        |        224.340 |           -1.6 |                      110.9 |
-| 33    | BEARS          | K7NWS      | Tiger Mtn.       | DMR[^dmr] |        442.075 |           +5.0 |   CC2/TS1 BEARS1 TG/312488 |
-| 34    | LWHC           | K7LWH      | Kirkland         | FM        |         53.170 |           -1.7 |                      100.0 |
-| 35    | LWHC           | K7LWH      | Kirkland         | FM        |        145.490 |           -0.6 |                      103.5 |
-| 36    | LWHC           | K7LWH      | Kirkland         | FM        |        224.360 |           -1.6 |                      103.5 |
-| 37    | LWHC           | K7LWH      | Kirkland         | FM        |        441.075 |           +5.0 |                      103.5 |
-| 38    | BEARONS        | W7FLY      | Lynnwood         | FM        |        443.925 |           +5.0 |                      100.0 |
-| 39    | Northshore EMC | NE7MC      | Kenmore          | FM        |        442.000 |           +5.0 |                      141.3 |
-| 40    | SeaTac         | WW7STR     | Tiger Mtn.       | DMR[^dmr] |        146.875 |           -0.6 |     CC1/TS1 Local1 TG/3181 |
-| 41    | SeaTac         | WW7STR     | Cougar Mtn.      | FM        |        224.440 |           -1.6 |                      103.5 |
-| 42    | SeaTac         | WW7STR     | Cougar Mtn.      | FM        |        441.550 |           +5.0 |                      103.5 |
-| 43    | SeaTac         | WW7STR     | Tiger Mtn.       | FM        |        443.050 |           +5.0 |                      103.5 |
-| 44    | SeaTac         | WW7STR     | Cougar Mtn.      | FM        |       927.2125 |          -25.0 |                      114.8 |
-| 45    | N3KPU          | N3KPU      | Graham           | FM        |        145.230 |           -0.6 |                      146.2 |
-| 46    | Madigan Army   | KE7YYD     | JBLM             | FM        |        442.750 |           +5.0 |                      146.2 |
-| 47    | W7TJL          | W7TJL      | Gig Harbor       | FM        |        224.200 |           -1.6 |                      123.0 |
-| 48    | FWARC          | WA7FW      | Federal Way      | FM        |        147.040 |           +0.6 |                      103.5 |
-| 49    | FWARC          | WA7FW      | Federal Way      | FM        |        146.760 |           -0.6 |                      103.5 |
-| 50    | FWARC          | WA7FW      | Federal Way      | FM        |        442.950 |           +5.0 |                      103.5 |
-| 51    | FWARC          | WA7FW      | Federal Way      | FM        |        442.925 |           +5.0 |                 D036[^dcs] |
-| 52    | FWARC          | WA7FW      | Federal Way      | DSTAR     |        146.840 |           -0.6 |                            |
-| 53    | FWARC          | WA7FW      | Federal Way      | DSTAR     |        443.850 |           +5.0 |                            |
-| 54    | FWARC          | WA7FW      | Federal Way      | DSTAR     |       1290.100 |          -20.0 |                            |
-| 55    | MBARC          | K7SKW      | Orcas Isl.       | FM        |        146.740 |           -0.6 |                      103.5 |
-| 56    | MBARC          | K7SKW      | Orcas Isl.       | FM        |        444.050 |           +5.0 |                      103.5 |
-| 57    | MBARC          | K7SKW      | Bellingham       | FM        |        443.750 |           +5.0 |                      103.5 |
-| 58    | MBARC          | K7SKW      | Bellingham       | FM        |        147.160 |           +0.6 |                      103.5 |
-| 59    | MBARC          | K7SKW      | Bellingham       | YSF       |        443.650 |           +5.0 |                      103.5 |
-| 60    | PARET          | KA7EOC     | Gig Harbor       | FM        |        145.350 |           -0.6 |                      103.5 |
-| 61    | MCARC          | N7SK       | Shelton          | FM        |        146.720 |           -0.6 |                      103.5 |
-| 62    | MCARC          | N7SK       | Shelton          | FM        |        443.250 |           +5.0 |                      100.0 |
-| 63    | MCARC          | N7SK       | Shelton          | FM        |       927.4125 |          -25.0 |                      114.8 |
-| 64    | SCHC           | WA7LAW     | Everett          | FM        |        147.180 |           +0.6 |                      103.5 |
-| 65    | SCHC           | WA7LAW     | Everett          | YSF       |        444.575 |           +5.0 |                      103.5 |
-| 66    | NMARES         | NM7E       | Belfair          | FM        |        145.170 |           -0.6 |                      103.5 |
-| 67    | NMARES         | NM7E       | Belfair          | FM        |        224.260 |           -1.6 |                      103.5 |
-| 68    | Eatonville     | W7EAT      | Eatonville       | FM        |        146.700 |           -0.6 |                      103.5 |
-| 69    | Eatonville     | W7EAT      | Graham           | FM        |        224.180 |           -1.6 |                      103.5 |
-| 70    | Eatonville     | W7EAT      | Eatonville       | FM        |        442.725 |           +5.0 |                      103.5 |
-| 71    | Pierce         | W7AAO      | Grass Mtn.       | FM        |        145.370 |           -0.6 |                      136.5 |
-| 72    | Mike & Key     | K7LED      | Tiger Mtn.       | FM        |        146.820 |           -0.6 |                      103.5 |
-| 73    | Mike & Key     | K7LED      | Tiger Mtn.       | FM        |        224.120 |           -1.6 |                      103.5 |
-| 74    | Mike & Key     | WA7HJR     | Tiger Mtn.       | FM        |        444.650 |           +5.0 |                      131.8 |
-| 75    | Mike & Key     | KB7CNN     | Tiger Mtn.       | FM        |       1292.200 |          -20.0 |                      103.5 |
-| 76    | Bainbridge     | W7NPC      | Bainbridge Isl.  | FM        |         53.430 |           -1.7 |                      100.0 |
-| 77    | Bainbridge     | W7NPC      | Bainbridge Isl.  | FM        |        444.475 |           +5.0 |                      103.5 |
-| 78    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       444.5625 |           +5.0 |                            |
-| 79    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       1290.500 |          -20.0 |                            |
-| 80    | K6MBY          | K6MBY      | Sequim           | FM        |        444.900 |           +5.0 |                      131.8 |
+| 26    | WW7SEA         | WW7SEA     | Seattle          | FM        |        444.700 |           +5.0 |                      103.5 |
+| 27    | Shoreline ACS  | W7AUX      | Shoreline        | FM        |        442.825 |           +5.0 |                      103.5 |
+| 28    | Shoreline ACS  | W7AUX      | Shoreline        | FM        |        440.300 |           +5.0 |                      103.5 |
+| 29    | Shoreline ACS  | W7AUX      | Shoreline        | FM        |        224.020 |           -1.6 |                      103.5 |
+| 30    | BEARS          | K7NWS      | Tiger Mtn.       | FM        |        145.330 |           -0.6 |                      179.9 |
+| 31    | BEARS          | K7NWS      | Tiger Mtn.       | FM        |        224.340 |           -1.6 |                      110.9 |
+| 32    | BEARS          | K7NWS      | Tiger Mtn.       | DMR[^dmr] |        442.075 |           +5.0 |   CC2/TS1 BEARS1 TG/312488 |
+| 33    | LWHC           | K7LWH      | Kirkland         | FM        |         53.170 |           -1.7 |                      100.0 |
+| 34    | LWHC           | K7LWH      | Kirkland         | FM        |        145.490 |           -0.6 |                      103.5 |
+| 35    | LWHC           | K7LWH      | Kirkland         | FM        |        224.360 |           -1.6 |                      103.5 |
+| 36    | LWHC           | K7LWH      | Kirkland         | FM        |        441.075 |           +5.0 |                      103.5 |
+| 37    | BEARONS        | W7FLY      | Lynnwood         | FM        |        443.925 |           +5.0 |                      100.0 |
+| 38    | Northshore EMC | NE7MC      | Kenmore          | FM        |        442.000 |           +5.0 |                      141.3 |
+| 39    | SeaTac         | WW7STR     | Tiger Mtn.       | DMR[^dmr] |        146.875 |           -0.6 |     CC1/TS1 Local1 TG/3181 |
+| 40    | SeaTac         | WW7STR     | Cougar Mtn.      | FM        |        224.440 |           -1.6 |                      103.5 |
+| 41    | SeaTac         | WW7STR     | Cougar Mtn.      | FM        |        441.550 |           +5.0 |                      103.5 |
+| 42    | SeaTac         | WW7STR     | Tiger Mtn.       | FM        |        443.050 |           +5.0 |                      103.5 |
+| 43    | SeaTac         | WW7STR     | Cougar Mtn.      | FM        |       927.2125 |          -25.0 |                      114.8 |
+| 44    | N3KPU          | N3KPU      | Graham           | FM        |        145.230 |           -0.6 |                      146.2 |
+| 45    | Madigan Army   | KE7YYD     | JBLM             | FM        |        442.750 |           +5.0 |                      146.2 |
+| 46    | W7TJL          | W7TJL      | Gig Harbor       | FM        |        224.200 |           -1.6 |                      123.0 |
+| 47    | FWARC          | WA7FW      | Federal Way      | FM        |        147.040 |           +0.6 |                      103.5 |
+| 48    | FWARC          | WA7FW      | Federal Way      | FM        |        146.760 |           -0.6 |                      103.5 |
+| 49    | FWARC          | WA7FW      | Federal Way      | FM        |        442.950 |           +5.0 |                      103.5 |
+| 50    | FWARC          | WA7FW      | Federal Way      | FM        |        442.925 |           +5.0 |                 D036[^dcs] |
+| 51    | FWARC          | WA7FW      | Federal Way      | DSTAR     |        146.840 |           -0.6 |                            |
+| 52    | FWARC          | WA7FW      | Federal Way      | DSTAR     |        443.850 |           +5.0 |                            |
+| 53    | FWARC          | WA7FW      | Federal Way      | DSTAR     |       1290.100 |          -20.0 |                            |
+| 54    | MBARC          | K7SKW      | Orcas Isl.       | FM        |        146.740 |           -0.6 |                      103.5 |
+| 55    | MBARC          | K7SKW      | Orcas Isl.       | FM        |        444.050 |           +5.0 |                      103.5 |
+| 56    | MBARC          | K7SKW      | Bellingham       | FM        |        443.750 |           +5.0 |                      103.5 |
+| 57    | MBARC          | K7SKW      | Bellingham       | FM        |        147.160 |           +0.6 |                      103.5 |
+| 58    | MBARC          | K7SKW      | Bellingham       | YSF       |        443.650 |           +5.0 |                      103.5 |
+| 59    | PARET          | KA7EOC     | Gig Harbor       | FM        |        145.350 |           -0.6 |                      103.5 |
+| 60    | MCARC          | N7SK       | Shelton          | FM        |        146.720 |           -0.6 |                      103.5 |
+| 61    | MCARC          | N7SK       | Shelton          | FM        |        443.250 |           +5.0 |                      100.0 |
+| 62    | MCARC          | N7SK       | Shelton          | FM        |       927.4125 |          -25.0 |                      114.8 |
+| 63    | SCHC           | WA7LAW     | Everett          | FM        |        147.180 |           +0.6 |                      103.5 |
+| 64    | SCHC           | WA7LAW     | Everett          | YSF       |        444.575 |           +5.0 |                      103.5 |
+| 65    | NMARES         | NM7E       | Belfair          | FM        |        145.170 |           -0.6 |                      103.5 |
+| 66    | NMARES         | NM7E       | Belfair          | FM        |        224.260 |           -1.6 |                      103.5 |
+| 67    | Eatonville     | W7EAT      | Eatonville       | FM        |        146.700 |           -0.6 |                      103.5 |
+| 68    | Eatonville     | W7EAT      | Graham           | FM        |        224.180 |           -1.6 |                      103.5 |
+| 69    | Eatonville     | W7EAT      | Eatonville       | FM        |        442.725 |           +5.0 |                      103.5 |
+| 70    | Pierce         | W7AAO      | Grass Mtn.       | FM        |        145.370 |           -0.6 |                      136.5 |
+| 71    | Mike & Key     | K7LED      | Tiger Mtn.       | FM        |        146.820 |           -0.6 |                      103.5 |
+| 72    | Mike & Key     | K7LED      | Tiger Mtn.       | FM        |        224.120 |           -1.6 |                      103.5 |
+| 73    | Mike & Key     | WA7HJR     | Tiger Mtn.       | FM        |        444.650 |           +5.0 |                      131.8 |
+| 74    | Mike & Key     | KB7CNN     | Tiger Mtn.       | FM        |       1292.200 |          -20.0 |                      103.5 |
+| 75    | Bainbridge     | W7NPC      | Bainbridge Isl.  | FM        |         53.430 |           -1.7 |                      100.0 |
+| 76    | Bainbridge     | W7NPC      | Bainbridge Isl.  | FM        |        444.475 |           +5.0 |                      103.5 |
+| 77    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       444.5625 |           +5.0 |                            |
+| 78    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       1290.500 |          -20.0 |                            |
+| 79    | K6MBY          | K6MBY      | Sequim           | FM        |        444.900 |           +5.0 |                      131.8 |
 
 ---
 

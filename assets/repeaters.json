@@ -425,23 +425,6 @@
         "Exclude":null
     },
     {
-        "Callsign":"K7DK",
-        "Output (MHz)":"440.950",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"110.9",
-        "Coordinates":[
-            47.77249908,
-            -122.93000031
-        ],
-        "RepeaterBook ID":null,
-        "Group Name":"K7DK",
-        "Location":"Buck Mtn.",
-        "Mode":"FM",
-        "Long Name":"Mark K7DK's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/K7DK",
-        "Exclude":null
-    },
-    {
         "Callsign":"WW7SEA",
         "Output (MHz)":"444.700",
         "Offset (MHz)":"+5.0",
