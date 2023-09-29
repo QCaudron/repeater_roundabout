@@ -17,17 +17,18 @@ Please ensure that there is no ongoing activity on a repeater (such as a net) be
 
 You should exchange
 
+- your name
 - a mention of the "Repeater Roundabout"
-- a signal report (such as [RST](https://en.wikipedia.org/wiki/R-S-T_system) or [CM](https://en.wikipedia.org/wiki/Circuit_Merit))
+- a signal report using the [CM system](https://en.wikipedia.org/wiki/Circuit_Merit) (1-5, 1 being unreadable, 5 being perfect)
 
 Feel free to chat about anything and everything, though !
 
 
 # Scoring
 
-- **One point per contact.** You score one point for each contact you make on any repeater in this list. Multiple contacts on the same repeater count this year, so feel free to "run" a repeater ! Treat this like "running a frequency" during a contest. Also note that the person you contact does not necessarily have to be participating in the Repeater Roundabout for you to score a point -- any contact counts.
-- **Collect 'em all !** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score doubles for that system. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log a contact on all three of them, you score six points instead of three.
-- **It pays to QRP.** If you're running 5W or less, the points you score are doubled.
+- **One point per contact.** You score one point for each contact you make on any repeater in this list. Multiple contacts on the same repeater count this year, so feel free to "run" a repeater ! Treat this like "running a frequency" during a contest. Also note that the person you contact does not necessarily have to be participating in the Repeater Roundabout for you to score a point -- any non-duplicate contact counts. Note that *duplicate contacts with the same person, on the same repeater, do not count*.
+- **It pays to QRP.** If you're running 5W or less, the contact is worth double.
+- **Collect 'em all !** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score for that system is multiplied by the number of repeaters. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log 10 points across PSRG repeaters, but you've hit each of them at least once, that's worth 30 points instead. If you hit all 8 W7ACS repeaters, you get an 8x multiplier for your points on them.
 
 
 # Logging
@@ -47,10 +48,10 @@ Here's an example log file :
 | Date   | Time  | Callsign | Report | RR#  |  QRP  |
 | :----- | :---- | :------- | -----: | :--- | :---: |
 | Nov 11 | 11:32 | KI7RMU   |    CM5 | 1    |   X   |
-| Nov 11 | 17:02 | KD7DK    |     59 | 35   |   X   |
+| Nov 11 | 17:02 | KD7DK    |    CM3 | 35   |   X   |
 | Nov 12 | 08:51 | WB7J     |    CM4 | 57   |       |
 | Nov 12 | 13:16 | K7MCK    |    CM2 | 22   |   X   |
-| Nov 12 | 13:16 | KD7WGN   |     45 | 102  |       |
+| Nov 12 | 13:16 | KD7WGN   |    CM5 | 102  |       |
 
 Logs can be submitted [on this page](/logging). After the contest, a leaderboard will be published on this website. Logs must be returned to K7DRQ by November 20th to qualify.
 
@@ -59,6 +60,12 @@ Logs can be submitted [on this page](/logging). After the contest, a leaderboard
 
 Is there a prize ?
 : Fame and fortune await you ! Or at least fame. There might be a trophy too.
+
+Can I make a contact with the same person over and over again ?
+: Yes -- on different repeaters. You can't just make a contact every few minutes with the same person on the same machine. That would be a duplicate contact, and you won't get points for it. It's also not terribly respectful to those on the repeater ! This is the *Dean Clause*, named affectionately for Dean KG7ODB, who asked the question during an info session.
+
+Can I stay on the same repeater the whole contest ?
+: Yes ! You can "run a repeater", like running a frequency during an HF contest. You can make contacts with different people, helping them activate that repeater. Some folk will move between machines, and some will stay put. A strategy that mixes the two will probably win out, in terms of points.
 
 Can I arrange a contact beforehand ?
 : Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine. We have a [Discord system](https://discord.gg/BBpbESxSCm) that's a great place to arrange a sked, or see who's around to find you on a repeater.

@@ -1341,5 +1341,22 @@
         "Long Name":"Bainbridge Island Amateur Radio Club",
         "Website":"https:\/\/www.w7npc.org",
         "Exclude":null
+    },
+    {
+        "Callsign":"K6MBY",
+        "Output (MHz)":"444.900",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            48.07949829,
+            -123.10199738
+        ],
+        "RepeaterBook ID":"361",
+        "Group Name":"K6MBY",
+        "Location":"Sequim",
+        "Mode":"FM",
+        "Long Name":"Bob K6MBY's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k6mby",
+        "Exclude":null
     }
 ]

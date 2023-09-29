@@ -99,6 +99,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 77    | Bainbridge     | W7NPC      | Bainbridge Isl.  | FM        |        444.475 |           +5.0 |                      103.5 |
 | 78    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       444.5625 |           +5.0 |                            |
 | 79    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       1290.500 |          -20.0 |                            |
+| 80    | K6MBY          | K6MBY      | Sequim           | FM        |        444.900 |           +5.0 |                      131.8 |
 
 ---
 
@@ -127,6 +128,9 @@ ICARC
 
 JCARC
 : [Jefferson County Amateur Radio Club](https://w7jcr.wordpress.com/)
+
+K6MBY
+: [Bob K6MBY's repeater system](https://www.qrz.com/db/k6mby)
 
 K7DK
 : [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
