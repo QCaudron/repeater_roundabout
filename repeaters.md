@@ -99,6 +99,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 77    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       444.5625 |           +5.0 |                            |
 | 78    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       1290.500 |          -20.0 |                            |
 | 79    | K6MBY          | K6MBY      | Sequim           | FM        |        444.900 |           +5.0 |                      131.8 |
+| 80    | WF7W           | WF7W       | Port Angeles     | FM        |        145.130 |           -0.6 |                      100.0 |
 
 ---
 
@@ -202,6 +203,9 @@ W7TJL
 
 WA7TBP
 : [Tom WA7TBP's repeater system](https://www.qrz.com/db/wa7tbp)
+
+WF7W
+: [Jim WF7W's repeater system](https://www.qrz.com/db/WF7W)
 
 WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)

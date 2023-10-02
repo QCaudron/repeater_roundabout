@@ -1341,5 +1341,22 @@
         "Long Name":"Bob K6MBY's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/k6mby",
         "Exclude":null
+    },
+    {
+        "Callsign":"WF7W",
+        "Output (MHz)":"145.130",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.07814,
+            -123.41207
+        ],
+        "RepeaterBook ID":"20510",
+        "Group Name":"WF7W",
+        "Location":"Port Angeles",
+        "Mode":"FM",
+        "Long Name":"Jim WF7W's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WF7W",
+        "Exclude":null
     }
 ]
