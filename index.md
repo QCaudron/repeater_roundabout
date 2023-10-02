@@ -5,9 +5,7 @@ subtitle: Get to know the local repeaters this November.
 
 ## Breaking News
 
-We have an info and Q&A session coming up !
-
-- on Saturday October 14th at 10am ([Zoom link](https://us06web.zoom.us/j/85251301577?pwd=la7Z6m1A2e04QK2Po53RQLuvH00WKe.1))
+We have an info and Q&A session coming up on Saturday October 14th at 10am ([Zoom link](https://us06web.zoom.us/j/85251301577?pwd=la7Z6m1A2e04QK2Po53RQLuvH00WKe.1)).
 
 # About
 
@@ -17,7 +15,7 @@ The Repeater Roundabout is a weekend-long event held on many of our local repeat
 
 Anyone with a ham radio license can participate ! You don't even have to be local; stations may participate over Echolink, Allstar, or IRLP if they are available.
 
-> This page was last updated on Monday October 02 at 09:11.
+> This page was last updated on Monday October 02 at 09:12.
 
 ---
 
