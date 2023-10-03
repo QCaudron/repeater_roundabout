@@ -1358,5 +1358,22 @@
         "Long Name":"Jim WF7W's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WF7W",
         "Exclude":null
+    },
+    {
+        "Callsign":"KC7EQO",
+        "Output (MHz)":"442.100",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.00690079,
+            -122.97100067
+        ],
+        "RepeaterBook ID":"264",
+        "Group Name":"KC7EQO",
+        "Location":"Sequim",
+        "Mode":"FM",
+        "Long Name":"Matt KC7ECQ's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/KC7EQO\/R",
+        "Exclude":null
     }
 ]

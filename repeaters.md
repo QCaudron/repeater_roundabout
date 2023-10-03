@@ -100,6 +100,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 78    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       1290.500 |          -20.0 |                            |
 | 79    | K6MBY          | K6MBY      | Sequim           | FM        |        444.900 |           +5.0 |                      131.8 |
 | 80    | WF7W           | WF7W       | Port Angeles     | FM        |        145.130 |           -0.6 |                      100.0 |
+| 81    | KC7EQO         | KC7EQO     | Sequim           | FM        |        442.100 |           +5.0 |                      100.0 |
 
 ---
 
@@ -134,6 +135,9 @@ K6MBY
 
 K7DK
 : [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
+
+KC7EQO
+: [Matt KC7ECQ's repeater system](https://www.qrz.com/db/KC7EQO/R)
 
 KCARC
 : [Kitsap County Amateur Radio Club](https://kcarc.org/)
