@@ -101,6 +101,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 79    | K6MBY          | K6MBY      | Sequim           | FM        |        444.900 |           +5.0 |                      131.8 |
 | 80    | WF7W           | WF7W       | Port Angeles     | FM        |        145.130 |           -0.6 |                      100.0 |
 | 81    | KC7EQO         | KC7EQO     | Sequim           | FM        |        442.100 |           +5.0 |                      100.0 |
+| 82    | CCARC          | W7FEL      | Striped Peak     | FM        |        146.760 |           -0.6 |                      100.0 |
 
 ---
 
@@ -114,6 +115,9 @@ BEARS
 
 Bainbridge
 : [Bainbridge Island Amateur Radio Club](https://www.w7npc.org)
+
+CCARC
+: [Clallam County Amateur Radio Club](https://www.olyham.net/)
 
 Eatonville
 : [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)

@@ -65,5 +65,6 @@ L.marker([47.6557998700, -122.5479965200]).bindPopup('RR# 75 - W7NPC (53.430)<br
 L.marker([48.0794982900, -123.1019973800]).bindPopup('RR# 79 - K6MBY (444.900)<br>').addTo(map);
 L.marker([48.0781400000, -123.4120700000]).bindPopup('RR# 80 - WF7W (145.130)<br>').addTo(map);
 L.marker([48.0069007900, -122.9710006700]).bindPopup('RR# 81 - KC7EQO (442.100)<br>').addTo(map);
+L.marker([48.1442985500, -123.6750030500]).bindPopup('RR# 82 - W7FEL (146.760)<br>').addTo(map);
 
 </script>

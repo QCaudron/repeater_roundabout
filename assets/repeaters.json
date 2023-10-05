@@ -1375,5 +1375,22 @@
         "Long Name":"Matt KC7ECQ's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/KC7EQO\/R",
         "Exclude":null
+    },
+    {
+        "Callsign":"W7FEL",
+        "Output (MHz)":"146.760",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.14429855,
+            -123.67500305
+        ],
+        "RepeaterBook ID":"214",
+        "Group Name":"CCARC",
+        "Location":"Striped Peak",
+        "Mode":"FM",
+        "Long Name":"Clallam County Amateur Radio Club",
+        "Website":"https:\/\/www.olyham.net\/",
+        "Exclude":null
     }
 ]
