@@ -1392,5 +1392,22 @@
         "Long Name":"Clallam County Amateur Radio Club",
         "Website":"https:\/\/www.olyham.net\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"WA7FUS",
+        "Output (MHz)":"224.220",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.75659943,
+            -122.28099823
+        ],
+        "RepeaterBook ID":"427",
+        "Group Name":"WA7FUS",
+        "Location":"Lake Forest Park",
+        "Mode":"FM",
+        "Long Name":"Peter WA7FUS's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WA7FUS",
+        "Exclude":null
     }
 ]

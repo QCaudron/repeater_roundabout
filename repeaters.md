@@ -102,6 +102,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 80    | WF7W           | WF7W       | Port Angeles     | FM        |        145.130 |           -0.6 |                      100.0 |
 | 81    | KC7EQO         | KC7EQO     | Sequim           | FM        |        442.100 |           +5.0 |                      100.0 |
 | 82    | CCARC          | W7FEL      | Striped Peak     | FM        |        146.760 |           -0.6 |                      100.0 |
+| 83    | WA7FUS         | WA7FUS     | Lake Forest Park | FM        |        224.220 |           -1.6 |                      103.5 |
 
 ---
 
@@ -208,6 +209,9 @@ Shoreline ACS
 
 W7TJL
 : [Tom W7TJL's repeater system](https://www.qrz.com/db/W7TJL)
+
+WA7FUS
+: [Peter WA7FUS's repeater system](https://www.qrz.com/db/WA7FUS)
 
 WA7TBP
 : [Tom WA7TBP's repeater system](https://www.qrz.com/db/wa7tbp)
