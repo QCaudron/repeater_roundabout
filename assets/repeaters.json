@@ -1409,5 +1409,56 @@
         "Long Name":"Peter WA7FUS's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WA7FUS",
         "Exclude":null
+    },
+    {
+        "Callsign":"WA6MPG",
+        "Output (MHz)":"224.540",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"67.0",
+        "Coordinates":[
+            48.67760086,
+            -122.83100128
+        ],
+        "RepeaterBook ID":"367",
+        "Group Name":"WA6MPG",
+        "Location":"Orcas Isl.",
+        "Mode":"FM",
+        "Long Name":"Wayne WA6MPG's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/wa6mpg",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.25289917,
+            -122.44400024
+        ],
+        "RepeaterBook ID":"324",
+        "Group Name":"RCTacoma",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"440.625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.25289917,
+            -122.44400024
+        ],
+        "RepeaterBook ID":"549",
+        "Group Name":"RCTacoma",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null
     }
 ]

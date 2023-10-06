@@ -103,6 +103,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 81    | KC7EQO         | KC7EQO     | Sequim           | FM        |        442.100 |           +5.0 |                      100.0 |
 | 82    | CCARC          | W7FEL      | Striped Peak     | FM        |        146.760 |           -0.6 |                      100.0 |
 | 83    | WA7FUS         | WA7FUS     | Lake Forest Park | FM        |        224.220 |           -1.6 |                      103.5 |
+| 84    | WA6MPG         | WA6MPG     | Orcas Isl.       | FM        |        224.540 |           -1.6 |                       67.0 |
+| 85    | RCTacoma       | W7DK       | Tacoma           | FM        |        147.280 |           +0.6 |                      103.5 |
+| 86    | RCTacoma       | W7DK       | Tacoma           | FM        |        440.625 |           +5.0 |                      103.5 |
 
 ---
 
@@ -195,6 +198,9 @@ Pierce
 RASC
 : [Radio Amateurs of Skagit County](http://rasconline.com/)
 
+RCTacoma
+: [Radio Club of Tacoma](https://w7dk.org/)
+
 SCHC
 : [Snohomish County Hams Club](http://www.wa7law.org/)
 
@@ -209,6 +215,9 @@ Shoreline ACS
 
 W7TJL
 : [Tom W7TJL's repeater system](https://www.qrz.com/db/W7TJL)
+
+WA6MPG
+: [Wayne WA6MPG's repeater system](https://www.qrz.com/db/wa6mpg)
 
 WA7FUS
 : [Peter WA7FUS's repeater system](https://www.qrz.com/db/WA7FUS)
