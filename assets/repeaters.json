@@ -911,7 +911,7 @@
         ],
         "RepeaterBook ID":null,
         "Group Name":"MBARC",
-        "Location":"Orcas Isl.",
+        "Location":"Mt. Constitution",
         "Mode":"FM",
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/",
@@ -928,7 +928,7 @@
         ],
         "RepeaterBook ID":null,
         "Group Name":"MBARC",
-        "Location":"Orcas Isl.",
+        "Location":"Mt. Constitution",
         "Mode":"FM",
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/",
@@ -1421,10 +1421,27 @@
         ],
         "RepeaterBook ID":"367",
         "Group Name":"WA6MPG",
-        "Location":"Orcas Isl.",
+        "Location":"Mt. Constitution",
         "Mode":"FM",
         "Long Name":"Wayne WA6MPG's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/wa6mpg",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"224.480",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.67779922,
+            -122.83200073
+        ],
+        "RepeaterBook ID":"6394",
+        "Group Name":"Orcas 220",
+        "Location":"Mt. Constitution",
+        "Mode":"FM",
+        "Long Name":"Peter WA7FUS's and Wayne WA6MPG's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/wa7fus",
         "Exclude":null
     },
     {

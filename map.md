@@ -52,7 +52,7 @@ L.marker([47.3946000000, -122.5966000000]).bindPopup('RR# 46 - W7TJL (224.200)<b
 L.marker([47.3222999600, -122.3130035400]).bindPopup('RR# 47 - WA7FW (147.040)<br>RR# 48 - WA7FW (146.760)<br>RR# 49 - WA7FW (442.950)<br>').addTo(map);
 L.marker([47.2774009700, -122.2919998200]).bindPopup('RR# 50 - WA7FW (442.925)<br>').addTo(map);
 L.marker([47.3062355469, -122.3230332117]).bindPopup('RR# 51 - WA7FW (146.840)<br>RR# 52 - WA7FW (443.850)<br>RR# 53 - WA7FW (1290.100)<br>').addTo(map);
-L.marker([48.6776669800, -122.8313344300]).bindPopup('RR# 54 - K7SKW (146.740)<br>RR# 55 - K7SKW (444.050)<br>RR# 84 - WA6MPG (224.540)<br>').addTo(map);
+L.marker([48.6777000400, -122.8315010050]).bindPopup('RR# 54 - K7SKW (146.740)<br>RR# 55 - K7SKW (444.050)<br>RR# 84 - WA6MPG (224.540)<br>RR# 85 - N7JN (224.480)<br>').addTo(map);
 L.marker([48.7821006800, -122.3700027500]).bindPopup('RR# 56 - K7SKW (443.750)<br>').addTo(map);
 L.marker([48.8017997750, -122.4614982650]).bindPopup('RR# 57 - K7SKW (147.160)<br>RR# 58 - K7SKW (443.650)<br>').addTo(map);
 L.marker([47.3910700000, -122.6079000000]).bindPopup('RR# 59 - KA7EOC (145.350)<br>').addTo(map);
@@ -67,6 +67,6 @@ L.marker([48.0781400000, -123.4120700000]).bindPopup('RR# 80 - WF7W (145.130)<br
 L.marker([48.0069007900, -122.9710006700]).bindPopup('RR# 81 - KC7EQO (442.100)<br>').addTo(map);
 L.marker([48.1442985500, -123.6750030500]).bindPopup('RR# 82 - W7FEL (146.760)<br>').addTo(map);
 L.marker([47.7565994300, -122.2809982300]).bindPopup('RR# 83 - WA7FUS (224.220)<br>').addTo(map);
-L.marker([47.2528991700, -122.4440002400]).bindPopup('RR# 85 - W7DK (147.280)<br>RR# 86 - W7DK (440.625)<br>').addTo(map);
+L.marker([47.2528991700, -122.4440002400]).bindPopup('RR# 86 - W7DK (147.280)<br>RR# 87 - W7DK (440.625)<br>').addTo(map);
 
 </script>

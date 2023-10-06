@@ -73,8 +73,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 51    | FWARC          | WA7FW      | Federal Way      | DSTAR     |        146.840 |           -0.6 |                            |
 | 52    | FWARC          | WA7FW      | Federal Way      | DSTAR     |        443.850 |           +5.0 |                            |
 | 53    | FWARC          | WA7FW      | Federal Way      | DSTAR     |       1290.100 |          -20.0 |                            |
-| 54    | MBARC          | K7SKW      | Orcas Isl.       | FM        |        146.740 |           -0.6 |                      103.5 |
-| 55    | MBARC          | K7SKW      | Orcas Isl.       | FM        |        444.050 |           +5.0 |                      103.5 |
+| 54    | MBARC          | K7SKW      | Mt. Constitution | FM        |        146.740 |           -0.6 |                      103.5 |
+| 55    | MBARC          | K7SKW      | Mt. Constitution | FM        |        444.050 |           +5.0 |                      103.5 |
 | 56    | MBARC          | K7SKW      | Bellingham       | FM        |        443.750 |           +5.0 |                      103.5 |
 | 57    | MBARC          | K7SKW      | Bellingham       | FM        |        147.160 |           +0.6 |                      103.5 |
 | 58    | MBARC          | K7SKW      | Bellingham       | YSF       |        443.650 |           +5.0 |                      103.5 |
@@ -103,9 +103,10 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 81    | KC7EQO         | KC7EQO     | Sequim           | FM        |        442.100 |           +5.0 |                      100.0 |
 | 82    | CCARC          | W7FEL      | Striped Peak     | FM        |        146.760 |           -0.6 |                      100.0 |
 | 83    | WA7FUS         | WA7FUS     | Lake Forest Park | FM        |        224.220 |           -1.6 |                      103.5 |
-| 84    | WA6MPG         | WA6MPG     | Orcas Isl.       | FM        |        224.540 |           -1.6 |                       67.0 |
-| 85    | RCTacoma       | W7DK       | Tacoma           | FM        |        147.280 |           +0.6 |                      103.5 |
-| 86    | RCTacoma       | W7DK       | Tacoma           | FM        |        440.625 |           +5.0 |                      103.5 |
+| 84    | WA6MPG         | WA6MPG     | Mt. Constitution | FM        |        224.540 |           -1.6 |                       67.0 |
+| 85    | Orcas 220      | N7JN       | Mt. Constitution | FM        |        224.480 |           -1.6 |                      103.5 |
+| 86    | RCTacoma       | W7DK       | Tacoma           | FM        |        147.280 |           +0.6 |                      103.5 |
+| 87    | RCTacoma       | W7DK       | Tacoma           | FM        |        440.625 |           +5.0 |                      103.5 |
 
 ---
 
@@ -185,6 +186,9 @@ Northshore EMC
 
 OARS
 : [Olympia Amateur Radio Society](https://www.olyham.org/)
+
+Orcas 220
+: [Peter WA7FUS's and Wayne WA6MPG's repeater system](https://www.qrz.com/db/wa7fus)
 
 PARET
 : [Peninsula Amateur Radio Emergency Team](https://piercecountyares.net/)
