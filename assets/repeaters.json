@@ -1477,5 +1477,22 @@
         "Long Name":"Radio Club of Tacoma",
         "Website":"https:\/\/w7dk.org\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"W7TED",
+        "Output (MHz)":"442.450",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.25289917,
+            -122.44400024
+        ],
+        "RepeaterBook ID":"327",
+        "Group Name":"TED",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Two Extra Diodes Amateur Radio Society",
+        "Website":"https:\/\/www.qrz.com\/db\/w7ted",
+        "Exclude":null
     }
 ]
