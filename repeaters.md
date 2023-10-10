@@ -107,7 +107,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 85    | Orcas 220      | N7JN       | Mt. Constitution | FM        |        224.480 |           -1.6 |                      103.5 |
 | 86    | RCTacoma       | W7DK       | Tacoma           | FM        |        147.280 |           +0.6 |                      103.5 |
 | 87    | RCTacoma       | W7DK       | Tacoma           | FM        |        440.625 |           +5.0 |                      103.5 |
-| 88    | TED            | W7TED      | Tacoma           | FM        |        442.450 |           +5.0 |                      103.5 |
+| 88    | RCTacoma       | W7DK       | Crawford Mtn.    | FM        |        147.380 |           +0.6 |                      103.5 |
+| 89    | TED            | W7TED      | Tacoma           | FM        |        442.450 |           +5.0 |                      103.5 |
 
 ---
 

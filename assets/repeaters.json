@@ -1479,6 +1479,23 @@
         "Exclude":null
     },
     {
+        "Callsign":"W7DK",
+        "Output (MHz)":"147.380",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.8431015,
+            -122.76300049
+        ],
+        "RepeaterBook ID":"325",
+        "Group Name":"RCTacoma",
+        "Location":"Crawford Mtn.",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null
+    },
+    {
         "Callsign":"W7TED",
         "Output (MHz)":"442.450",
         "Offset (MHz)":"+5.0",

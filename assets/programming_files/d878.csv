@@ -62,4 +62,5 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 82,W7FEL,146.76,146.16,A-Analog,0,25K,100.0,,,1,,North
 86,W7DK,147.28,147.88,A-Analog,0,25K,103.5,,,1,,South
 87,W7DK,440.625,445.625,A-Analog,0,25K,103.5,,,1,,South
-88,W7TED,442.45,447.45,A-Analog,0,25K,103.5,,,1,,South
+88,W7DK,147.38,147.98,A-Analog,0,25K,103.5,,,1,,South
+89,W7TED,442.45,447.45,A-Analog,0,25K,103.5,,,1,,South
