@@ -1511,5 +1511,39 @@
         "Long Name":"Two Extra Diodes Amateur Radio Society",
         "Website":"https:\/\/www.qrz.com\/db\/w7ted",
         "Exclude":null
+    },
+    {
+        "Callsign":"K7CH",
+        "Output (MHz)":"52.930",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.487935,
+            -123.2161347
+        ],
+        "RepeaterBook ID":"27",
+        "Group Name":"K7CH",
+        "Location":"Baw Faw Peak",
+        "Mode":"FM",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7CH",
+        "Output (MHz)":"53.030",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.31258,
+            -123.3725683
+        ],
+        "RepeaterBook ID":"203",
+        "Group Name":"K7CH",
+        "Location":"South Mtn.",
+        "Mode":"FM",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null
     }
 ]

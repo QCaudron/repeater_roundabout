@@ -109,6 +109,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 87    | RCTacoma       | W7DK       | Tacoma           | FM        |        440.625 |           +5.0 |                      103.5 |
 | 88    | RCTacoma       | W7DK       | Crawford Mtn.    | FM        |        147.380 |           +0.6 |                      103.5 |
 | 89    | TED            | W7TED      | Tacoma           | FM        |        442.450 |           +5.0 |                      103.5 |
+| 90    | K7CH           | K7CH       | Baw Faw Peak     | FM        |         52.930 |           -1.7 |                      100.0 |
+| 91    | K7CH           | K7CH       | South Mtn.       | FM        |         53.030 |           -1.7 |                      100.0 |
 
 ---
 
@@ -143,6 +145,9 @@ JCARC
 
 K6MBY
 : [Bob K6MBY's repeater system](https://www.qrz.com/db/k6mby)
+
+K7CH
+: [Carl K7CH's repeater system](https://www.qrz.com/db/k7ch)
 
 K7DK
 : [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
