@@ -15,7 +15,7 @@ The Repeater Roundabout is a weekend-long event held on many of our local repeat
 
 Anyone with a ham radio license can participate ! You don't even have to be local; stations may participate over Echolink, Allstar, or IRLP if they are available.
 
-> This page was last updated on Wednesday October 11 at 08:21.
+> This page was last updated on Wednesday October 11 at 17:40.
 
 ---
 
