@@ -68,5 +68,5 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 94,N7OEP,440.075,445.075,A-Analog,0,25K,103.5,,,1,,South
 95,N7OEP,443.175,448.175,A-Analog,0,25K,107.2,,,1,,South
 98,W7AW,145.13,144.53,A-Analog,0,25K,103.5,,,1,,Metro
-99,W7AW,440.975,445.975,A-Analog,0,25K,CSQ,,,1,,Metro
+99,W7AW,440.975,445.975,D-Digital,1,12.5K,,,,,,Metro
 100,W7AW,441.8,446.8,A-Analog,0,25K,141.3,,,1,,Metro

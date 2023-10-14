@@ -118,7 +118,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 96    | Newcastle DMR  | W7RNK      | Cougar Mtn.      | DSTAR     |        147.995 |           -0.6 |                            |
 | 97    | West Seattle   | W7AW       | West Seattle     | FM        |         53.290 |           -1.7 |                      100.0 |
 | 98    | West Seattle   | W7AW       | West Seattle     | FM        |        145.130 |           -0.6 |                      103.5 |
-| 99    | West Seattle   | W7AW       | West Seattle     | FM        |        440.975 |           +5.0 |                        CSQ |
+| 99    | West Seattle   | W7AW       | West Seattle     | DMR[^dmr] |        440.975 |           +5.0 |                        CC2 |
 | 100   | West Seattle   | W7AW       | West Seattle     | FM        |        441.800 |           +5.0 |                      141.3 |
 
 ---
