@@ -115,6 +115,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 93    | N7OEP          | N7OEP      | Baldi Mtn.       | FM        |         53.330 |           -1.7 |                      100.0 |
 | 94    | N7OEP          | N7OEP      | Enumclaw         | FM        |        440.075 |           +5.0 |                      103.5 |
 | 95    | N7OEP          | N7OEP      | Enumclaw         | FM        |        443.175 |           +5.0 |                      107.2 |
+| 96    | Newcastle DMR  | W7RNK      | Cougar Mtn.      | DSTAR     |        147.995 |           -0.6 |                            |
 
 ---
 
@@ -194,6 +195,9 @@ N7OEP
 
 NMARES
 : [North Mason Amateur Radio Emergency Service Club](https://nmaresc.wordpress.com/)
+
+Newcastle DMR
+: [Newcastle DSTAR Club](http://newcastle-dstar.com/)
 
 Northshore EMC
 : [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
