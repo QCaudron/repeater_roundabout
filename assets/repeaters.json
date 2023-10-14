@@ -1669,7 +1669,7 @@
         "Callsign":"W7AW",
         "Output (MHz)":"440.975",
         "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"CC2",
+        "Tone (Hz)":"CC2\/TS2 Seattle2 TG\/813153",
         "Coordinates":[
             47.540485,
             -122.378256
@@ -1697,6 +1697,57 @@
         "Mode":"FM",
         "Long Name":"West Seattle Amateur Radio Club",
         "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"146.700",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            48.5603981,
+            -123.12000275
+        ],
+        "RepeaterBook ID":"6196",
+        "Group Name":"SJCARS",
+        "Location":"San Juan Isl.",
+        "Mode":"FM",
+        "Long Name":"San Juan County Amateur Radio Club",
+        "Website":"http:\/\/sjcars.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"145.250",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.53430176,
+            -123.01699829
+        ],
+        "RepeaterBook ID":"9865",
+        "Group Name":"SJCARS",
+        "Location":"Friday Harbor",
+        "Mode":"DSTAR",
+        "Long Name":"San Juan County Amateur Radio Society",
+        "Website":"http:\/\/sjcars.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"442.4625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.53430176,
+            -123.01699829
+        ],
+        "RepeaterBook ID":"9906",
+        "Group Name":"SJCARS",
+        "Location":"Friday Harbor",
+        "Mode":"DSTAR",
+        "Long Name":"San Juan County Amateur Radio Club",
+        "Website":"http:\/\/sjcars.org",
         "Exclude":null
     }
 ]

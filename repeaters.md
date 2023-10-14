@@ -118,8 +118,11 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 96    | Newcastle DMR  | W7RNK      | Cougar Mtn.      | DSTAR     |        147.995 |           -0.6 |                            |
 | 97    | West Seattle   | W7AW       | West Seattle     | FM        |         53.290 |           -1.7 |                      100.0 |
 | 98    | West Seattle   | W7AW       | West Seattle     | FM        |        145.130 |           -0.6 |                      103.5 |
-| 99    | West Seattle   | W7AW       | West Seattle     | DMR[^dmr] |        440.975 |           +5.0 |                        CC2 |
+| 99    | West Seattle   | W7AW       | West Seattle     | DMR[^dmr] |        440.975 |           +5.0 | CC2/TS2 Seattle2 TG/813153 |
 | 100   | West Seattle   | W7AW       | West Seattle     | FM        |        441.800 |           +5.0 |                      141.3 |
+| 101   | SJCARS         | N7JN       | San Juan Isl.    | FM        |        146.700 |           -0.6 |                      131.8 |
+| 102   | SJCARS         | N7JN       | Friday Harbor    | DSTAR     |        145.250 |           -0.6 |                            |
+| 103   | SJCARS         | N7JN       | Friday Harbor    | DSTAR     |       442.4625 |           +5.0 |                            |
 
 ---
 
@@ -229,6 +232,9 @@ RCTacoma
 
 SCHC
 : [Snohomish County Hams Club](http://www.wa7law.org/)
+
+SJCARS
+: [San Juan County Amateur Radio Club](http://sjcars.org)
 
 SeaTac
 : [SeaTac Repeater Association](https://seatacra.com/)

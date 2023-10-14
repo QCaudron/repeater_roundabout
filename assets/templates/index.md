@@ -3,11 +3,12 @@ title: Repeater Roundabout
 subtitle: Get to know the local repeaters this November.
 ---
 
-## Breaking News
-
-We have an info and Q&A session coming up on Saturday October 14th at 10am ([Zoom link](https://us06web.zoom.us/j/85251301577?pwd=la7Z6m1A2e04QK2Po53RQLuvH00WKe.1)).
-
 # About
+
+> We've had two Q&A sessions over Zoom ! You can watch the recordings here.
+> - [Slides](https://docs.google.com/presentation/d/1GvTALNso3tpsYoxtYDW0FAkMqhxRlnO_WMp-U3RQRxg/edit?usp=sharing)
+> - [Session 1](https://drive.google.com/file/d/1lxmyOy5PByaQkqdEw2bZ0Qh-bbab7-zf/view?usp=sharing)
+> - [Session 2](https://drive.google.com/file/d/1oHhNAAzfjvgftzaiySG0IrSYctPOkMCL/view?usp=sharing)
 
 The Repeater Roundabout is a weekend-long event held on many of our local repeaters. The goal is to meet new people and work repeaters you might not usually key up. It's also a great way to get started with ham radio contests for folk who are primarily repeater users. Light up the airwaves and make some noise on the great repeaters in the Puget Sound area!
 

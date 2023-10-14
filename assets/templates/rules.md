@@ -26,10 +26,14 @@ Feel free to chat about anything and everything, though !
 
 # Scoring
 
-- **One point per contact.** You score one point for each contact you make on any repeater in this list. Multiple contacts on the same repeater count this year, so feel free to "run" a repeater ! Treat this like "running a frequency" during a contest. Also note that the person you contact does not necessarily have to be participating in the Repeater Roundabout for you to score a point -- any non-duplicate contact counts. Note that *duplicate contacts with the same person, on the same repeater, do not count*.
-- **It pays to QRP.** If you're running 5W or less, the contact is worth double.
-- **Collect 'em all.** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score for that system receives a 2x multiplier. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log 10 points across PSRG repeaters, but you've hit each of them at least once, that's worth 20 points instead. This multiplier applies to QRP contacts too !
-- **Full House.** If you make a contact on every single repeater, your score is doubled.
+**One point per contact.** You score one point for each contact you make on any repeater in this list. Multiple contacts on the same repeater count this year, so feel free to "run" a repeater ! Treat this like "running a frequency" during a contest. Also note that the person you contact does not necessarily have to be participating in the Repeater Roundabout for you to score a point -- any non-duplicate contact counts. Note that *duplicate contacts with the same person, on the same repeater, do not count*.
+
+### Multipliers
+
+- **It Pays to QRP.** If you're running 5W or less, the contact is worth double.
+- **Club Connoisseur.** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score for that system receives are doubled. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log 10 points across PSRG repeaters, but you've hit each of them at least once, that's worth 20 points instead. This multiplier applies to QRP contacts too !
+- **Band Hog.** If you hit all repeaters on a given band, your score for that band is doubled.
+- **Full House.** If you make a contact on at least 80 repeaters, your full score is doubled.
 
 
 # Logging
