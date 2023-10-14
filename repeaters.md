@@ -111,6 +111,10 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 89    | TED            | W7TED      | Tacoma           | FM        |        442.450 |           +5.0 |                      103.5 |
 | 90    | K7CH           | K7CH       | Baw Faw Peak     | FM        |         52.930 |           -1.7 |                      100.0 |
 | 91    | K7CH           | K7CH       | South Mtn.       | FM        |         53.030 |           -1.7 |                      100.0 |
+| 92    | WA7ROY         | WA7ROY     | Roy              | FM        |        444.175 |           -5.0 |                      123.0 |
+| 93    | N7OEP          | N7OEP      | Baldi Mtn.       | FM        |         53.330 |           -1.7 |                      100.0 |
+| 94    | N7OEP          | N7OEP      | Enumclaw         | FM        |        440.075 |           +5.0 |                      103.5 |
+| 95    | N7OEP          | N7OEP      | Enumclaw         | FM        |        443.175 |           +5.0 |                      107.2 |
 
 ---
 
@@ -185,6 +189,9 @@ N3KPU
 N7KN
 : [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)
 
+N7OEP
+: [Tom N7OEP's repeater system](https://www.qrz.com/db/n7oep)
+
 NMARES
 : [North Mason Amateur Radio Emergency Service Club](https://nmaresc.wordpress.com/)
 
@@ -235,6 +242,9 @@ WA6MPG
 
 WA7FUS
 : [Peter WA7FUS's repeater system](https://www.qrz.com/db/WA7FUS)
+
+WA7ROY
+: [Roy Area Net](https://www.qrz.com/db/WA7ROY)
 
 WA7TBP
 : [Tom WA7TBP's repeater system](https://www.qrz.com/db/wa7tbp)
