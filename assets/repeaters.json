@@ -1783,5 +1783,39 @@
         "Long Name":"Stanwood Camano Amateur Radio Club",
         "Website":"https:\/\/www.scarcwa.org\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"W7ZA",
+        "Output (MHz)":"147.160",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            46.97539902,
+            -123.81600189
+        ],
+        "RepeaterBook ID":"32",
+        "Group Name":"GHARC",
+        "Location":"Aberdeen",
+        "Mode":"FM",
+        "Long Name":"Grays Harbor Amateur Radio Club",
+        "Website":"https:\/\/www.gharc.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ZA",
+        "Output (MHz)":"146.900",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.41289902,
+            -123.87999725
+        ],
+        "RepeaterBook ID":"248",
+        "Group Name":"GHARC",
+        "Location":"Neilton Peak",
+        "Mode":"FM",
+        "Long Name":"Grays Harbor Amateur Radio Club",
+        "Website":"https:\/\/www.gharc.net\/",
+        "Exclude":null
     }
 ]

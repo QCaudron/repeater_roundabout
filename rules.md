@@ -8,7 +8,7 @@ subtitle: How to play in the Repeater Roundabout.
 
 # Repeaters
 
-Only these [105 participating repeaters from 49 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
+Only these [107 participating repeaters from 50 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
 
 Please ensure that there is no ongoing activity on a repeater (such as a net) before you call for contacts. We cannot interfere with normal operation.
 
@@ -31,7 +31,7 @@ Feel free to chat about anything and everything, though !
 ### Multipliers
 
 - **It Pays to QRP.** If you're running 5W or less, the contact is worth double.
-- **Club Connoisseur.** If you make a contact on *all repeaters* with the same club designation on the list of participating repeaters (for systems with at least two repeaters), your point score for that system receives are doubled. For example, the PSRG operates a 2m repeater, a 6m repeater, and a 70cm repeater. If you log 10 points across PSRG repeaters, but you've hit each of them at least once, that's worth 20 points instead. This multiplier applies to QRP contacts too !
+- **Club Connoisseur.** If you make a contact on all repeaters with the same club designation (for systems with at least two repeaters), your point score for that system are doubled.
 - **Band Hog.** If you hit all repeaters on a given band, your score for that band is doubled.
 - **Full House.** If you make a contact on at least 80 repeaters, your full score is doubled.
 
@@ -68,6 +68,9 @@ Is there a prize ?
 
 Can I make a contact with the same person over and over again ?
 : Yes -- on different repeaters. You can't just make a contact every few minutes with the same person on the same machine. That would be a duplicate contact, and you won't get points for it. It's also not terribly respectful to those on the repeater ! This is the *Dean Clause*, named affectionately for Dean KG7ODB, who asked the question during an info session.
+
+Explain the multipliers to me.
+: Sure ! First, you get double points for any contact made with 5W or less. Then, we do some sleuthing through the log, looking for club and band groups. If you hit all repeaters in a given band (for example, all 6m repeaters in the contest), you get double points for all those contacts on that band. If you hit all of the repeaters in a given club, we double all those points too (for example, all three PSRG repeaters in the contest). Finally, if you activate at least 80 repeaters, we double your full score. This is a big one, and will be hard to achieve, but well worth it !
 
 Can I stay on the same repeater the whole contest ?
 : Yes ! You can "run a repeater", like running a frequency during an HF contest. You can make contacts with different people, helping them activate that repeater. Some folk will move between machines, and some will stay put. A strategy that mixes the two will probably win out, in terms of points.

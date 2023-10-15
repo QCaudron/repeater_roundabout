@@ -125,6 +125,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 103   | SJCARS         | N7JN       | Friday Harbor    | DSTAR     |       442.4625 |           +5.0 |                            |
 | 104   | SCARC          | W7PIG      | Camano Isl.      | FM        |        147.360 |           +0.6 |                      127.3 |
 | 105   | SCARC          | W7PIG      | Camano Isl.      | FM        |        441.050 |           +5.0 |                      103.5 |
+| 106   | GHARC          | W7ZA       | Aberdeen         | FM        |        147.160 |           +0.6 |                       88.5 |
+| 107   | GHARC          | W7ZA       | Neilton Peak     | FM        |        146.900 |           -0.6 |                       88.5 |
 
 ---
 
@@ -147,6 +149,9 @@ Eatonville
 
 FWARC
 : [Federal Way Amateur Radio Club](https://fwarc.org/)
+
+GHARC
+: [Grays Harbor Amateur Radio Club](https://www.gharc.net/)
 
 Highline
 : [Highline Amateur Radio Club](https://www.highlinearc.org/)
