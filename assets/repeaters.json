@@ -1749,5 +1749,39 @@
         "Long Name":"San Juan County Amateur Radio Club",
         "Website":"http:\/\/sjcars.org",
         "Exclude":null
+    },
+    {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"147.360",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.22499847,
+            -122.5
+        ],
+        "RepeaterBook ID":"6948",
+        "Group Name":"SCARC",
+        "Location":"Camano Isl.",
+        "Mode":"FM",
+        "Long Name":"Stanwood Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"441.050",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.22499847,
+            -122.5
+        ],
+        "RepeaterBook ID":"484",
+        "Group Name":"SCARC",
+        "Location":"Camano Isl.",
+        "Mode":"FM",
+        "Long Name":"Stanwood Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Exclude":null
     }
 ]

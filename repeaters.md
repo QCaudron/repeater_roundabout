@@ -123,6 +123,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 101   | SJCARS         | N7JN       | San Juan Isl.    | FM        |        146.700 |           -0.6 |                      131.8 |
 | 102   | SJCARS         | N7JN       | Friday Harbor    | DSTAR     |        145.250 |           -0.6 |                            |
 | 103   | SJCARS         | N7JN       | Friday Harbor    | DSTAR     |       442.4625 |           +5.0 |                            |
+| 104   | SCARC          | W7PIG      | Camano Isl.      | FM        |        147.360 |           +0.6 |                      127.3 |
+| 105   | SCARC          | W7PIG      | Camano Isl.      | FM        |        441.050 |           +5.0 |                      103.5 |
 
 ---
 
@@ -229,6 +231,9 @@ RASC
 
 RCTacoma
 : [Radio Club of Tacoma](https://w7dk.org/)
+
+SCARC
+: [Stanwood Camano Amateur Radio Club](https://www.scarcwa.org/)
 
 SCHC
 : [Snohomish County Hams Club](http://www.wa7law.org/)
