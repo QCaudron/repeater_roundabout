@@ -1549,7 +1549,7 @@
     {
         "Callsign":"WA7ROY",
         "Output (MHz)":"444.175",
-        "Offset (MHz)":"-5.0",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"123.0",
         "Coordinates":[
             47.0042643,
@@ -1816,6 +1816,23 @@
         "Mode":"FM",
         "Long Name":"Grays Harbor Amateur Radio Club",
         "Website":"https:\/\/www.gharc.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7CPR",
+        "Output (MHz)":"145.470",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.97309875,
+            -123.13500214
+        ],
+        "RepeaterBook ID":"358",
+        "Group Name":"CPRG",
+        "Location":"Capitol Peak",
+        "Mode":"FM",
+        "Long Name":"Capitol Peak Repeater Group",
+        "Website":"http:\/\/47repeater.com\/",
         "Exclude":null
     }
 ]

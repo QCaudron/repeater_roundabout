@@ -111,7 +111,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 89    | TED            | W7TED      | Tacoma           | FM        |        442.450 |           +5.0 |                      103.5 |
 | 90    | K7CH           | K7CH       | Baw Faw Peak     | FM        |         52.930 |           -1.7 |                      100.0 |
 | 91    | K7CH           | K7CH       | South Mtn.       | FM        |         53.030 |           -1.7 |                      100.0 |
-| 92    | WA7ROY         | WA7ROY     | Roy              | FM        |        444.175 |           -5.0 |                      123.0 |
+| 92    | WA7ROY         | WA7ROY     | Roy              | FM        |        444.175 |           +5.0 |                      123.0 |
 | 93    | N7OEP          | N7OEP      | Baldi Mtn.       | FM        |         53.330 |           -1.7 |                      100.0 |
 | 94    | N7OEP          | N7OEP      | Enumclaw         | FM        |        440.075 |           +5.0 |                      103.5 |
 | 95    | N7OEP          | N7OEP      | Enumclaw         | FM        |        443.175 |           +5.0 |                      107.2 |
@@ -127,6 +127,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 105   | SCARC          | W7PIG      | Camano Isl.      | FM        |        441.050 |           +5.0 |                      103.5 |
 | 106   | GHARC          | W7ZA       | Aberdeen         | FM        |        147.160 |           +0.6 |                       88.5 |
 | 107   | GHARC          | W7ZA       | Neilton Peak     | FM        |        146.900 |           -0.6 |                       88.5 |
+| 108   | CPRG           | K7CPR      | Capitol Peak     | FM        |        145.470 |           -0.6 |                      100.0 |
 
 ---
 
@@ -143,6 +144,9 @@ Bainbridge
 
 CCARC
 : [Clallam County Amateur Radio Club](https://www.olyham.net/)
+
+CPRG
+: [Capitol Peak Repeater Group](http://47repeater.com/)
 
 Eatonville
 : [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)

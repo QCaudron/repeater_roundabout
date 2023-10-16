@@ -64,7 +64,7 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 87,W7DK,440.625,445.625,A-Analog,0,25K,103.5,,,1,,South
 88,W7DK,147.38,147.98,A-Analog,0,25K,103.5,,,1,,South
 89,W7TED,442.45,447.45,A-Analog,0,25K,103.5,,,1,,South
-92,WA7ROY,444.175,439.175,A-Analog,0,25K,123.0,,,1,,South
+92,WA7ROY,444.175,449.175,A-Analog,0,25K,123.0,,,1,,South
 94,N7OEP,440.075,445.075,A-Analog,0,25K,103.5,,,1,,South
 95,N7OEP,443.175,448.175,A-Analog,0,25K,107.2,,,1,,South
 98,W7AW,145.13,144.53,A-Analog,0,25K,103.5,,,1,,Metro
@@ -75,3 +75,4 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 105,W7PIG,441.05,446.05,A-Analog,0,25K,103.5,,,1,,North
 106,W7ZA,147.16,147.76,A-Analog,0,25K,88.5,,,1,,South
 107,W7ZA,146.9,146.3,A-Analog,0,25K,88.5,,,1,,South
+108,K7CPR,145.47,144.87,A-Analog,0,25K,100.0,,,1,,South

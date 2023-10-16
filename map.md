@@ -80,5 +80,6 @@ L.marker([48.5343017600, -123.0169982900]).bindPopup('RR# 102 - N7JN (145.250)<b
 L.marker([48.2249984700, -122.5000000000]).bindPopup('RR# 104 - W7PIG (147.360)<br>RR# 105 - W7PIG (441.050)<br>').addTo(map);
 L.marker([46.9753990200, -123.8160018900]).bindPopup('RR# 106 - W7ZA (147.160)<br>').addTo(map);
 L.marker([47.4128990200, -123.8799972500]).bindPopup('RR# 107 - W7ZA (146.900)<br>').addTo(map);
+L.marker([46.9730987500, -123.1350021400]).bindPopup('RR# 108 - K7CPR (145.470)<br>').addTo(map);
 
 </script>
