@@ -1259,23 +1259,6 @@
     },
     {
         "Callsign":"W7NPC",
-        "Output (MHz)":"53.430",
-        "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
-            47.65579987,
-            -122.54799652
-        ],
-        "RepeaterBook ID":null,
-        "Group Name":"Bainbridge",
-        "Location":"Bainbridge Isl.",
-        "Mode":"FM",
-        "Long Name":"Bainbridge Island Amateur Radio Club",
-        "Website":"https:\/\/www.w7npc.org",
-        "Exclude":null
-    },
-    {
-        "Callsign":"W7NPC",
         "Output (MHz)":"444.475",
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",

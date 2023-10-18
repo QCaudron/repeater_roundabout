@@ -94,40 +94,39 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 72    | Mike & Key     | K7LED      | Tiger Mtn.       | FM        |        224.120 |           -1.6 |                      103.5 |
 | 73    | Mike & Key     | WA7HJR     | Tiger Mtn.       | FM        |        444.650 |           +5.0 |                      131.8 |
 | 74    | Mike & Key     | KB7CNN     | Tiger Mtn.       | FM        |       1292.200 |          -20.0 |                      103.5 |
-| 75    | Bainbridge     | W7NPC      | Bainbridge Isl.  | FM        |         53.430 |           -1.7 |                      100.0 |
-| 76    | Bainbridge     | W7NPC      | Bainbridge Isl.  | FM        |        444.475 |           +5.0 |                      103.5 |
-| 77    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       444.5625 |           +5.0 |                            |
-| 78    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       1290.500 |          -20.0 |                            |
-| 79    | K6MBY          | K6MBY      | Sequim           | FM        |        444.900 |           +5.0 |                      131.8 |
-| 80    | WF7W           | WF7W       | Port Angeles     | FM        |        145.130 |           -0.6 |                      100.0 |
-| 81    | KC7EQO         | KC7EQO     | Sequim           | FM        |        442.100 |           +5.0 |                      100.0 |
-| 82    | CCARC          | W7FEL      | Striped Peak     | FM        |        146.760 |           -0.6 |                      100.0 |
-| 83    | WA7FUS         | WA7FUS     | Lake Forest Park | FM        |        224.220 |           -1.6 |                      103.5 |
-| 84    | WA6MPG         | WA6MPG     | Mt. Constitution | FM        |        224.540 |           -1.6 |                       67.0 |
-| 85    | Orcas 220      | N7JN       | Mt. Constitution | FM        |        224.480 |           -1.6 |                      103.5 |
-| 86    | RCTacoma       | W7DK       | Tacoma           | FM        |        147.280 |           +0.6 |                      103.5 |
-| 87    | RCTacoma       | W7DK       | Tacoma           | FM        |        440.625 |           +5.0 |                      103.5 |
-| 88    | RCTacoma       | W7DK       | Crawford Mtn.    | FM        |        147.380 |           +0.6 |                      103.5 |
-| 89    | TED            | W7TED      | Tacoma           | FM        |        442.450 |           +5.0 |                      103.5 |
-| 90    | K7CH           | K7CH       | Baw Faw Peak     | FM        |         52.930 |           -1.7 |                      100.0 |
-| 91    | K7CH           | K7CH       | South Mtn.       | FM        |         53.030 |           -1.7 |                      100.0 |
-| 92    | WA7ROY         | WA7ROY     | Roy              | FM        |        444.175 |           +5.0 |                      123.0 |
-| 93    | N7OEP          | N7OEP      | Baldi Mtn.       | FM        |         53.330 |           -1.7 |                      100.0 |
-| 94    | N7OEP          | N7OEP      | Enumclaw         | FM        |        440.075 |           +5.0 |                      103.5 |
-| 95    | N7OEP          | N7OEP      | Enumclaw         | FM        |        443.175 |           +5.0 |                      107.2 |
-| 96    | Newcastle DMR  | W7RNK      | Cougar Mtn.      | DSTAR     |        147.995 |           -0.6 |                            |
-| 97    | West Seattle   | W7AW       | West Seattle     | FM        |         53.290 |           -1.7 |                      100.0 |
-| 98    | West Seattle   | W7AW       | West Seattle     | FM        |        145.130 |           -0.6 |                      103.5 |
-| 99    | West Seattle   | W7AW       | West Seattle     | DMR[^dmr] |        440.975 |           +5.0 | CC2/TS2 Seattle2 TG/813153 |
-| 100   | West Seattle   | W7AW       | West Seattle     | FM        |        441.800 |           +5.0 |                      141.3 |
-| 101   | SJCARS         | N7JN       | San Juan Isl.    | FM        |        146.700 |           -0.6 |                      131.8 |
-| 102   | SJCARS         | N7JN       | Friday Harbor    | DSTAR     |        145.250 |           -0.6 |                            |
-| 103   | SJCARS         | N7JN       | Friday Harbor    | DSTAR     |       442.4625 |           +5.0 |                            |
-| 104   | SCARC          | W7PIG      | Camano Isl.      | FM        |        147.360 |           +0.6 |                      127.3 |
-| 105   | SCARC          | W7PIG      | Camano Isl.      | FM        |        441.050 |           +5.0 |                      103.5 |
-| 106   | GHARC          | W7ZA       | Aberdeen         | FM        |        147.160 |           +0.6 |                       88.5 |
-| 107   | GHARC          | W7ZA       | Neilton Peak     | FM        |        146.900 |           -0.6 |                       88.5 |
-| 108   | CPRG           | K7CPR      | Capitol Peak     | FM        |        145.470 |           -0.6 |                      100.0 |
+| 75    | Bainbridge     | W7NPC      | Bainbridge Isl.  | FM        |        444.475 |           +5.0 |                      103.5 |
+| 76    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       444.5625 |           +5.0 |                            |
+| 77    | Bainbridge     | W7NPC      | Bainbridge Isl.  | DSTAR     |       1290.500 |          -20.0 |                            |
+| 78    | K6MBY          | K6MBY      | Sequim           | FM        |        444.900 |           +5.0 |                      131.8 |
+| 79    | WF7W           | WF7W       | Port Angeles     | FM        |        145.130 |           -0.6 |                      100.0 |
+| 80    | KC7EQO         | KC7EQO     | Sequim           | FM        |        442.100 |           +5.0 |                      100.0 |
+| 81    | CCARC          | W7FEL      | Striped Peak     | FM        |        146.760 |           -0.6 |                      100.0 |
+| 82    | WA7FUS         | WA7FUS     | Lake Forest Park | FM        |        224.220 |           -1.6 |                      103.5 |
+| 83    | WA6MPG         | WA6MPG     | Mt. Constitution | FM        |        224.540 |           -1.6 |                       67.0 |
+| 84    | Orcas 220      | N7JN       | Mt. Constitution | FM        |        224.480 |           -1.6 |                      103.5 |
+| 85    | RCTacoma       | W7DK       | Tacoma           | FM        |        147.280 |           +0.6 |                      103.5 |
+| 86    | RCTacoma       | W7DK       | Tacoma           | FM        |        440.625 |           +5.0 |                      103.5 |
+| 87    | RCTacoma       | W7DK       | Crawford Mtn.    | FM        |        147.380 |           +0.6 |                      103.5 |
+| 88    | TED            | W7TED      | Tacoma           | FM        |        442.450 |           +5.0 |                      103.5 |
+| 89    | K7CH           | K7CH       | Baw Faw Peak     | FM        |         52.930 |           -1.7 |                      100.0 |
+| 90    | K7CH           | K7CH       | South Mtn.       | FM        |         53.030 |           -1.7 |                      100.0 |
+| 91    | WA7ROY         | WA7ROY     | Roy              | FM        |        444.175 |           +5.0 |                      123.0 |
+| 92    | N7OEP          | N7OEP      | Baldi Mtn.       | FM        |         53.330 |           -1.7 |                      100.0 |
+| 93    | N7OEP          | N7OEP      | Enumclaw         | FM        |        440.075 |           +5.0 |                      103.5 |
+| 94    | N7OEP          | N7OEP      | Enumclaw         | FM        |        443.175 |           +5.0 |                      107.2 |
+| 95    | Newcastle DMR  | W7RNK      | Cougar Mtn.      | DSTAR     |        147.995 |           -0.6 |                            |
+| 96    | West Seattle   | W7AW       | West Seattle     | FM        |         53.290 |           -1.7 |                      100.0 |
+| 97    | West Seattle   | W7AW       | West Seattle     | FM        |        145.130 |           -0.6 |                      103.5 |
+| 98    | West Seattle   | W7AW       | West Seattle     | DMR[^dmr] |        440.975 |           +5.0 | CC2/TS2 Seattle2 TG/813153 |
+| 99    | West Seattle   | W7AW       | West Seattle     | FM        |        441.800 |           +5.0 |                      141.3 |
+| 100   | SJCARS         | N7JN       | San Juan Isl.    | FM        |        146.700 |           -0.6 |                      131.8 |
+| 101   | SJCARS         | N7JN       | Friday Harbor    | DSTAR     |        145.250 |           -0.6 |                            |
+| 102   | SJCARS         | N7JN       | Friday Harbor    | DSTAR     |       442.4625 |           +5.0 |                            |
+| 103   | SCARC          | W7PIG      | Camano Isl.      | FM        |        147.360 |           +0.6 |                      127.3 |
+| 104   | SCARC          | W7PIG      | Camano Isl.      | FM        |        441.050 |           +5.0 |                      103.5 |
+| 105   | GHARC          | W7ZA       | Aberdeen         | FM        |        147.160 |           +0.6 |                       88.5 |
+| 106   | GHARC          | W7ZA       | Neilton Peak     | FM        |        146.900 |           -0.6 |                       88.5 |
+| 107   | CPRG           | K7CPR      | Capitol Peak     | FM        |        145.470 |           -0.6 |                      100.0 |
 
 ---
 
