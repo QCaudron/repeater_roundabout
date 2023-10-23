@@ -1817,5 +1817,107 @@
         "Long Name":"Capitol Peak Repeater Group",
         "Website":"http:\/\/47repeater.com\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"146.450",
+        "Offset (MHz)":"+1.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.68740082,
+            -122.36199951
+        ],
+        "RepeaterBook ID":"12802",
+        "Group Name":"Whatcom ECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"DSTAR",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"224.160",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.68870163,
+            -122.36100006
+        ],
+        "RepeaterBook ID":"8854",
+        "Group Name":"Whatcom ECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"440.475",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.68870163,
+            -122.36100006
+        ],
+        "RepeaterBook ID":"624",
+        "Group Name":"Whatcom ECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"DSTAR",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"440.7375",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"CC1",
+        "Coordinates":[
+            48.861414,
+            -122.617661
+        ],
+        "RepeaterBook ID":"19213",
+        "Group Name":"Whatcom ECG",
+        "Location":"Ferndale",
+        "Mode":"DMR[^dmr]",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.68870163,
+            -122.36100006
+        ],
+        "RepeaterBook ID":"7393",
+        "Group Name":"Whatcom ECG",
+        "Location":"Ferndale",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7BFD",
+        "Output (MHz)":"442.300",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            48.73612057,
+            -122.48100439
+        ],
+        "RepeaterBook ID":"19722",
+        "Group Name":"Whatcom ECG",
+        "Location":"Sehome Hill",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
     }
 ]

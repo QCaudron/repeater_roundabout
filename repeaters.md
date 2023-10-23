@@ -127,6 +127,12 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 105   | GHARC          | W7ZA       | Aberdeen         | FM        |        147.160 |           +0.6 |                       88.5 |
 | 106   | GHARC          | W7ZA       | Neilton Peak     | FM        |        146.900 |           -0.6 |                       88.5 |
 | 107   | CPRG           | K7CPR      | Capitol Peak     | FM        |        145.470 |           -0.6 |                      100.0 |
+| 108   | Whatcom ECG    | W7ECG      | Lookout Mtn.     | DSTAR     |        146.450 |           +1.0 |                            |
+| 109   | Whatcom ECG    | W7ECG      | Lookout Mtn.     | FM        |        224.160 |           -1.6 |                      156.7 |
+| 110   | Whatcom ECG    | W7ECG      | Lookout Mtn.     | DSTAR     |        440.475 |           +5.0 |                            |
+| 111   | Whatcom ECG    | W7ECG      | Ferndale         | DMR[^dmr] |       440.7375 |           +5.0 |                        CC1 |
+| 112   | Whatcom ECG    | W7ECG      | Ferndale         | FM        |        442.250 |           +5.0 |                      156.7 |
+| 113   | Whatcom ECG    | W7BFD      | Sehome Hill      | FM        |        442.300 |           +5.0 |                       88.5 |
 
 ---
 
@@ -284,6 +290,9 @@ WW7SEA
 
 West Seattle
 : [West Seattle Amateur Radio Club](https://w7aw.org/)
+
+Whatcom ECG
+: [Whatcom Emergency Communications Group](https://wecg.org/wordpress/)
 
 
 
