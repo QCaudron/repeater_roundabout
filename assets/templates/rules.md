@@ -32,7 +32,7 @@ Feel free to chat about anything and everything, though !
 
 - **It Pays to QRP.** If you're running 5W or less, the contact is worth double.
 - **Club Connoisseur.** If you make a contact on all repeaters with the same club designation (for systems with at least two repeaters), your point score for that system are doubled.
-- **Band Hog.** If you hit all repeaters on a given band, your score for that band is doubled.
+- **Band Hog.** If you hit at least 30 FM repeaters on the 2m or 70cm bands, your score for that band is doubled.
 - **Full House.** If you make a contact on at least 80 repeaters, your full score is doubled.
 
 

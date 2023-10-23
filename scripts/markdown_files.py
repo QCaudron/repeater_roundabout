@@ -179,7 +179,7 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
         f.write(maps)
 
 
-def write_map_md(df: pd.DataFrame, threshold: float = 0.005) -> None:
+def write_map_md(df: pd.DataFrame, threshold: float = 0.001) -> None:
     """
     Write the map.md file.
 
@@ -220,7 +220,14 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.005) -> None:
         if len(msg):
             coords = np.mean([repeater["Coordinates"] for repeater in cluster], axis=0)
             coords_str = f"[{coords[0]:.10f}, {coords[1]:.10f}]"
-            pins_list.append(f"L.marker({coords_str}).bindPopup('{msg}').addTo(map);")
+            custom_middle = (
+                '"<div class=\'icon-label\'>...</div>"' if len(cluster) > 1 
+                else f'"<div class=\'icon-label\'>{repeater["RR#"]}</div>"'
+            )
+            custom = f"L.divIcon({{className: 'custom-icon', html: {custom_middle}, iconSize: [25, 25]}})"
+            pins_list.append(f"L.marker({coords_str}, {{icon: {custom} }}).bindPopup('{msg}').addTo(map);")
+            # pins_list.append(f"L.marker({coords_str}).bindPopup('{msg}').addTo(map);")
+
 
     pins = "\n".join(pins_list)
 
