@@ -78,4 +78,5 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 107,K7CPR,145.47,144.87,A-Analog,0,25K,100.0,,,1,,South
 111,W7ECG,440.7375,445.7375,D-Digital,1,12.5K,,,,,,North
 112,W7ECG,442.25,447.25,A-Analog,0,25K,156.7,,,1,,North
-113,W7BFD,442.3,447.3,A-Analog,0,25K,88.5,,,1,,North
+113,W7ECG,442.825,447.825,A-Analog,0,25K,156.7,,,1,,North
+114,W7BFD,442.3,447.3,A-Analog,0,25K,88.5,,,1,,North

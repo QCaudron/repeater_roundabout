@@ -110,5 +110,6 @@
 109,W7ECG,224.160,-1.6,156.7,8854,Lookout Mtn.,FM,Whatcom Emergency Communications Group,
 110,W7ECG,440.475,+5.0,,624,Lookout Mtn.,DSTAR,Whatcom Emergency Communications Group,
 111,W7ECG,440.7375,+5.0,CC1,19213,Ferndale,DMR,Whatcom Emergency Communications Group,
-112,W7ECG,442.250,+5.0,156.7,7393,Ferndale,FM,Whatcom Emergency Communications Group,
-113,W7BFD,442.300,+5.0,88.5,19722,Sehome Hill,FM,Whatcom Emergency Communications Group,
+112,W7ECG,442.250,+5.0,156.7,7393,Lookout Mtn.,FM,Whatcom Emergency Communications Group,
+113,W7ECG,442.825,+5.0,156.7,7100,Ferndale,FM,Whatcom Emergency Communications Group,
+114,W7BFD,442.300,+5.0,88.5,19722,Sehome Hill,FM,Whatcom Emergency Communications Group,

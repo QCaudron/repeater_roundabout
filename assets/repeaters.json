@@ -1897,6 +1897,23 @@
         ],
         "RepeaterBook ID":"7393",
         "Group Name":"Whatcom ECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.825",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.8614006,
+            -122.61799622
+        ],
+        "RepeaterBook ID":"7100",
+        "Group Name":"Whatcom ECG",
         "Location":"Ferndale",
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",

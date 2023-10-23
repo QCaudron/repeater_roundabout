@@ -131,8 +131,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 109   | Whatcom ECG    | W7ECG      | Lookout Mtn.     | FM        |        224.160 |           -1.6 |                      156.7 |
 | 110   | Whatcom ECG    | W7ECG      | Lookout Mtn.     | DSTAR     |        440.475 |           +5.0 |                            |
 | 111   | Whatcom ECG    | W7ECG      | Ferndale         | DMR[^dmr] |       440.7375 |           +5.0 |                        CC1 |
-| 112   | Whatcom ECG    | W7ECG      | Ferndale         | FM        |        442.250 |           +5.0 |                      156.7 |
-| 113   | Whatcom ECG    | W7BFD      | Sehome Hill      | FM        |        442.300 |           +5.0 |                       88.5 |
+| 112   | Whatcom ECG    | W7ECG      | Lookout Mtn.     | FM        |        442.250 |           +5.0 |                      156.7 |
+| 113   | Whatcom ECG    | W7ECG      | Ferndale         | FM        |        442.825 |           +5.0 |                      156.7 |
+| 114   | Whatcom ECG    | W7BFD      | Sehome Hill      | FM        |        442.300 |           +5.0 |                       88.5 |
 
 ---
 
