@@ -1936,5 +1936,141 @@
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"https:\/\/wecg.org\/wordpress\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"146.780",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"D172[^dcs]",
+        "Coordinates":[
+            47.86148,
+            -122.28371
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Lynnwood",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"224.380",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.12,
+            -122.24
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Marysville",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"442.975",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"D172[^dcs]",
+        "Coordinates":[
+            47.8329,
+            -122.12397
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Clearview",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"443.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.7976,
+            -122.3124
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Mountlake Terrace",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"146.92",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            48.13695,
+            -121.9814
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Granite Falls",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"440.375",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.9585,
+            -122.375
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Clinton",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"444.025",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            47.8035,
+            -122.3346
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Edmonds",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"444.300",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.24944,
+            -121.56949
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Darrington",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
     }
 ]
