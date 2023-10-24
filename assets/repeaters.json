@@ -2024,23 +2024,6 @@
     },
     {
         "Callsign":"WA7DEM",
-        "Output (MHz)":"440.375",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.9585,
-            -122.375
-        ],
-        "RepeaterBook ID":null,
-        "Group Name":"Snohomish ACS",
-        "Location":"Clinton",
-        "Mode":"FM",
-        "Long Name":"Snohomish County Auxiliary Communications Service",
-        "Website":"https:\/\/www.wa7dem.info\/",
-        "Exclude":null
-    },
-    {
-        "Callsign":"WA7DEM",
         "Output (MHz)":"444.025",
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"156.7",
@@ -2068,6 +2051,23 @@
         "RepeaterBook ID":null,
         "Group Name":"Snohomish ACS",
         "Location":"Darrington",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7MLR",
+        "Output (MHz)":"444.200",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"D172[^dcs]",
+        "Coordinates":[
+            48.12,
+            -122.24
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Marysville",
         "Mode":"FM",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info\/",

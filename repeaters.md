@@ -139,9 +139,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 117   | Snohomish ACS  | WA7DEM     | Clearview         | FM          |        442.975 |           +5.0 |                 D172[^dcs] |
 | 118   | Snohomish ACS  | WA7DEM     | Mountlake Terrace | FM          |        443.725 |           +5.0 |                      103.5 |
 | 119   | Snohomish ACS  | WA7DEM     | Granite Falls     | FM          |         146.92 |           -0.6 |                      123.0 |
-| 120   | Snohomish ACS  | WA7DEM     | Clinton           | FM          |        440.375 |           +5.0 |                      103.5 |
-| 121   | Snohomish ACS  | WA7DEM     | Edmonds           | NBFM[^nbfm] |        444.025 |           +5.0 |                      156.7 |
-| 122   | Snohomish ACS  | WA7DEM     | Darrington        | FM          |        444.300 |           +5.0 |                      103.5 |
+| 120   | Snohomish ACS  | WA7DEM     | Edmonds           | NBFM[^nbfm] |        444.025 |           +5.0 |                      156.7 |
+| 121   | Snohomish ACS  | WA7DEM     | Darrington        | FM          |        444.300 |           +5.0 |                      103.5 |
+| 122   | Snohomish ACS  | K7MLR      | Marysville        | FM          |        444.200 |           +5.0 |                 D172[^dcs] |
 
 ---
 

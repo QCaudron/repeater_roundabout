@@ -84,6 +84,6 @@ No.,Channel Name,Receive Frequency,Transmit Frequency,Channel Type,DMR MODE,Band
 117,WA7DEM,442.975,447.975,A-Analog,0,25K,D172N,,,1,,Metro
 118,WA7DEM,443.725,448.725,A-Analog,0,25K,103.5,,,1,,Metro
 119,WA7DEM,146.92,146.32,A-Analog,0,25K,123.0,,,1,,North
-120,WA7DEM,440.375,445.375,A-Analog,0,25K,103.5,,,1,,North
-121,WA7DEM,444.025,449.025,A-Analog,0,12.5K,156.7,,,1,,Metro
-122,WA7DEM,444.3,449.3,A-Analog,0,25K,103.5,,,1,,North
+120,WA7DEM,444.025,449.025,A-Analog,0,12.5K,156.7,,,1,,Metro
+121,WA7DEM,444.3,449.3,A-Analog,0,25K,103.5,,,1,,North
+122,K7MLR,444.2,449.2,A-Analog,0,25K,D172N,,,1,,North
