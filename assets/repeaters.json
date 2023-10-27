@@ -2072,5 +2072,39 @@
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"KF7NPL",
+        "Output (MHz)":"147.260",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.385373,
+            -122.0614967
+        ],
+        "RepeaterBook ID":"3037",
+        "Group Name":"MVARC",
+        "Location":"Maple Valley",
+        "Mode":"FM",
+        "Long Name":"Maple Valley Amateur Radio Club",
+        "Website":"https:\/\/www.kc7key.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KF7NPL",
+        "Output (MHz)":"442.675",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.385373,
+            -122.0614967
+        ],
+        "RepeaterBook ID":"6908",
+        "Group Name":"MVARC",
+        "Location":"Maple Valley",
+        "Mode":"DSTAR",
+        "Long Name":"Maple Valley Amateur Radio Club",
+        "Website":"https:\/\/www.kc7key.org\/",
+        "Exclude":null
     }
 ]

@@ -142,6 +142,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 120   | Snohomish ACS  | WA7DEM     | Edmonds           | NBFM[^nbfm] |        444.025 |           +5.0 |                      156.7 |
 | 121   | Snohomish ACS  | WA7DEM     | Darrington        | FM          |        444.300 |           +5.0 |                      103.5 |
 | 122   | Snohomish ACS  | K7MLR      | Marysville        | FM          |        444.200 |           +5.0 |                 D172[^dcs] |
+| 123   | MVARC          | KF7NPL     | Maple Valley      | FM          |        147.260 |           +0.6 |                      103.5 |
+| 124   | MVARC          | KF7NPL     | Maple Valley      | DSTAR       |        442.675 |           +5.0 |                            |
 
 ---
 
@@ -206,6 +208,9 @@ MCARC
 
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
+
+MVARC
+: [Maple Valley Amateur Radio Club](https://www.kc7key.org/)
 
 Madigan Army
 : [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
