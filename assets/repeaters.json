@@ -1873,7 +1873,7 @@
         "Callsign":"W7ECG",
         "Output (MHz)":"440.7375",
         "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"CC1",
+        "Tone (Hz)":"CC1\/TS1 WA ARES TG\/31538",
         "Coordinates":[
             48.861414,
             -122.617661
