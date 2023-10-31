@@ -514,7 +514,9 @@ def write_generic_csv(df: pd.DataFrame) -> None:
 
     df = (
         df.copy()
-        .drop(columns=["Group Name", "Website", "RR#", "Coordinates"], axis=1)
+        .assign(Latitude=df["Coordinates"].apply(lambda x: x[0]))
+        .assign(Longitude=df["Coordinates"].apply(lambda x: x[1]))
+        .drop(columns=["Group Name", "Website", "RR#", "Coordinates", "Exclude"], axis=1)
         .rename(columns={"Long Name": "Group"})
     )
     df.index = df.index + 1
