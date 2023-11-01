@@ -21,3 +21,7 @@ Anyone with a ham radio license can participate ! You don't even have to be loca
 ---
 
 {{ index_content }}
+
+--- 
+
+Huge thanks to Rich WB7J for all his help this year !
