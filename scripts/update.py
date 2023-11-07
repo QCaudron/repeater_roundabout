@@ -242,7 +242,6 @@ if __name__ == "__main__":
     args = parse_args()
 
     df = generate_repeater_df(args)
-
     write_index_md(df, args.score)
     write_repeaters_md(df)
     write_rules_md(df)

@@ -76,6 +76,8 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
         If not, we write the normal index page with just some helpful info.
     """
 
+    df = df.copy()
+
     if score_results:
         leaderboard, by_repeater, by_club, stats = score_competition(df)
         index_content = results_index_content  # write the results data to the index

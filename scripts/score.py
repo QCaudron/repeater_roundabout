@@ -252,12 +252,19 @@ def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> Tuple[
         pd.DataFrame(contest_scores)
         .T.sort_values(["Total Score", "Total Contacts"], ascending=False)
         .reset_index(drop=False)
-        .rename(columns={"index": "Callsign"})
+        .rename(columns={
+            "index": "Callsign", 
+            "QRP Contacts": "QRP", 
+            "Band Hog Contacts": 
+            "Band Hog", 
+            "Club Connaisseur Contacts": "Club Connaisseur"
+            }
+        )
     )
     leaderboard.index = leaderboard.index + 1
-    leaderboard["Callsign"] = leaderboard["Callsign"].apply(
-        lambda call: f"[{call}](/results/{call})"
-    )
+    leaderboard["Callsign"] = leaderboard["Callsign"].apply(lambda call: f"[{call}](/results/{call})")
+    leaderboard = leaderboard[["Callsign", "Total Score", "Total Contacts", "QRP", "Band Hog", "Club Connaisseur", "Full House"]]
+    leaderboard["Full House"] = leaderboard["Full House"].apply(lambda x: "X" if x else "")
 
     # Merge all logs with repeater data
     repeater_cols = ["RR#", "Long Name", "Output (MHz)", "Location", "Website"]
