@@ -3,9 +3,9 @@ title: Programming Files
 subtitle: Program your radios with Repeater Roundabout repeaters.
 ---
 
-In order to make the contesting life a little easier, here are some files you can use to program your radios. **The Channel number in each file corresponds to the repeater's "Repeater Roundabout Number" (RR#) which you need to log in the contest.**
+In order to make the contesting life a little easier, here are some files you can use to program your radios. **The Channel number in each file corresponds to the repeater's "Repeater Roundabout Number" (RR#) which you need to log in the contest.** These files are automatically generated each time a new repeater is added.
 
-These files are automatically generated each time a new repeater is added. Many thanks to [Mike K7MCK](https://www.qrz.com/db/k7mck) for contributing code to generate the AnyTone D878 and Icom IC-705 files, and for the videos you see below on programming your radios specifically for the Repeater Roundabout.
+Also thanks to [Jeff AB6MB](https://www.qrz.com/db/ab6mb) and [Steve AJ6PV](https://www.qrz.com/db/aj6pv) for putting together the internet connectivity spreadsheet. 
 
 
 ## Downloading files
@@ -16,6 +16,7 @@ Which file do you need ?
 - The <a href="assets/programming_files/rr_frequencies.csv" download><b>Chirp</b></a> file is helpful for radios that are programmable by Chirp. It does not include DMR or DSTAR repeaters.
 - The [**AnyTone D878**](assets/programming_files/d878.zip) file is specifically for the AnyTone D878 radio. It includes DMR and YSF repeaters.
 - The [**Icom IC-705**](assets/programming_files/icom.csv) file is specifically for the Icom IC-705 radio. It includes DSTAR and YSF repeaters.
+- The <a href="assets/programming_files/internet.csv" download><b>Internet connectivity spreadsheet</b></a> contains Echolink and Allstar information for relevant repeaters. 
 
 <p style="margin-bottom: 1rem; margin-top: 0"><br /></p>
 
@@ -26,11 +27,12 @@ Which file do you need ?
 | <a href="assets/programming_files/d878.zip" download><img src="assets/images/download-solid.svg" height="30px" /></a> | AnyTone AT-D878 | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> |
 | <a href="assets/programming_files/icom.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | Icom IC-705 | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> |
 
+Many thanks to [Mike K7MCK](https://www.qrz.com/db/k7mck) for contributing code to generate the AnyTone D878 and Icom IC-705 files, and for the videos you see below on programming your radios specifically for the Repeater Roundabout. Further thanks to [Jeff AB6MB](https://www.qrz.com/db/ab6mb) and [Steve AJ6PV](https://www.qrz.com/db/aj6pv) for putting together the <a href="assets/programming_files/internet.csv" download><b>internet connectivity spreadsheet</b></a> !
+
 <p style="margin-bottom: 1rem; margin-top: 0"><br /></p>
 
+
 ## Help programming radios
-
-
 
 ### Chirp
 
