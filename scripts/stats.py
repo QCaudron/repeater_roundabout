@@ -8,32 +8,10 @@ from scipy.spatial import ConvexHull
 from scipy.spatial.distance import pdist, squareform
 from shapely.geometry import Polygon
 
-from programming_files import BAND_DEFINITIONS
+from programming_files import band
 from update import generate_repeater_df
 
 args = SimpleNamespace(regen=True)
-
-
-def band(freq: float) -> str:
-    """
-    Map between frequency and band name.
-
-    Parameters
-    ----------
-    freq : float
-        The repeater's output frequency.
-
-    Returns
-    -------
-    str
-        The name of the amateur radio band.
-    """
-
-    for band_name, edges in BAND_DEFINITIONS.items():
-        if edges[0] < freq < edges[1]:
-            return band_name
-
-    return "other"
 
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 from collections import defaultdict
 from datetime import datetime
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -39,7 +40,7 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 
 ## Leaderboard
 
-Many congratulations to our winner, {{ winning_station }} !
+Many congratulations to our winner, {{ winning_station }} ! This year, we have **personal results** for each contestant -- simply click on their names to see their score summary and logs.
 
 {{ leaderboard }}
 
@@ -79,6 +80,8 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
         leaderboard, by_repeater, by_club, stats = score_competition(df)
         index_content = results_index_content  # write the results data to the index
     else:
+        for file in Path("results").glob("*.md"):
+            file.unlink()
         leaderboard = pd.DataFrame([0])
         by_club, by_repeater, stats = "", "", ""
         index_content = ongoing_index_content  # write the ongoing contest text to the index

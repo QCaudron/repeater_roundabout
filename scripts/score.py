@@ -4,8 +4,7 @@ from typing import Optional, Tuple
 
 import pandas as pd
 
-logs_dir = Path("logs")
-logs_files = logs_dir.glob("*.csv")
+from programming_files import band
 
 
 def at_least_three_decimals(frequency: float) -> str:
@@ -91,7 +90,41 @@ def signal_report_to_readability(report: str) -> Optional[int]:
     return None  # if no match, return None
 
 
-def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, str, str, str]:
+def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) -> None:
+
+    # Read the template
+    with open("assets/templates/personal_results.md", "r") as f:
+        template = f.read()
+
+    # Clean up the logs for table formatting
+    logs = (
+        logs
+        .drop(columns=["Logger"])
+        .rename(columns={"Signal Report": "Report", "Group Name": "Group", "Bandhog": "Band Hog"})
+    )
+    logs = logs[["Group", "Contact", "Report", "Band", "QRP", "Club Connaisseur", "Band Hog"]]
+    for col in ["QRP", "Club Connaisseur", "Band Hog"]:
+        logs[col] = logs[col].apply(lambda x: "X" if x else "")
+    
+    # Fill it in
+    colalign = ["right", "left", "right", "center", "right", "center", "center", "center"]
+    template = (
+        template
+        .replace("{{ callsign }}", f"[{callsign}](https://www.qrz.com/db/{callsign})")
+        .replace("{{ score }}", str(summary["Total Score"]))
+        .replace("{{ summary }}", pd.Series(summary).drop("Total Score").rename("").to_markdown())
+        .replace("{{ logs }}", logs.to_markdown(colalign=colalign))
+    )
+
+    # Write it
+    results_dir = Path("results")
+    if not results_dir.exists():
+        results_dir.mkdir()
+    with open(results_dir / f"{callsign}.md", "w") as f:
+        f.write(template)
+    
+
+def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> Tuple[pd.DataFrame, str, str, str]:
     """
     Score the competition and return the results.
 
@@ -99,6 +132,8 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, str, str, 
     ----------
     repeaters : pd.DataFrame
         All the repeaters.
+    logs_dir : str
+        The directory containing the logs.
 
     Returns
     -------
@@ -112,11 +147,14 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, str, str, 
         A markdown-formatted bullet list of some statistics about the contest.
     """
 
+    logs_dir = Path(logs_dir)
     if not logs_dir.exists():
         raise FileNotFoundError(f"{logs_dir} does not exist.")
+    logs_files = logs_dir.glob("*.csv")
 
     # Load the repeater data
     repeaters.index = repeaters["RR#"]
+    repeaters["Band"] = repeaters["Output (MHz)"].astype(float).apply(band)
 
     # A mapping between RR# and club name
     rrn_to_club = repeaters["Group Name"].to_dict()
@@ -130,57 +168,102 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, str, str, 
     for file in logs_files:
 
         callsign = file.stem.split(" ")[0].split(",")[0].split("-")[0]
-        logs = pd.read_csv(file, index_col=[0])
+        logs = pd.read_csv(file, index_col=None)
+        logs["QRP"] = logs["QRP"].fillna(False)
         logs["Logger"] = callsign
+        logs["Ordering"] = range(len(logs))
         n_entries = len(logs)
 
         # Clean up the log sheet
         logs = logs.astype({"Signal Report": str, "RR#": int})
-        all_logs.append(logs.copy())  # save pre-deduped logs for activation counts
-        logs = logs.drop_duplicates(subset=["RR#"], keep="first")
-        n_duplicates = n_entries - len(logs)
-        base_score = len(logs)
+
+        # Add a band column
+        logs = logs.merge(
+            repeaters[["RR#", "Band"]], 
+            left_on="RR#", 
+            right_index=True, 
+            how="left", 
+            suffixes=(None, "_")
+        ).drop(columns="RR#_")
 
         # Add a group name column
         logs["Group Name"] = logs["RR#"].map(rrn_to_club)
 
         # Determine whether all repeaters from a club were worked
-        worked = logs["Group Name"].value_counts().rename("Worked").to_frame()
-        worked["Total"] = worked.index.map(club_n_repeaters)
-        worked["All Repeaters Worked"] = worked["Worked"] == worked["Total"]
-        worked["Bonus Eligible"] = worked["Total"] > 1
-
-        # Calculate bonus points
-        worked["Bonus Points"] = (
-            worked["All Repeaters Worked"] * worked["Worked"] * worked["Bonus Eligible"]
+        club_repeaters_worked = logs.groupby("Group Name")["RR#"].nunique()
+        logs["Club Connaisseur"] = logs["Group Name"].apply(
+            lambda x: club_repeaters_worked[x] == club_n_repeaters[x]
         )
-        bonus_points = worked["Bonus Points"].sum()
+
+        # Label any duplicates, trying to keep higher-scoring entries as the non-duplicate
+        logs = logs.sort_values("QRP")
+        logs["Duplicate"] = logs.duplicated(subset=["RR#", "Contact's Callsign"], keep="last")
+        n_duplicates = logs["Duplicate"].sum()
+        logs = logs.sort_values("Ordering")
+        logs = logs.loc[~logs["Duplicate"]].drop(columns=["Ordering", "Duplicate"])
+
+        # Determine if 30+ 2m or 70cm repeaters were worked
+        bandhog = {
+            "2m": logs.loc[logs["Band"] == "2m", "RR#"].nunique() >= 30,
+            "70cm": logs.loc[logs["Band"] == "70cm", "RR#"].nunique() >= 30,
+        }
+        logs["Bandhog"] = logs["Band"].apply(lambda x: bandhog.get(x, False))
+
+        # Full house
+        full_house = logs["RR#"].nunique() >= 80
+        logs["Full House"] = full_house
+
+        # Calculate QSO score
+        logs["QSO Score"] = (
+            logs["QRP"].apply(lambda x: 2 if x else 1)
+            * logs["Club Connaisseur"].apply(lambda x: 2 if x else 1)
+            * logs["Bandhog"].apply(lambda x: 2 if x else 1)
+            * logs["Full House"].apply(lambda x: 2 if x else 1)
+        )
+
+        # Summarise the logs
+        summary = {
+            "Total Score": logs["QSO Score"].sum(),
+            "Total Contacts": n_entries,
+            "QRP Contacts": logs["QRP"].sum(),
+            "Club Connaisseur Contacts": logs["Club Connaisseur"].sum(),
+            "Band Hog Contacts": logs["Bandhog"].sum(),
+            "Duplicate Contacts": n_duplicates,
+            "Full House": full_house,
+        }
+
+        # Clean up the logs 
+        logs = (
+            logs
+            .drop(columns=["Full House"])
+            .rename(columns={"Contact's Callsign": "Contact"})
+            .set_index("RR#", drop=True)
+        )
 
         # Save this person's contest scores
-        contest_scores[callsign.upper()] = {
-            "Entries": n_entries,
-            "Duplicates": n_duplicates,
-            "Base Score": base_score,
-            "Bonus Points": bonus_points,
-            "Total Score": base_score + bonus_points,
-        }
+        all_logs.append(logs.copy())
+        contest_scores[callsign.upper()] = summary
+
+        # Write a Markdown file for the participant
+        write_personal_results_md(logs, summary, callsign)
 
     # Save the contest scores
     leaderboard = (
         pd.DataFrame(contest_scores)
-        .T.sort_values(["Total Score", "Base Score", "Entries"], ascending=False)
+        .T.sort_values(["Total Score", "Total Contacts"], ascending=False)
         .reset_index(drop=False)
         .rename(columns={"index": "Callsign"})
     )
     leaderboard.index = leaderboard.index + 1
     leaderboard["Callsign"] = leaderboard["Callsign"].apply(
-        lambda call: f"[{call}](https://www.qrz.com/db/{call})"
+        lambda call: f"[{call}](/results/{call})"
     )
 
     # Merge all logs with repeater data
     repeater_cols = ["RR#", "Long Name", "Output (MHz)", "Location", "Website"]
     logs_df = (
-        pd.concat(all_logs, ignore_index=True)
+        pd.concat(all_logs, ignore_index=False)
+        .reset_index()
         .merge(repeaters[repeater_cols], left_on="RR#", right_index=True)
         .drop(columns=["RR#_x", "RR#_y"])
         .rename(columns={"Long Name": "Group", "Output (MHz)": "Frequency"})
@@ -229,7 +312,7 @@ def score_competition(repeaters: pd.DataFrame) -> Tuple[pd.DataFrame, str, str, 
     stats = {
         "Number of participants who submitted logs": len(leaderboard),
         "Total number of contacts made": f"{len(logs_df):,}",
-        "Number of unique operators contacted": logs_df["Contact's Callsign"].nunique(),
+        "Number of unique operators contacted": logs_df["Contact"].nunique(),
         "Number of repeaters activated": len(by_repeater),
     }
     stats_msg = "\n".join(f"- {key} : {val}" for key, val in stats.items())

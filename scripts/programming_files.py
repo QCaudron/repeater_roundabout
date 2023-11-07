@@ -521,3 +521,25 @@ def write_generic_csv(df: pd.DataFrame) -> None:
     )
     df.index = df.index + 1
     df.to_csv("assets/programming_files/all_rr_frequencies.csv")
+
+
+def band(freq: float) -> str:
+    """
+    Map between frequency and band name.
+
+    Parameters
+    ----------
+    freq : float
+        The repeater's output frequency.
+
+    Returns
+    -------
+    str
+        The name of the amateur radio band.
+    """
+
+    for band_name, edges in BAND_DEFINITIONS.items():
+        if edges[0] < freq < edges[1]:
+            return band_name
+
+    return "other"
