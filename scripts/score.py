@@ -105,14 +105,22 @@ def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) 
     logs = logs[["Group", "Contact", "Report", "Band", "QRP", "Club Connaisseur", "Band Hog"]]
     for col in ["QRP", "Club Connaisseur", "Band Hog"]:
         logs[col] = logs[col].apply(lambda x: "X" if x else "")
+
+    # Format the summary table
+    total_score = summary["Total Score"]
+    summary_df = pd.DataFrame(
+        index=summary.keys(),
+        data=summary.values(),
+        columns=[total_score],
+    ).drop("Total Score")
+    summary_df.index = summary_df.index.rename("Total Score")
     
     # Fill it in
     colalign = ["right", "left", "right", "center", "right", "center", "center", "center"]
     template = (
         template
         .replace("{{ callsign }}", f"[{callsign}](https://www.qrz.com/db/{callsign})")
-        .replace("{{ score }}", str(summary["Total Score"]))
-        .replace("{{ summary }}", pd.Series(summary).drop("Total Score").rename("").to_markdown())
+        .replace("{{ summary }}", summary_df.to_markdown())
         .replace("{{ logs }}", logs.to_markdown(colalign=colalign))
     )
 
@@ -248,6 +256,7 @@ def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> Tuple[
         write_personal_results_md(logs, summary, callsign)
 
     # Save the contest scores
+    breakpoint()
     leaderboard = (
         pd.DataFrame(contest_scores)
         .T.sort_values(["Total Score", "Total Contacts"], ascending=False)
