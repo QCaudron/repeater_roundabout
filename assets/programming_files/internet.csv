@@ -1,6 +1,6 @@
 RR#,Group,Callsign,Location,Mode,Output (MHz),Offset (MHz),Tone (Hz),Echolink,Allstar
-1,PSRG,WW7PSR,Seattle,FM,146.96,-0.6,103.5,,2462
-2,PSRG,WW7PSR,Seattle,FM,52.87,-1.7,103.5,,2464
+1,PSRG,WW7PSR,Seattle,FM,146.96,-0.6,103.5,WW7PSR-R,2462
+2,PSRG,WW7PSR,Seattle,FM,52.87,-1.7,103.5,WW7PSR-L,2464
 3,PSRG,WW7PSR,Seattle,DMR1,440.775,5,CC2/TS1 Seattle1 TG/803153,,
 4,Highline,NC7G,SeaTac,FM,146.66,-0.6,103.5,,
 5,Highline,WA7ST,SeaTac,FM,443.1,5,103.5,,

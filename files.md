@@ -25,7 +25,7 @@ Which file do you need ?
 | <a href="assets/programming_files/d878.zip" download><img src="assets/images/download-solid.svg" height="30px" /></a> | AnyTone AT-D878 | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> |
 | <a href="assets/programming_files/icom.csv" download><img src="assets/images/download-solid.svg" height="30px" /></a> | Icom IC-705 | <img src="assets/images/check-solid.svg" height="20px" /> | | <img src="assets/images/check-solid.svg" height="20px" /> | <img src="assets/images/check-solid.svg" height="20px" /> |
 
-Many thanks to [Mike K7MCK](https://www.qrz.com/db/k7mck) for contributing code to generate the AnyTone D878 and Icom IC-705 files, and for the videos you see below on programming your radios specifically for the Repeater Roundabout. Further thanks to [Jeff AB6MB](https://www.qrz.com/db/ab6mb) and [Steve AJ6PV](https://www.qrz.com/db/aj6pv) for putting together the <a href="assets/programming_files/internet.csv" download><b>internet connectivity file</b></a> !
+Many thanks to [Mike K7MCK](https://www.qrz.com/db/k7mck) for contributing code to generate the AnyTone D878 and Icom IC-705 files, and for the videos you see below on programming your radios specifically for the Repeater Roundabout. Further thanks to [Jeff AB6MB](https://www.qrz.com/db/ab6mb) for putting together the <a href="assets/programming_files/internet.csv" download><b>internet connectivity file</b></a> ! Please consider this a draft and note there are likely some errors; if you find one, please report it !
 
 
 ## Help programming radios
