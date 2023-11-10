@@ -516,6 +516,8 @@ def write_generic_csv(df: pd.DataFrame) -> None:
         df.copy()
         .assign(Latitude=df["Coordinates"].apply(lambda x: x[0]))
         .assign(Longitude=df["Coordinates"].apply(lambda x: x[1]))
+        .assign(OffsetDirection=df["Offset (MHz)"].str[0])
+        .assign(OffsetValue=df["Offset (MHz)"].str[1:].astype(float))
         .drop(columns=["Group Name", "Website", "RR#", "Coordinates", "Exclude"], axis=1)
         .rename(columns={"Long Name": "Group"})
     )
