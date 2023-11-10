@@ -21,8 +21,6 @@ You should exchange
 - a mention of the "Repeater Roundabout"
 - a signal report using the [CM system](https://en.wikipedia.org/wiki/Circuit_Merit) (1-5, 1 being unreadable, 5 being perfect)
 
-Feel free to chat about anything and everything, though !
-
 
 # Scoring
 
@@ -31,7 +29,7 @@ Feel free to chat about anything and everything, though !
 ### Multipliers
 
 - **It Pays to QRP.** If you're running 5W or less, the contact is worth double.
-- **Club Connoisseur.** If you make a contact on all repeaters with the same club designation (for systems with at least two repeaters), your point score for that system are doubled.
+- **Club Connoisseur.** If you make a contact on all repeaters with the same club name (for systems with at least two repeaters), your point score for that system are doubled.
 - **Band Hog.** If you hit at least 30 FM repeaters on the 2m or 70cm bands, your score for that band is doubled.
 - **Full House.** If you make a contact on at least 80 repeaters, your full score is doubled.
 

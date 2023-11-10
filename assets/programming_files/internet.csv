@@ -97,7 +97,7 @@ RR#,Group,Callsign,Location,Mode,Output (MHz),Offset (MHz),Tone (Hz),Echolink,Al
 96,West Seattle,W7AW,West Seattle,FM,53.29,-1.7,100,,56575
 97,West Seattle,W7AW,West Seattle,FM,145.13,-0.6,103.5,,56575
 98,West Seattle,W7AW,West Seattle,DMR1,440.975,5,CC2/TS2 Seattle2 TG/813153,, 
-99,West Seattle,W7AW,West Seattle,FM,441.8,5,141.3,,56575
+99,West Seattle,W7AW,West Seattle,FM,441.8,5,141.3,W7AW-R,56575
 100,SJCARS,N7JN,San Juan Isl.,FM,146.7,-0.6,131.8,,
 101,SJCARS,N7JN,Friday Harbor,DSTAR,145.25,-0.6,,,
 102,SJCARS,N7JN,Friday Harbor,DSTAR,442.4625,5,,,
