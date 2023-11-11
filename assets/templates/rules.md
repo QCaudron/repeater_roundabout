@@ -17,7 +17,7 @@ Please ensure that there is no ongoing activity on a repeater (such as a net) be
 
 You should exchange
 
-- your name
+- your callsign and name
 - a mention of the "Repeater Roundabout"
 - a signal report using the [CM system](https://en.wikipedia.org/wiki/Circuit_Merit) (1-5, 1 being unreadable, 5 being perfect)
 
