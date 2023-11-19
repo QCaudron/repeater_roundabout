@@ -3,5 +3,4 @@
 *.pyc
 *.pdf
 logs
-contest_scores.csv
 node_modules/

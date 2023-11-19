@@ -113,7 +113,7 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     total_repeaters = len(df)
-    
+
     # Remove repeaters not in the contest
     df = df.loc[df["Exclude"].isna()]
 
@@ -202,7 +202,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     total_repeaters = len(df)
-    
+
     # Remove repeaters not in the contest
     df = df.loc[df["Exclude"].isna()]
 
@@ -287,7 +287,7 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     """
 
     total_repeaters = len(df)
-    
+
     # Remove repeaters not in the contest
     df = df.loc[df["Exclude"].isna()]
 

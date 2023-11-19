@@ -15,7 +15,6 @@ args = SimpleNamespace(regen=True)
 
 
 if __name__ == "__main__":
-
     statistics = {}
 
     # Generate the complete repeater dataframe with a band column

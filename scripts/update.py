@@ -238,7 +238,6 @@ def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-
     args = parse_args()
 
     df = generate_repeater_df(args)

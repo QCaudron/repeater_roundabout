@@ -198,7 +198,7 @@ KCARC
 : [Kitsap County Amateur Radio Club](https://kcarc.org/)
 
 LWHC
-: [Lake Washington Ham Club](https://lakewashingtonhamclub.org/)
+: [Lake Washington Ham Club](https://www.lakewashingtonhamclub.org/)
 
 MBARC
 : [Mount Baker Amateur Radio Club](https://mbarc.groups.io/)
@@ -249,7 +249,7 @@ PARET
 : [Peninsula Amateur Radio Emergency Team](https://piercecountyares.net/)
 
 PSRG
-: [Puget Sound Repeater Group](http://psrg.org)
+: [Puget Sound Repeater Group](http://www.psrg.org/)
 
 Pierce
 : [Pierce County ARES](http://www.piercecountyares.net)

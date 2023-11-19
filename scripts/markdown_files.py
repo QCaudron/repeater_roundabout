@@ -216,7 +216,6 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
     # For each cluster, create a pin on the map as LeafletJS plaintext
     pins_list = []
     for cluster in clusters.values():
-
         msg = ""
         for repeater in cluster:
             msg += f"RR# {repeater['RR#']} - {repeater['Callsign']} "
@@ -226,13 +225,15 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
             coords = np.mean([repeater["Coordinates"] for repeater in cluster], axis=0)
             coords_str = f"[{coords[0]:.10f}, {coords[1]:.10f}]"
             custom_middle = (
-                '"<div class=\'icon-label\'>...</div>"' if len(cluster) > 1 
+                "\"<div class='icon-label'>...</div>\""
+                if len(cluster) > 1
                 else f'"<div class=\'icon-label\'>{repeater["RR#"]}</div>"'
             )
             custom = f"L.divIcon({{className: 'custom-icon', html: {custom_middle}, iconSize: [25, 25]}})"
-            pins_list.append(f"L.marker({coords_str}, {{icon: {custom} }}).bindPopup('{msg}').addTo(map);")
+            pins_list.append(
+                f"L.marker({coords_str}, {{icon: {custom} }}).bindPopup('{msg}').addTo(map);"
+            )
             # pins_list.append(f"L.marker({coords_str}).bindPopup('{msg}').addTo(map);")
-
 
     pins = "\n".join(pins_list)
 

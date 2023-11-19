@@ -13,7 +13,7 @@
         "Location":"Seattle",
         "Mode":"FM",
         "Long Name":"Puget Sound Repeater Group",
-        "Website":"http:\/\/psrg.org",
+        "Website":"http:\/\/www.psrg.org\/",
         "Exclude":null
     },
     {
@@ -30,7 +30,7 @@
         "Location":"Seattle",
         "Mode":"FM",
         "Long Name":"Puget Sound Repeater Group",
-        "Website":"http:\/\/psrg.org",
+        "Website":"http:\/\/www.psrg.org\/",
         "Exclude":null
     },
     {
@@ -557,7 +557,7 @@
         "Location":"Kirkland",
         "Mode":"FM",
         "Long Name":"Lake Washington Ham Club",
-        "Website":"https:\/\/lakewashingtonhamclub.org\/",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Exclude":null
     },
     {
@@ -574,7 +574,7 @@
         "Location":"Kirkland",
         "Mode":"FM",
         "Long Name":"Lake Washington Ham Club",
-        "Website":"https:\/\/www.lakewashingtonhamclub.org",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Exclude":null
     },
     {
@@ -591,7 +591,7 @@
         "Location":"Kirkland",
         "Mode":"FM",
         "Long Name":"Lake Washington Ham Club",
-        "Website":"https:\/\/lakewashingtonhamclub.org\/",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Exclude":null
     },
     {
@@ -608,7 +608,7 @@
         "Location":"Kirkland",
         "Mode":"FM",
         "Long Name":"Lake Washington Ham Club",
-        "Website":"https:\/\/lakewashingtonhamclub.org\/",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Exclude":null
     },
     {
@@ -880,7 +880,7 @@
         "Location":"Federal Way",
         "Mode":"DSTAR",
         "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"http:\/\/fwarc.org\/",
+        "Website":"https:\/\/fwarc.org\/",
         "Exclude":null
     },
     {
@@ -897,7 +897,7 @@
         "Location":"Federal Way",
         "Mode":"DSTAR",
         "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"http:\/\/fwarc.org\/",
+        "Website":"https:\/\/fwarc.org\/",
         "Exclude":null
     },
     {
