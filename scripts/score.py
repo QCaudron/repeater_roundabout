@@ -296,6 +296,7 @@ def score_competition(
         .rename(columns={"Long Name": "Group", "Output (MHz)": "Frequency"})
         .astype({"Frequency": float})
     )
+    logs_df = logs_df.drop(columns=[col for col in logs_df.columns if "Unnamed: " in col])
 
     # Attempt to clean up signal reports
     logs_df["Readability"] = logs_df["Signal Report"].apply(signal_report_to_readability)
@@ -324,7 +325,7 @@ def score_competition(
     )
     by_repeater.index = by_repeater.index + 1
     by_repeater["Frequency"] = by_repeater["Frequency"].apply(at_least_three_decimals)
-    
+
     # Calculate the number of activations per club
     by_club = (
         by_repeater.groupby("Group")["Activations"]

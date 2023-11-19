@@ -30,11 +30,11 @@ results_index_content = """
 
 The contest is over ! Many thanks to those who participated; we hope you had fun. Check back next year for the next Repeater Roundabout !
 
-Please don't hesitate to send us your thoughts and feedback, either by email at [k7drq@psrg.org](mailto:k7drq@psrg.org) or on our [Discord server](https://discord.gg/BBpbESxSCm).
-
 Here are some stats on the contest, based on the logs received. These numbers are underestimates, because we are missing a good number of logs !
 
 {{ stats }}
+
+Please don't hesitate to send us your thoughts and feedback, either by email at [k7drq@psrg.org](mailto:k7drq@psrg.org) or on our [Discord server](https://discord.gg/BBpbESxSCm).
 
 <br />
 
