@@ -269,7 +269,6 @@ def score_competition(
             }
         )
     )
-    leaderboard.index = leaderboard.index + 1
     leaderboard["Callsign"] = leaderboard["Callsign"].apply(
         lambda call: f"[{call}](/results/{call})"
     )
@@ -285,6 +284,9 @@ def score_competition(
         ]
     ]
     leaderboard["Full House"] = leaderboard["Full House"].apply(lambda x: "X" if x else "")
+
+    # Set a new index with leaderboard positions, but accounting for ties
+    leaderboard.index = leaderboard["Total Score"].rank(method='min', ascending=False).astype(int)
 
     # Merge all logs with repeater data
     repeater_cols = ["RR#", "Long Name", "Output (MHz)", "Location", "Website"]
@@ -323,7 +325,7 @@ def score_competition(
         .reset_index(drop=True)
         .round({"Readability": 2})
     )
-    by_repeater.index = by_repeater.index + 1
+    by_repeater.index = by_repeater["Activations"].rank(method='min', ascending=False).astype(int)
     by_repeater["Frequency"] = by_repeater["Frequency"].apply(at_least_three_decimals)
 
     # Calculate the number of activations per club
@@ -334,7 +336,7 @@ def score_competition(
         .sort_values(["Activations", "Group"], ascending=[False, True])
         .reset_index(drop=False)  # index contains the club name
     )
-    by_club.index = by_club.index + 1
+    by_club.index = by_club["Activations"].rank(method='min', ascending=False).astype(int)
 
     # Some stats :
     total_contacts = sum([scores["Total Contacts"] for scores in contest_scores.values()])
