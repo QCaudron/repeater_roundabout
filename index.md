@@ -11,7 +11,7 @@ The Repeater Roundabout is a weekend-long event held on many of our local repeat
 
 Anyone with a ham radio license can participate ! You don't even have to be local; stations may participate over Echolink, Allstar, or IRLP if they are available.
 
-> This page was last updated on Tuesday November 21 at 08:43.
+> This page was last updated on Tuesday November 21 at 15:24.
 
 ---
 
@@ -76,8 +76,8 @@ Many congratulations to our winner, [K3TZZ](/results/K3TZZ) ! This year, we have
 |            37 | [K7RMZ](/results/K7RMZ)   |             8 |                7 |     1 |          0 |                  0 |              |
 |            38 | [KI7DEE](/results/KI7DEE) |             6 |                6 |     0 |          0 |                  0 |              |
 |            38 | [W7TDO](/results/W7TDO)   |             6 |                4 |     3 |          0 |                  0 |              |
-|            40 | [N7WAA](/results/N7WAA)   |             5 |                3 |     2 |          0 |                  0 |              |
-|            41 | [KK7EV](/results/KK7EV)   |             3 |                3 |     0 |          0 |                  0 |              |
+|            40 | [N7WAA](/results/N7WAA)   |             3 |                3 |     0 |          0 |                  0 |              |
+|            40 | [KK7EV](/results/KK7EV)   |             3 |                3 |     0 |          0 |                  0 |              |
 |            42 | [W7VXS](/results/W7VXS)   |             2 |                2 |     0 |          0 |                  0 |              |
 
 <br />
