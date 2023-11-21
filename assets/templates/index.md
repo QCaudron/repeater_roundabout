@@ -20,3 +20,5 @@ Anyone with a ham radio license can participate ! You don't even have to be loca
 --- 
 
 Huge thanks to Rich WB7J for all his help this year !
+
+Big thanks to Jack KI7RMU, and the Noon Net, for sponsoring our prizes this year : copies of [The Parks on the Air Book](https://home.arrl.org/action/Store/Product-Details/productId/2013464221) for our first five finishers !

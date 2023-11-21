@@ -11,7 +11,7 @@ The Repeater Roundabout is a weekend-long event held on many of our local repeat
 
 Anyone with a ham radio license can participate ! You don't even have to be local; stations may participate over Echolink, Allstar, or IRLP if they are available.
 
-> This page was last updated on Tuesday November 21 at 08:36.
+> This page was last updated on Tuesday November 21 at 08:43.
 
 ---
 
@@ -236,3 +236,5 @@ This table shows how many contacts were made on each repeater, including duplica
 --- 
 
 Huge thanks to Rich WB7J for all his help this year !
+
+Big thanks to Jack KI7RMU, and the Noon Net, for sponsoring our prizes this year : copies of [The Parks on the Air Book](https://home.arrl.org/action/Store/Product-Details/productId/2013464221) for our first five finishers !
