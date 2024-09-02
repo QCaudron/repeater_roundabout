@@ -1,0 +1,2110 @@
+[
+    {
+        "Callsign":"WW7PSR",
+        "Output (MHz)":"146.960",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.62400055,
+            -122.31500244
+        ],
+        "RepeaterBook ID":"62",
+        "Group Name":"PSRG",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Puget Sound Repeater Group",
+        "Website":"http:\/\/www.psrg.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7PSR",
+        "Output (MHz)":"52.870",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.62400055,
+            -122.31500244
+        ],
+        "RepeaterBook ID":"20830",
+        "Group Name":"PSRG",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Puget Sound Repeater Group",
+        "Website":"http:\/\/www.psrg.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7PSR",
+        "Output (MHz)":"440.775",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"CC2\/TS1 Seattle1 TG\/803153",
+        "Coordinates":[
+            47.62400055,
+            -122.31500244
+        ],
+        "RepeaterBook ID":"493",
+        "Group Name":"PSRG",
+        "Location":"Seattle",
+        "Mode":"DMR[^dmr]",
+        "Long Name":"Puget Sound Repeater Group",
+        "Website":"http:\/\/www.psrg.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NC7G",
+        "Output (MHz)":"146.660",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.45080185,
+            -122.28700256
+        ],
+        "RepeaterBook ID":"2780",
+        "Group Name":"Highline",
+        "Location":"SeaTac",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7ST",
+        "Output (MHz)":"443.100",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.45080185,
+            -122.28700256
+        ],
+        "RepeaterBook ID":"2779",
+        "Group Name":"Highline",
+        "Location":"SeaTac",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7DK",
+        "Output (MHz)":"440.950",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            47.77249908,
+            -122.93000031
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7DK",
+        "Location":"Buck Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mark K7DK's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K7DK",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7GDE",
+        "Output (MHz)":"145.190",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.58330154,
+            -122.14499664
+        ],
+        "RepeaterBook ID":"176",
+        "Group Name":"RASC",
+        "Location":"Lyman Hill",
+        "Mode":"FM",
+        "Long Name":"Radio Amateurs of Skagit County",
+        "Website":"http:\/\/rasconline.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"442.300",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6031132,
+            -122.3187965
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"444.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.60430145,
+            -122.33000183
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"442.875",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.62360001,
+            -122.31500244
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.475",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6510101,
+            -122.3893988
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.650",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.690119,
+            -122.3177855
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"North Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"440.600",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.77193,
+            -122.28101
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Lake Forest Park",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.200",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.52099991,
+            -122.34300232
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"White Center",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7TBP",
+        "Output (MHz)":"223.960",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.62993,
+            -121.95008
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"WA7TBP",
+        "Location":"Carnation",
+        "Mode":"FM",
+        "Long Name":"Tom WA7TBP's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/wa7tbp",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7JCR",
+        "Output (MHz)":"145.150",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            48.11700058,
+            -122.76000214
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"JCARC",
+        "Location":"Port Townsend",
+        "Mode":"FM",
+        "Long Name":"Jefferson County Amateur Radio Club",
+        "Website":"https:\/\/w7jcr.wordpress.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"AA7MI",
+        "Output (MHz)":"440.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            48.05830002,
+            -122.68800354
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Marrowstone",
+        "Location":"Marrowstone Isl.",
+        "Mode":"FM",
+        "Long Name":"Marrowstone Island Amateur Radio Club",
+        "Website":"https:\/\/www.qrz.com\/db\/AA7MI",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NT7H",
+        "Output (MHz)":"147.360",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.02799988,
+            -122.89700317
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"OARS",
+        "Location":"Olympia",
+        "Mode":"FM",
+        "Long Name":"Olympia Amateur Radio Society",
+        "Website":"https:\/\/www.olyham.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NT7H",
+        "Output (MHz)":"224.460",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.84280014,
+            -122.76499939
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"OARS",
+        "Location":"Crawford Mtn.",
+        "Mode":"FM",
+        "Long Name":"Olympia Amateur Radio Society",
+        "Website":"https:\/\/www.olyham.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NT7H",
+        "Output (MHz)":"441.400",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.84289932,
+            -122.76499939
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"OARS",
+        "Location":"Crawford Mtn.",
+        "Mode":"FM",
+        "Long Name":"Olympia Amateur Radio Society",
+        "Website":"https:\/\/www.olyham.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7MIR",
+        "Output (MHz)":"147.160",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"146.2",
+        "Coordinates":[
+            47.568367,
+            -122.220729
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MIRO",
+        "Location":"Mercer Isl.",
+        "Mode":"FM",
+        "Long Name":"Mercer Island Radio Operators",
+        "Website":"https:\/\/miro.cmivolunteers.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7MIR",
+        "Output (MHz)":"440.150",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.568367,
+            -122.220729
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MIRO",
+        "Location":"Mercer Isl.",
+        "Mode":"FM",
+        "Long Name":"Mercer Island Radio Operators",
+        "Website":"https:\/\/miro.cmivolunteers.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KC7Z",
+        "Output (MHz)":"444.075",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.64450073,
+            -122.69499969
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"KCARC",
+        "Location":"Silverdale",
+        "Mode":"FM",
+        "Long Name":"Kitsap County Amateur Radio Club",
+        "Website":"https:\/\/kcarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AVM",
+        "Output (MHz)":"146.860",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.21250153,
+            -122.70500183
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"ICARC",
+        "Location":"Whidbey Isl.",
+        "Mode":"FM",
+        "Long Name":"Island County Amateur Radio Club",
+        "Website":"https:\/\/www.w7avm.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7KN",
+        "Output (MHz)":"441.425",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            48.0982722,
+            -122.5731977
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"N7KN",
+        "Location":"Whidbey Isl.",
+        "Mode":"FM",
+        "Long Name":"Charlie N7KN's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/N7KN",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7SEA",
+        "Output (MHz)":"444.700",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.63249969,
+            -122.35600281
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"WW7SEA",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Barry K7PAL's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AUX",
+        "Output (MHz)":"442.825",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.76224899,
+            -122.3494988
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Shoreline ACS",
+        "Location":"Shoreline",
+        "Mode":"FM",
+        "Long Name":"Shoreline Auxiliary Communications Service",
+        "Website":"https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AUX",
+        "Output (MHz)":"440.300",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.76224899,
+            -122.3494988
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Shoreline ACS",
+        "Location":"Shoreline",
+        "Mode":"FM",
+        "Long Name":"Shoreline Auxiliary Communications Service",
+        "Website":"https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AUX",
+        "Output (MHz)":"224.020",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.76224899,
+            -122.3494988
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Shoreline ACS",
+        "Location":"Shoreline",
+        "Mode":"FM",
+        "Long Name":"Shoreline Auxiliary Communications Service",
+        "Website":"https:\/\/sites.google.com\/a\/w7aux.org\/shoreline-acs\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7NWS",
+        "Output (MHz)":"145.330",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"179.9",
+        "Coordinates":[
+            47.50389862,
+            -121.97599792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"BEARS",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Boeing Employees Amateur Radio Society",
+        "Website":"https:\/\/sites.google.com\/site\/k7nwsbears",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7NWS",
+        "Output (MHz)":"224.340",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            47.50389862,
+            -121.97599792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"BEARS",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Boeing Employees Amateur Radio Society",
+        "Website":"https:\/\/sites.google.com\/site\/k7nwsbears",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7NWS",
+        "Output (MHz)":"442.075",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"CC2\/TS1 BEARS1 TG\/312488",
+        "Coordinates":[
+            47.50389862,
+            -121.97599792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"BEARS",
+        "Location":"Tiger Mtn.",
+        "Mode":"DMR[^dmr]",
+        "Long Name":"Boeing Employees Amateur Radio Society",
+        "Website":"https:\/\/sites.google.com\/site\/k7nwsbears",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"53.170",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.68849945,
+            -122.15599823
+        ],
+        "RepeaterBook ID":"165",
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"145.490",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.68849945,
+            -122.15599823
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"224.360",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.68149948,
+            -122.20899963
+        ],
+        "RepeaterBook ID":"5326",
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"441.075",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.68149948,
+            -122.20899963
+        ],
+        "RepeaterBook ID":"162",
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7FLY",
+        "Output (MHz)":"443.925",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.85660934,
+            -122.28367615
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"BEARONS",
+        "Location":"Lynnwood",
+        "Mode":"FM",
+        "Long Name":"Boeing Employees Amateur Radio Operators North Society",
+        "Website":"https:\/\/w7flybearons.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NE7MC",
+        "Output (MHz)":"442.000",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.737677,
+            -122.23079
+        ],
+        "RepeaterBook ID":"19962",
+        "Group Name":"Northshore EMC",
+        "Location":"Kenmore",
+        "Mode":"FM",
+        "Long Name":"Northshore Emergency Management Coalition",
+        "Website":"https:\/\/www.northshoreemc.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"146.875",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"CC1\/TS1 Local1 TG\/3181",
+        "Coordinates":[
+            47.4896147,
+            -121.9579761
+        ],
+        "RepeaterBook ID":"19905",
+        "Group Name":"SeaTac",
+        "Location":"Tiger Mtn.",
+        "Mode":"DMR[^dmr]",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"224.440",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54029846,
+            -122.09999847
+        ],
+        "RepeaterBook ID":"16503",
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn.",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"441.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54059982,
+            -122.09799957
+        ],
+        "RepeaterBook ID":"601",
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn.",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"443.050",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48844,
+            -121.94705
+        ],
+        "RepeaterBook ID":"19898",
+        "Group Name":"SeaTac",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"927.2125",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            47.55590057,
+            -122.11599731
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn.",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N3KPU",
+        "Output (MHz)":"145.230",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"146.2",
+        "Coordinates":[
+            47.05289841,
+            -122.29399872
+        ],
+        "RepeaterBook ID":"9851",
+        "Group Name":"N3KPU",
+        "Location":"Graham",
+        "Mode":"FM",
+        "Long Name":"Michael N3KPU's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/N3KPU",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KE7YYD",
+        "Output (MHz)":"442.750",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"146.2",
+        "Coordinates":[
+            47.10910034,
+            -122.5530014
+        ],
+        "RepeaterBook ID":"13889",
+        "Group Name":"Madigan Army",
+        "Location":"JBLM",
+        "Mode":"FM",
+        "Long Name":"Madigan Army Medical Center",
+        "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7TJL",
+        "Output (MHz)":"224.200",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.3946,
+            -122.5966
+        ],
+        "RepeaterBook ID":"19795",
+        "Group Name":"W7TJL",
+        "Location":"Gig Harbor",
+        "Mode":"FM",
+        "Long Name":"Tom W7TJL's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/W7TJL",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"147.040",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.32229996,
+            -122.31300354
+        ],
+        "RepeaterBook ID":"136",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"146.760",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.32229996,
+            -122.31300354
+        ],
+        "RepeaterBook ID":"135",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"442.950",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.32229996,
+            -122.31300354
+        ],
+        "RepeaterBook ID":"137",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"442.925",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"D036[^dcs]",
+        "Coordinates":[
+            47.27740097,
+            -122.29199982
+        ],
+        "RepeaterBook ID":"14514",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"146.840",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.3062355469,
+            -122.3230332117
+        ],
+        "RepeaterBook ID":"14514",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"DSTAR",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"443.850",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.3062355469,
+            -122.3230332117
+        ],
+        "RepeaterBook ID":"655",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"DSTAR",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"1290.100",
+        "Offset (MHz)":"-20.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.3062355469,
+            -122.3230332117
+        ],
+        "RepeaterBook ID":"5201",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"DSTAR",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"146.740",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.67779922,
+            -122.83200073
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"Mt. Constitution",
+        "Mode":"FM",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"444.050",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.67760086,
+            -122.83100128
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"Mt. Constitution",
+        "Mode":"FM",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"443.750",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.78210068,
+            -122.37000275
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"Bellingham",
+        "Mode":"FM",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"147.160",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.80189896,
+            -122.46099854
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"Bellingham",
+        "Mode":"FM",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"443.650",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.80170059,
+            -122.46199799
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"Bellingham",
+        "Mode":"YSF",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KA7EOC",
+        "Output (MHz)":"145.350",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.39107,
+            -122.6079
+        ],
+        "RepeaterBook ID":"279",
+        "Group Name":"PARET",
+        "Location":"Gig Harbor",
+        "Mode":"FM",
+        "Long Name":"Peninsula Amateur Radio Emergency Team",
+        "Website":"https:\/\/piercecountyares.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7SK",
+        "Output (MHz)":"146.720",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.21509933,
+            -123.10099792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MCARC",
+        "Location":"Shelton",
+        "Mode":"FM",
+        "Long Name":"Mason County Amateur Radio Club",
+        "Website":"https:\/\/mc-arc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7SK",
+        "Output (MHz)":"443.250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.21509933,
+            -123.10099792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MCARC",
+        "Location":"Shelton",
+        "Mode":"FM",
+        "Long Name":"Mason County Amateur Radio Club",
+        "Website":"https:\/\/mc-arc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7SK",
+        "Output (MHz)":"927.4125",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            47.21509933,
+            -123.10099792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MCARC",
+        "Location":"Shelton",
+        "Mode":"FM",
+        "Long Name":"Mason County Amateur Radio Club",
+        "Website":"https:\/\/mc-arc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7LAW",
+        "Output (MHz)":"147.180",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.9978981,
+            -122.19499969
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SCHC",
+        "Location":"Everett",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Hams Club",
+        "Website":"http:\/\/www.wa7law.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7LAW",
+        "Output (MHz)":"444.575",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.9980011,
+            -122.19400024
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SCHC",
+        "Location":"Everett",
+        "Mode":"YSF",
+        "Long Name":"Snohomish County Hams Club",
+        "Website":"http:\/\/www.wa7law.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"145.170",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.386615,
+            -122.860995
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NMARES",
+        "Location":"Belfair",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"224.260",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.386615,
+            -122.860995
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NMARES",
+        "Location":"Belfair",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7EAT",
+        "Output (MHz)":"146.700",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.843101,
+            -122.314956
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Eatonville",
+        "Location":"Eatonville",
+        "Mode":"FM",
+        "Long Name":"Eatonville Amateur Radio Club",
+        "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7EAT",
+        "Output (MHz)":"224.180",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.053156,
+            -122.294825
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Eatonville",
+        "Location":"Graham",
+        "Mode":"FM",
+        "Long Name":"Eatonville Amateur Radio Club",
+        "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7EAT",
+        "Output (MHz)":"442.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.843101,
+            -122.314956
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Eatonville",
+        "Location":"Eatonville",
+        "Mode":"FM",
+        "Long Name":"Eatonville Amateur Radio Club",
+        "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AAO",
+        "Output (MHz)":"145.370",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            47.19979858,
+            -121.7559967
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Pierce",
+        "Location":"Grass Mtn.",
+        "Mode":"FM",
+        "Long Name":"Pierce County ARES",
+        "Website":"http:\/\/www.piercecountyares.net",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LED",
+        "Output (MHz)":"146.820",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48820114,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"302",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/index.php",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LED",
+        "Output (MHz)":"224.120",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48839951,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"441",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/index.php",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7HJR",
+        "Output (MHz)":"444.650",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            47.48839951,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"260",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/index.php",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KB7CNN",
+        "Output (MHz)":"1292.200",
+        "Offset (MHz)":"-20.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48839951,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"222",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/index.php",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"444.475",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.65579987,
+            -122.54799652
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Bainbridge",
+        "Location":"Bainbridge Isl.",
+        "Mode":"FM",
+        "Long Name":"Bainbridge Island Amateur Radio Club",
+        "Website":"https:\/\/www.w7npc.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"444.5625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.65579987,
+            -122.54799652
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Bainbridge",
+        "Location":"Bainbridge Isl.",
+        "Mode":"DSTAR",
+        "Long Name":"Bainbridge Island Amateur Radio Club",
+        "Website":"https:\/\/www.w7npc.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"1290.500",
+        "Offset (MHz)":"-20.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.65579987,
+            -122.54799652
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Bainbridge",
+        "Location":"Bainbridge Isl.",
+        "Mode":"DSTAR",
+        "Long Name":"Bainbridge Island Amateur Radio Club",
+        "Website":"https:\/\/www.w7npc.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K6MBY",
+        "Output (MHz)":"444.900",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            48.07949829,
+            -123.10199738
+        ],
+        "RepeaterBook ID":"361",
+        "Group Name":"K6MBY",
+        "Location":"Sequim",
+        "Mode":"FM",
+        "Long Name":"Bob K6MBY's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k6mby",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WF7W",
+        "Output (MHz)":"145.130",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.07814,
+            -123.41207
+        ],
+        "RepeaterBook ID":"20510",
+        "Group Name":"WF7W",
+        "Location":"Port Angeles",
+        "Mode":"FM",
+        "Long Name":"Jim WF7W's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WF7W",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KC7EQO",
+        "Output (MHz)":"442.100",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.00690079,
+            -122.97100067
+        ],
+        "RepeaterBook ID":"264",
+        "Group Name":"KC7EQO",
+        "Location":"Sequim",
+        "Mode":"FM",
+        "Long Name":"Matt KC7ECQ's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/KC7EQO\/R",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7FEL",
+        "Output (MHz)":"146.760",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.14429855,
+            -123.67500305
+        ],
+        "RepeaterBook ID":"214",
+        "Group Name":"CCARC",
+        "Location":"Striped Peak",
+        "Mode":"FM",
+        "Long Name":"Clallam County Amateur Radio Club",
+        "Website":"https:\/\/www.olyham.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FUS",
+        "Output (MHz)":"224.220",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.75659943,
+            -122.28099823
+        ],
+        "RepeaterBook ID":"427",
+        "Group Name":"WA7FUS",
+        "Location":"Lake Forest Park",
+        "Mode":"FM",
+        "Long Name":"Peter WA7FUS's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WA7FUS",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA6MPG",
+        "Output (MHz)":"224.540",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"67.0",
+        "Coordinates":[
+            48.67760086,
+            -122.83100128
+        ],
+        "RepeaterBook ID":"367",
+        "Group Name":"WA6MPG",
+        "Location":"Mt. Constitution",
+        "Mode":"FM",
+        "Long Name":"Wayne WA6MPG's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/wa6mpg",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"224.480",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.67779922,
+            -122.83200073
+        ],
+        "RepeaterBook ID":"6394",
+        "Group Name":"Orcas 220",
+        "Location":"Mt. Constitution",
+        "Mode":"FM",
+        "Long Name":"Peter WA7FUS's and Wayne WA6MPG's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/wa7fus",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.25289917,
+            -122.44400024
+        ],
+        "RepeaterBook ID":"324",
+        "Group Name":"RCTacoma",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"440.625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.25289917,
+            -122.44400024
+        ],
+        "RepeaterBook ID":"549",
+        "Group Name":"RCTacoma",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"147.380",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.8431015,
+            -122.76300049
+        ],
+        "RepeaterBook ID":"325",
+        "Group Name":"RCTacoma",
+        "Location":"Crawford Mtn.",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7TED",
+        "Output (MHz)":"442.450",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.2794449,
+            -122.5123217
+        ],
+        "RepeaterBook ID":"327",
+        "Group Name":"TED",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Two Extra Diodes Amateur Radio Society",
+        "Website":"https:\/\/www.qrz.com\/db\/w7ted",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7CH",
+        "Output (MHz)":"52.930",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.487935,
+            -123.2161347
+        ],
+        "RepeaterBook ID":"27",
+        "Group Name":"K7CH",
+        "Location":"Baw Faw Peak",
+        "Mode":"FM",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7CH",
+        "Output (MHz)":"53.030",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.31258,
+            -123.3725683
+        ],
+        "RepeaterBook ID":"203",
+        "Group Name":"K7CH",
+        "Location":"South Mtn.",
+        "Mode":"FM",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7ROY",
+        "Output (MHz)":"444.175",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.0042643,
+            -122.539846
+        ],
+        "RepeaterBook ID":"21009",
+        "Group Name":"WA7ROY",
+        "Location":"Roy",
+        "Mode":"FM",
+        "Long Name":"Roy Area Net",
+        "Website":"https:\/\/www.qrz.com\/db\/WA7ROY",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7OEP",
+        "Output (MHz)":"53.330",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.22119904,
+            -121.85099792
+        ],
+        "RepeaterBook ID":"375",
+        "Group Name":"N7OEP",
+        "Location":"Baldi Mtn.",
+        "Mode":"FM",
+        "Long Name":"Tom N7OEP's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/n7oep",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7OEP",
+        "Output (MHz)":"440.075",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.20429993,
+            -121.99199677
+        ],
+        "RepeaterBook ID":"9876",
+        "Group Name":"N7OEP",
+        "Location":"Enumclaw",
+        "Mode":"FM",
+        "Long Name":"Tom N7OEP's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/n7oep",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7OEP",
+        "Output (MHz)":"443.175",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"107.2",
+        "Coordinates":[
+            47.20429993,
+            -121.99199677
+        ],
+        "RepeaterBook ID":"9912",
+        "Group Name":"N7OEP",
+        "Location":"Enumclaw",
+        "Mode":"FM",
+        "Long Name":"Tom N7OEP's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/n7oep",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7RNK",
+        "Output (MHz)":"147.995",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.540297,
+            -122.099856
+        ],
+        "RepeaterBook ID":"18524",
+        "Group Name":"Newcastle DMR",
+        "Location":"Cougar Mtn.",
+        "Mode":"DSTAR",
+        "Long Name":"Newcastle DSTAR Club",
+        "Website":"http:\/\/newcastle-dstar.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"53.290",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.54050064,
+            -122.37799835
+        ],
+        "RepeaterBook ID":"17044",
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"145.130",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.540412,
+            -122.378271
+        ],
+        "RepeaterBook ID":"14858",
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"440.975",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"CC2\/TS2 Seattle2 TG\/813153",
+        "Coordinates":[
+            47.540485,
+            -122.378256
+        ],
+        "RepeaterBook ID":"17335",
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"DMR[^dmr]",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"441.800",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.54040146,
+            -122.37799835
+        ],
+        "RepeaterBook ID":"538",
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"146.700",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            48.5603981,
+            -123.12000275
+        ],
+        "RepeaterBook ID":"6196",
+        "Group Name":"SJCARS",
+        "Location":"San Juan Isl.",
+        "Mode":"FM",
+        "Long Name":"San Juan County Amateur Radio Club",
+        "Website":"http:\/\/sjcars.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"145.250",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.53430176,
+            -123.01699829
+        ],
+        "RepeaterBook ID":"9865",
+        "Group Name":"SJCARS",
+        "Location":"Friday Harbor",
+        "Mode":"DSTAR",
+        "Long Name":"San Juan County Amateur Radio Society",
+        "Website":"http:\/\/sjcars.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"442.4625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.53430176,
+            -123.01699829
+        ],
+        "RepeaterBook ID":"9906",
+        "Group Name":"SJCARS",
+        "Location":"Friday Harbor",
+        "Mode":"DSTAR",
+        "Long Name":"San Juan County Amateur Radio Club",
+        "Website":"http:\/\/sjcars.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"147.360",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.22499847,
+            -122.5
+        ],
+        "RepeaterBook ID":"6948",
+        "Group Name":"SCARC",
+        "Location":"Camano Isl.",
+        "Mode":"FM",
+        "Long Name":"Stanwood Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"441.050",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.22499847,
+            -122.5
+        ],
+        "RepeaterBook ID":"484",
+        "Group Name":"SCARC",
+        "Location":"Camano Isl.",
+        "Mode":"FM",
+        "Long Name":"Stanwood Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ZA",
+        "Output (MHz)":"147.160",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            46.97539902,
+            -123.81600189
+        ],
+        "RepeaterBook ID":"32",
+        "Group Name":"GHARC",
+        "Location":"Aberdeen",
+        "Mode":"FM",
+        "Long Name":"Grays Harbor Amateur Radio Club",
+        "Website":"https:\/\/www.gharc.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ZA",
+        "Output (MHz)":"146.900",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.41289902,
+            -123.87999725
+        ],
+        "RepeaterBook ID":"248",
+        "Group Name":"GHARC",
+        "Location":"Neilton Peak",
+        "Mode":"FM",
+        "Long Name":"Grays Harbor Amateur Radio Club",
+        "Website":"https:\/\/www.gharc.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7CPR",
+        "Output (MHz)":"145.470",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.97309875,
+            -123.13500214
+        ],
+        "RepeaterBook ID":"358",
+        "Group Name":"CPRG",
+        "Location":"Capitol Peak",
+        "Mode":"FM",
+        "Long Name":"Capitol Peak Repeater Group",
+        "Website":"http:\/\/47repeater.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"146.450",
+        "Offset (MHz)":"+1.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.68740082,
+            -122.36199951
+        ],
+        "RepeaterBook ID":"12802",
+        "Group Name":"Whatcom ECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"DSTAR",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"224.160",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.68870163,
+            -122.36100006
+        ],
+        "RepeaterBook ID":"8854",
+        "Group Name":"Whatcom ECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"440.475",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.68870163,
+            -122.36100006
+        ],
+        "RepeaterBook ID":"624",
+        "Group Name":"Whatcom ECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"DSTAR",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"440.7375",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"CC1\/TS1 WA ARES TG\/31538",
+        "Coordinates":[
+            48.861414,
+            -122.617661
+        ],
+        "RepeaterBook ID":"19213",
+        "Group Name":"Whatcom ECG",
+        "Location":"Ferndale",
+        "Mode":"DMR[^dmr]",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.68870163,
+            -122.36100006
+        ],
+        "RepeaterBook ID":"7393",
+        "Group Name":"Whatcom ECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.825",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.8614006,
+            -122.61799622
+        ],
+        "RepeaterBook ID":"7100",
+        "Group Name":"Whatcom ECG",
+        "Location":"Ferndale",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7BFD",
+        "Output (MHz)":"442.300",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            48.73612057,
+            -122.48100439
+        ],
+        "RepeaterBook ID":"19722",
+        "Group Name":"Whatcom ECG",
+        "Location":"Sehome Hill",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"146.780",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"D172[^dcs]",
+        "Coordinates":[
+            47.86148,
+            -122.28371
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Lynnwood",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"224.380",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.12,
+            -122.24
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Marysville",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"442.975",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"D172[^dcs]",
+        "Coordinates":[
+            47.8329,
+            -122.12397
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Clearview",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"443.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.7976,
+            -122.3124
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Mountlake Terrace",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"146.92",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            48.13695,
+            -121.9814
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Granite Falls",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"444.025",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            47.8035,
+            -122.3346
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Edmonds",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"444.300",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.24944,
+            -121.56949
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Darrington",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7MLR",
+        "Output (MHz)":"444.200",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"D172[^dcs]",
+        "Coordinates":[
+            48.12,
+            -122.24
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Marysville",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KF7NPL",
+        "Output (MHz)":"147.260",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.385373,
+            -122.0614967
+        ],
+        "RepeaterBook ID":"3037",
+        "Group Name":"MVARC",
+        "Location":"Maple Valley",
+        "Mode":"FM",
+        "Long Name":"Maple Valley Amateur Radio Club",
+        "Website":"https:\/\/www.kc7key.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KF7NPL",
+        "Output (MHz)":"442.675",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.385373,
+            -122.0614967
+        ],
+        "RepeaterBook ID":"6908",
+        "Group Name":"MVARC",
+        "Location":"Maple Valley",
+        "Mode":"DSTAR",
+        "Long Name":"Maple Valley Amateur Radio Club",
+        "Website":"https:\/\/www.kc7key.org\/",
+        "Exclude":null
+    }
+]
