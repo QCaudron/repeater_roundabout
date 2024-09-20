@@ -198,11 +198,11 @@ def score_competition(
         # Add a group name column
         logs["Group Name"] = logs["RR#"].map(rrn_to_club)
 
-        # Determine whether all repeaters from a club were worked
-        club_repeaters_worked = logs.groupby("Group Name")["RR#"].nunique()
-        logs["Club Connaisseur"] = logs["Group Name"].apply(
-            lambda x: (club_repeaters_worked[x] == club_n_repeaters[x]) and (club_n_repeaters[x] >= 2)
-        )
+        # # Determine whether all repeaters from a club were worked
+        # club_repeaters_worked = logs.groupby("Group Name")["RR#"].nunique()
+        # logs["Club Connaisseur"] = logs["Group Name"].apply(
+        #     lambda x: (club_repeaters_worked[x] == club_n_repeaters[x]) and (club_n_repeaters[x] >= 2)
+        # )
 
         # Label any duplicates, trying to keep higher-scoring entries as the non-duplicate
         logs = logs.sort_values("QRP")
@@ -225,7 +225,7 @@ def score_competition(
         # Calculate QSO score
         logs["QSO Score"] = (
             logs["QRP"].apply(lambda x: 2 if x else 1)
-            * logs["Club Connaisseur"].apply(lambda x: 2 if x else 1)
+            # * logs["Club Connaisseur"].apply(lambda x: 2 if x else 1)
             * logs["Bandhog"].apply(lambda x: 2 if x else 1)
             * logs["Full House"].apply(lambda x: 2 if x else 1)
         )
@@ -235,7 +235,7 @@ def score_competition(
             "Total Score": logs["QSO Score"].sum(),
             "Total Contacts": n_entries,
             "QRP Contacts": logs["QRP"].sum(),
-            "Club Connaisseur Contacts": logs["Club Connaisseur"].sum(),
+            # "Club Connaisseur Contacts": logs["Club Connaisseur"].sum(),
             "Band Hog Contacts": logs["Bandhog"].sum(),
             "Duplicate Contacts": n_duplicates,
             "Full House": "X" if full_house else "",
@@ -265,7 +265,7 @@ def score_competition(
                 "index": "Callsign",
                 "QRP Contacts": "QRP",
                 "Band Hog Contacts": "Band Hog",
-                "Club Connaisseur Contacts": "Club Connaisseur",
+                # "Club Connaisseur Contacts": "Club Connaisseur",
             }
         )
     )
@@ -279,7 +279,7 @@ def score_competition(
             "Total Contacts",
             "QRP",
             "Band Hog",
-            "Club Connaisseur",
+            # "Club Connaisseur",
             "Full House",
         ]
     ]

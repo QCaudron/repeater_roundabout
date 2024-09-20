@@ -5,7 +5,7 @@ subtitle: Log your contacts and submit them for scoring.
 
 ## When ?
 
-Logs must be submitted by November 20th, 2023 to qualify for scoring.
+Logs must be submitted by December 1st, 2024 to qualify for scoring.
 
 
 ## What ?

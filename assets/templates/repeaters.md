@@ -28,7 +28,6 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 
 ---
 
-[^dmr]: For information on our local DMR repeaters, see [SeattleDMR](http://seattledmr.org/) and [PNWDigital](https://pnwdigital.net/).
 [^nbfm]: This repeater operates in *narrow-band* FM mode; please use the 12.5 KHz deviation setting on your radio.
 [^dcs]: These repeaters use [Digital Coded Squelch (DCS)](https://www.hamradioschool.com/post/get-the-right-signal-tone) tones.
 
