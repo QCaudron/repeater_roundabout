@@ -32,5 +32,73 @@
         "Long Name":"Puget Sound Repeater Group",
         "Website":"http:\/\/www.psrg.org\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"WW7SEA",
+        "Output (MHz)":"444.700",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.63249969,
+            -122.35600281
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"WW7SEA",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Barry K7PAL's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"53.290",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.54050064,
+            -122.37799835
+        ],
+        "RepeaterBook ID":"17044",
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"145.130",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.540412,
+            -122.378271
+        ],
+        "RepeaterBook ID":"14858",
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"441.800",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.54040146,
+            -122.37799835
+        ],
+        "RepeaterBook ID":"538",
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null
     }
 ]
