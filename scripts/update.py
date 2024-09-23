@@ -246,6 +246,6 @@ if __name__ == "__main__":
 
     df = remove_df_footnotes(df)
     write_chirp_csv(df)
-    write_icom_csv(df)
-    write_d878_zip(df)
+    # write_icom_csv(df)
+    # write_d878_zip(df)
     write_generic_csv(df)

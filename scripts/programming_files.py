@@ -522,6 +522,8 @@ def write_generic_csv(df: pd.DataFrame) -> None:
         .rename(columns={"Long Name": "Group"})
     )
     df.index = df.index + 1
+
+    print(f"Generic CSV: {len(df)} repeaters from {df['Group'].nunique()} groups.")
     df.to_csv("assets/programming_files/all_rr_frequencies.csv")
 
 

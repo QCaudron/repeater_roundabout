@@ -73,7 +73,7 @@ if __name__ == "__main__":
     dist = squareform(pdist([[i.x, i.y] for i in trans["geometry"].tolist()]))
 
     # Compute an approximate TSP solution
-    graph = nx.from_numpy_matrix(dist)
+    graph = nx.from_numpy_array(dist)
     path = nx.approximation.traveling_salesman_problem(graph, cycle=False)
 
     # Plot the TSP solution and calculate its path length

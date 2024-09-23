@@ -542,5 +542,226 @@
         "Long Name":"Mason County Amateur Radio Club",
         "Website":"https:\/\/mc-arc.org\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"146.760",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.32229996,
+            -122.31300354
+        ],
+        "RepeaterBook ID":"135",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"442.950",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.32229996,
+            -122.31300354
+        ],
+        "RepeaterBook ID":"137",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"442.925",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"D036[^dcs]",
+        "Coordinates":[
+            47.27740097,
+            -122.29199982
+        ],
+        "RepeaterBook ID":"14514",
+        "Group Name":"FWARC",
+        "Location":"Federal Way",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KC7EQO",
+        "Output (MHz)":"442.100",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.00690079,
+            -122.97100067
+        ],
+        "RepeaterBook ID":"264",
+        "Group Name":"KC7EQO",
+        "Location":"Sequim",
+        "Mode":"FM",
+        "Long Name":"Matt KC7EQO's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/KC7EQO\/R",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AAO",
+        "Output (MHz)":"145.370",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            47.19979858,
+            -121.7559967
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Pierce",
+        "Location":"Grass Mtn.",
+        "Mode":"FM",
+        "Long Name":"Pierce County ARES",
+        "Website":"http:\/\/www.piercecountyares.net",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7EAT",
+        "Output (MHz)":"146.700",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.843101,
+            -122.314956
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Eatonville",
+        "Location":"Eatonville",
+        "Mode":"FM",
+        "Long Name":"Eatonville Amateur Radio Club",
+        "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7EAT",
+        "Output (MHz)":"224.180",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.053156,
+            -122.294825
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Eatonville",
+        "Location":"Graham",
+        "Mode":"FM",
+        "Long Name":"Eatonville Amateur Radio Club",
+        "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7EAT",
+        "Output (MHz)":"442.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.843101,
+            -122.314956
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Eatonville",
+        "Location":"Eatonville",
+        "Mode":"FM",
+        "Long Name":"Eatonville Amateur Radio Club",
+        "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NE7MC",
+        "Output (MHz)":"442.000",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.737677,
+            -122.23079
+        ],
+        "RepeaterBook ID":"19962",
+        "Group Name":"Northshore EMC",
+        "Location":"Kenmore",
+        "Mode":"FM",
+        "Long Name":"Northshore Emergency Management Coalition",
+        "Website":"https:\/\/www.northshoreemc.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"224.440",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54029846,
+            -122.09999847
+        ],
+        "RepeaterBook ID":"16503",
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn.",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"441.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54059982,
+            -122.09799957
+        ],
+        "RepeaterBook ID":"601",
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn.",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"443.050",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48844,
+            -121.94705
+        ],
+        "RepeaterBook ID":"19898",
+        "Group Name":"SeaTac",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"927.2125",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            47.55590057,
+            -122.11599731
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn.",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null
     }
 ]
