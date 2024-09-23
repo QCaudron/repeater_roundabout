@@ -145,7 +145,7 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
         "Group Name",
         "Callsign",
         "Location",
-        "Mode",
+        # "Mode",  # removed in 2024 as we're FM-only
         "Output (MHz)",
         "Offset (MHz)",
         "Tone (Hz)",
@@ -161,7 +161,7 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
                 "left",
                 "left",
                 "left",
-                "left",
+                # "left",  # removed in 2024 as we're FM-only
                 "right",
                 "right",
                 "right",

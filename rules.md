@@ -10,7 +10,7 @@ subtitle: How to play in the Repeater Roundabout.
 
 We are currently building our list of repeaters for the 2024 Repeater Roundabout ! The list of repeaters on the [repeaters page](/repeaters) is the list from 2023. **Watch this space.**
 
-<!-- Only these [124 participating repeaters from 54 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
+<!-- Only these [32 participating repeaters from 12 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
 
 Please ensure that there is no ongoing activity on a repeater (such as a net) before you call for contacts. We cannot interfere with normal operation. -->
 
