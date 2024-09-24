@@ -65,6 +65,12 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 43    | SeaTac         | WW7STR     | Cougar Mtn.      |        441.550 |           +5.0 |       103.5 |
 | 44    | SeaTac         | WW7STR     | Tiger Mtn.       |        443.050 |           +5.0 |       103.5 |
 | 45    | SeaTac         | WW7STR     | Cougar Mtn.      |       927.2125 |          -25.0 |       114.8 |
+| 46    | SJCARS         | N7JN       | San Juan Isl.    |        146.700 |           -0.6 |       131.8 |
+| 47    | SJCARS         | N7JN       | Mt. Constitution |        224.480 |           -1.6 |       103.5 |
+| 48    | SJCARS         | N7JN       | Mt. Constitution |        443.450 |           +5.0 |       103.5 |
+| 49    | N7OEP          | N7OEP      | Baldi Mtn.       |         53.330 |           -1.7 |       100.0 |
+| 50    | N7OEP          | N7OEP      | Enumclaw         |        440.075 |           +5.0 |       103.5 |
+| 51    | N7OEP          | N7OEP      | Enumclaw         |        443.175 |           +5.0 |       107.2 |
 
 ---
 
@@ -97,6 +103,9 @@ MIRO
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://www.qrz.com/db/AA7MI)
 
+N7OEP
+: [Tom N7OEP's repeater system](https://www.qrz.com/db/n7oep)
+
 Northshore EMC
 : [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
 
@@ -111,6 +120,9 @@ RASC
 
 RCTacoma
 : [Radio Club of Tacoma](https://w7dk.org/)
+
+SJCARS
+: [San Juan County Amateur Radio Club](http://sjcars.org)
 
 SeaTac
 : [SeaTac Repeater Association](https://seatacra.com/)
