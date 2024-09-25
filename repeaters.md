@@ -71,10 +71,19 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 49    | N7OEP          | N7OEP      | Baldi Mtn.       |         53.330 |           -1.7 |       100.0 |
 | 50    | N7OEP          | N7OEP      | Enumclaw         |        440.075 |           +5.0 |       103.5 |
 | 51    | N7OEP          | N7OEP      | Enumclaw         |        443.175 |           +5.0 |       107.2 |
+| 52    | K7DK           | K7DK       | Buck Mtn.        |        440.950 |           +5.0 |       110.9 |
+| 53    | GKRG           | W7PFR      | Eatonville       |         53.410 |           -1.7 |       100.0 |
+| 54    | GKRG           | W7PFR      | Eatonville       |        443.975 |           +5.0 |       103.5 |
+| 55    | BEARS          | K7NWS      | Tiger Mtn.       |        442.075 |           +5.0 |       110.9 |
+| 56    | BEARS          | K7NWS      | Tiger Mtn.       |        145.330 |           -0.6 |       179.9 |
+| 57    | BEARS          | K7NWS      | Tiger Mtn.       |        224.340 |           -1.6 |       110.9 |
 
 ---
 
 ### Clubs and repeater associations
+
+BEARS
+: [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)
 
 Eatonville
 : [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)
@@ -82,8 +91,14 @@ Eatonville
 FWARC
 : [Federal Way Amateur Radio Club](https://fwarc.org/)
 
+GKRG
+: [Gobblers Knob Repeater Group](https://www.qrz.com/db/W7PFR)
+
 JCARC
 : [Jefferson County Amateur Radio Club](https://w7jcr.wordpress.com/)
+
+K7DK
+: [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
 
 KC7EQO
 : [Matt KC7EQO's repeater system](https://www.qrz.com/db/KC7EQO/R)

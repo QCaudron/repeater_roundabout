@@ -865,5 +865,107 @@
         "Long Name":"Tom N7OEP's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/n7oep",
         "Exclude":null
+    },
+    {
+        "Callsign":"K7DK",
+        "Output (MHz)":"440.950",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            47.77249908,
+            -122.93000031
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7DK",
+        "Location":"Buck Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mark K7DK's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K7DK",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7PFR",
+        "Output (MHz)":"53.410",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.86729813,
+            -122.26699829
+        ],
+        "RepeaterBook ID":"115",
+        "Group Name":"GKRG",
+        "Location":"Eatonville",
+        "Mode":"FM",
+        "Long Name":"Gobblers Knob Repeater Group",
+        "Website":"https:\/\/www.qrz.com\/db\/W7PFR",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7PFR",
+        "Output (MHz)":"443.975",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.86729813,
+            -122.26699829
+        ],
+        "RepeaterBook ID":"284",
+        "Group Name":"GKRG",
+        "Location":"Eatonville",
+        "Mode":"FM",
+        "Long Name":"Gobblers Knob Repeater Group",
+        "Website":"https:\/\/www.qrz.com\/db\/W7PFR",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7NWS",
+        "Output (MHz)":"442.075",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            47.50389862,
+            -121.97599792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"BEARS",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Boeing Employees Amateur Radio Society",
+        "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7NWS",
+        "Output (MHz)":"145.330",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"179.9",
+        "Coordinates":[
+            47.50389862,
+            -121.97599792
+        ],
+        "RepeaterBook ID":"224",
+        "Group Name":"BEARS",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Boeing Employees Amateur Radio Society",
+        "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7NWS",
+        "Output (MHz)":"224.340",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            47.50389862,
+            -121.97599792
+        ],
+        "RepeaterBook ID":"443",
+        "Group Name":"BEARS",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Boeing Employees Amateur Radio Society",
+        "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
+        "Exclude":null
     }
 ]
