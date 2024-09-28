@@ -967,5 +967,56 @@
         "Long Name":"Boeing Employees Amateur Radio Society",
         "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"KA7EOC",
+        "Output (MHz)":"145.350",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.39107,
+            -122.6079
+        ],
+        "RepeaterBook ID":"279",
+        "Group Name":"PARET",
+        "Location":"Gig Harbor",
+        "Mode":"FM",
+        "Long Name":"Peninsula Amateur Radio Emergency Team",
+        "Website":"https:\/\/www.gigharbornow.org\/event\/amateur-radio-emergency-service-ares-peninsula-team-radio-net-visitors-welcome",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7LAW",
+        "Output (MHz)":"147.180",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.9978981,
+            -122.19499969
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SCHC",
+        "Location":"Everett",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Hams Club",
+        "Website":"http:\/\/www.wa7law.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7LAW",
+        "Output (MHz)":"444.575",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.9980011,
+            -122.19400024
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SCHC",
+        "Location":"Everett",
+        "Mode":"YSF",
+        "Long Name":"Snohomish County Hams Club",
+        "Website":"http:\/\/www.wa7law.org\/",
+        "Exclude":null
     }
 ]

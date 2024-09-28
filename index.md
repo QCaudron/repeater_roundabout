@@ -11,7 +11,7 @@ The Repeater Roundabout is a weekend-long event held on many of your local repea
 
 Anyone with a ham radio license can participate ! This is a friendly, collaborative event for all FM users on VHF and UHF.
 
-> This page was last updated on Wednesday September 25 at 16:28.
+> This page was last updated on Friday September 27 at 12:12.
 
 ---
 
@@ -22,7 +22,7 @@ Anyone with a ham radio license can participate ! This is a friendly, collaborat
 
 To get started, check out the [Rules](./rules) page.
 
-Then, check out the list of [57 participating repeaters](./repeaters) from across 23 radio groups that you'll play on during the contest. You can also [view the map](./map) to see where the repeaters are located.
+Then, check out the list of [60 participating repeaters](./repeaters) from across 25 radio groups that you'll play on during the contest. You can also [view the map](./map) to see where the repeaters are located.
 
 We provide [files to program your radios](./files) with Chirp and other software.
 

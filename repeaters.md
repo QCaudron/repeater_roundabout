@@ -77,6 +77,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 55    | BEARS          | K7NWS      | Tiger Mtn.       |        442.075 |           +5.0 |       110.9 |
 | 56    | BEARS          | K7NWS      | Tiger Mtn.       |        145.330 |           -0.6 |       179.9 |
 | 57    | BEARS          | K7NWS      | Tiger Mtn.       |        224.340 |           -1.6 |       110.9 |
+| 58    | PARET          | KA7EOC     | Gig Harbor       |        145.350 |           -0.6 |       103.5 |
+| 59    | SCHC           | WA7LAW     | Everett          |        147.180 |           +0.6 |       103.5 |
+| 60    | SCHC           | WA7LAW     | Everett          |        444.575 |           +5.0 |       103.5 |
 
 ---
 
@@ -124,6 +127,9 @@ N7OEP
 Northshore EMC
 : [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
 
+PARET
+: [Peninsula Amateur Radio Emergency Team](https://www.gigharbornow.org/event/amateur-radio-emergency-service-ares-peninsula-team-radio-net-visitors-welcome)
+
 PSRG
 : [Puget Sound Repeater Group](http://www.psrg.org/)
 
@@ -135,6 +141,9 @@ RASC
 
 RCTacoma
 : [Radio Club of Tacoma](https://w7dk.org/)
+
+SCHC
+: [Snohomish County Hams Club](http://www.wa7law.org/)
 
 SJCARS
 : [San Juan County Amateur Radio Club](http://sjcars.org)
