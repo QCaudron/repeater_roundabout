@@ -1018,5 +1018,39 @@
         "Long Name":"Snohomish County Hams Club",
         "Website":"http:\/\/www.wa7law.org\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"KC7RAS",
+        "Output (MHz)":"147.100",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.46310043,
+            -121.98300171
+        ],
+        "RepeaterBook ID":"148",
+        "Group Name":"N9VW",
+        "Location":"Cougar Mtn.",
+        "Mode":"FM",
+        "Long Name":"Steve N9VW's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/n9vw",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N6OBY",
+        "Output (MHz)":"443.325",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.542028,
+            -122.10911
+        ],
+        "RepeaterBook ID":"530",
+        "Group Name":"N9VW",
+        "Location":"Cougar Mtn.",
+        "Mode":"FM",
+        "Long Name":"Steve N9VW's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/n9vw",
+        "Exclude":null
     }
 ]
