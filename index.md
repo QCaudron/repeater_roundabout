@@ -11,7 +11,7 @@ The Repeater Roundabout is a weekend-long event held on many of your local repea
 
 Anyone with a ham radio license can participate ! This is a friendly, collaborative event for all FM users on VHF and UHF.
 
-> This page was last updated on Wednesday October 02 at 18:53.
+> This page was last updated on Wednesday October 02 at 19:14.
 
 ---
 
