@@ -82,6 +82,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 60    | SCHC           | WA7LAW     | Everett          |        444.575 |           +5.0 |       103.5 |
 | 61    | N9VW           | KC7RAS     | Cougar Mtn.      |        147.100 |           +0.6 |       123.0 |
 | 62    | N9VW           | N6OBY      | Cougar Mtn.      |        443.325 |           +5.0 |       103.5 |
+| 63    | Everett ACS    | WA7ACS     | Everett          |        440.175 |           +5.0 |       103.5 |
+| 64    | N9VW           | N9VW       | Issaquah         |         53.830 |           -1.7 |       123.0 |
 
 ---
 
@@ -92,6 +94,9 @@ BEARS
 
 Eatonville
 : [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)
+
+Everett ACS
+: [Everett Auxiliary Communications Service Club](https://www.qrz.com/db/WA7ACS)
 
 FWARC
 : [Federal Way Amateur Radio Club](https://fwarc.org/)
