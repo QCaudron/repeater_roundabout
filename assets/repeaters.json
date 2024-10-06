@@ -1086,5 +1086,345 @@
         "Long Name":"Everett Auxiliary Communications Service Club",
         "Website":"https:\/\/www.qrz.com\/db\/WA7ACS",
         "Exclude":null
+    },
+    {
+        "Callsign":"NT7H",
+        "Output (MHz)":"147.360",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.02799988,
+            -122.89700317
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"OARS",
+        "Location":"Olympia",
+        "Mode":"FM",
+        "Long Name":"Olympia Amateur Radio Society",
+        "Website":"https:\/\/www.olyham.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NT7H",
+        "Output (MHz)":"224.460",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.84280014,
+            -122.76499939
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"OARS",
+        "Location":"Crawford Mtn.",
+        "Mode":"FM",
+        "Long Name":"Olympia Amateur Radio Society",
+        "Website":"https:\/\/www.olyham.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NT7H",
+        "Output (MHz)":"441.400",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.84289932,
+            -122.76499939
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"OARS",
+        "Location":"Crawford Mtn.",
+        "Mode":"FM",
+        "Long Name":"Olympia Amateur Radio Society",
+        "Website":"https:\/\/www.olyham.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NW7DR",
+        "Output (MHz)":"444.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.84397,
+            -122.54275
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"GKRC",
+        "Location":"Kingston",
+        "Mode":"FM",
+        "Long Name":"Greater Kingston Radio Club",
+        "Website":"https:\/\/gkrc.groups.io\/g\/main",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AVM",
+        "Output (MHz)":"146.860",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.21250153,
+            -122.70500183
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"ICARC",
+        "Location":"Whidbey Isl.",
+        "Mode":"FM",
+        "Long Name":"Island County Amateur Radio Club",
+        "Website":"https:\/\/www.w7avm.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7AVM",
+        "Output (MHz)":"147.220",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.0401001,
+            -122.40599823
+        ],
+        "RepeaterBook ID":"345",
+        "Group Name":"ICARC",
+        "Location":"Whidbey Isl.",
+        "Mode":"FM",
+        "Long Name":"Island County Amateur Radio Club",
+        "Website":"https:\/\/www.w7avm.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"NC7G",
+        "Output (MHz)":"146.660",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.45080185,
+            -122.28700256
+        ],
+        "RepeaterBook ID":"2780",
+        "Group Name":"HARC",
+        "Location":"SeaTac",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7ST",
+        "Output (MHz)":"443.100",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.45080185,
+            -122.28700256
+        ],
+        "RepeaterBook ID":"2779",
+        "Group Name":"HARC",
+        "Location":"SeaTac",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7BUR",
+        "Output (MHz)":"441.125",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.472695,
+            -122.345448
+        ],
+        "RepeaterBook ID":"19061",
+        "Group Name":"HARC",
+        "Location":"Burien",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DES",
+        "Output (MHz)":"443.700",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.40233,
+            -122.30356
+        ],
+        "RepeaterBook ID":"22114",
+        "Group Name":"HARC",
+        "Location":"Des Moines",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N3KPU",
+        "Output (MHz)":"145.230",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"146.2",
+        "Coordinates":[
+            47.05289841,
+            -122.29399872
+        ],
+        "RepeaterBook ID":"9851",
+        "Group Name":"N3KPU",
+        "Location":"Graham",
+        "Mode":"FM",
+        "Long Name":"Michael N3KPU's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/N3KPU",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KE7YYD",
+        "Output (MHz)":"442.750",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"146.2",
+        "Coordinates":[
+            47.10910034,
+            -122.5530014
+        ],
+        "RepeaterBook ID":"13889",
+        "Group Name":"Madigan Army",
+        "Location":"JBLM",
+        "Mode":"FM",
+        "Long Name":"Madigan Army Medical Center",
+        "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K6RFK",
+        "Output (MHz)":"147.340",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.75429916,
+            -122.16300201
+        ],
+        "RepeaterBook ID":"346",
+        "Group Name":"K6RFK",
+        "Location":"Woodinville",
+        "Mode":"FM",
+        "Long Name":"K6RFK's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K6RFK",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K6RFK",
+        "Output (MHz)":"442.775",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.75429916,
+            -122.16300201
+        ],
+        "RepeaterBook ID":"497",
+        "Group Name":"K6RFK",
+        "Location":"Woodinville",
+        "Mode":"FM",
+        "Long Name":"K6RFK's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K6RFK",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7CPR",
+        "Output (MHz)":"145.470",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.97309875,
+            -123.13500214
+        ],
+        "RepeaterBook ID":"358",
+        "Group Name":"CPRG",
+        "Location":"Capitol Peak",
+        "Mode":"FM",
+        "Long Name":"Capitol Peak Repeater Group",
+        "Website":"http:\/\/47repeater.com\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7KN",
+        "Output (MHz)":"441.425",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            48.0982722,
+            -122.5731977
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"N7KN",
+        "Location":"Whidbey Isl.",
+        "Mode":"FM",
+        "Long Name":"Charlie N7KN's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/N7KN",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"147.360",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.22499847,
+            -122.5
+        ],
+        "RepeaterBook ID":"6948",
+        "Group Name":"SCARC",
+        "Location":"Camano Isl.",
+        "Mode":"FM",
+        "Long Name":"Stanwood-Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"223.880",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.19150162,
+            -122.51499939
+        ],
+        "RepeaterBook ID":"4586",
+        "Group Name":"SCARC",
+        "Location":"Camano Isl.",
+        "Mode":"FM",
+        "Long Name":"Stanwood-Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"441.050",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.22499847,
+            -122.5
+        ],
+        "RepeaterBook ID":"484",
+        "Group Name":"SCARC",
+        "Location":"Camano Isl.",
+        "Mode":"FM",
+        "Long Name":"Stanwood-Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7CH",
+        "Output (MHz)":"53.030",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.31258,
+            -123.3725683
+        ],
+        "RepeaterBook ID":"203",
+        "Group Name":"K7CH",
+        "Location":"South Mtn.",
+        "Mode":"FM",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null
     }
 ]

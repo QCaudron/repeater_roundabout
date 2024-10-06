@@ -84,6 +84,26 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 62    | N9VW           | KC7RAS     | Cougar Mtn.      |        147.100 |           +0.6 |       123.0 |
 | 63    | N9VW           | N6OBY      | Cougar Mtn.      |        443.325 |           +5.0 |       103.5 |
 | 64    | Everett ACS    | WA7ACS     | Everett          |        440.175 |           +5.0 |       103.5 |
+| 65    | OARS           | NT7H       | Olympia          |        147.360 |           +0.6 |       103.5 |
+| 66    | OARS           | NT7H       | Crawford Mtn.    |        224.460 |           -1.6 |       103.5 |
+| 67    | OARS           | NT7H       | Crawford Mtn.    |        441.400 |           +5.0 |       103.5 |
+| 68    | GKRC           | NW7DR      | Kingston         |        444.725 |           +5.0 |       123.0 |
+| 69    | ICARC          | W7AVM      | Whidbey Isl.     |        146.860 |           -0.6 |       127.3 |
+| 70    | ICARC          | W7AVM      | Whidbey Isl.     |        147.220 |           +0.6 |       127.3 |
+| 71    | HARC           | NC7G       | SeaTac           |        146.660 |           -0.6 |       103.5 |
+| 72    | HARC           | WA7ST      | SeaTac           |        443.100 |           +5.0 |       103.5 |
+| 73    | HARC           | W7BUR      | Burien           |        441.125 |           +5.0 |       103.5 |
+| 74    | HARC           | WA7DES     | Des Moines       |        443.700 |           +5.0 |       123.0 |
+| 75    | N3KPU          | N3KPU      | Graham           |        145.230 |           -0.6 |       146.2 |
+| 76    | Madigan Army   | KE7YYD     | JBLM             |        442.750 |           +5.0 |       146.2 |
+| 77    | K6RFK          | K6RFK      | Woodinville      |        147.340 |           +0.6 |       100.0 |
+| 78    | K6RFK          | K6RFK      | Woodinville      |        442.775 |           +5.0 |       100.0 |
+| 79    | CPRG           | K7CPR      | Capitol Peak     |        145.470 |           -0.6 |       100.0 |
+| 80    | N7KN           | N7KN       | Whidbey Isl.     |        441.425 |           +5.0 |       110.9 |
+| 81    | SCARC          | W7PIG      | Camano Isl.      |        147.360 |           +0.6 |       127.3 |
+| 82    | SCARC          | W7PIG      | Camano Isl.      |        223.880 |           -1.6 |       103.5 |
+| 83    | SCARC          | W7PIG      | Camano Isl.      |        441.050 |           +5.0 |       103.5 |
+| 84    | K7CH           | K7CH       | South Mtn.       |         53.030 |           -1.7 |       100.0 |
 
 ---
 
@@ -91,6 +111,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)
+
+CPRG
+: [Capitol Peak Repeater Group](http://47repeater.com/)
 
 Eatonville
 : [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)
@@ -101,11 +124,26 @@ Everett ACS
 FWARC
 : [Federal Way Amateur Radio Club](https://fwarc.org/)
 
+GKRC
+: [Greater Kingston Radio Club](https://gkrc.groups.io/g/main)
+
 GKRG
 : [Gobblers Knob Repeater Group](https://www.qrz.com/db/W7PFR)
 
+HARC
+: [Highline Amateur Radio Club](https://www.highlinearc.org/)
+
+ICARC
+: [Island County Amateur Radio Club](https://www.w7avm.org/)
+
 JCARC
 : [Jefferson County Amateur Radio Club](https://w7jcr.wordpress.com/)
+
+K6RFK
+: [K6RFK's repeater system](https://www.qrz.com/db/K6RFK)
+
+K7CH
+: [Carl K7CH's repeater system](https://www.qrz.com/db/k7ch)
 
 K7DK
 : [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
@@ -125,8 +163,17 @@ MCARC
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
 
+Madigan Army
+: [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
+
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://www.qrz.com/db/AA7MI)
+
+N3KPU
+: [Michael N3KPU's repeater system](https://www.qrz.com/db/N3KPU)
+
+N7KN
+: [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)
 
 N7OEP
 : [Tom N7OEP's repeater system](https://www.qrz.com/db/n7oep)
@@ -136,6 +183,9 @@ N9VW
 
 Northshore EMC
 : [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
+
+OARS
+: [Olympia Amateur Radio Society](https://www.olyham.org/)
 
 PARET
 : [Peninsula Amateur Radio Emergency Team](https://www.gigharbornow.org/event/amateur-radio-emergency-service-ares-peninsula-team-radio-net-visitors-welcome)
@@ -151,6 +201,9 @@ RASC
 
 RCTacoma
 : [Radio Club of Tacoma](https://w7dk.org/)
+
+SCARC
+: [Stanwood-Camano Amateur Radio Club](https://www.scarcwa.org/)
 
 SCHC
 : [Snohomish County Hams Club](http://www.wa7law.org/)
