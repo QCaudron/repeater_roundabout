@@ -110,7 +110,6 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 88    | MBARC          | K7SKW      | Mt. Constitution |        444.050 |           +5.0 |       103.5 |
 | 89    | MBARC          | K7SKW      | Squalicum Mtn.   |        443.750 |           +5.0 |       103.5 |
 | 90    | MBARC          | K7SKW      | King Mtn.        |        147.160 |           +0.6 |       103.5 |
-| 91    | MBARC          | K7SKW      | King Mtn.        |        443.650 |           +5.0 |       103.5 |
 
 ---
 

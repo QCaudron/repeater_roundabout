@@ -1528,22 +1528,5 @@
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/",
         "Exclude":null
-    },
-    {
-        "Callsign":"K7SKW",
-        "Output (MHz)":"443.650",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            48.8017863,
-            -122.4625177
-        ],
-        "RepeaterBook ID":null,
-        "Group Name":"MBARC",
-        "Location":"King Mtn.",
-        "Mode":"FM",
-        "Long Name":"Mount Baker Amateur Radio Club",
-        "Website":"https:\/\/mbarc.groups.io\/",
-        "Exclude":null
     }
 ]
