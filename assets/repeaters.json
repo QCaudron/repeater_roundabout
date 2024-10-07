@@ -1416,15 +1416,134 @@
         "Offset (MHz)":"-1.7",
         "Tone (Hz)":"100.0",
         "Coordinates":[
-            47.31258,
-            -123.3725683
+            46.488167,
+            -123.21478
         ],
         "RepeaterBook ID":"203",
         "Group Name":"K7CH",
-        "Location":"South Mtn.",
+        "Location":"Bush Mtn.",
         "Mode":"FM",
         "Long Name":"Carl K7CH's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KK7DFL",
+        "Output (MHz)":"145.275",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.005735,
+            -122.944942
+        ],
+        "RepeaterBook ID":"20758",
+        "Group Name":"K7CH",
+        "Location":"Olympia",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KK7DFM",
+        "Output (MHz)":"444.450",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.488167,
+            -123.21478
+        ],
+        "RepeaterBook ID":"20685",
+        "Group Name":"K7CH",
+        "Location":"Baw Faw Peak",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"146.740",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.6800797,
+            -122.8425501
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"Mt. Constitution",
+        "Mode":"FM",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"444.050",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.6800797,
+            -122.8425501
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"Mt. Constitution",
+        "Mode":"FM",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"443.750",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.7884669,
+            -122.385215
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"Squalicum Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"147.160",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.8017863,
+            -122.4625177
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"King Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"443.650",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.8017863,
+            -122.4625177
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MBARC",
+        "Location":"King Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mount Baker Amateur Radio Club",
+        "Website":"https:\/\/mbarc.groups.io\/",
         "Exclude":null
     }
 ]

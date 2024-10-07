@@ -85,6 +85,10 @@ L.marker([46.9730987500, -123.1350021400], {icon: L.divIcon({className: 'custom-
 L.marker([48.0982722000, -122.5731977000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>80</div>", iconSize: [25, 25]}) }).bindPopup('RR# 80 - N7KN (441.425)<br>').addTo(map);
 L.marker([48.2249984700, -122.5000000000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 81 - W7PIG (147.360)<br>RR# 83 - W7PIG (441.050)<br>').addTo(map);
 L.marker([48.1915016200, -122.5149993900], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>82</div>", iconSize: [25, 25]}) }).bindPopup('RR# 82 - W7PIG (223.880)<br>').addTo(map);
-L.marker([47.3125800000, -123.3725683000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>84</div>", iconSize: [25, 25]}) }).bindPopup('RR# 84 - K7CH (53.030)<br>').addTo(map);
+L.marker([46.4881670000, -123.2147800000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 84 - K7CH (53.030)<br>RR# 86 - KK7DFM (444.450)<br>').addTo(map);
+L.marker([47.0057350000, -122.9449420000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>85</div>", iconSize: [25, 25]}) }).bindPopup('RR# 85 - KK7DFL (145.275)<br>').addTo(map);
+L.marker([48.6800797000, -122.8425501000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 87 - K7SKW (146.740)<br>RR# 88 - K7SKW (444.050)<br>').addTo(map);
+L.marker([48.7884669000, -122.3852150000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>89</div>", iconSize: [25, 25]}) }).bindPopup('RR# 89 - K7SKW (443.750)<br>').addTo(map);
+L.marker([48.8017863000, -122.4625177000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 90 - K7SKW (147.160)<br>RR# 91 - K7SKW (443.650)<br>').addTo(map);
 
 </script>
