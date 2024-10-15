@@ -1139,7 +1139,7 @@
         "Exclude":null
     },
     {
-        "Callsign":"NW7DR",
+        "Callsign":"K7GKR",
         "Output (MHz)":"444.725",
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"123.0",
@@ -1147,7 +1147,7 @@
             47.84397,
             -122.54275
         ],
-        "RepeaterBook ID":null,
+        "RepeaterBook ID":12885,
         "Group Name":"GKRC",
         "Location":"Kingston",
         "Mode":"FM",
@@ -1527,6 +1527,227 @@
         "Mode":"FM",
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7TRF",
+        "Output (MHz)":"145.210",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.6241,
+            -117.175
+        ],
+        "RepeaterBook ID":"280",
+        "Group Name":"W7TRF",
+        "Location":"Spokane Valley",
+        "Mode":"FM",
+        "Long Name":"Tom W7TRF's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/W7TRF",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7TRF",
+        "Output (MHz)":"443.475",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.6068,
+            -117.2034
+        ],
+        "RepeaterBook ID":"455",
+        "Group Name":"W7TRF",
+        "Location":"Spokane Valley",
+        "Mode":"FM",
+        "Long Name":"Tom W7TRF's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/W7TRF",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7FLY",
+        "Output (MHz)":"443.925",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.85660934,
+            -122.28367615
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"BEARONS",
+        "Location":"Lynnwood",
+        "Mode":"FM",
+        "Long Name":"Boeing Employees Amateur Radio Operators North Society",
+        "Website":"https:\/\/w7flybearons.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LED",
+        "Output (MHz)":"146.820",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.48820114,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"302",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7LED",
+        "Output (MHz)":"224.120",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.48839951,
+            -121.9469986
+        ],
+        "RepeaterBook ID":"441",
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7MSH",
+        "Output (MHz)":"444.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            46.07657628,
+            -122.8034604
+        ],
+        "RepeaterBook ID":"20241",
+        "Group Name":"MMSH",
+        "Location":"Kelso",
+        "Mode":"FM",
+        "Long Name":"Mercury Mt. St. Helens Emergency Response Communications",
+        "Website":"https:\/\/www.w7msh.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7ROY",
+        "Output (MHz)":"444.175",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.0042643,
+            -122.539846
+        ],
+        "RepeaterBook ID":"21099",
+        "Group Name":"RoyNet",
+        "Location":"Roy",
+        "Mode":"FM",
+        "Long Name":"Roy Area Network",
+        "Website":"https:\/\/www.qrz.com\/db\/wa7roy",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7MST",
+        "Output (MHz)":"146.900",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.57780075,
+            -122.30899811
+        ],
+        "RepeaterBook ID":"333",
+        "Group Name":"WWMST",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Western Washington Medical Services Emergency Communications",
+        "Website":"https:\/\/www.ww7mst.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7MST",
+        "Output (MHz)":"443.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.55260086,
+            -122.3010025
+        ],
+        "RepeaterBook ID":"536",
+        "Group Name":"WWMST",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Western Washington Medical Services Emergency Communications",
+        "Website":"https:\/\/www.ww7mst.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7MST",
+        "Output (MHz)":"444.825",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.71549988,
+            -122.33699799
+        ],
+        "RepeaterBook ID":"20",
+        "Group Name":"WWMST",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Western Washington Medical Services Emergency Communications",
+        "Website":"https:\/\/www.ww7mst.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7MST",
+        "Output (MHz)":"443.675",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.259,
+            -122.45
+        ],
+        "RepeaterBook ID":"234",
+        "Group Name":"WWMST",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Western Washington Medical Services Emergency Communications",
+        "Website":"https:\/\/www.ww7mst.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WW7MST",
+        "Output (MHz)":"440.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.0521879,
+            -122.8474338
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"WWMST",
+        "Location":"Olympia",
+        "Mode":"FM",
+        "Long Name":"Western Washington Medical Services Emergency Communications",
+        "Website":"https:\/\/www.ww7mst.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7DX",
+        "Output (MHz)":"147.000",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.67481,
+            -122.053436
+        ],
+        "RepeaterBook ID":"41",
+        "Group Name":"WWDXC",
+        "Location":"Redmond",
+        "Mode":"FM",
+        "Long Name":"Western Washington DX Club",
+        "Website":"https:\/\/www.wwdxc.org\/",
         "Exclude":null
     }
 ]

@@ -87,7 +87,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 65    | OARS           | NT7H       | Olympia          |        147.360 |           +0.6 |       103.5 |
 | 66    | OARS           | NT7H       | Crawford Mtn.    |        224.460 |           -1.6 |       103.5 |
 | 67    | OARS           | NT7H       | Crawford Mtn.    |        441.400 |           +5.0 |       103.5 |
-| 68    | GKRC           | NW7DR      | Kingston         |        444.725 |           +5.0 |       123.0 |
+| 68    | GKRC           | K7GKR      | Kingston         |        444.725 |           +5.0 |       123.0 |
 | 69    | ICARC          | W7AVM      | Whidbey Isl.     |        146.860 |           -0.6 |       127.3 |
 | 70    | ICARC          | W7AVM      | Whidbey Isl.     |        147.220 |           +0.6 |       127.3 |
 | 71    | HARC           | NC7G       | SeaTac           |        146.660 |           -0.6 |       103.5 |
@@ -110,10 +110,26 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 88    | MBARC          | K7SKW      | Mt. Constitution |        444.050 |           +5.0 |       103.5 |
 | 89    | MBARC          | K7SKW      | Squalicum Mtn.   |        443.750 |           +5.0 |       103.5 |
 | 90    | MBARC          | K7SKW      | King Mtn.        |        147.160 |           +0.6 |       103.5 |
+| 91    | W7TRF          | W7TRF      | Spokane Valley   |        145.210 |           -0.6 |             |
+| 92    | W7TRF          | W7TRF      | Spokane Valley   |        443.475 |           +5.0 |             |
+| 93    | BEARONS        | W7FLY      | Lynnwood         |        443.925 |           +5.0 |       100.0 |
+| 94    | Mike & Key     | K7LED      | Tiger Mtn.       |        146.820 |           -0.6 |             |
+| 95    | Mike & Key     | K7LED      | Tiger Mtn.       |        224.120 |           -1.6 |             |
+| 96    | MMSH           | W7MSH      | Kelso            |        444.725 |           +5.0 |             |
+| 97    | RoyNet         | WA7ROY     | Roy              |        444.175 |           +5.0 |             |
+| 98    | WWMST          | WW7MST     | Seattle          |        146.900 |           -0.6 |             |
+| 99    | WWMST          | WW7MST     | Seattle          |        443.550 |           +5.0 |             |
+| 100   | WWMST          | WW7MST     | Seattle          |        444.825 |           +5.0 |             |
+| 101   | WWMST          | WW7MST     | Tacoma           |        443.675 |           +5.0 |             |
+| 102   | WWMST          | WW7MST     | Olympia          |        440.550 |           +5.0 |       103.5 |
+| 103   | WWDXC          | W7DX       | Redmond          |        147.000 |           -0.6 |             |
 
 ---
 
 ### Clubs and repeater associations
+
+BEARONS
+: [Boeing Employees Amateur Radio Operators North Society](https://w7flybearons.org)
 
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)
@@ -172,11 +188,17 @@ MCARC
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
 
+MMSH
+: [Mercury Mt. St. Helens Emergency Response Communications](https://www.w7msh.org/)
+
 Madigan Army
 : [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
 
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://www.qrz.com/db/AA7MI)
+
+Mike & Key
+: [Mike & Key Amateur Radio Club](https://www.mikeandkey.org/)
 
 N3KPU
 : [Michael N3KPU's repeater system](https://www.qrz.com/db/N3KPU)
@@ -211,6 +233,9 @@ RASC
 RCTacoma
 : [Radio Club of Tacoma](https://w7dk.org/)
 
+RoyNet
+: [Roy Area Network](https://www.qrz.com/db/wa7roy)
+
 SCARC
 : [Stanwood-Camano Amateur Radio Club](https://www.scarcwa.org/)
 
@@ -226,8 +251,17 @@ SeaTac
 Seattle ACS
 : [Seattle Auxiliary Communications Service](https://www.seattleacs.org/)
 
+W7TRF
+: [Tom W7TRF's repeater system](https://www.qrz.com/db/W7TRF)
+
 WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)
+
+WWDXC
+: [Western Washington DX Club](https://www.wwdxc.org/)
+
+WWMST
+: [Western Washington Medical Services Emergency Communications](https://www.ww7mst.org/home)
 
 West Seattle
 : [West Seattle Amateur Radio Club](https://w7aw.org/)
