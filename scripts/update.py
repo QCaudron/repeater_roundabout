@@ -1,4 +1,5 @@
 import argparse
+import re
 import sys
 from pathlib import Path
 from types import SimpleNamespace
@@ -111,32 +112,29 @@ def repeater_from_repeaterbook(id_code: str) -> dict:
     source = requests.get(url)
 
     # Extract various pieces of information
-    call = source.text.split("msResult.php?call=")[1].split("&")[0]
+    start = r"\:\<\/td\>\s+\<td\>\s*"
+    end = r"\s*\<\/td\>"
 
-    freq = source.text.split("Downlink:</td>\n<td>")[1].split("</td>")[0]
+    call = re.search(r"callResult.php\?call=(\w{4,6})", source.text).group(1)
+
+    freq = re.search(rf"Downlink{start}(\d+\.\d+){end}", source.text).group(1)
     freq = f"{float(freq):.04f}"
     if freq[-1] == "0":
         freq = freq[:-1]
 
-    offset = source.text.split("Offset:</td>\n<td>\n")[1].split(" MHz")[0]
+    offset = re.search(rf"Offset{start}([\+\-]\d+\.\d+)\s*MHz{end}", source.text).group(1)
     offset = f"{float(offset):.01f}"
     if offset[0] != "-":
         offset = f"+{offset}"
 
-    latlong = source.text.split("center: ")[1].split("\n")[0].strip()[:-1]
-    if latlong.endswith(","):
-        latlong = latlong[:-1]
+    lat = re.search(rf"center: \[(\-?\d+\.\d+)\,", source.text).group(1)
+    long = re.search(rf"center: \[\-?\d+\.\d+\,\s+(\-?\d+\.\d+)\]", source.text).group(1)
+    latlong = [float(lat), float(long)]
 
     try:
-        tone = source.text.split("Uplink Tone:</td>\n<td>")[1].split("</td")[0]
-    except IndexError:
+        tone = re.search(rf"Uplink Tone{start}(\d+\.\d+){end}", source.text).group(1)
+    except AttributeError:
         tone = ""
-
-    # Try cleaning up lat / long into a Python list
-    try:
-        latlong = eval(latlong)
-    except SyntaxError:
-        pass
 
     repeater = {
         "Callsign": call,
@@ -248,6 +246,6 @@ if __name__ == "__main__":
 
     df = remove_df_footnotes(df)
     write_chirp_csv(df)
-    write_icom_csv(df)
-    write_d878_zip(df)
+    # write_icom_csv(df)
+    # write_d878_zip(df)
     write_generic_csv(df)

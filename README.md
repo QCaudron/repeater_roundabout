@@ -53,7 +53,7 @@ When the competition is over, call `python scripts/update.py --score` to have th
 
 ## Contributing
 
-Contributions are welcome -- please open a pull request against a feature branch, or open an issue if you have any questions or suggestions.
+Contributions are welcome -- please open a pull request against a feature branch, or open an issue if you have any questions or suggestions. Note that any changes to `.md` files should be made to the respective template files in `assets/templates/` and not to the root `.md` files, as the latter are generated programmatically.
 
 
 ## Python Environment

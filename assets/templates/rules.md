@@ -43,7 +43,7 @@ You should log
 - the callsign of the person you contacted
 - their signal report for your signal
 - the repeater's Repeater Roundabout number (RR#) -- see the [repeaters page](/repeaters)
-- whether your contact was QRP (5W or less)
+- whether you are running QRP (5W or less)
 
 You must use [this spreadsheet](https://docs.google.com/spreadsheets/d/1Frz6BoFUzWNTmiYED5OW_NTWhY-cSMRZQnhvdga4ORE/edit?usp=sharing) for logging, to make it easier to calculate your points. To get started, click on `File`, then `Make a copy` or `Download`.
 
