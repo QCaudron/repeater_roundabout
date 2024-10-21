@@ -1,6 +1,7 @@
 .DS_Store
 .env
 *.pyc
-*.pdf
+hull.pdf
+tsp.pdf
 logs
 node_modules/
