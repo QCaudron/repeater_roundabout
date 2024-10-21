@@ -409,16 +409,67 @@
     },
     {
         "Callsign":"KC7Z",
+        "Output (MHz)":"146.620",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54944949,
+            -122.783426
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"KCARC",
+        "Location":"Gold Mtn.",
+        "Mode":"FM",
+        "Long Name":"Kitsap County Amateur Radio Club",
+        "Website":"https:\/\/kcarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KC7Z",
+        "Output (MHz)":"442.650",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54944949,
+            -122.783426
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"KCARC",
+        "Location":"Gold Mtn.",
+        "Mode":"FM",
+        "Long Name":"Kitsap County Amateur Radio Club",
+        "Website":"https:\/\/kcarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KC7Z",
+        "Output (MHz)":"441.175",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54944949,
+            -122.783426
+        ],
+        "RepeaterBook ID":"485",
+        "Group Name":"KCARC",
+        "Location":"Gold Mtn.",
+        "Mode":"FM",
+        "Long Name":"Kitsap County Amateur Radio Club",
+        "Website":"https:\/\/kcarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KC7Z",
         "Output (MHz)":"444.075",
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            47.64450073,
-            -122.69499969
+            47.60211625,
+            -122.6173161
         ],
-        "RepeaterBook ID":null,
+        "RepeaterBook ID":"5463",
         "Group Name":"KCARC",
-        "Location":"Silverdale",
+        "Location":"East Bremerton",
         "Mode":"FM",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"https:\/\/kcarc.org\/",
@@ -426,7 +477,7 @@
     },
     {
         "Callsign":"WW7RA",
-        "Output (MHz)":"146.62",
+        "Output (MHz)":"146.620",
         "Offset (MHz)":"-0.6",
         "Tone (Hz)":"103.5",
         "Coordinates":[
@@ -1683,57 +1734,6 @@
         "Exclude":null
     },
     {
-        "Callsign":"WW7MST",
-        "Output (MHz)":"444.825",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"",
-        "Coordinates":[
-            47.71549988,
-            -122.33699799
-        ],
-        "RepeaterBook ID":"20",
-        "Group Name":"WWMST",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Long Name":"Western Washington Medical Services Emergency Communications",
-        "Website":"https:\/\/www.ww7mst.org\/home",
-        "Exclude":null
-    },
-    {
-        "Callsign":"WW7MST",
-        "Output (MHz)":"443.675",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"",
-        "Coordinates":[
-            47.259,
-            -122.45
-        ],
-        "RepeaterBook ID":"234",
-        "Group Name":"WWMST",
-        "Location":"Tacoma",
-        "Mode":"FM",
-        "Long Name":"Western Washington Medical Services Emergency Communications",
-        "Website":"https:\/\/www.ww7mst.org\/home",
-        "Exclude":null
-    },
-    {
-        "Callsign":"WW7MST",
-        "Output (MHz)":"440.550",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.0521879,
-            -122.8474338
-        ],
-        "RepeaterBook ID":null,
-        "Group Name":"WWMST",
-        "Location":"Olympia",
-        "Mode":"FM",
-        "Long Name":"Western Washington Medical Services Emergency Communications",
-        "Website":"https:\/\/www.ww7mst.org\/home",
-        "Exclude":null
-    },
-    {
         "Callsign":"W7DX",
         "Output (MHz)":"147.000",
         "Offset (MHz)":"-0.6",
@@ -1748,6 +1748,278 @@
         "Mode":"FM",
         "Long Name":"Western Washington DX Club",
         "Website":"https:\/\/www.wwdxc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"146.920",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            48.125699,
+            -121.9844964
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Granite Falls",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"224.380",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.1227936,
+            -122.2567359
+        ],
+        "RepeaterBook ID":"6961",
+        "Group Name":"Snohomish ACS",
+        "Location":"Arlington",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"444.200",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"D172[^dcs]",
+        "Coordinates":[
+            48.1227936,
+            -122.2567359
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Snohomish ACS",
+        "Location":"Arlington",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"146.780",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"D172[^dcs]",
+        "Coordinates":[
+            47.8636169,
+            -122.2786477
+        ],
+        "RepeaterBook ID":"177",
+        "Group Name":"Snohomish ACS",
+        "Location":"Lynnwood",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"442.975",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"D172[^dcs]",
+        "Coordinates":[
+            47.8288566,
+            -122.0739169
+        ],
+        "RepeaterBook ID":"270",
+        "Group Name":"Snohomish ACS",
+        "Location":"Clearview",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"443.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.8025185,
+            -122.3228347
+        ],
+        "RepeaterBook ID":"547",
+        "Group Name":"Snohomish ACS",
+        "Location":"Mountlake Terrace",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7DEM",
+        "Output (MHz)":"444.025",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            47.8028705,
+            -122.3334163
+        ],
+        "RepeaterBook ID":"547",
+        "Group Name":"Snohomish ACS",
+        "Location":"Edmonds",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Snohomish County Auxiliary Communications Service",
+        "Website":"https:\/\/www.wa7dem.info\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"53.390",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.6576742,
+            -116.9684792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NIRG",
+        "Location":"Blossom Peak",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.6576742,
+            -116.9684792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NIRG",
+        "Location":"Blossom Peak",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"442.950",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.6576742,
+            -116.9684792
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NIRG",
+        "Location":"Blossom Peak",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"147.260",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"186.2",
+        "Coordinates":[
+            47.3634565,
+            -116.412255
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NIRG",
+        "Location":"Baldy St. Joe",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"147.180",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"118.8",
+        "Coordinates":[
+            47.5642862,
+            -115.85211
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NIRG",
+        "Location":"Goose Peak",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"145.490",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            48.0787224,
+            -116.9537798
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NIRG",
+        "Location":"Hoodoo Mtn.",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"444.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.0787224,
+            -116.9537798
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NIRG",
+        "Location":"Hoodoo Mtn.",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"146.960",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            48.610141,
+            -116.2600576
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NIRG",
+        "Location":"Black Mtn.",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"145.410",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"77.0",
+        "Coordinates":[
+            48.6063229,
+            -116.9518883
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NIRG",
+        "Location":"Priest Lake",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
         "Exclude":null
     }
 ]

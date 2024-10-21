@@ -18,111 +18,127 @@ asks you to hold off on making contacts, please come back later.
 Get started by [programming your radio](/files), and check out the repeaters' locations on the
 [repeater map](/map).
 
-| RR#   | Group          | Callsign   | Location         |   Output (MHz) |   Offset (MHz) |   Tone (Hz) |
-|:------|:---------------|:-----------|:-----------------|---------------:|---------------:|------------:|
-| 1     | PSRG           | WW7PSR     | Seattle          |        146.960 |           -0.6 |       103.5 |
-| 2     | PSRG           | WW7PSR     | Seattle          |         52.870 |           -1.7 |       103.5 |
-| 3     | WW7SEA         | WW7SEA     | Seattle          |        444.700 |           +5.0 |       103.5 |
-| 4     | West Seattle   | W7AW       | West Seattle     |         53.290 |           -1.7 |       100.0 |
-| 5     | West Seattle   | W7AW       | West Seattle     |        145.130 |           -0.6 |       103.5 |
-| 6     | West Seattle   | W7AW       | West Seattle     |        441.800 |           +5.0 |       141.3 |
-| 7     | RCTacoma       | W7DK       | Tacoma           |        147.280 |           +0.6 |       103.5 |
-| 8     | RCTacoma       | W7DK       | Tacoma           |        440.625 |           +5.0 |       103.5 |
-| 9     | RCTacoma       | W7DK       | Tacoma           |        145.210 |           -0.6 |       141.3 |
-| 10    | RCTacoma       | W7DK       | Crawford Mtn.    |        147.380 |           +0.6 |       103.5 |
-| 11    | Seattle ACS    | W7ACS      | Seattle          |        442.300 |           +5.0 |       141.3 |
-| 12    | Seattle ACS    | W7ACS      | Seattle          |        444.550 |           +5.0 |       141.3 |
-| 13    | Seattle ACS    | W7ACS      | Seattle          |        442.875 |           +5.0 |       141.3 |
-| 14    | Seattle ACS    | W7ACS      | Seattle          |        443.475 |           +5.0 |       141.3 |
-| 15    | Seattle ACS    | W7ACS      | North Seattle    |        443.650 |           +5.0 |       141.3 |
-| 16    | Seattle ACS    | W7ACS      | Lake Forest Park |        440.600 |           +5.0 |       141.3 |
-| 17    | Seattle ACS    | W7ACS      | White Center     |        443.200 |           +5.0 |       141.3 |
-| 18    | LWHC           | K7LWH      | Kirkland         |         53.170 |           -1.7 |       100.0 |
-| 19    | LWHC           | K7LWH      | Kirkland         |        145.490 |           -0.6 |       103.5 |
-| 20    | LWHC           | K7LWH      | Kirkland         |        224.360 |           -1.6 |       103.5 |
-| 21    | LWHC           | K7LWH      | Kirkland         |        441.075 |           +5.0 |       103.5 |
-| 22    | MIRO           | W7MIR      | Mercer Isl.      |        147.160 |           +0.6 |       146.2 |
-| 23    | MIRO           | W7MIR      | Mercer Isl.      |        440.150 |           +5.0 |       103.5 |
-| 24    | RASC           | N7GDE      | Lyman Hill       |        145.190 |           -0.6 |       127.3 |
-| 25    | KCARC          | KC7Z       | Silverdale       |        444.075 |           +5.0 |       103.5 |
-| 26    | KCARC          | WW7RA      | Bremerton        |         146.62 |           -0.6 |       103.5 |
-| 27    | KCARC          | WW7RA      | Bremerton        |         442.65 |           +5.0 |       103.5 |
-| 28    | JCARC          | W7JCR      | Port Townsend    |        145.150 |           -0.6 |       114.8 |
-| 29    | Marrowstone    | AA7MI      | Marrowstone Isl. |        440.725 |           +5.0 |       114.8 |
-| 30    | MCARC          | N7SK       | Shelton          |        146.720 |           -0.6 |       103.5 |
-| 31    | MCARC          | N7SK       | Shelton          |        443.250 |           +5.0 |       100.0 |
-| 32    | MCARC          | N7SK       | Shelton          |       927.4125 |          -25.0 |       114.8 |
-| 33    | FWARC          | WA7FW      | Federal Way      |        146.760 |           -0.6 |       103.5 |
-| 34    | FWARC          | WA7FW      | Federal Way      |        442.950 |           +5.0 |       103.5 |
-| 35    | FWARC          | WA7FW      | Federal Way      |        442.925 |           +5.0 |  D036[^dcs] |
-| 36    | KC7EQO         | KC7EQO     | Sequim           |        442.100 |           +5.0 |       100.0 |
-| 37    | Pierce         | W7AAO      | Grass Mtn.       |        145.370 |           -0.6 |       136.5 |
-| 38    | Eatonville     | W7EAT      | Eatonville       |        146.700 |           -0.6 |       103.5 |
-| 39    | Eatonville     | W7EAT      | Graham           |        224.180 |           -1.6 |       103.5 |
-| 40    | Eatonville     | W7EAT      | Eatonville       |        442.725 |           +5.0 |       103.5 |
-| 41    | Northshore EMC | NE7MC      | Kenmore          |        442.000 |           +5.0 |       141.3 |
-| 42    | SeaTac         | WW7STR     | Cougar Mtn.      |        224.440 |           -1.6 |       103.5 |
-| 43    | SeaTac         | WW7STR     | Cougar Mtn.      |        441.550 |           +5.0 |       103.5 |
-| 44    | SeaTac         | WW7STR     | Tiger Mtn.       |        443.050 |           +5.0 |       103.5 |
-| 45    | SeaTac         | WW7STR     | Cougar Mtn.      |       927.2125 |          -25.0 |       114.8 |
-| 46    | SJCARS         | N7JN       | San Juan Isl.    |        146.700 |           -0.6 |       131.8 |
-| 47    | SJCARS         | N7JN       | Mt. Constitution |        224.480 |           -1.6 |       103.5 |
-| 48    | SJCARS         | N7JN       | Mt. Constitution |        443.450 |           +5.0 |       103.5 |
-| 49    | N7OEP          | N7OEP      | Baldi Mtn.       |         53.330 |           -1.7 |       100.0 |
-| 50    | N7OEP          | N7OEP      | Enumclaw         |        440.075 |           +5.0 |       103.5 |
-| 51    | N7OEP          | N7OEP      | Enumclaw         |        443.175 |           +5.0 |       107.2 |
-| 52    | K7DK           | K7DK       | Buck Mtn.        |        440.950 |           +5.0 |       110.9 |
-| 53    | GKRG           | W7PFR      | Eatonville       |         53.410 |           -1.7 |       100.0 |
-| 54    | GKRG           | W7PFR      | Eatonville       |        443.975 |           +5.0 |       103.5 |
-| 55    | BEARS          | K7NWS      | Tiger Mtn.       |        442.075 |           +5.0 |       110.9 |
-| 56    | BEARS          | K7NWS      | Tiger Mtn.       |        145.330 |           -0.6 |       179.9 |
-| 57    | BEARS          | K7NWS      | Tiger Mtn.       |        224.340 |           -1.6 |       110.9 |
-| 58    | PARET          | KA7EOC     | Gig Harbor       |        145.350 |           -0.6 |       103.5 |
-| 59    | SCHC           | WA7LAW     | Everett          |        147.180 |           +0.6 |       103.5 |
-| 60    | SCHC           | WA7LAW     | Everett          |        444.575 |           +5.0 |       103.5 |
-| 61    | N9VW           | N9VW       | Cougar Mtn.      |         53.830 |           -1.7 |       123.0 |
-| 62    | N9VW           | KC7RAS     | Cougar Mtn.      |        147.100 |           +0.6 |       123.0 |
-| 63    | N9VW           | N6OBY      | Cougar Mtn.      |        443.325 |           +5.0 |       103.5 |
-| 64    | Everett ACS    | WA7ACS     | Everett          |        440.175 |           +5.0 |       103.5 |
-| 65    | OARS           | NT7H       | Olympia          |        147.360 |           +0.6 |       103.5 |
-| 66    | OARS           | NT7H       | Crawford Mtn.    |        224.460 |           -1.6 |       103.5 |
-| 67    | OARS           | NT7H       | Crawford Mtn.    |        441.400 |           +5.0 |       103.5 |
-| 68    | GKRC           | K7GKR      | Kingston         |        444.725 |           +5.0 |       123.0 |
-| 69    | ICARC          | W7AVM      | Whidbey Isl.     |        146.860 |           -0.6 |       127.3 |
-| 70    | ICARC          | W7AVM      | Whidbey Isl.     |        147.220 |           +0.6 |       127.3 |
-| 71    | HARC           | NC7G       | SeaTac           |        146.660 |           -0.6 |       103.5 |
-| 72    | HARC           | WA7ST      | SeaTac           |        443.100 |           +5.0 |       103.5 |
-| 73    | HARC           | W7BUR      | Burien           |        441.125 |           +5.0 |       103.5 |
-| 74    | HARC           | WA7DES     | Des Moines       |        443.700 |           +5.0 |       123.0 |
-| 75    | N3KPU          | N3KPU      | Graham           |        145.230 |           -0.6 |       146.2 |
-| 76    | Madigan Army   | KE7YYD     | JBLM             |        442.750 |           +5.0 |       146.2 |
-| 77    | K6RFK          | K6RFK      | Woodinville      |        147.340 |           +0.6 |       100.0 |
-| 78    | K6RFK          | K6RFK      | Woodinville      |        442.775 |           +5.0 |       100.0 |
-| 79    | CPRG           | K7CPR      | Capitol Peak     |        145.470 |           -0.6 |       100.0 |
-| 80    | N7KN           | N7KN       | Whidbey Isl.     |        441.425 |           +5.0 |       110.9 |
-| 81    | SCARC          | W7PIG      | Camano Isl.      |        147.360 |           +0.6 |       127.3 |
-| 82    | SCARC          | W7PIG      | Camano Isl.      |        223.880 |           -1.6 |       103.5 |
-| 83    | SCARC          | W7PIG      | Camano Isl.      |        441.050 |           +5.0 |       103.5 |
-| 84    | K7CH           | K7CH       | Bush Mtn.        |         53.030 |           -1.7 |       100.0 |
-| 85    | K7CH           | KK7DFL     | Olympia          |        145.275 |           -0.6 |       100.0 |
-| 86    | K7CH           | KK7DFM     | Baw Faw Peak     |        444.450 |           +5.0 |       100.0 |
-| 87    | MBARC          | K7SKW      | Mt. Constitution |        146.740 |           -0.6 |       103.5 |
-| 88    | MBARC          | K7SKW      | Mt. Constitution |        444.050 |           +5.0 |       103.5 |
-| 89    | MBARC          | K7SKW      | Squalicum Mtn.   |        443.750 |           +5.0 |       103.5 |
-| 90    | MBARC          | K7SKW      | King Mtn.        |        147.160 |           +0.6 |       103.5 |
-| 91    | W7TRF          | W7TRF      | Spokane Valley   |        145.210 |           -0.6 |             |
-| 92    | W7TRF          | W7TRF      | Spokane Valley   |        443.475 |           +5.0 |             |
-| 93    | BEARONS        | W7FLY      | Lynnwood         |        443.925 |           +5.0 |       100.0 |
-| 94    | Mike & Key     | K7LED      | Tiger Mtn.       |        146.820 |           -0.6 |             |
-| 95    | Mike & Key     | K7LED      | Tiger Mtn.       |        224.120 |           -1.6 |             |
-| 96    | MMSH           | W7MSH      | Kelso            |        444.725 |           +5.0 |             |
-| 97    | RoyNet         | WA7ROY     | Roy              |        444.175 |           +5.0 |             |
-| 98    | WWMST          | WW7MST     | Seattle          |        146.900 |           -0.6 |             |
-| 99    | WWMST          | WW7MST     | Seattle          |        443.550 |           +5.0 |             |
-| 100   | WWMST          | WW7MST     | Seattle          |        444.825 |           +5.0 |             |
-| 101   | WWMST          | WW7MST     | Tacoma           |        443.675 |           +5.0 |             |
-| 102   | WWMST          | WW7MST     | Olympia          |        440.550 |           +5.0 |       103.5 |
-| 103   | WWDXC          | W7DX       | Redmond          |        147.000 |           -0.6 |             |
+| RR#   | Group          | Callsign   | Location          |   Output (MHz) |   Offset (MHz) |   Tone (Hz) |
+|:------|:---------------|:-----------|:------------------|---------------:|---------------:|------------:|
+| 1     | PSRG           | WW7PSR     | Seattle           |        146.960 |           -0.6 |       103.5 |
+| 2     | PSRG           | WW7PSR     | Seattle           |         52.870 |           -1.7 |       103.5 |
+| 3     | WW7SEA         | WW7SEA     | Seattle           |        444.700 |           +5.0 |       103.5 |
+| 4     | West Seattle   | W7AW       | West Seattle      |         53.290 |           -1.7 |       100.0 |
+| 5     | West Seattle   | W7AW       | West Seattle      |        145.130 |           -0.6 |       103.5 |
+| 6     | West Seattle   | W7AW       | West Seattle      |        441.800 |           +5.0 |       141.3 |
+| 7     | RCTacoma       | W7DK       | Tacoma            |        147.280 |           +0.6 |       103.5 |
+| 8     | RCTacoma       | W7DK       | Tacoma            |        440.625 |           +5.0 |       103.5 |
+| 9     | RCTacoma       | W7DK       | Tacoma            |        145.210 |           -0.6 |       141.3 |
+| 10    | RCTacoma       | W7DK       | Crawford Mtn.     |        147.380 |           +0.6 |       103.5 |
+| 11    | Seattle ACS    | W7ACS      | Seattle           |        442.300 |           +5.0 |       141.3 |
+| 12    | Seattle ACS    | W7ACS      | Seattle           |        444.550 |           +5.0 |       141.3 |
+| 13    | Seattle ACS    | W7ACS      | Seattle           |        442.875 |           +5.0 |       141.3 |
+| 14    | Seattle ACS    | W7ACS      | Seattle           |        443.475 |           +5.0 |       141.3 |
+| 15    | Seattle ACS    | W7ACS      | North Seattle     |        443.650 |           +5.0 |       141.3 |
+| 16    | Seattle ACS    | W7ACS      | Lake Forest Park  |        440.600 |           +5.0 |       141.3 |
+| 17    | Seattle ACS    | W7ACS      | White Center      |        443.200 |           +5.0 |       141.3 |
+| 18    | LWHC           | K7LWH      | Kirkland          |         53.170 |           -1.7 |       100.0 |
+| 19    | LWHC           | K7LWH      | Kirkland          |        145.490 |           -0.6 |       103.5 |
+| 20    | LWHC           | K7LWH      | Kirkland          |        224.360 |           -1.6 |       103.5 |
+| 21    | LWHC           | K7LWH      | Kirkland          |        441.075 |           +5.0 |       103.5 |
+| 22    | MIRO           | W7MIR      | Mercer Isl.       |        147.160 |           +0.6 |       146.2 |
+| 23    | MIRO           | W7MIR      | Mercer Isl.       |        440.150 |           +5.0 |       103.5 |
+| 24    | RASC           | N7GDE      | Lyman Hill        |        145.190 |           -0.6 |       127.3 |
+| 25    | KCARC          | KC7Z       | Gold Mtn.         |        146.620 |           -0.6 |       103.5 |
+| 26    | KCARC          | KC7Z       | Gold Mtn.         |        442.650 |           +5.0 |       103.5 |
+| 27    | KCARC          | KC7Z       | Gold Mtn.         |        441.175 |           +5.0 |       103.5 |
+| 28    | KCARC          | KC7Z       | East Bremerton    |        444.075 |           +5.0 |       103.5 |
+| 29    | KCARC          | WW7RA      | Bremerton         |        146.620 |           -0.6 |       103.5 |
+| 30    | KCARC          | WW7RA      | Bremerton         |         442.65 |           +5.0 |       103.5 |
+| 31    | JCARC          | W7JCR      | Port Townsend     |        145.150 |           -0.6 |       114.8 |
+| 32    | Marrowstone    | AA7MI      | Marrowstone Isl.  |        440.725 |           +5.0 |       114.8 |
+| 33    | MCARC          | N7SK       | Shelton           |        146.720 |           -0.6 |       103.5 |
+| 34    | MCARC          | N7SK       | Shelton           |        443.250 |           +5.0 |       100.0 |
+| 35    | MCARC          | N7SK       | Shelton           |       927.4125 |          -25.0 |       114.8 |
+| 36    | FWARC          | WA7FW      | Federal Way       |        146.760 |           -0.6 |       103.5 |
+| 37    | FWARC          | WA7FW      | Federal Way       |        442.950 |           +5.0 |       103.5 |
+| 38    | FWARC          | WA7FW      | Federal Way       |        442.925 |           +5.0 |  D036[^dcs] |
+| 39    | KC7EQO         | KC7EQO     | Sequim            |        442.100 |           +5.0 |       100.0 |
+| 40    | Pierce         | W7AAO      | Grass Mtn.        |        145.370 |           -0.6 |       136.5 |
+| 41    | Eatonville     | W7EAT      | Eatonville        |        146.700 |           -0.6 |       103.5 |
+| 42    | Eatonville     | W7EAT      | Graham            |        224.180 |           -1.6 |       103.5 |
+| 43    | Eatonville     | W7EAT      | Eatonville        |        442.725 |           +5.0 |       103.5 |
+| 44    | Northshore EMC | NE7MC      | Kenmore           |        442.000 |           +5.0 |       141.3 |
+| 45    | SeaTac         | WW7STR     | Cougar Mtn.       |        224.440 |           -1.6 |       103.5 |
+| 46    | SeaTac         | WW7STR     | Cougar Mtn.       |        441.550 |           +5.0 |       103.5 |
+| 47    | SeaTac         | WW7STR     | Tiger Mtn.        |        443.050 |           +5.0 |       103.5 |
+| 48    | SeaTac         | WW7STR     | Cougar Mtn.       |       927.2125 |          -25.0 |       114.8 |
+| 49    | SJCARS         | N7JN       | San Juan Isl.     |        146.700 |           -0.6 |       131.8 |
+| 50    | SJCARS         | N7JN       | Mt. Constitution  |        224.480 |           -1.6 |       103.5 |
+| 51    | SJCARS         | N7JN       | Mt. Constitution  |        443.450 |           +5.0 |       103.5 |
+| 52    | N7OEP          | N7OEP      | Baldi Mtn.        |         53.330 |           -1.7 |       100.0 |
+| 53    | N7OEP          | N7OEP      | Enumclaw          |        440.075 |           +5.0 |       103.5 |
+| 54    | N7OEP          | N7OEP      | Enumclaw          |        443.175 |           +5.0 |       107.2 |
+| 55    | K7DK           | K7DK       | Buck Mtn.         |        440.950 |           +5.0 |       110.9 |
+| 56    | GKRG           | W7PFR      | Eatonville        |         53.410 |           -1.7 |       100.0 |
+| 57    | GKRG           | W7PFR      | Eatonville        |        443.975 |           +5.0 |       103.5 |
+| 58    | BEARS          | K7NWS      | Tiger Mtn.        |        442.075 |           +5.0 |       110.9 |
+| 59    | BEARS          | K7NWS      | Tiger Mtn.        |        145.330 |           -0.6 |       179.9 |
+| 60    | BEARS          | K7NWS      | Tiger Mtn.        |        224.340 |           -1.6 |       110.9 |
+| 61    | PARET          | KA7EOC     | Gig Harbor        |        145.350 |           -0.6 |       103.5 |
+| 62    | SCHC           | WA7LAW     | Everett           |        147.180 |           +0.6 |       103.5 |
+| 63    | SCHC           | WA7LAW     | Everett           |        444.575 |           +5.0 |       103.5 |
+| 64    | N9VW           | N9VW       | Cougar Mtn.       |         53.830 |           -1.7 |       123.0 |
+| 65    | N9VW           | KC7RAS     | Cougar Mtn.       |        147.100 |           +0.6 |       123.0 |
+| 66    | N9VW           | N6OBY      | Cougar Mtn.       |        443.325 |           +5.0 |       103.5 |
+| 67    | Everett ACS    | WA7ACS     | Everett           |        440.175 |           +5.0 |       103.5 |
+| 68    | OARS           | NT7H       | Olympia           |        147.360 |           +0.6 |       103.5 |
+| 69    | OARS           | NT7H       | Crawford Mtn.     |        224.460 |           -1.6 |       103.5 |
+| 70    | OARS           | NT7H       | Crawford Mtn.     |        441.400 |           +5.0 |       103.5 |
+| 71    | GKRC           | K7GKR      | Kingston          |        444.725 |           +5.0 |       123.0 |
+| 72    | ICARC          | W7AVM      | Whidbey Isl.      |        146.860 |           -0.6 |       127.3 |
+| 73    | ICARC          | W7AVM      | Whidbey Isl.      |        147.220 |           +0.6 |       127.3 |
+| 74    | HARC           | NC7G       | SeaTac            |        146.660 |           -0.6 |       103.5 |
+| 75    | HARC           | WA7ST      | SeaTac            |        443.100 |           +5.0 |       103.5 |
+| 76    | HARC           | W7BUR      | Burien            |        441.125 |           +5.0 |       103.5 |
+| 77    | HARC           | WA7DES     | Des Moines        |        443.700 |           +5.0 |       123.0 |
+| 78    | N3KPU          | N3KPU      | Graham            |        145.230 |           -0.6 |       146.2 |
+| 79    | Madigan Army   | KE7YYD     | JBLM              |        442.750 |           +5.0 |       146.2 |
+| 80    | K6RFK          | K6RFK      | Woodinville       |        147.340 |           +0.6 |       100.0 |
+| 81    | K6RFK          | K6RFK      | Woodinville       |        442.775 |           +5.0 |       100.0 |
+| 82    | CPRG           | K7CPR      | Capitol Peak      |        145.470 |           -0.6 |       100.0 |
+| 83    | N7KN           | N7KN       | Whidbey Isl.      |        441.425 |           +5.0 |       110.9 |
+| 84    | SCARC          | W7PIG      | Camano Isl.       |        147.360 |           +0.6 |       127.3 |
+| 85    | SCARC          | W7PIG      | Camano Isl.       |        223.880 |           -1.6 |       103.5 |
+| 86    | SCARC          | W7PIG      | Camano Isl.       |        441.050 |           +5.0 |       103.5 |
+| 87    | K7CH           | K7CH       | Bush Mtn.         |         53.030 |           -1.7 |       100.0 |
+| 88    | K7CH           | KK7DFL     | Olympia           |        145.275 |           -0.6 |       100.0 |
+| 89    | K7CH           | KK7DFM     | Baw Faw Peak      |        444.450 |           +5.0 |       100.0 |
+| 90    | MBARC          | K7SKW      | Mt. Constitution  |        146.740 |           -0.6 |       103.5 |
+| 91    | MBARC          | K7SKW      | Mt. Constitution  |        444.050 |           +5.0 |       103.5 |
+| 92    | MBARC          | K7SKW      | Squalicum Mtn.    |        443.750 |           +5.0 |       103.5 |
+| 93    | MBARC          | K7SKW      | King Mtn.         |        147.160 |           +0.6 |       103.5 |
+| 94    | W7TRF          | W7TRF      | Spokane Valley    |        145.210 |           -0.6 |             |
+| 95    | W7TRF          | W7TRF      | Spokane Valley    |        443.475 |           +5.0 |             |
+| 96    | BEARONS        | W7FLY      | Lynnwood          |        443.925 |           +5.0 |       100.0 |
+| 97    | Mike & Key     | K7LED      | Tiger Mtn.        |        146.820 |           -0.6 |             |
+| 98    | Mike & Key     | K7LED      | Tiger Mtn.        |        224.120 |           -1.6 |             |
+| 99    | MMSH           | W7MSH      | Kelso             |        444.725 |           +5.0 |             |
+| 100   | RoyNet         | WA7ROY     | Roy               |        444.175 |           +5.0 |             |
+| 101   | WWMST          | WW7MST     | Seattle           |        146.900 |           -0.6 |             |
+| 102   | WWMST          | WW7MST     | Seattle           |        443.550 |           +5.0 |             |
+| 103   | WWDXC          | W7DX       | Redmond           |        147.000 |           -0.6 |             |
+| 104   | Snohomish ACS  | WA7DEM     | Granite Falls     |        146.920 |           -0.6 |       123.0 |
+| 105   | Snohomish ACS  | WA7DEM     | Arlington         |        224.380 |           -1.6 |       103.5 |
+| 106   | Snohomish ACS  | WA7DEM     | Arlington         |        444.200 |           +5.0 |  D172[^dcs] |
+| 107   | Snohomish ACS  | WA7DEM     | Lynnwood          |        146.780 |           -0.6 |  D172[^dcs] |
+| 108   | Snohomish ACS  | WA7DEM     | Clearview         |        442.975 |           +5.0 |  D172[^dcs] |
+| 109   | Snohomish ACS  | WA7DEM     | Mountlake Terrace |        443.725 |           +5.0 |       103.5 |
+| 110   | Snohomish ACS  | WA7DEM     | Edmonds           |        444.025 |           +5.0 |       156.7 |
+| 111   | NIRG           | N7IRG      | Blossom Peak      |         53.390 |           -1.7 |       100.0 |
+| 112   | NIRG           | N7IRG      | Blossom Peak      |        147.280 |           +0.6 |       100.0 |
+| 113   | NIRG           | N7IRG      | Blossom Peak      |        442.950 |           +5.0 |       100.0 |
+| 114   | NIRG           | N7IRG      | Baldy St. Joe     |        147.260 |           +0.6 |       186.2 |
+| 115   | NIRG           | N7IRG      | Goose Peak        |        147.180 |           +0.6 |       118.8 |
+| 116   | NIRG           | N7IRG      | Hoodoo Mtn.       |        145.490 |           -0.6 |       136.5 |
+| 117   | NIRG           | N7IRG      | Hoodoo Mtn.       |        444.550 |           +5.0 |       100.0 |
+| 118   | NIRG           | N7IRG      | Black Mtn.        |        146.960 |           -0.6 |       123.0 |
+| 119   | NIRG           | N7IRG      | Priest Lake       |        145.410 |           -0.6 |        77.0 |
 
 ---
 
@@ -212,6 +228,9 @@ N7OEP
 N9VW
 : [Steve N9VW's repeater system](https://www.qrz.com/db/n9vw)
 
+NIRG
+: [North Idaho Repeater Group](https://www.blossompeak.org/)
+
 Northshore EMC
 : [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
 
@@ -250,6 +269,9 @@ SeaTac
 
 Seattle ACS
 : [Seattle Auxiliary Communications Service](https://www.seattleacs.org/)
+
+Snohomish ACS
+: [Snohomish County Auxiliary Communications Service](https://www.wa7dem.info/home)
 
 W7TRF
 : [Tom W7TRF's repeater system](https://www.qrz.com/db/W7TRF)

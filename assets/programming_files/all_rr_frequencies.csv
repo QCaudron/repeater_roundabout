@@ -23,82 +23,98 @@
 22,W7MIR,147.160,+0.6,146.2,,Mercer Isl.,FM,Mercer Island Radio Operators,47.568367,-122.220729,+,0.6
 23,W7MIR,440.150,+5.0,103.5,,Mercer Isl.,FM,Mercer Island Radio Operators,47.568367,-122.220729,+,5.0
 24,N7GDE,145.190,-0.6,127.3,176,Lyman Hill,FM,Radio Amateurs of Skagit County,48.58330154,-122.14499664,-,0.6
-25,KC7Z,444.075,+5.0,103.5,,Silverdale,FM,Kitsap County Amateur Radio Club,47.64450073,-122.69499969,+,5.0
-26,WW7RA,146.62,-0.6,103.5,59,Bremerton,FM,Kitsap County Amateur Radio Club,47.6555143,-122.9594265,-,0.6
-27,WW7RA,442.65,+5.0,103.5,60,Bremerton,FM,Kitsap County Amateur Radio Club,47.6555143,-122.9594265,+,5.0
-28,W7JCR,145.150,-0.6,114.8,,Port Townsend,FM,Jefferson County Amateur Radio Club,48.11700058,-122.76000214,-,0.6
-29,AA7MI,440.725,+5.0,114.8,,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,48.05830002,-122.68800354,+,5.0
-30,N7SK,146.720,-0.6,103.5,,Shelton,FM,Mason County Amateur Radio Club,47.21509933,-123.10099792,-,0.6
-31,N7SK,443.250,+5.0,100.0,,Shelton,FM,Mason County Amateur Radio Club,47.21509933,-123.10099792,+,5.0
-32,N7SK,927.4125,-25.0,114.8,,Shelton,FM,Mason County Amateur Radio Club,47.21509933,-123.10099792,-,25.0
-33,WA7FW,146.760,-0.6,103.5,135,Federal Way,FM,Federal Way Amateur Radio Club,47.32229996,-122.31300354,-,0.6
-34,WA7FW,442.950,+5.0,103.5,137,Federal Way,FM,Federal Way Amateur Radio Club,47.32229996,-122.31300354,+,5.0
-35,WA7FW,442.925,+5.0,D036[^dcs],14514,Federal Way,FM,Federal Way Amateur Radio Club,47.27740097,-122.29199982,+,5.0
-36,KC7EQO,442.100,+5.0,100.0,264,Sequim,FM,Matt KC7EQO's repeater system,48.00690079,-122.97100067,+,5.0
-37,W7AAO,145.370,-0.6,136.5,,Grass Mtn.,FM,Pierce County ARES,47.19979858,-121.7559967,-,0.6
-38,W7EAT,146.700,-0.6,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,46.843101,-122.314956,-,0.6
-39,W7EAT,224.180,-1.6,103.5,,Graham,FM,Eatonville Amateur Radio Club,47.053156,-122.294825,-,1.6
-40,W7EAT,442.725,+5.0,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,46.843101,-122.314956,+,5.0
-41,NE7MC,442.000,+5.0,141.3,19962,Kenmore,FM,Northshore Emergency Management Coalition,47.737677,-122.23079,+,5.0
-42,WW7STR,224.440,-1.6,103.5,16503,Cougar Mtn.,FM,SeaTac Repeater Association,47.54029846,-122.09999847,-,1.6
-43,WW7STR,441.550,+5.0,103.5,601,Cougar Mtn.,FM,SeaTac Repeater Association,47.54059982,-122.09799957,+,5.0
-44,WW7STR,443.050,+5.0,103.5,19898,Tiger Mtn.,FM,SeaTac Repeater Association,47.48844,-121.94705,+,5.0
-45,WW7STR,927.2125,-25.0,114.8,,Cougar Mtn.,FM,SeaTac Repeater Association,47.55590057,-122.11599731,-,25.0
-46,N7JN,146.700,-0.6,131.8,6196,San Juan Isl.,FM,San Juan County Amateur Radio Club,48.5603981,-123.12000275,-,0.6
-47,N7JN,224.480,-1.6,103.5,6394,Mt. Constitution,FM,San Juan County Amateur Radio Club,48.67779922,-122.83200073,-,1.6
-48,N7JN,443.450,+5.0,103.5,368,Mt. Constitution,FM,San Juan County Amateur Radio Club,48.67779922,-122.83000183,+,5.0
-49,N7OEP,53.330,-1.7,100.0,375,Baldi Mtn.,FM,Tom N7OEP's repeater system,47.22119904,-121.85099792,-,1.7
-50,N7OEP,440.075,+5.0,103.5,9876,Enumclaw,FM,Tom N7OEP's repeater system,47.20429993,-121.99199677,+,5.0
-51,N7OEP,443.175,+5.0,107.2,9912,Enumclaw,FM,Tom N7OEP's repeater system,47.20429993,-121.99199677,+,5.0
-52,K7DK,440.950,+5.0,110.9,,Buck Mtn.,FM,Mark K7DK's repeater system,47.77249908,-122.93000031,+,5.0
-53,W7PFR,53.410,-1.7,100.0,115,Eatonville,FM,Gobblers Knob Repeater Group,46.86729813,-122.26699829,-,1.7
-54,W7PFR,443.975,+5.0,103.5,284,Eatonville,FM,Gobblers Knob Repeater Group,46.86729813,-122.26699829,+,5.0
-55,K7NWS,442.075,+5.0,110.9,,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,47.50389862,-121.97599792,+,5.0
-56,K7NWS,145.330,-0.6,179.9,224,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,47.50389862,-121.97599792,-,0.6
-57,K7NWS,224.340,-1.6,110.9,443,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,47.50389862,-121.97599792,-,1.6
-58,KA7EOC,145.350,-0.6,103.5,279,Gig Harbor,FM,Peninsula Amateur Radio Emergency Team,47.39107,-122.6079,-,0.6
-59,WA7LAW,147.180,+0.6,103.5,,Everett,FM,Snohomish County Hams Club,47.9978981,-122.19499969,+,0.6
-60,WA7LAW,444.575,+5.0,103.5,,Everett,YSF,Snohomish County Hams Club,47.9980011,-122.19400024,+,5.0
-61,N9VW,53.830,-1.7,123.0,9698,Cougar Mtn.,FM,Steve N9VW's repeater system,47.53010178,-122.03299713,-,1.7
-62,KC7RAS,147.100,+0.6,123.0,148,Cougar Mtn.,FM,Steve N9VW's repeater system,47.542028,-122.10911,+,0.6
-63,N6OBY,443.325,+5.0,103.5,530,Cougar Mtn.,FM,Steve N9VW's repeater system,47.542028,-122.10911,+,5.0
-64,WA7ACS,440.175,+5.0,103.5,,Everett,FM,Everett Auxiliary Communications Service Club,47.542028,-122.10911,+,5.0
-65,NT7H,147.360,+0.6,103.5,,Olympia,FM,Olympia Amateur Radio Society,47.02799988,-122.89700317,+,0.6
-66,NT7H,224.460,-1.6,103.5,,Crawford Mtn.,FM,Olympia Amateur Radio Society,46.84280014,-122.76499939,-,1.6
-67,NT7H,441.400,+5.0,103.5,,Crawford Mtn.,FM,Olympia Amateur Radio Society,46.84289932,-122.76499939,+,5.0
-68,K7GKR,444.725,+5.0,123.0,12885,Kingston,FM,Greater Kingston Radio Club,47.84397,-122.54275,+,5.0
-69,W7AVM,146.860,-0.6,127.3,,Whidbey Isl.,FM,Island County Amateur Radio Club,48.21250153,-122.70500183,-,0.6
-70,W7AVM,147.220,+0.6,127.3,345,Whidbey Isl.,FM,Island County Amateur Radio Club,48.0401001,-122.40599823,+,0.6
-71,NC7G,146.660,-0.6,103.5,2780,SeaTac,FM,Highline Amateur Radio Club,47.45080185,-122.28700256,-,0.6
-72,WA7ST,443.100,+5.0,103.5,2779,SeaTac,FM,Highline Amateur Radio Club,47.45080185,-122.28700256,+,5.0
-73,W7BUR,441.125,+5.0,103.5,19061,Burien,FM,Highline Amateur Radio Club,47.472695,-122.345448,+,5.0
-74,WA7DES,443.700,+5.0,123.0,22114,Des Moines,FM,Highline Amateur Radio Club,47.40233,-122.30356,+,5.0
-75,N3KPU,145.230,-0.6,146.2,9851,Graham,FM,Michael N3KPU's repeater system,47.05289841,-122.29399872,-,0.6
-76,KE7YYD,442.750,+5.0,146.2,13889,JBLM,FM,Madigan Army Medical Center,47.10910034,-122.5530014,+,5.0
-77,K6RFK,147.340,+0.6,100.0,346,Woodinville,FM,K6RFK's repeater system,47.75429916,-122.16300201,+,0.6
-78,K6RFK,442.775,+5.0,100.0,497,Woodinville,FM,K6RFK's repeater system,47.75429916,-122.16300201,+,5.0
-79,K7CPR,145.470,-0.6,100.0,358,Capitol Peak,FM,Capitol Peak Repeater Group,46.97309875,-123.13500214,-,0.6
-80,N7KN,441.425,+5.0,110.9,,Whidbey Isl.,FM,Charlie N7KN's repeater system,48.0982722,-122.5731977,+,5.0
-81,W7PIG,147.360,+0.6,127.3,6948,Camano Isl.,FM,Stanwood-Camano Amateur Radio Club,48.22499847,-122.5,+,0.6
-82,W7PIG,223.880,-1.6,103.5,4586,Camano Isl.,FM,Stanwood-Camano Amateur Radio Club,48.19150162,-122.51499939,-,1.6
-83,W7PIG,441.050,+5.0,103.5,484,Camano Isl.,FM,Stanwood-Camano Amateur Radio Club,48.22499847,-122.5,+,5.0
-84,K7CH,53.030,-1.7,100.0,203,Bush Mtn.,FM,Carl K7CH's repeater system,46.488167,-123.21478,-,1.7
-85,KK7DFL,145.275,-0.6,100.0,20758,Olympia,NBFM,Carl K7CH's repeater system,47.005735,-122.944942,-,0.6
-86,KK7DFM,444.450,+5.0,100.0,20685,Baw Faw Peak,NBFM,Carl K7CH's repeater system,46.488167,-123.21478,+,5.0
-87,K7SKW,146.740,-0.6,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,48.6800797,-122.8425501,-,0.6
-88,K7SKW,444.050,+5.0,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,48.6800797,-122.8425501,+,5.0
-89,K7SKW,443.750,+5.0,103.5,,Squalicum Mtn.,FM,Mount Baker Amateur Radio Club,48.7884669,-122.385215,+,5.0
-90,K7SKW,147.160,+0.6,103.5,,King Mtn.,FM,Mount Baker Amateur Radio Club,48.8017863,-122.4625177,+,0.6
-91,W7TRF,145.210,-0.6,,280,Spokane Valley,FM,Tom W7TRF's repeater system,47.6241,-117.175,-,0.6
-92,W7TRF,443.475,+5.0,,455,Spokane Valley,FM,Tom W7TRF's repeater system,47.6068,-117.2034,+,5.0
-93,W7FLY,443.925,+5.0,100.0,,Lynnwood,FM,Boeing Employees Amateur Radio Operators North Society,47.85660934,-122.28367615,+,5.0
-94,K7LED,146.820,-0.6,,302,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48820114,-121.9469986,-,0.6
-95,K7LED,224.120,-1.6,,441,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48839951,-121.9469986,-,1.6
-96,W7MSH,444.725,+5.0,,20241,Kelso,FM,Mercury Mt. St. Helens Emergency Response Communications,46.07657628,-122.8034604,+,5.0
-97,WA7ROY,444.175,+5.0,,21099,Roy,FM,Roy Area Network,47.0042643,-122.539846,+,5.0
-98,WW7MST,146.900,-0.6,,333,Seattle,FM,Western Washington Medical Services Emergency Communications,47.57780075,-122.30899811,-,0.6
-99,WW7MST,443.550,+5.0,,536,Seattle,FM,Western Washington Medical Services Emergency Communications,47.55260086,-122.3010025,+,5.0
-100,WW7MST,444.825,+5.0,,20,Seattle,FM,Western Washington Medical Services Emergency Communications,47.71549988,-122.33699799,+,5.0
-101,WW7MST,443.675,+5.0,,234,Tacoma,FM,Western Washington Medical Services Emergency Communications,47.259,-122.45,+,5.0
-102,WW7MST,440.550,+5.0,103.5,,Olympia,FM,Western Washington Medical Services Emergency Communications,47.0521879,-122.8474338,+,5.0
+25,KC7Z,146.620,-0.6,103.5,,Gold Mtn.,FM,Kitsap County Amateur Radio Club,47.54944949,-122.783426,-,0.6
+26,KC7Z,442.650,+5.0,103.5,,Gold Mtn.,FM,Kitsap County Amateur Radio Club,47.54944949,-122.783426,+,5.0
+27,KC7Z,441.175,+5.0,103.5,485,Gold Mtn.,FM,Kitsap County Amateur Radio Club,47.54944949,-122.783426,+,5.0
+28,KC7Z,444.075,+5.0,103.5,5463,East Bremerton,FM,Kitsap County Amateur Radio Club,47.60211625,-122.6173161,+,5.0
+29,WW7RA,146.620,-0.6,103.5,59,Bremerton,FM,Kitsap County Amateur Radio Club,47.6555143,-122.9594265,-,0.6
+30,WW7RA,442.65,+5.0,103.5,60,Bremerton,FM,Kitsap County Amateur Radio Club,47.6555143,-122.9594265,+,5.0
+31,W7JCR,145.150,-0.6,114.8,,Port Townsend,FM,Jefferson County Amateur Radio Club,48.11700058,-122.76000214,-,0.6
+32,AA7MI,440.725,+5.0,114.8,,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,48.05830002,-122.68800354,+,5.0
+33,N7SK,146.720,-0.6,103.5,,Shelton,FM,Mason County Amateur Radio Club,47.21509933,-123.10099792,-,0.6
+34,N7SK,443.250,+5.0,100.0,,Shelton,FM,Mason County Amateur Radio Club,47.21509933,-123.10099792,+,5.0
+35,N7SK,927.4125,-25.0,114.8,,Shelton,FM,Mason County Amateur Radio Club,47.21509933,-123.10099792,-,25.0
+36,WA7FW,146.760,-0.6,103.5,135,Federal Way,FM,Federal Way Amateur Radio Club,47.32229996,-122.31300354,-,0.6
+37,WA7FW,442.950,+5.0,103.5,137,Federal Way,FM,Federal Way Amateur Radio Club,47.32229996,-122.31300354,+,5.0
+38,WA7FW,442.925,+5.0,D036[^dcs],14514,Federal Way,FM,Federal Way Amateur Radio Club,47.27740097,-122.29199982,+,5.0
+39,KC7EQO,442.100,+5.0,100.0,264,Sequim,FM,Matt KC7EQO's repeater system,48.00690079,-122.97100067,+,5.0
+40,W7AAO,145.370,-0.6,136.5,,Grass Mtn.,FM,Pierce County ARES,47.19979858,-121.7559967,-,0.6
+41,W7EAT,146.700,-0.6,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,46.843101,-122.314956,-,0.6
+42,W7EAT,224.180,-1.6,103.5,,Graham,FM,Eatonville Amateur Radio Club,47.053156,-122.294825,-,1.6
+43,W7EAT,442.725,+5.0,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,46.843101,-122.314956,+,5.0
+44,NE7MC,442.000,+5.0,141.3,19962,Kenmore,FM,Northshore Emergency Management Coalition,47.737677,-122.23079,+,5.0
+45,WW7STR,224.440,-1.6,103.5,16503,Cougar Mtn.,FM,SeaTac Repeater Association,47.54029846,-122.09999847,-,1.6
+46,WW7STR,441.550,+5.0,103.5,601,Cougar Mtn.,FM,SeaTac Repeater Association,47.54059982,-122.09799957,+,5.0
+47,WW7STR,443.050,+5.0,103.5,19898,Tiger Mtn.,FM,SeaTac Repeater Association,47.48844,-121.94705,+,5.0
+48,WW7STR,927.2125,-25.0,114.8,,Cougar Mtn.,FM,SeaTac Repeater Association,47.55590057,-122.11599731,-,25.0
+49,N7JN,146.700,-0.6,131.8,6196,San Juan Isl.,FM,San Juan County Amateur Radio Club,48.5603981,-123.12000275,-,0.6
+50,N7JN,224.480,-1.6,103.5,6394,Mt. Constitution,FM,San Juan County Amateur Radio Club,48.67779922,-122.83200073,-,1.6
+51,N7JN,443.450,+5.0,103.5,368,Mt. Constitution,FM,San Juan County Amateur Radio Club,48.67779922,-122.83000183,+,5.0
+52,N7OEP,53.330,-1.7,100.0,375,Baldi Mtn.,FM,Tom N7OEP's repeater system,47.22119904,-121.85099792,-,1.7
+53,N7OEP,440.075,+5.0,103.5,9876,Enumclaw,FM,Tom N7OEP's repeater system,47.20429993,-121.99199677,+,5.0
+54,N7OEP,443.175,+5.0,107.2,9912,Enumclaw,FM,Tom N7OEP's repeater system,47.20429993,-121.99199677,+,5.0
+55,K7DK,440.950,+5.0,110.9,,Buck Mtn.,FM,Mark K7DK's repeater system,47.77249908,-122.93000031,+,5.0
+56,W7PFR,53.410,-1.7,100.0,115,Eatonville,FM,Gobblers Knob Repeater Group,46.86729813,-122.26699829,-,1.7
+57,W7PFR,443.975,+5.0,103.5,284,Eatonville,FM,Gobblers Knob Repeater Group,46.86729813,-122.26699829,+,5.0
+58,K7NWS,442.075,+5.0,110.9,,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,47.50389862,-121.97599792,+,5.0
+59,K7NWS,145.330,-0.6,179.9,224,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,47.50389862,-121.97599792,-,0.6
+60,K7NWS,224.340,-1.6,110.9,443,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,47.50389862,-121.97599792,-,1.6
+61,KA7EOC,145.350,-0.6,103.5,279,Gig Harbor,FM,Peninsula Amateur Radio Emergency Team,47.39107,-122.6079,-,0.6
+62,WA7LAW,147.180,+0.6,103.5,,Everett,FM,Snohomish County Hams Club,47.9978981,-122.19499969,+,0.6
+63,WA7LAW,444.575,+5.0,103.5,,Everett,YSF,Snohomish County Hams Club,47.9980011,-122.19400024,+,5.0
+64,N9VW,53.830,-1.7,123.0,9698,Cougar Mtn.,FM,Steve N9VW's repeater system,47.53010178,-122.03299713,-,1.7
+65,KC7RAS,147.100,+0.6,123.0,148,Cougar Mtn.,FM,Steve N9VW's repeater system,47.542028,-122.10911,+,0.6
+66,N6OBY,443.325,+5.0,103.5,530,Cougar Mtn.,FM,Steve N9VW's repeater system,47.542028,-122.10911,+,5.0
+67,WA7ACS,440.175,+5.0,103.5,,Everett,FM,Everett Auxiliary Communications Service Club,47.542028,-122.10911,+,5.0
+68,NT7H,147.360,+0.6,103.5,,Olympia,FM,Olympia Amateur Radio Society,47.02799988,-122.89700317,+,0.6
+69,NT7H,224.460,-1.6,103.5,,Crawford Mtn.,FM,Olympia Amateur Radio Society,46.84280014,-122.76499939,-,1.6
+70,NT7H,441.400,+5.0,103.5,,Crawford Mtn.,FM,Olympia Amateur Radio Society,46.84289932,-122.76499939,+,5.0
+71,K7GKR,444.725,+5.0,123.0,12885,Kingston,FM,Greater Kingston Radio Club,47.84397,-122.54275,+,5.0
+72,W7AVM,146.860,-0.6,127.3,,Whidbey Isl.,FM,Island County Amateur Radio Club,48.21250153,-122.70500183,-,0.6
+73,W7AVM,147.220,+0.6,127.3,345,Whidbey Isl.,FM,Island County Amateur Radio Club,48.0401001,-122.40599823,+,0.6
+74,NC7G,146.660,-0.6,103.5,2780,SeaTac,FM,Highline Amateur Radio Club,47.45080185,-122.28700256,-,0.6
+75,WA7ST,443.100,+5.0,103.5,2779,SeaTac,FM,Highline Amateur Radio Club,47.45080185,-122.28700256,+,5.0
+76,W7BUR,441.125,+5.0,103.5,19061,Burien,FM,Highline Amateur Radio Club,47.472695,-122.345448,+,5.0
+77,WA7DES,443.700,+5.0,123.0,22114,Des Moines,FM,Highline Amateur Radio Club,47.40233,-122.30356,+,5.0
+78,N3KPU,145.230,-0.6,146.2,9851,Graham,FM,Michael N3KPU's repeater system,47.05289841,-122.29399872,-,0.6
+79,KE7YYD,442.750,+5.0,146.2,13889,JBLM,FM,Madigan Army Medical Center,47.10910034,-122.5530014,+,5.0
+80,K6RFK,147.340,+0.6,100.0,346,Woodinville,FM,K6RFK's repeater system,47.75429916,-122.16300201,+,0.6
+81,K6RFK,442.775,+5.0,100.0,497,Woodinville,FM,K6RFK's repeater system,47.75429916,-122.16300201,+,5.0
+82,K7CPR,145.470,-0.6,100.0,358,Capitol Peak,FM,Capitol Peak Repeater Group,46.97309875,-123.13500214,-,0.6
+83,N7KN,441.425,+5.0,110.9,,Whidbey Isl.,FM,Charlie N7KN's repeater system,48.0982722,-122.5731977,+,5.0
+84,W7PIG,147.360,+0.6,127.3,6948,Camano Isl.,FM,Stanwood-Camano Amateur Radio Club,48.22499847,-122.5,+,0.6
+85,W7PIG,223.880,-1.6,103.5,4586,Camano Isl.,FM,Stanwood-Camano Amateur Radio Club,48.19150162,-122.51499939,-,1.6
+86,W7PIG,441.050,+5.0,103.5,484,Camano Isl.,FM,Stanwood-Camano Amateur Radio Club,48.22499847,-122.5,+,5.0
+87,K7CH,53.030,-1.7,100.0,203,Bush Mtn.,FM,Carl K7CH's repeater system,46.488167,-123.21478,-,1.7
+88,KK7DFL,145.275,-0.6,100.0,20758,Olympia,NBFM,Carl K7CH's repeater system,47.005735,-122.944942,-,0.6
+89,KK7DFM,444.450,+5.0,100.0,20685,Baw Faw Peak,NBFM,Carl K7CH's repeater system,46.488167,-123.21478,+,5.0
+90,K7SKW,146.740,-0.6,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,48.6800797,-122.8425501,-,0.6
+91,K7SKW,444.050,+5.0,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,48.6800797,-122.8425501,+,5.0
+92,K7SKW,443.750,+5.0,103.5,,Squalicum Mtn.,FM,Mount Baker Amateur Radio Club,48.7884669,-122.385215,+,5.0
+93,K7SKW,147.160,+0.6,103.5,,King Mtn.,FM,Mount Baker Amateur Radio Club,48.8017863,-122.4625177,+,0.6
+94,W7TRF,145.210,-0.6,,280,Spokane Valley,FM,Tom W7TRF's repeater system,47.6241,-117.175,-,0.6
+95,W7TRF,443.475,+5.0,,455,Spokane Valley,FM,Tom W7TRF's repeater system,47.6068,-117.2034,+,5.0
+96,W7FLY,443.925,+5.0,100.0,,Lynnwood,FM,Boeing Employees Amateur Radio Operators North Society,47.85660934,-122.28367615,+,5.0
+97,K7LED,146.820,-0.6,,302,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48820114,-121.9469986,-,0.6
+98,K7LED,224.120,-1.6,,441,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48839951,-121.9469986,-,1.6
+99,W7MSH,444.725,+5.0,,20241,Kelso,FM,Mercury Mt. St. Helens Emergency Response Communications,46.07657628,-122.8034604,+,5.0
+100,WA7ROY,444.175,+5.0,,21099,Roy,FM,Roy Area Network,47.0042643,-122.539846,+,5.0
+101,WW7MST,146.900,-0.6,,333,Seattle,FM,Western Washington Medical Services Emergency Communications,47.57780075,-122.30899811,-,0.6
+102,WW7MST,443.550,+5.0,,536,Seattle,FM,Western Washington Medical Services Emergency Communications,47.55260086,-122.3010025,+,5.0
 103,W7DX,147.000,-0.6,,41,Redmond,FM,Western Washington DX Club,47.67481,-122.053436,-,0.6
+104,WA7DEM,146.920,-0.6,123.0,,Granite Falls,FM,Snohomish County Auxiliary Communications Service,48.125699,-121.9844964,-,0.6
+105,WA7DEM,224.380,-1.6,103.5,6961,Arlington,FM,Snohomish County Auxiliary Communications Service,48.1227936,-122.2567359,-,1.6
+106,WA7DEM,444.200,+5.0,D172[^dcs],,Arlington,FM,Snohomish County Auxiliary Communications Service,48.1227936,-122.2567359,+,5.0
+107,WA7DEM,146.780,-0.6,D172[^dcs],177,Lynnwood,FM,Snohomish County Auxiliary Communications Service,47.8636169,-122.2786477,-,0.6
+108,WA7DEM,442.975,+5.0,D172[^dcs],270,Clearview,FM,Snohomish County Auxiliary Communications Service,47.8288566,-122.0739169,+,5.0
+109,WA7DEM,443.725,+5.0,103.5,547,Mountlake Terrace,FM,Snohomish County Auxiliary Communications Service,47.8025185,-122.3228347,+,5.0
+110,WA7DEM,444.025,+5.0,156.7,547,Edmonds,NBFM,Snohomish County Auxiliary Communications Service,47.8028705,-122.3334163,+,5.0
+111,N7IRG,53.390,-1.7,100.0,,Blossom Peak,FM,North Idaho Repeater Group,47.6576742,-116.9684792,-,1.7
+112,N7IRG,147.280,+0.6,100.0,,Blossom Peak,FM,North Idaho Repeater Group,47.6576742,-116.9684792,+,0.6
+113,N7IRG,442.950,+5.0,100.0,,Blossom Peak,FM,North Idaho Repeater Group,47.6576742,-116.9684792,+,5.0
+114,N7IRG,147.260,+0.6,186.2,,Baldy St. Joe,FM,North Idaho Repeater Group,47.3634565,-116.412255,+,0.6
+115,N7IRG,147.180,+0.6,118.8,,Goose Peak,FM,North Idaho Repeater Group,47.5642862,-115.85211,+,0.6
+116,N7IRG,145.490,-0.6,136.5,,Hoodoo Mtn.,FM,North Idaho Repeater Group,48.0787224,-116.9537798,-,0.6
+117,N7IRG,444.550,+5.0,100.0,,Hoodoo Mtn.,FM,North Idaho Repeater Group,48.0787224,-116.9537798,+,5.0
+118,N7IRG,146.960,-0.6,123.0,,Black Mtn.,FM,North Idaho Repeater Group,48.610141,-116.2600576,-,0.6
+119,N7IRG,145.410,-0.6,77.0,,Priest Lake,FM,North Idaho Repeater Group,48.6063229,-116.9518883,-,0.6
