@@ -8,11 +8,9 @@ subtitle: How to play in the Repeater Roundabout.
 
 # Repeaters
 
-We are currently building our list of repeaters for the 2024 Repeater Roundabout ! The list of repeaters on the [repeaters page](/repeaters) is the list from 2023. **Watch this space.**
+Only these [119 participating repeaters from 48 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
 
-<!-- Only these [119 participating repeaters from 48 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
-
-Please ensure that there is no ongoing activity on a repeater (such as a net) before you call for contacts. We cannot interfere with normal operation. -->
+Please ensure that there is no ongoing activity on a repeater (such as a net) before you call for contacts. Please ensure you leave some space for others to user the repeater; some of these are used for emergency communications, and we don't want to interfere with that.
 
 
 # Exchange
@@ -32,7 +30,7 @@ You should exchange
 
 - **It Pays to QRP.** If you're running 5W or less, the contact is worth double.
 - **Band Hog.** If you hit at least 30 FM repeaters on the 2m or 70cm bands, your score for that band is doubled.
-- **Full House.** If you make a contact on at least 80 repeaters, your full score is doubled.
+- **Full House.** If you make a contact on at least 75 repeaters, your full score is doubled.
 
 
 # Logging
