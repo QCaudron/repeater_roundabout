@@ -139,6 +139,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 117   | NIRG           | N7IRG      | Hoodoo Mtn.       |        444.550 |           +5.0 |       100.0 |
 | 118   | NIRG           | N7IRG      | Black Mtn.        |        146.960 |           -0.6 |       123.0 |
 | 119   | NIRG           | N7IRG      | Priest Lake       |        145.410 |           -0.6 |        77.0 |
+| 120   | MVARC          | WA7MV      | Tunk Mtn.         |        147.320 |           +0.6 |       100.0 |
+| 121   | MVARC          | WA7MV      | Benson Creek      |        146.720 |           -0.6 |       100.0 |
+| 122   | MVARC          | WA7MV      | Winthrop          |        444.800 |           +5.0 |       110.9 |
 
 ---
 
@@ -206,6 +209,9 @@ MIRO
 
 MMSH
 : [Mercury Mt. St. Helens Emergency Response Communications](https://www.w7msh.org/)
+
+MVARC
+: [Methow Valley Amateur Radio Club](https://www.mvhams.net/)
 
 Madigan Army
 : [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
