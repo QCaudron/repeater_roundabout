@@ -1,55 +1,47 @@
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
-<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 <style>
-    #map {
-        height: 600px;
-        width: 100%;
+    canvas {
+        border-radius: 50%; /* Make the canvas appear circular */
+        border: 1px solid black;
+        display: block;
+        margin: 20px auto;
+        position: relative;
     }
-
-    .icon-label {
-        background-color: blue;
+    #tooltip {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8);
         color: white;
-        text-align: center;
-        border-radius: 50%;
-        line-height: 25px;
-        font-weight: bold;
-        width: 25px;
-        height: 25px;
+        padding: 5px;
+        display: none;
+        border-radius: 5px;
+        pointer-events: none;
     }
-
     #controls {
         text-align: center;
         margin: 20px;
     }
-
     .input-group {
         display: inline-block;
         margin: 0 10px;
+        vertical-align: top;
     }
-
     #controls label {
         display: block;
         margin-bottom: 5px;
     }
-
     input {
-        width: 80px;
+        width: 120px; /* Narrower input fields */
         padding: 5px;
     }
-
     button {
         margin-left: 10px;
         padding: 5px 10px;
     }
-
     #input-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: 15px; /* Space between inputs */
     }
 </style>
 
@@ -57,30 +49,24 @@
     <div id="input-container">
         <div class="input-group">
             <label for="latitude">Latitude</label>
-            <input type="text" id="latitude" value="37.7749">
+            <input type="text" id="latitude" value="47.2590258">
         </div>
         <div class="input-group">
             <label for="longitude">Longitude</label>
-            <input type="text" id="longitude" value="-122.4194">
+            <input type="text" id="longitude" value="-122.4606095">
         </div>
         <div class="input-group">
-            <label for="maxDistance">Max Distance (miles)</label>
-            <input type="text" id="maxDistance" value="100">
+            <label for="maxDistance">Max Miles</label>
+            <input type="text" id="maxDistance" value="50">
         </div>
         <button id="plotButton">Plot Points</button>
     </div>
 </div>
 
-<div id="map"></div>
+<canvas id="azimuthMap" width="500" height="500"></canvas>
+<div id="tooltip"></div>
 
 <script>
-    // Leaflet map setup
-    var map = L.map('map').setView([47.5, -119.67], 7);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-
     // Helper function to convert degrees to radians
     function toRadians(degrees) {
         return degrees * (Math.PI / 180);
@@ -98,6 +84,26 @@
         return R * c; // Distance in miles
     }
 
+    // Function to calculate the azimuth angle between two points
+    function getAzimuth(lat1, lon1, lat2, lon2) {
+        const dLon = toRadians(lon2 - lon1);
+        const y = Math.sin(dLon) * Math.cos(toRadians(lat2));
+        const x = Math.cos(toRadians(lat1)) * Math.sin(toRadians(lat2)) -
+            Math.sin(toRadians(lat1)) * Math.cos(toRadians(lat2)) * Math.cos(dLon);
+        let theta = Math.atan2(y, x) * 180 / Math.PI; // Angle in degrees
+
+        // Adjust the azimuth so that North is at the top
+        theta = (theta - 90 + 360) % 360;  // Subtract 90 degrees and ensure the value is between 0 and 360
+
+        return theta; // Return the adjusted azimuth
+    }
+
+    const canvas = document.getElementById('azimuthMap');
+    const ctx = canvas.getContext('2d');
+    const tooltip = document.getElementById('tooltip');
+    const originX = canvas.width / 2;
+    const originY = canvas.height / 2;
+
     // Fetch the CSV data
     async function fetchCSVData() {
         const response = await fetch('https://raw.githubusercontent.com/QCaudron/repeater_roundabout/refs/heads/main/assets/programming_files/all_rr_frequencies.csv');
@@ -114,34 +120,88 @@
                 index: index + 1, // Add 1 because index is zero-based
                 callsign: cols[1],
                 lat: parseFloat(cols[9]),
-                lon: parseFloat(cols[10]),
-                freq: cols[2]  // For displaying frequency in the popup
+                lon: parseFloat(cols[10])
             };
         }).filter(point => !isNaN(point.lat) && !isNaN(point.lon)); // Filter out invalid rows
         return points;
     }
 
-    // Add points to the map
-    function addPointsToMap(points, myLocation, maxDistance) {
+    // Draw a circular map with points
+    function drawMap(points, myLocation, maxDistance) {
+        // Clear the canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Draw the circular boundary
+        ctx.beginPath();
+        ctx.arc(originX, originY, Math.min(canvas.width, canvas.height) / 2 - 20, 0, 2 * Math.PI);
+        ctx.strokeStyle = 'black';
+        ctx.stroke();
+        ctx.closePath();
+
+        // Filter points based on max distance
         points = points.filter(point => {
             const distance = getDistanceFromLatLon(myLocation.lat, myLocation.lon, point.lat, point.lon);
             return distance <= maxDistance;
         });
 
-        // Add markers to the map
+        // Find the maximum distance for scaling
+        let maxDistanceFound = 0;
         points.forEach(point => {
-            const marker = L.marker([point.lat, point.lon], {
-                icon: L.divIcon({
-                    className: 'custom-icon',
-                    html: `<div class='icon-label'>${point.index}</div>`,
-                    iconSize: [25, 25]
-                })
-            }).bindPopup(`RR# ${point.index} - ${point.callsign} (${point.freq} MHz)`);
-            marker.addTo(map);
+            const distance = getDistanceFromLatLon(myLocation.lat, myLocation.lon, point.lat, point.lon);
+            if (distance > maxDistanceFound) {
+                maxDistanceFound = distance;
+            }
+        });
+
+        const maxCanvasRadius = Math.min(canvas.width, canvas.height) / 2 - 20; // Subtract padding
+        const scale = maxCanvasRadius / maxDistanceFound;
+
+        // Draw the points
+        points.forEach(point => {
+            const distance = getDistanceFromLatLon(myLocation.lat, myLocation.lon, point.lat, point.lon);
+            const azimuth = getAzimuth(myLocation.lat, myLocation.lon, point.lat, point.lon);
+
+            // Convert polar to Cartesian coordinates
+            const x = originX + distance * scale * Math.cos(toRadians(azimuth));
+            const y = originY + distance * scale * Math.sin(toRadians(azimuth));
+
+            point.x = x; // Store x position for hover detection
+            point.y = y; // Store y position for hover detection
+
+            // Draw point
+            ctx.beginPath();
+            ctx.arc(x, y, 5, 0, 2 * Math.PI);
+            ctx.fillStyle = 'blue';
+            ctx.fill();
+            ctx.closePath();
         });
     }
 
-    // Plot points on button click
+    // Event listener for mouse hover to show tooltip
+    canvas.addEventListener('mousemove', (event) => {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+
+        let hovering = false;
+        points.forEach(point => {
+            const dist = Math.sqrt(Math.pow(mouseX - point.x, 2) + Math.pow(mouseY - point.y, 2));
+            if (dist < 5) {
+                tooltip.style.left = `${event.clientX}px`; // Align tooltip horizontally with mouse
+                tooltip.style.top = `${event.clientY}px`;  // Align tooltip vertically with mouse
+                tooltip.innerHTML = `${point.callsign} (RR# ${point.index})`;
+                tooltip.style.display = 'block';
+                hovering = true;
+            }
+        });
+
+        if (!hovering) {
+            tooltip.style.display = 'none';
+        }
+    });
+
+    // Fetch the CSV data and plot the map on button click
+    let points = [];
     document.getElementById('plotButton').addEventListener('click', () => {
         const latitude = parseFloat(document.getElementById('latitude').value);
         const longitude = parseFloat(document.getElementById('longitude').value);
@@ -149,9 +209,9 @@
 
         if (!isNaN(latitude) && !isNaN(longitude) && !isNaN(maxDistance)) {
             fetchCSVData().then(csvText => {
-                const points = parseCSV(csvText);
+                points = parseCSV(csvText);
                 const myLocation = { lat: latitude, lon: longitude };
-                addPointsToMap(points, myLocation, maxDistance);
+                drawMap(points, myLocation, maxDistance);
             });
         } else {
             alert('Please enter valid latitude, longitude, and max distance.');
