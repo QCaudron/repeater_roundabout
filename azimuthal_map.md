@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+# Azimuthal Map
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azimuthal Map</title>
+
     <style>
         canvas {
             border-radius: 50%;
@@ -39,47 +35,7 @@
         }
     </style>
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
-
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-
-
-
-
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-
-
-
-
-
-
-
-    <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
-
-    <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
-
-
-
-
-
-    <link rel="stylesheet" href="/assets/css/style.css">
-
-    <link rel="stylesheet" href="/assets/css/spectrum.css">
-</head>
-
-<body>
-
-    <h1>Azimuthal Maps</h1>
 
     <div id="controls">
         <label>Latitude: <input type="text" id="latitude" value="47.2590258"></label>
@@ -244,7 +200,3 @@
         });
 
     </script>
-
-</body>
-
-</html>
