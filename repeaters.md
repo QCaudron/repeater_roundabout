@@ -142,6 +142,11 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 120   | MVARC          | WA7MV      | Tunk Mtn.         |        147.320 |           +0.6 |       100.0 |
 | 121   | MVARC          | WA7MV      | Benson Creek      |        146.720 |           -0.6 |       100.0 |
 | 122   | MVARC          | WA7MV      | Winthrop          |        444.800 |           +5.0 |       110.9 |
+| 123   | YCRA           | WA7SAR     | Darland Mtn.      |        146.860 |           -0.6 |       123.0 |
+| 124   | YCRA           | WA7SAR     | King Mtn.         |        147.080 |           +0.6 |       123.0 |
+| 125   | YCRA           | WA7SAR     | Yakima            |        444.600 |           +5.0 |       123.0 |
+| 126   | YCRA           | WA7SAR     | Quartz Mtn.       |        145.170 |           -0.6 |       123.0 |
+| 127   | YCRA           | WA7SAR     | Yakima            |        147.080 |           +0.6 |        85.4 |
 
 ---
 
@@ -293,6 +298,9 @@ WWMST
 
 West Seattle
 : [West Seattle Amateur Radio Club](https://w7aw.org/)
+
+YCRA
+: [Yakima County Radio Amateurs]()
 
 
 
