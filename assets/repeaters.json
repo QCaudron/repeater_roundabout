@@ -2157,5 +2157,39 @@
         "Long Name":"Yakima County Radio Amateurs",
         "Website":"",
         "Exclude":null
+    },
+    {
+        "Callsign":"K7RHT",
+        "Output (MHz)":"147.000",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            47.15230179,
+            -120.56400299
+        ],
+        "RepeaterBook ID":"17116",
+        "Group Name":"K7RHT",
+        "Location":"Table Mtn.",
+        "Mode":"FM",
+        "Long Name":"K7RHT",
+        "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7RHT",
+        "Output (MHz)":"444.450",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            47.15230179,
+            -120.56400299
+        ],
+        "RepeaterBook ID":"17115",
+        "Group Name":"K7RHT",
+        "Location":"Table Mtn.",
+        "Mode":"FM",
+        "Long Name":"K7RHT",
+        "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
+        "Exclude":null
     }
 ]
