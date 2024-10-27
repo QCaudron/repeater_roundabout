@@ -24,7 +24,7 @@ The locations for these repeaters are approximate, and sourced from RepeaterBook
 
 
 <script>
-var map = L.map('map').setView([47.63, -122.75], 8);
+var map = L.map('map').setView([47.63, -120], 6);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
