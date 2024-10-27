@@ -1,3 +1,4 @@
+
 <style>
     canvas {
         border-radius: 50%; /* Make the canvas appear circular */
@@ -24,36 +25,42 @@
         margin: 0 10px;
         vertical-align: top;
     }
-    label {
+    #controls label {
         display: block;
         margin-bottom: 5px;
     }
     input {
-        width: 100px; /* Set width to be smaller */
+        width: 80px; /* Narrower input fields */
         padding: 5px;
     }
     button {
-        margin: 10px;
+        margin-left: 10px;
         padding: 5px 10px;
     }
+    #input-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px; /* Space between inputs */
+    }
 </style>
-</head>
-<body>
 
 <div id="controls">
-    <div class="input-group">
-        <label>Latitude:</label>
-        <input type="text" id="latitude" value="47.2590258">
+    <div id="input-container">
+        <div class="input-group">
+            <label for="latitude">Latitude</label>
+            <input type="text" id="latitude" value="37.7749">
+        </div>
+        <div class="input-group">
+            <label for="longitude">Longitude</label>
+            <input type="text" id="longitude" value="-122.4194">
+        </div>
+        <div class="input-group">
+            <label for="maxDistance">Max Distance (miles)</label>
+            <input type="text" id="maxDistance" value="100">
+        </div>
+        <button id="plotButton">Plot Points</button>
     </div>
-    <div class="input-group">
-        <label>Longitude:</label>
-        <input type="text" id="longitude" value="-122.4606095">
-    </div>
-    <div class="input-group">
-        <label>Max Distance (miles):</label>
-        <input type="text" id="maxDistance" value="50">
-    </div>
-    <button id="plotButton">Plot Points</button>
 </div>
 
 <canvas id="azimuthMap" width="500" height="500"></canvas>
@@ -164,7 +171,7 @@
             // Draw point
             ctx.beginPath();
             ctx.arc(x, y, 5, 0, 2 * Math.PI);
-            ctx.fillStyle = '#175A00';
+            ctx.fillStyle = 'blue';
             ctx.fill();
             ctx.closePath();
         });
@@ -180,8 +187,8 @@
         points.forEach(point => {
             const dist = Math.sqrt(Math.pow(mouseX - point.x, 2) + Math.pow(mouseY - point.y, 2));
             if (dist < 5) {
-                tooltip.style.left = `${event.pageX + 10}px`; // Adjust tooltip to follow mouse pointer
-                tooltip.style.top = `${event.pageY + 10}px`;
+                tooltip.style.left = `${event.clientX}px`; // Align tooltip horizontally with mouse
+                tooltip.style.top = `${event.clientY}px`;  // Align tooltip vertically with mouse
                 tooltip.innerHTML = `${point.callsign} (RR# ${point.index})`;
                 tooltip.style.display = 'block';
                 hovering = true;
@@ -210,5 +217,4 @@
             alert('Please enter valid latitude, longitude, and max distance.');
         }
     });
-
 </script>
