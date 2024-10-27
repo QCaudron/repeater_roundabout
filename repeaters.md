@@ -113,16 +113,16 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 91    | MBARC          | K7SKW      | Mt. Constitution  |        444.050 |           +5.0 |       103.5 |
 | 92    | MBARC          | K7SKW      | Squalicum Mtn.    |        443.750 |           +5.0 |       103.5 |
 | 93    | MBARC          | K7SKW      | King Mtn.         |        147.160 |           +0.6 |       103.5 |
-| 94    | W7TRF          | W7TRF      | Spokane Valley    |        145.210 |           -0.6 |             |
-| 95    | W7TRF          | W7TRF      | Spokane Valley    |        443.475 |           +5.0 |             |
+| 94    | W7TRF          | W7TRF      | Spokane Valley    |        145.210 |           -0.6 |       100.0 |
+| 95    | W7TRF          | W7TRF      | Spokane Valley    |        443.475 |           +5.0 |       100.0 |
 | 96    | BEARONS        | W7FLY      | Lynnwood          |        443.925 |           +5.0 |       100.0 |
-| 97    | Mike & Key     | K7LED      | Tiger Mtn.        |        146.820 |           -0.6 |             |
-| 98    | Mike & Key     | K7LED      | Tiger Mtn.        |        224.120 |           -1.6 |             |
-| 99    | MMSH           | W7MSH      | Kelso             |        444.725 |           +5.0 |             |
-| 100   | RoyNet         | WA7ROY     | Roy               |        444.175 |           +5.0 |             |
-| 101   | WWMST          | WW7MST     | Seattle           |        146.900 |           -0.6 |             |
-| 102   | WWMST          | WW7MST     | Seattle           |        443.550 |           +5.0 |             |
-| 103   | WWDXC          | W7DX       | Redmond           |        147.000 |           -0.6 |             |
+| 97    | Mike & Key     | K7LED      | Tiger Mtn.        |        146.820 |           -0.6 |       103.5 |
+| 98    | Mike & Key     | K7LED      | Tiger Mtn.        |        224.120 |           -1.6 |       103.5 |
+| 99    | MMSH           | W7MSH      | Kelso             |        444.725 |           +5.0 |       107.2 |
+| 100   | RoyNet         | WA7ROY     | Roy               |        444.175 |           +5.0 |       123.0 |
+| 101   | WWMST          | WW7MST     | Seattle           |        146.900 |           -0.6 |       103.5 |
+| 102   | WWMST          | WW7MST     | Seattle           |        443.550 |           +5.0 |       103.5 |
+| 103   | WWDXC          | W7DX       | Redmond           |        147.000 |           -0.6 |       103.5 |
 | 104   | Snohomish ACS  | WA7DEM     | Granite Falls     |        146.920 |           -0.6 |       123.0 |
 | 105   | Snohomish ACS  | WA7DEM     | Arlington         |        224.380 |           -1.6 |       103.5 |
 | 106   | Snohomish ACS  | WA7DEM     | Arlington         |        444.200 |           +5.0 |  D172[^dcs] |

@@ -1,16 +1,11 @@
-# Azimuthal Map
-
-
 <style>
     canvas {
-        border-radius: 50%;
-        /* Make the canvas appear circular */
+        border-radius: 50%; /* Make the canvas appear circular */
         border: 1px solid black;
         display: block;
         margin: 20px auto;
         position: relative;
     }
-
     #tooltip {
         position: absolute;
         background: rgba(0, 0, 0, 0.8);
@@ -18,29 +13,46 @@
         padding: 5px;
         display: none;
         border-radius: 5px;
+        pointer-events: none;
     }
-
     #controls {
         text-align: center;
         margin: 20px;
     }
-
-    input {
-        margin: 5px;
+    .input-group {
+        display: inline-block;
+        margin: 0 10px;
+        vertical-align: top;
     }
-
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input {
+        width: 100px; /* Set width to be smaller */
+        padding: 5px;
+    }
     button {
         margin: 10px;
         padding: 5px 10px;
     }
 </style>
-
-
+</head>
+<body>
 
 <div id="controls">
-    <label>Latitude: <input type="text" id="latitude" value="47.2590258"></label>
-    <label>Longitude: <input type="text" id="longitude" value="-122.4606095"></label>
-    <label>Max Distance (miles): <input type="text" id="maxDistance" value="50"></label>
+    <div class="input-group">
+        <label>Latitude:</label>
+        <input type="text" id="latitude" value="47.2590258">
+    </div>
+    <div class="input-group">
+        <label>Longitude:</label>
+        <input type="text" id="longitude" value="-122.4606095">
+    </div>
+    <div class="input-group">
+        <label>Max Distance (miles):</label>
+        <input type="text" id="maxDistance" value="50">
+    </div>
     <button id="plotButton">Plot Points</button>
 </div>
 
@@ -152,7 +164,7 @@
             // Draw point
             ctx.beginPath();
             ctx.arc(x, y, 5, 0, 2 * Math.PI);
-            ctx.fillStyle = 'blue';
+            ctx.fillStyle = '#175A00';
             ctx.fill();
             ctx.closePath();
         });
@@ -168,8 +180,8 @@
         points.forEach(point => {
             const dist = Math.sqrt(Math.pow(mouseX - point.x, 2) + Math.pow(mouseY - point.y, 2));
             if (dist < 5) {
-                tooltip.style.left = `${event.clientX + 10}px`;
-                tooltip.style.top = `${event.clientY + 10}px`;
+                tooltip.style.left = `${event.pageX + 10}px`; // Adjust tooltip to follow mouse pointer
+                tooltip.style.top = `${event.pageY + 10}px`;
                 tooltip.innerHTML = `${point.callsign} (RR# ${point.index})`;
                 tooltip.style.display = 'block';
                 hovering = true;

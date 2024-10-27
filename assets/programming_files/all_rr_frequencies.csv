@@ -92,16 +92,16 @@
 91,K7SKW,444.050,+5.0,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,48.6800797,-122.8425501,+,5.0
 92,K7SKW,443.750,+5.0,103.5,,Squalicum Mtn.,FM,Mount Baker Amateur Radio Club,48.7884669,-122.385215,+,5.0
 93,K7SKW,147.160,+0.6,103.5,,King Mtn.,FM,Mount Baker Amateur Radio Club,48.8017863,-122.4625177,+,0.6
-94,W7TRF,145.210,-0.6,,280,Spokane Valley,FM,Tom W7TRF's repeater system,47.6241,-117.175,-,0.6
-95,W7TRF,443.475,+5.0,,455,Spokane Valley,FM,Tom W7TRF's repeater system,47.6068,-117.2034,+,5.0
+94,W7TRF,145.210,-0.6,100.0,280,Spokane Valley,FM,Tom W7TRF's repeater system,47.6241,-117.175,-,0.6
+95,W7TRF,443.475,+5.0,100.0,455,Spokane Valley,FM,Tom W7TRF's repeater system,47.6068,-117.2034,+,5.0
 96,W7FLY,443.925,+5.0,100.0,,Lynnwood,FM,Boeing Employees Amateur Radio Operators North Society,47.85660934,-122.28367615,+,5.0
-97,K7LED,146.820,-0.6,,302,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48820114,-121.9469986,-,0.6
-98,K7LED,224.120,-1.6,,441,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48839951,-121.9469986,-,1.6
-99,W7MSH,444.725,+5.0,,20241,Kelso,FM,Mercury Mt. St. Helens Emergency Response Communications,46.07657628,-122.8034604,+,5.0
-100,WA7ROY,444.175,+5.0,,21099,Roy,FM,Roy Area Network,47.0042643,-122.539846,+,5.0
-101,WW7MST,146.900,-0.6,,333,Seattle,FM,Western Washington Medical Services Emergency Communications,47.57780075,-122.30899811,-,0.6
-102,WW7MST,443.550,+5.0,,536,Seattle,FM,Western Washington Medical Services Emergency Communications,47.55260086,-122.3010025,+,5.0
-103,W7DX,147.000,-0.6,,41,Redmond,FM,Western Washington DX Club,47.67481,-122.053436,-,0.6
+97,K7LED,146.820,-0.6,103.5,302,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48820114,-121.9469986,-,0.6
+98,K7LED,224.120,-1.6,103.5,441,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48839951,-121.9469986,-,1.6
+99,W7MSH,444.725,+5.0,107.2,20241,Kelso,FM,Mercury Mt. St. Helens Emergency Response Communications,46.07657628,-122.8034604,+,5.0
+100,WA7ROY,444.175,+5.0,123.0,21099,Roy,FM,Roy Area Network,47.0042643,-122.539846,+,5.0
+101,WW7MST,146.900,-0.6,103.5,333,Seattle,FM,Western Washington Medical Services Emergency Communications,47.57780075,-122.30899811,-,0.6
+102,WW7MST,443.550,+5.0,103.5,536,Seattle,FM,Western Washington Medical Services Emergency Communications,47.55260086,-122.3010025,+,5.0
+103,W7DX,147.000,-0.6,103.5,41,Redmond,FM,Western Washington DX Club,47.67481,-122.053436,-,0.6
 104,WA7DEM,146.920,-0.6,123.0,,Granite Falls,FM,Snohomish County Auxiliary Communications Service,48.125699,-121.9844964,-,0.6
 105,WA7DEM,224.380,-1.6,103.5,6961,Arlington,FM,Snohomish County Auxiliary Communications Service,48.1227936,-122.2567359,-,1.6
 106,WA7DEM,444.200,+5.0,D172[^dcs],,Arlington,FM,Snohomish County Auxiliary Communications Service,48.1227936,-122.2567359,+,5.0
