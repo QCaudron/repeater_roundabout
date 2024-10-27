@@ -6,7 +6,7 @@
 5,W7AW,145.130,-0.6,103.5,14858,West Seattle,FM,West Seattle Amateur Radio Club,47.540412,-122.378271,-,0.6
 6,W7AW,441.800,+5.0,141.3,538,West Seattle,FM,West Seattle Amateur Radio Club,47.54040146,-122.37799835,+,5.0
 7,W7DK,147.280,+0.6,103.5,324,Tacoma,FM,Radio Club of Tacoma,47.25289917,-122.44400024,+,0.6
-8,W7DK,440.625,+5.0,103.5,549,Tacoma,FM,Radio Club of Tacoma,47.25289917,-122.44400024,+,5.0
+8,W7DK,440.625,+5.0,103.5,549,Tacoma,FM,Radio Club of Tacoma,47.7720427,-122.2808902,+,5.0
 9,W7DK,145.210,-0.6,141.3,324,Tacoma,FM,Radio Club of Tacoma,47.25289917,-122.44400024,-,0.6
 10,W7DK,147.380,+0.6,103.5,325,Crawford Mtn.,FM,Radio Club of Tacoma,46.8431015,-122.76300049,+,0.6
 11,W7ACS,442.300,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,47.6031132,-122.3187965,+,5.0
@@ -15,7 +15,7 @@
 14,W7ACS,443.475,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,47.6510101,-122.3893988,+,5.0
 15,W7ACS,443.650,+5.0,141.3,,North Seattle,FM,Seattle Auxiliary Communications Service,47.690119,-122.3177855,+,5.0
 16,W7ACS,440.600,+5.0,141.3,,Lake Forest Park,FM,Seattle Auxiliary Communications Service,47.77193,-122.28101,+,5.0
-17,W7ACS,443.200,+5.0,141.3,,White Center,FM,Seattle Auxiliary Communications Service,47.52099991,-122.34300232,+,5.0
+17,W7ACS,443.200,+5.0,141.3,,White Center,FM,Seattle Auxiliary Communications Service,47.52074,-122.3433148,+,5.0
 18,K7LWH,53.170,-1.7,100.0,165,Kirkland,FM,Lake Washington Ham Club,47.68849945,-122.15599823,-,1.7
 19,K7LWH,145.490,-0.6,103.5,,Kirkland,FM,Lake Washington Ham Club,47.68849945,-122.15599823,-,0.6
 20,K7LWH,224.360,-1.6,103.5,5326,Kirkland,FM,Lake Washington Ham Club,47.68149948,-122.20899963,-,1.6
@@ -132,11 +132,11 @@
 131,KE7GFZ,443.250,+5.0,103.5,647,Duvall,FM,Snoqualmie Valley Amateur Radio Club,47.76499939,-121.93900299,+,5.0
 132,WA7TBP,223.960,-1.6,123.0,19922,Carnation,FM,Tom WA7TBP's repeater system,47.62993,-121.95008,-,1.6
 133,W7ACS,444.550,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.6047232,-122.330827,+,5.0
-134,W7ACS,440.525,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.5882474,-122.3157438,+,5.0
+134,W7ACS,440.525,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.58878,-122.31765,+,5.0
 135,W7ACS,442.300,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.5882474,-122.3157438,+,5.0
 136,W7ACS,443.025,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.6200881,-122.312238,+,5.0
 137,W7ACS,442.875,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.6238207,-122.3152937,+,5.0
-138,W7ACS,443.475,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.6238207,-122.3152937,+,5.0
-139,W7ACS,443.650,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.6238207,-122.3152937,+,5.0
-140,W7ACS,440.600,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.6238207,-122.3152937,+,5.0
+138,W7ACS,443.475,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.6508676,-122.3914249,+,5.0
+139,W7ACS,443.650,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.691239,-122.3173892,+,5.0
+140,W7ACS,440.600,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.77193,-122.28099,+,5.0
 141,W7ACS,443.200,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,47.6238207,-122.3152937,+,5.0
