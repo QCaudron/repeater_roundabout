@@ -149,6 +149,18 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 127   | YCRA           | WA7SAR     | Yakima            |        147.080 |           +0.6 |        85.4 |
 | 128   | K7RHT          | K7RHT      | Table Mtn.        |        147.000 |           +0.6 |       131.8 |
 | 129   | K7RHT          | K7RHT      | Table Mtn.        |        444.450 |           +5.0 |       131.8 |
+| 130   | SnoVARC        | KE7GFZ     | Carnation         |        441.850 |           +5.0 |       103.5 |
+| 131   | SnoVARC        | KE7GFZ     | Duvall            |        443.250 |           +5.0 |       103.5 |
+| 132   | WA7TBP         | WA7TBP     | Carnation         |        223.960 |           -1.6 |       123.0 |
+| 133   | Seattle ACS    | W7ACS      | Seattle           |        444.550 |           +5.0 |       141.3 |
+| 134   | Seattle ACS    | W7ACS      | Seattle           |        440.525 |           +5.0 |       141.3 |
+| 135   | Seattle ACS    | W7ACS      | Seattle           |        442.300 |           +5.0 |       141.3 |
+| 136   | Seattle ACS    | W7ACS      | Seattle           |        443.025 |           +5.0 |       141.3 |
+| 137   | Seattle ACS    | W7ACS      | Seattle           |        442.875 |           +5.0 |       141.3 |
+| 138   | Seattle ACS    | W7ACS      | Seattle           |        443.475 |           +5.0 |       141.3 |
+| 139   | Seattle ACS    | W7ACS      | Seattle           |        443.650 |           +5.0 |       141.3 |
+| 140   | Seattle ACS    | W7ACS      | Seattle           |        440.600 |           +5.0 |       141.3 |
+| 141   | Seattle ACS    | W7ACS      | Seattle           |        443.200 |           +5.0 |       141.3 |
 
 ---
 
@@ -286,11 +298,17 @@ SeaTac
 Seattle ACS
 : [Seattle Auxiliary Communications Service](https://www.seattleacs.org/)
 
+SnoVARC
+: [Snoqualmie Valley Amateur Radio Club](https://snovarc.org/)
+
 Snohomish ACS
 : [Snohomish County Auxiliary Communications Service](https://www.wa7dem.info/home)
 
 W7TRF
 : [Tom W7TRF's repeater system](https://www.qrz.com/db/W7TRF)
+
+WA7TBP
+: [Tom WA7TBP's repeater system](https://www.qrz.com/db/WA7TBP/)
 
 WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)

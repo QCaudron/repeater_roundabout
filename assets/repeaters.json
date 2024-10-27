@@ -2191,5 +2191,209 @@
         "Long Name":"K7RHT",
         "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
         "Exclude":null
+    },
+    {
+        "Callsign":"KE7GFZ",
+        "Output (MHz)":"441.850",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.648945,
+            -121.91607
+        ],
+        "RepeaterBook ID":"22211",
+        "Group Name":"SnoVARC",
+        "Location":"Carnation",
+        "Mode":"FM",
+        "Long Name":"Snoqualmie Valley Amateur Radio Club",
+        "Website":"https:\/\/snovarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"KE7GFZ",
+        "Output (MHz)":"443.250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.76499939,
+            -121.93900299
+        ],
+        "RepeaterBook ID":"647",
+        "Group Name":"SnoVARC",
+        "Location":"Duvall",
+        "Mode":"FM",
+        "Long Name":"Snoqualmie Valley Amateur Radio Club",
+        "Website":"https:\/\/snovarc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WA7TBP",
+        "Output (MHz)":"223.960",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.62993,
+            -121.95008
+        ],
+        "RepeaterBook ID":"19922",
+        "Group Name":"WA7TBP",
+        "Location":"Carnation",
+        "Mode":"FM",
+        "Long Name":"Tom WA7TBP's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WA7TBP\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"444.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6047232,
+            -122.330827
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Commonications Service",
+        "Website":"https:\/\/www.seattleacs.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"440.525",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.5882474,
+            -122.3157438
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Commonications Service",
+        "Website":"https:\/\/www.seattleacs.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"442.300",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.5882474,
+            -122.3157438
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Commonications Service",
+        "Website":"https:\/\/www.seattleacs.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.025",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6200881,
+            -122.312238
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Commonications Service",
+        "Website":"https:\/\/www.seattleacs.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"442.875",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6238207,
+            -122.3152937
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Commonications Service",
+        "Website":"https:\/\/www.seattleacs.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.475",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6238207,
+            -122.3152937
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Commonications Service",
+        "Website":"https:\/\/www.seattleacs.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.650",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6238207,
+            -122.3152937
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Commonications Service",
+        "Website":"https:\/\/www.seattleacs.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"440.600",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6238207,
+            -122.3152937
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Commonications Service",
+        "Website":"https:\/\/www.seattleacs.org\/home",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.200",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6238207,
+            -122.3152937
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Commonications Service",
+        "Website":"https:\/\/www.seattleacs.org\/home",
+        "Exclude":null
     }
 ]
