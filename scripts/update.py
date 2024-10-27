@@ -112,8 +112,8 @@ def repeater_from_repeaterbook(id_code: str) -> dict:
     source = requests.get(url)
 
     # Extract various pieces of information
-    start = r"\:\<\/td\>\s+\<td\>\s*"
-    end = r"\s*\<\/td\>"
+    start = r"\:\<\/td\>\s+\<td\>(?:\s*(?:\<!--.*?--\>|\<span[^\>]*\>))*\s*"
+    end = r"(?:\s*\</span\>)*\s*\<\/td\>"
 
     call = re.search(r"callResult.php\?call=(\w{4,6})", source.text).group(1)
 
