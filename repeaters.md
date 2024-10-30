@@ -145,7 +145,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 123   | YCRA           | WA7SAR     | Darland Mtn.      |        146.860 |           -0.6 |       123.0 |
 | 124   | YCRA           | WA7SAR     | King Mtn.         |        147.080 |           +0.6 |       123.0 |
 | 125   | YCRA           | WA7SAR     | Yakima            |        444.600 |           +5.0 |       123.0 |
-| 126   | YCRA           | WA7SAR     | Quartz Mtn.       |        145.170 |           -0.6 |       123.0 |
+| 126   | YCRA           | WA7SAR     | Quartz Mtn.       |        145.270 |           -0.6 |       123.0 |
 | 127   | YCRA           | WA7SAR     | Yakima            |        147.080 |           +0.6 |        85.4 |
 | 128   | K7RHT          | K7RHT      | Table Mtn.        |        147.000 |           +0.6 |       131.8 |
 | 129   | K7RHT          | K7RHT      | Table Mtn.        |        444.450 |           +5.0 |       131.8 |
