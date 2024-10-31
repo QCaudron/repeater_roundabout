@@ -161,6 +161,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 139   | Seattle ACS    | W7ACS      | Seattle           |        443.650 |           +5.0 |       141.3 |
 | 140   | Seattle ACS    | W7ACS      | Seattle           |        440.600 |           +5.0 |       141.3 |
 | 141   | Seattle ACS    | W7ACS      | Seattle           |        443.200 |           +5.0 |       141.3 |
+| 142   | LCARC          | K7YR       | Slide Ridge       |        146.820 |           -0.6 |       103.5 |
+| 143   | LCARC          | K7SMX      | McNeal Canyon     |        147.100 |           +0.6 |        94.8 |
+| 144   | LCARC          | K7SMX      | McNeal Canyon     |        444.525 |           +5.0 |        94.8 |
 
 ---
 
@@ -216,6 +219,9 @@ KC7EQO
 
 KCARC
 : [Kitsap County Amateur Radio Club](https://kcarc.org/)
+
+LCARC
+: [Lake Chelan Amateur Radio Club](https://lcarc.net/)
 
 LWHC
 : [Lake Washington Ham Club](https://www.lakewashingtonhamclub.org/)

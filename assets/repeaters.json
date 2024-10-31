@@ -2395,5 +2395,56 @@
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
         "Exclude":null
+    },
+    {
+        "Callsign":"K7YR",
+        "Output (MHz)":"146.820",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.88470078,
+            -120.15699768
+        ],
+        "RepeaterBook ID":"6843",
+        "Group Name":"LCARC",
+        "Location":"Slide Ridge",
+        "Mode":"FM",
+        "Long Name":"Lake Chelan Amateur Radio Club",
+        "Website":"https:\/\/lcarc.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SMX",
+        "Output (MHz)":"147.100",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"94.8",
+        "Coordinates":[
+            47.85359955,
+            -119.8730011
+        ],
+        "RepeaterBook ID":"73",
+        "Group Name":"LCARC",
+        "Location":"McNeal Canyon",
+        "Mode":"FM",
+        "Long Name":"Lake Chelan Amateur Radio Club",
+        "Website":"https:\/\/lcarc.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7SMX",
+        "Output (MHz)":"444.525",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"94.8",
+        "Coordinates":[
+            47.85359955,
+            -119.8730011
+        ],
+        "RepeaterBook ID":"72",
+        "Group Name":"LCARC",
+        "Location":"McNeal Canyon",
+        "Mode":"FM",
+        "Long Name":"Lake Chelan Amateur Radio Club",
+        "Website":"https:\/\/lcarc.net\/",
+        "Exclude":null
     }
 ]

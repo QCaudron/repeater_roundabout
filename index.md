@@ -12,7 +12,7 @@ Last year, we made it into [QST Magazine](assets/RR.pdf). Light up the airwaves 
 
 **The Repeater Roundabout will be held during the weekend of November 23rd and 24th.**
 
-> This page was last updated on Wednesday October 30 at 03:43.
+> This page was last updated on Thursday October 31 at 18:49.
 
 ---
 
@@ -21,7 +21,7 @@ Last year, we made it into [QST Magazine](assets/RR.pdf). Light up the airwaves 
 
 To get started, check out the [Rules](./rules) page.
 
-Then, check out the list of [141 participating repeaters](./repeaters) from across 53 radio groups that you'll play on during the contest. You can also [view the map](./map) to see where the repeaters are located.
+Then, check out the list of [144 participating repeaters](./repeaters) from across 54 radio groups that you'll play on during the contest. You can also [view the map](./map) to see where the repeaters are located.
 
 We provide [files to program your radios](./files) with Chirp and other software.
 
