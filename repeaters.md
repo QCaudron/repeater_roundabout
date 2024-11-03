@@ -164,6 +164,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 142   | LCARC          | K7YR       | Slide Ridge       |        146.820 |           -0.6 |       103.5 |
 | 143   | LCARC          | K7SMX      | McNeal Canyon     |        147.100 |           +0.6 |        94.8 |
 | 144   | LCARC          | K7SMX      | McNeal Canyon     |        444.525 |           +5.0 |        94.8 |
+| 145   | SCARES         | KB7APU     | Red Mountain      |        145.250 |           -0.6 |       186.2 |
 
 ---
 
@@ -291,6 +292,9 @@ RoyNet
 
 SCARC
 : [Stanwood-Camano Amateur Radio Club](https://www.scarcwa.org/)
+
+SCARES
+: [Skamania County ARES](http://skamania-prepare.org/ares/)
 
 SCHC
 : [Snohomish County Hams Club](http://www.wa7law.org/)
