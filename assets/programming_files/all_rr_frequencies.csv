@@ -92,8 +92,8 @@
 91,K7SKW,444.050,+5.0,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,48.6800797,-122.8425501,+,5.0
 92,K7SKW,443.750,+5.0,103.5,,Squalicum Mtn.,FM,Mount Baker Amateur Radio Club,48.7884669,-122.385215,+,5.0
 93,K7SKW,147.160,+0.6,103.5,,King Mtn.,FM,Mount Baker Amateur Radio Club,48.8017863,-122.4625177,+,0.6
-94,W7TRF,145.210,-0.6,100.0,280,Spokane Valley,FM,Tom W7TRF's repeater system,47.6241,-117.175,-,0.6
-95,W7TRF,443.475,+5.0,100.0,455,Spokane Valley,FM,Tom W7TRF's repeater system,47.6068,-117.2034,+,5.0
+94,W7TRF,145.210,-0.6,100.0,280,Spokane Valley,FM,Tom W7TRF's repeater system,47.62433,-117.17875,-,0.6
+95,W7TRF,443.475,+5.0,100.0,455,Spokane Valley,FM,Tom W7TRF's repeater system,47.60811,-117.20439,+,5.0
 96,W7FLY,443.925,+5.0,100.0,,Lynnwood,FM,Boeing Employees Amateur Radio Operators North Society,47.85660934,-122.28367615,+,5.0
 97,K7LED,146.820,-0.6,103.5,302,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48820114,-121.9469986,-,0.6
 98,K7LED,224.120,-1.6,103.5,441,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,47.48839951,-121.9469986,-,1.6
@@ -144,3 +144,16 @@
 143,K7SMX,147.100,+0.6,94.8,73,McNeal Canyon,FM,Lake Chelan Amateur Radio Club,47.85359955,-119.8730011,+,0.6
 144,K7SMX,444.525,+5.0,94.8,72,McNeal Canyon,FM,Lake Chelan Amateur Radio Club,47.85359955,-119.8730011,+,5.0
 145,KB7APU,145.250,-0.6,186.2,16535,Red Mountain,FM,Skamania County ARES,45.93479919,-121.81999969,-,0.6
+146,W7ZA,146.900,-0.6,88.5,,Aberdeen,NBFM,Grays Harbor Amateur Radio Club,46.93,-123.73,-,0.6
+147,W7ZA,147.160,+0.6,88.5,,Aberdeen,FM,Grays Harbor Amateur Radio Club,46.9542,-123.8086,+,0.6
+148,K7TGU,53.23,-1.7,100.0,,University Place,FM,Rob K7TGU's repeater system,47.22747,-122.55777,-,1.7
+149,K7TGU,927.600,-25.0,114.8,,University Place,NBFM,Rob K7TGU's repeater system,47.22805,-122.55527,-,25.0
+150,K7HW,53.19,-1.7,100.0,,Tacoma,FM,Rob K7TGU's repeater system,47.221559,-122.45703,-,1.7
+151,K7HW,444.175,+5.0,103.5,,Tacoma,NBFM,Rob K7TGU's repeater system,47.22166,-122.45721,+,5.0
+152,K7HW,146.680,-0.6,103.5,,Mineral,NBFM,Rob K7TGU's repeater system,46.718834,-122.18971,-,0.6
+153,K7NP,53.010,-1.7,100.0,,University Place,NBFM,University Place Repeater Group,47.227739,-122.55786,-,1.7
+154,K7NP,442.375,+5.0,103.5,,University Place,NBFM,University Place Repeater Group,47.227739,-122.55786,+,5.0
+155,K7YLM,440.200,+5.0,100.0,,Yelm,FM,Yelm Amateur Radio Group,46.9392751,-122.604919,+,5.0
+156,W7DG,147.100,+0.6,114.8,,Longview,FM,Lower Columbia Amateur Radio Association,46.1827,-122.9585,+,0.6
+157,W7DG,147.300,+0.6,114.8,,Woodland,FM,Lower Columbia Amateur Radio Association,45.9647,-122.6697,+,0.6
+158,W7DG,444.900,+5.0,114.8,,Longview,FM,Lower Columbia Amateur Radio Association,46.1827,-122.9585,+,5.0

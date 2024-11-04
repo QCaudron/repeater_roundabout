@@ -165,6 +165,19 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 143   | LCARC          | K7SMX      | McNeal Canyon     |        147.100 |           +0.6 |        94.8 |
 | 144   | LCARC          | K7SMX      | McNeal Canyon     |        444.525 |           +5.0 |        94.8 |
 | 145   | SCARES         | KB7APU     | Red Mountain      |        145.250 |           -0.6 |       186.2 |
+| 146   | GHARC          | W7ZA       | Aberdeen          |        146.900 |           -0.6 |        88.5 |
+| 147   | GHARC          | W7ZA       | Aberdeen          |        147.160 |           +0.6 |        88.5 |
+| 148   | K7TGU          | K7TGU      | University Place  |          53.23 |           -1.7 |       100.0 |
+| 149   | K7TGU          | K7TGU      | University Place  |        927.600 |          -25.0 |       114.8 |
+| 150   | K7TGU          | K7HW       | Tacoma            |          53.19 |           -1.7 |       100.0 |
+| 151   | K7TGU          | K7HW       | Tacoma            |        444.175 |           +5.0 |       103.5 |
+| 152   | K7TGU          | K7HW       | Mineral           |        146.680 |           -0.6 |       103.5 |
+| 153   | UPRG           | K7NP       | University Place  |         53.010 |           -1.7 |       100.0 |
+| 154   | UPRG           | K7NP       | University Place  |        442.375 |           +5.0 |       103.5 |
+| 155   | YARG           | K7YLM      | Yelm              |        440.200 |           +5.0 |       100.0 |
+| 156   | LCARA          | W7DG       | Longview          |        147.100 |           +0.6 |       114.8 |
+| 157   | LCARA          | W7DG       | Woodland          |        147.300 |           +0.6 |       114.8 |
+| 158   | LCARA          | W7DG       | Longview          |        444.900 |           +5.0 |       114.8 |
 
 ---
 
@@ -187,6 +200,9 @@ Everett ACS
 
 FWARC
 : [Federal Way Amateur Radio Club](https://fwarc.org/)
+
+GHARC
+: [Grays Harbor Amateur Radio Club](http://gharc.net/)
 
 GKRC
 : [Greater Kingston Radio Club](https://gkrc.groups.io/g/main)
@@ -215,11 +231,17 @@ K7DK
 K7RHT
 : [K7RHT](https://www.qrz.com/db/K7RHT)
 
+K7TGU
+: [Rob K7TGU's repeater system](https://www.qrz.com/db/K7TGU)
+
 KC7EQO
 : [Matt KC7EQO's repeater system](https://www.qrz.com/db/KC7EQO/R)
 
 KCARC
 : [Kitsap County Amateur Radio Club](https://kcarc.org/)
+
+LCARA
+: [Lower Columbia Amateur Radio Association](http://w7dg.org)
 
 LCARC
 : [Lake Chelan Amateur Radio Club](https://lcarc.net/)
@@ -314,6 +336,9 @@ SnoVARC
 Snohomish ACS
 : [Snohomish County Auxiliary Communications Service](https://www.wa7dem.info/home)
 
+UPRG
+: [University Place Repeater Group](https://www.qrz.com/db/K7NP)
+
 W7TRF
 : [Tom W7TRF's repeater system](https://www.qrz.com/db/W7TRF)
 
@@ -331,6 +356,9 @@ WWMST
 
 West Seattle
 : [West Seattle Amateur Radio Club](https://w7aw.org/)
+
+YARG
+: [Yelm Amateur Radio Group](http://yelmamateurradiogroup.org)
 
 YCRA
 : [Yakima County Radio Amateurs]()

@@ -1586,8 +1586,8 @@
         "Offset (MHz)":"-0.6",
         "Tone (Hz)":"100.0",
         "Coordinates":[
-            47.6241,
-            -117.175
+            47.62433,
+            -117.17875
         ],
         "RepeaterBook ID":"280",
         "Group Name":"W7TRF",
@@ -1603,8 +1603,8 @@
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"100.0",
         "Coordinates":[
-            47.6068,
-            -117.2034
+            47.60811,
+            -117.20439
         ],
         "RepeaterBook ID":"455",
         "Group Name":"W7TRF",
@@ -2462,6 +2462,227 @@
         "Mode":"FM",
         "Long Name":"Skamania County ARES",
         "Website":"http:\/\/skamania-prepare.org\/ares\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ZA",
+        "Output (MHz)":"146.900",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            46.93,
+            -123.73
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"GHARC",
+        "Location":"Aberdeen",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Grays Harbor Amateur Radio Club",
+        "Website":"http:\/\/gharc.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ZA",
+        "Output (MHz)":"147.160",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            46.9542,
+            -123.8086
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"GHARC",
+        "Location":"Aberdeen",
+        "Mode":"FM",
+        "Long Name":"Grays Harbor Amateur Radio Club",
+        "Website":"http:\/\/gharc.net\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7TGU",
+        "Output (MHz)":"53.23",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.22747,
+            -122.55777
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7TGU",
+        "Location":"University Place",
+        "Mode":"FM",
+        "Long Name":"Rob K7TGU's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K7TGU",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7TGU",
+        "Output (MHz)":"927.600",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            47.22805,
+            -122.55527
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7TGU",
+        "Location":"University Place",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Rob K7TGU's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K7TGU",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7HW",
+        "Output (MHz)":"53.19",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.221559,
+            -122.45703
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7TGU",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Rob K7TGU's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K7K7TGUNP",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7HW",
+        "Output (MHz)":"444.175",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.22166,
+            -122.45721
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7TGU",
+        "Location":"Tacoma",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Rob K7TGU's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K7TGU",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7HW",
+        "Output (MHz)":"146.680",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.718834,
+            -122.18971
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7TGU",
+        "Location":"Mineral",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Rob K7TGU's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K7TGU",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7NP",
+        "Output (MHz)":"53.010",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.227739,
+            -122.55786
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"UPRG",
+        "Location":"University Place",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"University Place Repeater Group",
+        "Website":"https:\/\/www.qrz.com\/db\/K7NP",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7NP",
+        "Output (MHz)":"442.375",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.227739,
+            -122.55786
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"UPRG",
+        "Location":"University Place",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"University Place Repeater Group",
+        "Website":"https:\/\/www.qrz.com\/db\/K7NP",
+        "Exclude":null
+    },
+    {
+        "Callsign":"K7YLM",
+        "Output (MHz)":"440.200",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.9392751,
+            -122.604919
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"YARG",
+        "Location":"Yelm",
+        "Mode":"FM",
+        "Long Name":"Yelm Amateur Radio Group",
+        "Website":"http:\/\/yelmamateurradiogroup.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7DG",
+        "Output (MHz)":"147.100",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            46.1827,
+            -122.9585
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"LCARA",
+        "Location":"Longview",
+        "Mode":"FM",
+        "Long Name":"Lower Columbia Amateur Radio Association",
+        "Website":"http:\/\/w7dg.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7DG",
+        "Output (MHz)":"147.300",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            45.9647,
+            -122.6697
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"LCARA",
+        "Location":"Woodland",
+        "Mode":"FM",
+        "Long Name":"Lower Columbia Amateur Radio Association",
+        "Website":"http:\/\/w7dg.org",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7DG",
+        "Output (MHz)":"444.900",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            46.1827,
+            -122.9585
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"LCARA",
+        "Location":"Longview",
+        "Mode":"FM",
+        "Long Name":"Lower Columbia Amateur Radio Association",
+        "Website":"http:\/\/w7dg.org",
         "Exclude":null
     }
 ]
