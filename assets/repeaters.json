@@ -2684,5 +2684,158 @@
         "Long Name":"Lower Columbia Amateur Radio Association",
         "Website":"http:\/\/w7dg.org",
         "Exclude":null
+    },
+    {
+        "Callsign":"K7CST",
+        "Output (MHz)":"147.320",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.38199997,
+            -122.22699738
+        ],
+        "RepeaterBook ID":"9852",
+        "Group Name":"KCST",
+        "Location":"Kent",
+        "Mode":"FM",
+        "Long Name":"Kent Communications Support Team ARC",
+        "Website":"https:\/\/pugetsoundfire.org\/emergency-management\/communications-support-team-ham-radio\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"145.410",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"162.2",
+        "Coordinates":[
+            46.93799973,
+            -121.5
+        ],
+        "RepeaterBook ID":"18070",
+        "Group Name":"WB7DOB",
+        "Location":"Crystal Mtn.",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"147.140",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.21900177,
+            -122.84300232
+        ],
+        "RepeaterBook ID":"145",
+        "Group Name":"WB7DOB",
+        "Location":"Baldi Mtn.",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"147.300",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.11669922,
+            -121.89299774
+        ],
+        "RepeaterBook ID":"5355",
+        "Group Name":"WB7DOB",
+        "Location":"Three Sisters Peak",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"223.920",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.10179901,
+            -121.87799835
+        ],
+        "RepeaterBook ID":"9868",
+        "Group Name":"WB7DOB",
+        "Location":"Three Sisters Peak",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"224.760",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.22119904,
+            -121.85099792
+        ],
+        "RepeaterBook ID":"231",
+        "Group Name":"WB7DOB",
+        "Location":"Baldi Mtn.",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"441.375",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"173.8",
+        "Coordinates":[
+            47.42990112,
+            -122.14499664
+        ],
+        "RepeaterBook ID":"275",
+        "Group Name":"WB7DOB",
+        "Location":"Lake Youngs",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"442.625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.21900177,
+            -121.84300232
+        ],
+        "RepeaterBook ID":"3711",
+        "Group Name":"WB7DOB",
+        "Location":"Baldi Mtn.",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Exclude":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"444.675",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            47.10240173,
+            -121.8730011
+        ],
+        "RepeaterBook ID":"3103",
+        "Group Name":"WB7DOB",
+        "Location":"Three Sisters Peak",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Exclude":null
     }
 ]

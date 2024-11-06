@@ -55,7 +55,7 @@ Here's an example log file :
 | Nov 12 | 13:16 | K7MCK    |    CM2 | 22   |   X   |
 | Nov 12 | 13:16 | KD7WGN   |    CM5 | 102  |       |
 
-Logs can be submitted [on this page](/logging). After the contest, a leaderboard will be published on this website. Logs must be returned to K7DRQ by November 20th to qualify.
+Logs can be submitted [on this page](/logging). After the contest, a leaderboard will be published on this website. Logs must be returned to K7DRQ by December 1st to qualify.
 
 
 # FAQ
