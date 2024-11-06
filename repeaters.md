@@ -187,10 +187,15 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 165   | WB7DOB         | WB7DOB     | Lake Youngs        |        441.375 |           +5.0 |       173.8 |
 | 166   | WB7DOB         | WB7DOB     | Baldi Mtn.         |        442.625 |           +5.0 |       103.5 |
 | 167   | WB7DOB         | WB7DOB     | Three Sisters Peak |        444.675 |           +5.0 |       136.5 |
+| 168   | BARC           | W7NPC      | Bainbridge Isl.    |         53.430 |           -1.7 |       100.0 |
+| 169   | BARC           | W7NPC      | Bainbridge Isl.    |        444.475 |           +5.0 |       103.5 |
 
 ---
 
 ### Clubs and repeater associations
+
+BARC
+: [Bainbridge Amateur Radio Club](https://w7npc.org/)
 
 BEARONS
 : [Boeing Employees Amateur Radio Operators North Society](https://w7flybearons.org)

@@ -2837,5 +2837,39 @@
         "Long Name":"Bruce WB7DOB's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
         "Exclude":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"53.430",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.65579987,
+            -122.54799652
+        ],
+        "RepeaterBook ID":"38",
+        "Group Name":"BARC",
+        "Location":"Bainbridge Isl.",
+        "Mode":"FM",
+        "Long Name":"Bainbridge Amateur Radio Club",
+        "Website":"https:\/\/w7npc.org\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"444.475",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.65579987,
+            -122.54799652
+        ],
+        "RepeaterBook ID":"480",
+        "Group Name":"BARC",
+        "Location":"Bainbridge Isl.",
+        "Mode":"FM",
+        "Long Name":"Bainbridge Amateur Radio Club",
+        "Website":"https:\/\/w7npc.org\/",
+        "Exclude":null
     }
 ]

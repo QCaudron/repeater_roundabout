@@ -143,5 +143,6 @@ L.marker([47.1017990100, -121.8779983500], {icon: L.divIcon({className: 'custom-
 L.marker([47.4299011200, -122.1449966400], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>165</div>", iconSize: [25, 25]}) }).bindPopup('RR# 165 - WB7DOB (441.375)<br>').addTo(map);
 L.marker([47.2190017700, -121.8430023200], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>166</div>", iconSize: [25, 25]}) }).bindPopup('RR# 166 - WB7DOB (442.625)<br>').addTo(map);
 L.marker([47.1024017300, -121.8730011000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>167</div>", iconSize: [25, 25]}) }).bindPopup('RR# 167 - WB7DOB (444.675)<br>').addTo(map);
+L.marker([47.6557998700, -122.5479965200], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 168 - W7NPC (53.430)<br>RR# 169 - W7NPC (444.475)<br>').addTo(map);
 
 </script>
