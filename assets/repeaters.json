@@ -2871,5 +2871,73 @@
         "Long Name":"Bainbridge Amateur Radio Club",
         "Website":"https:\/\/w7npc.org\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"224.160",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.68870163,
+            -122.36100006
+        ],
+        "RepeaterBook ID":"8854",
+        "Group Name":"WECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.68870163,
+            -122.36100006
+        ],
+        "RepeaterBook ID":"7393",
+        "Group Name":"WECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.825",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.8614006,
+            -122.61799622
+        ],
+        "RepeaterBook ID":"7100",
+        "Group Name":"WECG",
+        "Location":"Ferndale",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
+    },
+    {
+        "Callsign":"W7BFD",
+        "Output (MHz)":"442.300",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            48.73612057,
+            -122.48100439
+        ],
+        "RepeaterBook ID":"19722",
+        "Group Name":"WECG",
+        "Location":"Sehome Hill",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null
     }
 ]

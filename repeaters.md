@@ -189,6 +189,10 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 167   | WB7DOB         | WB7DOB     | Three Sisters Peak |        444.675 |           +5.0 |       136.5 |
 | 168   | BARC           | W7NPC      | Bainbridge Isl.    |         53.430 |           -1.7 |       100.0 |
 | 169   | BARC           | W7NPC      | Bainbridge Isl.    |        444.475 |           +5.0 |       103.5 |
+| 170   | WECG           | W7ECG      | Lookout Mtn.       |        224.160 |           -1.6 |       156.7 |
+| 171   | WECG           | W7ECG      | Lookout Mtn.       |        442.250 |           +5.0 |       156.7 |
+| 172   | WECG           | W7ECG      | Ferndale           |        442.825 |           +5.0 |       156.7 |
+| 173   | WECG           | W7BFD      | Sehome Hill        |        442.300 |           +5.0 |        88.5 |
 
 ---
 
@@ -364,6 +368,9 @@ WA7TBP
 
 WB7DOB
 : [Bruce WB7DOB's repeater system](https://www.qrz.com/db/WB7DOB)
+
+WECG
+: [Whatcom Emergency Communications Group](https://wecg.org/wordpress/)
 
 WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)
