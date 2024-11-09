@@ -2939,5 +2939,22 @@
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"https:\/\/wecg.org\/wordpress\/",
         "Exclude":null
+    },
+    {
+        "Callsign":"KC7SR",
+        "Output (MHz)":"146.920",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            45.9848456,
+            -121.9720754
+        ],
+        "RepeaterBook ID":"395",
+        "Group Name":"KC7SR",
+        "Location":"Satus Pass",
+        "Mode":"FM",
+        "Long Name":"Klickitat County Search and Rescue",
+        "Website":"https:\/\/www.qrz.com\/db\/KC7SR",
+        "Exclude":null
     }
 ]

@@ -193,6 +193,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 171   | WECG           | W7ECG      | Lookout Mtn.       |        442.250 |           +5.0 |       156.7 |
 | 172   | WECG           | W7ECG      | Ferndale           |        442.825 |           +5.0 |       156.7 |
 | 173   | WECG           | W7BFD      | Sehome Hill        |        442.300 |           +5.0 |        88.5 |
+| 174   | KC7SR          | KC7SR      | Satus Pass         |        146.920 |           -0.6 |        88.5 |
 
 ---
 
@@ -254,6 +255,9 @@ K7TGU
 
 KC7EQO
 : [Matt KC7EQO's repeater system](https://www.qrz.com/db/KC7EQO/R)
+
+KC7SR
+: [Klickitat County Search and Rescue](https://www.qrz.com/db/KC7SR)
 
 KCARC
 : [Kitsap County Amateur Radio Club](https://kcarc.org/)
