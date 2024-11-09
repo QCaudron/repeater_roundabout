@@ -194,6 +194,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 172   | WECG           | W7ECG      | Ferndale           |        442.825 |           +5.0 |       156.7 |
 | 173   | WECG           | W7BFD      | Sehome Hill        |        442.300 |           +5.0 |        88.5 |
 | 174   | KC7SR          | KC7SR      | Satus Pass         |        146.920 |           -0.6 |        88.5 |
+| 175   | N7YRC          | KC7VQR     | Yakima Canyon      |        147.240 |           +0.6 |       192.8 |
 
 ---
 
@@ -306,6 +307,9 @@ N7KN
 
 N7OEP
 : [Tom N7OEP's repeater system](https://www.qrz.com/db/n7oep)
+
+N7YRC
+: [N7YRC Group](https://www.qrz.com/db/KC7VQR)
 
 N9VW
 : [Steve N9VW's repeater system](https://www.qrz.com/db/n9vw)
