@@ -1,6 +1,6 @@
 ---
 title: Repeater Roundabout
-subtitle: Get to know the local repeaters this November.
+subtitle: Get to know your local repeaters November 23rd and 24th.
 ---
 
 # About

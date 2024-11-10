@@ -1,6 +1,6 @@
 ---
 title: Repeater Roundabout
-subtitle: Get to know the local repeaters this November.
+subtitle: Get to know your local repeaters November 23rd and 24th.
 ---
 
 # About
@@ -12,7 +12,7 @@ Last year, we made it into [QST Magazine](assets/RR.pdf). Light up the airwaves 
 
 **The Repeater Roundabout will be held during the weekend of November 23rd and 24th.**
 
-> This page was last updated on Sunday November 10 at 11:27.
+> This page was last updated on Sunday November 10 at 11:29.
 
 ---
 
