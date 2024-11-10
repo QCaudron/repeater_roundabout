@@ -30,7 +30,7 @@ You should exchange
 
 - **It Pays to QRP.** If you're running 5W or less, the contact is worth double.
 - **Band Hog.** If you hit at least 30 FM repeaters on the 2m or 70cm bands, your score for that band is doubled.
-- **Full House.** If you make a contact on at least 75 repeaters, your full score is doubled.
+- **Full House.** If you make a contact on at least 80 repeaters, your full score is doubled.
 
 
 # Logging
