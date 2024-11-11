@@ -105,7 +105,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 83    | N7KN           | N7KN       | Whidbey Isl.       |        441.425 |           +5.0 |       110.9 |
 | 84    | SCARC          | W7PIG      | Camano Isl.        |        147.360 |           +0.6 |       127.3 |
 | 85    | SCARC          | W7PIG      | Camano Isl.        |        223.880 |           -1.6 |       103.5 |
-| 86    | SCARC          | W7PIG      | Camano Isl.        |        441.050 |           +5.0 |       103.5 |
+| 86    | SCARC          | W7PIG      | Camano Isl.        |        441.050 |           +5.0 |       127.3 |
 | 87    | K7CH           | K7CH       | Bush Mtn.          |         53.030 |           -1.7 |       100.0 |
 | 88    | K7CH           | KK7DFL     | Olympia            |        145.275 |           -0.6 |       100.0 |
 | 89    | K7CH           | KK7DFM     | Baw Faw Peak       |        444.450 |           +5.0 |       100.0 |
