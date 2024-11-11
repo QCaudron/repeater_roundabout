@@ -11,6 +11,7 @@ In order to make the contesting life a little easier, we provide a CHIRP-compati
 - [CHIRP file](assets/programming_files/rr_frequencies.csv) (.csv)
 - [AnyTone D878 file](assets/programming_files/d878.zip) (.zip)
 - [Icom IC-705 file](assets/programming_files/icom.csv) (.csv)
+- [Complete repeater list](assets/programming_files/all_rr_frequencies.csv), all the info we have (.csv)
 
 <!-- 
 Which file do you need ?
