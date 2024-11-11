@@ -2973,5 +2973,56 @@
         "Long Name":"N7YRC Group",
         "Website":"https:\/\/www.qrz.com\/db\/KC7VQR",
         "Exclude":null
+    },
+    {
+        "Callsign":"N7YRC",
+        "Output (MHz)":"53.930",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            46.62680054,
+            -120.7389984
+        ],
+        "RepeaterBook ID":"21604",
+        "Group Name":"N7YRC",
+        "Location":"Cowiche",
+        "Mode":"FM",
+        "Long Name":"N7YRC Group",
+        "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7YRC",
+        "Output (MHz)":"442.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            46.62680054,
+            -120.73899841
+        ],
+        "RepeaterBook ID":"7099",
+        "Group Name":"N7YRC",
+        "Location":"Cowiche Mtn.",
+        "Mode":"FM",
+        "Long Name":"N7YRC Group",
+        "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
+        "Exclude":null
+    },
+    {
+        "Callsign":"N7YRC",
+        "Output (MHz)":"444.750",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            46.63059998,
+            -120.53500366
+        ],
+        "RepeaterBook ID":"17413",
+        "Group Name":"N7YRC",
+        "Location":"Lookout Point",
+        "Mode":"FM",
+        "Long Name":"N7YRC Group",
+        "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
+        "Exclude":null
     }
 ]
