@@ -195,6 +195,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 173   | WECG           | W7BFD      | Sehome Hill        |        442.300 |           +5.0 |        88.5 |
 | 174   | KC7SR          | KC7SR      | Satus Pass         |        146.920 |           -0.6 |        88.5 |
 | 175   | N7YRC          | KC7VQR     | Yakima Canyon      |        147.240 |           +0.6 |       192.8 |
+| 176   | N7YRC          | N7YRC      | Cowiche            |         53.930 |           -1.7 |             |
+| 177   | N7YRC          | N7YRC      | Cowiche Mtn.       |        442.725 |           +5.0 |       127.3 |
+| 178   | N7YRC          | N7YRC      | Lookout Point      |        444.750 |           +5.0 |       131.8 |
 
 ---
 

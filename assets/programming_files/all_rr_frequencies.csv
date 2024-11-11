@@ -174,3 +174,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 174,W7BFD,442.300,+5.0,88.5,19722,Sehome Hill,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,48.73612057,-122.48100439
 175,KC7SR,146.920,-0.6,88.5,395,Satus Pass,FM,Klickitat County Search and Rescue,https://www.qrz.com/db/KC7SR,45.9848456,-121.9720754
 176,KC7VQR,147.240,+0.6,192.8,181,Yakima Canyon,FM,N7YRC Group,https://www.qrz.com/db/KC7VQR,46.65399933,-120.52999878
+177,N7YRC,53.930,-1.7,,21604,Cowiche,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,46.62680054,-120.7389984
+178,N7YRC,442.725,+5.0,127.3,7099,Cowiche Mtn.,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,46.62680054,-120.73899841
+179,N7YRC,444.750,+5.0,131.8,17413,Lookout Point,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,46.63059998,-120.53500366
