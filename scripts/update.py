@@ -36,6 +36,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     if len(sys.argv) == 1:
         name = input("Group Name: ") or None
         loc = input("Location: ") or None
+        state_id = input("RepeaterBook State ID: ") or None
         id = input("RepeaterBook ID: ") or None
         call = input("Callsign: ") or None
         freq = input("Frequency (MHz): ") or None
@@ -51,6 +52,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
         args = {
             "name": name,
             "loc": loc,
+            "state_id": state_id,
             "id": id,
             "call": call,
             "freq": freq,
@@ -72,6 +74,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     parser = argparse.ArgumentParser()
     parser.add_argument("--name", type=str, default=None)
     parser.add_argument("--loc", type=str, default=None)
+    parser.add_argument("--state_id", type=str, default='53')  # WA
     parser.add_argument("--id", type=str, default=None)
     parser.add_argument("--call", type=str, default=None)
     parser.add_argument("--freq", type=str, default=None)
@@ -88,7 +91,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     return parser.parse_args()
 
 
-def repeater_from_repeaterbook(id_code: str) -> dict:
+def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
     """
     Extract a bunch of repeater information from RepeaterBook.
 
@@ -108,7 +111,7 @@ def repeater_from_repeaterbook(id_code: str) -> dict:
         return {}
 
     # Otherwise, grab repeater info
-    url = f"https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID={id_code}"
+    url = f"https://www.repeaterbook.com/repeaters/details.php?state_id={state_id_code}&ID={id_code}"
     source = requests.get(url)
 
     # Extract various pieces of information
@@ -205,7 +208,7 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
         return df
 
     # Combine RepeaterBook info with user input
-    repeaterbook = repeater_from_repeaterbook(args.id)
+    repeaterbook = repeater_from_repeaterbook(args.state_id, args.id)
     repeaterargs = repeater_from_args(args)
     repeater = pd.DataFrame.from_records([{**repeaterbook, **repeaterargs}])
 
