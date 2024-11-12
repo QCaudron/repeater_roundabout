@@ -22,6 +22,7 @@ This script can be called directly, in which case it will prompt you for repeate
 
 - Group name (`--name`): The short name of the group that runs one or more repeaters (for example, `PSRG` or `Shoreline ACS`)
 - Location (`--loc`): The general location of the repeater (for example, `Seattle` or `Buck Mtn.`)
+- RepeaterBook State ID (`--state_id`): The State ID of the repeater on RepeaterBook (an integer you can find after `state_id=` in the URL).  Defaults to Washington (53) if not specified.
 - RepeaterBook ID (`--id`): The ID of the repeater on RepeaterBook (an integer you can find at the very end of the URL)
 - Callsign (`--call`): The repeater's callsign (for example, `WW7PSR`)
 - Frequency (`--freq`): The repeater's frequency (for example, `146.960`)
