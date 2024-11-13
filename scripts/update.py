@@ -225,7 +225,7 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
     # Initialize records missing state id fields to WA (53).
     if 'RepeaterBook State ID' not in df.columns:
         df['RepeaterBook State ID'] = '53'
-    df['RepeaterBook State ID'].fillna('53')
+    df['RepeaterBook State ID'] = df['RepeaterBook State ID'].fillna('53')
     
     df = pd.concat([df, repeater], ignore_index=True)
 
