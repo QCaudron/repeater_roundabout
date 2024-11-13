@@ -178,4 +178,8 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 177,N7YRC,442.725,+5.0,127.3,7099,Cowiche Mtn.,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,53,46.62680054,-120.73899841
 178,N7YRC,444.750,+5.0,131.8,17413,Lookout Point,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,53,46.63059998,-120.53500366
 179,KI7PWR,146.920,-0.6,100.0,21717,Hatt Butte,FM,South West Idaho Amateur Radio Club,https://www.k7swi.org,16,43.410919,-116.589569
-180,K7DKK,53.67,-1.7,136.5,,Ravens Roost,FM,Pierce County ARES,http://www.piercecountyares.net,,47.161,-121.20246
+180,K7DKK,53.67,-1.7,136.5,,Ravens Roost,FM,Pierce County ARES,http://www.piercecountyares.net,53,47.161,-121.20246
+181,KB7ARA,147.280,+0.6,103.5,80,Pikes Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,53,45.99373,-118.18053
+182,KA7FVV,147.320,+0.6,103.5,17271,West Twin,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,16,46.73239899,-117.0
+183,N7WRR,147.360,+0.6,,366,Stensgar Mtn.,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,53,48.18139,-117.98917
+184,N7WRQ,147.380,+0.6,100.0,78,Mica Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,53,47.57495,-117.08113

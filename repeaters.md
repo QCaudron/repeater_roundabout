@@ -200,6 +200,10 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 178   | N7YRC          | N7YRC      | Lookout Point      |        444.750 |           +5.0 |       131.8 |
 | 179   | SWI-ARC        | KI7PWR     | Hatt Butte         |        146.920 |           -0.6 |       100.0 |
 | 180   | Pierce         | K7DKK      | Ravens Roost       |          53.67 |           -1.7 |       136.5 |
+| 181   | KBARA          | KB7ARA     | Pikes Peak         |        147.280 |           +0.6 |       103.5 |
+| 182   | KBARA          | KA7FVV     | West Twin          |        147.320 |           +0.6 |       103.5 |
+| 183   | KBARA          | N7WRR      | Stensgar Mtn.      |        147.360 |           +0.6 |             |
+| 184   | KBARA          | N7WRQ      | Mica Peak          |        147.380 |           +0.6 |       100.0 |
 
 ---
 
@@ -258,6 +262,9 @@ K7RHT
 
 K7TGU
 : [Rob K7TGU's repeater system](https://www.qrz.com/db/K7TGU)
+
+KBARA
+: [Kamiak Butte Amateur Repeater Association](https://kbara.org/)
 
 KC7EQO
 : [Matt KC7EQO's repeater system](https://www.qrz.com/db/KC7EQO/R)
