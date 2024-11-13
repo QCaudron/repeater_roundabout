@@ -198,6 +198,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 176   | N7YRC          | N7YRC      | Cowiche            |         53.930 |           -1.7 |             |
 | 177   | N7YRC          | N7YRC      | Cowiche Mtn.       |        442.725 |           +5.0 |       127.3 |
 | 178   | N7YRC          | N7YRC      | Lookout Point      |        444.750 |           +5.0 |       131.8 |
+| 179   | SWI-ARC        | KI7PWR     | Hatt Butte         |        146.920 |           -0.6 |       100.0 |
 
 ---
 
@@ -355,6 +356,9 @@ SCHC
 
 SJCARS
 : [San Juan County Amateur Radio Club](http://sjcars.org)
+
+SWI-ARC
+: [South West Idaho Amateur Radio Club](https://www.k7swi.org)
 
 SeaTac
 : [SeaTac Repeater Association](https://seatacra.com/)

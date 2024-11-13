@@ -3202,5 +3202,23 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KI7PWR",
+        "Output (MHz)":"146.920",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.410919,
+            -116.589569
+        ],
+        "RepeaterBook ID":"21717",
+        "Group Name":"SWI-ARC",
+        "Location":"Hatt Butte",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
     }
 ]
