@@ -3237,6 +3237,78 @@
         "Long Name":"Pierce County ARES",
         "Website":"http:\/\/www.piercecountyares.net",
         "Exclude":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KB7ARA",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            45.99373,
+            -118.18053
+        ],
+        "RepeaterBook ID":"80",
+        "Group Name":"KBARA",
+        "Location":"Pikes Peak",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KA7FVV",
+        "Output (MHz)":"147.320",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.73239899,
+            -117.0
+        ],
+        "RepeaterBook ID":"17271",
+        "Group Name":"KBARA",
+        "Location":"West Twin",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"N7WRR",
+        "Output (MHz)":"147.360",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.18139,
+            -117.98917
+        ],
+        "RepeaterBook ID":"366",
+        "Group Name":"KBARA",
+        "Location":"Stensgar Mtn.",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"N7WRQ",
+        "Output (MHz)":"147.380",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.57495,
+            -117.08113
+        ],
+        "RepeaterBook ID":"78",
+        "Group Name":"KBARA",
+        "Location":"Mica Peak",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
