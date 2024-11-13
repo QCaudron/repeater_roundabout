@@ -3220,5 +3220,23 @@
         "Website":"https:\/\/www.k7swi.org",
         "Exclude":null,
         "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"K7DKK",
+        "Output (MHz)":"53.67",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            47.161,
+            -121.20246
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Pierce",
+        "Location":"Ravens Roost",
+        "Mode":"FM",
+        "Long Name":"Pierce County ARES",
+        "Website":"http:\/\/www.piercecountyares.net",
+        "Exclude":null,
+        "RepeaterBook State ID":null
     }
 ]
