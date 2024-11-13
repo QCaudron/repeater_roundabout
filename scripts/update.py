@@ -36,6 +36,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     if len(sys.argv) == 1:
         name = input("Group Name: ") or None
         loc = input("Location: ") or None
+        state_id = input("RepeaterBook State ID: ") or None
         id = input("RepeaterBook ID: ") or None
         call = input("Callsign: ") or None
         freq = input("Frequency (MHz): ") or None
@@ -51,6 +52,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
         args = {
             "name": name,
             "loc": loc,
+            "state_id": state_id,
             "id": id,
             "call": call,
             "freq": freq,
@@ -72,6 +74,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     parser = argparse.ArgumentParser()
     parser.add_argument("--name", type=str, default=None)
     parser.add_argument("--loc", type=str, default=None)
+    parser.add_argument("--state_id", type=str, default='53')  # WA
     parser.add_argument("--id", type=str, default=None)
     parser.add_argument("--call", type=str, default=None)
     parser.add_argument("--freq", type=str, default=None)
@@ -88,27 +91,30 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     return parser.parse_args()
 
 
-def repeater_from_repeaterbook(id_code: str) -> dict:
+def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
     """
     Extract a bunch of repeater information from RepeaterBook.
 
     Parameters
     ----------
+    state_id_code : str
+        The State ID code from RepeaterBook.
+
     id_code : str
         The ID code from RepeaterBook.
 
     Returns
     -------
     Dict
-        A dict containing repeat information.
+        A dict containing repeater information.
     """
 
     # If no ID is provided, don't get any info from RepeaterBook
-    if id_code is None:
+    if state_id_code is None or id_code is None:
         return {}
 
     # Otherwise, grab repeater info
-    url = f"https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID={id_code}"
+    url = f"https://www.repeaterbook.com/repeaters/details.php?state_id={state_id_code}&ID={id_code}"
     source = requests.get(url)
 
     # Extract various pieces of information
@@ -142,6 +148,7 @@ def repeater_from_repeaterbook(id_code: str) -> dict:
         "Offset (MHz)": offset,
         "Tone (Hz)": tone,
         "Coordinates": latlong,
+        "RepeaterBook State ID": state_id_code,
         "RepeaterBook ID": id_code,
     }
 
@@ -205,7 +212,7 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
         return df
 
     # Combine RepeaterBook info with user input
-    repeaterbook = repeater_from_repeaterbook(args.id)
+    repeaterbook = repeater_from_repeaterbook(args.state_id, args.id)
     repeaterargs = repeater_from_args(args)
     repeater = pd.DataFrame.from_records([{**repeaterbook, **repeaterargs}])
 
@@ -214,6 +221,12 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
         with open("assets/repeaters.json", "w") as f:
             f.write("{}")
     df = pd.read_json("assets/repeaters.json", dtype=False)
+
+    # Initialize records missing state id fields to WA (53).
+    if 'RepeaterBook State ID' not in df.columns:
+        df['RepeaterBook State ID'] = '53'
+    df['RepeaterBook State ID'] = df['RepeaterBook State ID'].fillna('53')
+    
     df = pd.concat([df, repeater], ignore_index=True)
 
     # Save a new known repeaters file
