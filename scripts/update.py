@@ -6,6 +6,7 @@ from types import SimpleNamespace
 from typing import Union
 
 import pandas as pd
+import numpy
 import requests
 
 from markdown_files import (
