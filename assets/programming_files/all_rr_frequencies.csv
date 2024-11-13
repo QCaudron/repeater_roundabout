@@ -1,7 +1,7 @@
 RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,Group,Website,RepeaterBook State ID,Latitude,Longitude
 1,WW7PSR,146.960,-0.6,103.5,62,Seattle,FM,Puget Sound Repeater Group,http://www.psrg.org/,53,47.62400055,-122.31500244
 2,WW7PSR,52.870,-1.7,103.5,20830,Seattle,FM,Puget Sound Repeater Group,http://www.psrg.org/,53,47.62400055,-122.31500244
-3,WW7SEA,444.700,+5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,53,47.63249969,-122.35600281
+3,WW7SEA,444.700,+5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.63249969,-122.35600281
 4,W7AW,53.290,-1.7,100.0,17044,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,53,47.54050064,-122.37799835
 5,W7AW,145.130,-0.6,103.5,14858,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,53,47.540412,-122.378271
 6,W7AW,441.800,+5.0,141.3,538,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,53,47.54040146,-122.37799835
@@ -9,68 +9,68 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 8,W7DK,440.625,+5.0,103.5,549,Tacoma,FM,Radio Club of Tacoma,https://w7dk.org/,53,47.7720427,-122.2808902
 9,W7DK,145.210,-0.6,141.3,324,Tacoma,FM,Radio Club of Tacoma,https://w7dk.org/,53,47.25289917,-122.44400024
 10,W7DK,147.380,+0.6,103.5,325,Crawford Mtn.,FM,Radio Club of Tacoma,https://w7dk.org/,53,46.8431015,-122.76300049
-11,W7ACS,442.300,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,53,47.6031132,-122.3187965
-12,W7ACS,444.550,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,53,47.60430145,-122.33000183
-13,W7ACS,442.875,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,53,47.62360001,-122.31500244
-14,W7ACS,443.475,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,53,47.6510101,-122.3893988
-15,W7ACS,443.650,+5.0,141.3,,North Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,53,47.690119,-122.3177855
-16,W7ACS,440.600,+5.0,141.3,,Lake Forest Park,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,53,47.77193,-122.28101
-17,W7ACS,443.200,+5.0,141.3,,White Center,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,53,47.52074,-122.3433148
+11,W7ACS,442.300,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.6031132,-122.3187965
+12,W7ACS,444.550,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.60430145,-122.33000183
+13,W7ACS,442.875,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.62360001,-122.31500244
+14,W7ACS,443.475,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.6510101,-122.3893988
+15,W7ACS,443.650,+5.0,141.3,,North Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.690119,-122.3177855
+16,W7ACS,440.600,+5.0,141.3,,Lake Forest Park,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.77193,-122.28101
+17,W7ACS,443.200,+5.0,141.3,,White Center,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.52074,-122.3433148
 18,K7LWH,53.170,-1.7,100.0,165,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.68849945,-122.15599823
-19,K7LWH,145.490,-0.6,103.5,,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.68849945,-122.15599823
+19,K7LWH,145.490,-0.6,103.5,,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,,47.68849945,-122.15599823
 20,K7LWH,224.360,-1.6,103.5,5326,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.68149948,-122.20899963
 21,K7LWH,441.075,+5.0,103.5,162,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.68149948,-122.20899963
-22,W7MIR,147.160,+0.6,146.2,,Mercer Isl.,FM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,53,47.568367,-122.220729
-23,W7MIR,440.150,+5.0,103.5,,Mercer Isl.,FM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,53,47.568367,-122.220729
+22,W7MIR,147.160,+0.6,146.2,,Mercer Isl.,FM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,47.568367,-122.220729
+23,W7MIR,440.150,+5.0,103.5,,Mercer Isl.,FM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,47.568367,-122.220729
 24,N7GDE,145.190,-0.6,127.3,176,Lyman Hill,FM,Radio Amateurs of Skagit County,http://rasconline.com/,53,48.58330154,-122.14499664
-25,KC7Z,146.620,-0.6,103.5,,Gold Mtn.,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,53,47.54944949,-122.783426
-26,KC7Z,442.650,+5.0,103.5,,Gold Mtn.,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,53,47.54944949,-122.783426
+25,KC7Z,146.620,-0.6,103.5,,Gold Mtn.,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54944949,-122.783426
+26,KC7Z,442.650,+5.0,103.5,,Gold Mtn.,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54944949,-122.783426
 27,KC7Z,441.175,+5.0,103.5,485,Gold Mtn.,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,53,47.54944949,-122.783426
 28,KC7Z,444.075,+5.0,103.5,5463,East Bremerton,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,53,47.60211625,-122.6173161
 29,WW7RA,146.620,-0.6,103.5,59,Bremerton,FM,Kitsap County Amateur Radio Club,http://www.kcarc.org/,53,47.6555143,-122.9594265
 30,WW7RA,442.65,+5.0,103.5,60,Bremerton,FM,Kitsap County Amateur Radio Club,http://www.kcarc.org/,53,47.6555143,-122.9594265
-31,W7JCR,145.150,-0.6,114.8,,Port Townsend,FM,Jefferson County Amateur Radio Club,https://w7jcr.wordpress.com/,53,48.11700058,-122.76000214
-32,AA7MI,440.725,+5.0,114.8,,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,https://www.qrz.com/db/AA7MI,53,48.05830002,-122.68800354
-33,N7SK,146.720,-0.6,103.5,,Shelton,FM,Mason County Amateur Radio Club,https://mc-arc.org/,53,47.21509933,-123.10099792
-34,N7SK,443.250,+5.0,100.0,,Shelton,FM,Mason County Amateur Radio Club,https://mc-arc.org/,53,47.21509933,-123.10099792
-35,N7SK,927.4125,-25.0,114.8,,Shelton,FM,Mason County Amateur Radio Club,https://mc-arc.org/,53,47.21509933,-123.10099792
+31,W7JCR,145.150,-0.6,114.8,,Port Townsend,FM,Jefferson County Amateur Radio Club,https://w7jcr.wordpress.com/,,48.11700058,-122.76000214
+32,AA7MI,440.725,+5.0,114.8,,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,https://www.qrz.com/db/AA7MI,,48.05830002,-122.68800354
+33,N7SK,146.720,-0.6,103.5,,Shelton,FM,Mason County Amateur Radio Club,https://mc-arc.org/,,47.21509933,-123.10099792
+34,N7SK,443.250,+5.0,100.0,,Shelton,FM,Mason County Amateur Radio Club,https://mc-arc.org/,,47.21509933,-123.10099792
+35,N7SK,927.4125,-25.0,114.8,,Shelton,FM,Mason County Amateur Radio Club,https://mc-arc.org/,,47.21509933,-123.10099792
 36,WA7FW,146.760,-0.6,103.5,135,Federal Way,FM,Federal Way Amateur Radio Club,https://fwarc.org/,53,47.32229996,-122.31300354
 37,WA7FW,442.950,+5.0,103.5,137,Federal Way,FM,Federal Way Amateur Radio Club,https://fwarc.org/,53,47.32229996,-122.31300354
 38,WA7FW,442.925,+5.0,D036[^dcs],14514,Federal Way,FM,Federal Way Amateur Radio Club,https://fwarc.org/,53,47.27740097,-122.29199982
 39,KC7EQO,442.100,+5.0,100.0,264,Sequim,FM,Matt KC7EQO's repeater system,https://www.qrz.com/db/KC7EQO/R,53,48.00690079,-122.97100067
-40,W7AAO,145.370,-0.6,136.5,,Grass Mtn.,FM,Pierce County ARES,http://www.piercecountyares.net,53,47.19979858,-121.7559967
-41,W7EAT,146.700,-0.6,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,53,46.843101,-122.314956
-42,W7EAT,224.180,-1.6,103.5,,Graham,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,53,47.053156,-122.294825
-43,W7EAT,442.725,+5.0,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,53,46.843101,-122.314956
+40,W7AAO,145.370,-0.6,136.5,,Grass Mtn.,FM,Pierce County ARES,http://www.piercecountyares.net,,47.19979858,-121.7559967
+41,W7EAT,146.700,-0.6,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,,46.843101,-122.314956
+42,W7EAT,224.180,-1.6,103.5,,Graham,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,,47.053156,-122.294825
+43,W7EAT,442.725,+5.0,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,,46.843101,-122.314956
 44,NE7MC,442.000,+5.0,141.3,19962,Kenmore,FM,Northshore Emergency Management Coalition,https://www.northshoreemc.com/,53,47.737677,-122.23079
 45,WW7STR,224.440,-1.6,103.5,16503,Cougar Mtn.,FM,SeaTac Repeater Association,https://seatacra.com/,53,47.54029846,-122.09999847
 46,WW7STR,441.550,+5.0,103.5,601,Cougar Mtn.,FM,SeaTac Repeater Association,https://seatacra.com/,53,47.54059982,-122.09799957
 47,WW7STR,443.050,+5.0,103.5,19898,Tiger Mtn.,FM,SeaTac Repeater Association,https://seatacra.com/,53,47.48844,-121.94705
-48,WW7STR,927.2125,-25.0,114.8,,Cougar Mtn.,FM,SeaTac Repeater Association,https://seatacra.com/,53,47.55590057,-122.11599731
+48,WW7STR,927.2125,-25.0,114.8,,Cougar Mtn.,FM,SeaTac Repeater Association,https://seatacra.com/,,47.55590057,-122.11599731
 49,N7JN,146.700,-0.6,131.8,6196,San Juan Isl.,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.5603981,-123.12000275
 50,N7JN,224.480,-1.6,103.5,6394,Mt. Constitution,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.67779922,-122.83200073
 51,N7JN,443.450,+5.0,103.5,368,Mt. Constitution,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.67779922,-122.83000183
 52,N7OEP,53.330,-1.7,100.0,375,Baldi Mtn.,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,53,47.22119904,-121.85099792
 53,N7OEP,440.075,+5.0,103.5,9876,Enumclaw,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,53,47.20429993,-121.99199677
 54,N7OEP,443.175,+5.0,107.2,9912,Enumclaw,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,53,47.20429993,-121.99199677
-55,K7DK,440.950,+5.0,110.9,,Buck Mtn.,FM,Mark K7DK's repeater system,https://www.qrz.com/db/K7DK,53,47.77249908,-122.93000031
+55,K7DK,440.950,+5.0,110.9,,Buck Mtn.,FM,Mark K7DK's repeater system,https://www.qrz.com/db/K7DK,,47.77249908,-122.93000031
 56,W7PFR,53.410,-1.7,100.0,115,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,53,46.86729813,-122.26699829
 57,W7PFR,443.975,+5.0,103.5,284,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,53,46.86729813,-122.26699829
-58,K7NWS,442.075,+5.0,110.9,,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,53,47.50389862,-121.97599792
+58,K7NWS,442.075,+5.0,110.9,,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,47.50389862,-121.97599792
 59,K7NWS,145.330,-0.6,179.9,224,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,53,47.50389862,-121.97599792
 60,K7NWS,224.340,-1.6,110.9,443,Tiger Mtn.,FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,53,47.50389862,-121.97599792
 61,KA7EOC,145.350,-0.6,103.5,279,Gig Harbor,FM,Peninsula Amateur Radio Emergency Team,https://www.gigharbornow.org/event/amateur-radio-emergency-service-ares-peninsula-team-radio-net-visitors-welcome,53,47.39107,-122.6079
-62,WA7LAW,147.180,+0.6,103.5,,Everett,FM,Snohomish County Hams Club,http://www.wa7law.org/,53,47.9978981,-122.19499969
-63,WA7LAW,444.575,+5.0,103.5,,Everett,YSF,Snohomish County Hams Club,http://www.wa7law.org/,53,47.9980011,-122.19400024
+62,WA7LAW,147.180,+0.6,103.5,,Everett,FM,Snohomish County Hams Club,http://www.wa7law.org/,,47.9978981,-122.19499969
+63,WA7LAW,444.575,+5.0,103.5,,Everett,YSF,Snohomish County Hams Club,http://www.wa7law.org/,,47.9980011,-122.19400024
 64,N9VW,53.830,-1.7,123.0,9698,Cougar Mtn.,FM,Steve N9VW's repeater system,https://www.qrz.com/db/n9vw,53,47.53010178,-122.03299713
 65,KC7RAS,147.100,+0.6,123.0,148,Cougar Mtn.,FM,Steve N9VW's repeater system,https://www.qrz.com/db/n9vw,53,47.542028,-122.10911
 66,N6OBY,443.325,+5.0,103.5,530,Cougar Mtn.,FM,Steve N9VW's repeater system,https://www.qrz.com/db/n9vw,53,47.542028,-122.10911
-67,WA7ACS,440.175,+5.0,103.5,,Everett,FM,Everett Auxiliary Communications Service Club,https://www.qrz.com/db/WA7ACS,53,47.542028,-122.10911
-68,NT7H,147.360,+0.6,103.5,,Olympia,FM,Olympia Amateur Radio Society,https://www.olyham.org/,53,47.02799988,-122.89700317
-69,NT7H,224.460,-1.6,103.5,,Crawford Mtn.,FM,Olympia Amateur Radio Society,https://www.olyham.org/,53,46.84280014,-122.76499939
-70,NT7H,441.400,+5.0,103.5,,Crawford Mtn.,FM,Olympia Amateur Radio Society,https://www.olyham.org/,53,46.84289932,-122.76499939
+67,WA7ACS,440.175,+5.0,103.5,,Everett,FM,Everett Auxiliary Communications Service Club,https://www.qrz.com/db/WA7ACS,,47.542028,-122.10911
+68,NT7H,147.360,+0.6,103.5,,Olympia,FM,Olympia Amateur Radio Society,https://www.olyham.org/,,47.02799988,-122.89700317
+69,NT7H,224.460,-1.6,103.5,,Crawford Mtn.,FM,Olympia Amateur Radio Society,https://www.olyham.org/,,46.84280014,-122.76499939
+70,NT7H,441.400,+5.0,103.5,,Crawford Mtn.,FM,Olympia Amateur Radio Society,https://www.olyham.org/,,46.84289932,-122.76499939
 71,K7GKR,444.725,+5.0,123.0,12885,Kingston,FM,Greater Kingston Radio Club,https://gkrc.groups.io/g/main,53,47.84397,-122.54275
-72,W7AVM,146.860,-0.6,127.3,,Whidbey Isl.,FM,Island County Amateur Radio Club,https://www.w7avm.org/,53,48.21250153,-122.70500183
+72,W7AVM,146.860,-0.6,127.3,,Whidbey Isl.,FM,Island County Amateur Radio Club,https://www.w7avm.org/,,48.21250153,-122.70500183
 73,W7AVM,147.220,+0.6,127.3,345,Whidbey Isl.,FM,Island County Amateur Radio Club,https://www.w7avm.org/,53,48.0401001,-122.40599823
 74,NC7G,146.660,-0.6,103.5,2780,SeaTac,FM,Highline Amateur Radio Club,https://www.highlinearc.org/,53,47.45080185,-122.28700256
 75,WA7ST,443.100,+5.0,103.5,2779,SeaTac,FM,Highline Amateur Radio Club,https://www.highlinearc.org/,53,47.45080185,-122.28700256
@@ -81,20 +81,20 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 80,K6RFK,147.340,+0.6,100.0,346,Woodinville,FM,K6RFK's repeater system,https://www.qrz.com/db/K6RFK,53,47.75429916,-122.16300201
 81,K6RFK,442.775,+5.0,100.0,497,Woodinville,FM,K6RFK's repeater system,https://www.qrz.com/db/K6RFK,53,47.75429916,-122.16300201
 82,K7CPR,145.470,-0.6,100.0,358,Capitol Peak,FM,Capitol Peak Repeater Group,http://47repeater.com/,53,46.97309875,-123.13500214
-83,N7KN,441.425,+5.0,110.9,,Whidbey Isl.,FM,Charlie N7KN's repeater system,https://www.qrz.com/db/N7KN,53,48.0982722,-122.5731977
+83,N7KN,441.425,+5.0,110.9,,Whidbey Isl.,FM,Charlie N7KN's repeater system,https://www.qrz.com/db/N7KN,,48.0982722,-122.5731977
 84,W7PIG,147.360,+0.6,127.3,6948,Camano Isl.,FM,Stanwood-Camano Amateur Radio Club,https://www.scarcwa.org/,53,48.22499847,-122.5
 85,W7PIG,223.880,-1.6,103.5,4586,Camano Isl.,FM,Stanwood-Camano Amateur Radio Club,https://www.scarcwa.org/,53,48.19150162,-122.51499939
 86,W7PIG,441.050,+5.0,127.3,484,Camano Isl.,FM,Stanwood-Camano Amateur Radio Club,https://www.scarcwa.org/,53,48.22499847,-122.5
 87,K7CH,53.030,-1.7,100.0,203,Bush Mtn.,FM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,53,46.488167,-123.21478
 88,KK7DFL,145.275,-0.6,100.0,20758,Olympia,NBFM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,53,47.005735,-122.944942
 89,KK7DFM,444.450,+5.0,100.0,20685,Baw Faw Peak,NBFM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,53,46.488167,-123.21478
-90,K7SKW,146.740,-0.6,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,https://mbarc.groups.io/,53,48.6800797,-122.8425501
-91,K7SKW,444.050,+5.0,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,https://mbarc.groups.io/,53,48.6800797,-122.8425501
-92,K7SKW,443.750,+5.0,103.5,,Squalicum Mtn.,FM,Mount Baker Amateur Radio Club,https://mbarc.groups.io/,53,48.7884669,-122.385215
-93,K7SKW,147.160,+0.6,103.5,,King Mtn.,FM,Mount Baker Amateur Radio Club,https://mbarc.groups.io/,53,48.8017863,-122.4625177
+90,K7SKW,146.740,-0.6,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,https://mbarc.groups.io/,,48.6800797,-122.8425501
+91,K7SKW,444.050,+5.0,103.5,,Mt. Constitution,FM,Mount Baker Amateur Radio Club,https://mbarc.groups.io/,,48.6800797,-122.8425501
+92,K7SKW,443.750,+5.0,103.5,,Squalicum Mtn.,FM,Mount Baker Amateur Radio Club,https://mbarc.groups.io/,,48.7884669,-122.385215
+93,K7SKW,147.160,+0.6,103.5,,King Mtn.,FM,Mount Baker Amateur Radio Club,https://mbarc.groups.io/,,48.8017863,-122.4625177
 94,W7TRF,145.210,-0.6,100.0,280,Spokane Valley,FM,Tom W7TRF's repeater system,https://www.qrz.com/db/W7TRF,53,47.62433,-117.17875
 95,W7TRF,443.475,+5.0,100.0,455,Spokane Valley,FM,Tom W7TRF's repeater system,https://www.qrz.com/db/W7TRF,53,47.60811,-117.20439
-96,W7FLY,443.925,+5.0,100.0,,Lynnwood,FM,Boeing Employees Amateur Radio Operators North Society,https://w7flybearons.org,53,47.85660934,-122.28367615
+96,W7FLY,443.925,+5.0,100.0,,Lynnwood,FM,Boeing Employees Amateur Radio Operators North Society,https://w7flybearons.org,,47.85660934,-122.28367615
 97,K7LED,146.820,-0.6,103.5,302,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,https://www.mikeandkey.org/,53,47.48820114,-121.9469986
 98,K7LED,224.120,-1.6,103.5,441,Tiger Mtn.,FM,Mike & Key Amateur Radio Club,https://www.mikeandkey.org/,53,47.48839951,-121.9469986
 99,W7MSH,444.725,+5.0,107.2,20241,Kelso,FM,Mercury Mt. St. Helens Emergency Response Communications,https://www.w7msh.org/,53,46.07657628,-122.8034604
@@ -102,61 +102,61 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 101,WW7MST,146.900,-0.6,103.5,333,Seattle,FM,Western Washington Medical Services Emergency Communications,https://www.ww7mst.org/home,53,47.5628091,-122.3083758
 102,WW7MST,443.550,+5.0,103.5,536,Seattle,FM,Western Washington Medical Services Emergency Communications,https://www.ww7mst.org/home,53,47.5628091,-122.3083758
 103,W7DX,147.000,-0.6,103.5,41,Redmond,FM,Western Washington DX Club,https://www.wwdxc.org/,53,47.67481,-122.053436
-104,WA7DEM,146.920,-0.6,123.0,,Granite Falls,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,48.125699,-121.9844964
+104,WA7DEM,146.920,-0.6,123.0,,Granite Falls,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,,48.125699,-121.9844964
 105,WA7DEM,224.380,-1.6,103.5,6961,Arlington,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,48.1227936,-122.2567359
-106,WA7DEM,444.200,+5.0,D172[^dcs],,Arlington,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,48.1227936,-122.2567359
+106,WA7DEM,444.200,+5.0,D172[^dcs],,Arlington,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,,48.1227936,-122.2567359
 107,WA7DEM,146.780,-0.6,D172[^dcs],177,Lynnwood,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,47.8636169,-122.2786477
 108,WA7DEM,442.975,+5.0,D172[^dcs],270,Clearview,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,47.8288566,-122.0739169
 109,WA7DEM,443.725,+5.0,103.5,547,Mountlake Terrace,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,47.8025185,-122.3228347
 110,WA7DEM,444.025,+5.0,156.7,547,Edmonds,NBFM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,47.8028705,-122.3334163
-111,N7IRG,53.390,-1.7,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.6576742,-116.9684792
-112,N7IRG,147.280,+0.6,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.6576742,-116.9684792
-113,N7IRG,442.950,+5.0,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.6576742,-116.9684792
-114,N7IRG,147.260,+0.6,186.2,,Baldy St. Joe,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.3634565,-116.412255
-115,N7IRG,147.180,+0.6,118.8,,Goose Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.5642862,-115.85211
-116,N7IRG,145.490,-0.6,136.5,,Hoodoo Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,48.0787224,-116.9537798
-117,N7IRG,444.550,+5.0,100.0,,Hoodoo Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,48.0787224,-116.9537798
-118,N7IRG,146.960,-0.6,123.0,,Black Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,48.610141,-116.2600576
-119,N7IRG,145.410,-0.6,77.0,,Priest Lake,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,48.6063229,-116.9518883
+111,N7IRG,53.390,-1.7,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,,47.6576742,-116.9684792
+112,N7IRG,147.280,+0.6,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,,47.6576742,-116.9684792
+113,N7IRG,442.950,+5.0,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,,47.6576742,-116.9684792
+114,N7IRG,147.260,+0.6,186.2,,Baldy St. Joe,FM,North Idaho Repeater Group,https://www.blossompeak.org/,,47.3634565,-116.412255
+115,N7IRG,147.180,+0.6,118.8,,Goose Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,,47.5642862,-115.85211
+116,N7IRG,145.490,-0.6,136.5,,Hoodoo Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,,48.0787224,-116.9537798
+117,N7IRG,444.550,+5.0,100.0,,Hoodoo Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,,48.0787224,-116.9537798
+118,N7IRG,146.960,-0.6,123.0,,Black Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,,48.610141,-116.2600576
+119,N7IRG,145.410,-0.6,77.0,,Priest Lake,FM,North Idaho Repeater Group,https://www.blossompeak.org/,,48.6063229,-116.9518883
 120,WA7MV,147.320,+0.6,100.0,206,Tunk Mtn.,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.54570007,-119.23600006
 121,WA7MV,146.720,-0.6,100.0,400,Benson Creek,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.3634784,-120.122303
 122,WA7MV,444.800,+5.0,110.9,646,Winthrop,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.31760025,-120.11499786
 123,WA7SAR,146.860,-0.6,123.0,106,Darland Mtn.,FM,Yakima County Radio Amateurs,,53,46.51390076,-121.20800018
 124,WA7SAR,147.080,+0.6,123.0,95,King Mtn.,FM,Yakima County Radio Amateurs,,53,46.06330109,-121.4240036
 125,WA7SAR,444.600,+5.0,123.0,476,Yakima,FM,Yakima County Radio Amateurs,,53,46.52220154,-120.33300018
-126,WA7SAR,145.270,-0.6,123.0,,Quartz Mtn.,FM,Yakima County Radio Amateurs,,53,47.073125,-121.07869
-127,WA7SAR,147.080,+0.6,85.4,,Yakima,FM,Yakima County Radio Amateurs,,53,46.6414,-120.3967
+126,WA7SAR,145.270,-0.6,123.0,,Quartz Mtn.,FM,Yakima County Radio Amateurs,,,47.073125,-121.07869
+127,WA7SAR,147.080,+0.6,85.4,,Yakima,FM,Yakima County Radio Amateurs,,,46.6414,-120.3967
 128,K7RHT,147.000,+0.6,131.8,17116,Table Mtn.,FM,K7RHT,https://www.qrz.com/db/K7RHT,53,47.15230179,-120.56400299
 129,K7RHT,444.450,+5.0,131.8,17115,Table Mtn.,FM,K7RHT,https://www.qrz.com/db/K7RHT,53,47.15230179,-120.56400299
 130,KE7GFZ,441.850,+5.0,103.5,22211,Carnation,FM,Snoqualmie Valley Amateur Radio Club,https://snovarc.org/,53,47.648945,-121.91607
 131,KE7GFZ,443.250,+5.0,103.5,647,Duvall,FM,Snoqualmie Valley Amateur Radio Club,https://snovarc.org/,53,47.76499939,-121.93900299
 132,WA7TBP,223.960,-1.6,123.0,19922,Carnation,FM,Tom WA7TBP's repeater system,https://www.qrz.com/db/WA7TBP/,53,47.62993,-121.95008
-133,W7ACS,444.550,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,53,47.6047232,-122.330827
-134,W7ACS,440.525,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,53,47.58878,-122.31765
-135,W7ACS,442.300,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,53,47.5882474,-122.3157438
-136,W7ACS,443.025,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,53,47.6200881,-122.312238
-137,W7ACS,442.875,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,53,47.6238207,-122.3152937
-138,W7ACS,443.475,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,53,47.6508676,-122.3914249
-139,W7ACS,443.650,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,53,47.691239,-122.3173892
-140,W7ACS,440.600,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,53,47.77193,-122.28099
-141,W7ACS,443.200,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,53,47.6238207,-122.3152937
+133,W7ACS,444.550,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.6047232,-122.330827
+134,W7ACS,440.525,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.58878,-122.31765
+135,W7ACS,442.300,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.5882474,-122.3157438
+136,W7ACS,443.025,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.6200881,-122.312238
+137,W7ACS,442.875,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.6238207,-122.3152937
+138,W7ACS,443.475,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.6508676,-122.3914249
+139,W7ACS,443.650,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.691239,-122.3173892
+140,W7ACS,440.600,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.77193,-122.28099
+141,W7ACS,443.200,+5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.6238207,-122.3152937
 142,K7YR,146.820,-0.6,103.5,6843,Slide Ridge,FM,Lake Chelan Amateur Radio Club,https://lcarc.net/,53,47.88470078,-120.15699768
 143,K7SMX,147.100,+0.6,94.8,73,McNeal Canyon,FM,Lake Chelan Amateur Radio Club,https://lcarc.net/,53,47.85359955,-119.8730011
 144,K7SMX,444.525,+5.0,94.8,72,McNeal Canyon,FM,Lake Chelan Amateur Radio Club,https://lcarc.net/,53,47.85359955,-119.8730011
 145,KB7APU,145.250,-0.6,186.2,16535,Red Mountain,FM,Skamania County ARES,http://skamania-prepare.org/ares/,53,45.93479919,-121.81999969
-146,W7ZA,146.900,-0.6,88.5,,Aberdeen,NBFM,Grays Harbor Amateur Radio Club,http://gharc.net/,53,46.93,-123.73
-147,W7ZA,147.160,+0.6,88.5,,Aberdeen,FM,Grays Harbor Amateur Radio Club,http://gharc.net/,53,46.9542,-123.8086
-148,K7TGU,53.23,-1.7,100.0,,University Place,FM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7TGU,53,47.22747,-122.55777
-149,K7TGU,927.600,-25.0,114.8,,University Place,NBFM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7TGU,53,47.22805,-122.55527
-150,K7HW,53.19,-1.7,100.0,,Tacoma,FM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7K7TGUNP,53,47.221559,-122.45703
-151,K7HW,444.175,+5.0,103.5,,Tacoma,NBFM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7TGU,53,47.22166,-122.45721
-152,K7HW,146.680,-0.6,103.5,,Mineral,NBFM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7TGU,53,46.718834,-122.18971
-153,K7NP,53.010,-1.7,100.0,,University Place,NBFM,University Place Repeater Group,https://www.qrz.com/db/K7NP,53,47.227739,-122.55786
-154,K7NP,442.375,+5.0,103.5,,University Place,NBFM,University Place Repeater Group,https://www.qrz.com/db/K7NP,53,47.227739,-122.55786
-155,K7YLM,440.200,+5.0,100.0,,Yelm,FM,Yelm Amateur Radio Group,http://yelmamateurradiogroup.org,53,46.9392751,-122.604919
-156,W7DG,147.100,+0.6,114.8,,Longview,FM,Lower Columbia Amateur Radio Association,http://w7dg.org,53,46.1827,-122.9585
-157,W7DG,147.300,+0.6,114.8,,Woodland,FM,Lower Columbia Amateur Radio Association,http://w7dg.org,53,45.9647,-122.6697
-158,W7DG,444.900,+5.0,114.8,,Longview,FM,Lower Columbia Amateur Radio Association,http://w7dg.org,53,46.1827,-122.9585
+146,W7ZA,146.900,-0.6,88.5,,Aberdeen,NBFM,Grays Harbor Amateur Radio Club,http://gharc.net/,,46.93,-123.73
+147,W7ZA,147.160,+0.6,88.5,,Aberdeen,FM,Grays Harbor Amateur Radio Club,http://gharc.net/,,46.9542,-123.8086
+148,K7TGU,53.23,-1.7,100.0,,University Place,FM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7TGU,,47.22747,-122.55777
+149,K7TGU,927.600,-25.0,114.8,,University Place,NBFM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7TGU,,47.22805,-122.55527
+150,K7HW,53.19,-1.7,100.0,,Tacoma,FM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7K7TGUNP,,47.221559,-122.45703
+151,K7HW,444.175,+5.0,103.5,,Tacoma,NBFM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7TGU,,47.22166,-122.45721
+152,K7HW,146.680,-0.6,103.5,,Mineral,NBFM,Rob K7TGU's repeater system,https://www.qrz.com/db/K7TGU,,46.718834,-122.18971
+153,K7NP,53.010,-1.7,100.0,,University Place,NBFM,University Place Repeater Group,https://www.qrz.com/db/K7NP,,47.227739,-122.55786
+154,K7NP,442.375,+5.0,103.5,,University Place,NBFM,University Place Repeater Group,https://www.qrz.com/db/K7NP,,47.227739,-122.55786
+155,K7YLM,440.200,+5.0,100.0,,Yelm,FM,Yelm Amateur Radio Group,http://yelmamateurradiogroup.org,,46.9392751,-122.604919
+156,W7DG,147.100,+0.6,114.8,,Longview,FM,Lower Columbia Amateur Radio Association,http://w7dg.org,,46.1827,-122.9585
+157,W7DG,147.300,+0.6,114.8,,Woodland,FM,Lower Columbia Amateur Radio Association,http://w7dg.org,,45.9647,-122.6697
+158,W7DG,444.900,+5.0,114.8,,Longview,FM,Lower Columbia Amateur Radio Association,http://w7dg.org,,46.1827,-122.9585
 159,K7CST,147.320,+0.6,103.5,9852,Kent,FM,Kent Communications Support Team ARC,https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/,53,47.38199997,-122.22699738
 160,WB7DOB,145.410,-0.6,162.2,18070,Crystal Mtn.,FM,Bruce WB7DOB's repeater system,https://www.qrz.com/db/WB7DOB,53,46.93799973,-121.5
 161,WB7DOB,147.140,+0.6,123.0,145,Baldi Mtn.,FM,Bruce WB7DOB's repeater system,https://www.qrz.com/db/WB7DOB,53,47.21900177,-122.84300232
@@ -178,7 +178,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 177,N7YRC,442.725,+5.0,127.3,7099,Cowiche Mtn.,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,53,46.62680054,-120.73899841
 178,N7YRC,444.750,+5.0,131.8,17413,Lookout Point,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,53,46.63059998,-120.53500366
 179,KI7PWR,146.920,-0.6,100.0,21717,Hatt Butte,FM,South West Idaho Amateur Radio Club,https://www.k7swi.org,16,43.410919,-116.589569
-180,K7DKK,53.67,-1.7,136.5,,Ravens Roost,FM,Pierce County ARES,http://www.piercecountyares.net,53,47.161,-121.20246
+180,K7DKK,53.67,-1.7,136.5,,Ravens Roost,FM,Pierce County ARES,http://www.piercecountyares.net,,47.161,-121.20246
 181,KB7ARA,147.280,+0.6,103.5,80,Pikes Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,53,45.99373,-118.18053
 182,KA7FVV,147.320,+0.6,103.5,17271,West Twin,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,16,46.73239899,-117.0
 183,N7WRR,147.360,+0.6,,366,Stensgar Mtn.,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,53,48.18139,-117.98917
