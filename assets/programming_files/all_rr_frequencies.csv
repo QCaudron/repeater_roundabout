@@ -109,15 +109,15 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 108,WA7DEM,442.975,+5.0,D172[^dcs],270,Clearview,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,47.8288566,-122.0739169
 109,WA7DEM,443.725,+5.0,103.5,547,Mountlake Terrace,FM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,47.8025185,-122.3228347
 110,WA7DEM,444.025,+5.0,156.7,547,Edmonds,NBFM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info/home,53,47.8028705,-122.3334163
-111,N7IRG,53.390,-1.7,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,53,47.6576742,-116.9684792
-112,N7IRG,147.280,+0.6,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,53,47.6576742,-116.9684792
-113,N7IRG,442.950,+5.0,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,53,47.6576742,-116.9684792
-114,N7IRG,147.260,+0.6,186.2,,Baldy St. Joe,FM,North Idaho Repeater Group,https://www.blossompeak.org/,53,47.3634565,-116.412255
-115,N7IRG,147.180,+0.6,118.8,,Goose Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,53,47.5642862,-115.85211
-116,N7IRG,145.490,-0.6,136.5,,Hoodoo Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,53,48.0787224,-116.9537798
-117,N7IRG,444.550,+5.0,100.0,,Hoodoo Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,53,48.0787224,-116.9537798
-118,N7IRG,146.960,-0.6,123.0,,Black Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,53,48.610141,-116.2600576
-119,N7IRG,145.410,-0.6,77.0,,Priest Lake,FM,North Idaho Repeater Group,https://www.blossompeak.org/,53,48.6063229,-116.9518883
+111,N7IRG,53.390,-1.7,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.6576742,-116.9684792
+112,N7IRG,147.280,+0.6,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.6576742,-116.9684792
+113,N7IRG,442.950,+5.0,100.0,,Blossom Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.6576742,-116.9684792
+114,N7IRG,147.260,+0.6,186.2,,Baldy St. Joe,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.3634565,-116.412255
+115,N7IRG,147.180,+0.6,118.8,,Goose Peak,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,47.5642862,-115.85211
+116,N7IRG,145.490,-0.6,136.5,,Hoodoo Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,48.0787224,-116.9537798
+117,N7IRG,444.550,+5.0,100.0,,Hoodoo Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,48.0787224,-116.9537798
+118,N7IRG,146.960,-0.6,123.0,,Black Mtn.,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,48.610141,-116.2600576
+119,N7IRG,145.410,-0.6,77.0,,Priest Lake,FM,North Idaho Repeater Group,https://www.blossompeak.org/,16,48.6063229,-116.9518883
 120,WA7MV,147.320,+0.6,100.0,206,Tunk Mtn.,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.54570007,-119.23600006
 121,WA7MV,146.720,-0.6,100.0,400,Benson Creek,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.3634784,-120.122303
 122,WA7MV,444.800,+5.0,110.9,646,Winthrop,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.31760025,-120.11499786
