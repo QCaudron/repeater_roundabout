@@ -14,7 +14,8 @@
         "Mode":"FM",
         "Long Name":"Puget Sound Repeater Group",
         "Website":"http:\/\/www.psrg.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7PSR",
@@ -31,7 +32,8 @@
         "Mode":"FM",
         "Long Name":"Puget Sound Repeater Group",
         "Website":"http:\/\/www.psrg.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7SEA",
@@ -48,7 +50,8 @@
         "Mode":"FM",
         "Long Name":"Barry K7PAL's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7AW",
@@ -65,7 +68,8 @@
         "Mode":"FM",
         "Long Name":"West Seattle Amateur Radio Club",
         "Website":"https:\/\/w7aw.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7AW",
@@ -82,7 +86,8 @@
         "Mode":"FM",
         "Long Name":"West Seattle Amateur Radio Club",
         "Website":"https:\/\/w7aw.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7AW",
@@ -99,7 +104,8 @@
         "Mode":"FM",
         "Long Name":"West Seattle Amateur Radio Club",
         "Website":"https:\/\/w7aw.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7DK",
@@ -116,7 +122,8 @@
         "Mode":"FM",
         "Long Name":"Radio Club of Tacoma",
         "Website":"https:\/\/w7dk.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7DK",
@@ -133,7 +140,8 @@
         "Mode":"FM",
         "Long Name":"Radio Club of Tacoma",
         "Website":"https:\/\/w7dk.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7DK",
@@ -150,7 +158,8 @@
         "Mode":"FM",
         "Long Name":"Radio Club of Tacoma",
         "Website":"https:\/\/w7dk.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7DK",
@@ -167,7 +176,8 @@
         "Mode":"FM",
         "Long Name":"Radio Club of Tacoma",
         "Website":"https:\/\/w7dk.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -184,7 +194,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Communications Service",
         "Website":"https:\/\/www.seattleacs.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -201,7 +212,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Communications Service",
         "Website":"https:\/\/www.seattleacs.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -218,7 +230,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Communications Service",
         "Website":"https:\/\/www.seattleacs.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -235,7 +248,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Communications Service",
         "Website":"https:\/\/www.seattleacs.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -252,7 +266,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Communications Service",
         "Website":"https:\/\/www.seattleacs.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -269,7 +284,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Communications Service",
         "Website":"https:\/\/www.seattleacs.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -286,7 +302,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Communications Service",
         "Website":"https:\/\/www.seattleacs.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7LWH",
@@ -303,7 +320,8 @@
         "Mode":"FM",
         "Long Name":"Lake Washington Ham Club",
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7LWH",
@@ -320,7 +338,8 @@
         "Mode":"FM",
         "Long Name":"Lake Washington Ham Club",
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7LWH",
@@ -337,7 +356,8 @@
         "Mode":"FM",
         "Long Name":"Lake Washington Ham Club",
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7LWH",
@@ -354,7 +374,8 @@
         "Mode":"FM",
         "Long Name":"Lake Washington Ham Club",
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7MIR",
@@ -371,7 +392,8 @@
         "Mode":"FM",
         "Long Name":"Mercer Island Radio Operators",
         "Website":"https:\/\/miro.cmivolunteers.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7MIR",
@@ -388,7 +410,8 @@
         "Mode":"FM",
         "Long Name":"Mercer Island Radio Operators",
         "Website":"https:\/\/miro.cmivolunteers.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7GDE",
@@ -405,7 +428,8 @@
         "Mode":"FM",
         "Long Name":"Radio Amateurs of Skagit County",
         "Website":"http:\/\/rasconline.com\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KC7Z",
@@ -422,7 +446,8 @@
         "Mode":"FM",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"https:\/\/kcarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KC7Z",
@@ -439,7 +464,8 @@
         "Mode":"FM",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"https:\/\/kcarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KC7Z",
@@ -456,7 +482,8 @@
         "Mode":"FM",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"https:\/\/kcarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KC7Z",
@@ -473,7 +500,8 @@
         "Mode":"FM",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"https:\/\/kcarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7RA",
@@ -490,7 +518,8 @@
         "Mode":"FM",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"http:\/\/www.kcarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7RA",
@@ -507,7 +536,8 @@
         "Mode":"FM",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"http:\/\/www.kcarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7JCR",
@@ -524,7 +554,8 @@
         "Mode":"FM",
         "Long Name":"Jefferson County Amateur Radio Club",
         "Website":"https:\/\/w7jcr.wordpress.com\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"AA7MI",
@@ -541,7 +572,8 @@
         "Mode":"FM",
         "Long Name":"Marrowstone Island Amateur Radio Club",
         "Website":"https:\/\/www.qrz.com\/db\/AA7MI",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7SK",
@@ -558,7 +590,8 @@
         "Mode":"FM",
         "Long Name":"Mason County Amateur Radio Club",
         "Website":"https:\/\/mc-arc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7SK",
@@ -575,7 +608,8 @@
         "Mode":"FM",
         "Long Name":"Mason County Amateur Radio Club",
         "Website":"https:\/\/mc-arc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7SK",
@@ -592,7 +626,8 @@
         "Mode":"FM",
         "Long Name":"Mason County Amateur Radio Club",
         "Website":"https:\/\/mc-arc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7FW",
@@ -609,7 +644,8 @@
         "Mode":"FM",
         "Long Name":"Federal Way Amateur Radio Club",
         "Website":"https:\/\/fwarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7FW",
@@ -626,7 +662,8 @@
         "Mode":"FM",
         "Long Name":"Federal Way Amateur Radio Club",
         "Website":"https:\/\/fwarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7FW",
@@ -643,7 +680,8 @@
         "Mode":"FM",
         "Long Name":"Federal Way Amateur Radio Club",
         "Website":"https:\/\/fwarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KC7EQO",
@@ -660,7 +698,8 @@
         "Mode":"FM",
         "Long Name":"Matt KC7EQO's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/KC7EQO\/R",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7AAO",
@@ -677,7 +716,8 @@
         "Mode":"FM",
         "Long Name":"Pierce County ARES",
         "Website":"http:\/\/www.piercecountyares.net",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7EAT",
@@ -694,7 +734,8 @@
         "Mode":"FM",
         "Long Name":"Eatonville Amateur Radio Club",
         "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7EAT",
@@ -711,7 +752,8 @@
         "Mode":"FM",
         "Long Name":"Eatonville Amateur Radio Club",
         "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7EAT",
@@ -728,7 +770,8 @@
         "Mode":"FM",
         "Long Name":"Eatonville Amateur Radio Club",
         "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"NE7MC",
@@ -745,7 +788,8 @@
         "Mode":"FM",
         "Long Name":"Northshore Emergency Management Coalition",
         "Website":"https:\/\/www.northshoreemc.com\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7STR",
@@ -762,7 +806,8 @@
         "Mode":"FM",
         "Long Name":"SeaTac Repeater Association",
         "Website":"https:\/\/seatacra.com\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7STR",
@@ -779,7 +824,8 @@
         "Mode":"FM",
         "Long Name":"SeaTac Repeater Association",
         "Website":"https:\/\/seatacra.com\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7STR",
@@ -796,7 +842,8 @@
         "Mode":"FM",
         "Long Name":"SeaTac Repeater Association",
         "Website":"https:\/\/seatacra.com\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7STR",
@@ -813,7 +860,8 @@
         "Mode":"FM",
         "Long Name":"SeaTac Repeater Association",
         "Website":"https:\/\/seatacra.com\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7JN",
@@ -830,7 +878,8 @@
         "Mode":"FM",
         "Long Name":"San Juan County Amateur Radio Club",
         "Website":"http:\/\/sjcars.org",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7JN",
@@ -847,7 +896,8 @@
         "Mode":"FM",
         "Long Name":"San Juan County Amateur Radio Club",
         "Website":"http:\/\/sjcars.org",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7JN",
@@ -864,7 +914,8 @@
         "Mode":"FM",
         "Long Name":"San Juan County Amateur Radio Club",
         "Website":"http:\/\/sjcars.org",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7OEP",
@@ -881,7 +932,8 @@
         "Mode":"FM",
         "Long Name":"Tom N7OEP's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/n7oep",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7OEP",
@@ -898,7 +950,8 @@
         "Mode":"FM",
         "Long Name":"Tom N7OEP's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/n7oep",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7OEP",
@@ -915,7 +968,8 @@
         "Mode":"FM",
         "Long Name":"Tom N7OEP's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/n7oep",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7DK",
@@ -932,7 +986,8 @@
         "Mode":"FM",
         "Long Name":"Mark K7DK's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/K7DK",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7PFR",
@@ -949,7 +1004,8 @@
         "Mode":"FM",
         "Long Name":"Gobblers Knob Repeater Group",
         "Website":"https:\/\/www.qrz.com\/db\/W7PFR",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7PFR",
@@ -966,7 +1022,8 @@
         "Mode":"FM",
         "Long Name":"Gobblers Knob Repeater Group",
         "Website":"https:\/\/www.qrz.com\/db\/W7PFR",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7NWS",
@@ -983,7 +1040,8 @@
         "Mode":"FM",
         "Long Name":"Boeing Employees Amateur Radio Society",
         "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7NWS",
@@ -1000,7 +1058,8 @@
         "Mode":"FM",
         "Long Name":"Boeing Employees Amateur Radio Society",
         "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7NWS",
@@ -1017,7 +1076,8 @@
         "Mode":"FM",
         "Long Name":"Boeing Employees Amateur Radio Society",
         "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KA7EOC",
@@ -1034,7 +1094,8 @@
         "Mode":"FM",
         "Long Name":"Peninsula Amateur Radio Emergency Team",
         "Website":"https:\/\/www.gigharbornow.org\/event\/amateur-radio-emergency-service-ares-peninsula-team-radio-net-visitors-welcome",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7LAW",
@@ -1051,7 +1112,8 @@
         "Mode":"FM",
         "Long Name":"Snohomish County Hams Club",
         "Website":"http:\/\/www.wa7law.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7LAW",
@@ -1068,7 +1130,8 @@
         "Mode":"YSF",
         "Long Name":"Snohomish County Hams Club",
         "Website":"http:\/\/www.wa7law.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N9VW",
@@ -1085,7 +1148,8 @@
         "Mode":"FM",
         "Long Name":"Steve N9VW's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/n9vw",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KC7RAS",
@@ -1102,7 +1166,8 @@
         "Mode":"FM",
         "Long Name":"Steve N9VW's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/n9vw",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N6OBY",
@@ -1119,7 +1184,8 @@
         "Mode":"FM",
         "Long Name":"Steve N9VW's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/n9vw",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7ACS",
@@ -1136,7 +1202,8 @@
         "Mode":"FM",
         "Long Name":"Everett Auxiliary Communications Service Club",
         "Website":"https:\/\/www.qrz.com\/db\/WA7ACS",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"NT7H",
@@ -1153,7 +1220,8 @@
         "Mode":"FM",
         "Long Name":"Olympia Amateur Radio Society",
         "Website":"https:\/\/www.olyham.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"NT7H",
@@ -1170,7 +1238,8 @@
         "Mode":"FM",
         "Long Name":"Olympia Amateur Radio Society",
         "Website":"https:\/\/www.olyham.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"NT7H",
@@ -1187,7 +1256,8 @@
         "Mode":"FM",
         "Long Name":"Olympia Amateur Radio Society",
         "Website":"https:\/\/www.olyham.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7GKR",
@@ -1204,7 +1274,8 @@
         "Mode":"FM",
         "Long Name":"Greater Kingston Radio Club",
         "Website":"https:\/\/gkrc.groups.io\/g\/main",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7AVM",
@@ -1221,7 +1292,8 @@
         "Mode":"FM",
         "Long Name":"Island County Amateur Radio Club",
         "Website":"https:\/\/www.w7avm.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7AVM",
@@ -1238,7 +1310,8 @@
         "Mode":"FM",
         "Long Name":"Island County Amateur Radio Club",
         "Website":"https:\/\/www.w7avm.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"NC7G",
@@ -1255,7 +1328,8 @@
         "Mode":"FM",
         "Long Name":"Highline Amateur Radio Club",
         "Website":"https:\/\/www.highlinearc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7ST",
@@ -1272,7 +1346,8 @@
         "Mode":"FM",
         "Long Name":"Highline Amateur Radio Club",
         "Website":"https:\/\/www.highlinearc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7BUR",
@@ -1289,7 +1364,8 @@
         "Mode":"FM",
         "Long Name":"Highline Amateur Radio Club",
         "Website":"https:\/\/www.highlinearc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7DES",
@@ -1306,7 +1382,8 @@
         "Mode":"FM",
         "Long Name":"Highline Amateur Radio Club",
         "Website":"https:\/\/www.highlinearc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N3KPU",
@@ -1323,7 +1400,8 @@
         "Mode":"FM",
         "Long Name":"Michael N3KPU's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/N3KPU",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KE7YYD",
@@ -1340,7 +1418,8 @@
         "Mode":"FM",
         "Long Name":"Madigan Army Medical Center",
         "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K6RFK",
@@ -1357,7 +1436,8 @@
         "Mode":"FM",
         "Long Name":"K6RFK's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/K6RFK",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K6RFK",
@@ -1374,7 +1454,8 @@
         "Mode":"FM",
         "Long Name":"K6RFK's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/K6RFK",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7CPR",
@@ -1391,7 +1472,8 @@
         "Mode":"FM",
         "Long Name":"Capitol Peak Repeater Group",
         "Website":"http:\/\/47repeater.com\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7KN",
@@ -1408,7 +1490,8 @@
         "Mode":"FM",
         "Long Name":"Charlie N7KN's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/N7KN",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7PIG",
@@ -1425,7 +1508,8 @@
         "Mode":"FM",
         "Long Name":"Stanwood-Camano Amateur Radio Club",
         "Website":"https:\/\/www.scarcwa.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7PIG",
@@ -1442,7 +1526,8 @@
         "Mode":"FM",
         "Long Name":"Stanwood-Camano Amateur Radio Club",
         "Website":"https:\/\/www.scarcwa.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7PIG",
@@ -1459,7 +1544,8 @@
         "Mode":"FM",
         "Long Name":"Stanwood-Camano Amateur Radio Club",
         "Website":"https:\/\/www.scarcwa.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7CH",
@@ -1476,7 +1562,8 @@
         "Mode":"FM",
         "Long Name":"Carl K7CH's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/k7ch",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KK7DFL",
@@ -1493,7 +1580,8 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Carl K7CH's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/k7ch",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KK7DFM",
@@ -1510,7 +1598,8 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Carl K7CH's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/k7ch",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7SKW",
@@ -1527,7 +1616,8 @@
         "Mode":"FM",
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7SKW",
@@ -1544,7 +1634,8 @@
         "Mode":"FM",
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7SKW",
@@ -1561,7 +1652,8 @@
         "Mode":"FM",
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7SKW",
@@ -1578,7 +1670,8 @@
         "Mode":"FM",
         "Long Name":"Mount Baker Amateur Radio Club",
         "Website":"https:\/\/mbarc.groups.io\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7TRF",
@@ -1595,7 +1688,8 @@
         "Mode":"FM",
         "Long Name":"Tom W7TRF's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/W7TRF",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7TRF",
@@ -1612,7 +1706,8 @@
         "Mode":"FM",
         "Long Name":"Tom W7TRF's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/W7TRF",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7FLY",
@@ -1629,7 +1724,8 @@
         "Mode":"FM",
         "Long Name":"Boeing Employees Amateur Radio Operators North Society",
         "Website":"https:\/\/w7flybearons.org",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7LED",
@@ -1646,7 +1742,8 @@
         "Mode":"FM",
         "Long Name":"Mike & Key Amateur Radio Club",
         "Website":"https:\/\/www.mikeandkey.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7LED",
@@ -1663,7 +1760,8 @@
         "Mode":"FM",
         "Long Name":"Mike & Key Amateur Radio Club",
         "Website":"https:\/\/www.mikeandkey.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7MSH",
@@ -1680,7 +1778,8 @@
         "Mode":"FM",
         "Long Name":"Mercury Mt. St. Helens Emergency Response Communications",
         "Website":"https:\/\/www.w7msh.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7ROY",
@@ -1697,7 +1796,8 @@
         "Mode":"FM",
         "Long Name":"Roy Area Network",
         "Website":"https:\/\/www.qrz.com\/db\/wa7roy",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7MST",
@@ -1714,7 +1814,8 @@
         "Mode":"FM",
         "Long Name":"Western Washington Medical Services Emergency Communications",
         "Website":"https:\/\/www.ww7mst.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WW7MST",
@@ -1731,7 +1832,8 @@
         "Mode":"FM",
         "Long Name":"Western Washington Medical Services Emergency Communications",
         "Website":"https:\/\/www.ww7mst.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7DX",
@@ -1748,7 +1850,8 @@
         "Mode":"FM",
         "Long Name":"Western Washington DX Club",
         "Website":"https:\/\/www.wwdxc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7DEM",
@@ -1765,7 +1868,8 @@
         "Mode":"FM",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7DEM",
@@ -1782,7 +1886,8 @@
         "Mode":"FM",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7DEM",
@@ -1799,7 +1904,8 @@
         "Mode":"FM",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7DEM",
@@ -1816,7 +1922,8 @@
         "Mode":"FM",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7DEM",
@@ -1833,7 +1940,8 @@
         "Mode":"FM",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7DEM",
@@ -1850,7 +1958,8 @@
         "Mode":"FM",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7DEM",
@@ -1867,7 +1976,8 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7IRG",
@@ -1884,7 +1994,8 @@
         "Mode":"FM",
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7IRG",
@@ -1901,7 +2012,8 @@
         "Mode":"FM",
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7IRG",
@@ -1918,7 +2030,8 @@
         "Mode":"FM",
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7IRG",
@@ -1935,7 +2048,8 @@
         "Mode":"FM",
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7IRG",
@@ -1952,7 +2066,8 @@
         "Mode":"FM",
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7IRG",
@@ -1969,7 +2084,8 @@
         "Mode":"FM",
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7IRG",
@@ -1986,7 +2102,8 @@
         "Mode":"FM",
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7IRG",
@@ -2003,7 +2120,8 @@
         "Mode":"FM",
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7IRG",
@@ -2020,7 +2138,8 @@
         "Mode":"FM",
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7MV",
@@ -2037,7 +2156,8 @@
         "Mode":"FM",
         "Long Name":"Methow Valley Amateur Radio Club",
         "Website":"https:\/\/www.mvhams.net\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7MV",
@@ -2054,7 +2174,8 @@
         "Mode":"FM",
         "Long Name":"Methow Valley Amateur Radio Club",
         "Website":"https:\/\/www.mvhams.net\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7MV",
@@ -2071,7 +2192,8 @@
         "Mode":"FM",
         "Long Name":"Methow Valley Amateur Radio Club",
         "Website":"https:\/\/www.mvhams.net\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7SAR",
@@ -2088,7 +2210,8 @@
         "Mode":"FM",
         "Long Name":"Yakima County Radio Amateurs",
         "Website":"",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7SAR",
@@ -2105,7 +2228,8 @@
         "Mode":"FM",
         "Long Name":"Yakima County Radio Amateurs",
         "Website":"",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7SAR",
@@ -2122,7 +2246,8 @@
         "Mode":"FM",
         "Long Name":"Yakima County Radio Amateurs",
         "Website":"",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7SAR",
@@ -2139,7 +2264,8 @@
         "Mode":"FM",
         "Long Name":"Yakima County Radio Amateurs",
         "Website":"",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7SAR",
@@ -2156,7 +2282,8 @@
         "Mode":"FM",
         "Long Name":"Yakima County Radio Amateurs",
         "Website":"",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7RHT",
@@ -2173,7 +2300,8 @@
         "Mode":"FM",
         "Long Name":"K7RHT",
         "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7RHT",
@@ -2190,7 +2318,8 @@
         "Mode":"FM",
         "Long Name":"K7RHT",
         "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KE7GFZ",
@@ -2207,7 +2336,8 @@
         "Mode":"FM",
         "Long Name":"Snoqualmie Valley Amateur Radio Club",
         "Website":"https:\/\/snovarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KE7GFZ",
@@ -2224,7 +2354,8 @@
         "Mode":"FM",
         "Long Name":"Snoqualmie Valley Amateur Radio Club",
         "Website":"https:\/\/snovarc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WA7TBP",
@@ -2241,7 +2372,8 @@
         "Mode":"FM",
         "Long Name":"Tom WA7TBP's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WA7TBP\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -2258,7 +2390,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -2275,7 +2408,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -2292,7 +2426,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -2309,7 +2444,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -2326,7 +2462,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -2343,7 +2480,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -2360,7 +2498,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -2377,7 +2516,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ACS",
@@ -2394,7 +2534,8 @@
         "Mode":"FM",
         "Long Name":"Seattle Auxiliary Commonications Service",
         "Website":"https:\/\/www.seattleacs.org\/home",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7YR",
@@ -2411,7 +2552,8 @@
         "Mode":"FM",
         "Long Name":"Lake Chelan Amateur Radio Club",
         "Website":"https:\/\/lcarc.net\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7SMX",
@@ -2428,7 +2570,8 @@
         "Mode":"FM",
         "Long Name":"Lake Chelan Amateur Radio Club",
         "Website":"https:\/\/lcarc.net\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7SMX",
@@ -2445,7 +2588,8 @@
         "Mode":"FM",
         "Long Name":"Lake Chelan Amateur Radio Club",
         "Website":"https:\/\/lcarc.net\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KB7APU",
@@ -2462,7 +2606,8 @@
         "Mode":"FM",
         "Long Name":"Skamania County ARES",
         "Website":"http:\/\/skamania-prepare.org\/ares\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ZA",
@@ -2479,7 +2624,8 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Grays Harbor Amateur Radio Club",
         "Website":"http:\/\/gharc.net\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ZA",
@@ -2496,7 +2642,8 @@
         "Mode":"FM",
         "Long Name":"Grays Harbor Amateur Radio Club",
         "Website":"http:\/\/gharc.net\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7TGU",
@@ -2513,7 +2660,8 @@
         "Mode":"FM",
         "Long Name":"Rob K7TGU's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/K7TGU",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7TGU",
@@ -2530,7 +2678,8 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Rob K7TGU's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/K7TGU",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7HW",
@@ -2547,7 +2696,8 @@
         "Mode":"FM",
         "Long Name":"Rob K7TGU's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/K7K7TGUNP",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7HW",
@@ -2564,7 +2714,8 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Rob K7TGU's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/K7TGU",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7HW",
@@ -2581,7 +2732,8 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Rob K7TGU's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/K7TGU",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7NP",
@@ -2598,7 +2750,8 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"University Place Repeater Group",
         "Website":"https:\/\/www.qrz.com\/db\/K7NP",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7NP",
@@ -2615,7 +2768,8 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"University Place Repeater Group",
         "Website":"https:\/\/www.qrz.com\/db\/K7NP",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7YLM",
@@ -2632,7 +2786,8 @@
         "Mode":"FM",
         "Long Name":"Yelm Amateur Radio Group",
         "Website":"http:\/\/yelmamateurradiogroup.org",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7DG",
@@ -2649,7 +2804,8 @@
         "Mode":"FM",
         "Long Name":"Lower Columbia Amateur Radio Association",
         "Website":"http:\/\/w7dg.org",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7DG",
@@ -2666,7 +2822,8 @@
         "Mode":"FM",
         "Long Name":"Lower Columbia Amateur Radio Association",
         "Website":"http:\/\/w7dg.org",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7DG",
@@ -2683,7 +2840,8 @@
         "Mode":"FM",
         "Long Name":"Lower Columbia Amateur Radio Association",
         "Website":"http:\/\/w7dg.org",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"K7CST",
@@ -2700,7 +2858,8 @@
         "Mode":"FM",
         "Long Name":"Kent Communications Support Team ARC",
         "Website":"https:\/\/pugetsoundfire.org\/emergency-management\/communications-support-team-ham-radio\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WB7DOB",
@@ -2717,7 +2876,8 @@
         "Mode":"FM",
         "Long Name":"Bruce WB7DOB's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WB7DOB",
@@ -2734,7 +2894,8 @@
         "Mode":"FM",
         "Long Name":"Bruce WB7DOB's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WB7DOB",
@@ -2751,7 +2912,8 @@
         "Mode":"FM",
         "Long Name":"Bruce WB7DOB's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WB7DOB",
@@ -2768,7 +2930,8 @@
         "Mode":"FM",
         "Long Name":"Bruce WB7DOB's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WB7DOB",
@@ -2785,7 +2948,8 @@
         "Mode":"FM",
         "Long Name":"Bruce WB7DOB's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WB7DOB",
@@ -2802,7 +2966,8 @@
         "Mode":"FM",
         "Long Name":"Bruce WB7DOB's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WB7DOB",
@@ -2819,7 +2984,8 @@
         "Mode":"FM",
         "Long Name":"Bruce WB7DOB's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"WB7DOB",
@@ -2836,7 +3002,8 @@
         "Mode":"FM",
         "Long Name":"Bruce WB7DOB's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7NPC",
@@ -2853,7 +3020,8 @@
         "Mode":"FM",
         "Long Name":"Bainbridge Amateur Radio Club",
         "Website":"https:\/\/w7npc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7NPC",
@@ -2870,7 +3038,8 @@
         "Mode":"FM",
         "Long Name":"Bainbridge Amateur Radio Club",
         "Website":"https:\/\/w7npc.org\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ECG",
@@ -2887,7 +3056,8 @@
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"https:\/\/wecg.org\/wordpress\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ECG",
@@ -2904,7 +3074,8 @@
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"https:\/\/wecg.org\/wordpress\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7ECG",
@@ -2921,7 +3092,8 @@
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"https:\/\/wecg.org\/wordpress\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"W7BFD",
@@ -2938,7 +3110,8 @@
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"https:\/\/wecg.org\/wordpress\/",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KC7SR",
@@ -2955,7 +3128,8 @@
         "Mode":"FM",
         "Long Name":"Klickitat County Search and Rescue",
         "Website":"https:\/\/www.qrz.com\/db\/KC7SR",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"KC7VQR",
@@ -2972,7 +3146,8 @@
         "Mode":"FM",
         "Long Name":"N7YRC Group",
         "Website":"https:\/\/www.qrz.com\/db\/KC7VQR",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7YRC",
@@ -2989,7 +3164,8 @@
         "Mode":"FM",
         "Long Name":"N7YRC Group",
         "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7YRC",
@@ -3006,7 +3182,8 @@
         "Mode":"FM",
         "Long Name":"N7YRC Group",
         "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     },
     {
         "Callsign":"N7YRC",
@@ -3023,6 +3200,25 @@
         "Mode":"FM",
         "Long Name":"N7YRC Group",
         "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
-        "Exclude":null
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KI7PWR",
+        "Output (MHz)":"146.920",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.410919,
+            -116.589569
+        ],
+        "RepeaterBook ID":"21717",
+        "Group Name":"SWI-ARC",
+        "Location":"Hatt Butte",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
     }
 ]
