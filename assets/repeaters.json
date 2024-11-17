@@ -3310,5 +3310,23 @@
         "Website":"https:\/\/kbara.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KC7SNN",
+        "Output (MHz)":"147.000",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            42.32580185,
+            -113.65599823
+        ],
+        "RepeaterBook ID":"68",
+        "Group Name":"Magic Valley",
+        "Location":"Mt. Harrison",
+        "Mode":"FM",
+        "Long Name":"Magic Valley Amateur Radio Club",
+        "Website":"https:\/\/www.k7mva.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
     }
 ]

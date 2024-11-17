@@ -204,6 +204,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 182   | KBARA          | KA7FVV     | West Twin          |        147.320 |           +0.6 |       103.5 |
 | 183   | KBARA          | N7WRR      | Stensgar Mtn.      |        147.360 |           +0.6 |             |
 | 184   | KBARA          | N7WRQ      | Mica Peak          |        147.380 |           +0.6 |       100.0 |
+| 185   | Magic Valley   | KC7SNN     | Mt. Harrison       |        147.000 |           -0.6 |       100.0 |
 
 ---
 
@@ -304,6 +305,9 @@ MVARC
 
 Madigan Army
 : [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
+
+Magic Valley
+: [Magic Valley Amateur Radio Club](https://www.k7mva.org/)
 
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://www.qrz.com/db/AA7MI)
