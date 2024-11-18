@@ -12,7 +12,7 @@ Last year, we made it into [QST Magazine](assets/RR.pdf). Light up the airwaves 
 
 **The Repeater Roundabout will be held during the weekend of November 23rd and 24th.**
 
-> This page was last updated on Sunday November 17 at 04:36.
+> This page was last updated on Sunday November 17 at 16:27.
 
 ---
 
@@ -27,6 +27,6 @@ We provide [files to program your radios](./files) with Chirp and other software
 
 Visit the [logging page](./logging) to log your contacts and submit your logs for scoring.
 
-Join our [Discord chat server](https://discord.gg/BBpbESxSCm) to chat with other participants, arrange skeds, and get help.
+Join our [Discord chat server](https://discord.com/invite/mqkD4fTjrn) to chat with other participants, arrange skeds, and get help.
 
 

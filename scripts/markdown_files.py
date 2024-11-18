@@ -20,7 +20,7 @@ We provide [files to program your radios](./files) with Chirp and other software
 
 Visit the [logging page](./logging) to log your contacts and submit your logs for scoring.
 
-Join our [Discord chat server](https://discord.gg/BBpbESxSCm) to chat with other participants, arrange skeds, and get help.
+Join our [Discord chat server](https://discord.com/invite/mqkD4fTjrn) to chat with other participants, arrange skeds, and get help.
 
 """  # noqa: E501
 
