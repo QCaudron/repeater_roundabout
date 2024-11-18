@@ -3328,5 +3328,23 @@
         "Website":"https:\/\/www.k7mva.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"146.880",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.57889938,
+            -117.29599762
+        ],
+        "RepeaterBook ID":"283",
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

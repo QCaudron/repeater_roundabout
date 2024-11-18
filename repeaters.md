@@ -205,6 +205,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 183   | KBARA          | N7WRR      | Stensgar Mtn.      |        147.360 |           +0.6 |             |
 | 184   | KBARA          | N7WRQ      | Mica Peak          |        147.380 |           +0.6 |       100.0 |
 | 185   | Magic Valley   | KC7SNN     | Mt. Harrison       |        147.000 |           -0.6 |       100.0 |
+| 186   | IEVHFRA        | WR7VHF     | Spokane            |        146.880 |           -0.6 |       123.0 |
 
 ---
 
@@ -245,6 +246,9 @@ HARC
 
 ICARC
 : [Island County Amateur Radio Club](https://www.w7avm.org/)
+
+IEVHFRA
+: [Inland Empire VHF Radio Amateurs](https://www.vhfclub.org/)
 
 JCARC
 : [Jefferson County Amateur Radio Club](https://w7jcr.wordpress.com/)
