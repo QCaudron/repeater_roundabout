@@ -73,7 +73,7 @@ Can I stay on the same repeater the whole contest ?
 : Yes ! You can "run a repeater", like running a frequency during an HF contest. You can make contacts with different people, helping them activate that repeater. Some folk will move between machines, and some will stay put. A strategy that mixes the two will probably win out, in terms of points.
 
 Can I arrange a contact beforehand ?
-: Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine. We have a [Discord system](https://discord.gg/BBpbESxSCm) that's a great place to arrange a sked, or see who's around to find you on a repeater.
+: Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine. We have a [Discord system](https://discord.com/invite/mqkD4fTjrn) that's a great place to arrange a sked, or see who's around to find you on a repeater.
 
 Can I use Echolink, Allstar, or IRLP ?
 : Not this year. To keep things simple, we are going FM-only.
