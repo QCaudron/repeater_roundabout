@@ -100,8 +100,8 @@ def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) 
     logs = logs.drop(columns=["Logger"]).rename(
         columns={"Signal Report": "Report", "Group Name": "Group", "Bandhog": "Band Hog"}
     )
-    logs = logs[["Group", "Contact", "Report", "Band", "QRP", "Club Connaisseur", "Band Hog", "QSO Score"]]
-    for col in ["QRP", "Club Connaisseur", "Band Hog"]:
+    logs = logs[["Group", "Callsign", "Report", "Band", "QRP", "Band Hog", "QSO Score"]]
+    for col in ["QRP", "Band Hog"]:
         logs[col] = logs[col].apply(lambda x: "X" if x else "")
 
     # Format the summary table
@@ -114,7 +114,7 @@ def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) 
     summary_df.index = summary_df.index.rename("Total Score")
 
     # Fill it in
-    colalign = ["right", "left", "right", "center", "right", "center", "center", "center"]
+    colalign = ["right", "left", "right", "center", "right", "center", "center"]
     template = (
         template.replace("{{ callsign }}", f"[{callsign}](https://www.qrz.com/db/{callsign})")
         .replace("{{ summary }}", summary_df.to_markdown(colalign=["left", "right"]))
@@ -166,25 +166,23 @@ def score_competition(
     # A mapping between RR# and club name
     rrn_to_club = repeaters["Group Name"].to_dict()
 
-    # Calculate club-based multipliers
-    club_n_repeaters = repeaters["Group Name"].value_counts().to_dict()
-
     all_logs = []
     contest_scores = {}
 
     for file in logs_files:
         callsign = file.stem.split(" ")[0].split(",")[0].split("-")[0].upper()
         logs = pd.read_csv(file, index_col=None)
-        logs = logs.dropna(subset=["Contact's Callsign", "Signal Report", "RR#"])
+        logs = logs.rename(columns={"Contact's Callsign": "Callsign", "Signal Report": "Report"})
+        logs = logs.dropna(subset=["Callsign", "Report", "RR#"])
         logs["QRP"] = logs["QRP"].notna() * logs["QRP"].astype(bool)
         logs["Logger"] = callsign
         logs["Ordering"] = range(len(logs))
-        logs["Contact's Callsign"] = logs["Contact's Callsign"].str.upper()
-        logs["Signal Report"] = logs["Signal Report"].astype(str).apply(signal_report_to_readability)
+        logs["Callsign"] = logs["Callsign"].str.upper()
+        logs["Report"] = logs["Report"].astype(str).apply(signal_report_to_readability)
         n_entries = len(logs)
 
         # Clean up the log sheet
-        logs = logs.astype({"Signal Report": str, "RR#": int})
+        logs = logs.astype({"Report": str, "RR#": int})
 
         # Add a band column
         logs = logs.merge(
@@ -206,7 +204,7 @@ def score_competition(
 
         # Label any duplicates, trying to keep higher-scoring entries as the non-duplicate
         logs = logs.sort_values("QRP")
-        logs["Duplicate"] = logs.duplicated(subset=["RR#", "Contact's Callsign"], keep="last")
+        logs["Duplicate"] = logs.duplicated(subset=["RR#", "Callsign"], keep="last")
         n_duplicates = logs["Duplicate"].sum()
         logs = logs.sort_values("Ordering")
         logs = logs.loc[~logs["Duplicate"]].drop(columns=["Ordering", "Duplicate"])
@@ -235,7 +233,6 @@ def score_competition(
             "Total Score": logs["QSO Score"].sum(),
             "Total Contacts": n_entries,
             "QRP Contacts": logs["QRP"].sum(),
-            # "Club Connaisseur Contacts": logs["Club Connaisseur"].sum(),
             "Band Hog Contacts": logs["Bandhog"].sum(),
             "Duplicate Contacts": n_duplicates,
             "Full House": "X" if full_house else "",
@@ -302,7 +299,7 @@ def score_competition(
     logs_df = logs_df.drop(columns=[col for col in logs_df.columns if "Unnamed: " in col])
 
     # Attempt to clean up signal reports
-    logs_df["Readability"] = logs_df["Signal Report"].apply(signal_report_to_readability)
+    logs_df["Readability"] = logs_df["Report"].apply(signal_report_to_readability)
     if logs_df["Readability"].isna().any():
         errors_in = ", ".join(logs_df.loc[logs_df["Readability"].isna(), "Logger"].unique())
         print(f"Errors in signal reports : {errors_in}")
@@ -344,10 +341,10 @@ def score_competition(
     # Some stats :
     total_contacts = sum([scores["Total Contacts"] for scores in contest_scores.values()])
     stats = {
-        "Number of participants who submitted logs": len(leaderboard),
         "Total number of contacts made": f"{total_contacts:,}",
-        "Number of unique operators contacted": logs_df["Contact"].nunique(),
+        "Number of unique operators contacted": logs_df["Callsign"].nunique(),
         "Number of repeaters activated": len(by_repeater),
+        "Number of participants who submitted logs": len(leaderboard),
     }
     stats_msg = "\n".join(f"- {key} : {val}" for key, val in stats.items())
     print(stats_msg)

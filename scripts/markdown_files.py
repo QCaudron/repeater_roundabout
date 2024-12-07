@@ -34,7 +34,7 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 
 {{ stats }}
 
-Please don't hesitate to send us your thoughts and feedback, either by email at [k7drq@psrg.org](mailto:k7drq@psrg.org) or on our [Discord server](https://discord.gg/BBpbESxSCm).
+Please don't hesitate to send us your thoughts and feedback, either by email at [quentincaudron@gmail.com](mailto:quentincaudron@gmail.com) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
 
 <br />
 
