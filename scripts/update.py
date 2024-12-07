@@ -6,7 +6,6 @@ from types import SimpleNamespace
 from typing import Union
 
 import pandas as pd
-import numpy
 import requests
 
 from markdown_files import (
@@ -224,13 +223,13 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
 
     # Initialize records missing state id fields to WA (53).
     if 'RepeaterBook State ID' not in df.columns:
-        df['RepeaterBook State ID'] = numpy.NaN
+        df['RepeaterBook State ID'] = None
 
     def init_state_id(row):
         if pd.notna(row['RepeaterBook State ID']):
             return row['RepeaterBook State ID']
         if pd.isna(row['RepeaterBook ID']):
-            return numpy.NaN
+            return None
         return '53'
     df['RepeaterBook State ID'] = df.apply(init_state_id, axis=1)
     

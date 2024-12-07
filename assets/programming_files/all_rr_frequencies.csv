@@ -184,3 +184,4 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 183,N7WRR,147.360,+0.6,,366,Stensgar Mtn.,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,53,48.18139,-117.98917
 184,N7WRQ,147.380,+0.6,100.0,78,Mica Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,53,47.57495,-117.08113
 185,KC7SNN,147.000,-0.6,100.0,68,Mt. Harrison,FM,Magic Valley Amateur Radio Club,https://www.k7mva.org/,16,42.32580185,-113.65599823
+186,WR7VHF,146.880,-0.6,123.0,283,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,53,47.57889938,-117.29599762

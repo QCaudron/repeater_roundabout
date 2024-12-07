@@ -8,7 +8,7 @@ subtitle: How to play in the Repeater Roundabout.
 
 # Repeaters
 
-Only these [185 participating repeaters from 69 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
+Only these [186 participating repeaters from 70 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
 
 Please ensure that there is no ongoing activity on a repeater (such as a net) before you call for contacts. Please ensure you leave some space for others to user the repeater; some of these are used for emergency communications, and we don't want to interfere with that.
 
@@ -73,7 +73,7 @@ Can I stay on the same repeater the whole contest ?
 : Yes ! You can "run a repeater", like running a frequency during an HF contest. You can make contacts with different people, helping them activate that repeater. Some folk will move between machines, and some will stay put. A strategy that mixes the two will probably win out, in terms of points.
 
 Can I arrange a contact beforehand ?
-: Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine. We have a [Discord system](https://discord.gg/BBpbESxSCm) that's a great place to arrange a sked, or see who's around to find you on a repeater.
+: Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine. We have a [Discord system](https://discord.com/invite/mqkD4fTjrn) that's a great place to arrange a sked, or see who's around to find you on a repeater.
 
 Can I use Echolink, Allstar, or IRLP ?
 : Not this year. To keep things simple, we are going FM-only.
