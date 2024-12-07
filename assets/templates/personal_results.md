@@ -2,7 +2,7 @@
 
 {{ summary }}
 
-Download a full copy of your log [here](/results/{{ callsign }}/log.csv).
+Download a full copy of your log [here](/results/{{ callsign }}.csv).
 
 ---
 
