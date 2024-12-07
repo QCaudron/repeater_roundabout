@@ -1,12 +1,14 @@
 # [AE7JY](https://www.qrz.com/db/AE7JY)
 
-| Total Score        |   10 |
-|:-------------------|-----:|
-| Total Contacts     |    5 |
-| QRP Contacts       |    5 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   10 |
+|:----------------------|-----:|
+| Total Contacts        |    5 |
+| QRP Contacts          |    5 |
+| 2m Repeaters Worked   |    1 |
+| 70cm Repeaters Worked |    0 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

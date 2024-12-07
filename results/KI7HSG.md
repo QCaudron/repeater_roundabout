@@ -1,12 +1,14 @@
 # [KI7HSG](https://www.qrz.com/db/KI7HSG)
 
-| Total Score        |   11 |
-|:-------------------|-----:|
-| Total Contacts     |    7 |
-| QRP Contacts       |    4 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   11 |
+|:----------------------|-----:|
+| Total Contacts        |    7 |
+| QRP Contacts          |    4 |
+| 2m Repeaters Worked   |    5 |
+| 70cm Repeaters Worked |    1 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

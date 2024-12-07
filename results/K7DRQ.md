@@ -1,12 +1,14 @@
 # [K7DRQ](https://www.qrz.com/db/K7DRQ)
 
-| Total Score        |   147 |
-|:-------------------|------:|
-| Total Contacts     |    84 |
-| QRP Contacts       |    64 |
-| Band Hog Contacts  |     0 |
-| Duplicate Contacts |     1 |
-| Full House         |       |
+| Total Score           |   147 |
+|:----------------------|------:|
+| Total Contacts        |    84 |
+| QRP Contacts          |    64 |
+| 2m Repeaters Worked   |    19 |
+| 70cm Repeaters Worked |    12 |
+| Band Hog Contacts     |     0 |
+| Duplicate Contacts    |     1 |
+| Full House            |       |
 
 ---
 

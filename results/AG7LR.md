@@ -1,12 +1,14 @@
 # [AG7LR](https://www.qrz.com/db/AG7LR)
 
-| Total Score        |   925 |
-|:-------------------|------:|
-| Total Contacts     |   275 |
-| QRP Contacts       |   220 |
-| Band Hog Contacts  |   242 |
-| Duplicate Contacts |    23 |
-| Full House         |       |
+| Total Score           |   925 |
+|:----------------------|------:|
+| Total Contacts        |   275 |
+| QRP Contacts          |   220 |
+| 2m Repeaters Worked   |    30 |
+| 70cm Repeaters Worked |    32 |
+| Band Hog Contacts     |   242 |
+| Duplicate Contacts    |    23 |
+| Full House            |       |
 
 ---
 

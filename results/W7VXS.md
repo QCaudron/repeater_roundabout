@@ -1,12 +1,14 @@
 # [W7VXS](https://www.qrz.com/db/W7VXS)
 
-| Total Score        |   63 |
-|:-------------------|-----:|
-| Total Contacts     |   72 |
-| QRP Contacts       |    0 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    9 |
-| Full House         |      |
+| Total Score           |   63 |
+|:----------------------|-----:|
+| Total Contacts        |   72 |
+| QRP Contacts          |    0 |
+| 2m Repeaters Worked   |    8 |
+| 70cm Repeaters Worked |    1 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    9 |
+| Full House            |      |
 
 ---
 

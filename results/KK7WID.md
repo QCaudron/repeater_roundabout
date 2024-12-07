@@ -1,12 +1,14 @@
 # [KK7WID](https://www.qrz.com/db/KK7WID)
 
-| Total Score        |   111 |
-|:-------------------|------:|
-| Total Contacts     |    88 |
-| QRP Contacts       |    23 |
-| Band Hog Contacts  |     0 |
-| Duplicate Contacts |     0 |
-| Full House         |       |
+| Total Score           |   111 |
+|:----------------------|------:|
+| Total Contacts        |    88 |
+| QRP Contacts          |    23 |
+| 2m Repeaters Worked   |     9 |
+| 70cm Repeaters Worked |    18 |
+| Band Hog Contacts     |     0 |
+| Duplicate Contacts    |     0 |
+| Full House            |       |
 
 ---
 

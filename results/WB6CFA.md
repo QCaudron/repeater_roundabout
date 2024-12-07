@@ -1,12 +1,14 @@
 # [WB6CFA](https://www.qrz.com/db/WB6CFA)
 
-| Total Score        |   156 |
-|:-------------------|------:|
-| Total Contacts     |    87 |
-| QRP Contacts       |    75 |
-| Band Hog Contacts  |     0 |
-| Duplicate Contacts |     6 |
-| Full House         |       |
+| Total Score           |   156 |
+|:----------------------|------:|
+| Total Contacts        |    87 |
+| QRP Contacts          |    75 |
+| 2m Repeaters Worked   |    12 |
+| 70cm Repeaters Worked |    16 |
+| Band Hog Contacts     |     0 |
+| Duplicate Contacts    |     6 |
+| Full House            |       |
 
 ---
 

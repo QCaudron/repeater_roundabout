@@ -1,12 +1,14 @@
 # [KK7PMI](https://www.qrz.com/db/KK7PMI)
 
-| Total Score        |   64 |
-|:-------------------|-----:|
-| Total Contacts     |   32 |
-| QRP Contacts       |   32 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   64 |
+|:----------------------|-----:|
+| Total Contacts        |   32 |
+| QRP Contacts          |   32 |
+| 2m Repeaters Worked   |    6 |
+| 70cm Repeaters Worked |    4 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

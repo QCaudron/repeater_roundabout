@@ -1,12 +1,14 @@
 # [N7URH](https://www.qrz.com/db/N7URH)
 
-| Total Score        |   13 |
-|:-------------------|-----:|
-| Total Contacts     |    7 |
-| QRP Contacts       |    6 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   13 |
+|:----------------------|-----:|
+| Total Contacts        |    7 |
+| QRP Contacts          |    6 |
+| 2m Repeaters Worked   |    3 |
+| 70cm Repeaters Worked |    0 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

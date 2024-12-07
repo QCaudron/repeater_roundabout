@@ -1,12 +1,14 @@
 # [KI6KTE](https://www.qrz.com/db/KI6KTE)
 
-| Total Score        |   105 |
-|:-------------------|------:|
-| Total Contacts     |    56 |
-| QRP Contacts       |    52 |
-| Band Hog Contacts  |     0 |
-| Duplicate Contacts |     3 |
-| Full House         |       |
+| Total Score           |   105 |
+|:----------------------|------:|
+| Total Contacts        |    56 |
+| QRP Contacts          |    52 |
+| 2m Repeaters Worked   |    12 |
+| 70cm Repeaters Worked |     6 |
+| Band Hog Contacts     |     0 |
+| Duplicate Contacts    |     3 |
+| Full House            |       |
 
 ---
 

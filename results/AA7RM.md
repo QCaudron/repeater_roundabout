@@ -1,12 +1,14 @@
 # [AA7RM](https://www.qrz.com/db/AA7RM)
 
-| Total Score        |   156 |
-|:-------------------|------:|
-| Total Contacts     |   121 |
-| QRP Contacts       |    36 |
-| Band Hog Contacts  |     0 |
-| Duplicate Contacts |     1 |
-| Full House         |       |
+| Total Score           |   156 |
+|:----------------------|------:|
+| Total Contacts        |   121 |
+| QRP Contacts          |    36 |
+| 2m Repeaters Worked   |    16 |
+| 70cm Repeaters Worked |    25 |
+| Band Hog Contacts     |     0 |
+| Duplicate Contacts    |     1 |
+| Full House            |       |
 
 ---
 

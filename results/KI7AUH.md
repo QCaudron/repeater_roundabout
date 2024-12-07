@@ -1,12 +1,14 @@
 # [KI7AUH](https://www.qrz.com/db/KI7AUH)
 
-| Total Score        |   80 |
-|:-------------------|-----:|
-| Total Contacts     |   40 |
-| QRP Contacts       |   40 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   80 |
+|:----------------------|-----:|
+| Total Contacts        |   40 |
+| QRP Contacts          |   40 |
+| 2m Repeaters Worked   |    9 |
+| 70cm Repeaters Worked |    9 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

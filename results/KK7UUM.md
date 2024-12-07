@@ -1,12 +1,14 @@
 # [KK7UUM](https://www.qrz.com/db/KK7UUM)
 
-| Total Score        |   49 |
-|:-------------------|-----:|
-| Total Contacts     |   29 |
-| QRP Contacts       |   20 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   49 |
+|:----------------------|-----:|
+| Total Contacts        |   29 |
+| QRP Contacts          |   20 |
+| 2m Repeaters Worked   |    3 |
+| 70cm Repeaters Worked |    1 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

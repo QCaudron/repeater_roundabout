@@ -1,12 +1,14 @@
 # [KE7NOR](https://www.qrz.com/db/KE7NOR)
 
-| Total Score        |   45 |
-|:-------------------|-----:|
-| Total Contacts     |   43 |
-| QRP Contacts       |    2 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   45 |
+|:----------------------|-----:|
+| Total Contacts        |   43 |
+| QRP Contacts          |    2 |
+| 2m Repeaters Worked   |    9 |
+| 70cm Repeaters Worked |   14 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

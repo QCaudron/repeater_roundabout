@@ -1,12 +1,14 @@
 # [WA7BEN](https://www.qrz.com/db/WA7BEN)
 
-| Total Score        |   9 |
-|:-------------------|----:|
-| Total Contacts     |   8 |
-| QRP Contacts       |   1 |
-| Band Hog Contacts  |   0 |
-| Duplicate Contacts |   0 |
-| Full House         |     |
+| Total Score           |   9 |
+|:----------------------|----:|
+| Total Contacts        |   8 |
+| QRP Contacts          |   1 |
+| 2m Repeaters Worked   |   2 |
+| 70cm Repeaters Worked |   1 |
+| Band Hog Contacts     |   0 |
+| Duplicate Contacts    |   0 |
+| Full House            |     |
 
 ---
 

@@ -233,6 +233,8 @@ def score_competition(
             "Total Score": logs["QSO Score"].sum(),
             "Total Contacts": n_entries,
             "QRP Contacts": logs["QRP"].sum(),
+            "2m Repeaters Worked": logs.loc[logs["Band"] == "2m", "RR#"].nunique(),
+            "70cm Repeaters Worked": logs.loc[logs["Band"] == "70cm", "RR#"].nunique(),
             "Band Hog Contacts": logs["Bandhog"].sum(),
             "Duplicate Contacts": n_duplicates,
             "Full House": "X" if full_house else "",

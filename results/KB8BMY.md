@@ -1,12 +1,14 @@
 # [KB8BMY](https://www.qrz.com/db/KB8BMY)
 
-| Total Score        |   96 |
-|:-------------------|-----:|
-| Total Contacts     |   55 |
-| QRP Contacts       |   41 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   96 |
+|:----------------------|-----:|
+| Total Contacts        |   55 |
+| QRP Contacts          |   41 |
+| 2m Repeaters Worked   |   12 |
+| 70cm Repeaters Worked |    6 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

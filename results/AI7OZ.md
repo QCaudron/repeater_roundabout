@@ -1,12 +1,14 @@
 # [AI7OZ](https://www.qrz.com/db/AI7OZ)
 
-| Total Score        |   69 |
-|:-------------------|-----:|
-| Total Contacts     |   70 |
-| QRP Contacts       |    0 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    1 |
-| Full House         |      |
+| Total Score           |   69 |
+|:----------------------|-----:|
+| Total Contacts        |   70 |
+| QRP Contacts          |    0 |
+| 2m Repeaters Worked   |   12 |
+| 70cm Repeaters Worked |   11 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    1 |
+| Full House            |      |
 
 ---
 

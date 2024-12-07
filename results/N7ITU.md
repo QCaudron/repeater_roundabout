@@ -1,12 +1,14 @@
 # [N7ITU](https://www.qrz.com/db/N7ITU)
 
-| Total Score        |   54 |
-|:-------------------|-----:|
-| Total Contacts     |   31 |
-| QRP Contacts       |   27 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    4 |
-| Full House         |      |
+| Total Score           |   54 |
+|:----------------------|-----:|
+| Total Contacts        |   31 |
+| QRP Contacts          |   27 |
+| 2m Repeaters Worked   |   10 |
+| 70cm Repeaters Worked |    0 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    4 |
+| Full House            |      |
 
 ---
 

@@ -1,12 +1,14 @@
 # [KG7ODB](https://www.qrz.com/db/KG7ODB)
 
-| Total Score        |   342 |
-|:-------------------|------:|
-| Total Contacts     |   180 |
-| QRP Contacts       |   164 |
-| Band Hog Contacts  |     0 |
-| Duplicate Contacts |     2 |
-| Full House         |       |
+| Total Score           |   342 |
+|:----------------------|------:|
+| Total Contacts        |   180 |
+| QRP Contacts          |   164 |
+| 2m Repeaters Worked   |    21 |
+| 70cm Repeaters Worked |    24 |
+| Band Hog Contacts     |     0 |
+| Duplicate Contacts    |     2 |
+| Full House            |       |
 
 ---
 

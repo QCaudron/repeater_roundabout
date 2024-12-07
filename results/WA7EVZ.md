@@ -1,12 +1,14 @@
 # [WA7EVZ](https://www.qrz.com/db/WA7EVZ)
 
-| Total Score        |   372 |
-|:-------------------|------:|
-| Total Contacts     |   256 |
-| QRP Contacts       |   146 |
-| Band Hog Contacts  |     0 |
-| Duplicate Contacts |    30 |
-| Full House         |       |
+| Total Score           |   372 |
+|:----------------------|------:|
+| Total Contacts        |   256 |
+| QRP Contacts          |   146 |
+| 2m Repeaters Worked   |    29 |
+| 70cm Repeaters Worked |    28 |
+| Band Hog Contacts     |     0 |
+| Duplicate Contacts    |    30 |
+| Full House            |       |
 
 ---
 

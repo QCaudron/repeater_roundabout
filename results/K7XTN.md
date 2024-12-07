@@ -1,12 +1,14 @@
 # [K7XTN](https://www.qrz.com/db/K7XTN)
 
-| Total Score        |   3 |
-|:-------------------|----:|
-| Total Contacts     |   3 |
-| QRP Contacts       |   0 |
-| Band Hog Contacts  |   0 |
-| Duplicate Contacts |   0 |
-| Full House         |     |
+| Total Score           |   3 |
+|:----------------------|----:|
+| Total Contacts        |   3 |
+| QRP Contacts          |   0 |
+| 2m Repeaters Worked   |   1 |
+| 70cm Repeaters Worked |   0 |
+| Band Hog Contacts     |   0 |
+| Duplicate Contacts    |   0 |
+| Full House            |     |
 
 ---
 

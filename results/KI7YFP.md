@@ -1,12 +1,14 @@
 # [KI7YFP](https://www.qrz.com/db/KI7YFP)
 
-| Total Score        |   31 |
-|:-------------------|-----:|
-| Total Contacts     |   25 |
-| QRP Contacts       |    6 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   31 |
+|:----------------------|-----:|
+| Total Contacts        |   25 |
+| QRP Contacts          |    6 |
+| 2m Repeaters Worked   |   11 |
+| 70cm Repeaters Worked |    1 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

@@ -1,12 +1,14 @@
 # [KK7WLI](https://www.qrz.com/db/KK7WLI)
 
-| Total Score        |   16 |
-|:-------------------|-----:|
-| Total Contacts     |    9 |
-| QRP Contacts       |    7 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   16 |
+|:----------------------|-----:|
+| Total Contacts        |    9 |
+| QRP Contacts          |    7 |
+| 2m Repeaters Worked   |    3 |
+| 70cm Repeaters Worked |    4 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

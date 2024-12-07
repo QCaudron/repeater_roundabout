@@ -1,12 +1,14 @@
 # [KK7TUE](https://www.qrz.com/db/KK7TUE)
 
-| Total Score        |   50 |
-|:-------------------|-----:|
-| Total Contacts     |   30 |
-| QRP Contacts       |   20 |
-| Band Hog Contacts  |    0 |
-| Duplicate Contacts |    0 |
-| Full House         |      |
+| Total Score           |   50 |
+|:----------------------|-----:|
+| Total Contacts        |   30 |
+| QRP Contacts          |   20 |
+| 2m Repeaters Worked   |   11 |
+| 70cm Repeaters Worked |   10 |
+| Band Hog Contacts     |    0 |
+| Duplicate Contacts    |    0 |
+| Full House            |      |
 
 ---
 

@@ -1,12 +1,14 @@
 # [K7CX](https://www.qrz.com/db/K7CX)
 
-| Total Score        |   113 |
-|:-------------------|------:|
-| Total Contacts     |    70 |
-| QRP Contacts       |    46 |
-| Band Hog Contacts  |     0 |
-| Duplicate Contacts |     3 |
-| Full House         |       |
+| Total Score           |   113 |
+|:----------------------|------:|
+| Total Contacts        |    70 |
+| QRP Contacts          |    46 |
+| 2m Repeaters Worked   |     4 |
+| 70cm Repeaters Worked |     3 |
+| Band Hog Contacts     |     0 |
+| Duplicate Contacts    |     3 |
+| Full House            |       |
 
 ---
 

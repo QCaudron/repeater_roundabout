@@ -1,12 +1,14 @@
 # [K7WFB](https://www.qrz.com/db/K7WFB)
 
-| Total Score        |   407 |
-|:-------------------|------:|
-| Total Contacts     |   149 |
-| QRP Contacts       |   122 |
-| Band Hog Contacts  |    73 |
-| Duplicate Contacts |     4 |
-| Full House         |       |
+| Total Score           |   407 |
+|:----------------------|------:|
+| Total Contacts        |   149 |
+| QRP Contacts          |   122 |
+| 2m Repeaters Worked   |    18 |
+| 70cm Repeaters Worked |    30 |
+| Band Hog Contacts     |    73 |
+| Duplicate Contacts    |     4 |
+| Full House            |       |
 
 ---
 
