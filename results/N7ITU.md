@@ -10,7 +10,7 @@
 | Duplicate Contacts    |    4 |
 | Full House            |      |
 
-Download a full copy of your log [here](/results/N7ITU/log.csv).
+Download a full copy of your log [here](/results/N7ITU.csv).
 
 ---
 

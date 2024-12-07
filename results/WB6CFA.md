@@ -10,7 +10,7 @@
 | Duplicate Contacts    |     6 |
 | Full House            |       |
 
-Download a full copy of your log [here](/results/WB6CFA/log.csv).
+Download a full copy of your log [here](/results/WB6CFA.csv).
 
 ---
 

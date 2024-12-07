@@ -10,7 +10,7 @@
 | Duplicate Contacts    |     3 |
 | Full House            |       |
 
-Download a full copy of your log [here](/results/K7CX/log.csv).
+Download a full copy of your log [here](/results/K7CX.csv).
 
 ---
 

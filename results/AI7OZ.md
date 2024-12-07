@@ -10,7 +10,7 @@
 | Duplicate Contacts    |    1 |
 | Full House            |      |
 
-Download a full copy of your log [here](/results/AI7OZ/log.csv).
+Download a full copy of your log [here](/results/AI7OZ.csv).
 
 ---
 

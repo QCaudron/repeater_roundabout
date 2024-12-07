@@ -10,7 +10,7 @@
 | Duplicate Contacts    |    30 |
 | Full House            |       |
 
-Download a full copy of your log [here](/results/WA7EVZ/log.csv).
+Download a full copy of your log [here](/results/WA7EVZ.csv).
 
 ---
 

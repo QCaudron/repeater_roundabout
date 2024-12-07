@@ -10,7 +10,7 @@
 | Duplicate Contacts    |    23 |
 | Full House            |       |
 
-Download a full copy of your log [here](/results/AG7LR/log.csv).
+Download a full copy of your log [here](/results/AG7LR.csv).
 
 ---
 
