@@ -308,6 +308,11 @@ def score_competition(
     logs_df["Group"] = logs_df.apply(lambda row: f"[{row['Group']}]({row['Website']})", axis=1)
     logs_df = logs_df.drop(columns=["Website"])
 
+    # 2024 : merge duplicate repeaters
+    dupe_rrs = [(25, 29), (26, 30)]
+    for primary, secondary in dupe_rrs:
+        logs_df.loc[logs_df["RR#"] == secondary, "RR#"] = primary
+
     # Calculate the number of activations per repeater
     agg_cols = {
         "Group": "first",

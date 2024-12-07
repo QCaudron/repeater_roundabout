@@ -27,8 +27,8 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 26,KC7Z,442.650,+5.0,103.5,,Gold Mtn.,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54944949,-122.783426
 27,KC7Z,441.175,+5.0,103.5,485,Gold Mtn.,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,53,47.54944949,-122.783426
 28,KC7Z,444.075,+5.0,103.5,5463,East Bremerton,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,53,47.60211625,-122.6173161
-29,WW7RA,146.620,-0.6,103.5,59,Bremerton,FM,Kitsap County Amateur Radio Club,http://www.kcarc.org/,53,47.6555143,-122.9594265
-30,WW7RA,442.65,+5.0,103.5,60,Bremerton,FM,Kitsap County Amateur Radio Club,http://www.kcarc.org/,53,47.6555143,-122.9594265
+29,WW7RA,146.620,-0.6,103.5,59,Bremerton,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,53,47.6555143,-122.9594265
+30,WW7RA,442.65,+5.0,103.5,60,Bremerton,FM,Kitsap County Amateur Radio Club,https://kcarc.org/,53,47.6555143,-122.9594265
 31,W7JCR,145.150,-0.6,114.8,,Port Townsend,FM,Jefferson County Amateur Radio Club,https://w7jcr.wordpress.com/,,48.11700058,-122.76000214
 32,AA7MI,440.725,+5.0,114.8,,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,https://www.qrz.com/db/AA7MI,,48.05830002,-122.68800354
 33,N7SK,146.720,-0.6,103.5,,Shelton,FM,Mason County Amateur Radio Club,https://mc-arc.org/,,47.21509933,-123.10099792
