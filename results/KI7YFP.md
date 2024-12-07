@@ -10,9 +10,15 @@
 | Duplicate Contacts    |    0 |
 | Full House            |      |
 
+<br />
+
+Download a full copy of your log [here](/results/[KI7YFP](https://www.qrz.com/db/KI7YFP)/log.csv).
+
 ---
 
 ## Full log
+
+<br />
 
 |   RR# | Group         |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

@@ -10,9 +10,15 @@
 | Duplicate Contacts    |     6 |
 | Full House            |       |
 
+<br />
+
+Download a full copy of your log [here](/results/[WB6CFA](https://www.qrz.com/db/WB6CFA)/log.csv).
+
 ---
 
 ## Full log
+
+<br />
 
 |   RR# | Group       |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:------------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

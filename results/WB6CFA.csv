@@ -1,0 +1,82 @@
+RR#,Date,Time,Callsign,Report,QRP,Band,Group,Band Hog,QSO Score
+26,November 23,9:53,KC7SVI,5,False,70cm,KCARC,False,1
+26,November 23,9:57,K7DRQ,5,False,70cm,KCARC,False,1
+26,November 23,9:59,KI7JD,5,False,70cm,KCARC,False,1
+26,November 23,10:04,KB8BMY,5,False,70cm,KCARC,False,1
+36,November 23,11:21,W7ROV,4,False,2m,FWARC,False,1
+36,November 23,11:23:00,KJ7ALM,3,False,2m,FWARC,False,1
+59,November 23,11:41,W7VXS,5,True,2m,BEARS,False,2
+59,November 23,11:42,N7RSS,5,True,2m,BEARS,False,2
+77,November 23,11:48,K7CX,5,True,70cm,HARC,False,2
+75,November 23,11:54,K7CX,5,True,70cm,HARC,False,2
+74,November 23,11:57,K7CX,4,True,2m,HARC,False,2
+82,November 23,12:03,K7SXR,5,True,2m,CPRG,False,2
+82,November 23,12:05,N3KPU,5,True,2m,CPRG,False,2
+133,November 23,12:21,K7WFB,4,True,70cm,Seattle ACS,False,2
+133,November 23,12:22,AA7RM,5,True,70cm,Seattle ACS,False,2
+133,November 23,12:26,N6NBN,5,True,70cm,Seattle ACS,False,2
+133,November 23,12:27,WA7EVZ,3,True,70cm,Seattle ACS,False,2
+25,November 23,2:04,KK7UUM,3,True,2m,KCARC,False,2
+59,November 23,2:08,W7ROV,5,True,2m,BEARS,False,2
+59,November 23,2:15,KK7QLW,5,True,2m,BEARS,False,2
+59,November 23,2:17,KK7WID,5,True,2m,BEARS,False,2
+59,November 23,2:18,KK7TYM,5,True,2m,BEARS,False,2
+59,November 23,2:19,AG7LR,5,True,2m,BEARS,False,2
+82,November 23,2:48,W8ESM,5,True,2m,CPRG,False,2
+82,November 23,2:49,W7ROV,3,True,2m,CPRG,False,2
+40,November 23,2:51,W7ROV,2,True,2m,Pierce,False,2
+40,November 23,2:55,K7CX,2,True,2m,Pierce,False,2
+36,November 23,2:57,KJ7SXR,5,True,2m,FWARC,False,2
+26,November 24,11:45,K7WFB,5,True,70cm,KCARC,False,2
+25,November 24,11:46,K7WFB,4,True,2m,KCARC,False,2
+22,November 24,11:46,K7WFB,4,True,2m,MIRO,False,2
+3,November 24,11:46,K7WFB,4,True,70cm,WW7SEA,False,2
+11,November 24,11:50,K7WFB,3,True,70cm,Seattle ACS,False,2
+12,November 24,11:58,K7WFB,5,True,70cm,Seattle ACS,False,2
+13,November 24,11:58,K7WFB,2,True,70cm,Seattle ACS,False,2
+17,November 24,12:05,K7WFB,3,True,70cm,Seattle ACS,False,2
+40,November 24,12:10,K7WFB,2,True,2m,Pierce,False,2
+46,November 24,12:15,K7WFB,5,True,70cm,SeaTac,False,2
+58,November 24,12:15,K7WFB,5,True,70cm,BEARS,False,2
+59,November 24,12:19,K7WFB,5,True,2m,BEARS,False,2
+101,November 24,12:35,K7WFB,3,True,2m,WWMST,False,2
+102,November 24,12:32,K7WFB,4,True,70cm,WWMST,False,2
+36,November 24,1:10,AG7LR,5,True,2m,FWARC,False,2
+38,November 24,1:12,AI7OZ,4,True,70cm,FWARC,False,2
+36,November 24,1:20,AI7OZ,5,True,2m,FWARC,False,2
+37,November 24,1:21,AI7OZ,5,True,70cm,FWARC,False,2
+41,November 24,1:23,AI7OZ,5,True,2m,Eatonville,False,2
+42,November 24,1:25,AI7OZ,4,True,1.25m,Eatonville,False,2
+98,November 24,1:32,AI7OZ,4,True,1.25m,Mike & Key,False,2
+82,November 24,1:47,AI7OZ,2,True,2m,CPRG,False,2
+41,November 24,1:47,KB8BMY,5,True,2m,Eatonville,False,2
+82,November 24,1:55,KB8BMY,4,True,2m,CPRG,False,2
+7,November 24,1:55,KB8BMY,4,True,2m,RCTacoma,False,2
+7,November 24,1:56,AI7OZ,4,True,2m,RCTacoma,False,2
+8,November 24,1:57,KB8BMY,4,True,70cm,RCTacoma,False,2
+9,November 24,2:00,AI7OZ,3,True,2m,RCTacoma,False,2
+9,November 24,2:01,KB8BMY,4,True,2m,RCTacoma,False,2
+9,November 24,2:02,KB7SDM,4,True,2m,RCTacoma,False,2
+12,November 24,2:10,KB7SDM,4,True,70cm,Seattle ACS,False,2
+12,November 24,2:10,AI7OZ,2,True,70cm,Seattle ACS,False,2
+25,November 24,2:11,AI7OZ,5,True,2m,KCARC,False,2
+7,November 24,2:12,KB7SDM,5,True,2m,RCTacoma,False,2
+46,November 24,2:28,KB7SDM,1,True,70cm,SeaTac,False,2
+46,November 24,2:28,AI7OZ,1,True,70cm,SeaTac,False,2
+25,November 24,2:30,KB8BMY,3,True,2m,KCARC,False,2
+25,November 24,2:30,KB7SDM,5,True,2m,KCARC,False,2
+25,November 24,2:31,AG7LR,4,True,2m,KCARC,False,2
+70,November 24,2:35,AI7GZ,1,True,70cm,OARS,False,2
+70,November 24,2:35,KB8BMY,3,True,70cm,OARS,False,2
+70,November 24,2:36,AG7LR,3,True,70cm,OARS,False,2
+70,November 24,2:36,AI7OZ,3,True,70cm,OARS,False,2
+97,November 24,3:10,AG7LR,5,True,2m,Mike & Key,False,2
+97,November 24,3:10,AI7OZ,4,True,2m,Mike & Key,False,2
+97,November 24,3:17,KB8BMY,5,True,2m,Mike & Key,False,2
+97,November 24,3:17,KJ7ALM,4,True,2m,Mike & Key,False,2
+36,November 24,3:45,KB8BMY,4,True,2m,FWARC,False,2
+37,November 24,3:46,KB7RYY,5,True,70cm,FWARC,False,2
+37,November 24,3:48,KB8BMY,5,True,70cm,FWARC,False,2
+37,November 24,3:48,KJ7ALM,4,True,70cm,FWARC,False,2
+37,November 24,3:49,KK7PMI,5,True,70cm,FWARC,False,2
+38,November 24,4:00,KB7RYY,5,True,70cm,FWARC,False,2

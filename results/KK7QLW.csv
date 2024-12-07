@@ -1,0 +1,72 @@
+RR#,Date,Time,Callsign,Report,QRP,Band,Group,Band Hog,QSO Score
+59,November 23,12:29,KK7WLI,4,False,2m,BEARS,False,1
+59,November 23,12:30,WA7EVZ,5,False,2m,BEARS,False,1
+59,November 23,12:33,KJ7SXR,5,False,2m,BEARS,False,1
+59,November 23,12:35,KI7YFP,5,False,2m,BEARS,False,1
+19,November 23,12:45,N7ANH,5,False,2m,LWHC,False,1
+19,November 23,12:47,KK7MZW,5,False,2m,LWHC,False,1
+25,November 23,12:55,KS5B,5,False,2m,KCARC,False,1
+25,November 23,12:58,KJ7LFA,5,False,2m,KCARC,False,1
+25,November 23,12:59,KJ7LAE,5,False,2m,KCARC,False,1
+25,November 23,13:01,AG7LR,5,False,2m,KCARC,False,1
+25,November 23,13:02,KK7WID,5,False,2m,KCARC,False,1
+25,November 23,13:05,KI7JD,5,False,2m,KCARC,False,1
+25,November 23,13:06,KK7VKS,5,False,2m,KCARC,False,1
+101,November 23,13:15,KI6KTE,5,False,2m,WWMST,False,1
+101,November 23,13:16,KK7PMI,5,False,2m,WWMST,False,1
+107,November 23,13:30,KI6KTE,5,False,2m,Snohomish ACS,False,1
+107,November 23,13:32,KK7PMI,5,False,2m,Snohomish ACS,False,1
+107,November 23,13:31,KK7WGD,5,False,2m,Snohomish ACS,False,1
+107,November 23,13:33,KZ7G,5,False,2m,Snohomish ACS,False,1
+103,November 23,13:36,KI6KTE,5,False,2m,WWDXC,False,1
+103,November 23,13:37,KK7PMI,5,False,2m,WWDXC,False,1
+65,November 23,13:41,AG7LR,3,False,2m,N9VW,False,1
+80,November 23,13:51,AG7LR,4,False,2m,K6RFK,False,1
+1,November 23,13:59,KJ7NUW,5,False,2m,PSRG,False,1
+1,November 23,14:01,KJ7RAB,5,False,2m,PSRG,False,1
+1,November 23,14:01,KJ7JXM,5,False,2m,PSRG,False,1
+1,November 23,14:06,VY1MGSQ,5,False,2m,PSRG,False,1
+1,November 23,14:08,K9BDC,5,False,2m,PSRG,False,1
+1,November 23,14:08,K9MLR,5,False,2m,PSRG,False,1
+1,November 23,14:09,KE7NOR,5,False,2m,PSRG,False,1
+59,November 23,14:14,W7ROV,5,False,2m,BEARS,False,1
+59,November 23,14:14,WB6CFA,5,False,2m,BEARS,False,1
+59,November 23,14:15,KK7WID,5,False,2m,BEARS,False,1
+59,November 23,14:17,KK7TYM,5,False,2m,BEARS,False,1
+59,November 23,14:20,AG7LR,5,False,2m,BEARS,False,1
+59,November 23,14:34,KK7PMI,5,False,2m,BEARS,False,1
+59,November 23,14:35,KK7BMT,5,False,2m,BEARS,False,1
+19,November 23,14:41,KB7SDM,5,False,2m,LWHC,False,1
+19,November 23,14:44,K7WFB,5,False,2m,LWHC,False,1
+19,November 23,14:52,KI7YFP,5,False,2m,LWHC,False,1
+19,November 23,14:49,AA7RM,5,False,2m,LWHC,False,1
+25,November 23,14:57,W7ROV,5,False,2m,KCARC,False,1
+25,November 23,14:58,KK7UUM,5,False,2m,KCARC,False,1
+25,November 23,15:10,KJ7SXR,5,False,2m,KCARC,False,1
+19,November 23,15:17,KB7RYY,5,False,2m,LWHC,False,1
+19,November 23,15:18,AG7LR,5,False,2m,LWHC,False,1
+1,November 23,15:24,KK7UUM,5,False,2m,PSRG,False,1
+1,November 23,15:25,AG7LR,5,False,2m,PSRG,False,1
+1,November 23,15:26,KE6NAV,5,False,2m,PSRG,False,1
+1,November 23,15:29,KM6PWV,5,False,2m,PSRG,False,1
+1,November 23,15:32,AA7RM,5,False,2m,PSRG,False,1
+59,November 23,15:41,WA7PVE,5,False,2m,BEARS,False,1
+59,November 23,15:41,W7VXS,5,False,2m,BEARS,False,1
+59,November 23,15:49,KA7CEE,5,False,2m,BEARS,False,1
+59,November 23,15:54,KJ7KSX,5,False,2m,BEARS,False,1
+59,November 23,15:56,KI6KTE,5,False,2m,BEARS,False,1
+59,November 23,15:59,W7VAN,5,False,2m,BEARS,False,1
+1,November 23,16:18,KI6KTE,5,False,2m,PSRG,False,1
+1,November 23,16:22,KE8UVJ,2,False,2m,PSRG,False,1
+1,November 23,16:23,KK7WID,5,False,2m,PSRG,False,1
+1,November 23,16:26,LA5VMA,5,False,2m,PSRG,False,1
+97,November 23,18:25,W7SFO,5,False,2m,Mike & Key,False,1
+97,November 23,18:38,KK7WEM,5,False,2m,Mike & Key,False,1
+97,November 23,18:39,KJ7GDN,5,False,2m,Mike & Key,False,1
+97,November 23,18:49,W5AHL,5,False,2m,Mike & Key,False,1
+97,November 23,18:49,W3TOJ,5,False,2m,Mike & Key,False,1
+97,November 23,18:50,KK7WLO,5,False,2m,Mike & Key,False,1
+97,November 23,18:51,KJ7CBO,5,False,2m,Mike & Key,False,1
+65,November 23,19:02,KB7SDM,5,False,2m,N9VW,False,1
+65,November 23,19:02,N3KPU,5,False,2m,N9VW,False,1
+65,November 23,19:04,WA7EVZ,5,False,2m,N9VW,False,1

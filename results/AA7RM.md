@@ -10,9 +10,15 @@
 | Duplicate Contacts    |     1 |
 | Full House            |       |
 
+<br />
+
+Download a full copy of your log [here](/results/[AA7RM](https://www.qrz.com/db/AA7RM)/log.csv).
+
 ---
 
 ## Full log
+
+<br />
 
 |   RR# | Group         |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

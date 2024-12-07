@@ -10,9 +10,15 @@
 | Duplicate Contacts    |     3 |
 | Full House            |       |
 
+<br />
+
+Download a full copy of your log [here](/results/[KI6KTE](https://www.qrz.com/db/KI6KTE)/log.csv).
+
 ---
 
 ## Full log
+
+<br />
 
 |   RR# | Group         |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

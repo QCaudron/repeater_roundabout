@@ -1,0 +1,89 @@
+RR#,Date,Time,Callsign,Report,QRP,Band,Group,Band Hog,QSO Score
+25,Sat- 23-Nov,9:31,K7CX,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,9:31,KK7UUM,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,9:32,KC7SVI,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,9:35,KI7JD,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,9:45,K7DRQ,5,False,2m,KCARC,False,1
+26,Sat- 23-Nov,9:45,K7DRQ,5,False,70cm,KCARC,False,1
+27,Sat- 23-Nov,9:47,K7DRQ,5,False,70cm,KCARC,False,1
+28,Sat- 23-Nov,9:48,K7DRQ,4,False,70cm,KCARC,False,1
+28,Sat- 23-Nov,9:50,K7WFB,5,False,70cm,KCARC,False,1
+54,Sat- 23-Nov,10:04,K7CX,4,False,70cm,N7OEP,False,1
+25,Sat- 23-Nov,10:28,KK7NYW,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,10:31,KI7AUH,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,10:37,K7WFB,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,10:39,AA7RM,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,10:44,KJ7LAE,5,False,2m,KCARC,False,1
+25,Sat- 23-Nov,11:02,W7ROV,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,11:03,KB8BMY,5,True,2m,KCARC,False,2
+47,Sat- 23-Nov,11:12,K7WFB,5,False,70cm,SeaTac,False,1
+47,Sat- 23-Nov,11:13,AA7RM,5,False,70cm,SeaTac,False,1
+25,Sat- 23-Nov,11:22,KJ7EXM,5,False,2m,KCARC,False,1
+59,Sat- 23-Nov,11:32,W7VXS,5,False,2m,BEARS,False,1
+82,Sat- 23-Nov,11:40,N3KPU,5,False,2m,CPRG,False,1
+12,Sat- 23-Nov,11:56,WA7EVZ,5,False,70cm,Seattle ACS,False,1
+25,Sat- 23-Nov,12:02,KK7QLW,5,False,2m,KCARC,False,1
+2,Sat- 23-Nov,13:09,K7PAL,5,False,6m,PSRG,False,1
+27,Sat- 23-Nov,13:26,AG7LR,4,False,70cm,KCARC,False,1
+31,Sat- 23-Nov,13:33,KI7AUH,3,False,2m,JCARC,False,1
+59,Sat- 23-Nov,14:08,N7URH,5,False,2m,BEARS,False,1
+59,Sat- 23-Nov,14:08,W7ROV,5,False,2m,BEARS,False,1
+59,Sat- 23-Nov,14:11,KK7AOM,5,False,2m,BEARS,False,1
+59,Sat- 23-Nov,14:15,KK7QLW,5,False,2m,BEARS,False,1
+59,Sat- 23-Nov,14:15,WB6CFA,5,True,2m,BEARS,False,2
+59,Sat- 23-Nov,14:15,KK7TYM,5,False,2m,BEARS,False,1
+59,Sat- 23-Nov,14:20,AG6LR,5,False,2m,BEARS,False,1
+25,Sat- 23-Nov,14:22,KS5B,5,False,2m,KCARC,False,1
+104,Sat- 23-Nov,14:34,KI7YFP,5,False,2m,Snohomish ACS,False,1
+109,Sat- 23-Nov,14:39,AA7RM,4,False,70cm,Snohomish ACS,False,1
+169,Sat- 23-Nov,14:47,AI7OE,5,False,70cm,BARC,False,1
+133,Sat- 23-Nov,14:53,AG7LR,4,False,70cm,Seattle ACS,False,1
+25,Sat- 23-Nov,15:09,KJ7SXR,5,True,2m,KCARC,False,2
+1,Sat- 23-Nov,15:16,KK7UUM,5,True,2m,PSRG,False,2
+1,Sat- 23-Nov,15:26,KM6PWV,5,True,2m,PSRG,False,2
+1,Sat- 23-Nov,15:33,AA7RM,5,True,2m,PSRG,False,2
+74,Sat- 23-Nov,15:36,K7CX,4,False,2m,HARC,False,1
+75,Sat- 23-Nov,15:37,K7CX,5,False,70cm,HARC,False,1
+76,Sat- 23-Nov,15:38,K7CX,5,False,70cm,HARC,False,1
+1,Sat- 23-Nov,15:43,K7DRQ,4,True,2m,PSRG,False,2
+1,Sat- 23-Nov,15:47,WW7KEN,5,False,2m,PSRG,False,1
+82,Sat- 23-Nov,15:58,KI7SS,5,False,2m,CPRG,False,1
+25,Sat- 23-Nov,16:05,KK7MZQ,5,False,2m,KCARC,False,1
+25,Sat- 23-Nov,16:07,AG7LR,5,True,2m,KCARC,False,2
+1,Sat- 23-Nov,16:16,KI6KTE,5,False,2m,PSRG,False,1
+1,Sat- 23-Nov,16:23,KK7QLW,5,False,2m,PSRG,False,1
+25,Sat- 23-Nov,17:34,WA7EVZ,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,17:34,N3KPU,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,17:35,N7ITU,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,17:38,KK7WEM,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,17:39,KJ7GDN,5,True,2m,KCARC,False,2
+25,Sat- 23-Nov,17:45,KK7WLO,5,True,2m,KCARC,False,2
+1,Sat- 23-Nov,18:02,VE3XBF,4,False,2m,PSRG,False,1
+46,Sat- 23-Nov,18:10,WA7EVZ,4,False,70cm,SeaTac,False,1
+46,Sat- 23-Nov,18:10,AG7LR,4,False,70cm,SeaTac,False,1
+46,Sat- 23-Nov,18:10,N3KPU,4,False,70cm,SeaTac,False,1
+46,Sat- 23-Nov,18:11,KB7SDM,4,False,70cm,SeaTac,False,1
+54,Sat- 23-Nov,18:15,WA7EVZ,4,False,70cm,N7OEP,False,1
+54,Sat- 23-Nov,18:16,AG7LR,4,False,70cm,N7OEP,False,1
+54,Sat- 23-Nov,18:17,N3KPU,4,False,70cm,N7OEP,False,1
+55,Sat- 23-Nov,18:26,KJ7GDN,5,False,70cm,K7DK,False,1
+55,Sat- 23-Nov,18:26,AG7LR,4,False,70cm,K7DK,False,1
+55,Sat- 23-Nov,18:27,N3KPU,5,False,70cm,K7DK,False,1
+55,Sat- 23-Nov,18:27,WA7EVZ,3,False,70cm,K7DK,False,1
+55,Sat- 23-Nov,18:32,KB7SDM,5,False,70cm,K7DK,False,1
+58,Sat- 23-Nov,18:35,WA7EVZ,5,False,70cm,BEARS,False,1
+58,Sat- 23-Nov,18:35,AG7LR,5,False,70cm,BEARS,False,1
+58,Sat- 23-Nov,18:35,N3KPU,5,False,70cm,BEARS,False,1
+58,Sat- 23-Nov,18:37,W7VXS,5,False,70cm,BEARS,False,1
+58,Sat- 23-Nov,18:38,KB7SDM,5,False,70cm,BEARS,False,1
+2,Sat- 23-Nov,20:17,K7WFB,5,False,6m,PSRG,False,1
+2,Sat- 23-Nov,20:18,WA7FOX,5,False,6m,PSRG,False,1
+2,Sat- 23-Nov,20:18,KI6KTE,5,False,6m,PSRG,False,1
+11,Sat- 23-Nov,20:20,KI6KTE,5,False,70cm,Seattle ACS,False,1
+12,Sat- 23-Nov,20:24,KI6KTE,5,False,70cm,Seattle ACS,False,1
+13,Sat- 23-Nov,20:25,KI6KTE,5,False,70cm,Seattle ACS,False,1
+16,Sat- 23-Nov,20:29,KI6KTE,4,False,70cm,Seattle ACS,False,1
+17,Sat- 23-Nov,20:33,KI6KTE,4,False,70cm,Seattle ACS,False,1
+19,Sat- 23-Nov,20:35,KI6KTE,3,False,2m,LWHC,False,1
+13,Sat- 23-Nov,20:37,K7WFB,5,False,70cm,Seattle ACS,False,1
+22,Sat- 23-Nov,20:40,KI6KTE,5,False,2m,MIRO,False,1

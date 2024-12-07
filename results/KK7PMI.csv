@@ -1,0 +1,33 @@
+RR#,Date,Time,Callsign,Report,QRP,Band,Group,Band Hog,QSO Score
+101,November 23,13:17,KK7QLW,5,True,2m,WWMST,False,2
+101,November 23,13:17,KI6KTE,5,True,2m,WWMST,False,2
+59,November 23,14:35,KK7QLW,5,True,2m,BEARS,False,2
+104,November 23,13:26,W7VXS,5,True,2m,Snohomish ACS,False,2
+104,November 23,13:30,KI6KTE,5,True,2m,Snohomish ACS,False,2
+104,November 23,13:32,KK7QLW,5,True,2m,Snohomish ACS,False,2
+104,November 23,13:33,KZ7G,5,True,2m,Snohomish ACS,False,2
+103,November 23,13:37,KK7QLW,5,True,2m,WWDXC,False,2
+160,November 23,13:45,WB7DOB,5,True,2m,WB7DOB,False,2
+160,November 23,13:45,KI6KTE,5,True,2m,WB7DOB,False,2
+160,November 23,13:47,N7ROB,4,True,2m,WB7DOB,False,2
+103,November 23,13:50,KI6KTE,5,True,2m,WWDXC,False,2
+12,November 23,13:56,AA7RM,5,True,70cm,Seattle ACS,False,2
+12,November 23,13:56,KK7WFB,5,True,70cm,Seattle ACS,False,2
+47,November 23,21:17,KE7NOR,5,True,70cm,SeaTac,False,2
+47,November 23,21:17,KB7SDM,5,True,70cm,SeaTac,False,2
+60,November 23,22:29,KE7NOR,5,True,1.25m,BEARS,False,2
+60,November 23,22:29,KB7SDM,5,True,1.25m,BEARS,False,2
+60,November 23,22:29,N7IQZ,5,True,1.25m,BEARS,False,2
+60,November 23,22:29,AE7TG,5,True,1.25m,BEARS,False,2
+98,November 23,22:36,W3TOJ,5,True,1.25m,Mike & Key,False,2
+98,November 23,22:36,AE7TG,5,True,1.25m,Mike & Key,False,2
+1,November 23,22:51,KI6KTE,5,True,2m,PSRG,False,2
+1,November 23,22:51,AE7TG,5,True,2m,PSRG,False,2
+3,November 23,22:57,K7WFB,5,True,70cm,WW7SEA,False,2
+3,November 23,22:57,KG7ODB,5,True,70cm,WW7SEA,False,2
+3,November 23,22:57,KI6KTE,5,True,70cm,WW7SEA,False,2
+3,November 23,22:57,N7IQZ,4,True,70cm,WW7SEA,False,2
+3,November 23,22:57,AG7LR,5,True,70cm,WW7SEA,False,2
+3,November 23,22:57,WA7EVZ,5,True,70cm,WW7SEA,False,2
+37,November 24,15:54,WB6CFA,5,True,70cm,FWARC,False,2
+37,November 24,15:54,AI7OZ,5,True,70cm,FWARC,False,2

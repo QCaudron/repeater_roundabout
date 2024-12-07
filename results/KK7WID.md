@@ -10,9 +10,15 @@
 | Duplicate Contacts    |     0 |
 | Full House            |       |
 
+<br />
+
+Download a full copy of your log [here](/results/[KK7WID](https://www.qrz.com/db/KK7WID)/log.csv).
+
 ---
 
 ## Full log
+
+<br />
 
 |   RR# | Group         |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

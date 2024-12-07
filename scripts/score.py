@@ -91,6 +91,7 @@ def signal_report_to_readability(report: str) -> Optional[int]:
 
 
 def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) -> None:
+    results_dir = Path("results")
 
     # Read the template
     with open("assets/templates/personal_results.md", "r") as f:
@@ -100,6 +101,7 @@ def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) 
     logs = logs.drop(columns=["Logger"]).rename(
         columns={"Signal Report": "Report", "Group Name": "Group", "Bandhog": "Band Hog"}
     )
+    logs.to_csv(results_dir / f"{callsign}.csv", index=True)  # write a copy for download
     logs = logs[["Group", "Callsign", "Report", "Band", "QRP", "Band Hog", "QSO Score"]]
     for col in ["QRP", "Band Hog"]:
         logs[col] = logs[col].apply(lambda x: "X" if x else "")
@@ -122,7 +124,6 @@ def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) 
     )
 
     # Write it
-    results_dir = Path("results")
     if not results_dir.exists():
         results_dir.mkdir()
     with open(results_dir / f"{callsign}.md", "w") as f:

@@ -1,0 +1,56 @@
+RR#,Date,Time,Callsign,Report,QRP,Band,Group,Band Hog,QSO Score
+26,Nov 23,1000,K7WFB,4,True,70cm,KCARC,False,2
+26,November 23,1003,WB6CFA,5,True,70cm,KCARC,False,2
+59,November 23,1020,W7PXS,4,True,2m,BEARS,False,2
+59,November 23,1022,W7ROV,5,True,2m,BEARS,False,2
+59,November 23,1025,WA7BEN,5,True,2m,BEARS,False,2
+33,November 23,1042,KI7HSG,4,True,2m,MCARC,False,2
+33,November 23,1045,AB7I,5,True,2m,MCARC,False,2
+29,November 23,1103,KK7WID,5,True,2m,KCARC,False,2
+25,November 23,1106,W7ROV,5,True,2m,KCARC,False,2
+25,November 23,1111,KC7SVI,5,True,2m,KCARC,False,2
+22,November 23,1115,KJ7ESM,5,True,2m,MIRO,False,2
+162,November 23,1249,WB7DOB,5,True,2m,WB7DOB,False,2
+25,November 23,1750,KK7WLO,5,True,2m,KCARC,False,2
+25,November 23,1751,KJ7GDN,5,True,2m,KCARC,False,2
+98,November 24,850,K7CX,5,True,1.25m,Mike & Key,False,2
+98,November 24,854,AI7OZ,4,True,1.25m,Mike & Key,False,2
+54,November 24,906,K7CX,5,True,70cm,N7OEP,False,2
+97,November 24,1121,WA7MPC,5,True,2m,Mike & Key,False,2
+97,November 24,1125,N7XS,5,True,2m,Mike & Key,False,2
+97,November 24,1136,K7WFB,5,True,2m,Mike & Key,False,2
+97,November 24,1138,W7EEE,4,True,2m,Mike & Key,False,2
+41,November 24,1341,AI7OZ,5,True,2m,Eatonville,False,2
+41,November 24,1353,WB6CFA,5,True,2m,Eatonville,False,2
+82,November 24,1356,AI7OZ,5,True,2m,CPRG,False,2
+82,November 24,1357,WB6CFA,5,True,2m,CPRG,False,2
+7,November 24,1400,WB6CFA,4,True,2m,RCTacoma,False,2
+7,November 24,1401,AI7OZ,3,True,2m,RCTacoma,False,2
+7,November 24,1428,KB7DSM,4,True,2m,RCTacoma,False,2
+9,November 24,1407,AI7OZ,5,True,2m,RCTacoma,False,2
+9,November 24,1408,WB6CFA,5,True,2m,RCTacoma,False,2
+9,November 24,1409,KB7SDM,5,True,2m,RCTacoma,False,2
+46,November 24,1445,KB7SDM,5,True,70cm,SeaTac,False,2
+46,November 24,1446,WB6CFA,3,True,70cm,SeaTac,False,2
+46,November 24,1447,AI7OZ,5,True,70cm,SeaTac,False,2
+25,November 24,1449,WB6CFA,5,True,2m,KCARC,False,2
+25,November 24,1449,KB7SDM,5,True,2m,KCARC,False,2
+25,November 24,1449,AI7OZ,5,True,2m,KCARC,False,2
+25,November 24,1456,AG7LR,5,True,2m,KCARC,False,2
+70,November 24,1500,AI7OZ,5,True,70cm,OARS,False,2
+70,November 24,1502,WB6CFA,5,True,70cm,OARS,False,2
+70,November 24,1503,AG7LR,5,True,70cm,OARS,False,2
+79,November 24,1509,AI7OZ,5,False,70cm,Madigan Army,False,1
+79,November 24,1509,KB7RYY,5,False,70cm,Madigan Army,False,1
+97,November 24,1517,AG7LR,5,False,2m,Mike & Key,False,1
+97,November 24,1516,WB6CFA,5,False,2m,Mike & Key,False,1
+97,November 24,1516,AI7OZ,5,False,2m,Mike & Key,False,1
+97,November 24,1517,KJ7ALM,5,False,2m,Mike & Key,False,1
+36,November 24,1538,AG7LR,5,False,2m,FWARC,False,1
+36,November 24,1540,WB6CFA,5,False,2m,FWARC,False,1
+36,November 24,1542,AI7OZ,5,False,2m,FWARC,False,1
+36,November 24,1544,KB7RYY,5,False,2m,FWARC,False,1
+37,November 24,1548,AI7OZ,5,False,70cm,FWARC,False,1
+37,November 24,1547,WB6CFA,5,False,70cm,FWARC,False,1
+37,November 24,1548,KJ7ALM,5,False,70cm,FWARC,False,1
+37,November 24,1548,KK7PMI,5,False,70cm,FWARC,False,1
