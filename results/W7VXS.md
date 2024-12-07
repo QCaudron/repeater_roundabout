@@ -10,15 +10,12 @@
 | Duplicate Contacts    |    9 |
 | Full House            |      |
 
-<br />
-
-Download a full copy of your log [here](/results/[W7VXS](https://www.qrz.com/db/W7VXS)/log.csv).
+Download a full copy of your log [here](/results/W7VXS/log.csv).
 
 ---
 
 ## Full log
 
-<br />
 
 |   RR# | Group         |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

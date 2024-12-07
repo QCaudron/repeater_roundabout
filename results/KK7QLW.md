@@ -10,15 +10,12 @@
 | Duplicate Contacts    |    3 |
 | Full House            |      |
 
-<br />
-
-Download a full copy of your log [here](/results/[KK7QLW](https://www.qrz.com/db/KK7QLW)/log.csv).
+Download a full copy of your log [here](/results/KK7QLW/log.csv).
 
 ---
 
 ## Full log
 
-<br />
 
 |   RR# | Group         |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

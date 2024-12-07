@@ -118,7 +118,8 @@ def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) 
     # Fill it in
     colalign = ["right", "left", "right", "center", "right", "center", "center"]
     template = (
-        template.replace("{{ callsign }}", f"[{callsign}](https://www.qrz.com/db/{callsign})")
+        template.replace("{{ callsign_url }}", f"[{callsign}](https://www.qrz.com/db/{callsign})")
+        .replace("{{ callsign }}", callsign)
         .replace("{{ summary }}", summary_df.to_markdown(colalign=["left", "right"]))
         .replace("{{ logs }}", logs.to_markdown(colalign=colalign))
     )

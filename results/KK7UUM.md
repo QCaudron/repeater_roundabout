@@ -10,15 +10,12 @@
 | Duplicate Contacts    |    0 |
 | Full House            |      |
 
-<br />
-
-Download a full copy of your log [here](/results/[KK7UUM](https://www.qrz.com/db/KK7UUM)/log.csv).
+Download a full copy of your log [here](/results/KK7UUM/log.csv).
 
 ---
 
 ## Full log
 
-<br />
 
 |   RR# | Group   |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

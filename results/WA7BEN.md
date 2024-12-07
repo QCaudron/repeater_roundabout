@@ -10,15 +10,12 @@
 | Duplicate Contacts    |   0 |
 | Full House            |     |
 
-<br />
-
-Download a full copy of your log [here](/results/[WA7BEN](https://www.qrz.com/db/WA7BEN)/log.csv).
+Download a full copy of your log [here](/results/WA7BEN/log.csv).
 
 ---
 
 ## Full log
 
-<br />
 
 |   RR# | Group   |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

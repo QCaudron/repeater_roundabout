@@ -10,15 +10,12 @@
 | Duplicate Contacts    |    4 |
 | Full House            |      |
 
-<br />
-
-Download a full copy of your log [here](/results/[N7ITU](https://www.qrz.com/db/N7ITU)/log.csv).
+Download a full copy of your log [here](/results/N7ITU/log.csv).
 
 ---
 
 ## Full log
 
-<br />
 
 |   RR# | Group      |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:-----------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

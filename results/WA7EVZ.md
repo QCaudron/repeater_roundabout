@@ -10,15 +10,12 @@
 | Duplicate Contacts    |    30 |
 | Full House            |       |
 
-<br />
-
-Download a full copy of your log [here](/results/[WA7EVZ](https://www.qrz.com/db/WA7EVZ)/log.csv).
+Download a full copy of your log [here](/results/WA7EVZ/log.csv).
 
 ---
 
 ## Full log
 
-<br />
 
 |   RR# | Group         |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|

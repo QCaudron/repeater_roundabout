@@ -10,15 +10,12 @@
 | Duplicate Contacts    |    23 |
 | Full House            |       |
 
-<br />
-
-Download a full copy of your log [here](/results/[AG7LR](https://www.qrz.com/db/AG7LR)/log.csv).
+Download a full copy of your log [here](/results/AG7LR/log.csv).
 
 ---
 
 ## Full log
 
-<br />
 
 |   RR# | Group         |   Callsign |  Report  |   Band |  QRP  |  Band Hog  |   QSO Score |
 |------:|:--------------|-----------:|:--------:|-------:|:-----:|:----------:|------------:|
