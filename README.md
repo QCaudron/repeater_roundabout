@@ -61,21 +61,12 @@ Contributions are welcome -- please open a pull request against a feature branch
 
 The scripts in this repo use Python3. In order to install the dependencies, it is recommended to create a python virtual environment with the appropriate dependencies installed.
 
-Note that Python version 3.9 or higher is required.
+Note that Python version 3.12 or higher is required. We recommend using `uv`. After cloning the repo, from the parent directory, call
 
+```bash
+uv sync
 ```
-$ python -m venv .env        # Create a local Virtual Environment
-                             # Possibly use "python3" if python defaults to
-                             # version 2.
 
-$ source .env/bin/activate   # Activate it (Mac or Linux)
-
-OR
-
-$ .\.env\Scripts\activate    # (Windows/Powershell)
-
-$ pip install -r requirements.txt
-```
 
 ## Typescript Development Environment
 

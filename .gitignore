@@ -6,3 +6,4 @@ tsp.pdf
 logs
 node_modules/
 uv.lock
+.venv
