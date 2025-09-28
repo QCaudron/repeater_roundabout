@@ -35,7 +35,6 @@ def filter_by_band(df: pd.DataFrame, bands: list[BANDS]) -> pd.DataFrame:
     pd.DataFrame
         Repeaters in the given bands.
     """
-
     band_dfs = []
     for band in bands:
         band_dfs.append(
@@ -64,7 +63,6 @@ def filter_by_mode(df: pd.DataFrame, modes: list[str]) -> pd.DataFrame:
     pd.DataFrame
         Repeaters in the given modes.
     """
-
     return df.loc[df["Mode"].isin(modes)].sort_index().copy()
 
 
@@ -84,7 +82,6 @@ def distance_between(p1: tuple[float, float], p2: tuple[float, float]) -> float:
     float
         Distance between the two points in miles.
     """
-
     # Convert to radians
     p1 = (math.radians(p1[0]), math.radians(p1[1]))
     p2 = (math.radians(p2[0]), math.radians(p2[1]))
@@ -111,7 +108,6 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     pd.DataFrame
         The FM repeaters, formatted for CHIRP.
     """
-
     total_repeaters = len(df)
 
     # Remove repeaters not in the contest
@@ -200,7 +196,6 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     pd.DataFrame
         The repeaters in the 2m and 70cm bands, formatted for Anytone D878.
     """
-
     total_repeaters = len(df)
 
     # Remove repeaters not in the contest
@@ -285,7 +280,6 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
         The Icom-compatible repeaters formatted for the Icom.
         (Tested with Icom-705 - may work for others).
     """
-
     total_repeaters = len(df)
 
     # Remove repeaters not in the contest
@@ -370,7 +364,6 @@ def dstar_module_from_frequency(frequency: float) -> str:
     str
         The DSTAR module - one of 'A' 1.2 GHz, 'B' 70cm, or 'C' 2m.
     """
-
     if frequency < 148.0:
         return "C"
     elif frequency < 450.0:
@@ -413,7 +406,6 @@ def dstar_callsign_2(row: pd.Series) -> str:
     str
         The properly formatted DSTAR callsign.
     """
-
     callsign = row["Callsign"]
     return dstar_callsign_format(callsign, "G")
 
@@ -440,7 +432,6 @@ def write_icom_csv(df: pd.DataFrame) -> None:
     df : pd.DataFrame
         All of the repeaters.
     """
-
     df = format_df_for_icom(df)
     df.to_csv("assets/programming_files/icom.csv")
 
@@ -454,7 +445,6 @@ def write_d878_zip(df: pd.DataFrame) -> None:
     df : pd.DataFrame
         All of the repeaters.
     """
-
     df = format_df_for_d878(df)
     # D878 CPS software requires CR/LF line endings
     df.to_csv("assets/programming_files/d878.csv", lineterminator="\r\n")
@@ -481,8 +471,7 @@ def write_d878_zip(df: pd.DataFrame) -> None:
 
     # List of used Talk Groups needed (not DRY - but Talk Groups don't import if not present!)
     talk_groups = {
-        id: df.loc[df["Contact TG/DMR ID"] == id, "Contact"].iloc[0]
-        for id in df["Contact TG/DMR ID"].dropna().unique()
+        id: df.loc[df["Contact TG/DMR ID"] == id, "Contact"].iloc[0] for id in df["Contact TG/DMR ID"].dropna().unique()
     }
     rows = [{"Radio ID": id, "Name": talk_groups[id]} for id in talk_groups]
     rows.append({"Radio ID": 9998, "Name": "Parrot"})
@@ -511,7 +500,6 @@ def write_generic_csv(df: pd.DataFrame) -> None:
     df : pd.DataFrame
         All of the repeaters.
     """
-
     df = (
         df.copy()
         .assign(Latitude=df["Coordinates"].apply(lambda x: x[0]))
@@ -539,7 +527,6 @@ def band(freq: float) -> str:
     str
         The name of the amateur radio band.
     """
-
     for band_name, edges in BAND_DEFINITIONS.items():
         if edges[0] < freq < edges[1]:
             return band_name

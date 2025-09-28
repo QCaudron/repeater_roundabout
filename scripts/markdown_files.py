@@ -75,7 +75,6 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
         Whether the contest is over and we should write the results to the index page.
         If not, we write the normal index page with just some helpful info.
     """
-
     df = df.copy()
 
     if score_results:
@@ -90,7 +89,7 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
 
     now = datetime.now().strftime("%A %B %d at %H:%M")
 
-    with open("assets/templates/index.md", "r") as f:
+    with open("assets/templates/index.md") as f:
         index = f.read()
 
     # Fill in the number of repeaters and the updated date
@@ -117,8 +116,7 @@ def write_rules_md(df: pd.DataFrame) -> None:
     df : pd.DataFrame
         All of the repeaters.
     """
-
-    with open("assets/templates/rules.md", "r") as f:
+    with open("assets/templates/rules.md") as f:
         rules = f.read()
 
     # Fill in the number of repeaters and the updated date
@@ -138,7 +136,6 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
     df : pd.DataFrame
         All of the repeaters.
     """
-
     # Create the main markdown table
     table_cols = [
         "RR#",
@@ -176,7 +173,7 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
         association_text += f"{short}\n: [{long}]({url})\n\n"
 
     # Write the markdown file from template
-    with open("assets/templates/repeaters.md", "r") as f:
+    with open("assets/templates/repeaters.md") as f:
         maps = f.read()
     maps = maps.replace("{{ table }}", table)
     maps = maps.replace("{{ associations }}", association_text)
@@ -196,7 +193,6 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
         Repeaters are combined into a single pin if less
         than this distance apart, by default 0.03.
     """
-
     # Skip writing a map if there aren't at least two repeaters
     if len(df) < 10:
         return
@@ -209,9 +205,7 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
     # Assign each repeater's info to a cluster
     clusters = defaultdict(list)
     for idx, allocation in enumerate(allocations):
-        clusters[allocation].append(
-            df.iloc[idx][["Callsign", "Output (MHz)", "Coordinates", "RR#"]].to_dict()
-        )
+        clusters[allocation].append(df.iloc[idx][["Callsign", "Output (MHz)", "Coordinates", "RR#"]].to_dict())
 
     # For each cluster, create a pin on the map as LeafletJS plaintext
     pins_list = []
@@ -227,20 +221,18 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
             custom_middle = (
                 "\"<div class='icon-label'>...</div>\""
                 if len(cluster) > 1
-                else f'"<div class=\'icon-label\'>{repeater["RR#"]}</div>"'
+                else f"\"<div class='icon-label'>{repeater['RR#']}</div>\""
             )
             custom = f"L.divIcon({{className: 'custom-icon', html: {custom_middle}, iconSize: [25, 25]}})"
-            pins_list.append(
-                f"L.marker({coords_str}, {{icon: {custom} }}).bindPopup('{msg}').addTo(map);"
-            )
+            pins_list.append(f"L.marker({coords_str}, {{icon: {custom} }}).bindPopup('{msg}').addTo(map);")
             # pins_list.append(f"L.marker({coords_str}).bindPopup('{msg}').addTo(map);")
 
     pins = "\n".join(pins_list)
 
     # Write the LeafletJS code to map templates
-    with open("assets/templates/map.md", "r") as f:
+    with open("assets/templates/map.md") as f:
         maps_md = f.read()
-    with open("assets/templates/map.html", "r") as f:
+    with open("assets/templates/map.html") as f:
         maps_html = f.read()
 
     maps_md = maps_md.replace("{{ repeater_pins }}", pins)

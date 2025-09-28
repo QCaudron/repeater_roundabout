@@ -3,7 +3,6 @@ import re
 import sys
 from pathlib import Path
 from types import SimpleNamespace
-from typing import Union
 
 import pandas as pd
 import requests
@@ -16,13 +15,11 @@ from markdown_files import (
 )
 from programming_files import (
     write_chirp_csv,
-    write_d878_zip,
     write_generic_csv,
-    write_icom_csv,
 )
 
 
-def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
+def parse_args() -> argparse.Namespace | SimpleNamespace:
     """
     Parse arguments, either from command-line or from interactive input.
 
@@ -31,7 +28,6 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     Union[argparse.Namespace, SimpleNamespace]
         A namespace object containing the arguments.
     """
-
     # If the script is called with no arguments, get them interactively
     if len(sys.argv) == 1:
         name = input("Group Name: ") or None
@@ -74,7 +70,7 @@ def parse_args() -> Union[argparse.Namespace, SimpleNamespace]:
     parser = argparse.ArgumentParser()
     parser.add_argument("--name", type=str, default=None)
     parser.add_argument("--loc", type=str, default=None)
-    parser.add_argument("--state_id", type=str, default='53')  # WA
+    parser.add_argument("--state_id", type=str, default="53")  # WA
     parser.add_argument("--id", type=str, default=None)
     parser.add_argument("--call", type=str, default=None)
     parser.add_argument("--freq", type=str, default=None)
@@ -108,7 +104,6 @@ def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
     Dict
         A dict containing repeater information.
     """
-
     # If no ID is provided, don't get any info from RepeaterBook
     if state_id_code is None or id_code is None:
         return {}
@@ -133,8 +128,8 @@ def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
     if offset[0] != "-":
         offset = f"+{offset}"
 
-    lat = re.search(rf"center: \[(\-?\d+\.\d+)\,", source.text).group(1)
-    long = re.search(rf"center: \[\-?\d+\.\d+\,\s+(\-?\d+\.\d+)\]", source.text).group(1)
+    lat = re.search(r"center: \[(\-?\d+\.\d+)\,", source.text).group(1)
+    long = re.search(r"center: \[\-?\d+\.\d+\,\s+(\-?\d+\.\d+)\]", source.text).group(1)
     latlong = [float(lat), float(long)]
 
     try:
@@ -155,7 +150,7 @@ def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
     return repeater
 
 
-def repeater_from_args(args: Union[argparse.Namespace, SimpleNamespace]) -> dict:
+def repeater_from_args(args: argparse.Namespace | SimpleNamespace) -> dict:
     """
     Clean up user input and return a dictionary of repeater information.
 
@@ -169,7 +164,6 @@ def repeater_from_args(args: Union[argparse.Namespace, SimpleNamespace]) -> dict
     Dict
         A dict containing repeat information.
     """
-
     repeater = {
         "Group Name": args.name,
         "Callsign": args.call,
@@ -188,7 +182,10 @@ def repeater_from_args(args: Union[argparse.Namespace, SimpleNamespace]) -> dict
     repeater = {key: val for key, val in repeater.items() if val}
     return repeater
 
-def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd.DataFrame:
+
+def generate_repeater_df(
+    args: argparse.Namespace | SimpleNamespace,
+) -> pd.DataFrame:
     """
     Create a DataFrame of repeaters from known repeaters combined with user input.
 
@@ -203,7 +200,6 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
         A dataframe of known repeaters from assets/repeaters.json
         combined with a new repeater taken from user input.
     """
-
     if args.regen or args.score:
         df = pd.read_json("assets/repeaters.json", dtype=False)
         df.to_json("assets/repeaters.json", orient="records", indent=4)
@@ -222,17 +218,18 @@ def generate_repeater_df(args: Union[argparse.Namespace, SimpleNamespace]) -> pd
     df = pd.read_json("assets/repeaters.json", dtype=False)
 
     # Initialize records missing state id fields to WA (53).
-    if 'RepeaterBook State ID' not in df.columns:
-        df['RepeaterBook State ID'] = None
+    if "RepeaterBook State ID" not in df.columns:
+        df["RepeaterBook State ID"] = None
 
     def init_state_id(row):
-        if pd.notna(row['RepeaterBook State ID']):
-            return row['RepeaterBook State ID']
-        if pd.isna(row['RepeaterBook ID']):
+        if pd.notna(row["RepeaterBook State ID"]):
+            return row["RepeaterBook State ID"]
+        if pd.isna(row["RepeaterBook ID"]):
             return None
-        return '53'
-    df['RepeaterBook State ID'] = df.apply(init_state_id, axis=1)
-    
+        return "53"
+
+    df["RepeaterBook State ID"] = df.apply(init_state_id, axis=1)
+
     df = pd.concat([df, repeater], ignore_index=True)
 
     # Save a new known repeaters file

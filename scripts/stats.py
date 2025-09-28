@@ -37,7 +37,7 @@ if __name__ == "__main__":
     )
 
     # Grab the spatial extent's centroid
-    poly = Polygon(zip(hull_y, hull_x))  # note the order
+    poly = Polygon(zip(hull_y, hull_x, strict=False))  # note the order
     xx, yy = poly.exterior.coords.xy
     centroid = poly.centroid
     statistics["Centroid"] = [centroid.y, centroid.x]
@@ -57,12 +57,10 @@ if __name__ == "__main__":
 
     # Load the clustered repeater locations from the map, rather than the individual
     # repeater locations; several exist in exactly the same location
-    with open("map.md", "r") as f:
+    with open("map.md") as f:
         locations = f.readlines()
     locations = [line for line in locations if line.strip().startswith("L.marker")]
-    coords = np.array(
-        [np.fromstring(line.split("[")[1].split("]")[0], sep=", ") for line in locations]
-    )
+    coords = np.array([np.fromstring(line.split("[")[1].split("]")[0], sep=", ") for line in locations])
 
     # Transform to spatial frame of reference and compute the distance matrix
     trans = (
@@ -79,7 +77,7 @@ if __name__ == "__main__":
     # Plot the TSP solution and calculate its path length
     path_distance = 0
     plt.figure(figsize=(7, 12))
-    for i, j in zip(path[:-1], path[1:]):
+    for i, j in zip(path[:-1], path[1:], strict=False):
         path_distance += dist[i, j]
         plt.plot([coords[i, 1], coords[j, 1]], [coords[i, 0], coords[j, 0]], "k-")
 

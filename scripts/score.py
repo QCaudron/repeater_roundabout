@@ -1,6 +1,5 @@
 import re
 from pathlib import Path
-from typing import Optional, Tuple
 
 import pandas as pd
 
@@ -24,14 +23,13 @@ def at_least_three_decimals(frequency: float) -> str:
         The frequency as a string, with at least three decimal places
         including trailing zeros.
     """
-
     frequency_str = f"{frequency:.4f}"
     if frequency_str.endswith("0"):
         return frequency_str[:-1]
     return frequency_str
 
 
-def signal_report_to_readability(report: str) -> Optional[int]:
+def signal_report_to_readability(report: str) -> int | None:
     """
     A rough interpretation of signal reports into numerical values.
 
@@ -48,7 +46,6 @@ def signal_report_to_readability(report: str) -> Optional[int]:
     Optional[int]
         The readability of a signal report, or None if it couldn't be interpreted.
     """
-
     report = report.upper().strip().replace("?", "")
 
     # Will match CM4, CM5+, CM3.5, CM4.5+
@@ -94,12 +91,16 @@ def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) 
     results_dir = Path("results")
 
     # Read the template
-    with open("assets/templates/personal_results.md", "r") as f:
+    with open("assets/templates/personal_results.md") as f:
         template = f.read()
 
     # Clean up the logs for table formatting
     logs = logs.drop(columns=["Logger"]).rename(
-        columns={"Signal Report": "Report", "Group Name": "Group", "Bandhog": "Band Hog"}
+        columns={
+            "Signal Report": "Report",
+            "Group Name": "Group",
+            "Bandhog": "Band Hog",
+        }
     )
     logs.to_csv(results_dir / f"{callsign}.csv", index=True)  # write a copy for download
     logs = logs[["Group", "Callsign", "Report", "Band", "QRP", "Band Hog", "QSO Score"]]
@@ -131,9 +132,7 @@ def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) 
         f.write(template)
 
 
-def score_competition(
-    repeaters: pd.DataFrame, logs_dir: str = "logs"
-) -> Tuple[pd.DataFrame, str, str, str]:
+def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> tuple[pd.DataFrame, str, str, str]:
     """
     Score the competition and return the results.
 
@@ -155,7 +154,6 @@ def score_competition(
     str
         A markdown-formatted bullet list of some statistics about the contest.
     """
-
     logs_dir = Path(logs_dir)
     if not logs_dir.exists():
         raise FileNotFoundError(f"{logs_dir} does not exist.")
@@ -270,9 +268,7 @@ def score_competition(
             }
         )
     )
-    leaderboard["Callsign"] = leaderboard["Callsign"].apply(
-        lambda call: f"[{call}](/results/{call})"
-    )
+    leaderboard["Callsign"] = leaderboard["Callsign"].apply(lambda call: f"[{call}](/results/{call})")
     leaderboard = leaderboard[
         [
             "Callsign",
@@ -287,7 +283,7 @@ def score_competition(
     leaderboard["Full House"] = leaderboard["Full House"].apply(lambda x: "X" if x else "")
 
     # Set a new index with leaderboard positions, but accounting for ties
-    leaderboard.index = leaderboard["Total Score"].rank(method='min', ascending=False).astype(int)
+    leaderboard.index = leaderboard["Total Score"].rank(method="min", ascending=False).astype(int)
     leaderboard.index.name = "Rank"
 
     # Merge all logs with repeater data
@@ -332,7 +328,7 @@ def score_competition(
         .reset_index(drop=True)
         .round({"Readability": 2})
     )
-    by_repeater.index = by_repeater["Activations"].rank(method='min', ascending=False).astype(int)
+    by_repeater.index = by_repeater["Activations"].rank(method="min", ascending=False).astype(int)
     by_repeater["Frequency"] = by_repeater["Frequency"].apply(at_least_three_decimals)
     by_repeater.index.name = "Rank"
 
@@ -344,7 +340,7 @@ def score_competition(
         .sort_values(["Activations", "Group"], ascending=[False, True])
         .reset_index(drop=False)  # index contains the club name
     )
-    by_club.index = by_club["Activations"].rank(method='min', ascending=False).astype(int)
+    by_club.index = by_club["Activations"].rank(method="min", ascending=False).astype(int)
     by_club.index.name = "Rank"
 
     # Some stats :
@@ -360,9 +356,7 @@ def score_competition(
 
     return (
         leaderboard,
-        by_repeater.to_markdown(
-            disable_numparse=True, colalign=["right", "left", "right", "right", "right"]
-        ),
+        by_repeater.to_markdown(disable_numparse=True, colalign=["right", "left", "right", "right", "right"]),
         by_club.to_markdown(colalign=["right", "left", "right"]),
         stats_msg,
     )

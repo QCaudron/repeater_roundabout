@@ -1,9 +1,50 @@
+[project]
+name = "repeater_roundabout"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "geopandas>=1.1.1",
+    "matplotlib>=3.10.6",
+    "pandas>=2.3.2",
+    "python-dateutil>=2.9.0.post0",
+    "requests>=2.32.5",
+    "ruff>=0.13.2",
+    "scipy>=1.16.2",
+    "shapely>=2.1.2",
+    "tabulate>=0.9.0",
+]
+
 [tool.black]
-line-length = 99
+line-length = 120
+include = '\.py$'
+exclude = '\.envs/*'
 
-[tool.isort]
-profile = "black"
-known_first_party = ["markdown_files", "programming_files", "score", "stats", "update"]
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = [
+    ".venv",
+]
 
-[tool.mypy]
-ignore_missing_imports = true
+[tool.ruff.lint]
+select = [
+  "B",    # flake8-bugbear
+  "E",    # pycodestyle errors
+  "F",    # pyflakes
+  "UP",   # pyupgrade
+  "D",    # pydocstyle
+  "I",    # isort
+  "PD",   # pandas-vet
+  "W",    # pycodestyle warnings
+  "SIM",  # flake8-simplify
+  "NPY",  # numpy-specific
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.isort]
+known-first-party = ["markdown_files", "programming_files", "score", "stats", "update"]
+from-first = false
