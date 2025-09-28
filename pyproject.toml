@@ -1,7 +1,7 @@
 [project]
 name = "repeater_roundabout"
 version = "0.1.0"
-description = "Add your description here"
+description = "Building the Repeater Roundabout website and downloadables"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
