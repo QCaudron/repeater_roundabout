@@ -89,7 +89,7 @@ For 2025, responses are recorded using a [Google Form](https://docs.google.com/f
 
 ### Sending Emails
 
-Mass emails are sent via the [tracking spreadsheet][tracking-sheet] and GMail using a [Mail Merge Apps Script](https://developers.google.com/apps-script/samples/automations/mail-merge).  The script will send your draft email to every recipient on the selected tab whose `Email Sent` column is blank.  The script will replace strings of the form `{{xyz}}` with the value from spreadsheet column `xyz`.
+Mass emails are sent via the [tracking spreadsheet][tracking-sheet] and GMail using a [Mail Merge Apps Script](https://developers.google.com/apps-script/samples/automations/mail-merge).  The script will send your draft email to every recipient on the selected tab whose `Email Sent` column is blank.  Before sending the email, the script replace any template variables strings, denoted by curly braces, found in the draft with the value of the corresponding spreadsheet column.  E.g. `{{xyz}}` will be replaced with the value from spreadsheet column `xyz`.
 
 Note: Do not rename spreadsheet columns without updating the mail merge script and email templates.
 
@@ -99,7 +99,7 @@ Note: Do not rename spreadsheet columns without updating the mail merge script a
 
 1. Prepare a GMail draft of the email you want to send giving a unique Subject line.  See our [corpus of email templates](https://docs.google.com/document/d/1WqKj2xd6ETskQg0085Yo2bDo65MunMhi-FvP9cfqebA/edit?tab=t.0).  Use template variables like `{{Callsign}}` to insert the value of the `Callsign` column into the email.
 
-1. Open `Mail Merge > Send Emails` and enter the subject of your email.  The script will send that email to all rows with an empty `Email Sent` column and will update the column with the current date.  If an error occurs, it will be recorded in the `Email Sent` column.
+1. Open `Mail Merge > Send Emails` and enter the subject of your email.  The script will retrieve that draft and send it to all rows with an empty `Email Sent` column.  On success, it will update the `Email Sent` column with the current date.  If an error occurs, it will be recorded in the `Email Sent` column.
 
     Note: If you have a plain GMail account (non-Google Workspace) the script is limited to sending only 100 emails per day.
 
