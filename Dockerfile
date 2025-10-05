@@ -1,7 +1,8 @@
-FROM python:3.13-bookworm
+FROM python:3.12-bookworm
 
 ENV UID=1000
 ENV GID=1000
+ENV UV_VERSION=0.8.23
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -16,13 +17,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app/repeater_roundabout
 USER app
 
-COPY --chown=${UID}:${GID} ./requirements.txt /app/repeater_roundabout
-COPY --chown=${UID}:${GID} ./scripts/setup-venv.sh /app/repeater_roundabout/scripts/setup-venv.sh
-RUN cd /app \
-    && repeater_roundabout/scripts/setup-venv.sh /app/repeater_roundabout/requirements.txt
-RUN cp requirements.txt.new /tmp/
+RUN curl -LsSf https://astral.sh/uv/${UV_VERSION}/install.sh | sh
 
-COPY --chown=${UID}:${GID} . /app/repeater_roundabout
+COPY --chown=${UID}:${GID} ./pyproject.toml /app/repeater_roundabout/
+RUN . $HOME/.local/bin/env && uv sync
+
+COPY --chown=${UID}:${GID} . /app/repeater_roundabout/
 
 ENTRYPOINT [ "/app/repeater_roundabout/scripts/docker-entrypoint.sh" ]
 CMD [ "/bin/bash" ]
