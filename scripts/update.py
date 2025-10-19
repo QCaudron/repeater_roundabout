@@ -1,4 +1,6 @@
 import argparse
+import csv
+import math
 import re
 import sys
 from pathlib import Path
@@ -34,6 +36,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
         loc = input("Location: ") or None
         state_id = input("RepeaterBook State ID: ") or None
         id = input("RepeaterBook ID: ") or None
+        wwara_csv = input("WWARA CSV: ") or None
+        prior_json = input("Prior JSON: ") or None
         call = input("Callsign: ") or None
         freq = input("Frequency (MHz): ") or None
         offset = input("Offset (MHz): ") or None
@@ -50,6 +54,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
             "loc": loc,
             "state_id": state_id,
             "id": id,
+            "wwara_csv": wwara_csv,
+            "prior_json": prior_json,
             "call": call,
             "freq": freq,
             "offset": offset,
@@ -72,6 +78,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--loc", type=str, default=None)
     parser.add_argument("--state_id", type=str, default="53")  # WA
     parser.add_argument("--id", type=str, default=None)
+    parser.add_argument("--wwara_csv", type=str, default=None)
+    parser.add_argument("--prior_json", type=str, default=None)
     parser.add_argument("--call", type=str, default=None)
     parser.add_argument("--freq", type=str, default=None)
     parser.add_argument("--offset", type=str, default=None)
@@ -85,6 +93,68 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--regen", action="store_true")
     parser.add_argument("--score", action="store_true")
     return parser.parse_args()
+
+def repeaters_from_wwara(csv_file: str, call: str) -> list[dict]:
+    if csv_file is None or call is None:
+      return []
+
+    with open(csv_file, 'r') as f:
+        lines = f.readlines()
+    return wwara_find(lines, call)
+
+def wwara_find(lines, call):
+    if lines[0].startswith('DATA_SPEC_VERSION'):
+        del lines[0]
+
+    # Return records matching CALL.
+    repeaters = []
+    reader = csv.DictReader(lines)
+    for row in reader:
+        if row["CALL"] != call:
+            continue
+
+        if row["FM_WIDE"] != "Y" and row["FM_NARROW"] != "Y":
+            continue
+
+        repeaters.append(wwara_row_to_repeater(row))
+
+    return repeaters
+
+def find_by_call_freq(repeaters: pd.DataFrame, call: str, outp: str) -> list[dict]:
+    if repeaters is None or repeaters.empty:
+        return []
+    recs = repeaters[
+        (repeaters["Callsign"] == call) &
+        (repeaters["Output (MHz)"] == outp)
+    ]
+    return [
+        {key: r[key] for key in ["Group Name", "Long Name", "Website"]}
+        for _, r in recs.iterrows()
+    ]
+
+def wwara_row_to_repeater(row: dict) -> dict:
+    outp = float(row["OUTPUT_FREQ"])
+    inp  = float(row["INPUT_FREQ"])
+    offset = inp - outp
+    if row["FM_WIDE"].strip() == "Y":
+        mode = "FM"
+    elif row["FM_NARROW"].strip() == "Y":
+        mode = "NFM"
+    else:
+        raise NotImplementedError(f"Could not determine mdoe: {repr(row)}")
+
+    return {
+        "Long Name": row["SPONSOR"].strip(),
+        "Callsign": row["CALL"].strip(),
+        "Location": f"{row["CITY"].strip()}, {row["STATE"].strip()}",
+        "Mode": mode,
+        "Output (MHz)": '%0.3f' % outp,
+        "Offset (MHz)": '%0.1f' % offset,
+        "Tone (Hz)": row["CTCSS_IN"].strip(),
+        "Coordinates": [float(row["LATITUDE"].strip()), float(row["LONGITUDE"].strip())],
+        "Mode": mode,
+        "Website": row["URL"].strip(),
+    }
 
 
 def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
@@ -206,10 +276,26 @@ def generate_repeater_df(
         df["RR#"] = df.index + 1
         return df
 
-    # Combine RepeaterBook info with user input
+    if args.prior_json:
+        prior_repeaters = pd.read_json(args.prior_json, dtype=False)
+
+    # Combine RepeaterBook and WWARA info with user input
+    wwaras = repeaters_from_wwara(args.wwara_csv, args.call)
+    if args.freq:
+        freq = float(freq)
+        wwaras = [r for r in wwaras if math.isclose(float(r["Output (MHz)"]), freq, abs_tol=0.001)][0:1]
+    if not wwaras:
+        # Ensure we provide at least one record to combine with RepeaterBook and CLI args.
+        wwaras = [{}]
+
+    def prior_year(repeaters, r):
+        rpts = find_by_call_freq(repeaters, r["Callsign"], r["Output (MHz)"])
+        return rpts[0] if rpts else {}
+
     repeaterbook = repeater_from_repeaterbook(args.state_id, args.id)
     repeaterargs = repeater_from_args(args)
-    repeater = pd.DataFrame.from_records([{**repeaterbook, **repeaterargs}])
+    repeaters = pd.DataFrame.from_records(
+        [{**repeaterbook, **r, **prior_year(prior_repeaters, r), **repeaterargs} for r in wwaras])
 
     # Combine with known repeaters
     if not Path("assets/repeaters.json").exists():
@@ -230,7 +316,7 @@ def generate_repeater_df(
 
     df["RepeaterBook State ID"] = df.apply(init_state_id, axis=1)
 
-    df = pd.concat([df, repeater], ignore_index=True)
+    df = pd.concat([df, repeaters], ignore_index=True)
 
     # Save a new known repeaters file
     df = df.reset_index(drop=True)
