@@ -141,7 +141,7 @@ def wwara_row_to_repeater(row: dict) -> dict:
     elif row["FM_NARROW"].strip() == "Y":
         mode = "NBFM[^nbfm]"
     else:
-        raise NotImplementedError(f"Could not determine mdoe: {repr(row)}")
+        raise NotImplementedError(f"Could not determine mode: {repr(row)}")
 
     return {
         "Long Name": row["SPONSOR"].strip(),
