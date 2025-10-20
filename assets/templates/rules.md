@@ -3,7 +3,7 @@ title: Rules
 subtitle: How to play in the Repeater Roundabout.
 ---
 
-**The Repeater Roundabout will begin on November 23rd, 2024 at 00:00, and end on November 24th, 2024 at 23:59, Pacific time.**
+**The Repeater Roundabout will begin on November 22nd, 2025 at 00:00, and end on November 23rd, 2025 at 23:59, Pacific time.**
 
 
 # Repeaters
