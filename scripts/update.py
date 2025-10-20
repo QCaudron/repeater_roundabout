@@ -139,7 +139,7 @@ def wwara_row_to_repeater(row: dict) -> dict:
     if row["FM_WIDE"].strip() == "Y":
         mode = "FM"
     elif row["FM_NARROW"].strip() == "Y":
-        mode = "NFM"
+        mode = "NBFM[^nbfm]"
     else:
         raise NotImplementedError(f"Could not determine mdoe: {repr(row)}")
 

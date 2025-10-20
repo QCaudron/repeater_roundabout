@@ -144,11 +144,12 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
         "Group Name",
         "Callsign",
         "Location",
-        # "Mode",  # removed in 2024 as we're FM-only
+        "Mode",
         "Output (MHz)",
         "Offset (MHz)",
         "Tone (Hz)",
     ]
+
     table = (
         df[table_cols]
         .rename(columns={"Group Name": "Group"})
@@ -160,7 +161,7 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
                 "left",
                 "left",
                 "left",
-                # "left",  # removed in 2024 as we're FM-only
+                "left",
                 "right",
                 "right",
                 "right",
