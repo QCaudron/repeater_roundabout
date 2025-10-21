@@ -41,15 +41,15 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 19    | MIRO          | W7MIR      | Mercer Island, WA     | FM          |        440.150 |            5.0 |       103.5 |
 | 20    | LCARA         | W7DG       | Longview, WA          | FM          |        147.100 |            0.6 |       114.8 |
 | 21    | LCARA         | W7DG       | Woodland, WA          | FM          |        147.300 |            0.6 |       114.8 |
-| 22    | nan           | W7DG       | Longview, WA          | FM          |        224.140 |           -1.6 |       114.8 |
+| 22    | LCARA         | W7DG       | Longview, WA          | FM          |        224.140 |           -1.6 |       114.8 |
 | 23    | LCARA         | W7DG       | Longview, WA          | FM          |        444.900 |            5.0 |       114.8 |
 | 24    | K6RFK         | K6RFK      | Woodinville, WA       | FM          |        147.340 |            0.6 |         100 |
 | 25    | K6RFK         | K6RFK      | Woodinville, WA       | FM          |        442.775 |            5.0 |         100 |
 | 26    | Pierce        | W7AAO      | Enumclaw, WA          | FM          |        145.370 |           -0.6 |       136.5 |
-| 27    | nan           | W7AAO      | Edgewood, WA          | FM          |        146.640 |           -0.6 |       103.5 |
-| 28    | nan           | W7AAO      | Buckley, WA           | FM          |        927.850 |          -25.0 |       114.8 |
+| 27    | Pierce        | W7AAO      | Edgewood, WA          | FM          |        146.640 |           -0.6 |       103.5 |
+| 28    | Pierce        | W7AAO      | Buckley, WA           | FM          |        927.850 |          -25.0 |       114.8 |
 | 29    | FWARC         | WA7FW      | Federal Way, WA       | FM          |        146.760 |           -0.6 |       103.5 |
-| 30    | nan           | WA7FW      | Federal Way, WA       | FM          |        147.040 |            0.6 |       103.5 |
+| 30    | FWARC         | WA7FW      | Federal Way, WA       | FM          |        147.040 |            0.6 |       103.5 |
 | 31    | FWARC         | WA7FW      | Federal Way, WA       | FM          |        442.925 |            5.0 |             |
 | 32    | FWARC         | WA7FW      | Federal Way, WA       | FM          |        442.950 |            5.0 |       103.5 |
 | 33    | KC7EQO        | KC7EQO     | Blyn, WA              | FM          |        442.100 |            5.0 |         100 |
@@ -60,19 +60,19 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 38    | BEARS         | K7NWS      | Tiger Mtn West, WA    | FM          |        224.340 |           -1.6 |       110.9 |
 | 39    | BEARS         | K7NWS      | Tiger Mtn West, WA    | FM          |        442.075 |            5.0 |       110.9 |
 | 40    | K7CH          | K7CH       | Baw Faw Peak, WA      | FM          |         53.030 |           -1.7 |       114.8 |
-| 41    | nan           | K7CH       | South Mtn, WA         | FM          |        440.650 |            5.0 |         100 |
-| 42    | nan           | K7CH       | South Mtn, WA         | FM          |        927.250 |          -25.0 |       114.8 |
-| 43    | nan           | K7CH       | Chehalis, WA          | FM          |        927.925 |          -25.0 |       114.8 |
+| 41    | K7CH          | K7CH       | South Mtn, WA         | FM          |        440.650 |            5.0 |         100 |
+| 42    | K7CH          | K7CH       | South Mtn, WA         | FM          |        927.250 |          -25.0 |       114.8 |
+| 43    | K7CH          | K7CH       | Chehalis, WA          | FM          |        927.925 |          -25.0 |       114.8 |
 | 44    | N9VW          | N9VW       | Cougar Mtn.           | FM          |        443.325 |            5.0 |       103.5 |
 | 45    | N9VW          | KC7RAS     | Cougar Mtn, WA        | FM          |        147.100 |            0.6 |         123 |
 | 46    | SCARC         | W7PIG      | Camano Island, WA     | FM          |        147.360 |            0.6 |       127.3 |
 | 47    | SCARC         | W7PIG      | Camano Island, WA     | FM          |        223.880 |           -1.6 |       103.5 |
 | 48    | SCARC         | W7PIG      | Camano Island, WA     | FM          |        441.050 |            5.0 |       127.3 |
 | 49    | WA7TBP        | WA7TBP     | Carnation, WA         | FM          |        223.960 |           -1.6 |         123 |
-| 50    | nan           | W7AUX      | Shoreline, WA         | FM          |        224.020 |           -1.6 |       103.5 |
-| 51    | nan           | W7AUX      | Shoreline, WA         | FM          |        440.300 |            5.0 |       103.5 |
-| 52    | nan           | W7AUX      | Shoreline, WA         | FM          |        442.825 |            5.0 |       103.5 |
-| 53    | nan           | W7AUX      | Shoreline, WA         | FM          |        927.638 |          -25.0 |       114.8 |
+| 50    | Shoreline ACS | W7AUX      | Shoreline, WA         | FM          |        224.020 |           -1.6 |       103.5 |
+| 51    | Shoreline ACS | W7AUX      | Shoreline, WA         | FM          |        440.300 |            5.0 |       103.5 |
+| 52    | Shoreline ACS | W7AUX      | Shoreline, WA         | FM          |        442.825 |            5.0 |       103.5 |
+| 53    | Shoreline ACS | W7AUX      | Shoreline, WA         | FM          |        927.638 |          -25.0 |       114.8 |
 
 ---
 
@@ -122,6 +122,9 @@ Pierce
 
 SCARC
 : [Stanwood-Camano Amateur Radio Club](https://www.scarcwa.org/)
+
+Shoreline ACS
+: [Shoreline ACS](https://sites.google.com/a/w7aux.org/shoreline-acs/)
 
 Snohomish ACS
 : [Snohomish County Auxiliary Communications Service](https://wa7dem.info)

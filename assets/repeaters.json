@@ -387,7 +387,7 @@
             -122.9578
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"LCARA",
         "Location":"Longview, WA",
         "Mode":"FM",
         "Long Name":"N3EG",
@@ -477,7 +477,7 @@
             -122.2653
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"Pierce",
         "Location":"Edgewood, WA",
         "Mode":"FM",
         "Long Name":"Pierce County DEM",
@@ -495,7 +495,7 @@
             -121.8925
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"Pierce",
         "Location":"Buckley, WA",
         "Mode":"FM",
         "Long Name":"District 5 ARES",
@@ -531,7 +531,7 @@
             -122.32604
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"FWARC",
         "Location":"Federal Way, WA",
         "Mode":"FM",
         "Long Name":"Federal Way Amateur Radio Club",
@@ -729,7 +729,7 @@
             -123.35783
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"K7CH",
         "Location":"South Mtn, WA",
         "Mode":"FM",
         "Long Name":"K7CH",
@@ -747,7 +747,7 @@
             -122.3386
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"K7CH",
         "Location":"South Mtn, WA",
         "Mode":"FM",
         "Long Name":"K7CH",
@@ -765,7 +765,7 @@
             -123.2148
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"K7CH",
         "Location":"Chehalis, WA",
         "Mode":"FM",
         "Long Name":"K7CH",
@@ -891,7 +891,7 @@
             -122.35
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"Shoreline ACS",
         "Location":"Shoreline, WA",
         "Mode":"FM",
         "Long Name":"Shoreline ACS",
@@ -909,7 +909,7 @@
             -122.34575
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"Shoreline ACS",
         "Location":"Shoreline, WA",
         "Mode":"FM",
         "Long Name":"Shoreline ACS",
@@ -927,7 +927,7 @@
             -122.3531
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"Shoreline ACS",
         "Location":"Shoreline, WA",
         "Mode":"FM",
         "Long Name":"Shoreline ACS",
@@ -945,7 +945,7 @@
             -122.34575
         ],
         "RepeaterBook ID":null,
-        "Group Name":null,
+        "Group Name":"Shoreline ACS",
         "Location":"Shoreline, WA",
         "Mode":"FM",
         "Long Name":"Shoreline ACS",
