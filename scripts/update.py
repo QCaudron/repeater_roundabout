@@ -289,7 +289,9 @@ def generate_repeater_df(
         wwaras = [{}]
 
     def prior_year(repeaters, r):
-        rpts = find_by_call_freq(repeaters, r["Callsign"], r["Output (MHz)"])
+        call = r.get("Callsign", None)
+        outp = r.get("Output (MHz)", None)
+        rpts = find_by_call_freq(repeaters, call, outp)
         return rpts[0] if rpts else {}
 
     repeaterbook = repeater_from_repeaterbook(args.state_id, args.id)
