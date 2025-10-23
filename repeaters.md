@@ -73,6 +73,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 51    | Shoreline ACS | W7AUX      | Shoreline, WA         | FM          |        440.300 |            5.0 |       103.5 |
 | 52    | Shoreline ACS | W7AUX      | Shoreline, WA         | FM          |        442.825 |            5.0 |       103.5 |
 | 53    | Shoreline ACS | W7AUX      | Shoreline, WA         | FM          |        927.638 |          -25.0 |       114.8 |
+| 54    | K7CH          | K7CH       | Baw Faw Peak, WA      | FM          |        444.450 |            5.0 |         100 |
 
 ---
 

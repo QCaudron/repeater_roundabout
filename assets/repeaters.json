@@ -952,5 +952,23 @@
         "Website":"http:\/\/shorelineacs.org",
         "Exclude":null,
         "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7CH",
+        "Output (MHz)":"444.450",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            46.4882,
+            -123.2148
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7CH",
+        "Location":"Baw Faw Peak, WA",
+        "Mode":"FM",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null,
+        "RepeaterBook State ID":null
     }
 ]

@@ -52,3 +52,4 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 51,W7AUX,440.300,5.0,103.5,,"Shoreline, WA",FM,Shoreline ACS,https://sites.google.com/a/w7aux.org/shoreline-acs/,,47.75619,-122.34575
 52,W7AUX,442.825,5.0,103.5,,"Shoreline, WA",FM,Shoreline ACS,http://shorelineacs.org,,47.768,-122.3531
 53,W7AUX,927.638,-25.0,114.8,,"Shoreline, WA",FM,Shoreline ACS,http://shorelineacs.org,,47.75619,-122.34575
+54,K7CH,444.450,5.0,100,,"Baw Faw Peak, WA",FM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,,46.4882,-123.2148
