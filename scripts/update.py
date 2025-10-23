@@ -282,7 +282,7 @@ def generate_repeater_df(
     # Combine RepeaterBook and WWARA info with user input
     wwaras = repeaters_from_wwara(args.wwara_csv, args.call)
     if args.freq:
-        freq = float(freq)
+        freq = float(args.freq)
         wwaras = [r for r in wwaras if math.isclose(float(r["Output (MHz)"]), freq, abs_tol=0.001)][0:1]
     if not wwaras:
         # Ensure we provide at least one record to combine with RepeaterBook and CLI args.
