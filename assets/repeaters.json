@@ -10,7 +10,7 @@
         ],
         "RepeaterBook ID":null,
         "Group Name":"PSRG",
-        "Location":"Seattle",
+        "Location":"Capitol Hill, Seattle, WA",
         "Mode":"FM",
         "Long Name":"Puget Sound Repeater Group",
         "Website":"http:\/\/www.psrg.org",
@@ -623,7 +623,7 @@
         "RepeaterBook ID":null,
         "Group Name":"KCARC",
         "Location":"Gold Mtn, WA",
-        "Mode":"FM",
+        "Mode":"NBFM[^nbfm]",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"https:\/\/kcarc.org\/",
         "Exclude":null,
@@ -641,7 +641,7 @@
         "RepeaterBook ID":null,
         "Group Name":"KCARC",
         "Location":"Bremerton, WA",
-        "Mode":"FM",
+        "Mode":"NBFM[^nbfm]",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"https:\/\/kcarc.org\/",
         "Exclude":null,
@@ -968,6 +968,294 @@
         "Mode":"FM",
         "Long Name":"Carl K7CH's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7LED",
+        "Output (MHz)":"146.820",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48805,
+            -121.94694
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn East, WA",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7LED",
+        "Output (MHz)":"224.120",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48805,
+            -121.94694
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Mike & Key",
+        "Location":"Tiger Mtn East, WA",
+        "Mode":"FM",
+        "Long Name":"Mike & Key Amateur Radio Club",
+        "Website":"https:\/\/www.mikeandkey.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"53.290",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.5405,
+            -122.3777
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"145.130",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.540412,
+            -122.378271
+        ],
+        "RepeaterBook ID":"14858",
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"441.800",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.5405,
+            -122.3777
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"N7GDE",
+        "Output (MHz)":"145.190",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.594746,
+            -122.15942
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"RASC",
+        "Location":"Lyman Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Radio Amateurs of Skagit County",
+        "Website":"http:\/\/rasconline.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"N7SK",
+        "Output (MHz)":"146.720",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.2072,
+            -123.1183
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MCARC",
+        "Location":"Shelton, WA",
+        "Mode":"FM",
+        "Long Name":"Mason County Amateur Radio Club",
+        "Website":"https:\/\/mc-arc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"N7SK",
+        "Output (MHz)":"443.250",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.2072,
+            -123.1183
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MCARC",
+        "Location":"Shelton, WA",
+        "Mode":"FM",
+        "Long Name":"Mason County Amateur Radio Club",
+        "Website":"https:\/\/mc-arc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"N7SK",
+        "Output (MHz)":"927.413",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            47.2072,
+            -123.1183
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"MCARC",
+        "Location":"Shelton, WA",
+        "Mode":"FM",
+        "Long Name":"Mason County ARC",
+        "Website":"http:\/\/mc-arc.org",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"WA7LAW",
+        "Output (MHz)":"147.180",
+        "Offset (MHz)":"0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.998014,
+            -122.19456
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SCHC",
+        "Location":"Everett, WA",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Hams Club",
+        "Website":"http:\/\/www.wa7law.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"WA7LAW",
+        "Output (MHz)":"444.575",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.998014,
+            -122.19456
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SCHC",
+        "Location":"Everett, WA",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Hams Club",
+        "Website":"http:\/\/www.wa7law.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7PP",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"0.6",
+        "Tone (Hz)":"123",
+        "Coordinates":[
+            47.75,
+            -124.17666
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7PP",
+        "Location":"Mt Octopus, WA",
+        "Mode":"FM",
+        "Long Name":"Peter Policani's K7PP repeater system",
+        "Website":"https:\/\/www.k7pp.itgo.com",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7PP",
+        "Output (MHz)":"441.200",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"123",
+        "Coordinates":[
+            47.549167,
+            -122.78388
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7PP",
+        "Location":"Gold Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Peter Policani's K7PP repeater system",
+        "Website":"https:\/\/www.k7pp.itgo.com",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7PP",
+        "Output (MHz)":"441.300",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"123",
+        "Coordinates":[
+            46.46143,
+            -123.5462
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7PP",
+        "Location":"Ko Peak, WA",
+        "Mode":"FM",
+        "Long Name":"Peter Policani's K7PP repeater system",
+        "Website":"https:\/\/www.k7pp.itgo.com",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7PP",
+        "Output (MHz)":"443.400",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"123",
+        "Coordinates":[
+            47.5414,
+            -122.1092
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7PP",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Peter Policani's K7PP repeater system",
+        "Website":"https:\/\/www.k7pp.itgo.com",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"KC7Z",
+        "Output (MHz)":"441.175",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54935,
+            -122.78356
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"KCARC",
+        "Location":"Gold Mtn, WA",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Kitsap County Amateur Radio Club",
+        "Website":"https:\/\/kcarc.org\/",
         "Exclude":null,
         "RepeaterBook State ID":null
     }

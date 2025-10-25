@@ -1,5 +1,5 @@
 RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,Group,Website,RepeaterBook State ID,Latitude,Longitude
-1,WW7PSR,146.960,-0.6,103.5,,Seattle,FM,Puget Sound Repeater Group,http://www.psrg.org,,47.6395,-122.3693
+1,WW7PSR,146.960,-0.6,103.5,,"Capitol Hill, Seattle, WA",FM,Puget Sound Repeater Group,http://www.psrg.org,,47.6395,-122.3693
 2,WW7PSR,52.870,-1.7,103.5,,Seattle,FM,Puget Sound Repeater Group,http://psrg.org,,47.62384,-122.31519
 3,W7PFR,53.410,-1.7,100,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
 4,W7PFR,443.975,5.0,103.5,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
@@ -33,8 +33,8 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 32,WA7FW,442.950,5.0,103.5,,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,,47.32,-122.33
 33,KC7EQO,442.100,5.0,100,,"Blyn, WA",FM,Matt KC7EQO's repeater system,https://www.qrz.com/db/KC7EQO/R,,48.00666,-122.97267
 34,KC7Z,146.620,-0.6,103.5,,"Gold Mtn, WA",FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54788,-122.8073
-35,KC7Z,442.650,5.0,103.5,,"Gold Mtn, WA",FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54788,-122.8073
-36,KC7Z,444.075,5.0,103.5,,"Bremerton, WA",FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.60212,-122.61746
+35,KC7Z,442.650,5.0,103.5,,"Gold Mtn, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54788,-122.8073
+36,KC7Z,444.075,5.0,103.5,,"Bremerton, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.60212,-122.61746
 37,K7NWS,145.330,-0.6,179.9,,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,47.50875,-121.98519
 38,K7NWS,224.340,-1.6,110.9,,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,47.50875,-121.98519
 39,K7NWS,442.075,5.0,110.9,,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,47.51,-121.99
@@ -53,3 +53,19 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 52,W7AUX,442.825,5.0,103.5,,"Shoreline, WA",FM,Shoreline ACS,http://shorelineacs.org,,47.768,-122.3531
 53,W7AUX,927.638,-25.0,114.8,,"Shoreline, WA",FM,Shoreline ACS,http://shorelineacs.org,,47.75619,-122.34575
 54,K7CH,444.450,5.0,100,,"Baw Faw Peak, WA",FM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,,46.4882,-123.2148
+55,K7LED,146.820,-0.6,103.5,,"Tiger Mtn East, WA",FM,Mike & Key Amateur Radio Club,https://www.mikeandkey.org/,,47.48805,-121.94694
+56,K7LED,224.120,-1.6,103.5,,"Tiger Mtn East, WA",FM,Mike & Key Amateur Radio Club,https://www.mikeandkey.org/,,47.48805,-121.94694
+57,W7AW,53.290,-1.7,100,,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,,47.5405,-122.3777
+58,W7AW,145.130,-0.6,103.5,14858,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,53,47.540412,-122.378271
+59,W7AW,441.800,5.0,141.3,,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,,47.5405,-122.3777
+60,N7GDE,145.190,-0.6,127.3,,"Lyman Mtn, WA",FM,Radio Amateurs of Skagit County,http://rasconline.com/,,48.594746,-122.15942
+61,N7SK,146.720,-0.6,103.5,,"Shelton, WA",FM,Mason County Amateur Radio Club,https://mc-arc.org/,,47.2072,-123.1183
+62,N7SK,443.250,5.0,100,,"Shelton, WA",FM,Mason County Amateur Radio Club,https://mc-arc.org/,,47.2072,-123.1183
+63,N7SK,927.413,-25.0,114.8,,"Shelton, WA",FM,Mason County ARC,http://mc-arc.org,,47.2072,-123.1183
+64,WA7LAW,147.180,0.6,103.5,,"Everett, WA",FM,Snohomish County Hams Club,http://www.wa7law.org/,,47.998014,-122.19456
+65,WA7LAW,444.575,5.0,103.5,,"Everett, WA",FM,Snohomish County Hams Club,http://www.wa7law.org/,,47.998014,-122.19456
+66,K7PP,147.280,0.6,123,,"Mt Octopus, WA",FM,Peter Policani's K7PP repeater system,https://www.k7pp.itgo.com,,47.75,-124.17666
+67,K7PP,441.200,5.0,123,,"Gold Mtn, WA",FM,Peter Policani's K7PP repeater system,https://www.k7pp.itgo.com,,47.549167,-122.78388
+68,K7PP,441.300,5.0,123,,"Ko Peak, WA",FM,Peter Policani's K7PP repeater system,https://www.k7pp.itgo.com,,46.46143,-123.5462
+69,K7PP,443.400,5.0,123,,"Cougar Mtn, WA",FM,Peter Policani's K7PP repeater system,https://www.k7pp.itgo.com,,47.5414,-122.1092
+70,KC7Z,441.175,5.0,103.5,,"Gold Mtn, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54935,-122.78356
