@@ -4,18 +4,18 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 3,W7PFR,53.410,-1.7,100,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
 4,W7PFR,443.975,5.0,103.5,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
 5,WW7SEA,444.425,5.0,141.3,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.6322,-122.3539
-6,WW7SEA,444.700,5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.637010000000004,-122.3488
+6,WW7SEA,444.700,5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.63701,-122.3488
 7,W7DX,147.000,-0.6,103.5,,Redmond,FM,Western Washington DX Club,https://www.wwdxc.org/,,47.67459,-122.05393
 8,W7JCR,145.150,-0.6,114.8,,Port Townsend,FM,Jefferson County Amateur Radio Club,https://w7jcr.wordpress.com/,,48.1247,-122.7651
 9,AA7MI,440.725,5.0,114.8,,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,https://qrz.com/db/AA7MI,,48.04026,-122.68775
-10,WA7DEM,146.775,-0.6,156.7,,"Lynnwood, WA",FM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,47.86148,-122.28371
+10,WA7DEM,146.775,-0.6,156.7,,"Lynnwood, WA",NBFM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,47.86148,-122.28371
 11,WA7DEM,146.925,-0.6,156.7,,"Granite Falls, WA",NBFM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,48.13695,-121.9814
 12,WA7DEM,224.380,-1.6,103.5,,"Marysville, WA",FM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,48.12,-122.24
-13,WA7DEM,442.975,5.0,156.7,,"Clearview, WA",FM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,47.8329,-122.12397
-14,WA7DEM,443.725,5.0,156.7,,"Mountlake Terrace, WA",FM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,47.7976,-122.3124
-15,WA7DEM,444.025,5.0,156.7,,"Edmonds, WA",FM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,47.8035,-122.3346
-16,WA7DEM,444.200,5.0,156.7,,"Marysville, WA",FM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,48.122528,-122.24338
-17,WA7DEM,444.300,5.0,156.7,,"Darrington, WA",FM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,48.24944,-122.56916
+13,WA7DEM,442.975,5.0,156.7,,"Clearview, WA",NBFM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,47.8329,-122.12397
+14,WA7DEM,443.725,5.0,156.7,,"Mountlake Terrace, WA",NBFM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,47.7976,-122.3124
+15,WA7DEM,444.025,5.0,156.7,,"Edmonds, WA",NBFM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,47.8035,-122.3346
+16,WA7DEM,444.200,5.0,156.7,,"Marysville, WA",NBFM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,48.122528,-122.24338
+17,WA7DEM,444.300,5.0,156.7,,"Darrington, WA",NBFM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,48.24944,-122.56916
 18,W7MIR,147.160,0.6,146.2,,"Mercer Island, WA",FM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,47.56838,-122.22078
 19,W7MIR,440.150,5.0,103.5,,"Mercer Island, WA",FM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,47.56838,-122.22078
 20,W7DG,147.100,0.6,114.8,,"Longview, WA",FM,Lower Columbia Amateur Radio Association,http://w7dg.org,,46.1828,-122.9578
