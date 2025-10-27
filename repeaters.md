@@ -29,14 +29,14 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 7     | WWDXC         | W7DX       | Redmond                   | FM          |        147.000 |           -0.6 |       103.5 |
 | 8     | JCARC         | W7JCR      | Port Townsend             | FM          |        145.150 |           -0.6 |       114.8 |
 | 9     | Marrowstone   | AA7MI      | Marrowstone Isl.          | FM          |        440.725 |            5.0 |       114.8 |
-| 10    | Snohomish ACS | WA7DEM     | Lynnwood, WA              | FM          |        146.775 |           -0.6 |       156.7 |
+| 10    | Snohomish ACS | WA7DEM     | Lynnwood, WA              | NBFM[^nbfm] |        146.775 |           -0.6 |       156.7 |
 | 11    | Snohomish ACS | WA7DEM     | Granite Falls, WA         | NBFM[^nbfm] |        146.925 |           -0.6 |       156.7 |
 | 12    | Snohomish ACS | WA7DEM     | Marysville, WA            | FM          |        224.380 |           -1.6 |       103.5 |
-| 13    | Snohomish ACS | WA7DEM     | Clearview, WA             | FM          |        442.975 |            5.0 |       156.7 |
-| 14    | Snohomish ACS | WA7DEM     | Mountlake Terrace, WA     | FM          |        443.725 |            5.0 |       156.7 |
-| 15    | Snohomish ACS | WA7DEM     | Edmonds, WA               | FM          |        444.025 |            5.0 |       156.7 |
-| 16    | Snohomish ACS | WA7DEM     | Marysville, WA            | FM          |        444.200 |            5.0 |       156.7 |
-| 17    | Snohomish ACS | WA7DEM     | Darrington, WA            | FM          |        444.300 |            5.0 |       156.7 |
+| 13    | Snohomish ACS | WA7DEM     | Clearview, WA             | NBFM[^nbfm] |        442.975 |            5.0 |       156.7 |
+| 14    | Snohomish ACS | WA7DEM     | Mountlake Terrace, WA     | NBFM[^nbfm] |        443.725 |            5.0 |       156.7 |
+| 15    | Snohomish ACS | WA7DEM     | Edmonds, WA               | NBFM[^nbfm] |        444.025 |            5.0 |       156.7 |
+| 16    | Snohomish ACS | WA7DEM     | Marysville, WA            | NBFM[^nbfm] |        444.200 |            5.0 |       156.7 |
+| 17    | Snohomish ACS | WA7DEM     | Darrington, WA            | NBFM[^nbfm] |        444.300 |            5.0 |       156.7 |
 | 18    | MIRO          | W7MIR      | Mercer Island, WA         | FM          |        147.160 |            0.6 |       146.2 |
 | 19    | MIRO          | W7MIR      | Mercer Island, WA         | FM          |        440.150 |            5.0 |       103.5 |
 | 20    | LCARA         | W7DG       | Longview, WA              | FM          |        147.100 |            0.6 |       114.8 |
