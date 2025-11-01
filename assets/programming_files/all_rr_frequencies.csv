@@ -72,3 +72,8 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 71,WA7MV,147.320,+0.6,100.0,206,Tunk Mtn.,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.54570007,-119.23600006
 72,WA7MV,146.720,-0.6,100.0,400,Benson Creek,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.3634784,-120.122303
 73,WA7MV,444.800,+5.0,110.9,646,Winthrop,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.31760025,-120.11499786
+74,K7LWH,145.490,-0.6,103.5,,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,,47.6637,-122.1665
+75,K7LWH,224.360,-1.6,103.5,5326,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.6637,-122.1665
+76,K7LWH,441.075,5.0,103.5,162,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.6637,-122.1665
+77,K7LWH,444.600,5.0,103.5,,"Bellevue, WA",FM,Lake WA Ham Club,http://www.lakewashingtonhamclub.org,,47.61722,-122.20111
+78,K7LWH,53.170,-1.7,100,165,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.6637,-122.1665

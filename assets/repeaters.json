@@ -1312,5 +1312,95 @@
         "Website":"https:\/\/www.mvhams.net\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"145.490",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.6637,
+            -122.1665
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"224.360",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.6637,
+            -122.1665
+        ],
+        "RepeaterBook ID":"5326",
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"441.075",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.6637,
+            -122.1665
+        ],
+        "RepeaterBook ID":"162",
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"444.600",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.61722,
+            -122.20111
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"LWHC",
+        "Location":"Bellevue, WA",
+        "Mode":"FM",
+        "Long Name":"Lake WA Ham Club",
+        "Website":"http:\/\/www.lakewashingtonhamclub.org",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"53.170",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.6637,
+            -122.1665
+        ],
+        "RepeaterBook ID":"165",
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
