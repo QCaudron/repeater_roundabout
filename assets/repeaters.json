@@ -1258,5 +1258,59 @@
         "Website":"https:\/\/kcarc.org\/",
         "Exclude":null,
         "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"WA7MV",
+        "Output (MHz)":"147.320",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.54570007,
+            -119.23600006
+        ],
+        "RepeaterBook ID":"206",
+        "Group Name":"MVARC",
+        "Location":"Tunk Mtn.",
+        "Mode":"FM",
+        "Long Name":"Methow Valley Amateur Radio Club",
+        "Website":"https:\/\/www.mvhams.net\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WA7MV",
+        "Output (MHz)":"146.720",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.3634784,
+            -120.122303
+        ],
+        "RepeaterBook ID":"400",
+        "Group Name":"MVARC",
+        "Location":"Benson Creek",
+        "Mode":"FM",
+        "Long Name":"Methow Valley Amateur Radio Club",
+        "Website":"https:\/\/www.mvhams.net\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WA7MV",
+        "Output (MHz)":"444.800",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            48.31760025,
+            -120.11499786
+        ],
+        "RepeaterBook ID":"646",
+        "Group Name":"MVARC",
+        "Location":"Winthrop",
+        "Mode":"FM",
+        "Long Name":"Methow Valley Amateur Radio Club",
+        "Website":"https:\/\/www.mvhams.net\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

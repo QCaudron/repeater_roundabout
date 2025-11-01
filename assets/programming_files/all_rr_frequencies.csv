@@ -4,7 +4,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 3,W7PFR,53.410,-1.7,100,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
 4,W7PFR,443.975,5.0,103.5,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
 5,WW7SEA,444.425,5.0,141.3,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.6322,-122.3539
-6,WW7SEA,444.700,5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.63701,-122.3488
+6,WW7SEA,444.700,5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.637010000000004,-122.3488
 7,W7DX,147.000,-0.6,103.5,,Redmond,FM,Western Washington DX Club,https://www.wwdxc.org/,,47.67459,-122.05393
 8,W7JCR,145.150,-0.6,114.8,,Port Townsend,FM,Jefferson County Amateur Radio Club,https://w7jcr.wordpress.com/,,48.1247,-122.7651
 9,AA7MI,440.725,5.0,114.8,,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,https://qrz.com/db/AA7MI,,48.04026,-122.68775
@@ -69,3 +69,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 68,K7PP,441.300,5.0,123,,"Ko Peak, WA",FM,Peter Policani's K7PP repeater system,https://www.k7pp.itgo.com,,46.46143,-123.5462
 69,K7PP,443.400,5.0,123,,"Cougar Mtn, WA",FM,Peter Policani's K7PP repeater system,https://www.k7pp.itgo.com,,47.5414,-122.1092
 70,KC7Z,441.175,5.0,103.5,,"Gold Mtn, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54935,-122.78356
+71,WA7MV,147.320,+0.6,100.0,206,Tunk Mtn.,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.54570007,-119.23600006
+72,WA7MV,146.720,-0.6,100.0,400,Benson Creek,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.3634784,-120.122303
+73,WA7MV,444.800,+5.0,110.9,646,Winthrop,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.31760025,-120.11499786

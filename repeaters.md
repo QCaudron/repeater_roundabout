@@ -90,6 +90,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 68    | K7PP          | K7PP       | Ko Peak, WA               | FM          |        441.300 |            5.0 |         123 |
 | 69    | K7PP          | K7PP       | Cougar Mtn, WA            | FM          |        443.400 |            5.0 |         123 |
 | 70    | KCARC         | KC7Z       | Gold Mtn, WA              | NBFM[^nbfm] |        441.175 |            5.0 |       103.5 |
+| 71    | MVARC         | WA7MV      | Tunk Mtn.                 | FM          |        147.320 |           +0.6 |       100.0 |
+| 72    | MVARC         | WA7MV      | Benson Creek              | FM          |        146.720 |           -0.6 |       100.0 |
+| 73    | MVARC         | WA7MV      | Winthrop                  | FM          |        444.800 |           +5.0 |       110.9 |
 
 ---
 
@@ -130,6 +133,9 @@ MCARC
 
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
+
+MVARC
+: [Methow Valley Amateur Radio Club](https://www.mvhams.net/)
 
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://qrz.com/db/AA7MI)
