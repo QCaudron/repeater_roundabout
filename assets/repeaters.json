@@ -1402,5 +1402,59 @@
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"146.880",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.57889938,
+            -117.29599762
+        ],
+        "RepeaterBook ID":"283",
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"147.340",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.65879822,
+            -117.4260025
+        ],
+        "RepeaterBook ID":"290",
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"444.600",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.91939926,
+            -117.11399841
+        ],
+        "RepeaterBook ID":"17283",
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

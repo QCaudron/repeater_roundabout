@@ -77,3 +77,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 76,K7LWH,441.075,5.0,103.5,162,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.6637,-122.1665
 77,K7LWH,444.600,5.0,103.5,,"Bellevue, WA",FM,Lake WA Ham Club,http://www.lakewashingtonhamclub.org,,47.61722,-122.20111
 78,K7LWH,53.170,-1.7,100,165,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.6637,-122.1665
+79,WR7VHF,146.880,-0.6,123.0,283,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,53,47.57889938,-117.29599762
+80,WR7VHF,147.340,+0.6,123.0,290,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,53,47.65879822,-117.4260025
+81,WR7VHF,444.600,+5.0,123.0,17283,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,53,47.91939926,-117.11399841
