@@ -1546,5 +1546,41 @@
         "Website":"https:\/\/www.qrz.com\/db\/KC7VQR",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W6TQF",
+        "Output (MHz)":"440.325",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            45.74150848,
+            -121.68618774
+        ],
+        "RepeaterBook ID":"18543",
+        "Group Name":"SCARES",
+        "Location":"Augspurger Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Skamania County ARES",
+        "Website":"https:\/\/skamania-prepare.org\/ares\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KB7APU",
+        "Output (MHz)":"145.250",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"186.2",
+        "Coordinates":[
+            45.93479919,
+            -121.81999969
+        ],
+        "RepeaterBook ID":"16535",
+        "Group Name":"SCARES",
+        "Location":"Red Mountain",
+        "Mode":"FM",
+        "Long Name":"Skamania County ARES",
+        "Website":"https:\/\/skamania-prepare.org\/ares\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

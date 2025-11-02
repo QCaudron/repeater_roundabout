@@ -106,6 +106,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 84    | K7RHT         | K7RHT      | Table Mtn.                | FM          |        147.000 |           +0.6 |       131.8 |
 | 85    | K7RHT         | K7RHT      | Table Mtn.                | FM          |        444.450 |           +5.0 |       131.8 |
 | 86    | N7YRC         | KC7VQR     | Yakima Canyon             | FM          |        147.240 |           +0.6 |       192.8 |
+| 87    | SCARES        | W6TQF      | Augspurger Mtn, WA        | FM          |        440.325 |           +5.0 |       100.0 |
+| 88    | SCARES        | KB7APU     | Red Mountain              | FM          |        145.250 |           -0.6 |       186.2 |
 
 ---
 
@@ -185,6 +187,9 @@ RASC
 
 SCARC
 : [Stanwood-Camano Amateur Radio Club](https://www.scarcwa.org/)
+
+SCARES
+: [Skamania County ARES](https://skamania-prepare.org/ares/)
 
 SCHC
 : [Snohomish County Hams Club](http://www.wa7law.org/)
