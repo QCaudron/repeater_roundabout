@@ -103,6 +103,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 81    | IEVHFRA       | WR7VHF     | Spokane                   | FM          |        444.600 |           +5.0 |       123.0 |
 | 82    | BCARC         | K7JEP      | Hoodoo Mtn, ID            | FM          |        145.490 |           -0.6 |       136.5 |
 | 83    | BCARC         | K7JEP      | Blanchard, ID             | FM          |        444.550 |           +5.0 |             |
+| 84    | K7RHT         | K7RHT      | Table Mtn.                | FM          |        147.000 |           +0.6 |       131.8 |
+| 85    | K7RHT         | K7RHT      | Table Mtn.                | FM          |        444.450 |           +5.0 |       131.8 |
 
 ---
 
@@ -134,6 +136,9 @@ K7CH
 
 K7PP
 : [Peter Policani's K7PP repeater system](https://www.k7pp.itgo.com)
+
+K7RHT
+: [K7RHT](https://www.qrz.com/db/K7RHT)
 
 KC7EQO
 : [Matt KC7EQO's repeater system](https://www.qrz.com/db/KC7EQO/R)

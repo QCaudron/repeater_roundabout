@@ -82,3 +82,5 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 81,WR7VHF,444.600,+5.0,123.0,17283,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,53,47.91939926,-117.11399841
 82,K7JEP,145.490,-0.6,136.5,43,"Hoodoo Mtn, ID",FM,Bonner County Amateur Radio Club,https://k7jep.org,16,48.0788002,-116.95400238
 83,K7JEP,444.550,+5.0,,23257,"Blanchard, ID",FM,Bonner County Amateur Radio Club,https://k7jep.org,16,48.0168468,-116.9838096
+84,K7RHT,147.000,+0.6,131.8,17116,Table Mtn.,FM,K7RHT,https://www.qrz.com/db/K7RHT,53,47.15230179,-120.56400299
+85,K7RHT,444.450,+5.0,131.8,17115,Table Mtn.,FM,K7RHT,https://www.qrz.com/db/K7RHT,53,47.15230179,-120.56400299
