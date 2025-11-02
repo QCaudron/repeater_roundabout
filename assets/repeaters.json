@@ -734,7 +734,7 @@
         "Mode":"FM",
         "Long Name":"K7CH",
         "Website":"",
-        "Exclude":null,
+        "Exclude":true,
         "RepeaterBook State ID":null
     },
     {
@@ -1256,6 +1256,474 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Kitsap County Amateur Radio Club",
         "Website":"https:\/\/kcarc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"WA7MV",
+        "Output (MHz)":"147.320",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.54570007,
+            -119.23600006
+        ],
+        "RepeaterBook ID":"206",
+        "Group Name":"MVARC",
+        "Location":"Tunk Mtn.",
+        "Mode":"FM",
+        "Long Name":"Methow Valley Amateur Radio Club",
+        "Website":"https:\/\/www.mvhams.net\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WA7MV",
+        "Output (MHz)":"146.720",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.3634784,
+            -120.122303
+        ],
+        "RepeaterBook ID":"400",
+        "Group Name":"MVARC",
+        "Location":"Benson Creek",
+        "Mode":"FM",
+        "Long Name":"Methow Valley Amateur Radio Club",
+        "Website":"https:\/\/www.mvhams.net\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WA7MV",
+        "Output (MHz)":"444.800",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            48.31760025,
+            -120.11499786
+        ],
+        "RepeaterBook ID":"646",
+        "Group Name":"MVARC",
+        "Location":"Winthrop",
+        "Mode":"FM",
+        "Long Name":"Methow Valley Amateur Radio Club",
+        "Website":"https:\/\/www.mvhams.net\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"145.490",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.6637,
+            -122.1665
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"224.360",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.6637,
+            -122.1665
+        ],
+        "RepeaterBook ID":"5326",
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"441.075",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.6637,
+            -122.1665
+        ],
+        "RepeaterBook ID":"162",
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"444.600",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.61722,
+            -122.20111
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"LWHC",
+        "Location":"Bellevue, WA",
+        "Mode":"FM",
+        "Long Name":"Lake WA Ham Club",
+        "Website":"http:\/\/www.lakewashingtonhamclub.org",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"53.170",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.6637,
+            -122.1665
+        ],
+        "RepeaterBook ID":"165",
+        "Group Name":"LWHC",
+        "Location":"Kirkland",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"146.880",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.57889938,
+            -117.29599762
+        ],
+        "RepeaterBook ID":"283",
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"147.340",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.65879822,
+            -117.4260025
+        ],
+        "RepeaterBook ID":"290",
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"444.600",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.91939926,
+            -117.11399841
+        ],
+        "RepeaterBook ID":"17283",
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7JEP",
+        "Output (MHz)":"145.490",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            48.0788002,
+            -116.95400238
+        ],
+        "RepeaterBook ID":"43",
+        "Group Name":"BCARC",
+        "Location":"Hoodoo Mtn, ID",
+        "Mode":"FM",
+        "Long Name":"Bonner County Amateur Radio Club",
+        "Website":"https:\/\/k7jep.org",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"K7JEP",
+        "Output (MHz)":"444.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":null,
+        "Coordinates":[
+            48.0168468,
+            -116.9838096
+        ],
+        "RepeaterBook ID":"23257",
+        "Group Name":"BCARC",
+        "Location":"Blanchard, ID",
+        "Mode":"FM",
+        "Long Name":"Bonner County Amateur Radio Club",
+        "Website":"https:\/\/k7jep.org",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"K7RHT",
+        "Output (MHz)":"147.000",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            47.15230179,
+            -120.56400299
+        ],
+        "RepeaterBook ID":"17116",
+        "Group Name":"K7RHT",
+        "Location":"Table Mtn.",
+        "Mode":"FM",
+        "Long Name":"K7RHT",
+        "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7RHT",
+        "Output (MHz)":"444.450",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            47.15230179,
+            -120.56400299
+        ],
+        "RepeaterBook ID":"17115",
+        "Group Name":"K7RHT",
+        "Location":"Table Mtn.",
+        "Mode":"FM",
+        "Long Name":"K7RHT",
+        "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KC7VQR",
+        "Output (MHz)":"147.240",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"192.8",
+        "Coordinates":[
+            46.65399933,
+            -120.52999878
+        ],
+        "RepeaterBook ID":"181",
+        "Group Name":"N7YRC",
+        "Location":"Yakima Canyon",
+        "Mode":"FM",
+        "Long Name":"N7YRC Group",
+        "Website":"https:\/\/www.qrz.com\/db\/KC7VQR",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W6TQF",
+        "Output (MHz)":"440.325",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            45.74150848,
+            -121.68618774
+        ],
+        "RepeaterBook ID":"18543",
+        "Group Name":"SCARES",
+        "Location":"Augspurger Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Skamania County ARES",
+        "Website":"https:\/\/skamania-prepare.org\/ares\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KB7APU",
+        "Output (MHz)":"145.250",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"186.2",
+        "Coordinates":[
+            45.93479919,
+            -121.81999969
+        ],
+        "RepeaterBook ID":"16535",
+        "Group Name":"SCARES",
+        "Location":"Red Mountain",
+        "Mode":"FM",
+        "Long Name":"Skamania County ARES",
+        "Website":"https:\/\/skamania-prepare.org\/ares\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"N7MHE",
+        "Output (MHz)":"145.350",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.81000137,
+            -119.88200378
+        ],
+        "RepeaterBook ID":"390",
+        "Group Name":"N7MHE",
+        "Location":"Saddle Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Craig Morrison's N7MHE repeater",
+        "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7SWI",
+        "Output (MHz)":"224.940",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.9760521,
+            -116.4074505
+        ],
+        "RepeaterBook ID":"21198",
+        "Group Name":"SWI-ARC",
+        "Location":"Squaw Butte, ID",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"K7SWI",
+        "Output (MHz)":"444.375",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.9761,
+            -116.4077
+        ],
+        "RepeaterBook ID":"21386",
+        "Group Name":"SWI-ARC",
+        "Location":"Squaw Butte, ID",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"N7UBO",
+        "Output (MHz)":"146.740",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.97606,
+            -116.40751
+        ],
+        "RepeaterBook ID":"19067",
+        "Group Name":"SWI-ARC",
+        "Location":"Squaw Butte, ID",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"KI7PWR",
+        "Output (MHz)":"146.920",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.410919,
+            -116.589569
+        ],
+        "RepeaterBook ID":"21717",
+        "Group Name":"SWI-ARC",
+        "Location":"Hat Butte, ID",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"NE7MC",
+        "Output (MHz)":"442.000",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.737677,
+            -122.23079
+        ],
+        "RepeaterBook ID":"19962",
+        "Group Name":"Northshore EMC",
+        "Location":"Kenmore",
+        "Mode":"FM",
+        "Long Name":"Northshore Emergency Management Coalition",
+        "Website":"https:\/\/www.northshoreemc.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"145.170",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.38661,
+            -122.86099
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NMARESC",
+        "Location":"Belfair, WA",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"224.260",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.3866,
+            -122.86099
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NMARESC",
+        "Location":"Belfair, WA",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
         "Exclude":null,
         "RepeaterBook State ID":null
     }
