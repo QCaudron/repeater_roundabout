@@ -141,6 +141,10 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df["DtcsPolarity"] = "NN"
     df["TStep"] = "5.00"
 
+    no_tone = df["rToneFreq"].isna()
+    df.loc[no_tone, "Tone"] = ""
+    df.loc[no_tone, "rToneFreq"] = "67.0"
+
     # DCS tones are different, so go back and fix that
     dcs = df["rToneFreq"].str.startswith("D")
     df.loc[dcs, "Tone"] = "DTCS"
