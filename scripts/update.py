@@ -183,28 +183,53 @@ def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
     source = requests.get(url)
 
     # Extract various pieces of information
-    start = r"\:\<\/td\>\s+\<td\>(?:\s*(?:\<!--.*?--\>|\<span[^\>]*\>))*\s*"
-    end = r"(?:\s*\</span\>)*\s*\<\/td\>"
+    start = r".*?</th>.*?<td>(?:\s*(?:\<!--.*?-->|<span[^>]*>))*\s*"
 
-    call = re.search(r"callResult.php\?call=(\w{4,6})", source.text).group(1)
+    call_match = re.search(r"callResult.php\?call=(\w{4,6})", source.text)
+    if not call_match:
+        print(f"Could not find call in {url}", file=sys.stderr)
+        return {}
 
-    freq = re.search(rf"Downlink{start}(\d+\.\d+){end}", source.text).group(1)
+    call = call_match.group(1)
+
+    freq_match = re.search(rf"Downlink{start}(\d+\.\d+)", source.text, re.DOTALL)
+    if not freq_match:
+        print(f"Could not find downlink in {url}", file=sys.stderr)
+        return {}
+
+    freq = freq_match.group(1)
     freq = f"{float(freq):.04f}"
     if freq[-1] == "0":
         freq = freq[:-1]
 
-    offset = re.search(rf"Offset{start}([\+\-]\d+\.\d+)\s*MHz{end}", source.text).group(1)
+    offset_match = re.search(rf"Offset{start}([+-]\d+\.\d+)", source.text, re.DOTALL)
+    if not offset_match:
+        print(f"Could not find offset in{url}", file=sys.stderr)
+        return {}
+
+    offset = offset_match.group(1)
     offset = f"{float(offset):.01f}"
     if offset[0] != "-":
         offset = f"+{offset}"
 
-    lat = re.search(r"center: \[(\-?\d+\.\d+)\,", source.text).group(1)
-    long = re.search(r"center: \[\-?\d+\.\d+\,\s+(\-?\d+\.\d+)\]", source.text).group(1)
+    lat_match = re.search(r"L\.circle\(\s*\[(-?\d+\.\d+)\s*,", source.text)
+    if not lat_match:
+        print(f"Could not find lat in{url}", file=sys.stderr)
+        return {}
+
+    lat = lat_match.group(1)
+    long_match = re.search(r"L\.circle\([^,]+,\s*(-?\d+\.\d+)", source.text)
+    if not long_match:
+        print(f"Could not find long in{url}", file=sys.stderr)
+        return {}
+
+    long = long_match.group(1)
     latlong = [float(lat), float(long)]
 
-    try:
-        tone = re.search(rf"Uplink Tone{start}(\d+\.\d+){end}", source.text).group(1)
-    except AttributeError:
+    tone_match = re.search(rf"Uplink Tone{start}(\d+\.\d+)", source.text, re.DOTALL)
+    if tone_match:
+        tone = tone_match.group(1)
+    else:
         tone = ""
 
     repeater = {
