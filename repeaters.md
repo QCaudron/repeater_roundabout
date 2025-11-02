@@ -101,10 +101,15 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 79    | IEVHFRA       | WR7VHF     | Spokane                   | FM          |        146.880 |           -0.6 |       123.0 |
 | 80    | IEVHFRA       | WR7VHF     | Spokane                   | FM          |        147.340 |           +0.6 |       123.0 |
 | 81    | IEVHFRA       | WR7VHF     | Spokane                   | FM          |        444.600 |           +5.0 |       123.0 |
+| 82    | BCARC         | K7JEP      | Hoodoo Mtn, ID            | FM          |        145.490 |           -0.6 |       136.5 |
+| 83    | BCARC         | K7JEP      | Blanchard, ID             | FM          |        444.550 |           +5.0 |             |
 
 ---
 
 ### Clubs and repeater associations
+
+BCARC
+: [Bonner County Amateur Radio Club](https://k7jep.org)
 
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)

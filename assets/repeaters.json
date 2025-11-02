@@ -1456,5 +1456,41 @@
         "Website":"https:\/\/www.vhfclub.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7JEP",
+        "Output (MHz)":"145.490",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            48.0788002,
+            -116.95400238
+        ],
+        "RepeaterBook ID":"43",
+        "Group Name":"BCARC",
+        "Location":"Hoodoo Mtn, ID",
+        "Mode":"FM",
+        "Long Name":"Bonner County Amateur Radio Club",
+        "Website":"https:\/\/k7jep.org",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"K7JEP",
+        "Output (MHz)":"444.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":null,
+        "Coordinates":[
+            48.0168468,
+            -116.9838096
+        ],
+        "RepeaterBook ID":"23257",
+        "Group Name":"BCARC",
+        "Location":"Blanchard, ID",
+        "Mode":"FM",
+        "Long Name":"Bonner County Amateur Radio Club",
+        "Website":"https:\/\/k7jep.org",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
     }
 ]
