@@ -93,3 +93,5 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 92,N7UBO,146.740,-0.6,100.0,19067,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,16,43.97606,-116.40751
 93,KI7PWR,146.920,-0.6,100.0,21717,"Hat Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,16,43.410919,-116.589569
 94,NE7MC,442.000,5.0,141.3,19962,Kenmore,FM,Northshore Emergency Management Coalition,https://www.northshoreemc.com/,53,47.737677,-122.23079
+95,NM7E,145.170,-0.6,103.5,,"Belfair, WA",FM,North Mason Amateur Radio Emergency Service Club,https://nmaresc.wordpress.com/,,47.38661,-122.86099
+96,NM7E,224.260,-1.6,103.5,,"Belfair, WA",FM,North Mason Amateur Radio Emergency Service Club,https://nmaresc.wordpress.com/,,47.3866,-122.86099

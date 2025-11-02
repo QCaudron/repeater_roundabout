@@ -114,6 +114,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 92    | SWI-ARC        | N7UBO      | Squaw Butte, ID           | FM          |        146.740 |           -0.6 |       100.0 |
 | 93    | SWI-ARC        | KI7PWR     | Hat Butte, ID             | FM          |        146.920 |           -0.6 |       100.0 |
 | 94    | Northshore EMC | NE7MC      | Kenmore                   | FM          |        442.000 |            5.0 |       141.3 |
+| 95    | NMARESC        | NM7E       | Belfair, WA               | FM          |        145.170 |           -0.6 |       103.5 |
+| 96    | NMARESC        | NM7E       | Belfair, WA               | FM          |        224.260 |           -1.6 |       103.5 |
 
 ---
 
@@ -184,6 +186,9 @@ N7YRC
 
 N9VW
 : [Steve N9VW's repeater system](https://www.qrz.com/db/n9vw)
+
+NMARESC
+: [North Mason Amateur Radio Emergency Service Club](https://nmaresc.wordpress.com/)
 
 Northshore EMC
 : [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)

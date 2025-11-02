@@ -1690,5 +1690,41 @@
         "Website":"https:\/\/www.northshoreemc.com\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"145.170",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.38661,
+            -122.86099
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NMARESC",
+        "Location":"Belfair, WA",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"224.260",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.3866,
+            -122.86099
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"NMARESC",
+        "Location":"Belfair, WA",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
     }
 ]
