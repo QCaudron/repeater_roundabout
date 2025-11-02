@@ -110,9 +110,6 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     """
     total_repeaters = len(df)
 
-    # Remove repeaters not in the contest
-    df = df.loc[df["Exclude"].isna()]
-
     # Only format FM channels; we can't handle DMR or D-Star at the moment
     df = filter_by_mode(df, ["FM", "NBFM", "YSF"])  # only FM repeaters
     df.loc[df["Mode"] == "NBFM", "Mode"] = "NFM"  # NBFM -> NFM for Chirp
@@ -140,6 +137,10 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df["DtcsCode"] = "023"
     df["DtcsPolarity"] = "NN"
     df["TStep"] = "5.00"
+
+    no_tone = df["rToneFreq"].isna()
+    df.loc[no_tone, "Tone"] = ""
+    df.loc[no_tone, "rToneFreq"] = "67.0"
 
     # DCS tones are different, so go back and fix that
     dcs = df["rToneFreq"].str.startswith("D")
@@ -197,9 +198,6 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
         The repeaters in the 2m and 70cm bands, formatted for Anytone D878.
     """
     total_repeaters = len(df)
-
-    # Remove repeaters not in the contest
-    df = df.loc[df["Exclude"].isna()]
 
     # Select FM, DMR and YSF (in FM compat mode) channels in the 2m or 70cm bands.
     df = filter_by_mode(df, ["FM", "NBFM", "DMR", "YSF"])
@@ -281,9 +279,6 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
         (Tested with Icom-705 - may work for others).
     """
     total_repeaters = len(df)
-
-    # Remove repeaters not in the contest
-    df = df.loc[df["Exclude"].isna()]
 
     # Select FM and YSF (in FM compat mode) channels.
     df = filter_by_mode(df, ["FM", "NBFM", "YSF", "DSTAR"])
@@ -500,6 +495,7 @@ def write_generic_csv(df: pd.DataFrame) -> None:
     df : pd.DataFrame
         All of the repeaters.
     """
+
     df = (
         df.copy()
         .assign(Latitude=df["Coordinates"].apply(lambda x: x[0]))

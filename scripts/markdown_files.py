@@ -151,6 +151,7 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
     table = (
         df[table_cols]
         .rename(columns={"Group Name": "Group"})
+        .assign(**{"Tone (Hz)": df["Tone (Hz)"].apply(lambda v: v if pd.notna(v) else "")})
         .to_markdown(
             index=False,
             disable_numparse=True,
