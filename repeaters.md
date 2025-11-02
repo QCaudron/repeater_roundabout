@@ -105,6 +105,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 83    | BCARC         | K7JEP      | Blanchard, ID             | FM          |        444.550 |           +5.0 |             |
 | 84    | K7RHT         | K7RHT      | Table Mtn.                | FM          |        147.000 |           +0.6 |       131.8 |
 | 85    | K7RHT         | K7RHT      | Table Mtn.                | FM          |        444.450 |           +5.0 |       131.8 |
+| 86    | N7YRC         | KC7VQR     | Yakima Canyon             | FM          |        147.240 |           +0.6 |       192.8 |
 
 ---
 
@@ -166,6 +167,9 @@ Marrowstone
 
 Mike & Key
 : [Mike & Key Amateur Radio Club](https://www.mikeandkey.org/)
+
+N7YRC
+: [N7YRC Group](https://www.qrz.com/db/KC7VQR)
 
 N9VW
 : [Steve N9VW's repeater system](https://www.qrz.com/db/n9vw)

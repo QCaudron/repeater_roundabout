@@ -1528,5 +1528,23 @@
         "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KC7VQR",
+        "Output (MHz)":"147.240",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"192.8",
+        "Coordinates":[
+            46.65399933,
+            -120.52999878
+        ],
+        "RepeaterBook ID":"181",
+        "Group Name":"N7YRC",
+        "Location":"Yakima Canyon",
+        "Mode":"FM",
+        "Long Name":"N7YRC Group",
+        "Website":"https:\/\/www.qrz.com\/db\/KC7VQR",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
