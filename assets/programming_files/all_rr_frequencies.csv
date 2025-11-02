@@ -39,7 +39,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 38,K7NWS,224.340,-1.6,110.9,,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,47.50875,-121.98519
 39,K7NWS,442.075,5.0,110.9,,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,47.51,-121.99
 40,K7CH,53.030,-1.7,114.8,,"Baw Faw Peak, WA",FM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,,46.4882,-123.2148
-41,K7CH,440.650,5.0,100,,"South Mtn, WA",FM,K7CH,,,47.316155,-123.35783
 42,K7CH,927.250,-25.0,114.8,,"South Mtn, WA",FM,K7CH,,,47.3203,-122.3386
 43,K7CH,927.925,-25.0,114.8,,"Chehalis, WA",FM,K7CH,,,46.4882,-123.2148
 44,N9VW,443.325,5.0,103.5,,Cougar Mtn.,FM,Steve N9VW's repeater system,https://www.qrz.com/db/n9vw,,47.5421,-122.10917

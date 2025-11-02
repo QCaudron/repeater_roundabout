@@ -734,7 +734,7 @@
         "Mode":"FM",
         "Long Name":"K7CH",
         "Website":"",
-        "Exclude":null,
+        "Exclude":true,
         "RepeaterBook State ID":null
     },
     {

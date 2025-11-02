@@ -60,7 +60,6 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 38    | BEARS          | K7NWS      | Tiger Mtn West, WA        | FM          |        224.340 |           -1.6 |       110.9 |
 | 39    | BEARS          | K7NWS      | Tiger Mtn West, WA        | FM          |        442.075 |            5.0 |       110.9 |
 | 40    | K7CH           | K7CH       | Baw Faw Peak, WA          | FM          |         53.030 |           -1.7 |       114.8 |
-| 41    | K7CH           | K7CH       | South Mtn, WA             | FM          |        440.650 |            5.0 |         100 |
 | 42    | K7CH           | K7CH       | South Mtn, WA             | FM          |        927.250 |          -25.0 |       114.8 |
 | 43    | K7CH           | K7CH       | Chehalis, WA              | FM          |        927.925 |          -25.0 |       114.8 |
 | 44    | N9VW           | N9VW       | Cougar Mtn.               | FM          |        443.325 |            5.0 |       103.5 |
