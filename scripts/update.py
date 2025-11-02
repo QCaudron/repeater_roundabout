@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 from types import SimpleNamespace
 
+import numpy as np
 import pandas as pd
 import requests
 
@@ -19,7 +20,6 @@ from programming_files import (
     write_chirp_csv,
     write_generic_csv,
 )
-
 
 def parse_args() -> argparse.Namespace | SimpleNamespace:
     """
@@ -94,7 +94,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--score", action="store_true")
     return parser.parse_args()
 
-def repeaters_from_wwara(csv_file: str, call: str) -> list[dict]:
+def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
     if csv_file is None or call is None:
       return []
 
@@ -118,19 +118,7 @@ def wwara_find(lines, call):
 
         repeaters.append(wwara_row_to_repeater(row))
 
-    return repeaters
-
-def find_by_call_freq(repeaters: pd.DataFrame, call: str, outp: str) -> list[dict]:
-    if repeaters is None or repeaters.empty:
-        return []
-    recs = repeaters[
-        (repeaters["Callsign"] == call) &
-        (repeaters["Output (MHz)"] == outp)
-    ]
-    return [
-        {key: r[key] for key in ["Group Name", "Long Name", "Website"]}
-        for _, r in recs.iterrows()
-    ]
+    return pd.DataFrame.from_records(repeaters)
 
 def wwara_row_to_repeater(row: dict) -> dict:
     outp = float(row["OUTPUT_FREQ"])
@@ -244,6 +232,11 @@ def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
 
     return repeater
 
+def strip_empty(d: dict) -> dict:
+    """
+    Removes all empty or NA values from dict.
+    """
+    return {key: val for key, val in d.items() if val and (not np.isscalar(val) or pd.notna(val))}
 
 def repeater_from_args(args: argparse.Namespace | SimpleNamespace) -> dict:
     """
@@ -274,9 +267,38 @@ def repeater_from_args(args: argparse.Namespace | SimpleNamespace) -> dict:
     }
 
     # Remove any empty values
-    repeater = {key: val for key, val in repeater.items() if val}
+    repeater = strip_empty(repeater)
     return repeater
 
+def freq_match(a, b) -> bool:
+    return math.isclose(float(a), float(b), abs_tol=0.001)
+
+def filter_freq(df: pd.DataFrame, freq: float) -> pd.DataFrame:
+    return df.loc[df["Output (MHz)"].map(lambda f: freq_match(freq, f))]
+
+def first_dict(df: pd.DataFrame) -> dict:
+    if df is None or df.empty:
+        return {}
+    return df.iloc[0].to_dict()
+
+def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, prior: dict = {}) -> dict:
+    # Remove all empty values.
+    repeaterbook = strip_empty(repeaterbook)
+    args = strip_empty(args)
+    wwara = strip_empty(wwara)
+    prior = strip_empty(prior)
+
+    r = {**prior, **repeaterbook, **wwara, **args}
+
+    # Prioritize past data for specific fields.
+    for f in ["Group Name", "Location", "Long Name", "Website"]:
+        r[f] = args.get(f) or prior.get(f) or wwara.get(f) or repeaterbook.get(f)
+
+    return r
+
+def ensure_col(df: pd.DataFrame, name: str, default=np.nan) -> pd.DataFrame:
+    if name not in df.columns:
+        df[name] = default
 
 def generate_repeater_df(
     args: argparse.Namespace | SimpleNamespace,
@@ -301,28 +323,59 @@ def generate_repeater_df(
         df["RR#"] = df.index + 1
         return df
 
-    if args.prior_json:
-        prior_repeaters = pd.read_json(args.prior_json, dtype=False)
-
-    # Combine RepeaterBook and WWARA info with user input
-    wwaras = repeaters_from_wwara(args.wwara_csv, args.call)
-    if args.freq:
-        freq = float(args.freq)
-        wwaras = [r for r in wwaras if math.isclose(float(r["Output (MHz)"]), freq, abs_tol=0.001)][0:1]
-    if not wwaras:
-        # Ensure we provide at least one record to combine with RepeaterBook and CLI args.
-        wwaras = [{}]
-
-    def prior_year(repeaters, r):
-        call = r.get("Callsign", None)
-        outp = r.get("Output (MHz)", None)
-        rpts = find_by_call_freq(repeaters, call, outp)
-        return rpts[0] if rpts else {}
+    call = args.call
+    freq = float(args.freq) if args.freq else None
 
     repeaterbook = repeater_from_repeaterbook(args.state_id, args.id)
+    if repeaterbook:
+        if call and call != repeaterbook["Callsign"]:
+            raise f"Callsign mismatch: args={args.call}, repeaterbook={repeaterbook["Callsign"]}"
+        if not call:
+            call = repeaterbook["Callsign"]
+
+        if freq and not freq_match(freq, float(repeaterbook["Output (MHz)"])):
+            raise f"Frequency mismatch: args={args.freq}, repeaterbook={repeaterbook["Output (MHz)"]}"
+        if not freq:
+            freq = float(repeaterbook["Output (MHz)"])
+
+    if not call:
+        raise "Could not determine callsign!"
+
+    priors = pd.DataFrame(columns=["Output (MHz)"])
+    if args.prior_json:
+        priors = pd.read_json(args.prior_json, dtype=False)
+        priors = priors[priors["Callsign"] == call]
+    if freq and not priors.empty:
+        priors = filter_freq(priors, freq)
+
+    wwaras = repeaters_from_wwara(args.wwara_csv, call)
+    ensure_col(wwaras, "Output (MHz)")
+    if freq and not wwaras.empty:
+        wwaras = filter_freq(wwaras, freq)
+
     repeaterargs = repeater_from_args(args)
+
+    if freq:
+        frequencies = [freq]
+    else:
+        frequencies = list(set([
+            f for f in priors["Output (MHz)"].to_list() +
+                 wwaras["Output (MHz)"].to_list() +
+                 [repeaterargs.get("Output (MHz)")] +
+                 [repeaterbook.get("Output (MHz)")]
+            if f
+        ]))
+    frequencies.sort()
+
+    # Combine RepeaterBook and WWARA info with user input.
     repeaters = pd.DataFrame.from_records(
-        [{**repeaterbook, **r, **prior_year(prior_repeaters, r), **repeaterargs} for r in wwaras])
+        [
+            merge_repeaters(repeaterbook=repeaterbook,
+                            args=repeaterargs,
+                            wwara=first_dict(filter_freq(wwaras, f)),
+                            prior=first_dict(filter_freq(priors, f)))
+            for f in frequencies
+        ])
 
     # Combine with known repeaters
     if not Path("assets/repeaters.json").exists():
