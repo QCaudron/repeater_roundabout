@@ -1600,5 +1600,77 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7SWI",
+        "Output (MHz)":"224.940",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.9760521,
+            -116.4074505
+        ],
+        "RepeaterBook ID":"21198",
+        "Group Name":"SWI-ARC",
+        "Location":"Squaw Butte, ID",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"K7SWI",
+        "Output (MHz)":"444.375",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.9761,
+            -116.4077
+        ],
+        "RepeaterBook ID":"21386",
+        "Group Name":"SWI-ARC",
+        "Location":"Squaw Butte, ID",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"N7UBO",
+        "Output (MHz)":"146.740",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.97606,
+            -116.40751
+        ],
+        "RepeaterBook ID":"19067",
+        "Group Name":"SWI-ARC",
+        "Location":"Squaw Butte, ID",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"KI7PWR",
+        "Output (MHz)":"146.920",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            43.410919,
+            -116.589569
+        ],
+        "RepeaterBook ID":"21717",
+        "Group Name":"SWI-ARC",
+        "Location":"Hat Butte, ID",
+        "Mode":"FM",
+        "Long Name":"South West Idaho Amateur Radio Club",
+        "Website":"https:\/\/www.k7swi.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"16"
     }
 ]

@@ -109,6 +109,10 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 87    | SCARES        | W6TQF      | Augspurger Mtn, WA        | FM          |        440.325 |           +5.0 |       100.0 |
 | 88    | SCARES        | KB7APU     | Red Mountain              | FM          |        145.250 |           -0.6 |       186.2 |
 | 89    | N7MHE         | N7MHE      | Saddle Mtn, WA            | FM          |        145.350 |           -0.6 |       100.0 |
+| 90    | SWI-ARC       | K7SWI      | Squaw Butte, ID           | FM          |        224.940 |           -1.6 |       100.0 |
+| 91    | SWI-ARC       | K7SWI      | Squaw Butte, ID           | FM          |        444.375 |           +5.0 |       100.0 |
+| 92    | SWI-ARC       | N7UBO      | Squaw Butte, ID           | FM          |        146.740 |           -0.6 |       100.0 |
+| 93    | SWI-ARC       | KI7PWR     | Hat Butte, ID             | FM          |        146.920 |           -0.6 |       100.0 |
 
 ---
 
@@ -197,6 +201,9 @@ SCARES
 
 SCHC
 : [Snohomish County Hams Club](http://www.wa7law.org/)
+
+SWI-ARC
+: [South West Idaho Amateur Radio Club](https://www.k7swi.org/)
 
 Shoreline ACS
 : [Shoreline ACS](https://sites.google.com/a/w7aux.org/shoreline-acs/)
