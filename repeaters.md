@@ -108,6 +108,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 86    | N7YRC         | KC7VQR     | Yakima Canyon             | FM          |        147.240 |           +0.6 |       192.8 |
 | 87    | SCARES        | W6TQF      | Augspurger Mtn, WA        | FM          |        440.325 |           +5.0 |       100.0 |
 | 88    | SCARES        | KB7APU     | Red Mountain              | FM          |        145.250 |           -0.6 |       186.2 |
+| 89    | N7MHE         | N7MHE      | Saddle Mtn, WA            | FM          |        145.350 |           -0.6 |       100.0 |
 
 ---
 
@@ -169,6 +170,9 @@ Marrowstone
 
 Mike & Key
 : [Mike & Key Amateur Radio Club](https://www.mikeandkey.org/)
+
+N7MHE
+: [Craig Morrison's N7MHE repeater](https://www.qrz.com/db/N7MHE)
 
 N7YRC
 : [N7YRC Group](https://www.qrz.com/db/KC7VQR)

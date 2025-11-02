@@ -1582,5 +1582,23 @@
         "Website":"https:\/\/skamania-prepare.org\/ares\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"N7MHE",
+        "Output (MHz)":"145.350",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.81000137,
+            -119.88200378
+        ],
+        "RepeaterBook ID":"390",
+        "Group Name":"N7MHE",
+        "Location":"Saddle Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Craig Morrison's N7MHE repeater",
+        "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

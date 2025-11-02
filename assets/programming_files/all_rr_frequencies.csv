@@ -87,3 +87,4 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 86,KC7VQR,147.240,+0.6,192.8,181,Yakima Canyon,FM,N7YRC Group,https://www.qrz.com/db/KC7VQR,53,46.65399933,-120.52999878
 87,W6TQF,440.325,+5.0,100.0,18543,"Augspurger Mtn, WA",FM,Skamania County ARES,https://skamania-prepare.org/ares/,53,45.74150848,-121.68618774
 88,KB7APU,145.250,-0.6,186.2,16535,Red Mountain,FM,Skamania County ARES,https://skamania-prepare.org/ares/,53,45.93479919,-121.81999969
+89,N7MHE,145.350,-0.6,100.0,390,"Saddle Mtn, WA",FM,Craig Morrison's N7MHE repeater,https://www.qrz.com/db/N7MHE,53,46.81000137,-119.88200378
