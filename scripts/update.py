@@ -421,6 +421,9 @@ if __name__ == "__main__":
     args = parse_args()
 
     df = generate_repeater_df(args)
+    # Remove repeaters not in the contest
+    df = df.loc[df["Exclude"].isna()]
+
     write_index_md(df, args.score)
     write_repeaters_md(df)
     write_rules_md(df)
