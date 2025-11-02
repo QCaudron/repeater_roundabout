@@ -1672,5 +1672,23 @@
         "Website":"https:\/\/www.k7swi.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"16"
+    },
+    {
+        "Callsign":"NE7MC",
+        "Output (MHz)":"442.000",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.737677,
+            -122.23079
+        ],
+        "RepeaterBook ID":"19962",
+        "Group Name":"Northshore EMC",
+        "Location":"Kenmore",
+        "Mode":"FM",
+        "Long Name":"Northshore Emergency Management Coalition",
+        "Website":"https:\/\/www.northshoreemc.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
