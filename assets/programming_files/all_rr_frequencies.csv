@@ -4,7 +4,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 3,W7PFR,53.410,-1.7,100,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
 4,W7PFR,443.975,5.0,103.5,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
 5,WW7SEA,444.425,5.0,141.3,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.6322,-122.3539
-6,WW7SEA,444.700,5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.63701,-122.3488
+6,WW7SEA,444.700,5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.637010000000004,-122.3488
 7,W7DX,147.000,-0.6,103.5,,Redmond,FM,Western Washington DX Club,https://www.wwdxc.org/,,47.67459,-122.05393
 8,W7JCR,145.150,-0.6,114.8,,Port Townsend,FM,Jefferson County Amateur Radio Club,https://w7jcr.wordpress.com/,,48.1247,-122.7651
 9,AA7MI,440.725,5.0,114.8,,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,https://qrz.com/db/AA7MI,,48.04026,-122.68775
@@ -39,7 +39,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 38,K7NWS,224.340,-1.6,110.9,,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,47.50875,-121.98519
 39,K7NWS,442.075,5.0,110.9,,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,47.51,-121.99
 40,K7CH,53.030,-1.7,114.8,,"Baw Faw Peak, WA",FM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,,46.4882,-123.2148
-41,K7CH,440.650,5.0,100,,"South Mtn, WA",FM,K7CH,,,47.316155,-123.35783
 42,K7CH,927.250,-25.0,114.8,,"South Mtn, WA",FM,K7CH,,,47.3203,-122.3386
 43,K7CH,927.925,-25.0,114.8,,"Chehalis, WA",FM,K7CH,,,46.4882,-123.2148
 44,N9VW,443.325,5.0,103.5,,Cougar Mtn.,FM,Steve N9VW's repeater system,https://www.qrz.com/db/n9vw,,47.5421,-122.10917
@@ -69,3 +68,29 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 68,K7PP,441.300,5.0,123,,"Ko Peak, WA",FM,Peter Policani's K7PP repeater system,https://www.k7pp.itgo.com,,46.46143,-123.5462
 69,K7PP,443.400,5.0,123,,"Cougar Mtn, WA",FM,Peter Policani's K7PP repeater system,https://www.k7pp.itgo.com,,47.5414,-122.1092
 70,KC7Z,441.175,5.0,103.5,,"Gold Mtn, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54935,-122.78356
+71,WA7MV,147.320,+0.6,100.0,206,Tunk Mtn.,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.54570007,-119.23600006
+72,WA7MV,146.720,-0.6,100.0,400,Benson Creek,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.3634784,-120.122303
+73,WA7MV,444.800,+5.0,110.9,646,Winthrop,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,53,48.31760025,-120.11499786
+74,K7LWH,145.490,-0.6,103.5,,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,,47.6637,-122.1665
+75,K7LWH,224.360,-1.6,103.5,5326,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.6637,-122.1665
+76,K7LWH,441.075,5.0,103.5,162,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.6637,-122.1665
+77,K7LWH,444.600,5.0,103.5,,"Bellevue, WA",FM,Lake WA Ham Club,http://www.lakewashingtonhamclub.org,,47.61722,-122.20111
+78,K7LWH,53.170,-1.7,100,165,Kirkland,FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,53,47.6637,-122.1665
+79,WR7VHF,146.880,-0.6,123.0,283,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,53,47.57889938,-117.29599762
+80,WR7VHF,147.340,+0.6,123.0,290,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,53,47.65879822,-117.4260025
+81,WR7VHF,444.600,+5.0,123.0,17283,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,53,47.91939926,-117.11399841
+82,K7JEP,145.490,-0.6,136.5,43,"Hoodoo Mtn, ID",FM,Bonner County Amateur Radio Club,https://k7jep.org,16,48.0788002,-116.95400238
+83,K7JEP,444.550,+5.0,,23257,"Blanchard, ID",FM,Bonner County Amateur Radio Club,https://k7jep.org,16,48.0168468,-116.9838096
+84,K7RHT,147.000,+0.6,131.8,17116,Table Mtn.,FM,K7RHT,https://www.qrz.com/db/K7RHT,53,47.15230179,-120.56400299
+85,K7RHT,444.450,+5.0,131.8,17115,Table Mtn.,FM,K7RHT,https://www.qrz.com/db/K7RHT,53,47.15230179,-120.56400299
+86,KC7VQR,147.240,+0.6,192.8,181,Yakima Canyon,FM,N7YRC Group,https://www.qrz.com/db/KC7VQR,53,46.65399933,-120.52999878
+87,W6TQF,440.325,+5.0,100.0,18543,"Augspurger Mtn, WA",FM,Skamania County ARES,https://skamania-prepare.org/ares/,53,45.74150848,-121.68618774
+88,KB7APU,145.250,-0.6,186.2,16535,Red Mountain,FM,Skamania County ARES,https://skamania-prepare.org/ares/,53,45.93479919,-121.81999969
+89,N7MHE,145.350,-0.6,100.0,390,"Saddle Mtn, WA",FM,Craig Morrison's N7MHE repeater,https://www.qrz.com/db/N7MHE,53,46.81000137,-119.88200378
+90,K7SWI,224.940,-1.6,100.0,21198,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,16,43.9760521,-116.4074505
+91,K7SWI,444.375,+5.0,100.0,21386,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,16,43.9761,-116.4077
+92,N7UBO,146.740,-0.6,100.0,19067,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,16,43.97606,-116.40751
+93,KI7PWR,146.920,-0.6,100.0,21717,"Hat Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,16,43.410919,-116.589569
+94,NE7MC,442.000,5.0,141.3,19962,Kenmore,FM,Northshore Emergency Management Coalition,https://www.northshoreemc.com/,53,47.737677,-122.23079
+95,NM7E,145.170,-0.6,103.5,,"Belfair, WA",FM,North Mason Amateur Radio Emergency Service Club,https://nmaresc.wordpress.com/,,47.38661,-122.86099
+96,NM7E,224.260,-1.6,103.5,,"Belfair, WA",FM,North Mason Amateur Radio Emergency Service Club,https://nmaresc.wordpress.com/,,47.3866,-122.86099
