@@ -66,6 +66,15 @@ Is there a prize ?
 Can I make a contact with the same person over and over again ?
 : Yes -- on different repeaters. You can't just make a contact every few minutes with the same person on the same machine. That would be a duplicate contact, and you won't get points for it. It's also not terribly respectful to those on the repeater !
 
+Can we make contacts using linked repeaters ?
+: Yes ! You log, and get points for, the repeater+band that you transmit on. If someone responds to you on another repeater or band through a linked repeater, the contact counts, but only get points for the repeater and band that you transmit on. If you want to get points for the other repeaters or bands, you have to transmit on them. (Flipping between bands on a cross-linked repeater can allow racking up a lot of contacts quickly.)
+
+As a participant, can I link repeaters ?
+: No -- We request that you do not change repeater links for the Repeater Roundabout. If the repeater owner chooses to link repeaters, they may do so (see the previous question above). However, we request the Repeater Roundabout participants not change the linking configuration of repeaters.
+
+Do Internet contacts count ?
+: Maybe -- If you are using RF, you can log the contact and get points even if the other station is connected via the Internet. However, because we don't want to tie up repeaters in remote locations with lots of non-local traffic, we only award points for RF and request that participants only call for contacts via RF.
+
 Explain the multipliers to me.
 : Sure ! First, you get double points for any contact made with 5W or less. Then, we do some sleuthing through the log, looking for band activity. Then, if you hit 30 repeaters in either the 2m or 70cm bands, you get double points for all those contacts on that band. Finally, if you activate at least 80 different repeaters, we double your full score. This is a big one, and will be hard to achieve, but well worth it !
 
