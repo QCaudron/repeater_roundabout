@@ -95,6 +95,22 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     return parser.parse_args()
 
 def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
+    """
+    Return all repeaters with a given callsign from WWARA CSV file.
+
+    Parameters
+    ----------
+    csv_file : str
+        Path to a WWARA CSV export file.
+
+    call : str
+        Repeater callsign.
+
+    Returns
+    -------
+    pd.DataFrame
+        A dataframe of repeaters matching the call found in the CSV file.
+    """
     if csv_file is None or call is None:
       return []
 
@@ -102,7 +118,23 @@ def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
         lines = f.readlines()
     return wwara_find(lines, call)
 
-def wwara_find(lines, call):
+def wwara_find(lines: list[str], call: str) -> pd.DataFrame:
+    """
+    Return all repeaters with a given callsign from WWARA CSV contents.
+
+    Parameters
+    ----------
+    lines : list[str]
+        Contents of a WWARA CSV export file.
+
+    call : str
+        Repeater callsign.
+
+    Returns
+    -------
+    pd.DataFrame
+        A dataframe of repeaters matching the call.
+    """
     if lines[0].startswith('DATA_SPEC_VERSION'):
         del lines[0]
 
@@ -121,6 +153,19 @@ def wwara_find(lines, call):
     return pd.DataFrame.from_records(repeaters)
 
 def wwara_row_to_repeater(row: dict) -> dict:
+    """
+    Convert a single WWARA CSV row to a repeater record.
+
+    Parameters
+    ----------
+    row : dict
+        A single CSV row from a WWARA exportfile.
+
+    Returns
+    -------
+    dict
+        A repeater record.
+    """
     outp = float(row["OUTPUT_FREQ"])
     inp  = float(row["INPUT_FREQ"])
     offset = inp - outp
@@ -250,7 +295,7 @@ def repeater_from_args(args: argparse.Namespace | SimpleNamespace) -> dict:
     Returns
     -------
     Dict
-        A dict containing repeat information.
+        A dict containing repeater information.
     """
     repeater = {
         "Group Name": args.name,
@@ -271,17 +316,86 @@ def repeater_from_args(args: argparse.Namespace | SimpleNamespace) -> dict:
     return repeater
 
 def freq_match(a, b) -> bool:
+    """
+    Returns true if two frequency values in MHz differ by less than than 1 kHz.
+
+    Parameters
+    ----------
+    a, b : anything that can be converted to float.
+        The frequencies to compare.
+
+    Returns
+    -------
+    bool
+        True if the frequencies are the same.
+    """
     return math.isclose(float(a), float(b), abs_tol=0.001)
 
 def filter_freq(df: pd.DataFrame, freq: float) -> pd.DataFrame:
+    """
+    Returns a DataFrame with only records matching the given frequency.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Repeater records to filter.
+
+    freq : float
+        The frequency to match.
+
+    Returns
+    -------
+    pd.DataFrame
+        Records from df matching freq.
+    """
     return df.loc[df["Output (MHz)"].map(lambda f: freq_match(freq, f))]
 
 def first_dict(df: pd.DataFrame) -> dict:
+    """
+    A convenience function to return the first record (if any) as a dictionary.
+    If the DataFrame is empty, return {}.  Logically, it is [].get(0, {}) for DataFrames.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        DataFrame of records.
+
+    Returns
+    -------
+    dict
+        A record from the first row of the DataFrame, or {} if the DataFrame is empty.
+    """
     if df is None or df.empty:
         return {}
     return df.iloc[0].to_dict()
 
 def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, prior: dict = {}) -> dict:
+    """
+    Merges repeater information from multiple sources. If a field is specified by more than
+    one source, the first source to specify the value in order of decreasing prioirty will
+    be used.  For most fileds, the priority order is: args, wwara, repeaterbook, prior.  For
+    Group Name, Long Name, Location, and Website fields, the priority order is:
+    args, prior, wwara, repeaterbook.
+
+    Parameters
+    ----------
+    repeaterbook : dict
+        A repeater record from RepeaterBook.
+
+    args : dict
+        A repeater record from command line arguments.
+
+    wwara : dict
+        A repeater record from WWARA.
+
+    prior : dict
+        A repeater record from Repeater Roundabout repeaters.json file.
+
+    Returns
+    -------
+    dict
+        A merged repeater record.
+    """
     # Remove all empty values.
     repeaterbook = strip_empty(repeaterbook)
     args = strip_empty(args)
@@ -297,6 +411,25 @@ def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, 
     return r
 
 def ensure_col(df: pd.DataFrame, name: str, default=np.nan) -> pd.DataFrame:
+    """
+    A convenience function to ensure a dataframe has a given column.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        The DataFrame to modify.
+
+    name : str
+        The column name.
+
+    default : any
+        An optional default value to assign to the column (np.nan if not specified).
+
+    Returns
+    -------
+    pd.DataFrame
+        The input DataFrame with the named column added, if one was not already present.
+    """
     if name not in df.columns:
         df[name] = default
 

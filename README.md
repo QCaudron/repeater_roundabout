@@ -18,14 +18,12 @@ The files in `assets/templates/` are used to generate the pages on the site.
 
 To add a repeater, you should call `python scripts/update.py`. This script will prompt you for the repeater's information, and will add it to the `assets/repeaters.json` file containing all known repeaters, as well as regenerating the `assets/rr_frequencies.csv` file for CHIRP use.
 
-This script can be called directly, in which case it will prompt you for repeater information, or you can call it by passing the following arguments to the command-line for the same effect.
+`update.py` has the ability to import repeaters from RepeaterBook, [WWARA data exports][wwara-data], prior Repeater Roundabout `repeaters.json` files, and manually via command line arguments.  If you call the `update.py` without any arguments, it will prompt you for repeater information.  `update.py` accepts the following command line arguments:
 
+- Callsign (`--call`): The repeater's callsign (for example, `WW7PSR`)
+- Frequency (`--freq`): The repeater's frequency (for example, `146.960`).  If specified when importing from WWARA or a prior `repeaters.json` file, only the repeater matching the call and frequency will be imported.
 - Group name (`--name`): The short name of the group that runs one or more repeaters (for example, `PSRG` or `Shoreline ACS`)
 - Location (`--loc`): The general location of the repeater (for example, `Seattle` or `Buck Mtn.`)
-- RepeaterBook State ID (`--state_id`): The State ID of the repeater on RepeaterBook (an integer you can find after `state_id=` in the URL).  Defaults to Washington (53) if not specified.
-- RepeaterBook ID (`--id`): The ID of the repeater on RepeaterBook (an integer you can find at the very end of the URL)
-- Callsign (`--call`): The repeater's callsign (for example, `WW7PSR`)
-- Frequency (`--freq`): The repeater's frequency (for example, `146.960`)
 - Offset (`--offset`): The repeater's offset, in MHz (for example, `+0.6`)
 - Tone (`--tone`): The repeater's tone, in Hz (for example, `103.5`); for DMR repeaters, use something like `CC2/TS1 BEARS1 TG/312488` for color code, time slot, and talk group name and number
 - Mode (`--mode`): The repeater's mode (for example, `FM` or `DMR`); defaults to `FM` if not provided
@@ -33,14 +31,81 @@ This script can be called directly, in which case it will prompt you for repeate
 - Longitude (`--lon`): The repeater's longitude, in decimal degrees (for example, `-122.3321`)
 - Long name (`--long_name`): The full name of the group that runs the repeater (for example, `Puget Sound Repeater Group` or `Shoreline Amateur Communication Society`)
 - Website (`--url`): The URL of the group's website (for example, `https://psrg.org` or `https://shorelineacs.org`); please include the `http://` prefix
+- RepeaterBook ID (`--id`): The ID of the repeater on RepeaterBook (an integer you can find at the very end of the URL)
+- RepeaterBook State ID (`--state_id`): The State ID of the repeater on RepeaterBook (an integer you can find after `state_id=` in the URL).  Defaults to Washington (53) if not specified.
+- WWARA Data Export File (`--wwara_csv`): The path to a [WWARA's repeater CSV file][wwara-data]. All repeaters matching the `--call` and optional `--freq` flags will be imported.
+- Prior Repeater Roundabout `repeaters.json` file (`--prior_json`): The path to prior year's repeater file (for example, `2024/repeaters.json`). All repeaters matching the `--call` and optional `--freq` flags will be imported.
 
-For example, you may call `python scripts/update.py` to be prompted to enter all of this information, or call
+### Examples
+
+You can add a repeater using only command line arguments:
 
 ```bash
-python scripts/update --name PSRG --loc Seattle --freq 146.960 --offset -0.6 --tone 103.5 --lat 47.623963 --lon -122.315173 --long_name "Puget Sound Repeater Group" --url https://psrg.org
+python scripts/update --name PSRG --loc Seattle \
+    --freq 146.960 --offset -0.6 --tone 103.5 \
+    --lat 47.623963 --lon -122.315173 \
+    --long_name "Puget Sound Repeater Group" \
+    --url https://psrg.org
 ```
 
-If you provide a RepeaterBook ID, all but the Group Name, Location, Long Name, and Website are populated from RepeaterBook. The easiest way to add a repeater is to call `python scripts/update.py`, enter in both a group name and a general location, the RepeaterBook ID, and hit enter a bunch of times to accept the empty defaults, which will be overwritten by RepeaterBook data. Once you get to Long Name, you will need to provide that and the group's Website yourself.
+To import a record from RepeaterBook, you need only specify a RepeaterBook ID, Group Name, Location, Long Name, Website, and, for states other than Washington, a State ID. The easiest way to add a repeater is to call `python scripts/update.py`, enter in both a group name and a general location, the RepeaterBook ID, and hit enter a bunch of times to accept the empty defaults, which will be overwritten by RepeaterBook data. Once you get to Long Name, you will need to provide that and the group's Website yourself.
+
+To import a repeater from RepeaterBook, run:
+
+```bash
+python scripts/update.py --state_id=16 --id=21198 \
+    --name=SWI-ARC --loc="Squaw Butte, ID" \
+    --long_name="South West Idaho Amateur Radio Club" \
+    --url="https://www.k7swi.org/"
+```
+
+To import all repeaters matching a given callsign from a WWARA CSV file by specifying the call, Group Name, Long Name, and URL, run:
+
+```bash
+python scripts/update.py --wwara_csv=/wwara/WWARA-rptrlist-20251021.csv \
+    --call=NM7E --name=NMARESC \
+    --long_name="North Mason Amateur Radio Emergency Service Club" \
+    --url="https://nmaresc.wordpress.com/"
+```
+
+To import all repeaters matching a given callsign from a prior Repeater Roundabout file by specifying only the call and the file:
+
+```python
+python scripts/update.py --prior_json=2024/repeaters.json --call=PSRG
+```
+
+To limit import from `--wara_csv` and `--prior_json` to a single repeater by specifying both the call *and* the frequency:
+
+```python
+python scripts/update.py --prior_json=2024/repeaters.json --call=K7LWH --freq=145.490
+```
+
+### Combining Import Sources
+
+If you provide flags for more than one import source (any combination of RepeaterBook, WWARA, and prior Repeater Roundabout), `update.py` will attempt to merge data in a useful way.  Flags specified on the command line always override values imported from another source.  Otherwise, the value from the highest priority source will be used.  The priority order, from highest to lowest, for most fields is:
+
+- Command line arguments
+- WWARA
+- RepeaterBook
+- Repeater Roundabout record from prior year
+
+The rationale is that WWARA should have the most up-to-date information, followed by RepeaterBook, followed by past Repeater Roundabouts.
+
+However, because we tend to customize Group Name, Long Name, Location, and Website fields, we give higher priority to prior Repeater Roundabout records.  For these fields, the order of priority is:
+
+- Command line arguments
+- Repeater Roundabout record from prior year
+- WWARA
+- RepeaterBook
+
+So, for example, to import all K7LWH repeaters from WWARA, but take the Group Name, Long Name, Location, and Website fields from last year's Repeater Roundabout, run:
+
+```bash
+python scripts/update.py \
+    --wwara_csv=/wwara/WWARA-rptrlist-20251021.csv \
+    --prior_json=2024/repeaters.json \
+    --call=K7LWH
+```
 
 ## Regenerating the site
 
@@ -105,3 +170,4 @@ Note: Do not rename spreadsheet columns without updating the mail merge script a
 
 
 [tracking-sheet]: https://docs.google.com/spreadsheets/d/1x6b34Q5FImiCTkuKqAVbpptse_vyh7PCZ74o5EKImPU/edit?gid=1429833766#gid=1429833766
+[wwara-data]: https://www.wwara.org/coordinations/coordination-data-files/
