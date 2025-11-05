@@ -94,3 +94,12 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 94,NE7MC,442.000,5.0,141.3,19962,Kenmore,FM,Northshore Emergency Management Coalition,https://www.northshoreemc.com/,53,47.737677,-122.23079
 95,NM7E,145.170,-0.6,103.5,,"Belfair, WA",FM,North Mason Amateur Radio Emergency Service Club,https://nmaresc.wordpress.com/,,47.38661,-122.86099
 96,NM7E,224.260,-1.6,103.5,,"Belfair, WA",FM,North Mason Amateur Radio Emergency Service Club,https://nmaresc.wordpress.com/,,47.3866,-122.86099
+97,W7ACS,440.525,5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.58878,-122.31765
+98,W7ACS,440.600,5.0,141.3,,Lake Forest Park,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.77193,-122.28099
+99,W7ACS,442.300,5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.58878,-122.31765
+100,W7ACS,442.875,5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.62378,-122.31542
+101,W7ACS,443.025,5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.61901,-122.31247
+102,W7ACS,443.200,5.0,141.3,,White Center,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.52075,-122.34341
+103,W7ACS,443.475,5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.65073,-122.39258
+104,W7ACS,443.650,5.0,141.3,,North Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.6909,-122.31963
+105,W7ACS,444.550,5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.604722,-122.33055

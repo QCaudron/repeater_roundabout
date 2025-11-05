@@ -115,6 +115,15 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 94    | Northshore EMC | NE7MC      | Kenmore                   | FM          |        442.000 |            5.0 |       141.3 |
 | 95    | NMARESC        | NM7E       | Belfair, WA               | FM          |        145.170 |           -0.6 |       103.5 |
 | 96    | NMARESC        | NM7E       | Belfair, WA               | FM          |        224.260 |           -1.6 |       103.5 |
+| 97    | Seattle ACS    | W7ACS      | Seattle                   | FM          |        440.525 |            5.0 |       141.3 |
+| 98    | Seattle ACS    | W7ACS      | Lake Forest Park          | FM          |        440.600 |            5.0 |       141.3 |
+| 99    | Seattle ACS    | W7ACS      | Seattle                   | FM          |        442.300 |            5.0 |       141.3 |
+| 100   | Seattle ACS    | W7ACS      | Seattle                   | FM          |        442.875 |            5.0 |       141.3 |
+| 101   | Seattle ACS    | W7ACS      | Seattle                   | FM          |        443.025 |            5.0 |       141.3 |
+| 102   | Seattle ACS    | W7ACS      | White Center              | FM          |        443.200 |            5.0 |       141.3 |
+| 103   | Seattle ACS    | W7ACS      | Seattle                   | FM          |        443.475 |            5.0 |       141.3 |
+| 104   | Seattle ACS    | W7ACS      | North Seattle             | FM          |        443.650 |            5.0 |       141.3 |
+| 105   | Seattle ACS    | W7ACS      | Seattle                   | FM          |        444.550 |            5.0 |       141.3 |
 
 ---
 
@@ -212,6 +221,9 @@ SCHC
 
 SWI-ARC
 : [South West Idaho Amateur Radio Club](https://www.k7swi.org/)
+
+Seattle ACS
+: [Seattle Auxiliary Commonications Service](https://www.seattleacs.org/home)
 
 Shoreline ACS
 : [Shoreline ACS](https://sites.google.com/a/w7aux.org/shoreline-acs/)
