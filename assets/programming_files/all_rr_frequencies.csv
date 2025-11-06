@@ -102,3 +102,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 104,W7ACS,443.650,5.0,141.3,,North Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.6909,-122.31963
 105,W7ACS,444.550,5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.604722,-122.33055
 106,KK7DFL,145.275,-0.6,100,23719,Olympia,NBFM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,53,47.000578,-122.94557
+107,W7DK,145.210,-0.6,141.3,324,Tacoma,FM,Radio Club of Tacoma,https://w7dk.org/,53,47.278611,-122.51277
+108,W7DK,147.280,0.6,103.5,324,Tacoma,FM,Radio Club of Tacoma,https://w7dk.org/,53,47.24833,-122.48456
+109,W7DK,147.380,0.6,103.5,325,Crawford Mtn.,FM,Radio Club of Tacoma,https://w7dk.org/,53,46.84258,-122.76406
+110,W7DK,440.625,5.0,103.5,549,Tacoma,FM,Radio Club of Tacoma,https://w7dk.org/,53,47.24833,-122.48456

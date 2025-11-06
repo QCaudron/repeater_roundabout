@@ -1906,5 +1906,77 @@
         "Website":"https:\/\/www.qrz.com\/db\/k7ch",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"145.210",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.278611,
+            -122.51277
+        ],
+        "RepeaterBook ID":"324",
+        "Group Name":"RCTacoma",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.24833,
+            -122.48456
+        ],
+        "RepeaterBook ID":"324",
+        "Group Name":"RCTacoma",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"147.380",
+        "Offset (MHz)":"0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.84258,
+            -122.76406
+        ],
+        "RepeaterBook ID":"325",
+        "Group Name":"RCTacoma",
+        "Location":"Crawford Mtn.",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"440.625",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.24833,
+            -122.48456
+        ],
+        "RepeaterBook ID":"549",
+        "Group Name":"RCTacoma",
+        "Location":"Tacoma",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

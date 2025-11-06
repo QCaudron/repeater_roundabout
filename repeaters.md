@@ -123,6 +123,10 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 104   | Seattle ACS    | W7ACS      | North Seattle             | FM          |        443.650 |            5.0 |       141.3 |
 | 105   | Seattle ACS    | W7ACS      | Seattle                   | FM          |        444.550 |            5.0 |       141.3 |
 | 106   | K7CH           | KK7DFL     | Olympia                   | NBFM[^nbfm] |        145.275 |           -0.6 |         100 |
+| 107   | RCTacoma       | W7DK       | Tacoma                    | FM          |        145.210 |           -0.6 |       141.3 |
+| 108   | RCTacoma       | W7DK       | Tacoma                    | FM          |        147.280 |            0.6 |       103.5 |
+| 109   | RCTacoma       | W7DK       | Crawford Mtn.             | FM          |        147.380 |            0.6 |       103.5 |
+| 110   | RCTacoma       | W7DK       | Tacoma                    | FM          |        440.625 |            5.0 |       103.5 |
 
 ---
 
@@ -208,6 +212,9 @@ Pierce
 
 RASC
 : [Radio Amateurs of Skagit County](http://rasconline.com/)
+
+RCTacoma
+: [Radio Club of Tacoma](https://w7dk.org/)
 
 SCARC
 : [Stanwood-Camano Amateur Radio Club](https://www.scarcwa.org/)
