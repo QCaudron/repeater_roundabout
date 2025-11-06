@@ -60,8 +60,6 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 38    | BEARS          | K7NWS      | Tiger Mtn West, WA        | FM          |        224.340 |           -1.6 |       110.9 |
 | 39    | BEARS          | K7NWS      | Tiger Mtn West, WA        | FM          |        442.075 |            5.0 |       110.9 |
 | 40    | K7CH           | K7CH       | Baw Faw Peak, WA          | FM          |         53.030 |           -1.7 |       114.8 |
-| 42    | K7CH           | K7CH       | South Mtn, WA             | FM          |        927.250 |          -25.0 |       114.8 |
-| 43    | K7CH           | K7CH       | Chehalis, WA              | FM          |        927.925 |          -25.0 |       114.8 |
 | 44    | N9VW           | N9VW       | Cougar Mtn.               | FM          |        443.325 |            5.0 |       103.5 |
 | 45    | N9VW           | KC7RAS     | Cougar Mtn, WA            | FM          |        147.100 |            0.6 |         123 |
 | 46    | SCARC          | W7PIG      | Camano Island, WA         | FM          |        147.360 |            0.6 |       127.3 |
@@ -124,6 +122,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 103   | Seattle ACS    | W7ACS      | Seattle                   | FM          |        443.475 |            5.0 |       141.3 |
 | 104   | Seattle ACS    | W7ACS      | North Seattle             | FM          |        443.650 |            5.0 |       141.3 |
 | 105   | Seattle ACS    | W7ACS      | Seattle                   | FM          |        444.550 |            5.0 |       141.3 |
+| 106   | K7CH           | KK7DFL     | Olympia                   | NBFM[^nbfm] |        145.275 |           -0.6 |         100 |
 
 ---
 

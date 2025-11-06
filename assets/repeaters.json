@@ -752,7 +752,7 @@
         "Mode":"FM",
         "Long Name":"K7CH",
         "Website":"",
-        "Exclude":null,
+        "Exclude":true,
         "RepeaterBook State ID":null
     },
     {
@@ -770,7 +770,7 @@
         "Mode":"FM",
         "Long Name":"K7CH",
         "Website":"",
-        "Exclude":null,
+        "Exclude":true,
         "RepeaterBook State ID":null
     },
     {
@@ -1888,5 +1888,23 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Exclude":null,
         "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"KK7DFL",
+        "Output (MHz)":"145.275",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.000578,
+            -122.94557
+        ],
+        "RepeaterBook ID":"23719",
+        "Group Name":"K7CH",
+        "Location":"Olympia",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
