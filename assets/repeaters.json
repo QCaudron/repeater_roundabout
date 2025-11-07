@@ -1978,5 +1978,23 @@
         "Website":"https:\/\/w7dk.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7FLY",
+        "Output (MHz)":"443.925",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.856,
+            -122.283
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"BEARONS",
+        "Location":"Lynnwood",
+        "Mode":"FM",
+        "Long Name":"Boeing Employees Amateur Radio Operators North Society",
+        "Website":"https:\/\/w7flybearons.org",
+        "Exclude":null,
+        "RepeaterBook State ID":null
     }
 ]

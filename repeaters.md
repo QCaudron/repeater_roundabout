@@ -127,6 +127,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 108   | RCTacoma       | W7DK       | Tacoma                    | FM          |        147.280 |            0.6 |       103.5 |
 | 109   | RCTacoma       | W7DK       | Crawford Mtn.             | FM          |        147.380 |            0.6 |       103.5 |
 | 110   | RCTacoma       | W7DK       | Tacoma                    | FM          |        440.625 |            5.0 |       103.5 |
+| 111   | BEARONS        | W7FLY      | Lynnwood                  | FM          |        443.925 |            5.0 |         100 |
 
 ---
 
@@ -134,6 +135,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 
 BCARC
 : [Bonner County Amateur Radio Club](https://k7jep.org)
+
+BEARONS
+: [Boeing Employees Amateur Radio Operators North Society](https://w7flybearons.org)
 
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)
