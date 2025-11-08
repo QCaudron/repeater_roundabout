@@ -1382,7 +1382,7 @@
         "Mode":"FM",
         "Long Name":"Lake WA Ham Club",
         "Website":"http:\/\/www.lakewashingtonhamclub.org",
-        "Exclude":null,
+        "Exclude":true,
         "RepeaterBook State ID":null
     },
     {

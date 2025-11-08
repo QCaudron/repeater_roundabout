@@ -93,7 +93,6 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 74    | LWHC           | K7LWH      | Kirkland                  | FM          |        145.490 |           -0.6 |       103.5 |
 | 75    | LWHC           | K7LWH      | Kirkland                  | FM          |        224.360 |           -1.6 |       103.5 |
 | 76    | LWHC           | K7LWH      | Kirkland                  | FM          |        441.075 |            5.0 |       103.5 |
-| 77    | LWHC           | K7LWH      | Bellevue, WA              | FM          |        444.600 |            5.0 |       103.5 |
 | 78    | LWHC           | K7LWH      | Kirkland                  | FM          |         53.170 |           -1.7 |         100 |
 | 79    | IEVHFRA        | WR7VHF     | Spokane                   | FM          |        146.880 |           -0.6 |       123.0 |
 | 80    | IEVHFRA        | WR7VHF     | Spokane                   | FM          |        147.340 |           +0.6 |       123.0 |
