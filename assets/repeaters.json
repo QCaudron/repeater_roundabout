@@ -1996,5 +1996,23 @@
         "Website":"https:\/\/w7flybearons.org",
         "Exclude":null,
         "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"WA7ST",
+        "Output (MHz)":"443.100",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.45087,
+            -122.2868
+        ],
+        "RepeaterBook ID":"2779",
+        "Group Name":"HARC",
+        "Location":"SeaTac",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

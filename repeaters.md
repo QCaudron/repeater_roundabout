@@ -127,6 +127,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 109   | RCTacoma       | W7DK       | Crawford Mtn.             | FM          |        147.380 |            0.6 |       103.5 |
 | 110   | RCTacoma       | W7DK       | Tacoma                    | FM          |        440.625 |            5.0 |       103.5 |
 | 111   | BEARONS        | W7FLY      | Lynnwood                  | FM          |        443.925 |            5.0 |         100 |
+| 112   | HARC           | WA7ST      | SeaTac                    | FM          |        443.100 |            5.0 |       103.5 |
 
 ---
 
@@ -146,6 +147,9 @@ FWARC
 
 GKRG
 : [Gobblers Knob Repeater Group](https://www.qrz.com/db/W7PFR)
+
+HARC
+: [Highline Amateur Radio Club](https://www.highlinearc.org/)
 
 IEVHFRA
 : [Inland Empire VHF Radio Amateurs](https://www.vhfclub.org/)

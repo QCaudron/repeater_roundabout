@@ -106,3 +106,4 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 109,W7DK,147.380,0.6,103.5,325,Crawford Mtn.,FM,Radio Club of Tacoma,https://w7dk.org/,53,46.84258,-122.76406
 110,W7DK,440.625,5.0,103.5,549,Tacoma,FM,Radio Club of Tacoma,https://w7dk.org/,53,47.24833,-122.48456
 111,W7FLY,443.925,5.0,100,,Lynnwood,FM,Boeing Employees Amateur Radio Operators North Society,https://w7flybearons.org,,47.856,-122.283
+112,WA7ST,443.100,5.0,103.5,2779,SeaTac,FM,Highline Amateur Radio Club,https://www.highlinearc.org/,53,47.45087,-122.2868
