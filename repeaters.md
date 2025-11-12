@@ -130,6 +130,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 112   | HARC           | WA7ST      | SeaTac                    | FM          |        443.100 |            5.0 |       103.5 |
 | 113   | HARC           | NC7G       | SeaTac                    | FM          |        146.660 |           -0.6 |       103.5 |
 | 114   | HARC           | W7BUR      | Burien                    | FM          |        441.125 |            5.0 |       103.5 |
+| 115   | HARC           | WA7DES     | Des Moines                | FM          |        443.700 |            5.0 |         123 |
 
 ---
 

@@ -109,3 +109,4 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 112,WA7ST,443.100,5.0,103.5,2779,SeaTac,FM,Highline Amateur Radio Club,https://www.highlinearc.org/,53,47.45087,-122.2868
 113,NC7G,146.660,-0.6,103.5,2780,SeaTac,FM,Highline Amateur Radio Club,https://www.highlinearc.org/,53,47.45,-122.29
 114,W7BUR,441.125,5.0,103.5,19061,Burien,FM,Highline Amateur Radio Club,https://www.highlinearc.org/,53,47.4728,-122.3456
+115,WA7DES,443.700,5.0,123,22114,Des Moines,FM,Highline Amateur Radio Club,https://www.highlinearc.org/,53,47.40233,-122.30356

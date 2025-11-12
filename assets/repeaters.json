@@ -2050,5 +2050,23 @@
         "Website":"https:\/\/www.highlinearc.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WA7DES",
+        "Output (MHz)":"443.700",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"123",
+        "Coordinates":[
+            47.40233,
+            -122.30356
+        ],
+        "RepeaterBook ID":"22114",
+        "Group Name":"HARC",
+        "Location":"Des Moines",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
