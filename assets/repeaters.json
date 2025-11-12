@@ -2014,5 +2014,23 @@
         "Website":"https:\/\/www.highlinearc.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"NC7G",
+        "Output (MHz)":"146.660",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.45,
+            -122.29
+        ],
+        "RepeaterBook ID":"2780",
+        "Group Name":"HARC",
+        "Location":"SeaTac",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
