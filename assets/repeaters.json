@@ -2032,5 +2032,23 @@
         "Website":"https:\/\/www.highlinearc.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7BUR",
+        "Output (MHz)":"441.125",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.4728,
+            -122.3456
+        ],
+        "RepeaterBook ID":"19061",
+        "Group Name":"HARC",
+        "Location":"Burien",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"https:\/\/www.highlinearc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
