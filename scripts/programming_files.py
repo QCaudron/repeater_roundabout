@@ -138,7 +138,7 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     df["DtcsPolarity"] = "NN"
     df["TStep"] = "5.00"
 
-    no_tone = df["rToneFreq"].isna()
+    no_tone = df["rToneFreq"].isna() | (df["rToneFreq"] == "")
     df.loc[no_tone, "Tone"] = ""
     df.loc[no_tone, "rToneFreq"] = "67.0"
 
