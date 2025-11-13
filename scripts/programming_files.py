@@ -118,8 +118,8 @@ def format_df_for_chirp(df: pd.DataFrame) -> pd.DataFrame:
     print(f"Chirp: {len(df)} compatible repeaters (out of {total_repeaters} known).")
 
     # Set the offset direction and value
-    df = df.assign(Duplex=df["Offset (MHz)"].str[0])  # + or -, first char of Offset
-    df = df.assign(Offset=df["Offset (MHz)"].str[1:].apply(lambda x: f"{float(x):.06f}"))
+    df = df.assign(Duplex=df["Offset (MHz)"].apply(lambda o: "+" if float(o) >= 0.0 else "-"))
+    df = df.assign(Offset=df["Offset (MHz)"].apply(lambda x: f"{abs(float(x)):.06f}"))
 
     # Some columns can be reused
     df["Comment"] = df["Callsign"] + " - " + df["Output (MHz)"]
