@@ -2572,5 +2572,41 @@
         "Website":"https:\/\/wecg.org\/wordpress\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7AVM",
+        "Output (MHz)":"146.860",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.2135,
+            -122.7062
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"ICARC",
+        "Location":"Whidbey Isl.",
+        "Mode":"FM",
+        "Long Name":"Island County ARC",
+        "Website":"https:\/\/www.w7avm.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"W7AVM",
+        "Output (MHz)":"147.220",
+        "Offset (MHz)":"0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            47.9744,
+            -122.3976
+        ],
+        "RepeaterBook ID":"345",
+        "Group Name":"ICARC",
+        "Location":"Whidbey Isl.",
+        "Mode":"FM",
+        "Long Name":"Island County ARC",
+        "Website":"https:\/\/www.w7avm.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

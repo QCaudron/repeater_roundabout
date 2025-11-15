@@ -159,6 +159,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 141   | WECG           | W7ECG      | Lookout Mtn.              | FM          |        224.160 |           -1.6 |       156.7 |
 | 142   | WECG           | W7ECG      | Lookout Mtn.              | FM          |        442.250 |            5.0 |       156.7 |
 | 143   | WECG           | W7ECG      | Ferndale                  | FM          |        442.825 |            5.0 |       156.7 |
+| 144   | ICARC          | W7AVM      | Whidbey Isl.              | FM          |        146.860 |           -0.6 |       127.3 |
+| 145   | ICARC          | W7AVM      | Whidbey Isl.              | FM          |        147.220 |            0.6 |       127.3 |
 
 ---
 
@@ -184,6 +186,9 @@ GKRG
 
 HARC
 : [Highline Amateur Radio Club](https://www.highlinearc.org/)
+
+ICARC
+: [Island County ARC](https://www.w7avm.org/)
 
 IEVHFRA
 : [Inland Empire VHF Radio Amateurs](https://www.vhfclub.org/)

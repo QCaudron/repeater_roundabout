@@ -138,3 +138,5 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 141,W7ECG,224.160,-1.6,156.7,8854,Lookout Mtn.,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,53,48.6875,-122.3625
 142,W7ECG,442.250,5.0,156.7,7393,Lookout Mtn.,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,53,48.6875,-122.3625
 143,W7ECG,442.825,5.0,156.7,7100,Ferndale,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,53,48.5136,-122.3708
+144,W7AVM,146.860,-0.6,127.3,,Whidbey Isl.,FM,Island County ARC,https://www.w7avm.org/,,48.2135,-122.7062
+145,W7AVM,147.220,0.6,127.3,345,Whidbey Isl.,FM,Island County ARC,https://www.w7avm.org/,53,47.9744,-122.3976
