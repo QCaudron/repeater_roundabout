@@ -143,6 +143,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 125   | N7OEP          | N7OEP      | Enumclaw                  | FM          |        443.175 |            5.0 |       107.2 |
 | 126   | N7OEP          | N7OEP      | Baldi Mtn.                | FM          |         53.330 |           -1.7 |         100 |
 | 127   | SCARES         | KB7APU     | Red Mountain              | FM          |        145.250 |           -0.6 |       186.2 |
+| 128   | N7KN           | N7KN       | Whidbey Isl.              | FM          |        441.425 |            5.0 |       110.9 |
 
 ---
 
@@ -216,6 +217,9 @@ Marrowstone
 
 Mike & Key
 : [Mike & Key Amateur Radio Club](https://www.mikeandkey.org/)
+
+N7KN
+: [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)
 
 N7MHE
 : [Craig Morrison's N7MHE repeater](https://www.qrz.com/db/N7MHE)

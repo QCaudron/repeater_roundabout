@@ -122,3 +122,4 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 125,N7OEP,443.175,5.0,107.2,9912,Enumclaw,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,53,47.21944,-121.84195
 126,N7OEP,53.330,-1.7,100,375,Baldi Mtn.,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,53,47.2192,-121.84288
 127,KB7APU,145.250,-0.6,186.2,16535,Red Mountain,FM,Skamania County ARES,http://skamania-prepare.org/ares/,53,45.93479919,-121.81999969
+128,N7KN,441.425,5.0,110.9,,Whidbey Isl.,FM,Charlie N7KN's repeater system,https://www.qrz.com/db/N7KN,,48.069702,-122.58033
