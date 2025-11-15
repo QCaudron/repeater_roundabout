@@ -148,6 +148,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 130   | N7YRC          | N7YRC      | Lookout Point             | FM          |        444.750 |           +5.0 |       131.8 |
 | 131   | N7YRC          | N7YRC      | Cowiche                   | FM          |         53.930 |           -1.7 |             |
 | 132   | N3KPU          | N3KPU      | Graham                    | FM          |        145.230 |           -0.6 |       146.2 |
+| 133   | Madigan Army   | KE7YYD     | JBLM                      | FM          |        442.750 |            5.0 |         100 |
 
 ---
 
@@ -215,6 +216,9 @@ MIRO
 
 MVARC
 : [Methow Valley Amateur Radio Club](https://www.mvhams.net/)
+
+Madigan Army
+: [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
 
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://qrz.com/db/AA7MI)

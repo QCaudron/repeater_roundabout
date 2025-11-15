@@ -2374,5 +2374,23 @@
         "Website":"https:\/\/www.qrz.com\/db\/N3KPU",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KE7YYD",
+        "Output (MHz)":"442.750",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.10947,
+            -122.55148
+        ],
+        "RepeaterBook ID":"13889",
+        "Group Name":"Madigan Army",
+        "Location":"JBLM",
+        "Mode":"FM",
+        "Long Name":"Madigan Army Medical Center",
+        "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
