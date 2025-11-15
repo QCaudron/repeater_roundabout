@@ -2464,5 +2464,59 @@
         "Website":null,
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"146.700",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            48.56027,
+            -123.11967
+        ],
+        "RepeaterBook ID":"6196",
+        "Group Name":"SJCARS",
+        "Location":"San Juan Isl.",
+        "Mode":"FM",
+        "Long Name":"San Juan County Amateur Radio Club",
+        "Website":"http:\/\/sjcars.org",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"224.480",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.680278,
+            -122.83472
+        ],
+        "RepeaterBook ID":"6394",
+        "Group Name":"SJCARS",
+        "Location":"Mt. Constitution",
+        "Mode":"FM",
+        "Long Name":"San Juan County Amateur Radio Club",
+        "Website":"http:\/\/sjcars.org",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"N7JN",
+        "Output (MHz)":"443.450",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            48.56027,
+            -123.12027
+        ],
+        "RepeaterBook ID":"368",
+        "Group Name":"SJCARS",
+        "Location":"Mt. Constitution",
+        "Mode":"FM",
+        "Long Name":"San Juan County Amateur Radio Club",
+        "Website":"http:\/\/sjcars.org",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

@@ -132,5 +132,7 @@ L.marker([47.3819999700, -122.2269973800], {icon: L.divIcon({className: 'custom-
 L.marker([46.5139007600, -121.2080001800], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>135</div>", iconSize: [25, 25]}) }).bindPopup('RR# 135 - WA7SAR (146.860)<br>').addTo(map);
 L.marker([46.0633010900, -121.4240036000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>136</div>", iconSize: [25, 25]}) }).bindPopup('RR# 136 - WA7SAR (147.080)<br>').addTo(map);
 L.marker([46.5222015400, -120.3330001800], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>137</div>", iconSize: [25, 25]}) }).bindPopup('RR# 137 - WA7SAR (444.600)<br>').addTo(map);
+L.marker([48.5602700000, -123.1199700000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 138 - N7JN (146.700)<br>RR# 140 - N7JN (443.450)<br>').addTo(map);
+L.marker([48.6802780000, -122.8347200000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>139</div>", iconSize: [25, 25]}) }).bindPopup('RR# 139 - N7JN (224.480)<br>').addTo(map);
 
 </script>

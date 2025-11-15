@@ -132,3 +132,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 135,WA7SAR,146.860,-0.6,123.0,106,Darland Mtn.,FM,Yakima County Radio Amateurs,,53,46.51390076,-121.20800018
 136,WA7SAR,147.080,+0.6,123.0,95,King Mtn.,FM,Yakima County Radio Amateurs,,53,46.06330109,-121.4240036
 137,WA7SAR,444.600,+5.0,123.0,476,Yakima,FM,Yakima County Radio Amateurs,,53,46.52220154,-120.33300018
+138,N7JN,146.700,-0.6,131.8,6196,San Juan Isl.,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.56027,-123.11967
+139,N7JN,224.480,-1.6,103.5,6394,Mt. Constitution,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.680278,-122.83472
+140,N7JN,443.450,5.0,131.8,368,Mt. Constitution,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.56027,-123.12027

@@ -153,6 +153,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 135   | YCRA           | WA7SAR     | Darland Mtn.              | FM          |        146.860 |           -0.6 |       123.0 |
 | 136   | YCRA           | WA7SAR     | King Mtn.                 | FM          |        147.080 |           +0.6 |       123.0 |
 | 137   | YCRA           | WA7SAR     | Yakima                    | FM          |        444.600 |           +5.0 |       123.0 |
+| 138   | SJCARS         | N7JN       | San Juan Isl.             | FM          |        146.700 |           -0.6 |       131.8 |
+| 139   | SJCARS         | N7JN       | Mt. Constitution          | FM          |        224.480 |           -1.6 |       103.5 |
+| 140   | SJCARS         | N7JN       | Mt. Constitution          | FM          |        443.450 |            5.0 |       131.8 |
 
 ---
 
@@ -277,6 +280,9 @@ SCARES
 
 SCHC
 : [Snohomish County Hams Club](http://www.wa7law.org/)
+
+SJCARS
+: [San Juan County Amateur Radio Club](http://sjcars.org)
 
 SWI-ARC
 : [South West Idaho Amateur Radio Club](https://www.k7swi.org/)
