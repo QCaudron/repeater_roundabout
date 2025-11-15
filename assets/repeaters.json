@@ -2068,5 +2068,23 @@
         "Website":"https:\/\/www.highlinearc.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"N7MHE",
+        "Output (MHz)":"146.70",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.20861,
+            -119.31917
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"N7MHE",
+        "Location":"Moses Lake, WA",
+        "Mode":"FM",
+        "Long Name":"Craig Morrison's N7MHE repeater",
+        "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
+        "Exclude":null,
+        "RepeaterBook State ID":null
     }
 ]
