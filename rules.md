@@ -8,7 +8,7 @@ subtitle: How to play in the Repeater Roundabout.
 
 # Repeaters
 
-Only these [141 participating repeaters from 52 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
+Only these [142 participating repeaters from 52 radio groups](/repeaters) are eligible for scoring points in the Repeater Roundabout. Please stick to these repeaters; we don't want to annoy anyone who did not want to bring the contest to their repeater.
 
 Please ensure that there is no ongoing activity on a repeater (such as a net) before you call for contacts. Please ensure you leave some space for others to user the repeater; some of these are used for emergency communications, and we don't want to interfere with that.
 

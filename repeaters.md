@@ -135,7 +135,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 117   | BARC           | W7NPC      | Bainbridge Isl.           | FM          |        444.475 |            5.0 |       103.5 |
 | 118   | BARC           | WA6PMX     | Bainbridge Isl.           | FM          |        224.420 |           -1.6 |        88.5 |
 | 119   | BARC           | WA6PMX     | Bainbridge Isl.           | FM          |        442.200 |            5.0 |       103.5 |
-| 120   | KBARA          | KB7ARA     | Pikes Peak                | FM          |        147.280 |           +0.6 |       103.5 |
+| 120   | KBARA          | KB7ARA     | Pikes Peak                | FM          |        147.280 |           +0.6 |             |
 | 121   | KBARA          | KA7FVV     | West Twin                 | FM          |        147.320 |           +0.6 |       103.5 |
 | 122   | KBARA          | N7WRR      | Stensgar Mtn.             | FM          |        147.360 |           +0.6 |             |
 | 123   | KBARA          | N7WRQ      | Mica Peak                 | FM          |        147.380 |           +0.6 |       100.0 |
@@ -161,6 +161,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 143   | WECG           | W7ECG      | Ferndale                  | FM          |        442.825 |            5.0 |       156.7 |
 | 144   | ICARC          | W7AVM      | Whidbey Isl.              | FM          |        146.860 |           -0.6 |       127.3 |
 | 145   | ICARC          | W7AVM      | Whidbey Isl.              | FM          |        147.220 |            0.6 |       127.3 |
+| 146   | KBARA          | KB7ARA     | Lookout Pass, MT          | FM          |        147.020 |           +0.6 |             |
 
 ---
 

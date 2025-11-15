@@ -2145,7 +2145,7 @@
         "Callsign":"KB7ARA",
         "Output (MHz)":"147.280",
         "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
+        "Tone (Hz)":null,
         "Coordinates":[
             45.99373,
             -118.18053
@@ -2608,5 +2608,23 @@
         "Website":"https:\/\/www.w7avm.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KB7ARA",
+        "Output (MHz)":"147.020",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":null,
+        "Coordinates":[
+            46.00389862,
+            -112.53399658
+        ],
+        "RepeaterBook ID":"31",
+        "Group Name":"KBARA",
+        "Location":"Lookout Pass, MT",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"30"
     }
 ]
