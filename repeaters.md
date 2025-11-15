@@ -139,6 +139,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 121   | KBARA          | KA7FVV     | West Twin                 | FM          |        147.320 |           +0.6 |       103.5 |
 | 122   | KBARA          | N7WRR      | Stensgar Mtn.             | FM          |        147.360 |           +0.6 |             |
 | 123   | KBARA          | N7WRQ      | Mica Peak                 | FM          |        147.380 |           +0.6 |       100.0 |
+| 124   | N7OEP          | N7OEP      | Enumclaw                  | FM          |        440.075 |            5.0 |       103.5 |
+| 125   | N7OEP          | N7OEP      | Enumclaw                  | FM          |        443.175 |            5.0 |       107.2 |
+| 126   | N7OEP          | N7OEP      | Baldi Mtn.                | FM          |         53.330 |           -1.7 |         100 |
 
 ---
 
@@ -215,6 +218,9 @@ Mike & Key
 
 N7MHE
 : [Craig Morrison's N7MHE repeater](https://www.qrz.com/db/N7MHE)
+
+N7OEP
+: [Tom N7OEP's repeater system](https://www.qrz.com/db/n7oep)
 
 N7YRC
 : [N7YRC Group](https://www.qrz.com/db/KC7VQR)
