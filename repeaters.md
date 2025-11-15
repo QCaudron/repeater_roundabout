@@ -162,6 +162,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 144   | ICARC          | W7AVM      | Whidbey Isl.              | FM          |        146.860 |           -0.6 |       127.3 |
 | 145   | ICARC          | W7AVM      | Whidbey Isl.              | FM          |        147.220 |            0.6 |       127.3 |
 | 146   | KBARA          | KB7ARA     | Lookout Pass, MT          | FM          |        147.020 |           +0.6 |             |
+| 147   | BCS            | K7BEL      | Bellevue, WA              | FM          |        441.100 |         +5.000 |       156.7 |
 
 ---
 
@@ -172,6 +173,9 @@ BARC
 
 BCARC
 : [Bonner County Amateur Radio Club](https://k7jep.org)
+
+BCS
+: [Bellevue Communication Support](https://bellevuewa.gov/volunteering/bellevue-communications-support)
 
 BEARONS
 : [Boeing Employees Amateur Radio Operators North Society](https://w7flybearons.org)

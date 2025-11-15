@@ -2626,5 +2626,23 @@
         "Website":"https:\/\/kbara.org\/",
         "Exclude":null,
         "RepeaterBook State ID":"30"
+    },
+    {
+        "Callsign":"K7BEL",
+        "Output (MHz)":"441.100",
+        "Offset (MHz)":"+5.000",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            47.55447,
+            -122.13239
+        ],
+        "RepeaterBook ID":"489",
+        "Group Name":"BCS",
+        "Location":"Bellevue, WA",
+        "Mode":"FM",
+        "Long Name":"Bellevue Communication Support",
+        "Website":"https:\/\/bellevuewa.gov\/volunteering\/bellevue-communications-support",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
