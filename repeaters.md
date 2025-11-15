@@ -142,6 +142,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 124   | N7OEP          | N7OEP      | Enumclaw                  | FM          |        440.075 |            5.0 |       103.5 |
 | 125   | N7OEP          | N7OEP      | Enumclaw                  | FM          |        443.175 |            5.0 |       107.2 |
 | 126   | N7OEP          | N7OEP      | Baldi Mtn.                | FM          |         53.330 |           -1.7 |         100 |
+| 127   | SCARES         | KB7APU     | Red Mountain              | FM          |        145.250 |           -0.6 |       186.2 |
 
 ---
 

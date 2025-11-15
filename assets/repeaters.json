@@ -2266,5 +2266,23 @@
         "Website":"https:\/\/www.qrz.com\/db\/n7oep",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"KB7APU",
+        "Output (MHz)":"145.250",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"186.2",
+        "Coordinates":[
+            45.93479919,
+            -121.81999969
+        ],
+        "RepeaterBook ID":"16535",
+        "Group Name":"SCARES",
+        "Location":"Red Mountain",
+        "Mode":"FM",
+        "Long Name":"Skamania County ARES",
+        "Website":"http:\/\/skamania-prepare.org\/ares\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
