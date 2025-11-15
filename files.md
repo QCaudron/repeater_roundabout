@@ -90,6 +90,6 @@ let us know if this file is also compatible with your radio.*
 3. Use the `COM Port > Setting...` command to select the COM port used by the USB connection.
 4. Use the `Clone > Read <- TR` menu to duplicate the Icom's settings to your computer.
 5. Click on `Memory CH > <<Add Group>>` to create a new group of memory channels for the repeater roundup channels.
-6. Select the new group and use the `File > Import > Group` menu and select the downloaded <a href="asserts/programming_files/icom.csv" download>icom.csv</a>file.
+6. Select the new group and use the `File > Import > Group` menu and select the downloaded <a href="assets/programming_files/icom.csv" download>icom.csv</a> file.
 
 <p style="margin-bottom: 1rem; margin-top: 0"><br /></p>
