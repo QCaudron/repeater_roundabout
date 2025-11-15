@@ -2086,5 +2086,59 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
         "Exclude":null,
         "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"W7NPC",
+        "Output (MHz)":"444.475",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.6558,
+            -122.5475
+        ],
+        "RepeaterBook ID":"480",
+        "Group Name":"BARC",
+        "Location":"Bainbridge Isl.",
+        "Mode":"FM",
+        "Long Name":"Bainbridge Amateur Radio Club",
+        "Website":"https:\/\/w7npc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WA6PMX",
+        "Output (MHz)":"224.420",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.3922,
+            -122.3251
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"BARC",
+        "Location":"Bainbridge Isl.",
+        "Mode":"FM",
+        "Long Name":"Bainbridge Amateur Radio Club",
+        "Website":"https:\/\/w7npc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"WA6PMX",
+        "Output (MHz)":"442.200",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.76606,
+            -122.6599
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"BARC",
+        "Location":"Bainbridge Isl.",
+        "Mode":"FM",
+        "Long Name":"Bainbridge Amateur Radio Club",
+        "Website":"https:\/\/w7npc.org\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
     }
 ]
