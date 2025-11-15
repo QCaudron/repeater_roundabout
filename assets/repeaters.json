@@ -2356,5 +2356,23 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"N3KPU",
+        "Output (MHz)":"145.230",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"146.2",
+        "Coordinates":[
+            47.0289,
+            -122.2995
+        ],
+        "RepeaterBook ID":"9851",
+        "Group Name":"N3KPU",
+        "Location":"Graham",
+        "Mode":"FM",
+        "Long Name":"Michael N3KPU's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/N3KPU",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

@@ -147,6 +147,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 129   | N7YRC          | N7YRC      | Cowiche Mtn.              | FM          |        442.725 |           +5.0 |       127.3 |
 | 130   | N7YRC          | N7YRC      | Lookout Point             | FM          |        444.750 |           +5.0 |       131.8 |
 | 131   | N7YRC          | N7YRC      | Cowiche                   | FM          |         53.930 |           -1.7 |             |
+| 132   | N3KPU          | N3KPU      | Graham                    | FM          |        145.230 |           -0.6 |       146.2 |
 
 ---
 
@@ -220,6 +221,9 @@ Marrowstone
 
 Mike & Key
 : [Mike & Key Amateur Radio Club](https://www.mikeandkey.org/)
+
+N3KPU
+: [Michael N3KPU's repeater system](https://www.qrz.com/db/N3KPU)
 
 N7KN
 : [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)
