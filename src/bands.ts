@@ -31,7 +31,8 @@ async function readRepeaters() {
         let output = parseFloat(r['Output (MHz)']);
         let offset = parseFloat(r['Offset (MHz)']);
         let input = parseFloat((output + offset).toFixed(4));
-        let tone = r['Tone (Hz)'].replace(/\[.*\]/g, '');
+        let rawTone = r['Tone (Hz)'] ?? "";
+        let tone = rawTone.replace(/\[.*\]/g, '');
         return { id, callsign, input, output, tone, org };
     });
 
