@@ -123,3 +123,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 126,N7OEP,53.330,-1.7,100,375,Baldi Mtn.,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,53,47.2192,-121.84288
 127,KB7APU,145.250,-0.6,186.2,16535,Red Mountain,FM,Skamania County ARES,http://skamania-prepare.org/ares/,53,45.93479919,-121.81999969
 128,N7KN,441.425,5.0,110.9,,Whidbey Isl.,FM,Charlie N7KN's repeater system,https://www.qrz.com/db/N7KN,,48.069702,-122.58033
+129,N7YRC,442.725,+5.0,127.3,7099,Cowiche Mtn.,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,53,46.62680054,-120.73899841
+130,N7YRC,444.750,+5.0,131.8,17413,Lookout Point,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,53,46.63059998,-120.53500366
+131,N7YRC,53.930,-1.7,,21604,Cowiche,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,53,46.62680054,-120.7389984

@@ -144,6 +144,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 126   | N7OEP          | N7OEP      | Baldi Mtn.                | FM          |         53.330 |           -1.7 |         100 |
 | 127   | SCARES         | KB7APU     | Red Mountain              | FM          |        145.250 |           -0.6 |       186.2 |
 | 128   | N7KN           | N7KN       | Whidbey Isl.              | FM          |        441.425 |            5.0 |       110.9 |
+| 129   | N7YRC          | N7YRC      | Cowiche Mtn.              | FM          |        442.725 |           +5.0 |       127.3 |
+| 130   | N7YRC          | N7YRC      | Lookout Point             | FM          |        444.750 |           +5.0 |       131.8 |
+| 131   | N7YRC          | N7YRC      | Cowiche                   | FM          |         53.930 |           -1.7 |             |
 
 ---
 
