@@ -134,7 +134,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 137,WA7SAR,444.600,+5.0,123.0,476,Yakima,FM,Yakima County Radio Amateurs,,53,46.52220154,-120.33300018
 138,N7JN,146.700,-0.6,131.8,6196,San Juan Isl.,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.56027,-123.11967
 139,N7JN,224.480,-1.6,103.5,6394,Mt. Constitution,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.680278,-122.83472
-140,N7JN,443.450,5.0,123,368,Mt. Constitution,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.56027,-123.12027
+140,N7JN,443.450,5.0,103.5,368,Mt. Constitution,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.56027,-123.12027
 141,W7ECG,224.160,-1.6,156.7,8854,Lookout Mtn.,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,53,48.6875,-122.3625
 142,W7ECG,442.250,5.0,156.7,7393,Lookout Mtn.,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,53,48.6875,-122.3625
 143,W7ECG,442.825,5.0,156.7,7100,Ferndale,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,53,48.5136,-122.3708
