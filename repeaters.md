@@ -150,6 +150,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 132   | N3KPU          | N3KPU      | Graham                    | FM          |        145.230 |           -0.6 |       146.2 |
 | 133   | Madigan Army   | KE7YYD     | JBLM                      | FM          |        442.750 |            5.0 |         100 |
 | 134   | KCST           | K7CST      | Kent                      | FM          |        147.320 |           +0.6 |       103.5 |
+| 135   | YCRA           | WA7SAR     | Darland Mtn.              | FM          |        146.860 |           -0.6 |       123.0 |
+| 136   | YCRA           | WA7SAR     | King Mtn.                 | FM          |        147.080 |           +0.6 |       123.0 |
+| 137   | YCRA           | WA7SAR     | Yakima                    | FM          |        444.600 |           +5.0 |       123.0 |
 
 ---
 
@@ -298,6 +301,9 @@ WWDXC
 
 West Seattle
 : [West Seattle Amateur Radio Club](https://w7aw.org/)
+
+YCRA
+: [Yakima County Radio Amateurs](None)
 
 
 

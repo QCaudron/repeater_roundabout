@@ -2410,5 +2410,59 @@
         "Website":"https:\/\/pugetsoundfire.org\/emergency-management\/communications-support-team-ham-radio\/",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WA7SAR",
+        "Output (MHz)":"146.860",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.51390076,
+            -121.20800018
+        ],
+        "RepeaterBook ID":"106",
+        "Group Name":"YCRA",
+        "Location":"Darland Mtn.",
+        "Mode":"FM",
+        "Long Name":"Yakima County Radio Amateurs",
+        "Website":null,
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WA7SAR",
+        "Output (MHz)":"147.080",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.06330109,
+            -121.4240036
+        ],
+        "RepeaterBook ID":"95",
+        "Group Name":"YCRA",
+        "Location":"King Mtn.",
+        "Mode":"FM",
+        "Long Name":"Yakima County Radio Amateurs",
+        "Website":null,
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WA7SAR",
+        "Output (MHz)":"444.600",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.52220154,
+            -120.33300018
+        ],
+        "RepeaterBook ID":"476",
+        "Group Name":"YCRA",
+        "Location":"Yakima",
+        "Mode":"FM",
+        "Long Name":"Yakima County Radio Amateurs",
+        "Website":null,
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
