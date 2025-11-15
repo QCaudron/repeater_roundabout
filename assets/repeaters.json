@@ -2392,5 +2392,23 @@
         "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"K7CST",
+        "Output (MHz)":"147.320",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.38199997,
+            -122.22699738
+        ],
+        "RepeaterBook ID":"9852",
+        "Group Name":"KCST",
+        "Location":"Kent",
+        "Mode":"FM",
+        "Long Name":"Kent Communications Support Team ARC",
+        "Website":"https:\/\/pugetsoundfire.org\/emergency-management\/communications-support-team-ham-radio\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]

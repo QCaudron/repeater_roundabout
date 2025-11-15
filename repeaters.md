@@ -149,6 +149,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 131   | N7YRC          | N7YRC      | Cowiche                   | FM          |         53.930 |           -1.7 |             |
 | 132   | N3KPU          | N3KPU      | Graham                    | FM          |        145.230 |           -0.6 |       146.2 |
 | 133   | Madigan Army   | KE7YYD     | JBLM                      | FM          |        442.750 |            5.0 |         100 |
+| 134   | KCST           | K7CST      | Kent                      | FM          |        147.320 |           +0.6 |       103.5 |
 
 ---
 
@@ -201,6 +202,9 @@ KC7EQO
 
 KCARC
 : [Kitsap County Amateur Radio Club](https://kcarc.org/)
+
+KCST
+: [Kent Communications Support Team ARC](https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/)
 
 LCARA
 : [Lower Columbia Amateur Radio Association](http://w7dg.org)

@@ -128,3 +128,4 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 131,N7YRC,53.930,-1.7,,21604,Cowiche,FM,N7YRC Group,https://www.qrz.com/db/N7YRC,53,46.62680054,-120.7389984
 132,N3KPU,145.230,-0.6,146.2,9851,Graham,FM,Michael N3KPU's repeater system,https://www.qrz.com/db/N3KPU,53,47.0289,-122.2995
 133,KE7YYD,442.750,5.0,100,13889,JBLM,FM,Madigan Army Medical Center,https://www.qrz.com/db/KE7YYD,53,47.10947,-122.55148
+134,K7CST,147.320,+0.6,103.5,9852,Kent,FM,Kent Communications Support Team ARC,https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/,53,47.38199997,-122.22699738
