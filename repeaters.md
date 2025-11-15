@@ -135,6 +135,10 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 117   | BARC           | W7NPC      | Bainbridge Isl.           | FM          |        444.475 |            5.0 |       103.5 |
 | 118   | BARC           | WA6PMX     | Bainbridge Isl.           | FM          |        224.420 |           -1.6 |        88.5 |
 | 119   | BARC           | WA6PMX     | Bainbridge Isl.           | FM          |        442.200 |            5.0 |       103.5 |
+| 120   | KBARA          | KB7ARA     | Pikes Peak                | FM          |        147.280 |           +0.6 |       103.5 |
+| 121   | KBARA          | KA7FVV     | West Twin                 | FM          |        147.320 |           +0.6 |       103.5 |
+| 122   | KBARA          | N7WRR      | Stensgar Mtn.             | FM          |        147.360 |           +0.6 |             |
+| 123   | KBARA          | N7WRQ      | Mica Peak                 | FM          |        147.380 |           +0.6 |       100.0 |
 
 ---
 
@@ -178,6 +182,9 @@ K7PP
 
 K7RHT
 : [K7RHT](https://www.qrz.com/db/K7RHT)
+
+KBARA
+: [Kamiak Butte Amateur Repeater Association](https://kbara.org/)
 
 KC7EQO
 : [Matt KC7EQO's repeater system](https://www.qrz.com/db/KC7EQO/R)
