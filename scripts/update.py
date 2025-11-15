@@ -19,6 +19,8 @@ from markdown_files import (
 from programming_files import (
     write_chirp_csv,
     write_generic_csv,
+    write_icom_csv,
+    write_d878_zip,
 )
 
 def parse_args() -> argparse.Namespace | SimpleNamespace:
@@ -557,6 +559,11 @@ if __name__ == "__main__":
     # Remove repeaters not in the contest
     df = df.loc[df["Exclude"].isna()]
 
+    # Set tone to the empty string for toneless repeaters.  Downstream
+    # code assumes tone is always a string.
+    no_tone = df["Tone (Hz)"].isna() | (df["Tone (Hz)"] == "")
+    df.loc[no_tone, "Tone (Hz)"] = ""
+
     write_index_md(df, args.score)
     write_repeaters_md(df)
     write_rules_md(df)
@@ -564,6 +571,6 @@ if __name__ == "__main__":
 
     df = remove_df_footnotes(df)
     write_chirp_csv(df)
-    # write_icom_csv(df)
-    # write_d878_zip(df)
+    write_icom_csv(df)
+    write_d878_zip(df)
     write_generic_csv(df)
