@@ -156,6 +156,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 138   | SJCARS         | N7JN       | San Juan Isl.             | FM          |        146.700 |           -0.6 |       131.8 |
 | 139   | SJCARS         | N7JN       | Mt. Constitution          | FM          |        224.480 |           -1.6 |       103.5 |
 | 140   | SJCARS         | N7JN       | Mt. Constitution          | FM          |        443.450 |            5.0 |       131.8 |
+| 141   | WECG           | W7ECG      | Lookout Mtn.              | FM          |        224.160 |           -1.6 |       156.7 |
+| 142   | WECG           | W7ECG      | Lookout Mtn.              | FM          |        442.250 |            5.0 |       156.7 |
+| 143   | WECG           | W7ECG      | Ferndale                  | FM          |        442.825 |            5.0 |       156.7 |
 
 ---
 
@@ -298,6 +301,9 @@ Snohomish ACS
 
 WA7TBP
 : [Tom WA7TBP's repeater system](https://www.qrz.com/db/WA7TBP/)
+
+WECG
+: [Whatcom Emergency Communications Group](https://wecg.org/wordpress/)
 
 WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)

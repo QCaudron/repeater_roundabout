@@ -2518,5 +2518,59 @@
         "Website":"http:\/\/sjcars.org",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"224.160",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.6875,
+            -122.3625
+        ],
+        "RepeaterBook ID":"8854",
+        "Group Name":"WECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.250",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.6875,
+            -122.3625
+        ],
+        "RepeaterBook ID":"7393",
+        "Group Name":"WECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.825",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.5136,
+            -122.3708
+        ],
+        "RepeaterBook ID":"7100",
+        "Group Name":"WECG",
+        "Location":"Ferndale",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"https:\/\/wecg.org\/wordpress\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
     }
 ]
