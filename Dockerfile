@@ -26,3 +26,12 @@ COPY --chown=${UID}:${GID} . /app/repeater_roundabout/
 
 ENTRYPOINT [ "/app/repeater_roundabout/scripts/docker-entrypoint.sh" ]
 CMD [ "/bin/bash" ]
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+ENV BASH_ENV /app/.bash_env
+RUN touch "${BASH_ENV}"
+RUN echo '. "${BASH_ENV}"' >> ~/.bashrc
+
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | PROFILE="${BASH_ENV}" bash
+RUN nvm install && npm install
