@@ -7,13 +7,15 @@ async function readRepeaters() {
     console.log("Parsing data...");
     let id = 0;
     let repeaters = repeatersRaw.map((r) => {
+        var _a;
         id += 1;
         let callsign = r['Callsign'];
         let org = r['Long Name'];
         let output = parseFloat(r['Output (MHz)']);
         let offset = parseFloat(r['Offset (MHz)']);
         let input = parseFloat((output + offset).toFixed(4));
-        let tone = r['Tone (Hz)'].replace(/\[.*\]/g, '');
+        let rawTone = (_a = r['Tone (Hz)']) !== null && _a !== void 0 ? _a : "";
+        let tone = rawTone.replace(/\[.*\]/g, '');
         return { id, callsign, input, output, tone, org };
     });
     return repeaters;
