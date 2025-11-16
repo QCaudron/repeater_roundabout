@@ -2099,7 +2099,7 @@
         "RepeaterBook ID":"480",
         "Group Name":"BARC",
         "Location":"Bainbridge Isl.",
-        "Mode":"FM",
+        "Mode":"NBFM[^nbfm]",
         "Long Name":"Bainbridge Amateur Radio Club",
         "Website":"https:\/\/w7npc.org\/",
         "Exclude":null,
@@ -2120,7 +2120,7 @@
         "Mode":"FM",
         "Long Name":"Bainbridge Amateur Radio Club",
         "Website":"https:\/\/w7npc.org\/",
-        "Exclude":null,
+        "Exclude":true,
         "RepeaterBook State ID":null
     },
     {
@@ -2138,7 +2138,7 @@
         "Mode":"FM",
         "Long Name":"Bainbridge Amateur Radio Club",
         "Website":"https:\/\/w7npc.org\/",
-        "Exclude":null,
+        "Exclude":true,
         "RepeaterBook State ID":null
     },
     {

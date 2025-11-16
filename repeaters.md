@@ -132,9 +132,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 114   | HARC           | W7BUR      | Burien                    | FM          |        441.125 |            5.0 |       103.5 |
 | 115   | HARC           | WA7DES     | Des Moines                | FM          |        443.700 |            5.0 |         123 |
 | 116   | N7MHE          | N7MHE      | Moses Lake, WA            | FM          |         146.70 |           -0.6 |       100.0 |
-| 117   | BARC           | W7NPC      | Bainbridge Isl.           | FM          |        444.475 |            5.0 |       103.5 |
-| 118   | BARC           | WA6PMX     | Bainbridge Isl.           | FM          |        224.420 |           -1.6 |        88.5 |
-| 119   | BARC           | WA6PMX     | Bainbridge Isl.           | FM          |        442.200 |            5.0 |       103.5 |
+| 117   | BARC           | W7NPC      | Bainbridge Isl.           | NBFM[^nbfm] |        444.475 |            5.0 |       103.5 |
 | 120   | KBARA          | KB7ARA     | Pikes Peak                | FM          |        147.280 |           +0.6 |             |
 | 121   | KBARA          | KA7FVV     | West Twin                 | FM          |        147.320 |           +0.6 |       103.5 |
 | 122   | KBARA          | N7WRR      | Stensgar Mtn.             | FM          |        147.360 |           +0.6 |             |
