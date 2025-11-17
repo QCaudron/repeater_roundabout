@@ -183,7 +183,7 @@ def wwara_row_to_repeater(row: dict) -> dict:
         "Callsign": row["CALL"].strip(),
         "Location": f"{row["CITY"].strip()}, {row["STATE"].strip()}",
         "Mode": mode,
-        "Output (MHz)": '%0.3f' % outp,
+        "Output (MHz)": '%0.4f' % outp,
         "Offset (MHz)": '%0.1f' % offset,
         "Tone (Hz)": row["CTCSS_IN"].strip(),
         "Coordinates": [float(row["LATITUDE"].strip()), float(row["LONGITUDE"].strip())],
