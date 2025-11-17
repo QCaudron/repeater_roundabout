@@ -2644,5 +2644,131 @@
         "Website":"https:\/\/bellevuewa.gov\/volunteering\/bellevue-communications-support",
         "Exclude":null,
         "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"147.080",
+        "Offset (MHz)":"0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.48844,
+            -121.94705
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SeaTac",
+        "Location":"Tiger Mtn East, WA",
+        "Mode":"FM",
+        "Long Name":"SeaTac Rptr Assoc",
+        "Website":"http:\/\/www.seatacra.com",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"147.875",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.54029846,
+            -122.09999847
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"SeaTac Rptr Assoc",
+        "Website":"http:\/\/www.seatacra.com",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"224.440",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54029846,
+            -122.09999847
+        ],
+        "RepeaterBook ID":"16503",
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"441.550",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54192,
+            -122.1095
+        ],
+        "RepeaterBook ID":"601",
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"442.150",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54192,
+            -122.1095
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":"53"
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"444.850",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54192,
+            -122.1095
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"927.2125",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            47.54192,
+            -122.1095
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/seatacra.com\/",
+        "Exclude":null,
+        "RepeaterBook State ID":null
     }
 ]
