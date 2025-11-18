@@ -491,10 +491,10 @@ def generate_repeater_df(
     repeaterargs = repeater_from_args(args)
 
     if freq:
-        frequencies = [freq]
+        frequencies = [float(freq)]
     else:
         frequencies = list(set([
-            f for f in priors["Output (MHz)"].to_list() +
+            float(f) for f in priors["Output (MHz)"].to_list() +
                  wwaras["Output (MHz)"].to_list() +
                  [repeaterargs.get("Output (MHz)")] +
                  [repeaterbook.get("Output (MHz)")]
