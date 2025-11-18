@@ -2770,5 +2770,41 @@
         "Website":"https:\/\/seatacra.com\/",
         "Exclude":null,
         "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"W7EAT",
+        "Output (MHz)":"146.7000",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.839869,
+            -122.26104
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Eatonville",
+        "Location":"Eatonville",
+        "Mode":"FM",
+        "Long Name":"Eatonville Amateur Radio Club",
+        "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
+        "Exclude":null,
+        "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"W7EAT",
+        "Output (MHz)":"224.1800",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.028947,
+            -122.29392
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"Eatonville",
+        "Location":"Graham",
+        "Mode":"FM",
+        "Long Name":"Eatonville Amateur Radio Club",
+        "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
+        "Exclude":null,
+        "RepeaterBook State ID":null
     }
 ]

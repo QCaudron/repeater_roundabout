@@ -147,3 +147,5 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 152,WW7STR,442.150,5.0,103.5,,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://seatacra.com/,53,47.54192,-122.1095
 153,WW7STR,444.850,5.0,103.5,,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://seatacra.com/,,47.54192,-122.1095
 154,WW7STR,927.2125,-25.0,114.8,,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://seatacra.com/,,47.54192,-122.1095
+155,W7EAT,146.7000,-0.6,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,,46.839869,-122.26104
+156,W7EAT,224.1800,-1.6,103.5,,Graham,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,,47.028947,-122.29392

@@ -168,6 +168,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 152   | SeaTac         | WW7STR     | Cougar Mtn, WA            | FM          |        442.150 |            5.0 |       103.5 |
 | 153   | SeaTac         | WW7STR     | Cougar Mtn, WA            | FM          |        444.850 |            5.0 |       103.5 |
 | 154   | SeaTac         | WW7STR     | Cougar Mtn, WA            | FM          |       927.2125 |          -25.0 |       114.8 |
+| 155   | Eatonville     | W7EAT      | Eatonville                | FM          |       146.7000 |           -0.6 |       103.5 |
+| 156   | Eatonville     | W7EAT      | Graham                    | FM          |       224.1800 |           -1.6 |       103.5 |
 
 ---
 
@@ -187,6 +189,9 @@ BEARONS
 
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)
+
+Eatonville
+: [Eatonville Amateur Radio Club](https://www.qrz.com/db/W7EAT)
 
 FWARC
 : [Federal Way Amateur Radio Club](https://fwarc.org/repeaters)
