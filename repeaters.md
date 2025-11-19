@@ -170,6 +170,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 154   | SeaTac         | WW7STR     | Cougar Mtn, WA            | NBFM[^nbfm] |       927.2125 |          -25.0 |       114.8 |
 | 155   | Eatonville     | W7EAT      | Eatonville                | FM          |       146.7000 |           -0.6 |       103.5 |
 | 156   | Eatonville     | W7EAT      | Graham                    | FM          |       224.1800 |           -1.6 |       103.5 |
+| 157   | K7DK           | K7DK       | Buck Mtn.                 | FM          |       440.9500 |            5.0 |       110.9 |
 
 ---
 
@@ -216,6 +217,9 @@ K6RFK
 
 K7CH
 : [Carl K7CH's repeater system](https://www.qrz.com/db/k7ch)
+
+K7DK
+: [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
 
 K7PP
 : [Peter Policani's K7PP repeater system](https://www.k7pp.itgo.com)

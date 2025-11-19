@@ -2806,5 +2806,23 @@
         "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
         "Exclude":null,
         "RepeaterBook State ID":null
+    },
+    {
+        "Callsign":"K7DK",
+        "Output (MHz)":"440.9500",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"110.9",
+        "Coordinates":[
+            47.753176,
+            -122.92911
+        ],
+        "RepeaterBook ID":null,
+        "Group Name":"K7DK",
+        "Location":"Buck Mtn.",
+        "Mode":"FM",
+        "Long Name":"Mark K7DK's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/K7DK",
+        "Exclude":null,
+        "RepeaterBook State ID":null
     }
 ]
