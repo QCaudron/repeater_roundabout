@@ -336,7 +336,7 @@ WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)
 
 WWATS
-: [Western Washington Amateur TV Society](https://www.wwats.net)
+: [Western Washington Amateur Television Society](https://www.wwats.net)
 
 WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org/)
