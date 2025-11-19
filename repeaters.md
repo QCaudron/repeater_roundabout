@@ -161,13 +161,13 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 145   | ICARC          | W7AVM      | Whidbey Isl.              | FM          |        147.220 |            0.6 |       127.3 |
 | 146   | KBARA          | KB7ARA     | Lookout Pass, MT          | FM          |        147.020 |           +0.6 |             |
 | 147   | BCS            | K7BEL      | Bellevue, WA              | FM          |        441.100 |         +5.000 |       156.7 |
-| 148   | SeaTac         | WW7STR     | Tiger Mtn East, WA        | FM          |        147.080 |            0.6 |       103.5 |
+| 148   | WWATS          | WW7ATS     | Cougar Mtn, WA            | FM          |        147.080 |            0.6 |       103.5 |
 | 149   | SeaTac         | WW7STR     | Cougar Mtn, WA            | NBFM[^nbfm] |        147.875 |           -0.6 |        88.5 |
 | 150   | SeaTac         | WW7STR     | Cougar Mtn, WA            | FM          |        224.440 |           -1.6 |       103.5 |
-| 151   | SeaTac         | WW7STR     | Cougar Mtn, WA            | FM          |        441.550 |            5.0 |       103.5 |
+| 151   | WWATS          | WW7ATS     | Cougar Mtn, WA            | FM          |        441.550 |            5.0 |       103.5 |
 | 152   | SeaTac         | WW7STR     | Cougar Mtn, WA            | FM          |        442.150 |            5.0 |       103.5 |
 | 153   | SeaTac         | WW7STR     | Cougar Mtn, WA            | FM          |        444.850 |            5.0 |       103.5 |
-| 154   | SeaTac         | WW7STR     | Cougar Mtn, WA            | FM          |       927.2125 |          -25.0 |       114.8 |
+| 154   | SeaTac         | WW7STR     | Cougar Mtn, WA            | NBFM[^nbfm] |       927.2125 |          -25.0 |       114.8 |
 | 155   | Eatonville     | W7EAT      | Eatonville                | FM          |       146.7000 |           -0.6 |       103.5 |
 | 156   | Eatonville     | W7EAT      | Graham                    | FM          |       224.1800 |           -1.6 |       103.5 |
 
@@ -330,6 +330,9 @@ WECG
 
 WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)
+
+WWATS
+: [Western Washington Amateur TV Society](https://www.wwats.net)
 
 WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org/)

@@ -140,12 +140,12 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 145,W7AVM,147.220,0.6,127.3,345,Whidbey Isl.,FM,Island County ARC,https://www.w7avm.org/,53,47.9744,-122.3976
 146,KB7ARA,147.020,+0.6,,31,"Lookout Pass, MT",FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,30,46.00389862,-112.53399658
 147,K7BEL,441.100,+5.000,156.7,489,"Bellevue, WA",FM,Bellevue Communication Support,https://bellevuewa.gov/volunteering/bellevue-communications-support,53,47.55447,-122.13239
-148,WW7STR,147.080,0.6,103.5,,"Tiger Mtn East, WA",FM,SeaTac Rptr Assoc,http://www.seatacra.com,,47.48844,-121.94705
+148,WW7ATS,147.080,0.6,103.5,,"Cougar Mtn, WA",FM,Western Washington Amateur TV Society,https://www.wwats.net,,47.48844,-121.94705
 149,WW7STR,147.875,-0.6,88.5,,"Cougar Mtn, WA",NBFM,SeaTac Rptr Assoc,http://www.seatacra.com,,47.54029846,-122.09999847
 150,WW7STR,224.440,-1.6,103.5,16503,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://seatacra.com/,53,47.54029846,-122.09999847
-151,WW7STR,441.550,5.0,103.5,601,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://seatacra.com/,53,47.54192,-122.1095
+151,WW7ATS,441.550,5.0,103.5,601,"Cougar Mtn, WA",FM,Western Washington Amateur TV Society,https://www.wwats.net,53,47.54192,-122.1095
 152,WW7STR,442.150,5.0,103.5,,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://seatacra.com/,53,47.54192,-122.1095
 153,WW7STR,444.850,5.0,103.5,,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://seatacra.com/,,47.54192,-122.1095
-154,WW7STR,927.2125,-25.0,114.8,,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://seatacra.com/,,47.54192,-122.1095
+154,WW7STR,927.2125,-25.0,114.8,,"Cougar Mtn, WA",NBFM,SeaTac Repeater Association,https://seatacra.com/,,47.54192,-122.1095
 155,W7EAT,146.7000,-0.6,103.5,,Eatonville,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,,46.839869,-122.26104
 156,W7EAT,224.1800,-1.6,103.5,,Graham,FM,Eatonville Amateur Radio Club,https://www.qrz.com/db/W7EAT,,47.028947,-122.29392
