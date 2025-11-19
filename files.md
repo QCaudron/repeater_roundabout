@@ -13,6 +13,15 @@ In order to make the contesting life a little easier, we provide a CHIRP-compati
 - [Icom IC-705 file](assets/programming_files/icom.csv) (.csv)
 - [Complete repeater list](assets/programming_files/all_rr_frequencies.csv), all the info we have (.csv)
 
+The following files for other radios/programming software have been contributed by Repeater Roundabout participants.  They are offered with a few caveats:
+- Repeater Roundabout channels may start at an arbitrary offset (e.g. 300).  We recommend moving them to align with official [RR repeater numbers](./repeaters).
+- The files may be out of date.  You can check for changes by clicking the Last Updated link and checking for changes to the `repeaters.md` file.
+
+| Radio | Software | Last Updated | Thanks To |
+|-|-|-|-|
+| [Yaesu FT-5DR](assets/programming_files/ft5dr.tab) | RT Systems | [Nov 18, 2025](https://github.com/QCaudron/repeater_roundabout/compare/0a3d89423cf4933d683db336cc95a1403cdec47f..main) | Mark - N7YD |
+| [Yaesu FT-510DR](assets/programming_files/ftm510dr.tab) | RT Systems | [Nov 18, 2025](https://github.com/QCaudron/repeater_roundabout/compare/0a3d89423cf4933d683db336cc95a1403cdec47f..main) | Mark - N7YD |
+
 <!-- 
 Which file do you need ?
 
