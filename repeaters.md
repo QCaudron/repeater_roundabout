@@ -294,7 +294,7 @@ Pierce
 : [Pierce County ARES](http://www.piercecountyares.net)
 
 RASC
-: [Radio Amateurs of Skagit County](http://rasconline.com/)
+: [Radio Amateurs of Skagit County](https://rasconline.net/)
 
 RCTacoma
 : [Radio Club of Tacoma](https://w7dk.org/)

@@ -55,7 +55,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 57,W7AW,53.290,-1.7,100,,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,,47.5405,-122.3777
 58,W7AW,145.130,-0.6,103.5,14858,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,53,47.540412,-122.378271
 59,W7AW,441.800,5.0,141.3,,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,,47.5405,-122.3777
-60,N7GDE,145.190,-0.6,127.3,,"Lyman Mtn, WA",FM,Radio Amateurs of Skagit County,http://rasconline.com/,,48.594746,-122.15942
+60,N7GDE,145.190,-0.6,127.3,,"Lyman Mtn, WA",FM,Radio Amateurs of Skagit County,https://rasconline.net/,,48.594746,-122.15942
 61,N7SK,146.720,-0.6,103.5,,"Shelton, WA",FM,Mason County Amateur Radio Club,https://mc-arc.org/,,47.2072,-123.1183
 62,N7SK,443.250,5.0,100,,"Shelton, WA",FM,Mason County Amateur Radio Club,https://mc-arc.org/,,47.2072,-123.1183
 63,N7SK,927.413,-25.0,114.8,,"Shelton, WA",FM,Mason County ARC,http://mc-arc.org,,47.2072,-123.1183
