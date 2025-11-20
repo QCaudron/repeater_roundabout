@@ -50,7 +50,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 28    | Pierce         | W7AAO      | Buckley, WA               | FM          |        927.850 |          -25.0 |       114.8 |
 | 29    | FWARC          | WA7FW      | Federal Way, WA           | FM          |        146.760 |           -0.6 |       103.5 |
 | 30    | FWARC          | WA7FW      | Federal Way, WA           | FM          |        147.040 |            0.6 |       103.5 |
-| 31    | FWARC          | WA7FW      | Federal Way, WA           | FM          |        442.925 |            5.0 |             |
+| 31    | FWARC          | WA7FW      | Federal Way, WA           | FM          |        442.925 |            5.0 |  D036[^dcs] |
 | 32    | FWARC          | WA7FW      | Federal Way, WA           | FM          |        442.950 |            5.0 |       103.5 |
 | 33    | KC7EQO         | KC7EQO     | Blyn, WA                  | FM          |        442.100 |            5.0 |         100 |
 | 34    | KCARC          | KC7Z       | Gold Mtn, WA              | FM          |        146.620 |           -0.6 |       103.5 |

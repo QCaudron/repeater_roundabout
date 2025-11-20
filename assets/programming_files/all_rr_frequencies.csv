@@ -29,7 +29,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 28,W7AAO,927.850,-25.0,114.8,,"Buckley, WA",FM,District 5 ARES,http://www.piercecountyares.net,,47.1167,-121.8925
 29,WA7FW,146.760,-0.6,103.5,,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,,47.28,-122.29
 30,WA7FW,147.040,0.6,103.5,,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,,47.324663,-122.32604
-31,WA7FW,442.925,5.0,,,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,,47.32,-122.33
+31,WA7FW,442.925,5.0,D036[^dcs],,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,,47.32,-122.33
 32,WA7FW,442.950,5.0,103.5,,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,,47.32,-122.33
 33,KC7EQO,442.100,5.0,100,,"Blyn, WA",FM,Matt KC7EQO's repeater system,https://www.qrz.com/db/KC7EQO/R,,48.00666,-122.97267
 34,KC7Z,146.620,-0.6,103.5,,"Gold Mtn, WA",FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,47.54788,-122.8073

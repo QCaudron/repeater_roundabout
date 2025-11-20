@@ -543,7 +543,7 @@
         "Callsign":"WA7FW",
         "Output (MHz)":"442.925",
         "Offset (MHz)":"5.0",
-        "Tone (Hz)":"",
+        "Tone (Hz)":"D036[^dcs]",
         "Coordinates":[
             47.32,
             -122.33
