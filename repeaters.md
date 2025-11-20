@@ -15,6 +15,12 @@ The following repeaters are participating in the Repeater Roundabout. Please ens
 interfere** with the repeater's normal operation, including regular nets. If someone on the repeater
 asks you to hold off on making contacts, please come back later.
 
+For 2025, we have an increasing number of narrowband FM repeaters as
+Western Washington transitions to narrowband on 2m and 70cm.  There
+are also some mixed mode digital and analog repeaters.  If you hear
+digital traffic, don't interrupt.  But, feel free to come back later
+and make analog contacts when the repeater is not busy.
+
 Get started by [programming your radio](/files), and check out the repeaters' locations on the
 [repeater map](/map).
 
