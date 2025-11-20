@@ -4,7 +4,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 3,W7PFR,53.410,-1.7,100,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
 4,W7PFR,443.975,5.0,103.5,,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,46.8354,-122.2878
 5,WW7SEA,444.425,5.0,141.3,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.6322,-122.3539
-6,WW7SEA,444.700,5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.637010000000004,-122.3488
+6,WW7SEA,444.700,5.0,103.5,,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,47.63701,-122.3488
 7,W7DX,147.000,-0.6,103.5,,Redmond,FM,Western Washington DX Club,https://www.wwdxc.org/,,47.67459,-122.05393
 8,W7JCR,145.150,-0.6,114.8,,Port Townsend,FM,Jefferson County Amateur Radio Club,https://w7jcr.wordpress.com/,,48.1247,-122.7651
 9,AA7MI,440.725,5.0,114.8,,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,https://qrz.com/db/AA7MI,,48.04026,-122.68775
@@ -94,7 +94,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 97,W7ACS,440.525,5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.58878,-122.31765
 98,W7ACS,440.600,5.0,141.3,,Lake Forest Park,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.77193,-122.28099
 99,W7ACS,442.300,5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.58878,-122.31765
-100,W7ACS,442.875,5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.62378,-122.31542
+100,W7ACS,442.875,5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.623780000000004,-122.31542
 101,W7ACS,443.025,5.0,141.3,,Seattle,FM,Seattle Auxiliary Commonications Service,https://www.seattleacs.org/home,,47.61901,-122.31247
 102,W7ACS,443.200,5.0,141.3,,White Center,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.52075,-122.34341
 103,W7ACS,443.475,5.0,141.3,,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,47.65073,-122.39258
@@ -133,7 +133,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 138,N7JN,146.700,-0.6,131.8,6196,San Juan Isl.,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.56027,-123.11967
 139,N7JN,224.480,-1.6,103.5,6394,Mt. Constitution,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.680278,-122.83472
 140,N7JN,443.450,5.0,103.5,368,Mt. Constitution,FM,San Juan County Amateur Radio Club,http://sjcars.org,53,48.56027,-123.12027
-141,W7ECG,224.160,-1.6,156.7,8854,Lookout Mtn.,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,53,48.6875,-122.3625
+141,W7ECG,224.160,-1.6,156.7,8854,Lookout Mtn.,FM,Whatcom Emergency Communications Group,https://wecg.org/,53,48.6875,-122.3625
 142,W7ECG,442.250,5.0,156.7,7393,Lookout Mtn.,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,53,48.6875,-122.3625
 143,W7ECG,442.825,5.0,156.7,7100,Ferndale,FM,Whatcom Emergency Communications Group,https://wecg.org/wordpress/,53,48.5136,-122.3708
 144,W7AVM,146.860,-0.6,127.3,,Whidbey Isl.,FM,Island County ARC,https://www.w7avm.org/,,48.2135,-122.7062

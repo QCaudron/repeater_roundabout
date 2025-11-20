@@ -336,7 +336,7 @@ WA7TBP
 : [Tom WA7TBP's repeater system](https://www.qrz.com/db/WA7TBP/)
 
 WECG
-: [Whatcom Emergency Communications Group](https://wecg.org/wordpress/)
+: [Whatcom Emergency Communications Group](https://wecg.org/)
 
 WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)
