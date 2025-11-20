@@ -321,7 +321,7 @@ Seattle ACS
 : [Seattle Auxiliary Commonications Service](https://www.seattleacs.org/home)
 
 Shoreline ACS
-: [Shoreline ACS](https://sites.google.com/a/w7aux.org/shoreline-acs/)
+: [Shoreline ACS](https://shorelineacs.org)
 
 Snohomish ACS
 : [Snohomish County Auxiliary Communications Service](https://www.wa7dem.info)
