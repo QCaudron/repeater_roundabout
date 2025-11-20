@@ -18,10 +18,10 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),RepeaterBook ID,Location,Mode,G
 17,WA7DEM,444.300,5.0,156.7,,"Darrington, WA",NBFM,Snohomish County Auxiliary Communications Service,https://wa7dem.info,,48.24944,-122.56916
 18,W7MIR,147.160,0.6,146.2,,"Mercer Island, WA",FM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,47.56838,-122.22078
 19,W7MIR,440.150,5.0,103.5,,"Mercer Island, WA",FM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,47.56838,-122.22078
-20,W7DG,147.100,0.6,114.8,,"Longview, WA",FM,Lower Columbia Amateur Radio Association,http://w7dg.org,,46.1828,-122.9578
-21,W7DG,147.300,0.6,114.8,,"Woodland, WA",FM,Lower Columbia Amateur Radio Association,http://w7dg.org,,45.97,-122.67
-22,W7DG,224.140,-1.6,114.8,,"Longview, WA",FM,N3EG,http://www.w7dg.org,,46.1828,-122.9578
-23,W7DG,444.900,5.0,114.8,,"Longview, WA",FM,Lower Columbia Amateur Radio Association,http://w7dg.org,,46.1828,-122.9578
+20,W7DG,147.100,0.6,114.8,,"Longview, WA",FM,Lower Columbia Amateur Radio Association,http://w7dg.com,,46.1828,-122.9578
+21,W7DG,147.300,0.6,114.8,,"Woodland, WA",FM,Lower Columbia Amateur Radio Association,http://w7dg.com,,45.97,-122.67
+22,W7DG,224.140,-1.6,114.8,,"Longview, WA",FM,N3EG,http://www.w7dg.com,,46.1828,-122.9578
+23,W7DG,444.900,5.0,114.8,,"Longview, WA",FM,Lower Columbia Amateur Radio Association,http://w7dg.com,,46.1828,-122.9578
 24,K6RFK,147.340,0.6,100,,"Woodinville, WA",FM,K6RFK's repeater system,https://www.qrz.com/db/K6RFK,,47.7253,-122.1189
 25,K6RFK,442.775,5.0,100,,"Woodinville, WA",FM,K6RFK's repeater system,https://www.qrz.com/db/K6RFK,,47.7433,-122.1259
 26,W7AAO,145.370,-0.6,136.5,,"Enumclaw, WA",FM,Pierce County ARES,http://www.piercecountyares.net,,47.20387,-122.79564

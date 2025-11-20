@@ -240,7 +240,7 @@ KCST
 : [Kent Communications Support Team ARC](https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/)
 
 LCARA
-: [Lower Columbia Amateur Radio Association](http://w7dg.org)
+: [Lower Columbia Amateur Radio Association](http://w7dg.com)
 
 LWHC
 : [Lake Washington Ham Club](https://www.lakewashingtonhamclub.org/)
