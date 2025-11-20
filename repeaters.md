@@ -222,7 +222,7 @@ K7DK
 : [Mark K7DK's repeater system](https://www.qrz.com/db/K7DK)
 
 K7PP
-: [Peter Policani's K7PP repeater system](https://www.k7pp.itgo.com)
+: [Peter Policani's K7PP repeater system](http://www.k7pp.itgo.com)
 
 K7RHT
 : [K7RHT](https://www.qrz.com/db/K7RHT)
