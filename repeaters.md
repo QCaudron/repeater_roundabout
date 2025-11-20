@@ -324,7 +324,7 @@ Shoreline ACS
 : [Shoreline ACS](https://sites.google.com/a/w7aux.org/shoreline-acs/)
 
 Snohomish ACS
-: [Snohomish County Auxiliary Communications Service](https://wa7dem.info)
+: [Snohomish County Auxiliary Communications Service](https://www.wa7dem.info)
 
 WA7TBP
 : [Tom WA7TBP's repeater system](https://www.qrz.com/db/WA7TBP/)
