@@ -1479,7 +1479,7 @@
         "Callsign":"K7JEP",
         "Output (MHz)":"444.550",
         "Offset (MHz)":"+5.0",
-        "Tone (Hz)":null,
+        "Tone (Hz)":"100.0",
         "Coordinates":[
             48.0168468,
             -116.9838096

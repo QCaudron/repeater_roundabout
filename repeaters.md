@@ -98,7 +98,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 80    | IEVHFRA        | WR7VHF     | Spokane                   | FM          |        147.340 |           +0.6 |       123.0 |
 | 81    | IEVHFRA        | WR7VHF     | Spokane                   | FM          |        444.600 |           +5.0 |       123.0 |
 | 82    | BCARC          | K7JEP      | Hoodoo Mtn, ID            | FM          |        145.490 |           -0.6 |       136.5 |
-| 83    | BCARC          | K7JEP      | Blanchard, ID             | FM          |        444.550 |           +5.0 |             |
+| 83    | BCARC          | K7JEP      | Blanchard, ID             | FM          |        444.550 |           +5.0 |       100.0 |
 | 84    | K7RHT          | K7RHT      | Table Mtn.                | FM          |        147.000 |           +0.6 |       131.8 |
 | 85    | K7RHT          | K7RHT      | Table Mtn.                | FM          |        444.450 |           +5.0 |       131.8 |
 | 86    | N7YRC          | KC7VQR     | Yakima Canyon             | FM          |        147.240 |           +0.6 |       192.8 |
