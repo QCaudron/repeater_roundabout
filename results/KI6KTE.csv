@@ -1,0 +1,116 @@
+RR#,Date,Time,Callsign,THEIR,Report,QRP,Call + Repeater,Band,Group,Band Hog,QSO Score
+1,November 22,0:10,N7YD,4.0,5,True,N7YD RR1,2m,PSRG,False,2
+1,November 22,0:10,KK7PMI,4.0,5,True,KK7PMI RR1,2m,PSRG,False,2
+1,November 22,0:12,AG7LR,4.0,5,True,AG7LR RR1,2m,PSRG,False,2
+1,November 22,0:13,KG7ODB,5.0,5,True,KG7ODB RR1,2m,PSRG,False,2
+60,November 22,0:19,KI7RMU,2.0,3,True,KI7RMU RR60,2m,RASC,False,2
+74,November 22,0:25,N7YD,5.0,5,True,N7YD RR74,2m,LWHC,False,2
+74,November 22,0:26,AG7LR,5.0,5,True,AG7LR RR74,2m,LWHC,False,2
+74,November 22,0:26,KI7RMU,5.0,4,True,KI7RMU RR74,2m,LWHC,False,2
+76,November 22,0:29,N7YD,5.0,5,True,N7YD RR76,70cm,LWHC,False,2
+76,November 22,0:31,AG7LR,4.0,5,True,AG7LR RR76,70cm,LWHC,False,2
+76,November 22,0:29,KI7RMU,4.0,4,True,KI7RMU RR76,70cm,LWHC,False,2
+76,November 22,0:30,KG7ODB,5.0,5,True,KG7ODB RR76,70cm,LWHC,False,2
+76,November 22,0:36,KK7PMI,4.0,4,True,KK7PMI RR76,70cm,LWHC,False,2
+97,November 22,0:40,KI7RMU,2.0,3,True,KI7RMU RR97,70cm,Seattle ACS,False,2
+97,November 22,0:40,AG7LR,3.0,4,True,AG7LR RR97,70cm,Seattle ACS,False,2
+97,November 22,0:42,N7YD,4.0,4,True,N7YD RR97,70cm,Seattle ACS,False,2
+98,November 22,0:46,KI7RMU,5.0,3,True,KI7RMU RR98,70cm,Seattle ACS,False,2
+98,November 22,0:46,AG7LR,3.0,4,True,AG7LR RR98,70cm,Seattle ACS,False,2
+98,November 22,0:46,N7YD,3.0,3,True,N7YD RR98,70cm,Seattle ACS,False,2
+99,November 22,0:52,KI7RMU,5.0,3,True,KI7RMU RR99,70cm,Seattle ACS,False,2
+99,November 22,0:52,N7YD,4.0,4,True,N7YD RR99,70cm,Seattle ACS,False,2
+99,November 22,0:53,AG7LR,3.0,5,True,AG7LR RR99,70cm,Seattle ACS,False,2
+99,November 22,0:53,AI7OZ,4.0,4,True,AI7OZ RR99,70cm,Seattle ACS,False,2
+100,November 22,0:57,KI7RMU,5.0,4,True,KI7RMU RR100,70cm,Seattle ACS,False,2
+100,November 22,0:57,N7YD,4.0,5,True,N7YD RR100,70cm,Seattle ACS,False,2
+100,November 22,0:58,AG7LR,4.0,5,True,AG7LR RR100,70cm,Seattle ACS,False,2
+100,November 22,0:58,AI7OZ,4.0,4,True,AI7OZ RR100,70cm,Seattle ACS,False,2
+100,November 22,1:01,AE7WE,4.0,4,True,AE7WE RR100,70cm,Seattle ACS,False,2
+105,November 22,11:19,KI7RMU,3.0,4,True,KI7RMU RR105,70cm,Seattle ACS,False,2
+105,November 22,11:20,K7WFB,5.0,5,True,K7WFB RR105,70cm,Seattle ACS,False,2
+105,November 22,11:21,KB7RYY,5.0,5,True,KB7RYY RR105,70cm,Seattle ACS,False,2
+105,November 22,11:25,KE7NUI,3.0,3,True,KE7NUI RR105,70cm,Seattle ACS,False,2
+105,November 22,11:26,KK7ZBX,4.0,4,True,KK7ZBX RR105,70cm,Seattle ACS,False,2
+105,November 22,11:27,KK7WFY,4.0,4,True,KK7WFY RR105,70cm,Seattle ACS,False,2
+105,November 22,11:35,AE7WE,5.0,4,True,AE7WE RR105,70cm,Seattle ACS,False,2
+105,November 22,11:27,N7XS,4.0,3,True,N7XS RR105,70cm,Seattle ACS,False,2
+105,November 22,11:32,AI7OZ,4.0,4,True,AI7OZ RR105,70cm,Seattle ACS,False,2
+105,November 22,11:32,KB7SDM,4.0,4,True,KB7SDM RR105,70cm,Seattle ACS,False,2
+1,November 22,11:40,K7WFB,5.0,5,True,K7WFB RR1,2m,PSRG,False,2
+1,November 22,11:41,W7ROV,4.0,5,True,W7ROV RR1,2m,PSRG,False,2
+1,November 22,11:42,WB6CFA,5.0,4,True,WB6CFA RR1,2m,PSRG,False,2
+1,November 22,11:43,AA7RM,5.0,5,True,AA7RM RR1,2m,PSRG,False,2
+1,November 22,11:44,AE7WE,5.0,4,True,AE7WE RR1,2m,PSRG,False,2
+1,November 22,11:45,KE7NUI,4.0,5,True,KE7NUI RR1,2m,PSRG,False,2
+1,November 22,11:46,AI7OZ,4.0,4,True,AI7OZ RR1,2m,PSRG,False,2
+1,November 22,11:39,KI7RMU,5.0,4,True,KI7RMU RR1,2m,PSRG,False,2
+1,November 22,11:46,KK7WFY,4.0,4,True,KK7WFY RR1,2m,PSRG,False,2
+1,November 22,11:47,KB7SDM,5.0,4,True,KB7SDM RR1,2m,PSRG,False,2
+1,November 22,11:48,KK7ZBX,5.0,5,True,KK7ZBX RR1,2m,PSRG,False,2
+6,November 22,11:59,K7WFB,5.0,5,True,K7WFB RR6,70cm,WW7SEA,False,2
+6,November 22,11:54,KI7RMU,5.0,4,True,KI7RMU RR6,70cm,WW7SEA,False,2
+6,November 22,11:55,WB6CFA,3.0,3,True,WB6CFA RR6,70cm,WW7SEA,False,2
+6,November 22,11:55,AI7FE,5.0,4,True,AI7FE RR6,70cm,WW7SEA,False,2
+6,November 22,11:55,KK7WFY,3.0,3,True,KK7WFY RR6,70cm,WW7SEA,False,2
+6,November 22,11:56,AE7WE,4.0,4,True,AE7WE RR6,70cm,WW7SEA,False,2
+6,November 22,11:56,AA7RM,2.0,5,True,AA7RM RR6,70cm,WW7SEA,False,2
+6,November 22,11:57,KB7SDM,4.0,4,True,KB7SDM RR6,70cm,WW7SEA,False,2
+6,November 22,11:58,KE7NUI,4.0,4,True,KE7NUI RR6,70cm,WW7SEA,False,2
+147,November 22,12:03,KB7RYY,5.0,5,True,KB7RYY RR147,70cm,BCS,False,2
+147,November 22,12:03,KI7RMU,5.0,4,True,KI7RMU RR147,70cm,BCS,False,2
+147,November 22,12:05,K7WFB,5.0,5,True,K7WFB RR147,70cm,BCS,False,2
+147,November 22,12:12,AI7OZ,3.0,4,True,AI7OZ RR147,70cm,BCS,False,2
+147,November 22,12:06,AE7WE,4.0,4,True,AE7WE RR147,70cm,BCS,False,2
+147,November 22,12:07,KE7NUI,4.0,5,True,KE7NUI RR147,70cm,BCS,False,2
+147,November 22,12:08,KB7SDM,4.0,4,True,KB7SDM RR147,70cm,BCS,False,2
+147,November 22,12:10,KK7WFY,3.0,5,True,KK7WFY RR147,70cm,BCS,False,2
+147,November 22,12:22,AI7FE,5.0,5,True,AI7FE RR147,70cm,BCS,False,2
+75,November 22,16:32,AE7WE,5.0,4,False,AE7WE RR75,1.25m,LWHC,False,1
+5,November 22,20:59,AG7LR,3.0,4,True,AG7LR RR5,70cm,WW7SEA,False,2
+38,November 22,21:01,AG7LR,3.0,4,True,AG7LR RR38,1.25m,BEARS,False,2
+56,November 22,21:02,AG7LR,4.0,4,True,AG7LR RR56,1.25m,Mike & Key,False,2
+12,November 22,21:04,AG7LR,3.0,3,True,AG7LR RR12,1.25m,Snohomish ACS,False,2
+7,November 22,21:15,N7QT,5.0,5,True,N7QT RR7,2m,WWDXC,False,2
+13,November 22,21:19,W7PIG,4.0,2,True,W7PIG RR13,70cm,Snohomish ACS,False,2
+13,November 22,21:19,AG7LR,5.0,5,True,AG7LR RR13,70cm,Snohomish ACS,False,2
+14,November 22,21:21,AG7LR,4.0,4,True,AG7LR RR14,70cm,Snohomish ACS,False,2
+14,November 22,21:21,W7PIG,3.0,3,True,W7PIG RR14,70cm,Snohomish ACS,False,2
+15,November 22,21:24,AG7LR,2.0,3,False,AG7LR RR15,70cm,Snohomish ACS,False,1
+16,November 22,21:26,AG7LR,2.0,3,True,AG7LR RR16,70cm,Snohomish ACS,False,2
+16,November 22,21:26,W7PIG,2.0,3,True,W7PIG RR16,70cm,Snohomish ACS,False,2
+18,November 22,21:28,KJ7MMU,4.0,5,True,KJ7MMU RR18,2m,MIRO,False,2
+18,November 22,21:29,AG7LR,3.0,4,True,AG7LR RR18,2m,MIRO,False,2
+18,November 22,21:29,W7PIG,3.0,3,True,W7PIG RR18,2m,MIRO,False,2
+44,November 22,21:35,KJ7MMU,5.0,5,True,KJ7MMU RR44,70cm,N9VW,False,2
+44,November 22,21:36,KB7SDM,4.0,4,True,KB7SDM RR44,70cm,N9VW,False,2
+44,November 22,21:38,AG7LR,4.0,4,True,AG7LR RR44,70cm,N9VW,False,2
+69,November 22,21:40,KB7SDM,4.0,3,True,KB7SDM RR69,70cm,K7PP,False,2
+69,November 22,21:41,AG7LR,3.0,4,True,AG7LR RR69,70cm,K7PP,False,2
+69,November 22,21:42,KJ7MMU,4.0,5,True,KJ7MMU RR69,70cm,K7PP,False,2
+70,November 22,21:45,KB7SDM,3.0,2,True,KB7SDM RR70,70cm,KCARC,False,2
+70,November 22,21:45,AG7LR,3.0,3,True,AG7LR RR70,70cm,KCARC,False,2
+70,November 22,21:46,KJ7MMU,4.0,4,False,KJ7MMU RR70,70cm,KCARC,False,1
+74,November 22,21:53,KJ7MMU,5.0,4,True,KJ7MMU RR74,2m,LWHC,False,2
+74,November 22,21:53,KB7SDM,5.0,5,True,KB7SDM RR74,2m,LWHC,False,2
+76,November 22,21:54,KB7SDM,5.0,5,True,KB7SDM RR76,70cm,LWHC,False,2
+76,November 22,21:56,N7XS,2.0,3,True,N7XS RR76,70cm,LWHC,False,2
+56,November 22,22:03,KJ7AAI,4.0,5,True,KJ7AAI RR56,1.25m,Mike & Key,False,2
+38,November 23,16:04,KK7ZBX,4.0,4,True,KK7ZBX RR38,1.25m,BEARS,False,2
+24,November 23,16:09,W7KUV,4.0,5,True,W7KUV RR24,2m,K6RFK,False,2
+64,November 23,16:12,AG7LR,5.0,4,True,AG7LR RR64,2m,SCHC,False,2
+64,November 23,16:14,WA7JNJ,5.0,5,True,WA7JNJ RR64,2m,SCHC,False,2
+56,November 23,16:18,N7PHT,4.0,4,True,N7PHT RR56,1.25m,Mike & Key,False,2
+56,November 23,16:20,KK7ZBX,4.0,4,True,KK7ZBX RR56,1.25m,Mike & Key,False,2
+1,November 23,16:24,KM7CMI,5.0,5,True,KM7CMI RR1,2m,PSRG,False,2
+37,November 23,16:32,W7GTJ,4.0,4,True,W7GTJ RR37,2m,BEARS,False,2
+37,November 23,16:33,KK7ZBX,4.0,4,True,KK7ZBX RR37,2m,BEARS,False,2
+37,November 23,16:34,AG7LR,5.0,5,True,AG7LR RR37,2m,BEARS,False,2
+150,November 23,16:35,KK7ZBX,5.0,2,True,KK7ZBX RR150,1.25m,SeaTac,False,2
+39,November 23,16:37,AG7LR,5.0,5,True,AG7LR RR39,70cm,BEARS,False,2
+113,November 23,16:43,KK7ZBX,4.0,5,True,KK7ZBX RR113,2m,HARC,False,2
+113,November 23,16:44,KE7NOR,4.0,5,True,KE7NOR RR113,2m,HARC,False,2
+113,November 23,16:49,AG7LR,2.0,5,True,AG7LR RR113,2m,HARC,False,2
+55,November 23,16:57,N7URH,5.0,5,True,N7URH RR55,2m,Mike & Key,False,2
+55,November 23,16:58,KK7ZBX,5.0,4,True,KK7ZBX RR55,2m,Mike & Key,False,2
+59,November 23,17:00,WI7B,3.0,4,True,WI7B RR59,70cm,West Seattle,False,2

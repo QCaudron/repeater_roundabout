@@ -1,0 +1,67 @@
+RR#,Date,Time,Callsign,Report,QRP,Unnamed: 6,Band,Group,Band Hog,QSO Score
+45,November 22,1055,KI7RMU,4,True,,2m,N9VW,False,2
+45,November 22,1055,KB7SDN,5,True,,2m,N9VW,False,2
+45,November 22,1055,KK7WFY,5,True,,2m,N9VW,False,2
+45,November 22,1055,KK7ZBX,5,True,,2m,N9VW,False,2
+45,November 22,1055,N7XS,3,True,,2m,N9VW,False,2
+45,November 22,1055,WB6CFA,4,True,,2m,N9VW,False,2
+45,November 22,1055,K7WFB,5,True,,2m,N9VW,False,2
+45,November 22,1055,AE7WE,5,True,,2m,N9VW,False,2
+45,November 22,1055,AI7OZ,4,True,,2m,N9VW,False,2
+45,November 22,1055,AGM,5,True,,2m,N9VW,False,2
+45,November 22,1055,KA7CEE,5,True,,2m,N9VW,False,2
+5,November 22,1105,N7XS,5,False,"<--- Not certain on repeater - wrote down ""Columbia Tower"". Not certain of QRP ",70cm,WW7SEA,False,1
+5,November 22,1105,KI7RMU,4,False,,70cm,WW7SEA,False,1
+5,November 22,1105,AI7OZ,4,False,,70cm,WW7SEA,False,1
+5,November 22,1105,WB6CFA,3,False,,70cm,WW7SEA,False,1
+5,November 22,1105,KB7SDM,4,False,,70cm,WW7SEA,False,1
+5,November 22,1105,KK7ZBX,3,False,,70cm,WW7SEA,False,1
+5,November 22,1105,KK7WFY,2,False,,70cm,WW7SEA,False,1
+5,November 22,1105,AE7WE,3,False,,70cm,WW7SEA,False,1
+5,November 22,1105,KB7RYY,5,False,,70cm,WW7SEA,False,1
+5,November 22,1105,KI6KTE,3,False,,70cm,WW7SEA,False,1
+55,November 22,1115,KB7SDM,5,True,,2m,Mike & Key,False,2
+55,November 22,1115,KI7RMU,5,True,,2m,Mike & Key,False,2
+55,November 22,1115,KK7WFY,5,True,,2m,Mike & Key,False,2
+55,November 22,1115,KK7ZBX,3,True,,2m,Mike & Key,False,2
+55,November 22,1115,N7XS,5,True,,2m,Mike & Key,False,2
+55,November 22,1115,WB6CFA,5,True,,2m,Mike & Key,False,2
+55,November 22,1115,K7WFB,5,True,,2m,Mike & Key,False,2
+55,November 22,1115,AE7WE,5,True,,2m,Mike & Key,False,2
+105,November 22,1130,KI7RMU,4,False,,70cm,Seattle ACS,False,1
+105,November 22,1130,K7WFB,5,False,,70cm,Seattle ACS,False,1
+105,November 22,1130,KK7ZBX,4,False,,70cm,Seattle ACS,False,1
+105,November 22,1130,KK7WFY,5,False,,70cm,Seattle ACS,False,1
+105,November 22,1130,N7XS,5,False,,70cm,Seattle ACS,False,1
+105,November 22,1130,KI6KTE,3,False,,70cm,Seattle ACS,False,1
+105,November 22,1130,KB7RYY,4,False,,70cm,Seattle ACS,False,1
+105,November 22,1130,AE7WE,5,False,,70cm,Seattle ACS,False,1
+1,November 22,1140,KK7WFB,4,True,,2m,PSRG,False,2
+1,November 22,1140,W7ROV,5,True,,2m,PSRG,False,2
+1,November 22,1140,WB6CFA,4,True,,2m,PSRG,False,2
+1,November 22,1140,KI6KTE,4,True,,2m,PSRG,False,2
+1,November 22,1140,AA7RM,5,True,,2m,PSRG,False,2
+1,November 22,1140,KE7WE ,5,True,,2m,PSRG,False,2
+1,November 22,1140,AI7OZ,4,True,,2m,PSRG,False,2
+1,November 22,1140,KI7RMU,5,True,,2m,PSRG,False,2
+1,November 22,1140,KK7WFY,4,True,,2m,PSRG,False,2
+1,November 22,1140,KB7SDM,5,True,,2m,PSRG,False,2
+1,November 22,1140,KK7ZBX,5,True,,2m,PSRG,False,2
+6,November 22,1152,KK7WFB,5,False,,70cm,WW7SEA,False,1
+6,November 22,1152,KI7RMU,4,False,,70cm,WW7SEA,False,1
+6,November 22,1152,WB6CFA,4,False,,70cm,WW7SEA,False,1
+6,November 22,1152,AI7FB,2,False,,70cm,WW7SEA,False,1
+6,November 22,1152,KK7WFY,3,False,,70cm,WW7SEA,False,1
+6,November 22,1152,KB7SDM,4,False,,70cm,WW7SEA,False,1
+6,November 22,1152,KB7KTE,4,False,,70cm,WW7SEA,False,1
+6,November 22,1152,KE7WE,4,False,,70cm,WW7SEA,False,1
+6,November 22,1152,AA7RM,3,False,,70cm,WW7SEA,False,1
+6,November 22,1200,KB7RYY,4,False,,70cm,WW7SEA,False,1
+147,November 22,1200,KB7RYY,5,True,,70cm,BCS,False,2
+147,November 22,1200,KI7RMU,5,True,,70cm,BCS,False,2
+147,November 22,1200,KB7KTE,5,True,,70cm,BCS,False,2
+147,November 22,1200,AI7OZ,4,True,,70cm,BCS,False,2
+147,November 22,1200,AE7WE,4,True,,70cm,BCS,False,2
+147,November 22,1200,KB7SDM,5,True,,70cm,BCS,False,2
+147,November 22,1200,KK7WFB,4,True,,70cm,BCS,False,2
+147,November 22,1200,KK7WFY,3,True,,70cm,BCS,False,2

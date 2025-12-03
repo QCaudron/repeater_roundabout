@@ -1,0 +1,89 @@
+RR#,Date,Time,Callsign,Report,QRP,Band,Group,Band Hog,QSO Score
+1,November 22,0:07,KI6KTE,5,True,2m,PSRG,False,2
+1,November 22,0:08,KK7PMI,5,True,2m,PSRG,False,2
+1,November 22,0:09,AI7OZ,5,True,2m,PSRG,False,2
+1,November 22,0:09,AG7LR,5,True,2m,PSRG,False,2
+60,November 22,0:12,KI7KTE,1,True,2m,RASC,False,2
+76,November 22,12:28,KI7KTE,5,True,70cm,LWHC,False,2
+76,November 22,12:28,AG7LR,5,True,70cm,LWHC,False,2
+76,November 22,12:29,N7YD,5,True,70cm,LWHC,False,2
+76,November 22,12:29,KK7PMI,5,True,70cm,LWHC,False,2
+11,November 23,16:52,K7XTN,5,True,2m,Snohomish ACS,False,2
+11,November 23,16:54,AG7LR,5,True,2m,Snohomish ACS,False,2
+11,November 23,16:55,KB7RYY,5,True,2m,Snohomish ACS,False,2
+34,November 23,16:57,WA7XX,3,True,2m,KCARC,False,2
+37,November 23,17:03,KK7SX,5,True,2m,BEARS,False,2
+37,November 23,17:04,KK7TTY,5,True,2m,BEARS,False,2
+37,November 23,17:07,KK7CCG,5,True,2m,BEARS,False,2
+2,November 23,17:18,WI7B,5,True,6m,PSRG,False,2
+2,November 23,17:22,KJ7EXM,5,True,6m,PSRG,False,2
+2,November 23,17:25,KK7ZBX,3,True,6m,PSRG,False,2
+2,November 23,17:29,AG7LR,4,True,6m,PSRG,False,2
+2,November 23,17:31,K7CX,5,True,6m,PSRG,False,2
+126,November 23,17:43,KB7RYY,4,True,6m,N7OEP,False,2
+126,November 23,17:44,N7XS,5,True,6m,N7OEP,False,2
+126,November 23,17:46,K7CX,4,True,6m,N7OEP,False,2
+126,November 23,17:50,AG7LR,4,True,6m,N7OEP,False,2
+78,November 23,18:01,KI7RMU,4,True,6m,LWHC,False,2
+78,November 23,18:04,AG7LR,4,True,6m,LWHC,False,2
+78,November 23,18:12,KK7ZBX,5,True,6m,LWHC,False,2
+74,November 23,18:13,KK7ZBX,5,True,2m,LWHC,False,2
+52,November 23,19:09,K7WFB,5,True,70cm,Shoreline ACS,False,2
+52,November 23,19:10,KB7SDM,5,True,70cm,Shoreline ACS,False,2
+52,November 23,19:11,KB7RYY,5,True,70cm,Shoreline ACS,False,2
+51,November 23,19:16,KB7RYY,4,True,70cm,Shoreline ACS,False,2
+51,November 23,19:18,KB7SDM,1,True,70cm,Shoreline ACS,False,2
+1,November 23,19:27,KB7SDM,5,True,2m,PSRG,False,2
+1,November 23,19:28,KJ7EXM,5,True,2m,PSRG,False,2
+1,November 23,19:29,AJ7CM,5,True,2m,PSRG,False,2
+1,November 23,17:30,KK7MZW,5,True,2m,PSRG,False,2
+105,November 23,17:58,K7PAL,5,True,70cm,Seattle ACS,False,2
+1,November 23,20:09,KJ7NUW,5,True,2m,PSRG,False,2
+1,November 23,20:22,KI7RMU,5,True,2m,PSRG,False,2
+1,November 23,20:30,KK7MVD,5,True,2m,PSRG,False,2
+45,November 23,20:37,N9VW,5,True,2m,N9VW,False,2
+45,November 23,20:39,N7TPM,5,True,2m,N9VW,False,2
+52,November 23,20:41,N7TPM,5,True,70cm,Shoreline ACS,False,2
+45,November 23,20:46,KB7SDM,5,True,2m,N9VW,False,2
+44,November 23,20:49,KB7SDM,5,True,70cm,N9VW,False,2
+44,November 23,20:50,AG7LR,4,True,70cm,N9VW,False,2
+74,November 23,20:51,KB7SDM,5,True,2m,LWHC,False,2
+74,November 23,20:51,AG7LR,5,True,2m,LWHC,False,2
+74,November 23,20:52,N7YD,5,True,2m,LWHC,False,2
+98,November 23,21:00,KB7SDM,4,True,70cm,Seattle ACS,False,2
+98,November 23,21:01,AG7LR,4,True,70cm,Seattle ACS,False,2
+98,November 23,21:01,N7YD,4,True,70cm,Seattle ACS,False,2
+105,November 23,21:06,KB7SDM,4,True,70cm,Seattle ACS,False,2
+105,November 23,21:07,N7YD,4,True,70cm,Seattle ACS,False,2
+105,November 23,21:08,AG7LR,5,True,70cm,Seattle ACS,False,2
+113,November 23,21:12,KB7SDM,3,True,2m,HARC,False,2
+113,November 23,21:13,AG7LR,3,True,2m,HARC,False,2
+153,November 23,21:18,KB7SDM,3,True,70cm,SeaTac,False,2
+153,November 23,21:18,N7YD,3,True,70cm,SeaTac,False,2
+13,November 23,21:26,KB7SDM,5,True,70cm,Snohomish ACS,False,2
+13,November 23,21:27,N7YD,5,True,70cm,Snohomish ACS,False,2
+13,November 23,21:27,AG7LR,5,True,70cm,Snohomish ACS,False,2
+14,November 23,21:28,KB7SDM,5,True,70cm,Snohomish ACS,False,2
+14,November 23,21:29,N7YD,5,True,70cm,Snohomish ACS,False,2
+14,November 23,21:29,AG7LR,5,True,70cm,Snohomish ACS,False,2
+18,November 23,21:31,KB7SDM,4,True,2m,MIRO,False,2
+18,November 23,21:31,N7YD,3,True,2m,MIRO,False,2
+18,November 23,21:32,AG7LR,4,True,2m,MIRO,False,2
+26,November 23,21:36,KB7SDM,4,True,2m,Pierce,False,2
+26,November 23,21:36,N7YD,3,True,2m,Pierce,False,2
+26,November 23,21:37,AG7LR,4,True,2m,Pierce,False,2
+34,November 23,21:40,KB7SDM,4,True,2m,KCARC,False,2
+34,November 23,21:40,AG7LR,5,True,2m,KCARC,False,2
+34,November 23,21:40,N7YD,4,True,2m,KCARC,False,2
+37,November 23,21:50,KB7SDM,5,True,2m,BEARS,False,2
+37,November 23,21:50,N7YD,5,True,2m,BEARS,False,2
+37,November 23,21:51,AG7LR,5,True,2m,BEARS,False,2
+39,November 23,21:52,KB7SDM,5,True,70cm,BEARS,False,2
+39,November 23,21:53,N7YD,5,True,70cm,BEARS,False,2
+39,November 23,21:53,AG7LR,5,True,70cm,BEARS,False,2
+45,November 23,21:55,N7YD,5,True,2m,N9VW,False,2
+45,November 23,21:56,AG7LR,5,True,2m,N9VW,False,2
+55,November 23,22:22,KB7SDM,5,True,2m,Mike & Key,False,2
+55,November 23,22:22,N7XS,5,True,2m,Mike & Key,False,2
+55,November 23,22:22,AG7LR,5,True,2m,Mike & Key,False,2
+55,November 23,22:22,N7UB,5,True,2m,Mike & Key,False,2

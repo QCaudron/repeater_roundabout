@@ -1,0 +1,65 @@
+RR#,Date,Time,Callsign,Report,QRP,Band,Group,Band Hog,QSO Score
+18,22-Nov,9:37,KI7RMU,4,False,2m,MIRO,False,1
+19,22-Nov,9:39,KI7RMU,4,False,70cm,MIRO,False,1
+18,22-Nov,14:04,KM6SO,5,False,2m,MIRO,False,1
+19,22-Nov,14:07,KM6SO,5,False,70cm,MIRO,False,1
+24,22-Nov,14:10,KM6SO,4,False,2m,K6RFK,False,1
+29,22-Nov,14:13,KM6SO,4,False,2m,FWARC,False,1
+33,22-Nov,14:15,KM6SO,4,False,70cm,KC7EQO,False,1
+34,22-Nov,14:16,KM6SO,5,False,2m,KCARC,False,1
+35,22-Nov,14:17,KM6SO,5,False,70cm,KCARC,False,1
+36,22-Nov,14:17,KM6SO,4,False,70cm,KCARC,False,1
+37,22-Nov,14:18,KM6SO,5,False,2m,BEARS,False,1
+39,22-Nov,14:19,KM6SO,5,False,70cm,BEARS,False,1
+44,22-Nov,14:20,KM6SO,5,False,70cm,N9VW,False,1
+45,22-Nov,14:21,KM6SO,5,False,2m,N9VW,False,1
+52,22-Nov,14:23,KM6SO,5,False,70cm,Shoreline ACS,False,1
+55,22-Nov,14:27,KM6SO,5,False,2m,Mike & Key,False,1
+58,22-Nov,14:30,KM6SO,5,False,2m,West Seattle,False,1
+59,22-Nov,14:30,KM6SO,5,False,70cm,West Seattle,False,1
+60,22-Nov,14:31,KM6SO,5,False,2m,RASC,False,1
+67,22-Nov,14:33,KM6SO,4,False,70cm,K7PP,False,1
+69,22-Nov,14:34,KM6SO,5,False,70cm,K7PP,False,1
+70,22-Nov,14:35,KM6SO,5,False,70cm,KCARC,False,1
+97,22-Nov,14:41,KM6SO,5,False,70cm,Seattle ACS,False,1
+98,22-Nov,14:42,KM6SO,5,False,70cm,Seattle ACS,False,1
+99,22-Nov,14:43,KM6SO,5,False,70cm,Seattle ACS,False,1
+100,22-Nov,14:43,KM6SO,5,False,70cm,Seattle ACS,False,1
+101,22-Nov,14:44,KM6SO,5,False,70cm,Seattle ACS,False,1
+102,22-Nov,14:44,KM6SO,5,False,70cm,Seattle ACS,False,1
+103,22-Nov,14:45,KM6SO,2,False,70cm,Seattle ACS,False,1
+104,22-Nov,14:46,KM6SO,5,False,70cm,Seattle ACS,False,1
+105,22-Nov,14:47,KM6SO,5,False,70cm,Seattle ACS,False,1
+111,22-Nov,14:50,KM6SO,4,False,70cm,BEARONS,False,1
+1,22-Nov,14:53,KM6SO,5,False,2m,PSRG,False,1
+5,22-Nov,14:54,KM6SO,5,False,70cm,WW7SEA,False,1
+6,22-Nov,14:54,KM6SO,5,False,70cm,WW7SEA,False,1
+7,22-Nov,14:55,KM6SO,4,False,2m,WWDXC,False,1
+10,22-Nov,14:57,KM6SO,4,False,2m,Snohomish ACS,False,1
+11,22-Nov,14:57,KM6SO,5,False,2m,Snohomish ACS,False,1
+13,22-Nov,14:59,KM6SO,5,False,70cm,Snohomish ACS,False,1
+14,22-Nov,15:00,KM6SO,5,False,70cm,Snohomish ACS,False,1
+15,22-Nov,15:01,KM6SO,5,False,70cm,Snohomish ACS,False,1
+74,22-Nov,15:04,KM6SO,3,False,2m,LWHC,False,1
+94,22-Nov,15:07,KM6SO,4,False,70cm,Northshore EMC,False,1
+1,22-Nov,15:32,KK7WID,5,False,2m,PSRG,False,1
+6,22-Nov,15:39,KJ7MMU,4,False,70cm,WW7SEA,False,1
+74,22-Nov,15:48,AG7LR,5,False,2m,LWHC,False,1
+76,22-Nov,15:54,KK7ZBX,5,False,70cm,LWHC,False,1
+37,22-Nov,16:04,KE7NLR,5,False,2m,BEARS,False,1
+37,22-Nov,16:04,KK7ZBX,5,False,2m,BEARS,False,1
+37,22-Nov,16:12,KE7NOR,5,False,2m,BEARS,False,1
+11,22-Nov,16:29,KB7LYD,5,False,2m,Snohomish ACS,False,1
+24,22-Nov,16:36,W7VP,5,False,2m,K6RFK,False,1
+1,22-Nov,19:14,N7SX,4,False,2m,PSRG,False,1
+1,22-Nov,19:14,K7WFB,5,False,2m,PSRG,False,1
+1,22-Nov,19:15,KI7RMU,5,False,2m,PSRG,False,1
+74,23-Nov,11:48,N7YD,5,False,2m,LWHC,False,1
+18,23-Nov,12:25,W7ROV,5,False,2m,MIRO,False,1
+18,23-Nov,12:28,AE7WE,4,False,2m,MIRO,False,1
+18,23-Nov,12:29,AG7LR,4,False,2m,MIRO,False,1
+37,23-Nov,12:36,AG7LR,3,False,2m,BEARS,False,1
+37,23-Nov,12:37,KM7CCG,5,False,2m,BEARS,False,1
+60,23-Nov,12:48,AG7LR,3,False,2m,RASC,False,1
+60,23-Nov,12:48,W7PIG,4,False,2m,RASC,False,1
+60,23-Nov,12:48,KB7SDM,3,False,2m,RASC,False,1
