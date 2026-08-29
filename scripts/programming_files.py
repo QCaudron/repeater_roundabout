@@ -500,7 +500,7 @@ def write_generic_csv(df: pd.DataFrame) -> None:
         df.copy()
         .assign(Latitude=df["Coordinates"].apply(lambda x: x[0]))
         .assign(Longitude=df["Coordinates"].apply(lambda x: x[1]))
-        .drop(columns=["Group Name", "Coordinates", "Exclude"], axis=1)
+        .drop(columns=["Group Name", "Coordinates", "Exclude"])
         .rename(columns={"Long Name": "Group"})
         .set_index("RR#")
     )
