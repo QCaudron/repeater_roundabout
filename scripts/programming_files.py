@@ -248,7 +248,7 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_dmr, "Contact TG/DMR ID"] = dmr_codes["id"]
     # Bug in CPS software - fails if Color Code column is empty - even for analog channels!
     df_878["Color Code"] = 1
-    df_878.loc[is_dmr, "Color Code"] = dmr_codes["color"]
+    df_878.loc[is_dmr, "Color Code"] = pd.to_numeric(dmr_codes["color"])
     df_878.loc[is_dmr, "Slot"] = dmr_codes["slot"]
 
     is_metro = df.apply(
