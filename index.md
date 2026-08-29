@@ -1,6 +1,6 @@
 ---
 title: Repeater Roundabout
-subtitle: Get to know your local repeaters November 22nd and 23rd, 2025.
+subtitle: Get to know your local repeaters November 14th and 15th, 2026.
 ---
 
 
@@ -12,16 +12,16 @@ The Repeater Roundabout is a weekend-long event held on many of your local repea
 Last year, we made it into [QST Magazine](assets/RR.pdf). Light up the airwaves and make some noise on the great repeaters in Washington and Idaho ! Anyone with a ham radio license can participate. This is a friendly, collaborative event for all FM users on VHF and UHF.
 
 
-**The Repeater Roundabout will be held during the weekend of November 22nd and 23rd, 2025.**
+**The Repeater Roundabout will be held during the weekend of November 14th and 15th, 2026.**
 
-> This page was last updated on Wednesday December 03 at 07:52.
+> This page was last updated on Saturday August 29 at 18:12.
 
 ---
 
 
-# Results
+# 2025 Results
 
-The contest is over ! Many thanks to those who participated; we hope you had fun. Check back next year for the next Repeater Roundabout !
+The 2025 contest is over ! Many thanks to those who participated; we hope you had fun. Check back next year for the next Repeater Roundabout !
 
 Here are some stats on the contest, based on the logs received. These numbers are underestimates, because we are missing a good number of logs !
 

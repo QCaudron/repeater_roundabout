@@ -351,7 +351,7 @@ West Seattle
 : [West Seattle Amateur Radio Club](https://w7aw.org/)
 
 YCRA
-: [Yakima County Radio Amateurs](None)
+: [Yakima County Radio Amateurs](nan)
 
 
 
