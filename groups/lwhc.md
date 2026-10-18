@@ -1,0 +1,29 @@
+---
+title: "Lake Washington Ham Club"
+subtitle: "Repeater Roundabout participation: LWHC"
+head-extra: noindex.html
+---
+
+[https://www.lakewashingtonhamclub.org/](https://www.lakewashingtonhamclub.org/)
+
+Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
+**[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=LWHC&entry.1239643054=-+K7LWH+145.490-+T103.5%0A-+K7LWH+224.360-+T103.5%0A-+K7LWH+441.075%2B+T103.5%0A-+K7LWH+444.600%2B+T103.5%0A-+K7LWH+53.170-+T100)**.
+
+Is something wrong? Use the **Correct** link next to a repeater to send us updated details,
+or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.697760071=LWHC&entry.1398317811=https%3A%2F%2Fwww.lakewashingtonhamclub.org%2F).
+
+> **Please check:** we have more than one of your group's names: Lake Washington Ham Club; Lake WA Ham Club
+
+> **Please check:** we have more than one of your group's websites: https://www.lakewashingtonhamclub.org/; http://www.lakewashingtonhamclub.org
+
+
+| RR#   | Callsign   | Location     | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|:------|:-----------|:-------------|:-------|:---------------|:---------------|:------------|:--------------------------|:------------------|:----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       | K7LWH      | Kirkland     | FM     | 145.490        | -0.6           | 103.5       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=K7LWH&entry.1669786474=145.490&entry.2029547739=-0.6&entry.586895390=103.5&entry.258116108=Kirkland&entry.697760071=LWHC&entry.1398317811=https%3A%2F%2Fwww.lakewashingtonhamclub.org%2F&entry.65682944=47.6637%2C+-122.1665)                                                                                                           |
+|       | K7LWH      | Kirkland     | FM     | 224.360        | -1.6           | 103.5       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=K7LWH&entry.1669786474=224.360&entry.2029547739=-1.6&entry.586895390=103.5&entry.258116108=Kirkland&entry.697760071=LWHC&entry.1398317811=https%3A%2F%2Fwww.lakewashingtonhamclub.org%2F&entry.1787209425=https%3A%2F%2Fwww.repeaterbook.com%2Frepeaters%2Fdetails.php%3Fstate_id%3D53%26ID%3D5326&entry.65682944=47.6637%2C+-122.1665) |
+|       | K7LWH      | Kirkland     | FM     | 441.075        | 5.0            | 103.5       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=K7LWH&entry.1669786474=441.075&entry.2029547739=5.0&entry.586895390=103.5&entry.258116108=Kirkland&entry.697760071=LWHC&entry.1398317811=https%3A%2F%2Fwww.lakewashingtonhamclub.org%2F&entry.1787209425=https%3A%2F%2Fwww.repeaterbook.com%2Frepeaters%2Fdetails.php%3Fstate_id%3D53%26ID%3D162&entry.65682944=47.6637%2C+-122.1665)   |
+|       | K7LWH      | Bellevue, WA | FM     | 444.600        | 5.0            | 103.5       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=K7LWH&entry.1669786474=444.600&entry.2029547739=5.0&entry.586895390=103.5&entry.258116108=Bellevue%2C+WA&entry.697760071=LWHC&entry.1398317811=http%3A%2F%2Fwww.lakewashingtonhamclub.org&entry.65682944=47.61722%2C+-122.20111)                                                                                                        |
+|       | K7LWH      | Kirkland     | FM     | 53.170         | -1.7           | 100         |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=K7LWH&entry.1669786474=53.170&entry.2029547739=-1.7&entry.586895390=100&entry.258116108=Kirkland&entry.697760071=LWHC&entry.1398317811=https%3A%2F%2Fwww.lakewashingtonhamclub.org%2F&entry.1787209425=https%3A%2F%2Fwww.repeaterbook.com%2Frepeaters%2Fdetails.php%3Fstate_id%3D53%26ID%3D165&entry.65682944=47.6637%2C+-122.1665)     |
+
+Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
+Repeaters marked **Response needed** are not published until we hear from you.
