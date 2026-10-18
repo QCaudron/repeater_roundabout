@@ -5,7 +5,7 @@ import pandas as pd
 import pytest
 
 from markdown_files import STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED
-from update import merge_repeaters, rollover, set_status
+from update import merge_repeaters, refresh_repeater, rollover, set_status, update_all_repeaters
 
 
 def make_site(root):
@@ -133,3 +133,97 @@ def test_merge_repeaters_starts_as_response_needed():
 
     assert got["Status"] == STATUS_RESPONSE_NEEDED
     assert "Exclude" not in got
+
+
+def test_refresh_repeater_keeps_status_and_exclude():
+    """Unlike merge_repeaters, refreshing an already-known repeater must not touch its contest status."""
+    prior = {"Callsign": "W7A", "Status": STATUS_IN, "Exclude": True, "Output (MHz)": "146.000"}
+    got = refresh_repeater(repeaterbook={"Tone (Hz)": "100.0"}, prior=prior)
+
+    assert got["Status"] == STATUS_IN
+    assert got["Exclude"] is True
+    assert got["Tone (Hz)"] == "100.0"
+
+
+def test_refresh_repeater_clears_stale_tone_when_repeaterbook_confirms_toneless():
+    """An explicit empty tone from RepeaterBook means toneless, not missing, and should overwrite a stale tone."""
+    got = refresh_repeater(
+        repeaterbook={"Tone (Hz)": "", "Output (MHz)": "146.0000"},
+        prior={"Tone (Hz)": "88.5", "Output (MHz)": "146.0000"},
+    )
+
+    assert got["Tone (Hz)"] == ""
+
+
+def test_refresh_repeater_prefers_wwara_then_repeaterbook_then_prior():
+    """Source data refreshes stale fields; RepeaterBook/WWARA data is treated as more current than prior."""
+    got = refresh_repeater(
+        repeaterbook={"Tone (Hz)": "100.0", "Output (MHz)": "146.0000"},
+        wwara={"Tone (Hz)": "103.5"},
+        prior={"Tone (Hz)": "88.5", "Output (MHz)": "146.0000", "Group Name": "Old Name"},
+    )
+
+    assert got["Tone (Hz)"] == "103.5"
+    assert got["Group Name"] == "Old Name"  # prior wins for name-ish fields
+
+
+def test_update_all_repeaters_refreshes_from_repeaterbook(monkeypatch):
+    """Each repeater with a recorded RepeaterBook ID is refreshed from RepeaterBook, status untouched."""
+    import update
+
+    def fake_lookup(state_id, rb_id):
+        return {"Tone (Hz)": "103.5", "Callsign": "W7A", "Output (MHz)": "146.0000"}
+
+    monkeypatch.setattr(update, "repeater_from_repeaterbook", fake_lookup)
+
+    df = pd.DataFrame.from_records([{
+        "Callsign": "W7A",
+        "Output (MHz)": "146.0000",
+        "Tone (Hz)": "88.5",
+        "Status": STATUS_IN,
+        "RepeaterBook State ID": "53",
+        "RepeaterBook ID": "1234",
+    }])
+
+    got, errors = update_all_repeaters(df, wwara_csv=None)
+
+    assert errors == []
+    assert got.loc[0, "Tone (Hz)"] == "103.5"
+    assert got.loc[0, "Status"] == STATUS_IN
+
+
+def test_update_all_repeaters_skips_repeaters_without_source_ids():
+    """A manually-entered repeater with no RepeaterBook ID or WWARA csv is left untouched."""
+    df = pd.DataFrame.from_records([{"Callsign": "W7A", "Output (MHz)": "146.0000", "Status": STATUS_IN}])
+
+    got, errors = update_all_repeaters(df, wwara_csv=None)
+
+    assert errors == []
+    assert got.loc[0, "Status"] == STATUS_IN
+    assert got.loc[0, "Output (MHz)"] == "146.0000"
+
+
+def test_update_all_repeaters_aggregates_errors_and_continues(monkeypatch):
+    """A failing repeater is reported as an error but doesn't stop the rest from updating."""
+    import update
+
+    def fake_lookup(state_id, rb_id):
+        if rb_id == "bad":
+            raise RuntimeError("boom")
+        return {"Tone (Hz)": "103.5", "Callsign": "W7B", "Output (MHz)": "146.5000"}
+
+    monkeypatch.setattr(update, "repeater_from_repeaterbook", fake_lookup)
+
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7A", "Output (MHz)": "146.0000", "Status": STATUS_IN,
+         "RepeaterBook State ID": "53", "RepeaterBook ID": "bad"},
+        {"Callsign": "W7B", "Output (MHz)": "146.5000", "Status": STATUS_IN,
+         "RepeaterBook State ID": "53", "RepeaterBook ID": "5678"},
+    ])
+
+    got, errors = update_all_repeaters(df, wwara_csv=None)
+
+    assert len(errors) == 1
+    assert "W7A" in errors[0]
+    assert got.loc[0, "Tone (Hz)"] != "103.5"  # left unchanged after the failure
+    assert got.loc[1, "Tone (Hz)"] == "103.5"  # second repeater still updated

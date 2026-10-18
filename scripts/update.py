@@ -84,6 +84,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
             "status": None,
             "score": False,
             "rollover": False,
+            "update_all": False,
         }
 
         return SimpleNamespace(**args)
@@ -112,6 +113,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     mode.add_argument("--score", action="store_true")
     mode.add_argument("--rollover", action="store_true")
     mode.add_argument("--status", choices=[STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED])
+    mode.add_argument("--update_all", action="store_true")
     return parser.parse_args()
 
 def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
@@ -435,6 +437,72 @@ def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, 
 
     return r
 
+def refresh_repeater(repeaterbook: dict = {}, wwara: dict = {}, prior: dict = {}) -> dict:
+    """
+    Like merge_repeaters, but for refreshing an already-known repeater: Status and Exclude
+    are left as they were in `prior`, since re-fetching source data shouldn't affect contest
+    participation state.
+    """
+    # An explicit empty tone from RepeaterBook means "confirmed toneless", not "no data";
+    # strip_empty would otherwise drop it and leave a stale prior tone in place.
+    repeaterbook_toneless = repeaterbook.get("Tone (Hz)") == ""
+
+    repeaterbook = strip_empty(repeaterbook)
+    wwara = strip_empty(wwara)
+    prior = strip_empty(prior)
+
+    r = {**prior, **repeaterbook, **wwara}
+    if repeaterbook_toneless and "Tone (Hz)" not in wwara:
+        r["Tone (Hz)"] = ""
+    for f in ["Group Name", "Location", "Long Name", "Website"]:
+        r[f] = prior.get(f) or wwara.get(f) or repeaterbook.get(f)
+    return r
+
+
+def update_all_repeaters(df: pd.DataFrame, wwara_csv: str | None) -> tuple[pd.DataFrame, list[str]]:
+    """
+    Refresh every repeater in df from RepeaterBook (using its recorded state/ID) and, if
+    wwara_csv is given, from WWARA (matched by callsign and frequency). Repeaters with
+    neither a RepeaterBook ID nor a WWARA match are left unchanged.
+
+    Returns the updated DataFrame and a list of error messages, one per repeater that
+    failed to refresh; those repeaters are left unchanged in the result.
+    """
+    errors = []
+    rows = []
+    wwara_lines = None
+    if wwara_csv:
+        with open(wwara_csv) as f:
+            wwara_lines = f.readlines()
+
+    for _, row in df.iterrows():
+        prior = row.to_dict()
+        call = prior.get("Callsign")
+        freq = prior.get("Output (MHz)")
+        label = f"{call or '?'} {freq or ''}".strip()
+        try:
+            repeaterbook = {}
+            state_id, rb_id = prior.get("RepeaterBook State ID"), prior.get("RepeaterBook ID")
+            if pd.notna(state_id) and pd.notna(rb_id):
+                repeaterbook = repeater_from_repeaterbook(str(state_id), str(rb_id))
+                if not repeaterbook:
+                    raise RuntimeError(f"RepeaterBook lookup failed for state_id={state_id} id={rb_id}")
+
+            wwaras = pd.DataFrame()
+            if wwara_lines and call:
+                wwaras = wwara_find(wwara_lines, call)
+                ensure_col(wwaras, "Output (MHz)")
+                if freq and not wwaras.empty:
+                    wwaras = filter_freq(wwaras, freq)
+
+            rows.append(refresh_repeater(repeaterbook=repeaterbook, wwara=first_dict(wwaras), prior=prior))
+        except Exception as e:
+            errors.append(f"{label}: {e}")
+            rows.append(prior)
+
+    return pd.DataFrame.from_records(rows), errors
+
+
 def ensure_col(df: pd.DataFrame, name: str, default=np.nan) -> pd.DataFrame:
     """
     A convenience function to ensure a dataframe has a given column.
@@ -648,6 +716,15 @@ if __name__ == "__main__":
         except ValueError as e:
             sys.exit(str(e))
         repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+        args.regen = True
+    if args.update_all:
+        repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
+        repeaters, errors = update_all_repeaters(repeaters, args.wwara_csv)
+        repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+        if errors:
+            print(f"{len(errors)} repeater(s) failed to update:", file=sys.stderr)
+            for e in errors:
+                print(f"  - {e}", file=sys.stderr)
         args.regen = True
 
     df = generate_repeater_df(args)
