@@ -1,10 +1,10 @@
 ---
 title: "Kamiak Butte Amateur Repeater Association"
-subtitle: "Repeater Roundabout participation: KBARA"
+subtitle: "Status of KBARA repeaters"
 head-extra: noindex.html
 ---
 
-[https://kbara.org/](https://kbara.org/)
+Club website: [https://kbara.org/](https://kbara.org/)
 
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
 **[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=KBARA&entry.1239643054=-+KB7ARA+147.280%2B%0A-+KA7FVV+147.320%2B+T103.5%0A-+N7WRR+147.360%2B%0A-+N7WRQ+147.380%2B+T100.0%0A-+KB7ARA+147.020%2B)**.
@@ -21,5 +21,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 |       | N7WRQ      | Mica Peak        | FM     | 147.380        | +0.6           | 100.0       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=N7WRQ&entry.1669786474=147.380&entry.2029547739=%2B0.6&entry.586895390=100.0&entry.258116108=Mica+Peak&entry.697760071=KBARA&entry.1398317811=https%3A%2F%2Fkbara.org%2F&entry.1787209425=https%3A%2F%2Fwww.repeaterbook.com%2Frepeaters%2Fdetails.php%3Fstate_id%3D53%26ID%3D78&entry.65682944=47.57495%2C+-117.08113)    |
 |       | KB7ARA     | Lookout Pass, MT | FM     | 147.020        | +0.6           |             |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=KB7ARA&entry.1669786474=147.020&entry.2029547739=%2B0.6&entry.258116108=Lookout+Pass%2C+MT&entry.697760071=KBARA&entry.1398317811=https%3A%2F%2Fkbara.org%2F&entry.1787209425=https%3A%2F%2Fwww.repeaterbook.com%2Frepeaters%2Fdetails.php%3Fstate_id%3D30%26ID%3D31&entry.65682944=46.00389862%2C+-112.53399658)          |
 
-Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
-Repeaters marked **Response needed** are not published until we hear from you.
+- Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
+- Repeaters marked **Response needed** are not published until we hear from you.

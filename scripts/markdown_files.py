@@ -360,7 +360,7 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
 
         page = (
             template.replace("{{ title }}", json.dumps(long_names[0] if len(long_names) else name))
-            .replace("{{ subtitle }}", json.dumps(f"Repeater Roundabout participation: {name}"))
+            .replace("{{ subtitle }}", json.dumps(f"Status of {name} repeaters"))
             .replace("{{ website }}", f"[{cell(website)}]({website})" if website else "")
             .replace("{{ conflicts }}", conflicts)
             .replace("{{ table }}", pd.DataFrame(rows).to_markdown(index=False, disable_numparse=True))

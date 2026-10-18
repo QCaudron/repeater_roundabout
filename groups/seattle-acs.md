@@ -1,10 +1,10 @@
 ---
 title: "Seattle Auxiliary Commonications Service"
-subtitle: "Repeater Roundabout participation: Seattle ACS"
+subtitle: "Status of Seattle ACS repeaters"
 head-extra: noindex.html
 ---
 
-[https://www.seattleacs.org/home](https://www.seattleacs.org/home)
+Club website: [https://www.seattleacs.org/home](https://www.seattleacs.org/home)
 
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
 **[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=Seattle+ACS&entry.1239643054=-+W7ACS+440.525%2B+T141.3%0A-+W7ACS+440.600%2B+T141.3%0A-+W7ACS+442.300%2B+T141.3%0A-+W7ACS+442.875%2B+T141.3%0A-+W7ACS+443.025%2B+T141.3%0A-+W7ACS+443.200%2B+T141.3%0A-+W7ACS+443.475%2B+T141.3%0A-+W7ACS+443.650%2B+T141.3%0A-+W7ACS+444.550%2B+T141.3)**.
@@ -29,5 +29,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 |       | W7ACS      | North Seattle    | FM     | 443.650        | 5.0            | 141.3       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=W7ACS&entry.1669786474=443.650&entry.2029547739=5.0&entry.586895390=141.3&entry.258116108=North+Seattle&entry.697760071=Seattle+ACS&entry.1398317811=https%3A%2F%2Fwww.seattleacs.org%2F&entry.65682944=47.6909%2C+-122.31963)     |
 |       | W7ACS      | Seattle          | FM     | 444.550        | 5.0            | 141.3       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=W7ACS&entry.1669786474=444.550&entry.2029547739=5.0&entry.586895390=141.3&entry.258116108=Seattle&entry.697760071=Seattle+ACS&entry.1398317811=https%3A%2F%2Fwww.seattleacs.org%2F&entry.65682944=47.604722%2C+-122.33055)         |
 
-Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
-Repeaters marked **Response needed** are not published until we hear from you.
+- Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
+- Repeaters marked **Response needed** are not published until we hear from you.

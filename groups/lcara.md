@@ -1,10 +1,10 @@
 ---
 title: "Lower Columbia Amateur Radio Association"
-subtitle: "Repeater Roundabout participation: LCARA"
+subtitle: "Status of LCARA repeaters"
 head-extra: noindex.html
 ---
 
-[http://w7dg.com](http://w7dg.com)
+Club website: [http://w7dg.com](http://w7dg.com)
 
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
 **[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=LCARA&entry.1239643054=-+W7DG+147.100%2B+T114.8%0A-+W7DG+147.300%2B+T114.8%0A-+W7DG+224.140-+T114.8%0A-+W7DG+444.900%2B+T114.8)**.
@@ -24,5 +24,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 |       | W7DG       | Longview, WA | FM     | 224.140        | -1.6           | 114.8       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=W7DG&entry.1669786474=224.140&entry.2029547739=-1.6&entry.586895390=114.8&entry.258116108=Longview%2C+WA&entry.697760071=LCARA&entry.1398317811=http%3A%2F%2Fwww.w7dg.com&entry.65682944=46.1828%2C+-122.9578) |
 |       | W7DG       | Longview, WA | FM     | 444.900        | 5.0            | 114.8       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=W7DG&entry.1669786474=444.900&entry.2029547739=5.0&entry.586895390=114.8&entry.258116108=Longview%2C+WA&entry.697760071=LCARA&entry.1398317811=http%3A%2F%2Fw7dg.com&entry.65682944=46.1828%2C+-122.9578)      |
 
-Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
-Repeaters marked **Response needed** are not published until we hear from you.
+- Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
+- Repeaters marked **Response needed** are not published until we hear from you.

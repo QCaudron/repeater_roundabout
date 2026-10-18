@@ -1,10 +1,10 @@
 ---
 title: "Puget Sound Repeater Group"
-subtitle: "Repeater Roundabout participation: PSRG"
+subtitle: "Status of PSRG repeaters"
 head-extra: noindex.html
 ---
 
-[http://www.psrg.org](http://www.psrg.org)
+Club website: [http://www.psrg.org](http://www.psrg.org)
 
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
 **[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=PSRG&entry.1239643054=-+WW7PSR+146.960-+T103.5%0A-+WW7PSR+52.870-+T103.5)**.
@@ -20,5 +20,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 |       | WW7PSR     | Capitol Hill, Seattle, WA | FM     | 146.960        | -0.6           | 103.5       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=WW7PSR&entry.1669786474=146.960&entry.2029547739=-0.6&entry.586895390=103.5&entry.258116108=Capitol+Hill%2C+Seattle%2C+WA&entry.697760071=PSRG&entry.1398317811=http%3A%2F%2Fwww.psrg.org&entry.65682944=47.6395%2C+-122.3693) |
 |       | WW7PSR     | Seattle                   | FM     | 52.870         | -1.7           | 103.5       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=WW7PSR&entry.1669786474=52.870&entry.2029547739=-1.7&entry.586895390=103.5&entry.258116108=Seattle&entry.697760071=PSRG&entry.1398317811=http%3A%2F%2Fpsrg.org&entry.65682944=47.62384%2C+-122.31519)                          |
 
-Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
-Repeaters marked **Response needed** are not published until we hear from you.
+- Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
+- Repeaters marked **Response needed** are not published until we hear from you.

@@ -1,10 +1,10 @@
 ---
 title: "Peter Policani's K7PP repeater system"
-subtitle: "Repeater Roundabout participation: K7PP"
+subtitle: "Status of K7PP repeaters"
 head-extra: noindex.html
 ---
 
-[http://www.k7pp.itgo.com](http://www.k7pp.itgo.com)
+Club website: [http://www.k7pp.itgo.com](http://www.k7pp.itgo.com)
 
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
 **[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=K7PP&entry.1239643054=-+K7PP+147.280%2B+T123%0A-+K7PP+441.200%2B+T123%0A-+K7PP+441.300%2B+T123%0A-+K7PP+443.400%2B+T123)**.
@@ -20,5 +20,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 |       | K7PP       | Ko Peak, WA    | FM     | 441.300        | 5.0            | 123         |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=K7PP&entry.1669786474=441.300&entry.2029547739=5.0&entry.586895390=123&entry.258116108=Ko+Peak%2C+WA&entry.697760071=K7PP&entry.1398317811=http%3A%2F%2Fwww.k7pp.itgo.com&entry.65682944=46.46143%2C+-123.5462)    |
 |       | K7PP       | Cougar Mtn, WA | FM     | 443.400        | 5.0            | 123         |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=K7PP&entry.1669786474=443.400&entry.2029547739=5.0&entry.586895390=123&entry.258116108=Cougar+Mtn%2C+WA&entry.697760071=K7PP&entry.1398317811=http%3A%2F%2Fwww.k7pp.itgo.com&entry.65682944=47.5414%2C+-122.1092)  |
 
-Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
-Repeaters marked **Response needed** are not published until we hear from you.
+- Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
+- Repeaters marked **Response needed** are not published until we hear from you.

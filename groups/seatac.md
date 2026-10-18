@@ -1,10 +1,10 @@
 ---
 title: "SeaTac Rptr Assoc"
-subtitle: "Repeater Roundabout participation: SeaTac"
+subtitle: "Status of SeaTac repeaters"
 head-extra: noindex.html
 ---
 
-[http://www.seatacra.com](http://www.seatacra.com)
+Club website: [http://www.seatacra.com](http://www.seatacra.com)
 
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
 **[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=SeaTac&entry.1239643054=-+WW7STR+147.875-+T88.5%0A-+WW7STR+224.440-+T103.5%0A-+WW7STR+442.150%2B+T103.5%0A-+WW7STR+444.850%2B+T103.5%0A-+WW7STR+927.2125-+T114.8)**.
@@ -25,5 +25,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 |       | WW7STR     | Cougar Mtn, WA | FM     | 444.850        | 5.0            | 103.5       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=WW7STR&entry.1669786474=444.850&entry.2029547739=5.0&entry.586895390=103.5&entry.258116108=Cougar+Mtn%2C+WA&entry.697760071=SeaTac&entry.1398317811=https%3A%2F%2Fseatacra.com%2F&entry.65682944=47.54192%2C+-122.1095)                                                                                                                    |
 |       | WW7STR     | Cougar Mtn, WA | NBFM   | 927.2125       | -25.0          | 114.8       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=WW7STR&entry.1669786474=927.2125&entry.2029547739=-25.0&entry.586895390=114.8&entry.258116108=Cougar+Mtn%2C+WA&entry.697760071=SeaTac&entry.1398317811=https%3A%2F%2Fseatacra.com%2F&entry.65682944=47.54192%2C+-122.1095)                                                                                                                 |
 
-Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
-Repeaters marked **Response needed** are not published until we hear from you.
+- Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
+- Repeaters marked **Response needed** are not published until we hear from you.

@@ -1,10 +1,10 @@
 ---
 title: "Shoreline ACS"
-subtitle: "Repeater Roundabout participation: Shoreline ACS"
+subtitle: "Status of Shoreline ACS repeaters"
 head-extra: noindex.html
 ---
 
-[https://shorelineacs.org](https://shorelineacs.org)
+Club website: [https://shorelineacs.org](https://shorelineacs.org)
 
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
 **[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=Shoreline+ACS&entry.1239643054=-+W7AUX+224.020-+T103.5%0A-+W7AUX+440.300%2B+T103.5%0A-+W7AUX+442.825%2B+T103.5%0A-+W7AUX+927.638-+T114.8)**.
@@ -22,5 +22,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 |       | W7AUX      | Shoreline, WA | FM     | 442.825        | 5.0            | 103.5       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=W7AUX&entry.1669786474=442.825&entry.2029547739=5.0&entry.586895390=103.5&entry.258116108=Shoreline%2C+WA&entry.697760071=Shoreline+ACS&entry.1398317811=http%3A%2F%2Fshorelineacs.org&entry.65682944=47.768%2C+-122.3531)      |
 |       | W7AUX      | Shoreline, WA | FM     | 927.638        | -25.0          | 114.8       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=W7AUX&entry.1669786474=927.638&entry.2029547739=-25.0&entry.586895390=114.8&entry.258116108=Shoreline%2C+WA&entry.697760071=Shoreline+ACS&entry.1398317811=http%3A%2F%2Fshorelineacs.org&entry.65682944=47.75619%2C+-122.34575) |
 
-Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
-Repeaters marked **Response needed** are not published until we hear from you.
+- Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
+- Repeaters marked **Response needed** are not published until we hear from you.

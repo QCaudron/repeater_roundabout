@@ -1,10 +1,10 @@
 ---
 title: "Jefferson County Amateur Radio Club"
-subtitle: "Repeater Roundabout participation: JCARC"
+subtitle: "Status of JCARC repeaters"
 head-extra: noindex.html
 ---
 
-[https://w7jcr.wordpress.com/](https://w7jcr.wordpress.com/)
+Club website: [https://w7jcr.wordpress.com/](https://w7jcr.wordpress.com/)
 
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
 **[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=JCARC&entry.1239643054=-+W7JCR+145.150-+T114.8)**.
@@ -17,5 +17,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 |:------|:-----------|:--------------|:-------|:---------------|:---------------|:------------|:--------------------------|:------------------|:----------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |       | W7JCR      | Port Townsend | FM     | 145.150        | -0.6           | 114.8       |                           |                   | Response needed | [Correct](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.1128588127=W7JCR&entry.1669786474=145.150&entry.2029547739=-0.6&entry.586895390=114.8&entry.258116108=Port+Townsend&entry.697760071=JCARC&entry.1398317811=https%3A%2F%2Fw7jcr.wordpress.com%2F&entry.65682944=48.1247%2C+-122.7651) |
 
-Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
-Repeaters marked **Response needed** are not published until we hear from you.
+- Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
+- Repeaters marked **Response needed** are not published until we hear from you.
