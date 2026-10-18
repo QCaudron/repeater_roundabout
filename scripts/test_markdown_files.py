@@ -4,7 +4,14 @@ from urllib.parse import parse_qs, urlsplit
 
 import pandas as pd
 
-from markdown_files import STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED, write_group_pages, write_map_md
+from markdown_files import (
+    STATUS_IN,
+    STATUS_OUT,
+    STATUS_RESPONSE_NEEDED,
+    write_group_pages,
+    write_map_md,
+    write_repeaters_md,
+)
 
 FORMS = {
     "group": {
@@ -190,6 +197,33 @@ def test_write_map_md_with_no_repeaters(tmp_path, monkeypatch):
     write_map_md(pd.DataFrame(columns=["Callsign", "Output (MHz)", "Coordinates", "RR#"]))
 
     assert (tmp_path / "map.md").read_text() == "pins: "
+
+
+def test_write_repeaters_md_with_no_repeaters(tmp_path, monkeypatch):
+    """write_repeaters_md shows a holding message instead of crashing when nothing is confirmed yet."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets" / "templates").mkdir(parents=True)
+    (tmp_path / "assets" / "templates" / "repeaters.md").write_text("{{ table }}\n{{ associations }}")
+
+    write_repeaters_md(
+        pd.DataFrame(
+            columns=[
+                "RR#",
+                "Group Name",
+                "Callsign",
+                "Location",
+                "Mode",
+                "Output (MHz)",
+                "Offset (MHz)",
+                "Tone (Hz)",
+                "Long Name",
+                "Website",
+            ]
+        )
+    )
+
+    page = (tmp_path / "repeaters.md").read_text()
+    assert "We're confirming repeaters for this year's Repeater Roundabout.  Check back soon!" in page
 
 
 def test_write_group_pages_shows_internet_access(tmp_path, monkeypatch):

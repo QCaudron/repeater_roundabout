@@ -158,25 +158,28 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
         "Tone (Hz)",
     ]
 
-    table = (
-        df[table_cols]
-        .rename(columns={"Group Name": "Group"})
-        .assign(**{"Tone (Hz)": df["Tone (Hz)"].apply(lambda v: v if pd.notna(v) else "")})
-        .to_markdown(
-            index=False,
-            disable_numparse=True,
-            colalign=[
-                "left",
-                "left",
-                "left",
-                "left",
-                "left",
-                "right",
-                "right",
-                "right",
-            ],
+    if df.empty:
+        table = "We're confirming repeaters for this year's Repeater Roundabout.  Check back soon!"
+    else:
+        table = (
+            df[table_cols]
+            .rename(columns={"Group Name": "Group"})
+            .assign(**{"Tone (Hz)": df["Tone (Hz)"].apply(lambda v: v if pd.notna(v) else "")})
+            .to_markdown(
+                index=False,
+                disable_numparse=True,
+                colalign=[
+                    "left",
+                    "left",
+                    "left",
+                    "left",
+                    "left",
+                    "right",
+                    "right",
+                    "right",
+                ],
+            )
         )
-    )
 
     # Create a list of short-name-to-long-description mappings
     association_text = ""
