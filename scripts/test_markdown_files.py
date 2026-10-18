@@ -161,6 +161,20 @@ def test_write_group_pages_prefills_forms(tmp_path, monkeypatch):
     assert add == [{"usp": "pp_url", "entry.10": "PSRG", "entry.15": "http://psrg.org"}]
 
 
+def test_write_group_pages_strips_dcs_footnote_from_prefilled_tone(tmp_path, monkeypatch):
+    """The DCS footnote marker on a tone is for display only and must not leak into prefilled form fields."""
+    site(tmp_path, monkeypatch)
+    df = pd.DataFrame([repeater("WW7PSR", "443.000", STATUS_IN, **{"Tone (Hz)": "D036[^dcs]"})])
+    df["RR#"] = df.index + 1
+
+    write_group_pages(df, FORMS)
+    found = links((tmp_path / "groups" / "psrg.md").read_text())
+
+    assert found["/group/viewform"][0]["entry.2"] == "- WW7PSR 443.000- D036"
+    correction = next(q for q in found["/repeater/viewform"] if "entry.11" in q)
+    assert correction["entry.14"] == "D036"
+
+
 def test_write_group_pages_flags_conflicting_club_details(tmp_path, monkeypatch):
     """When a group's repeaters disagree on its long name, the page lists every variant for the trustee to check."""
     site(tmp_path, monkeypatch)
