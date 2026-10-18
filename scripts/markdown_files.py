@@ -360,7 +360,7 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
                     **{k: cell(r[k]) for k in ["Callsign", "Location", "Mode", "Output (MHz)", "Offset (MHz)", "Tone (Hz)"]},
                     **{k: cell(r.get(k)) for k in INTERNET_FIELDS},
                     "Status": STATUS_LABELS[status],
-                    "": f"[Correct]({correction})",
+                    "": f"[Update]({correction})",
                 }
             )
 

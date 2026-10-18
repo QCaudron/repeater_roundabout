@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 subtitle: {{ subtitle }}
-head-extra: noindex.html
+head-extra: group-head-extra.html
 ---
 
 {{ website }}
@@ -9,7 +9,7 @@ head-extra: noindex.html
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
 **[let us know whether Repeater Roundabout participants may make contacts on them]({{ group_form }})**.
 
-Is something wrong? Use the **Correct** link next to a repeater to send us updated details,
+Is something wrong? Use the **Update** link next to a repeater to send us updated details,
 or [tell us about a repeater we're missing]({{ add_form }}).
 
 {{ conflicts }}
