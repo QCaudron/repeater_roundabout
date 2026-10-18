@@ -112,6 +112,27 @@ python scripts/update.py \
 If any changes are made to `repeaters.json` or to template files, you can regenerate the website's root `.md` files without adding a new repeater by calling `python scripts/update.py --regen`.
 
 
+## Confirming repeaters with trustees
+
+Each repeater in `assets/repeaters.json` has a `Status`: `response_needed` (the default, including for newly added repeaters), `in`, or `out`. Only `in` repeaters are published on the repeaters page, map, and programming files.
+
+Every run of `update.py` also writes a page per group at `groups/<group name>.md` (e.g. `Shoreline ACS` becomes `/groups/shoreline-acs`), listing all of that group's repeaters and their status. Send each group's trustee the link to their page. These pages aren't linked from the site and ask search engines not to index them, but anyone with the link can see them. Each page links to two Google Forms, prefilled with what we know:
+
+- the group form, for the trustee to tell us which repeaters participants may use, and
+- the repeater form, to correct a listed repeater or add a missing one.
+
+The form URLs and their `entry.NNN` field IDs live in `assets/forms.json`. To find them for a new form, use "Get pre-filled link" in the form editor, fill in every field, and read the IDs from the resulting URL.
+
+When a trustee responds, record it with `--status`, identifying the repeater by callsign and, if the callsign has more than one repeater, frequency:
+
+```bash
+python scripts/update.py --status in --call WW7PSR --freq 146.960
+python scripts/update.py --status out --call K7DK
+```
+
+A repeater's RR# is its position in `assets/repeaters.json`, so `--status` keeps published numbers stable: a `response_needed` repeater marked `in` moves to just after the last `in` repeater (taking the next RR#), and one marked `out` moves to the end. Any other change leaves the repeater where it is.
+
+
 ## Populating the leaderboards
 
 When the competition is over, call `python scripts/update.py --score` to have the index page populated with the leaderboards, rather than ongoing contest information.
@@ -119,7 +140,9 @@ When the competition is over, call `python scripts/update.py --score` to have th
 
 ## Rolling over for a new year
 
-To start a new year's contest, call `python scripts/update.py --rollover`. It archives last year's contest by copying `assets/repeaters.json` to `<last year>/repeaters.json` and moving `results/*.csv` to `<last year>/results/`, then regenerates the site with the "join the contest" homepage (removing `results/*.md`). It refuses to run if `<last year>/` already exists.
+To start a new year's contest, call `python scripts/update.py --rollover`. It archives last year's contest by copying `assets/repeaters.json` to `<last year>/repeaters.json` and moving `results/*.csv` to `<last year>/results/`, then marks every repeater as `response_needed` and regenerates the site with the "join the contest" homepage (removing `results/*.md`). It refuses to run if `<last year>/` already exists.
+
+Each year's response forms change, so update `assets/forms.json` too (see below).
 
 The contest dates are not updated automatically; edit them by hand in `assets/templates/index.md`, `assets/templates/rules.md`, and `logging.md`, then run `python scripts/update.py --regen`.
 

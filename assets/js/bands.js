@@ -16,9 +16,10 @@ async function readRepeaters() {
         let input = parseFloat((output + offset).toFixed(4));
         let rawTone = (_a = r['Tone (Hz)']) !== null && _a !== void 0 ? _a : "";
         let tone = rawTone.replace(/\[.*\]/g, '');
-        return { id, callsign, input, output, tone, org };
+        return { id, callsign, input, output, tone, org, published: r['Status'] === "in" };
     });
-    return repeaters;
+    // Every repeater counts toward RR# numbering, but only confirmed ones are shown
+    return repeaters.filter((r) => r.published);
 }
 const BANDS = [
     {

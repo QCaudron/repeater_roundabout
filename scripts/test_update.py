@@ -1,8 +1,11 @@
+import json
 from datetime import datetime
 
+import pandas as pd
 import pytest
 
-from update import rollover
+from markdown_files import STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED
+from update import merge_repeaters, rollover, set_status
 
 
 def make_site(root):
@@ -22,7 +25,7 @@ def test_rollover_archives_last_contest(tmp_path, monkeypatch):
     rollover(datetime(2026, 10, 18))
 
     assert (tmp_path / "2025" / "repeaters.json").read_text() == "[]"
-    assert (tmp_path / "assets" / "repeaters.json").read_text() == "[]"
+    assert json.loads((tmp_path / "assets" / "repeaters.json").read_text()) == []
     assert (tmp_path / "2025" / "results" / "W7ABC.csv").read_text() == "log"
     assert not (tmp_path / "results" / "W7ABC.csv").exists()
 
@@ -39,3 +42,94 @@ def test_rollover_refuses_existing_archive(tmp_path, monkeypatch):
     assert exc.value.code != 0
     assert list((tmp_path / "2025").iterdir()) == []
     assert sorted(p.name for p in (tmp_path / "results").iterdir()) == ["W7ABC.csv", "W7ABC.md"]
+
+
+def test_rollover_resets_statuses(tmp_path, monkeypatch):
+    """rollover marks every repeater as needing a response for the new year, while the archive keeps last year's statuses."""
+    monkeypatch.chdir(tmp_path)
+    make_site(tmp_path)
+    repeaters = [{"Callsign": "W7A", "Status": STATUS_IN}, {"Callsign": "W7B", "Status": STATUS_OUT}]
+    (tmp_path / "assets" / "repeaters.json").write_text(json.dumps(repeaters))
+
+    rollover(datetime(2026, 10, 18))
+
+    got = [r["Status"] for r in json.loads((tmp_path / "assets" / "repeaters.json").read_text())]
+    assert got == [STATUS_RESPONSE_NEEDED, STATUS_RESPONSE_NEEDED]
+    archived = [r["Status"] for r in json.loads((tmp_path / "2025" / "repeaters.json").read_text())]
+    assert archived == [STATUS_IN, STATUS_OUT]
+
+
+def repeater_list(*statuses):
+    """Build a repeater DataFrame with callsigns W7A, W7B, ... on 146.000 MHz and the given statuses."""
+    return pd.DataFrame(
+        [{"Callsign": f"W7{chr(65 + i)}", "Output (MHz)": "146.000", "Status": s} for i, s in enumerate(statuses)]
+    )
+
+
+def calls(df):
+    """Return the callsigns of df in order."""
+    return df["Callsign"].tolist()
+
+
+def test_set_status_response_needed_to_in_follows_last_in():
+    """Confirming a repeater moves it directly after the last confirmed repeater, so published numbers don't change."""
+    df = repeater_list(STATUS_IN, STATUS_RESPONSE_NEEDED, STATUS_OUT, STATUS_IN, STATUS_RESPONSE_NEEDED)
+
+    got = set_status(df, "W7E", "146.0", STATUS_IN)
+
+    assert calls(got) == ["W7A", "W7B", "W7C", "W7D", "W7E"]
+    got = set_status(repeater_list(STATUS_IN, STATUS_RESPONSE_NEEDED, STATUS_RESPONSE_NEEDED), "w7c", "146.000", STATUS_IN)
+    assert calls(got) == ["W7A", "W7C", "W7B"]
+    assert got["Status"].tolist() == [STATUS_IN, STATUS_IN, STATUS_RESPONSE_NEEDED]
+
+
+def test_set_status_first_in_goes_to_top():
+    """Confirming the first repeater of the year makes it RR# 1."""
+    got = set_status(repeater_list(STATUS_RESPONSE_NEEDED, STATUS_RESPONSE_NEEDED), "W7B", "146.000", STATUS_IN)
+
+    assert calls(got) == ["W7B", "W7A"]
+
+
+def test_set_status_response_needed_to_out_moves_to_end():
+    """Declining a repeater moves it to the end of the list."""
+    got = set_status(repeater_list(STATUS_RESPONSE_NEEDED, STATUS_IN, STATUS_RESPONSE_NEEDED), "W7A", "146.000", STATUS_OUT)
+
+    assert calls(got) == ["W7B", "W7C", "W7A"]
+    assert got["Status"].tolist() == [STATUS_IN, STATUS_RESPONSE_NEEDED, STATUS_OUT]
+
+
+def test_set_status_from_decided_status_stays_put():
+    """Changing a repeater that is already in or out keeps its position, so no published number shifts."""
+    got = set_status(repeater_list(STATUS_IN, STATUS_IN, STATUS_IN), "W7A", "146.000", STATUS_OUT)
+
+    assert calls(got) == ["W7A", "W7B", "W7C"]
+    assert got["Status"].tolist() == [STATUS_OUT, STATUS_IN, STATUS_IN]
+
+
+def test_set_status_missing_status_counts_as_response_needed():
+    """A repeater with no recorded status is treated as needing a response."""
+    df = repeater_list(STATUS_IN, STATUS_IN, STATUS_IN)
+    df.loc[2, "Status"] = None
+
+    got = set_status(df, "W7C", "146.000", STATUS_OUT)
+
+    assert got["Status"].tolist() == [STATUS_IN, STATUS_IN, STATUS_OUT]
+
+
+def test_set_status_requires_exactly_one_match():
+    """set_status rejects a callsign/frequency that matches no repeater or more than one."""
+    df = repeater_list(STATUS_IN, STATUS_IN)
+    df.loc[1, "Callsign"] = "W7A"
+
+    with pytest.raises(ValueError):
+        set_status(df, "W7A", "146.000", STATUS_OUT)
+    with pytest.raises(ValueError):
+        set_status(df, "W7Z", "146.000", STATUS_OUT)
+
+
+def test_merge_repeaters_starts_as_response_needed():
+    """A repeater imported from last year's file needs a fresh response, whatever its status was then."""
+    got = merge_repeaters(prior={"Callsign": "W7A", "Status": STATUS_IN, "Exclude": True})
+
+    assert got["Status"] == STATUS_RESPONSE_NEEDED
+    assert "Exclude" not in got

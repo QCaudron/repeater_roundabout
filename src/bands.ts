@@ -13,6 +13,7 @@ interface RoundaboutRep {
     Coordinates: [number, number],
     "Long Name": string,
     Website: string,
+    Status?: string,
 }
 
 const REPEATERS = "./assets/repeaters.json";
@@ -33,10 +34,11 @@ async function readRepeaters() {
         let input = parseFloat((output + offset).toFixed(4));
         let rawTone = r['Tone (Hz)'] ?? "";
         let tone = rawTone.replace(/\[.*\]/g, '');
-        return { id, callsign, input, output, tone, org };
+        return { id, callsign, input, output, tone, org, published: r['Status'] === "in" };
     });
 
-    return repeaters;
+    // Every repeater counts toward RR# numbering, but only confirmed ones are shown
+    return repeaters.filter((r: { published: boolean }) => r.published);
 }
 
 const BANDS: Band[] = [

@@ -1,5 +1,6 @@
 import argparse
 import csv
+import json
 import math
 import re
 import shutil
@@ -13,6 +14,10 @@ import pandas as pd
 import requests
 
 from markdown_files import (
+    STATUS_IN,
+    STATUS_OUT,
+    STATUS_RESPONSE_NEEDED,
+    write_group_pages,
     write_index_md,
     write_map_md,
     write_repeaters_md,
@@ -24,6 +29,9 @@ from programming_files import (
     write_icom_csv,
     write_d878_zip,
 )
+
+REPEATERS_JSON = "assets/repeaters.json"
+FORMS_JSON = "assets/forms.json"
 
 def parse_args() -> argparse.Namespace | SimpleNamespace:
     """
@@ -51,7 +59,6 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
         lon = input("Longitude: ") or None
         long_name = input("Long Name: ") or None
         url = input("Website: ") or None
-        exclude = input("Exclude from contest: ") or None
 
         args = {
             "name": name,
@@ -69,8 +76,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
             "lon": lon,
             "long_name": long_name,
             "url": url,
-            "exclude": exclude,
             "regen": False,
+            "status": None,
             "score": False,
             "rollover": False,
         }
@@ -94,11 +101,11 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--lon", type=float, default=None)
     parser.add_argument("--long_name", type=str, default=None)
     parser.add_argument("--url", type=str, default=None)
-    parser.add_argument("--exclude", action="store_true")
     parser.add_argument("--regen", action="store_true")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--score", action="store_true")
     mode.add_argument("--rollover", action="store_true")
+    mode.add_argument("--status", choices=[STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED])
     return parser.parse_args()
 
 def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
@@ -315,7 +322,6 @@ def repeater_from_args(args: argparse.Namespace | SimpleNamespace) -> dict:
         "Coordinates": [float(args.lat), float(args.lon)] if args.lat and args.lon else None,
         "Long Name": args.long_name,
         "Website": args.url,
-        "Exclude": args.exclude,
     }
 
     # Remove any empty values
@@ -415,6 +421,10 @@ def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, 
     for f in ["Group Name", "Location", "Long Name", "Website"]:
         r[f] = args.get(f) or prior.get(f) or wwara.get(f) or repeaterbook.get(f)
 
+    # A newly added repeater hasn't been confirmed for this year, whatever its prior status
+    r.pop("Exclude", None)
+    r["Status"] = STATUS_RESPONSE_NEEDED
+
     return r
 
 def ensure_col(df: pd.DataFrame, name: str, default=np.nan) -> pd.DataFrame:
@@ -458,8 +468,8 @@ def generate_repeater_df(
         combined with a new repeater taken from user input.
     """
     if args.regen or args.score:
-        df = pd.read_json("assets/repeaters.json", dtype=False)
-        df.to_json("assets/repeaters.json", orient="records", indent=4)
+        df = pd.read_json(REPEATERS_JSON, dtype=False)
+        df.to_json(REPEATERS_JSON, orient="records", indent=4)
         df["RR#"] = df.index + 1
         return df
 
@@ -518,10 +528,10 @@ def generate_repeater_df(
         ])
 
     # Combine with known repeaters
-    if not Path("assets/repeaters.json").exists():
-        with open("assets/repeaters.json", "w") as f:
+    if not Path(REPEATERS_JSON).exists():
+        with open(REPEATERS_JSON, "w") as f:
             f.write("{}")
-    df = pd.read_json("assets/repeaters.json", dtype=False)
+    df = pd.read_json(REPEATERS_JSON, dtype=False)
 
     # Initialize records missing state id fields to WA (53).
     if "RepeaterBook State ID" not in df.columns:
@@ -540,7 +550,7 @@ def generate_repeater_df(
 
     # Save a new known repeaters file
     df = df.reset_index(drop=True)
-    df.to_json("assets/repeaters.json", orient="records", indent=4)
+    df.to_json(REPEATERS_JSON, orient="records", indent=4)
 
     # Assign a Repeater Roundabout number to each repeater
     # This shouldn't be in the .json because it's not a repeater attribute
@@ -566,11 +576,49 @@ def rollover(now: datetime | None = None) -> None:
     if archive.exists():
         sys.exit(f"{archive}/ already exists; refusing to overwrite an existing archive.")
 
-    repeaters = Path("assets/repeaters.json").read_bytes()  # fail before creating the archive
+    repeaters = Path(REPEATERS_JSON).read_bytes()  # fail before creating the archive
     (archive / "results").mkdir(parents=True)
     (archive / "repeaters.json").write_bytes(repeaters)
     for file in Path("results").glob("*.csv"):
         shutil.move(file, archive / "results" / file.name)
+
+    # Every repeater must be confirmed again for the new contest
+    df = pd.read_json(REPEATERS_JSON, dtype=False)
+    df["Status"] = STATUS_RESPONSE_NEEDED
+    df.to_json(REPEATERS_JSON, orient="records", indent=4)
+
+
+def set_status(df: pd.DataFrame, call: str, freq: str | None, status: str) -> pd.DataFrame:
+    """
+    Return df with the status of the repeater matching call (and freq, if given) changed.
+
+    A repeater's position is its RR#, so moves are limited to repeaters whose numbers
+    haven't been published: one going from response needed to in moves to just after
+    the last repeater that's in, and one going from response needed to out moves to the
+    end. Any other change leaves it where it is. A missing status counts as response needed.
+
+    Raises ValueError unless exactly one repeater matches.
+    """
+    df = df.reset_index(drop=True)
+    match = df["Callsign"].str.upper() == call.upper()
+    if freq:
+        match &= df["Output (MHz)"].map(lambda f: freq_match(freq, f))
+    if match.sum() != 1:
+        raise ValueError(f"Expected one repeater matching {call} {freq or ''}, found {match.sum()}")
+
+    i = df.index[match][0]
+    old = df.at[i, "Status"] if pd.notna(df.at[i, "Status"]) else STATUS_RESPONSE_NEEDED
+    df.at[i, "Status"] = status
+    if old != STATUS_RESPONSE_NEEDED or status == STATUS_RESPONSE_NEEDED:
+        return df
+
+    row, rest = df.loc[[i]], df.drop(index=i).reset_index(drop=True)
+    if status == STATUS_OUT:
+        at = len(rest)
+    else:
+        confirmed = rest.index[rest["Status"] == STATUS_IN]
+        at = confirmed[-1] + 1 if len(confirmed) else 0
+    return pd.concat([rest.iloc[:at], row, rest.iloc[at:]], ignore_index=True)
 
 
 def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
@@ -585,10 +633,23 @@ if __name__ == "__main__":
     if args.rollover:
         rollover()
         args.regen = True
+    if args.status:
+        repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
+        try:
+            repeaters = set_status(repeaters, args.call or "", args.freq, args.status)
+        except ValueError as e:
+            sys.exit(str(e))
+        repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+        args.regen = True
 
     df = generate_repeater_df(args)
-    # Remove repeaters not in the contest
-    df = df.loc[df["Exclude"].isna()]
+    ensure_col(df, "Status", STATUS_RESPONSE_NEEDED)
+    df["Status"] = df["Status"].fillna(STATUS_RESPONSE_NEEDED)
+    with open(FORMS_JSON) as f:
+        write_group_pages(remove_df_footnotes(df), json.load(f))
+
+    # Only publish repeaters confirmed for this contest
+    df = df.loc[df["Status"] == STATUS_IN]
 
     # Set tone to the empty string for toneless repeaters.  Downstream
     # code assumes tone is always a string.

@@ -1,6 +1,10 @@
+import html
+import json
+import re
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlencode
 
 import numpy as np
 import pandas as pd
@@ -8,6 +12,11 @@ from scipy.cluster.hierarchy import fcluster, linkage
 from scipy.spatial.distance import pdist
 
 from score import score_competition
+
+STATUS_RESPONSE_NEEDED = "response_needed"
+STATUS_IN = "in"
+STATUS_OUT = "out"
+STATUS_LABELS = {STATUS_RESPONSE_NEEDED: "Response needed", STATUS_IN: "In", STATUS_OUT: "Out"}
 
 ongoing_index_content = """
 # Joining the Repeater Roundabout
@@ -195,14 +204,12 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
         Repeaters are combined into a single pin if less
         than this distance apart, by default 0.03.
     """
-    # Skip writing a map if there aren't at least two repeaters
-    if len(df) < 10:
-        return
-
-    # Hierarchically cluster repeater lat / long pairs
-    coords = np.array(df["Coordinates"].to_list())
-    dist = pdist(coords)
-    allocations = fcluster(linkage(dist, method="complete"), threshold, criterion="distance")
+    # Hierarchically cluster repeater lat / long pairs; clustering needs at least two
+    if len(df) > 1:
+        coords = np.array(df["Coordinates"].to_list())
+        allocations = fcluster(linkage(pdist(coords), method="complete"), threshold, criterion="distance")
+    else:
+        allocations = range(len(df))
 
     # Assign each repeater's info to a cluster
     clusters = defaultdict(list)
@@ -244,3 +251,125 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
         f.write(maps_md)
     with open("demo_map.html", "w") as f:
         f.write(maps_html)
+
+
+def text(value) -> str:
+    """Return value as a string, or "" if it is missing."""
+    return "" if value is None or (np.isscalar(value) and pd.isna(value)) else str(value)
+
+
+def cell(value) -> str:
+    """Return value escaped for display in a markdown table cell."""
+    return html.escape(text(value)).replace("|", "\\|")
+
+
+def group_slug(name: str) -> str:
+    """Return a URL-safe page name for a group: lowercase, with runs of other characters replaced by hyphens."""
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def prefill_url(form: dict, values: dict) -> str:
+    """
+    Return a link to a Google Form with answers filled in.
+
+    form has the form's "url" and "fields", mapping a value name to the form's entry ID.
+    Values with no entry ID or no content are left out.
+    """
+    answers = {form["fields"][k]: v for k, v in values.items() if k in form["fields"] and v}
+    return form["url"] + "?" + urlencode({"usp": "pp_url", **answers})
+
+
+def repeater_summary(r: pd.Series) -> str:
+    """Return a one-line description of a repeater, e.g. "- WW7PSR 146.960- T103.5"."""
+    offset, tone = text(r["Offset (MHz)"]), text(r["Tone (Hz)"])
+    sign = "-" if offset.startswith("-") else "+" if offset else ""
+    tone = f"T{tone}" if re.fullmatch(r"[\d.]+", tone) else tone
+    return " ".join(filter(None, ["-", text(r["Callsign"]), text(r["Output (MHz)"]) + sign, tone]))
+
+
+def repeaterbook_url(r: pd.Series) -> str:
+    """Return the repeater's RepeaterBook page, or "" if it has no RepeaterBook ID."""
+    if not text(r.get("RepeaterBook ID")):
+        return ""
+    state = text(r.get("RepeaterBook State ID")) or "53"  # WA
+    return f"https://www.repeaterbook.com/repeaters/details.php?state_id={state}&ID={text(r['RepeaterBook ID'])}"
+
+
+def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
+    """
+    Write groups/<group>.md for each group, replacing any existing group pages.
+
+    Each page lists all of the group's repeaters with their contest status, and links to
+    the "group" form (to say which repeaters may be used) and the "repeater" form (to
+    correct or add a repeater), filled in with what we know.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All repeaters, whatever their status, with RR# assigned.
+    forms : dict
+        The "group" and "repeater" forms, as accepted by prefill_url.
+    """
+    with open("assets/templates/group.md") as f:
+        template = f.read()
+
+    pages, output = {}, {}
+    for name, group in df.groupby("Group Name", sort=False):
+        slug = group_slug(name)
+        if slug in pages:
+            raise ValueError(f"Groups {pages[slug]!r} and {name!r} would share the page groups/{slug}.md")
+        pages[slug] = name
+
+        long_names = group["Long Name"].map(text).loc[lambda s: s != ""].unique()
+        websites = group["Website"].map(text).loc[lambda s: s != ""].unique()
+        website = websites[0] if len(websites) else ""
+
+        conflicts = ""
+        for field, values in [("names", long_names), ("websites", websites)]:
+            if len(values) > 1:
+                conflicts += f"> **Please check:** we have more than one of your group's {field}: "
+                conflicts += "; ".join(cell(v) for v in values) + "\n\n"
+
+        rows = []
+        for _, r in group.iterrows():
+            correction = prefill_url(
+                forms["repeater"],
+                {
+                    **{k: text(r[k]) for k in ["Callsign", "Output (MHz)", "Offset (MHz)", "Tone (Hz)", "Location"]},
+                    "Group Name": name,
+                    "Website": text(r["Website"]),
+                    "RepeaterBook": repeaterbook_url(r),
+                    "Coordinates": ", ".join(str(c) for c in r["Coordinates"]) if isinstance(r["Coordinates"], list) else "",
+                },
+            )
+            status = text(r.get("Status")) or STATUS_RESPONSE_NEEDED
+            rows.append(
+                {
+                    "RR#": r["RR#"] if status == STATUS_IN else "",
+                    **{k: cell(r[k]) for k in ["Callsign", "Location", "Mode", "Output (MHz)", "Offset (MHz)", "Tone (Hz)"]},
+                    "Status": STATUS_LABELS[status],
+                    "": f"[Correct]({correction})",
+                }
+            )
+
+        page = (
+            template.replace("{{ title }}", json.dumps(long_names[0] if len(long_names) else name))
+            .replace("{{ subtitle }}", json.dumps(f"Repeater Roundabout participation: {name}"))
+            .replace("{{ website }}", f"[{cell(website)}]({website})" if website else "")
+            .replace("{{ conflicts }}", conflicts)
+            .replace("{{ table }}", pd.DataFrame(rows).to_markdown(index=False, disable_numparse=True))
+            .replace("{{ group_form }}", prefill_url(forms["group"], {
+                "Group Name": name,
+                "Repeaters": "\n".join(group.apply(repeater_summary, axis=1)),
+            }))
+            .replace("{{ add_form }}", prefill_url(forms["repeater"], {"Group Name": name, "Website": website}))
+        )
+        output[slug] = page
+
+    # Only replace the old pages once every new page has been built
+    groups_dir = Path("groups")
+    groups_dir.mkdir(exist_ok=True)
+    for file in groups_dir.glob("*.md"):
+        file.unlink()
+    for slug, page in output.items():
+        (groups_dir / f"{slug}.md").write_text(page)

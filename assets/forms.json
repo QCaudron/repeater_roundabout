@@ -1,0 +1,23 @@
+{
+    "group": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform",
+        "fields": {
+            "Group Name": "entry.141345059",
+            "Repeaters": "entry.1239643054"
+        }
+    },
+    "repeater": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform",
+        "fields": {
+            "Group Name": "entry.697760071",
+            "Callsign": "entry.1128588127",
+            "Output (MHz)": "entry.1669786474",
+            "Offset (MHz)": "entry.2029547739",
+            "Tone (Hz)": "entry.586895390",
+            "Website": "entry.1398317811",
+            "RepeaterBook": "entry.1787209425",
+            "Location": "entry.258116108",
+            "Coordinates": "entry.65682944"
+        }
+    }
+}

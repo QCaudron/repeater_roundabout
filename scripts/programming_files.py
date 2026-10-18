@@ -212,6 +212,9 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
 
     print(f"AnyTone D878: {len(df)} compatible repeaters (out of {total_repeaters} known).")
+    if df.empty:  # pandas can't add columns to an empty frame through .loc
+        return pd.DataFrame(columns=["Channel Name", "Receive Frequency", "Transmit Frequency", "Contact",
+                                     "Contact TG/DMR ID", "Scan List"])
 
     df_878 = pd.DataFrame()
 
@@ -293,6 +296,8 @@ def format_df_for_icom(df: pd.DataFrame) -> pd.DataFrame:
     df = df.sort_index()
 
     print(f"Icom IC-705: {len(df)} compatible repeaters (out of {total_repeaters} known).")
+    if df.empty:  # pandas can't add columns to an empty frame through .loc
+        return pd.DataFrame()
 
     df_icom = pd.DataFrame()
     is_dstar = df["Mode"] == "DSTAR"
@@ -500,7 +505,7 @@ def write_generic_csv(df: pd.DataFrame) -> None:
         df.copy()
         .assign(Latitude=df["Coordinates"].apply(lambda x: x[0]))
         .assign(Longitude=df["Coordinates"].apply(lambda x: x[1]))
-        .drop(columns=["Group Name", "Coordinates", "Exclude"])
+        .drop(columns=["Group Name", "Coordinates", "Status"])
         .rename(columns={"Long Name": "Group"})
         .set_index("RR#")
     )
