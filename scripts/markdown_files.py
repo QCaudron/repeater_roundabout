@@ -283,9 +283,14 @@ def prefill_url(form: dict, values: dict) -> str:
     return form["url"] + "?" + urlencode({"usp": "pp_url", **answers})
 
 
+def plain_tone(value) -> str:
+    """Return a tone value with any trailing markdown footnote marker (e.g. "[^dcs]") removed."""
+    return re.sub(r"\[\^\w+\]$", "", text(value))
+
+
 def repeater_summary(r: pd.Series) -> str:
     """Return a one-line description of a repeater, e.g. "- WW7PSR 146.960- T103.5"."""
-    offset, tone = text(r["Offset (MHz)"]), text(r["Tone (Hz)"])
+    offset, tone = text(r["Offset (MHz)"]), plain_tone(r["Tone (Hz)"])
     sign = "-" if offset.startswith("-") else "+" if offset else ""
     tone = f"T{tone}" if re.fullmatch(r"[\d.]+", tone) else tone
     return " ".join(filter(None, ["-", text(r["Callsign"]), text(r["Output (MHz)"]) + sign, tone]))
@@ -339,7 +344,8 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
             correction = prefill_url(
                 forms["repeater"],
                 {
-                    **{k: text(r[k]) for k in ["Callsign", "Output (MHz)", "Offset (MHz)", "Tone (Hz)", "Location"]},
+                    **{k: text(r[k]) for k in ["Callsign", "Output (MHz)", "Offset (MHz)", "Location"]},
+                    "Tone (Hz)": plain_tone(r["Tone (Hz)"]),
                     **{k: text(r.get(k)) for k in INTERNET_FIELDS},
                     "Group Name": name,
                     "Website": text(r["Website"]),
@@ -354,7 +360,7 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
                     **{k: cell(r[k]) for k in ["Callsign", "Location", "Mode", "Output (MHz)", "Offset (MHz)", "Tone (Hz)"]},
                     **{k: cell(r.get(k)) for k in INTERNET_FIELDS},
                     "Status": STATUS_LABELS[status],
-                    "": f"[Correct]({correction})",
+                    "": f"[Update]({correction})",
                 }
             )
 
