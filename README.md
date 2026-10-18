@@ -117,6 +117,13 @@ If any changes are made to `repeaters.json` or to template files, you can regene
 When the competition is over, call `python scripts/update.py --score` to have the index page populated with the leaderboards, rather than ongoing contest information.
 
 
+## Rolling over for a new year
+
+To start a new year's contest, call `python scripts/update.py --rollover`. It archives last year's contest by copying `assets/repeaters.json` to `<last year>/repeaters.json` and moving `results/*.csv` to `<last year>/results/`, then regenerates the site with the "join the contest" homepage (removing `results/*.md`). It refuses to run if `<last year>/` already exists.
+
+The contest dates are not updated automatically; edit them by hand in `assets/templates/index.md`, `assets/templates/rules.md`, and `logging.md`, then run `python scripts/update.py --regen`.
+
+
 ## Contributing
 
 Contributions are welcome -- please open a pull request against a feature branch, or open an issue if you have any questions or suggestions. Note that any changes to `.md` files should be made to the respective template files in `assets/templates/` and not to the root `.md` files, as the latter are generated programmatically.

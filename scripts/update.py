@@ -2,7 +2,9 @@ import argparse
 import csv
 import math
 import re
+import shutil
 import sys
+from datetime import datetime
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -70,6 +72,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
             "exclude": exclude,
             "regen": False,
             "score": False,
+            "rollover": False,
         }
 
         return SimpleNamespace(**args)
@@ -93,7 +96,9 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--url", type=str, default=None)
     parser.add_argument("--exclude", action="store_true")
     parser.add_argument("--regen", action="store_true")
-    parser.add_argument("--score", action="store_true")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--score", action="store_true")
+    mode.add_argument("--rollover", action="store_true")
     return parser.parse_args()
 
 def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
@@ -545,6 +550,29 @@ def generate_repeater_df(
     return df
 
 
+DATE_FILES = ["assets/templates/index.md", "assets/templates/rules.md", "logging.md"]
+
+
+def rollover(now: datetime | None = None) -> None:
+    """
+    Archive last year's contest into a directory named for that year.
+
+    Copies assets/repeaters.json to <year>/repeaters.json and moves results/*.csv to
+    <year>/results/, where <year> is the year before `now` (default: the current time).
+    Exits non-zero without changing anything if <year>/ already exists.
+    """
+    year = (now or datetime.now()).year - 1
+    archive = Path(str(year))
+    if archive.exists():
+        sys.exit(f"{archive}/ already exists; refusing to overwrite an existing archive.")
+
+    repeaters = Path("assets/repeaters.json").read_bytes()  # fail before creating the archive
+    (archive / "results").mkdir(parents=True)
+    (archive / "repeaters.json").write_bytes(repeaters)
+    for file in Path("results").glob("*.csv"):
+        shutil.move(file, archive / "results" / file.name)
+
+
 def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
     """
     Return dataframe with Mode column footnotes removed.
@@ -554,6 +582,9 @@ def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
     args = parse_args()
+    if args.rollover:
+        rollover()
+        args.regen = True
 
     df = generate_repeater_df(args)
     # Remove repeaters not in the contest
@@ -574,3 +605,6 @@ if __name__ == "__main__":
     write_icom_csv(df)
     write_d878_zip(df)
     write_generic_csv(df)
+
+    if args.rollover:
+        print("Rolled over. Now update the contest dates by hand in: " + ", ".join(DATE_FILES))
