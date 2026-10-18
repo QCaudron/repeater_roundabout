@@ -23,6 +23,8 @@ FORMS = {
             "RepeaterBook": "entry.16",
             "Location": "entry.17",
             "Coordinates": "entry.18",
+            "Allow Internet Contacts": "entry.19",
+            "Internet Access": "entry.20",
         },
     },
 }
@@ -109,7 +111,17 @@ def test_write_group_pages_prefills_forms(tmp_path, monkeypatch):
     df = pd.DataFrame(
         [
             repeater("WW7PSR", "52.870", STATUS_RESPONSE_NEEDED, **{"Offset (MHz)": "-1.7"}),
-            repeater("WW7PSR", "146.960", STATUS_IN, **{"RepeaterBook ID": "62", "RepeaterBook State ID": "53"}),
+            repeater(
+                "WW7PSR",
+                "146.960",
+                STATUS_IN,
+                **{
+                    "RepeaterBook ID": "62",
+                    "RepeaterBook State ID": "53",
+                    "Allow Internet Contacts": "Yes",
+                    "Internet Access": "Allstar node 1234",
+                },
+            ),
         ]
     )
     df["RR#"] = df.index + 1
@@ -134,6 +146,8 @@ def test_write_group_pages_prefills_forms(tmp_path, monkeypatch):
         "entry.16": "https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=62",
         "entry.17": "Seattle",
         "entry.18": "47.6395, -122.3693",
+        "entry.19": "Yes",
+        "entry.20": "Allstar node 1234",
     }
     assert got == want
     add = [q for q in found["/repeater/viewform"] if "entry.11" not in q]
@@ -177,3 +191,17 @@ def test_write_map_md_with_no_repeaters(tmp_path, monkeypatch):
 
     assert (tmp_path / "map.md").read_text() == "pins: "
 
+
+def test_write_group_pages_shows_internet_access(tmp_path, monkeypatch):
+    """A group page shows whether each repeater allows internet contacts and how to reach it online."""
+    site(tmp_path, monkeypatch)
+    df = pd.DataFrame(
+        [repeater("W7A", "146.960", STATUS_IN, **{"Allow Internet Contacts": "No", "Internet Access": "Echolink W7A-R"})]
+    )
+    df["RR#"] = df.index + 1
+
+    write_group_pages(df, FORMS)
+    row = next(line for line in (tmp_path / "groups" / "psrg.md").read_text().splitlines() if line.startswith("| 1 "))
+
+    assert "| No " in row
+    assert "Echolink W7A-R" in row

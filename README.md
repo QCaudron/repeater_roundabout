@@ -31,6 +31,8 @@ To add a repeater, you should call `python scripts/update.py`. This script will 
 - Longitude (`--lon`): The repeater's longitude, in decimal degrees (for example, `-122.3321`)
 - Long name (`--long_name`): The full name of the group that runs the repeater (for example, `Puget Sound Repeater Group` or `Shoreline Amateur Communication Society`)
 - Website (`--url`): The URL of the group's website (for example, `https://psrg.org` or `https://shorelineacs.org`); please include the `http://` prefix
+- Allow Internet Contacts (`--internet_contacts`): Whether contacts made via Allstar, Echolink, YSF, D-Star, or similar count (for example, `Yes`)
+- Internet Access (`--internet_access`): How to reach the repeater on the Internet (for example, `Allstar node 1234`)
 - RepeaterBook ID (`--id`): The ID of the repeater on RepeaterBook (an integer you can find at the very end of the URL)
 - RepeaterBook State ID (`--state_id`): The State ID of the repeater on RepeaterBook (an integer you can find after `state_id=` in the URL).  Defaults to Washington (53) if not specified.
 - WWARA Data Export File (`--wwara_csv`): The path to a [WWARA's repeater CSV file][wwara-data]. All repeaters matching the `--call` and optional `--freq` flags will be imported.

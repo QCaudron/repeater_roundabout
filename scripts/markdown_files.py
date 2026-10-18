@@ -16,6 +16,7 @@ from score import score_competition
 STATUS_RESPONSE_NEEDED = "response_needed"
 STATUS_IN = "in"
 STATUS_OUT = "out"
+INTERNET_FIELDS = ["Allow Internet Contacts", "Internet Access"]
 STATUS_LABELS = {STATUS_RESPONSE_NEEDED: "Response needed", STATUS_IN: "In", STATUS_OUT: "Out"}
 
 ongoing_index_content = """
@@ -336,6 +337,7 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
                 forms["repeater"],
                 {
                     **{k: text(r[k]) for k in ["Callsign", "Output (MHz)", "Offset (MHz)", "Tone (Hz)", "Location"]},
+                    **{k: text(r.get(k)) for k in INTERNET_FIELDS},
                     "Group Name": name,
                     "Website": text(r["Website"]),
                     "RepeaterBook": repeaterbook_url(r),
@@ -347,6 +349,7 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
                 {
                     "RR#": r["RR#"] if status == STATUS_IN else "",
                     **{k: cell(r[k]) for k in ["Callsign", "Location", "Mode", "Output (MHz)", "Offset (MHz)", "Tone (Hz)"]},
+                    **{k: cell(r.get(k)) for k in INTERNET_FIELDS},
                     "Status": STATUS_LABELS[status],
                     "": f"[Correct]({correction})",
                 }

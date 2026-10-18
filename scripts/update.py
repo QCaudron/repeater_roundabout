@@ -59,6 +59,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
         lon = input("Longitude: ") or None
         long_name = input("Long Name: ") or None
         url = input("Website: ") or None
+        internet_contacts = input("Allow Internet Contacts: ") or None
+        internet_access = input("Internet Access: ") or None
 
         args = {
             "name": name,
@@ -76,6 +78,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
             "lon": lon,
             "long_name": long_name,
             "url": url,
+            "internet_contacts": internet_contacts,
+            "internet_access": internet_access,
             "regen": False,
             "status": None,
             "score": False,
@@ -101,6 +105,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--lon", type=float, default=None)
     parser.add_argument("--long_name", type=str, default=None)
     parser.add_argument("--url", type=str, default=None)
+    parser.add_argument("--internet_contacts", type=str, default=None)
+    parser.add_argument("--internet_access", type=str, default=None)
     parser.add_argument("--regen", action="store_true")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--score", action="store_true")
@@ -322,6 +328,8 @@ def repeater_from_args(args: argparse.Namespace | SimpleNamespace) -> dict:
         "Coordinates": [float(args.lat), float(args.lon)] if args.lat and args.lon else None,
         "Long Name": args.long_name,
         "Website": args.url,
+        "Allow Internet Contacts": args.internet_contacts,
+        "Internet Access": args.internet_access,
     }
 
     # Remove any empty values

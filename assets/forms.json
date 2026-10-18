@@ -17,7 +17,9 @@
             "Website": "entry.1398317811",
             "RepeaterBook": "entry.1787209425",
             "Location": "entry.258116108",
-            "Coordinates": "entry.65682944"
+            "Coordinates": "entry.65682944",
+            "Allow Internet Contacts": "entry.96766156",
+            "Internet Access": "entry.1370865919"
         }
     }
 }
