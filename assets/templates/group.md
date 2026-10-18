@@ -2,7 +2,10 @@
 title: {{ title }}
 subtitle: {{ subtitle }}
 head-extra: group-head-extra.html
+full-width: true
 ---
+
+<div class="px-md-4" markdown="1">
 
 Club website: {{ website }}
 
@@ -17,3 +20,5 @@ or [tell us about a repeater we're missing]({{ add_form }}).
 
 - Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
 - Repeaters marked **Response needed** are not published until we hear from you.
+
+</div>

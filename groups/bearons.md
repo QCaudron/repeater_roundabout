@@ -2,7 +2,10 @@
 title: "Boeing Employees Amateur Radio Operators North Society"
 subtitle: "Status of BEARONS repeaters"
 head-extra: group-head-extra.html
+full-width: true
 ---
+
+<div class="px-md-4" markdown="1">
 
 Club website: [https://w7flybearons.org](https://w7flybearons.org)
 
@@ -19,3 +22,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 
 - Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
 - Repeaters marked **Response needed** are not published until we hear from you.
+
+</div>

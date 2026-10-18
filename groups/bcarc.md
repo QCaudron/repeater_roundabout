@@ -2,7 +2,10 @@
 title: "Bonner County Amateur Radio Club"
 subtitle: "Status of BCARC repeaters"
 head-extra: group-head-extra.html
+full-width: true
 ---
+
+<div class="px-md-4" markdown="1">
 
 Club website: [https://k7jep.org](https://k7jep.org)
 
@@ -20,3 +23,5 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 
 - Repeaters marked **In** appear on the public [repeaters page](/repeaters) under the RR# shown.
 - Repeaters marked **Response needed** are not published until we hear from you.
+
+</div>
