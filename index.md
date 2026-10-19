@@ -14,7 +14,7 @@ Last year, we made it into [QST Magazine](assets/RR.pdf). Light up the airwaves 
 
 **The Repeater Roundabout will be held during the weekend of November 14th and 15th, 2026.**
 
-> This page was last updated on Sunday October 18 at 19:13.
+> This page was last updated on Monday October 19 at 02:29.
 
 ---
 
