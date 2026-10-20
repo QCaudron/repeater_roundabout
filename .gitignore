@@ -8,3 +8,4 @@ node_modules/
 uv.lock
 .venv
 assets/programming_files/d878*.csv
+data/
