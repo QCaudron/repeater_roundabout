@@ -54,7 +54,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
         freq = input("Frequency (MHz): ") or None
         offset = input("Offset (MHz): ") or None
         tone = input("Tone (Hz): ") or None
-        mode = input("Mode [FM]: ") or "FM"
+        mode = input("Mode [FM]: ") or None
         lat = input("Latitude: ") or None
         lon = input("Longitude: ") or None
         long_name = input("Long Name: ") or None
@@ -85,6 +85,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
             "score": False,
             "rollover": False,
             "update_all": False,
+            "status_csv": None,
+            "repeater_csv": None,
         }
 
         return SimpleNamespace(**args)
@@ -101,7 +103,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--freq", type=str, default=None)
     parser.add_argument("--offset", type=str, default=None)
     parser.add_argument("--tone", type=str, default=None)
-    parser.add_argument("--mode", type=str, default="FM")
+    parser.add_argument("--mode", type=str, default=None)
     parser.add_argument("--lat", type=float, default=None)
     parser.add_argument("--lon", type=float, default=None)
     parser.add_argument("--long_name", type=str, default=None)
@@ -114,6 +116,10 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     mode.add_argument("--rollover", action="store_true")
     mode.add_argument("--status", choices=[STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED])
     mode.add_argument("--update_all", action="store_true")
+    mode.add_argument("--status_csv", type=str, default=None,
+                       help="Club survey CSV: bulk-update status/callsign/tone/internet-access")
+    mode.add_argument("--repeater_csv", type=str, default=None,
+                       help="Single-repeater submission CSV: add or edit one repeater per row")
     return parser.parse_args()
 
 def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
@@ -431,6 +437,9 @@ def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, 
     for f in ["Group Name", "Location", "Long Name", "Website"]:
         r[f] = args.get(f) or prior.get(f) or wwara.get(f) or repeaterbook.get(f)
 
+    # Default to FM when no source specifies a mode.
+    r["Mode"] = r.get("Mode") or "FM"
+
     # A newly added repeater hasn't been confirmed for this year, whatever its prior status
     r.pop("Exclude", None)
     r["Status"] = STATUS_RESPONSE_NEEDED
@@ -664,6 +673,33 @@ def rollover(now: datetime | None = None) -> None:
     df.to_json(REPEATERS_JSON, orient="records", indent=4)
 
 
+def find_repeater(df: pd.DataFrame, call: str, freq: str | None) -> int:
+    """
+    Return the index of the repeater matching call (and freq, if given).
+
+    Raises ValueError unless exactly one repeater matches.
+    """
+    match = df["Callsign"].str.upper() == call.upper()
+    if freq:
+        match &= df["Output (MHz)"].map(lambda f: freq_match(freq, f))
+    if match.sum() != 1:
+        raise ValueError(f"Expected one repeater matching {call} {freq or ''}, found {match.sum()}")
+    return df.index[match][0]
+
+
+def update_fields(df: pd.DataFrame, call: str, freq: str | None, fields: dict) -> pd.DataFrame:
+    """
+    Return df with the repeater matching call (and freq, if given) overwritten with fields.
+
+    Raises ValueError unless exactly one repeater matches.
+    """
+    df = df.reset_index(drop=True)
+    i = find_repeater(df, call, freq)
+    for col, val in fields.items():
+        df.at[i, col] = val
+    return df
+
+
 def set_status(df: pd.DataFrame, call: str, freq: str | None, status: str) -> pd.DataFrame:
     """
     Return df with the status of the repeater matching call (and freq, if given) changed.
@@ -676,13 +712,7 @@ def set_status(df: pd.DataFrame, call: str, freq: str | None, status: str) -> pd
     Raises ValueError unless exactly one repeater matches.
     """
     df = df.reset_index(drop=True)
-    match = df["Callsign"].str.upper() == call.upper()
-    if freq:
-        match &= df["Output (MHz)"].map(lambda f: freq_match(freq, f))
-    if match.sum() != 1:
-        raise ValueError(f"Expected one repeater matching {call} {freq or ''}, found {match.sum()}")
-
-    i = df.index[match][0]
+    i = find_repeater(df, call, freq)
     old = df.at[i, "Status"] if pd.notna(df.at[i, "Status"]) else STATUS_RESPONSE_NEEDED
     df.at[i, "Status"] = status
     if old != STATUS_RESPONSE_NEEDED or status == STATUS_RESPONSE_NEEDED:
@@ -695,6 +725,241 @@ def set_status(df: pd.DataFrame, call: str, freq: str | None, status: str) -> pd
         confirmed = rest.index[rest["Status"] == STATUS_IN]
         at = confirmed[-1] + 1 if len(confirmed) else 0
     return pd.concat([rest.iloc[:at], row, rest.iloc[at:]], ignore_index=True)
+
+
+def update_status_and_fields(
+    df: pd.DataFrame, call: str, freq: str | None, status: str, fields: dict
+) -> pd.DataFrame:
+    """
+    Set a repeater's status and, if given, its other fields in one call.
+
+    call and freq are only used to locate the repeater; any Callsign/Output (MHz)
+    in `fields` is ignored so the match keys the user typed don't clobber the
+    stored values. Raises ValueError unless exactly one repeater matches.
+    """
+    df = set_status(df, call, freq, status)
+    fields = {k: v for k, v in fields.items() if k not in ("Callsign", "Output (MHz)")}
+    if fields:
+        df = update_fields(df, call, freq, fields)
+    return df
+
+
+def find_col(fieldnames: list[str], *keywords: str) -> str:
+    """
+    Return the first fieldname matching all keywords (case-insensitive). A keyword
+    prefixed with "^" must match the start of the fieldname; otherwise it may appear
+    anywhere.
+
+    Raises KeyError if no fieldname matches.
+    """
+    for name in fieldnames:
+        low = name.lower()
+        if all(low.startswith(k[1:].lower()) if k.startswith("^") else k.lower() in low for k in keywords):
+            return name
+    raise KeyError(f"no column matching {keywords!r} among {fieldnames!r}")
+
+
+def looks_like_internet_id(s: str | None) -> bool:
+    """
+    Returns True if s looks like an actual Allstar/EchoLink/YSF/D-Star identifier
+    (a node number, or an EchoLink-style "CALL-L") rather than a stray answer
+    like "No" or "N/A".
+    """
+    if not s:
+        return False
+    s = s.strip()
+    if not s or s.lower() in {"no", "n/a", "na", "none", "-"}:
+        return False
+    return bool(re.search(r"\d{3,}", s)) or bool(re.fullmatch(r"[A-Za-z0-9]{3,8}-[A-Za-z]", s))
+
+
+REPEATER_LINE_RE = re.compile(
+    r"(?P<call>[A-Za-z][A-Za-z0-9]{2,6})\s+(?P<freq>\d{2,4}\.\d{1,4})\s*[+-]?\s*"
+    r"(?:T\s*(?P<tone>\d{2,3}(?:\.\d)?)|(?P<dcs>D\d{2,3}[NI]?))?"
+)
+
+
+def parse_repeater_lines(text: str) -> list[dict]:
+    """
+    Loose-parse a free-form "Repeaters" cell (one repeater per line, e.g.
+    "- WA7SAR 146.860- T123.0") into a list of {"Callsign", "Output (MHz)", "Tone (Hz)"}
+    dicts. Lines that don't look like a repeater are skipped.
+    """
+    repeaters = []
+    for line in (text or "").splitlines():
+        m = REPEATER_LINE_RE.search(line)
+        if not m:
+            continue
+        tone = m.group("tone") or m.group("dcs")
+        repeaters.append({
+            "Callsign": m.group("call").upper(),
+            "Output (MHz)": m.group("freq"),
+            "Tone (Hz)": tone,
+        })
+    return repeaters
+
+
+def apply_status_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, list[str]]:
+    """
+    Bulk-update repeater status (in/out), callsign, tone, and internet-access fields from
+    a club participation survey CSV: one row per club, with a free-form "Repeaters" cell
+    listing the repeaters the club is responding for.
+
+    Each listed repeater is matched within its club's existing repeaters by frequency
+    (callsigns can drift, so frequency is the stable key). Repeaters that don't match
+    exactly one existing entry are reported as errors and left unchanged.
+
+    Returns the updated DataFrame and a list of error messages.
+    """
+    df = df.reset_index(drop=True)
+    errors = []
+    with open(csv_file, newline="") as f:
+        reader = csv.DictReader(f)
+        group_col = find_col(reader.fieldnames, "club")
+        answer_col = find_col(reader.fieldnames, "can repeater roundabout")
+        repeaters_col = find_col(reader.fieldnames, "^repeaters")
+        allow_col = find_col(reader.fieldnames, "allow contacts")
+        info_col = find_col(reader.fieldnames, "echolink", "info")
+
+        for row in reader:
+            group = (row.get(group_col) or "").strip()
+            status = STATUS_IN if (row.get(answer_col) or "").strip().lower().startswith("y") else STATUS_OUT
+            allow = (row.get(allow_col) or "").strip()
+            info = (row.get(info_col) or "").strip()
+            # Overwrite, rather than strip_empty, so a club clearing their Allstar/Echolink
+            # info (or answering "No") actually clears the stored value.
+            common_fields = {
+                "Allow Internet Contacts": allow,
+                "Internet Access": info if looks_like_internet_id(info) else "",
+            }
+
+            for parsed in parse_repeater_lines(row.get(repeaters_col)):
+                call, freq, tone = parsed["Callsign"], parsed["Output (MHz)"], parsed["Tone (Hz)"]
+                match = (df["Group Name"].str.casefold() == group.casefold()) & \
+                    df["Output (MHz)"].map(lambda f: freq_match(freq, f))
+                if match.sum() != 1:
+                    errors.append(f"{group} {call} {freq}: expected one matching repeater, found {match.sum()}")
+                    continue
+
+                i = df.index[match][0]
+                old_call = df.at[i, "Callsign"]
+                fields = dict(common_fields)
+                if call and call != old_call:
+                    fields["Callsign"] = call
+                if tone is not None and tone != df.at[i, "Tone (Hz)"]:
+                    fields["Tone (Hz)"] = tone
+
+                df = set_status(df, old_call, freq, status)
+                for col in fields:
+                    ensure_col(df, col, default="")
+                df = update_fields(df, old_call, freq, fields)
+
+    return df, errors
+
+
+def parse_repeaterbook_link(url: str) -> tuple[str | None, str | None]:
+    """Extract (state_id, id) from a RepeaterBook details URL, or (None, None) if absent."""
+    state_match = re.search(r"state_id=(\d+)", url or "")
+    id_match = re.search(r"[?&]ID=(\d+)", url or "", re.IGNORECASE)
+    return (state_match.group(1) if state_match else None, id_match.group(1) if id_match else None)
+
+
+def format_offset(offset: str) -> str:
+    """Format an offset in MHz the way the rest of the data does: "+0.6" or "-0.6"."""
+    val = f"{float(offset):.1f}"
+    return val if val.startswith("-") else f"+{val}"
+
+
+def repeater_from_csv_row(row: dict, cols: dict) -> dict:
+    """Build a repeater field dict from one row of the single-repeater submission CSV."""
+    freq = (row.get(cols["freq"]) or "").strip()
+    offset = (row.get(cols["offset"]) or "").strip()
+    coords = (row.get(cols["coords"]) or "").strip()
+    info = (row.get(cols["info"]) or "").strip()
+
+    lat_lon = None
+    if coords:
+        lat, lon = [p.strip() for p in coords.split(",", 1)]
+        lat_lon = [float(lat), float(lon)]
+
+    state_id, rb_id = parse_repeaterbook_link((row.get(cols["rb_link"]) or "").strip())
+
+    repeater = {
+        "Group Name": (row.get(cols["group"]) or "").strip(),
+        "Callsign": (row.get(cols["call"]) or "").strip().upper(),
+        "Output (MHz)": f"{float(freq):.4f}" if freq else None,
+        "Offset (MHz)": format_offset(offset) if offset else None,
+        "Tone (Hz)": (row.get(cols["tone"]) or "").strip(),
+        "Website": (row.get(cols["website"]) or "").strip(),
+        "Location": (row.get(cols["location"]) or "").strip(),
+        "Coordinates": lat_lon,
+        "RepeaterBook State ID": state_id,
+        "RepeaterBook ID": rb_id,
+    }
+    # Overwrite, rather than strip_empty, so a club clearing their Allstar/Echolink info
+    # (or answering "No") actually clears the stored value instead of being dropped by
+    # strip_empty below and leaving the old value in place.
+    repeater = strip_empty(repeater)
+    repeater["Allow Internet Contacts"] = (row.get(cols["allow"]) or "").strip()
+    repeater["Internet Access"] = info if looks_like_internet_id(info) else ""
+    return repeater
+
+
+def apply_repeater_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, list[str]]:
+    """
+    Add or edit repeaters from a single-repeater submission CSV (one row per repeater,
+    with full details: callsign, frequency, offset, tone, location, etc).
+
+    A row matching an existing repeater's callsign and frequency updates it in place;
+    otherwise a new repeater is added with Status set to response-needed.
+
+    Returns the updated DataFrame and a list of error messages (one per row that could
+    not be parsed; such rows are left unapplied).
+    """
+    df = df.reset_index(drop=True)
+    errors = []
+    new_rows = []
+    with open(csv_file, newline="") as f:
+        reader = csv.DictReader(f)
+        cols = {
+            "group": find_col(reader.fieldnames, "club"),
+            "call": find_col(reader.fieldnames, "repeater callsign"),
+            "freq": find_col(reader.fieldnames, "output frequency"),
+            "offset": find_col(reader.fieldnames, "offset"),
+            "tone": find_col(reader.fieldnames, "tone"),
+            "website": find_col(reader.fieldnames, "website"),
+            "rb_link": find_col(reader.fieldnames, "repeaterbook"),
+            "allow": find_col(reader.fieldnames, "allow contacts"),
+            "info": find_col(reader.fieldnames, "echolink", "info"),
+            "location": find_col(reader.fieldnames, "location"),
+            "coords": find_col(reader.fieldnames, "coordinates"),
+        }
+
+        for row in reader:
+            try:
+                repeater = repeater_from_csv_row(row, cols)
+                call, freq = repeater.get("Callsign"), repeater.get("Output (MHz)")
+                if not call or not freq:
+                    raise ValueError("missing callsign or output frequency")
+
+                match = (df["Callsign"].str.upper() == call) & df["Output (MHz)"].map(lambda f: freq_match(freq, f))
+                if match.sum() > 1:
+                    raise ValueError(f"multiple existing repeaters match {call} {freq}")
+                elif match.sum() == 1:
+                    i = df.index[match][0]
+                    fields = {k: v for k, v in repeater.items() if k not in ("Callsign", "Output (MHz)")}
+                    if fields:
+                        df = update_fields(df, call, freq, fields)
+                else:
+                    repeater["Mode"] = repeater.get("Mode") or "FM"
+                    repeater["Status"] = STATUS_RESPONSE_NEEDED
+                    new_rows.append(strip_empty(repeater))
+            except Exception as e:
+                errors.append(f"{row}: {e}")
+
+    if new_rows:
+        df = pd.concat([df, pd.DataFrame.from_records(new_rows)], ignore_index=True)
+    return df.reset_index(drop=True), errors
 
 
 def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
@@ -712,7 +977,9 @@ if __name__ == "__main__":
     if args.status:
         repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
         try:
-            repeaters = set_status(repeaters, args.call or "", args.freq, args.status)
+            repeaters = update_status_and_fields(
+                repeaters, args.call or "", args.freq, args.status, repeater_from_args(args)
+            )
         except ValueError as e:
             sys.exit(str(e))
         repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
@@ -723,6 +990,24 @@ if __name__ == "__main__":
         repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
         if errors:
             print(f"{len(errors)} repeater(s) failed to update:", file=sys.stderr)
+            for e in errors:
+                print(f"  - {e}", file=sys.stderr)
+        args.regen = True
+    if args.status_csv:
+        repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
+        repeaters, errors = apply_status_csv(repeaters, args.status_csv)
+        repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+        if errors:
+            print(f"{len(errors)} repeater(s) failed to update:", file=sys.stderr)
+            for e in errors:
+                print(f"  - {e}", file=sys.stderr)
+        args.regen = True
+    if args.repeater_csv:
+        repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
+        repeaters, errors = apply_repeater_csv(repeaters, args.repeater_csv)
+        repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+        if errors:
+            print(f"{len(errors)} row(s) failed to apply:", file=sys.stderr)
             for e in errors:
                 print(f"  - {e}", file=sys.stderr)
         args.regen = True

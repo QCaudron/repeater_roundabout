@@ -5,7 +5,19 @@ import pandas as pd
 import pytest
 
 from markdown_files import STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED
-from update import merge_repeaters, refresh_repeater, rollover, set_status, update_all_repeaters
+from update import (
+    apply_repeater_csv,
+    apply_status_csv,
+    looks_like_internet_id,
+    merge_repeaters,
+    parse_repeater_lines,
+    refresh_repeater,
+    rollover,
+    set_status,
+    update_all_repeaters,
+    update_fields,
+    update_status_and_fields,
+)
 
 
 def make_site(root):
@@ -127,12 +139,71 @@ def test_set_status_requires_exactly_one_match():
         set_status(df, "W7Z", "146.000", STATUS_OUT)
 
 
+def test_update_fields_overwrites_matching_repeater():
+    """update_fields changes only the given fields on the matching repeater."""
+    df = repeater_list(STATUS_IN, STATUS_IN)
+    df["Internet Access"] = ["No", "No"]
+
+    got = update_fields(df, "W7A", "146.000", {"Internet Access": "Yes"})
+
+    assert got["Internet Access"].tolist() == ["Yes", "No"]
+    assert calls(got) == ["W7A", "W7B"]
+
+
+def test_update_fields_requires_exactly_one_match():
+    """update_fields rejects a callsign/frequency that matches no repeater or more than one."""
+    df = repeater_list(STATUS_IN, STATUS_IN)
+    df.loc[1, "Callsign"] = "W7A"
+
+    with pytest.raises(ValueError):
+        update_fields(df, "W7A", "146.000", {"Internet Access": "Yes"})
+    with pytest.raises(ValueError):
+        update_fields(df, "W7Z", "146.000", {"Internet Access": "Yes"})
+
+
+def test_update_status_and_fields_sets_status_and_other_fields():
+    """update_status_and_fields changes status and other fields on the matching repeater."""
+    df = repeater_list(STATUS_RESPONSE_NEEDED)
+    df["Internet Access"] = ["No"]
+
+    got = update_status_and_fields(df, "W7A", "146.000", STATUS_IN, {"Internet Access": "Yes"})
+
+    assert got["Status"].tolist() == [STATUS_IN]
+    assert got["Internet Access"].tolist() == ["Yes"]
+
+
+def test_update_status_and_fields_ignores_match_keys_in_fields():
+    """Callsign/frequency used to find the repeater are never written back from the raw user input."""
+    df = repeater_list(STATUS_RESPONSE_NEEDED)
+
+    got = update_status_and_fields(
+        df, "w7a", "146.0", STATUS_IN, {"Callsign": "w7a", "Output (MHz)": "146.0"}
+    )
+
+    assert got["Callsign"].tolist() == ["W7A"]
+    assert got["Output (MHz)"].tolist() == ["146.000"]
+
+
 def test_merge_repeaters_starts_as_response_needed():
     """A repeater imported from last year's file needs a fresh response, whatever its status was then."""
     got = merge_repeaters(prior={"Callsign": "W7A", "Status": STATUS_IN, "Exclude": True})
 
     assert got["Status"] == STATUS_RESPONSE_NEEDED
     assert "Exclude" not in got
+
+
+def test_merge_repeaters_defaults_mode_to_fm():
+    """A repeater with no mode from any source defaults to FM."""
+    got = merge_repeaters(args={"Callsign": "W7A"})
+
+    assert got["Mode"] == "FM"
+
+
+def test_merge_repeaters_keeps_wwara_mode():
+    """args no longer forces FM over a mode supplied by another source."""
+    got = merge_repeaters(args={"Callsign": "W7A"}, wwara={"Mode": "NBFM[^nbfm]"})
+
+    assert got["Mode"] == "NBFM[^nbfm]"
 
 
 def test_refresh_repeater_keeps_status_and_exclude():
@@ -227,3 +298,152 @@ def test_update_all_repeaters_aggregates_errors_and_continues(monkeypatch):
     assert "W7A" in errors[0]
     assert got.loc[0, "Tone (Hz)"] != "103.5"  # left unchanged after the failure
     assert got.loc[1, "Tone (Hz)"] == "103.5"  # second repeater still updated
+
+
+def test_parse_repeater_lines_ctcss_and_dcs():
+    """parse_repeater_lines extracts callsign, frequency, and tone (CTCSS or DCS) from each line."""
+    text = "- WA7SAR 146.860- T123.0\n- WA7SAR 147.080+ T123.0\n- N7ABC 444.600+ D023N"
+
+    got = parse_repeater_lines(text)
+
+    assert got == [
+        {"Callsign": "WA7SAR", "Output (MHz)": "146.860", "Tone (Hz)": "123.0"},
+        {"Callsign": "WA7SAR", "Output (MHz)": "147.080", "Tone (Hz)": "123.0"},
+        {"Callsign": "N7ABC", "Output (MHz)": "444.600", "Tone (Hz)": "D023N"},
+    ]
+
+
+def test_parse_repeater_lines_toneless_and_blank():
+    """A toneless repeater parses with Tone (Hz) None; blank lines are skipped."""
+    got = parse_repeater_lines("- W7XYZ 146.520\n\n")
+
+    assert got == [{"Callsign": "W7XYZ", "Output (MHz)": "146.520", "Tone (Hz)": None}]
+
+
+def test_looks_like_internet_id():
+    """Node numbers and EchoLink-style callsign-node ids pass; "No"/blank/junk don't."""
+    assert looks_like_internet_id("47909")
+    assert looks_like_internet_id("WA7SAR-L")
+    assert not looks_like_internet_id("No")
+    assert not looks_like_internet_id("")
+    assert not looks_like_internet_id(None)
+    assert not looks_like_internet_id("N/A")
+
+
+def test_apply_status_csv_updates_status_callsign_and_tone(tmp_path):
+    """A survey row flips status for every listed repeater and corrects a drifted callsign/tone."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "WA7OLD", "Output (MHz)": "146.860", "Tone (Hz)": "100.0",
+         "Group Name": "YCRA", "Status": STATUS_RESPONSE_NEEDED},
+    ])
+    csv_file = tmp_path / "status.csv"
+    csv_file.write_text(
+        "Timestamp,Your Email,Club / Repeater Group,"
+        "Can Repeater Roundabout participants make contacts on your repeaters?,"
+        '"Repeaters (if only some are available, delete any we should avoid)",'
+        "Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,"
+        "Allstar/Echolink info (if applicable)\n"
+        '10/19/2026,kb7hdx@gmail.com,YCRA,Yes,"- WA7SAR 146.860- T123.0",No,\n'
+    )
+
+    got, errors = apply_status_csv(df, str(csv_file))
+
+    assert errors == []
+    assert got.loc[0, "Status"] == STATUS_IN
+    assert got.loc[0, "Callsign"] == "WA7SAR"
+    assert got.loc[0, "Tone (Hz)"] == "123.0"
+    assert got.loc[0, "Allow Internet Contacts"] == "No"
+    assert got.loc[0, "Internet Access"] == ""
+
+
+def test_apply_status_csv_reports_unmatched_repeater(tmp_path):
+    """A listed repeater that doesn't match exactly one existing repeater in its group is an error."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "WA7SAR", "Output (MHz)": "146.860", "Tone (Hz)": "123.0",
+         "Group Name": "YCRA", "Status": STATUS_RESPONSE_NEEDED},
+    ])
+    csv_file = tmp_path / "status.csv"
+    csv_file.write_text(
+        "Club / Repeater Group,Can Repeater Roundabout participants make contacts on your repeaters?,"
+        "Repeaters,Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info\n"
+        '"YCRA","Yes","- WA7SAR 999.999 T123.0","No",\n'
+    )
+
+    got, errors = apply_status_csv(df, str(csv_file))
+
+    assert len(errors) == 1
+    assert got.loc[0, "Status"] == STATUS_RESPONSE_NEEDED
+
+
+def test_apply_repeater_csv_edits_existing_repeater(tmp_path):
+    """A row matching an existing callsign/frequency updates it in place rather than adding a new one."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7DX", "Output (MHz)": "147.0000", "Offset (MHz)": "-0.6", "Tone (Hz)": "100.0",
+         "Group Name": "WWDXC", "Status": STATUS_IN, "Location": "", "Coordinates": None},
+    ])
+    csv_file = tmp_path / "repeater.csv"
+    csv_file.write_text(
+        "Timestamp,Your Email,Club / Group Name,Repeater Callsign,Output Frequency (MHz),Offset (MHz),"
+        "Tone (Hz or Dnnn for DCS),Club / Group Website,Link to repeater on RepeaterBook,"
+        "Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info (if applicable),"
+        '"Approximate Location (e.g. Capitol Hill, Seattle, WA)","Approximate Coordinates (e.g. 47.6395, -122.3693)"\n'
+        "10/19/2026,rfanfant@hotmail.com,WWDXC,W7DX,147,-0.6,103.5,https://www.wwdxc.org/,,"
+        "Yes,,Redmond,\"47.67459, -122.05393\"\n"
+    )
+
+    got, errors = apply_repeater_csv(df, str(csv_file))
+
+    assert errors == []
+    assert len(got) == 1
+    assert got.loc[0, "Tone (Hz)"] == "103.5"
+    assert got.loc[0, "Status"] == STATUS_IN  # existing status untouched
+    assert got.loc[0, "Location"] == "Redmond"
+    assert got.loc[0, "Coordinates"] == [47.67459, -122.05393]
+
+
+def test_apply_repeater_csv_clears_internet_access_when_answer_is_no(tmp_path):
+    """Editing an existing repeater to answer "No" clears a previously-set Internet Access value."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7DX", "Output (MHz)": "147.0000", "Offset (MHz)": "-0.6", "Tone (Hz)": "100.0",
+         "Group Name": "WWDXC", "Status": STATUS_IN,
+         "Allow Internet Contacts": "Yes", "Internet Access": "47909"},
+    ])
+    csv_file = tmp_path / "repeater.csv"
+    csv_file.write_text(
+        "Club / Group Name,Repeater Callsign,Output Frequency (MHz),Offset (MHz),"
+        "Tone (Hz or Dnnn for DCS),Club / Group Website,Link to repeater on RepeaterBook,"
+        "Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info (if applicable),"
+        '"Approximate Location (e.g. Capitol Hill, Seattle, WA)","Approximate Coordinates (e.g. 47.6395, -122.3693)"\n'
+        "WWDXC,W7DX,147,-0.6,103.5,https://www.wwdxc.org/,,No,,Redmond,\n"
+    )
+
+    got, errors = apply_repeater_csv(df, str(csv_file))
+
+    assert errors == []
+    assert got.loc[0, "Allow Internet Contacts"] == "No"
+    assert got.loc[0, "Internet Access"] == ""
+
+
+def test_apply_repeater_csv_adds_new_repeater(tmp_path):
+    """A row with no matching callsign/frequency is added as a new repeater needing a response."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7DX", "Output (MHz)": "147.0000", "Group Name": "WWDXC", "Status": STATUS_IN},
+    ])
+    csv_file = tmp_path / "repeater.csv"
+    csv_file.write_text(
+        "Club / Group Name,Repeater Callsign,Output Frequency (MHz),Offset (MHz),"
+        "Tone (Hz or Dnnn for DCS),Club / Group Website,Link to repeater on RepeaterBook,"
+        "Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info (if applicable),"
+        '"Approximate Location (e.g. Capitol Hill, Seattle, WA)","Approximate Coordinates (e.g. 47.6395, -122.3693)"\n'
+        "WWDXC,W7NEW,440.000,5.0,DCS123,https://www.wwdxc.org/,,No,,Somewhere,\n"
+    )
+
+    got, errors = apply_repeater_csv(df, str(csv_file))
+
+    assert errors == []
+    assert len(got) == 2
+    new = got.loc[got["Callsign"] == "W7NEW"].iloc[0]
+    assert new["Output (MHz)"] == "440.0000"
+    assert new["Offset (MHz)"] == "+5.0"
+    assert new["Status"] == STATUS_RESPONSE_NEEDED
+    assert new["Mode"] == "FM"
