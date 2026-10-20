@@ -7,13 +7,13 @@ full-width: true
 
 <div class="px-md-4" markdown="1">
 
-Club website: {{ website }}
-
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
-**[let us know whether Repeater Roundabout participants may make contacts on them]({{ group_form }})**.
+**[click this link let us know whether Repeater Roundabout participants may make contacts on them]({{ group_form }})**.
 
 Is something wrong? Use the **Update** link next to a repeater to send us updated details,
 or [tell us about a repeater we're missing]({{ add_form }}).
+
+Club website: {{ website }}
 
 {{ conflicts }}
 {{ table }}
