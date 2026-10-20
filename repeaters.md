@@ -24,11 +24,17 @@ and make analog contacts when the repeater is not busy.
 Get started by [programming your radio](/files), and check out the repeaters' locations on the
 [repeater map](/map).
 
-We're confirming repeaters for this year's Repeater Roundabout.  Check back soon!
+| RR#   | Group   | Callsign   | Location                  | Mode   |   Output (MHz) |   Offset (MHz) |   Tone (Hz) |
+|:------|:--------|:-----------|:--------------------------|:-------|---------------:|---------------:|------------:|
+| 1     | PSRG    | WW7PSR     | Capitol Hill, Seattle, WA | FM     |       146.9600 |           -0.6 |       103.5 |
+| 2     | PSRG    | WW7PSR     | Seattle                   | FM     |        52.8700 |           -1.7 |       103.5 |
 
 ---
 
 ### Clubs and repeater associations
+
+PSRG
+: [Puget Sound Repeater Group](https://web.psrg.org/)
 
 
 

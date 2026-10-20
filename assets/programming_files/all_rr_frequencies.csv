@@ -1,1 +1,3 @@
 RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,RepeaterBook ID,RepeaterBook State ID,Latitude,Longitude
+1,WW7PSR,146.9600,-0.6,103.5,"Capitol Hill, Seattle, WA",FM,Puget Sound Repeater Group,https://web.psrg.org/,,,47.6395,-122.3693
+2,WW7PSR,52.8700,-1.7,103.5,Seattle,FM,Puget Sound Repeater Group,https://web.psrg.org/,,,47.62384,-122.31519

@@ -7,13 +7,13 @@ full-width: true
 
 <div class="px-md-4" markdown="1">
 
-Club website: [https://www.scarcwa.org/](https://www.scarcwa.org/)
-
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
-**[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=SCARC&entry.1239643054=-+W7PIG+147.3600%2B+T127.3%0A-+W7PIG+223.8800-+T103.5%0A-+W7PIG+441.0500%2B+T127.3)**.
+**[click this link let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=SCARC&entry.1239643054=-+W7PIG+147.3600%2B+T127.3%0A-+W7PIG+223.8800-+T103.5%0A-+W7PIG+441.0500%2B+T127.3)**.
 
 Is something wrong? Use the **Update** link next to a repeater to send us updated details,
 or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.697760071=SCARC&entry.1398317811=https%3A%2F%2Fwww.scarcwa.org%2F).
+
+Club website: [https://www.scarcwa.org/](https://www.scarcwa.org/)
 
 
 | RR#   | Callsign   | Location          | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status          |                                                                                                                                                                                                                                                                                                                                                                       |

@@ -7,13 +7,13 @@ full-width: true
 
 <div class="px-md-4" markdown="1">
 
-Club website: [https://www.qrz.com/db/k7ch](https://www.qrz.com/db/k7ch)
-
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
-**[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=K7CH&entry.1239643054=-+K7CH+53.0300-+T114.8%0A-+K7CH+440.6500%2B+T100%0A-+K7CH+927.2500-+T114.8%0A-+K7CH+927.9250-+T114.8%0A-+K7CH+444.450%2B+T100%0A-+KK7DFL+145.2750-+T100)**.
+**[click this link let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=K7CH&entry.1239643054=-+K7CH+53.0300-+T114.8%0A-+K7CH+440.6500%2B+T100%0A-+K7CH+927.2500-+T114.8%0A-+K7CH+927.9250-+T114.8%0A-+K7CH+444.450%2B+T100%0A-+KK7DFL+145.2750-+T100)**.
 
 Is something wrong? Use the **Update** link next to a repeater to send us updated details,
 or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.697760071=K7CH&entry.1398317811=https%3A%2F%2Fwww.qrz.com%2Fdb%2Fk7ch).
+
+Club website: [https://www.qrz.com/db/k7ch](https://www.qrz.com/db/k7ch)
 
 > **Please check:** we have more than one of your group's names: Carl K7CH&#x27;s repeater system; K7CH
 

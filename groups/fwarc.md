@@ -7,13 +7,13 @@ full-width: true
 
 <div class="px-md-4" markdown="1">
 
-Club website: [https://fwarc.org/repeaters](https://fwarc.org/repeaters)
-
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
-**[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=FWARC&entry.1239643054=-+WA7FW+146.7600-+T103.5%0A-+WA7FW+147.0400%2B+T103.5%0A-+WA7FW+442.9250%2B+D036%0A-+WA7FW+442.9500%2B+T103.5)**.
+**[click this link let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=FWARC&entry.1239643054=-+WA7FW+146.7600-+T103.5%0A-+WA7FW+147.0400%2B+T103.5%0A-+WA7FW+442.9250%2B+D036%0A-+WA7FW+442.9500%2B+T103.5)**.
 
 Is something wrong? Use the **Update** link next to a repeater to send us updated details,
 or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.697760071=FWARC&entry.1398317811=https%3A%2F%2Ffwarc.org%2Frepeaters).
+
+Club website: [https://fwarc.org/repeaters](https://fwarc.org/repeaters)
 
 
 | RR#   | Callsign   | Location        | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status          |                                                                                                                                                                                                                                                                                                                                                                          |

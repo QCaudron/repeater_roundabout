@@ -7,13 +7,13 @@ full-width: true
 
 <div class="px-md-4" markdown="1">
 
-Club website: [https://www.seattleacs.org/](https://www.seattleacs.org/)
-
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
-**[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=Seattle+ACS&entry.1239643054=-+W7ACS+440.5250%2B+T123%0A-+W7ACS+440.6000%2B+T141.3%0A-+W7ACS+442.3000%2B+T141.3%0A-+W7ACS+442.8750%2B+T141.3%0A-+W7ACS+443.0250%2B+T123%0A-+W7ACS+443.2000%2B+T141.3%0A-+W7ACS+443.4750%2B+T141.3%0A-+W7ACS+443.6500%2B+T141.3%0A-+W7ACS+444.5500%2B+T141.3)**.
+**[click this link let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=Seattle+ACS&entry.1239643054=-+W7ACS+440.5250%2B+T123%0A-+W7ACS+440.6000%2B+T141.3%0A-+W7ACS+442.3000%2B+T141.3%0A-+W7ACS+442.8750%2B+T141.3%0A-+W7ACS+443.0250%2B+T123%0A-+W7ACS+443.2000%2B+T141.3%0A-+W7ACS+443.4750%2B+T141.3%0A-+W7ACS+443.6500%2B+T141.3%0A-+W7ACS+444.5500%2B+T141.3)**.
 
 Is something wrong? Use the **Update** link next to a repeater to send us updated details,
 or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.697760071=Seattle+ACS&entry.1398317811=https%3A%2F%2Fwww.seattleacs.org%2F).
+
+Club website: [https://www.seattleacs.org/](https://www.seattleacs.org/)
 
 
 | RR#   | Callsign   | Location         | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status          |                                                                                                                                                                                                                                                                                                                                                                              |

@@ -13,7 +13,7 @@
         "Mode":"FM",
         "Long Name":"Puget Sound Repeater Group",
         "Website":"https:\/\/web.psrg.org\/",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null
     },
@@ -31,7 +31,7 @@
         "Mode":"FM",
         "Long Name":"Puget Sound Repeater Group",
         "Website":"https:\/\/web.psrg.org\/",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null
     },

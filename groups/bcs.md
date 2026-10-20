@@ -7,13 +7,13 @@ full-width: true
 
 <div class="px-md-4" markdown="1">
 
-Club website: [https://bellevuewa.gov/volunteering/bellevue-communications-support](https://bellevuewa.gov/volunteering/bellevue-communications-support)
-
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
-**[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=BCS&entry.1239643054=-+K7BEL+441.1000%2B+T156.7)**.
+**[click this link let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=BCS&entry.1239643054=-+K7BEL+441.1000%2B+T156.7)**.
 
 Is something wrong? Use the **Update** link next to a repeater to send us updated details,
 or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.697760071=BCS&entry.1398317811=https%3A%2F%2Fbellevuewa.gov%2Fvolunteering%2Fbellevue-communications-support).
+
+Club website: [https://bellevuewa.gov/volunteering/bellevue-communications-support](https://bellevuewa.gov/volunteering/bellevue-communications-support)
 
 
 | RR#   | Callsign   | Location     | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |

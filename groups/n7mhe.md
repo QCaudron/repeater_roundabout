@@ -7,13 +7,13 @@ full-width: true
 
 <div class="px-md-4" markdown="1">
 
-Club website: [https://www.qrz.com/db/N7MHE](https://www.qrz.com/db/N7MHE)
-
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
-**[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=N7MHE&entry.1239643054=-+N7MHE+145.350-+T100.0%0A-+N7MHE+146.70-+T100.0)**.
+**[click this link let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=N7MHE&entry.1239643054=-+N7MHE+145.350-+T100.0%0A-+N7MHE+146.70-+T100.0)**.
 
 Is something wrong? Use the **Update** link next to a repeater to send us updated details,
 or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.697760071=N7MHE&entry.1398317811=https%3A%2F%2Fwww.qrz.com%2Fdb%2FN7MHE).
+
+Club website: [https://www.qrz.com/db/N7MHE](https://www.qrz.com/db/N7MHE)
 
 
 | RR#   | Callsign   | Location       | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |

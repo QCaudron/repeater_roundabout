@@ -7,13 +7,13 @@ full-width: true
 
 <div class="px-md-4" markdown="1">
 
-Club website: [http://sjcars.org](http://sjcars.org)
-
 Thank you for supporting the Repeater Roundabout! Please review the repeaters below, then
-**[let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=SJCARS&entry.1239643054=-+N7JN+146.7000-+T131.8%0A-+N7JN+224.4800-+T103.5%0A-+N7JN+443.4500%2B+T131.8)**.
+**[click this link let us know whether Repeater Roundabout participants may make contacts on them](https://docs.google.com/forms/d/e/1FAIpQLSdpUy9FZv2HqcEDBjawkM-I4yMUCPrxBHv3nNbhOyw3E0OllQ/viewform?usp=pp_url&entry.141345059=SJCARS&entry.1239643054=-+N7JN+146.7000-+T131.8%0A-+N7JN+224.4800-+T103.5%0A-+N7JN+443.4500%2B+T131.8)**.
 
 Is something wrong? Use the **Update** link next to a repeater to send us updated details,
 or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.697760071=SJCARS&entry.1398317811=http%3A%2F%2Fsjcars.org).
+
+Club website: [http://sjcars.org](http://sjcars.org)
 
 
 | RR#   | Callsign   | Location         | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |

@@ -1,1 +1,3 @@
-""
+CH No,Name,Mode,Frequency,Dup,Offset,RPT1 Call Sign,RPT2 Call Sign,Filter,TONE,Repeater Tone,DTCS Code
+1,WW7PSR,FM,146.96,DUP-,0.6,,,1,TONE,103.5Hz,
+2,WW7PSR,FM,52.87,DUP-,1.7,,,1,TONE,103.5Hz,
