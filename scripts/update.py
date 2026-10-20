@@ -54,7 +54,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
         freq = input("Frequency (MHz): ") or None
         offset = input("Offset (MHz): ") or None
         tone = input("Tone (Hz): ") or None
-        mode = input("Mode [FM]: ") or "FM"
+        mode = input("Mode [FM]: ") or None
         lat = input("Latitude: ") or None
         lon = input("Longitude: ") or None
         long_name = input("Long Name: ") or None
@@ -101,7 +101,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--freq", type=str, default=None)
     parser.add_argument("--offset", type=str, default=None)
     parser.add_argument("--tone", type=str, default=None)
-    parser.add_argument("--mode", type=str, default="FM")
+    parser.add_argument("--mode", type=str, default=None)
     parser.add_argument("--lat", type=float, default=None)
     parser.add_argument("--lon", type=float, default=None)
     parser.add_argument("--long_name", type=str, default=None)
@@ -431,6 +431,9 @@ def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, 
     for f in ["Group Name", "Location", "Long Name", "Website"]:
         r[f] = args.get(f) or prior.get(f) or wwara.get(f) or repeaterbook.get(f)
 
+    # Default to FM when no source specifies a mode.
+    r["Mode"] = r.get("Mode") or "FM"
+
     # A newly added repeater hasn't been confirmed for this year, whatever its prior status
     r.pop("Exclude", None)
     r["Status"] = STATUS_RESPONSE_NEEDED
@@ -664,6 +667,33 @@ def rollover(now: datetime | None = None) -> None:
     df.to_json(REPEATERS_JSON, orient="records", indent=4)
 
 
+def find_repeater(df: pd.DataFrame, call: str, freq: str | None) -> int:
+    """
+    Return the index of the repeater matching call (and freq, if given).
+
+    Raises ValueError unless exactly one repeater matches.
+    """
+    match = df["Callsign"].str.upper() == call.upper()
+    if freq:
+        match &= df["Output (MHz)"].map(lambda f: freq_match(freq, f))
+    if match.sum() != 1:
+        raise ValueError(f"Expected one repeater matching {call} {freq or ''}, found {match.sum()}")
+    return df.index[match][0]
+
+
+def update_fields(df: pd.DataFrame, call: str, freq: str | None, fields: dict) -> pd.DataFrame:
+    """
+    Return df with the repeater matching call (and freq, if given) overwritten with fields.
+
+    Raises ValueError unless exactly one repeater matches.
+    """
+    df = df.reset_index(drop=True)
+    i = find_repeater(df, call, freq)
+    for col, val in fields.items():
+        df.at[i, col] = val
+    return df
+
+
 def set_status(df: pd.DataFrame, call: str, freq: str | None, status: str) -> pd.DataFrame:
     """
     Return df with the status of the repeater matching call (and freq, if given) changed.
@@ -676,13 +706,7 @@ def set_status(df: pd.DataFrame, call: str, freq: str | None, status: str) -> pd
     Raises ValueError unless exactly one repeater matches.
     """
     df = df.reset_index(drop=True)
-    match = df["Callsign"].str.upper() == call.upper()
-    if freq:
-        match &= df["Output (MHz)"].map(lambda f: freq_match(freq, f))
-    if match.sum() != 1:
-        raise ValueError(f"Expected one repeater matching {call} {freq or ''}, found {match.sum()}")
-
-    i = df.index[match][0]
+    i = find_repeater(df, call, freq)
     old = df.at[i, "Status"] if pd.notna(df.at[i, "Status"]) else STATUS_RESPONSE_NEEDED
     df.at[i, "Status"] = status
     if old != STATUS_RESPONSE_NEEDED or status == STATUS_RESPONSE_NEEDED:
@@ -695,6 +719,23 @@ def set_status(df: pd.DataFrame, call: str, freq: str | None, status: str) -> pd
         confirmed = rest.index[rest["Status"] == STATUS_IN]
         at = confirmed[-1] + 1 if len(confirmed) else 0
     return pd.concat([rest.iloc[:at], row, rest.iloc[at:]], ignore_index=True)
+
+
+def update_status_and_fields(
+    df: pd.DataFrame, call: str, freq: str | None, status: str, fields: dict
+) -> pd.DataFrame:
+    """
+    Set a repeater's status and, if given, its other fields in one call.
+
+    call and freq are only used to locate the repeater; any Callsign/Output (MHz)
+    in `fields` is ignored so the match keys the user typed don't clobber the
+    stored values. Raises ValueError unless exactly one repeater matches.
+    """
+    df = set_status(df, call, freq, status)
+    fields = {k: v for k, v in fields.items() if k not in ("Callsign", "Output (MHz)")}
+    if fields:
+        df = update_fields(df, call, freq, fields)
+    return df
 
 
 def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
@@ -712,7 +753,9 @@ if __name__ == "__main__":
     if args.status:
         repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
         try:
-            repeaters = set_status(repeaters, args.call or "", args.freq, args.status)
+            repeaters = update_status_and_fields(
+                repeaters, args.call or "", args.freq, args.status, repeater_from_args(args)
+            )
         except ValueError as e:
             sys.exit(str(e))
         repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)

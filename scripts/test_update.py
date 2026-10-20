@@ -5,7 +5,15 @@ import pandas as pd
 import pytest
 
 from markdown_files import STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED
-from update import merge_repeaters, refresh_repeater, rollover, set_status, update_all_repeaters
+from update import (
+    merge_repeaters,
+    refresh_repeater,
+    rollover,
+    set_status,
+    update_all_repeaters,
+    update_fields,
+    update_status_and_fields,
+)
 
 
 def make_site(root):
@@ -127,12 +135,71 @@ def test_set_status_requires_exactly_one_match():
         set_status(df, "W7Z", "146.000", STATUS_OUT)
 
 
+def test_update_fields_overwrites_matching_repeater():
+    """update_fields changes only the given fields on the matching repeater."""
+    df = repeater_list(STATUS_IN, STATUS_IN)
+    df["Internet Access"] = ["No", "No"]
+
+    got = update_fields(df, "W7A", "146.000", {"Internet Access": "Yes"})
+
+    assert got["Internet Access"].tolist() == ["Yes", "No"]
+    assert calls(got) == ["W7A", "W7B"]
+
+
+def test_update_fields_requires_exactly_one_match():
+    """update_fields rejects a callsign/frequency that matches no repeater or more than one."""
+    df = repeater_list(STATUS_IN, STATUS_IN)
+    df.loc[1, "Callsign"] = "W7A"
+
+    with pytest.raises(ValueError):
+        update_fields(df, "W7A", "146.000", {"Internet Access": "Yes"})
+    with pytest.raises(ValueError):
+        update_fields(df, "W7Z", "146.000", {"Internet Access": "Yes"})
+
+
+def test_update_status_and_fields_sets_status_and_other_fields():
+    """update_status_and_fields changes status and other fields on the matching repeater."""
+    df = repeater_list(STATUS_RESPONSE_NEEDED)
+    df["Internet Access"] = ["No"]
+
+    got = update_status_and_fields(df, "W7A", "146.000", STATUS_IN, {"Internet Access": "Yes"})
+
+    assert got["Status"].tolist() == [STATUS_IN]
+    assert got["Internet Access"].tolist() == ["Yes"]
+
+
+def test_update_status_and_fields_ignores_match_keys_in_fields():
+    """Callsign/frequency used to find the repeater are never written back from the raw user input."""
+    df = repeater_list(STATUS_RESPONSE_NEEDED)
+
+    got = update_status_and_fields(
+        df, "w7a", "146.0", STATUS_IN, {"Callsign": "w7a", "Output (MHz)": "146.0"}
+    )
+
+    assert got["Callsign"].tolist() == ["W7A"]
+    assert got["Output (MHz)"].tolist() == ["146.000"]
+
+
 def test_merge_repeaters_starts_as_response_needed():
     """A repeater imported from last year's file needs a fresh response, whatever its status was then."""
     got = merge_repeaters(prior={"Callsign": "W7A", "Status": STATUS_IN, "Exclude": True})
 
     assert got["Status"] == STATUS_RESPONSE_NEEDED
     assert "Exclude" not in got
+
+
+def test_merge_repeaters_defaults_mode_to_fm():
+    """A repeater with no mode from any source defaults to FM."""
+    got = merge_repeaters(args={"Callsign": "W7A"})
+
+    assert got["Mode"] == "FM"
+
+
+def test_merge_repeaters_keeps_wwara_mode():
+    """args no longer forces FM over a mode supplied by another source."""
+    got = merge_repeaters(args={"Callsign": "W7A"}, wwara={"Mode": "NBFM[^nbfm]"})
+
+    assert got["Mode"] == "NBFM[^nbfm]"
 
 
 def test_refresh_repeater_keeps_status_and_exclude():
