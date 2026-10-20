@@ -1,6 +1,26 @@
-RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,RepeaterBook ID,RepeaterBook State ID,Internet Access,Latitude,Longitude
-1,WW7PSR,146.9600,-0.6,103.5,"Capitol Hill, Seattle, WA",FM,Puget Sound Repeater Group,https://web.psrg.org/,,,,47.6395,-122.3693
-2,WW7PSR,52.8700,-1.7,103.5,Seattle,FM,Puget Sound Repeater Group,https://web.psrg.org/,,,,47.62384,-122.31519
-3,WA7SAR,146.860,-0.6,123.0,Darland Mtn.,FM,Yakima County Radio Amateurs,,106,53,No,46.51390076,-121.20800018
-4,WA7SAR,147.080,+0.6,123.0,King Mtn.,FM,Yakima County Radio Amateurs,,95,53,No,46.06330109,-121.4240036
-5,WA7SAR,444.600,+5.0,123.0,Yakima,FM,Yakima County Radio Amateurs,,476,53,No,46.52220154,-120.33300018
+RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,RepeaterBook ID,RepeaterBook State ID,Internet Access,Allow Internet Contacts,Latitude,Longitude
+1,WW7PSR,146.9600,-0.6,103.5,"Capitol Hill, Seattle, WA",FM,Puget Sound Repeater Group,https://web.psrg.org/,,,,,47.6395,-122.3693
+2,WW7PSR,52.8700,-1.7,103.5,Seattle,FM,Puget Sound Repeater Group,https://web.psrg.org/,,,,,47.62384,-122.31519
+3,WA7SAR,146.860,-0.6,123.0,Darland Mtn.,FM,Yakima County Radio Amateurs,,106,53,,No,46.51390076,-121.20800018
+4,WA7SAR,147.080,+0.6,123.0,King Mtn.,FM,Yakima County Radio Amateurs,,95,53,,No,46.06330109,-121.4240036
+5,WA7SAR,444.600,+5.0,123.0,Yakima,FM,Yakima County Radio Amateurs,,476,53,,No,46.52220154,-120.33300018
+6,K7NWS,145.3300,-0.6,179.9,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,,AllStarLink: 580850,Yes,47.50875,-121.98519
+7,K7NWS,224.3400,-1.6,110.9,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,,SVX Link: http://pnw220.net,Yes,47.50875,-121.98519
+8,K7NWS,442.0750,5.0,110.9,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,,AllStarLink: 580852,Yes,47.51,-121.99
+9,K6RFK,147.3400,0.6,100,"Woodinville, WA",FM,K6RFK's repeater system,https://www.qrz.com/db/K6RFK,,,,No,47.7253,-122.1189
+10,K6RFK,442.7750,5.0,100,"Woodinville, WA",FM,K6RFK's repeater system,https://www.qrz.com/db/K6RFK,,,,No,47.7433,-122.1259
+11,N7OEP,440.0750,5.0,103.5,Enumclaw,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,9876,53,,,47.21944,-121.84194
+12,N7OEP,443.1750,5.0,107.2,Enumclaw,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,9912,53,,,47.21944,-121.84195
+13,N7OEP,53.3300,-1.7,100,Baldi Mtn.,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,375,53,,,47.2192,-121.84288
+14,W7MIR,147.1600,0.6,146.2,"Mercer Island, WA",NBFM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,,,,47.56838,-122.22078
+15,W7MIR,440.1500,5.0,103.5,"Mercer Island, WA",NBFM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,,,,47.56838,-122.22078
+16,K7PP,147.2800,0.6,123,"Mt Octopus, WA",FM,Peter Policani's K7PP repeater system,http://www.k7pp.itgo.com,,,,,47.75,-124.17666
+17,K7PP,441.2000,5.0,123,"Gold Mtn, WA",FM,Peter Policani's K7PP repeater system,http://www.k7pp.itgo.com,,,,,47.549167,-122.78388
+18,K7PP,441.3000,5.0,123,"Ko Peak, WA",FM,Peter Policani's K7PP repeater system,http://www.k7pp.itgo.com,,,,,46.46143,-123.5462
+19,K7PP,443.4000,5.0,123,"Cougar Mtn, WA",FM,Peter Policani's K7PP repeater system,http://www.k7pp.itgo.com,,,,,47.5414,-122.1092
+20,K7SWI,224.940,-1.6,100.0,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,21198,16,,No,43.9760521,-116.4074505
+21,K7SWI,444.375,+5.0,100.0,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,21386,16,,No,43.9761,-116.4077
+22,N7UBO,146.740,-0.6,100.0,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,19067,16,,No,43.97606,-116.40751
+23,KI7PWR,146.920,-0.6,100.0,"Hat Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,21717,16,,No,43.410919,-116.589569
+24,K7LED,146.8200,-0.6,103.5,"Tiger Mtn East, WA",FM,Mike & Key Amateur Radio Club,https://www.mikeandkey.org/,,,No,,47.48805,-121.94694
+25,K7LED,224.1200,-1.6,103.5,"Tiger Mtn East, WA",FM,Mike & Key Amateur Radio Club,https://www.mikeandkey.org/,,,No,,47.48805,-121.94694
