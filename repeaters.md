@@ -28,6 +28,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 |:------|:--------|:-----------|:--------------------------|:-------|---------------:|---------------:|------------:|
 | 1     | PSRG    | WW7PSR     | Capitol Hill, Seattle, WA | FM     |       146.9600 |           -0.6 |       103.5 |
 | 2     | PSRG    | WW7PSR     | Seattle                   | FM     |        52.8700 |           -1.7 |       103.5 |
+| 3     | YCRA    | WA7SAR     | Darland Mtn.              | FM     |        146.860 |           -0.6 |       123.0 |
+| 4     | YCRA    | WA7SAR     | King Mtn.                 | FM     |        147.080 |           +0.6 |       123.0 |
+| 5     | YCRA    | WA7SAR     | Yakima                    | FM     |        444.600 |           +5.0 |       123.0 |
 
 ---
 
@@ -35,6 +38,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 
 PSRG
 : [Puget Sound Repeater Group](https://web.psrg.org/)
+
+YCRA
+: [Yakima County Radio Amateurs](None)
 
 
 

@@ -1,3 +1,6 @@
-RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,RepeaterBook ID,RepeaterBook State ID,Latitude,Longitude
-1,WW7PSR,146.9600,-0.6,103.5,"Capitol Hill, Seattle, WA",FM,Puget Sound Repeater Group,https://web.psrg.org/,,,47.6395,-122.3693
-2,WW7PSR,52.8700,-1.7,103.5,Seattle,FM,Puget Sound Repeater Group,https://web.psrg.org/,,,47.62384,-122.31519
+RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,RepeaterBook ID,RepeaterBook State ID,Internet Access,Latitude,Longitude
+1,WW7PSR,146.9600,-0.6,103.5,"Capitol Hill, Seattle, WA",FM,Puget Sound Repeater Group,https://web.psrg.org/,,,,47.6395,-122.3693
+2,WW7PSR,52.8700,-1.7,103.5,Seattle,FM,Puget Sound Repeater Group,https://web.psrg.org/,,,,47.62384,-122.31519
+3,WA7SAR,146.860,-0.6,123.0,Darland Mtn.,FM,Yakima County Radio Amateurs,,106,53,No,46.51390076,-121.20800018
+4,WA7SAR,147.080,+0.6,123.0,King Mtn.,FM,Yakima County Radio Amateurs,,95,53,No,46.06330109,-121.4240036
+5,WA7SAR,444.600,+5.0,123.0,Yakima,FM,Yakima County Radio Amateurs,,476,53,No,46.52220154,-120.33300018

@@ -15,7 +15,8 @@
         "Website":"https:\/\/web.psrg.org\/",
         "Status":"in",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WW7PSR",
@@ -33,7 +34,65 @@
         "Website":"https:\/\/web.psrg.org\/",
         "Status":"in",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
+    },
+    {
+        "Callsign":"WA7SAR",
+        "Output (MHz)":"146.860",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.51390076,
+            -121.20800018
+        ],
+        "Group Name":"YCRA",
+        "Location":"Darland Mtn.",
+        "Mode":"FM",
+        "Long Name":"Yakima County Radio Amateurs",
+        "Website":null,
+        "Status":"in",
+        "RepeaterBook ID":"106",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"No"
+    },
+    {
+        "Callsign":"WA7SAR",
+        "Output (MHz)":"147.080",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.06330109,
+            -121.4240036
+        ],
+        "Group Name":"YCRA",
+        "Location":"King Mtn.",
+        "Mode":"FM",
+        "Long Name":"Yakima County Radio Amateurs",
+        "Website":null,
+        "Status":"in",
+        "RepeaterBook ID":"95",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"No"
+    },
+    {
+        "Callsign":"WA7SAR",
+        "Output (MHz)":"444.600",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.52220154,
+            -120.33300018
+        ],
+        "Group Name":"YCRA",
+        "Location":"Yakima",
+        "Mode":"FM",
+        "Long Name":"Yakima County Radio Amateurs",
+        "Website":null,
+        "Status":"in",
+        "RepeaterBook ID":"476",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"No"
     },
     {
         "Callsign":"W7PFR",
@@ -51,7 +110,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/W7PFR",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7PFR",
@@ -69,7 +129,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/W7PFR",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WW7SEA",
@@ -87,7 +148,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WW7SEA",
@@ -105,7 +167,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7DX",
@@ -123,7 +186,8 @@
         "Website":"https:\/\/www.wwdxc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7JCR",
@@ -141,7 +205,8 @@
         "Website":"https:\/\/w7jcr.wordpress.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"AA7MI",
@@ -159,7 +224,8 @@
         "Website":"https:\/\/qrz.com\/db\/AA7MI",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7DEM",
@@ -177,7 +243,8 @@
         "Website":"https:\/\/www.wa7dem.info",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7DEM",
@@ -195,7 +262,8 @@
         "Website":"https:\/\/www.wa7dem.info",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7DEM",
@@ -213,7 +281,8 @@
         "Website":"https:\/\/www.wa7dem.info",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7DEM",
@@ -231,7 +300,8 @@
         "Website":"https:\/\/www.wa7dem.info",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7DEM",
@@ -249,7 +319,8 @@
         "Website":"https:\/\/www.wa7dem.info",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7DEM",
@@ -267,7 +338,8 @@
         "Website":"https:\/\/www.wa7dem.info",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7DEM",
@@ -285,7 +357,8 @@
         "Website":"https:\/\/www.wa7dem.info",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7DEM",
@@ -303,7 +376,8 @@
         "Website":"https:\/\/www.wa7dem.info",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7MIR",
@@ -321,7 +395,8 @@
         "Website":"https:\/\/miro.cmivolunteers.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7MIR",
@@ -339,7 +414,8 @@
         "Website":"https:\/\/miro.cmivolunteers.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7DG",
@@ -357,7 +433,8 @@
         "Website":"https:\/\/www.w7dg.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7DG",
@@ -375,7 +452,8 @@
         "Website":"https:\/\/www.w7dg.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7DG",
@@ -393,7 +471,8 @@
         "Website":"https:\/\/www.w7dg.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7DG",
@@ -411,7 +490,8 @@
         "Website":"https:\/\/www.w7dg.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K6RFK",
@@ -429,7 +509,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/K6RFK",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K6RFK",
@@ -447,7 +528,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/K6RFK",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AAO",
@@ -465,7 +547,8 @@
         "Website":"https:\/\/piercecountyares.net\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AAO",
@@ -483,7 +566,8 @@
         "Website":"https:\/\/piercecountyares.net\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AAO",
@@ -501,7 +585,8 @@
         "Website":"https:\/\/piercecountyares.net\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7FW",
@@ -519,7 +604,8 @@
         "Website":"https:\/\/fwarc.org\/repeaters",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7FW",
@@ -537,7 +623,8 @@
         "Website":"https:\/\/fwarc.org\/repeaters",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7FW",
@@ -555,7 +642,8 @@
         "Website":"https:\/\/fwarc.org\/repeaters",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7FW",
@@ -573,7 +661,8 @@
         "Website":"https:\/\/fwarc.org\/repeaters",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"KC7EQO",
@@ -591,7 +680,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/KC7EQO\/R",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"KC7Z",
@@ -609,7 +699,8 @@
         "Website":"https:\/\/kcarc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"KC7Z",
@@ -627,7 +718,8 @@
         "Website":"https:\/\/kcarc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"KC7Z",
@@ -645,7 +737,8 @@
         "Website":"https:\/\/kcarc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7NWS",
@@ -663,7 +756,8 @@
         "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7NWS",
@@ -681,7 +775,8 @@
         "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7NWS",
@@ -699,7 +794,8 @@
         "Website":"https:\/\/sites.google.com\/site\/k7nwsbears\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7CH",
@@ -717,7 +813,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/k7ch",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7CH",
@@ -735,7 +832,8 @@
         "Website":null,
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7CH",
@@ -753,7 +851,8 @@
         "Website":null,
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7CH",
@@ -771,7 +870,8 @@
         "Website":null,
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"N9VW",
@@ -789,7 +889,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/n9vw",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"KC7RAS",
@@ -807,7 +908,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/n9vw",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7PIG",
@@ -825,7 +927,8 @@
         "Website":"https:\/\/www.scarcwa.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7PIG",
@@ -843,7 +946,8 @@
         "Website":"https:\/\/www.scarcwa.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7PIG",
@@ -861,7 +965,8 @@
         "Website":"https:\/\/www.scarcwa.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7TBP",
@@ -879,7 +984,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/WA7TBP\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AUX",
@@ -897,7 +1003,8 @@
         "Website":"https:\/\/shorelineacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AUX",
@@ -915,7 +1022,8 @@
         "Website":"https:\/\/shorelineacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AUX",
@@ -933,7 +1041,8 @@
         "Website":"https:\/\/shorelineacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AUX",
@@ -951,7 +1060,8 @@
         "Website":"https:\/\/shorelineacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7CH",
@@ -969,7 +1079,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/k7ch",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7LED",
@@ -987,7 +1098,8 @@
         "Website":"https:\/\/www.mikeandkey.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7LED",
@@ -1005,7 +1117,8 @@
         "Website":"https:\/\/www.mikeandkey.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AW",
@@ -1023,7 +1136,8 @@
         "Website":"https:\/\/w7aw.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AW",
@@ -1041,7 +1155,8 @@
         "Website":"https:\/\/w7aw.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"14858",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7AW",
@@ -1059,7 +1174,8 @@
         "Website":"https:\/\/w7aw.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"N7GDE",
@@ -1077,7 +1193,8 @@
         "Website":"https:\/\/rasconline.net\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"N7SK",
@@ -1095,7 +1212,8 @@
         "Website":"https:\/\/mc-arc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"N7SK",
@@ -1113,7 +1231,8 @@
         "Website":"https:\/\/mc-arc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"N7SK",
@@ -1131,7 +1250,8 @@
         "Website":"https:\/\/mc-arc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7LAW",
@@ -1149,7 +1269,8 @@
         "Website":"http:\/\/www.wa7law.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7LAW",
@@ -1167,7 +1288,8 @@
         "Website":"http:\/\/www.wa7law.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7PP",
@@ -1185,7 +1307,8 @@
         "Website":"http:\/\/www.k7pp.itgo.com",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7PP",
@@ -1203,7 +1326,8 @@
         "Website":"http:\/\/www.k7pp.itgo.com",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7PP",
@@ -1221,7 +1345,8 @@
         "Website":"http:\/\/www.k7pp.itgo.com",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7PP",
@@ -1239,7 +1364,8 @@
         "Website":"http:\/\/www.k7pp.itgo.com",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"KC7Z",
@@ -1257,7 +1383,8 @@
         "Website":"https:\/\/kcarc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7MV",
@@ -1275,7 +1402,8 @@
         "Website":"https:\/\/www.mvhams.net\/",
         "Status":"response_needed",
         "RepeaterBook ID":"206",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WA7MV",
@@ -1293,7 +1421,8 @@
         "Website":"https:\/\/www.mvhams.net\/",
         "Status":"response_needed",
         "RepeaterBook ID":"400",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WA7MV",
@@ -1311,7 +1440,8 @@
         "Website":"https:\/\/www.mvhams.net\/",
         "Status":"response_needed",
         "RepeaterBook ID":"646",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"K7LWH",
@@ -1329,7 +1459,8 @@
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7LWH",
@@ -1347,7 +1478,8 @@
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"5326",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"K7LWH",
@@ -1365,7 +1497,8 @@
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"162",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"K7LWH",
@@ -1383,7 +1516,8 @@
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7LWH",
@@ -1401,7 +1535,8 @@
         "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"165",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WR7VHF",
@@ -1419,7 +1554,8 @@
         "Website":"https:\/\/www.vhfclub.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"283",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WR7VHF",
@@ -1437,7 +1573,8 @@
         "Website":"https:\/\/www.vhfclub.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"290",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WR7VHF",
@@ -1455,7 +1592,8 @@
         "Website":"https:\/\/www.vhfclub.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"17283",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"K7JEP",
@@ -1473,7 +1611,8 @@
         "Website":"https:\/\/k7jep.org",
         "Status":"response_needed",
         "RepeaterBook ID":"43",
-        "RepeaterBook State ID":"16"
+        "RepeaterBook State ID":"16",
+        "Internet Access":null
     },
     {
         "Callsign":"K7JEP",
@@ -1491,7 +1630,8 @@
         "Website":"https:\/\/k7jep.org",
         "Status":"response_needed",
         "RepeaterBook ID":"23257",
-        "RepeaterBook State ID":"16"
+        "RepeaterBook State ID":"16",
+        "Internet Access":null
     },
     {
         "Callsign":"K7RHT",
@@ -1509,7 +1649,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
         "Status":"response_needed",
         "RepeaterBook ID":"17116",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"K7RHT",
@@ -1527,7 +1668,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
         "Status":"response_needed",
         "RepeaterBook ID":"17115",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"KC7VQR",
@@ -1545,7 +1687,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/KC7VQR",
         "Status":"response_needed",
         "RepeaterBook ID":"181",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W6TQF",
@@ -1563,7 +1706,8 @@
         "Website":"http:\/\/skamania-prepare.org\/ares\/",
         "Status":"response_needed",
         "RepeaterBook ID":"18543",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"AB7F",
@@ -1581,7 +1725,8 @@
         "Website":"http:\/\/skamania-prepare.org\/ares\/",
         "Status":"response_needed",
         "RepeaterBook ID":"16535",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7MHE",
@@ -1599,7 +1744,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
         "Status":"response_needed",
         "RepeaterBook ID":"390",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"K7SWI",
@@ -1617,7 +1763,8 @@
         "Website":"https:\/\/www.k7swi.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"21198",
-        "RepeaterBook State ID":"16"
+        "RepeaterBook State ID":"16",
+        "Internet Access":null
     },
     {
         "Callsign":"K7SWI",
@@ -1635,7 +1782,8 @@
         "Website":"https:\/\/www.k7swi.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"21386",
-        "RepeaterBook State ID":"16"
+        "RepeaterBook State ID":"16",
+        "Internet Access":null
     },
     {
         "Callsign":"N7UBO",
@@ -1653,7 +1801,8 @@
         "Website":"https:\/\/www.k7swi.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"19067",
-        "RepeaterBook State ID":"16"
+        "RepeaterBook State ID":"16",
+        "Internet Access":null
     },
     {
         "Callsign":"KI7PWR",
@@ -1671,7 +1820,8 @@
         "Website":"https:\/\/www.k7swi.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"21717",
-        "RepeaterBook State ID":"16"
+        "RepeaterBook State ID":"16",
+        "Internet Access":null
     },
     {
         "Callsign":"NE7MC",
@@ -1689,7 +1839,8 @@
         "Website":"https:\/\/www.northshoreemc.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":"19962",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"NM7E",
@@ -1707,7 +1858,8 @@
         "Website":"https:\/\/nmaresc.wordpress.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"NM7E",
@@ -1725,7 +1877,8 @@
         "Website":"https:\/\/nmaresc.wordpress.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7ACS",
@@ -1743,7 +1896,8 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7ACS",
@@ -1761,7 +1915,8 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7ACS",
@@ -1779,7 +1934,8 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7ACS",
@@ -1797,7 +1953,8 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7ACS",
@@ -1815,7 +1972,8 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7ACS",
@@ -1833,7 +1991,8 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7ACS",
@@ -1851,7 +2010,8 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7ACS",
@@ -1869,7 +2029,8 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7ACS",
@@ -1887,7 +2048,8 @@
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"KK7DFL",
@@ -1905,7 +2067,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/k7ch",
         "Status":"response_needed",
         "RepeaterBook ID":"23719",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7DK",
@@ -1923,7 +2086,8 @@
         "Website":"https:\/\/w7dk.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"324",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7DK",
@@ -1941,7 +2105,8 @@
         "Website":"https:\/\/w7dk.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"324",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7DK",
@@ -1959,7 +2124,8 @@
         "Website":"https:\/\/w7dk.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"325",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7DK",
@@ -1977,7 +2143,8 @@
         "Website":"https:\/\/w7dk.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"549",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7FLY",
@@ -1995,7 +2162,8 @@
         "Website":"https:\/\/w7flybearons.org",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA7ST",
@@ -2013,7 +2181,8 @@
         "Website":"https:\/\/www.highlinearc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"2779",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"NC7G",
@@ -2031,7 +2200,8 @@
         "Website":"https:\/\/www.highlinearc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"2780",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7BUR",
@@ -2049,7 +2219,8 @@
         "Website":"https:\/\/www.highlinearc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"19061",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WA7DES",
@@ -2067,7 +2238,8 @@
         "Website":"https:\/\/www.highlinearc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"22114",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7MHE",
@@ -2085,7 +2257,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7NPC",
@@ -2103,7 +2276,8 @@
         "Website":"https:\/\/w7npc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"480",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WA6PMX",
@@ -2121,7 +2295,8 @@
         "Website":"https:\/\/w7npc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WA6PMX",
@@ -2139,7 +2314,8 @@
         "Website":"https:\/\/w7npc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"KB7ARA",
@@ -2157,7 +2333,8 @@
         "Website":"https:\/\/kbara.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"80",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"KA7FVV",
@@ -2175,7 +2352,8 @@
         "Website":"https:\/\/kbara.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"17271",
-        "RepeaterBook State ID":"16"
+        "RepeaterBook State ID":"16",
+        "Internet Access":null
     },
     {
         "Callsign":"N7WRR",
@@ -2193,7 +2371,8 @@
         "Website":"https:\/\/kbara.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"366",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7WRQ",
@@ -2211,7 +2390,8 @@
         "Website":"https:\/\/kbara.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"78",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7OEP",
@@ -2229,7 +2409,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/n7oep",
         "Status":"response_needed",
         "RepeaterBook ID":"9876",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7OEP",
@@ -2247,7 +2428,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/n7oep",
         "Status":"response_needed",
         "RepeaterBook ID":"9912",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7OEP",
@@ -2265,7 +2447,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/n7oep",
         "Status":"response_needed",
         "RepeaterBook ID":"375",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"AB7F",
@@ -2283,7 +2466,8 @@
         "Website":"http:\/\/skamania-prepare.org\/ares\/",
         "Status":"response_needed",
         "RepeaterBook ID":"16535",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7KN",
@@ -2301,7 +2485,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7KN",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"N7YRC",
@@ -2319,7 +2504,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
         "Status":"response_needed",
         "RepeaterBook ID":"7099",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7YRC",
@@ -2337,7 +2523,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
         "Status":"response_needed",
         "RepeaterBook ID":"17413",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7YRC",
@@ -2355,7 +2542,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
         "Status":"response_needed",
         "RepeaterBook ID":"21604",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N3KPU",
@@ -2373,7 +2561,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/N3KPU",
         "Status":"response_needed",
         "RepeaterBook ID":"9851",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"KE7YYD",
@@ -2391,7 +2580,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
         "Status":"response_needed",
         "RepeaterBook ID":"13889",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7RHE",
@@ -2409,61 +2599,8 @@
         "Website":"https:\/\/pugetsoundfire.org\/emergency-management\/communications-support-team-ham-radio\/",
         "Status":"response_needed",
         "RepeaterBook ID":"9852",
-        "RepeaterBook State ID":"53"
-    },
-    {
-        "Callsign":"WA7SAR",
-        "Output (MHz)":"146.860",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
-            46.51390076,
-            -121.20800018
-        ],
-        "Group Name":"YCRA",
-        "Location":"Darland Mtn.",
-        "Mode":"FM",
-        "Long Name":"Yakima County Radio Amateurs",
-        "Website":null,
-        "Status":"response_needed",
-        "RepeaterBook ID":"106",
-        "RepeaterBook State ID":"53"
-    },
-    {
-        "Callsign":"WA7SAR",
-        "Output (MHz)":"147.080",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
-            46.06330109,
-            -121.4240036
-        ],
-        "Group Name":"YCRA",
-        "Location":"King Mtn.",
-        "Mode":"FM",
-        "Long Name":"Yakima County Radio Amateurs",
-        "Website":null,
-        "Status":"response_needed",
-        "RepeaterBook ID":"95",
-        "RepeaterBook State ID":"53"
-    },
-    {
-        "Callsign":"WA7SAR",
-        "Output (MHz)":"444.600",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
-            46.52220154,
-            -120.33300018
-        ],
-        "Group Name":"YCRA",
-        "Location":"Yakima",
-        "Mode":"FM",
-        "Long Name":"Yakima County Radio Amateurs",
-        "Website":null,
-        "Status":"response_needed",
-        "RepeaterBook ID":"476",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7JN",
@@ -2481,7 +2618,8 @@
         "Website":"http:\/\/sjcars.org",
         "Status":"response_needed",
         "RepeaterBook ID":"6196",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7JN",
@@ -2499,7 +2637,8 @@
         "Website":"http:\/\/sjcars.org",
         "Status":"response_needed",
         "RepeaterBook ID":"6394",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"N7JN",
@@ -2517,7 +2656,8 @@
         "Website":"http:\/\/sjcars.org",
         "Status":"response_needed",
         "RepeaterBook ID":"368",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7ECG",
@@ -2535,7 +2675,8 @@
         "Website":"https:\/\/wecg.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"8854",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7ECG",
@@ -2553,7 +2694,8 @@
         "Website":"https:\/\/wecg.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"7393",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7ECG",
@@ -2571,7 +2713,8 @@
         "Website":"https:\/\/wecg.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"7100",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"W7AVM",
@@ -2589,7 +2732,8 @@
         "Website":"https:\/\/www.w7avm.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7AVM",
@@ -2607,7 +2751,8 @@
         "Website":"https:\/\/www.w7avm.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"345",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"KB7ARA",
@@ -2625,7 +2770,8 @@
         "Website":"https:\/\/kbara.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"31",
-        "RepeaterBook State ID":"30"
+        "RepeaterBook State ID":"30",
+        "Internet Access":null
     },
     {
         "Callsign":"K7BEL",
@@ -2643,7 +2789,8 @@
         "Website":"https:\/\/bellevuewa.gov\/volunteering\/bellevue-communications-support",
         "Status":"response_needed",
         "RepeaterBook ID":"489",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WW7ATS",
@@ -2661,7 +2808,8 @@
         "Website":"https:\/\/www.wwats.net",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WW7STR",
@@ -2679,7 +2827,8 @@
         "Website":"https:\/\/www.seatacra.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WW7STR",
@@ -2697,7 +2846,8 @@
         "Website":"https:\/\/www.seatacra.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":"16503",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WW7ATS",
@@ -2715,7 +2865,8 @@
         "Website":"https:\/\/www.wwats.net",
         "Status":"response_needed",
         "RepeaterBook ID":"601",
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WW7STR",
@@ -2733,7 +2884,8 @@
         "Website":"https:\/\/www.seatacra.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":"53"
+        "RepeaterBook State ID":"53",
+        "Internet Access":null
     },
     {
         "Callsign":"WW7STR",
@@ -2751,7 +2903,8 @@
         "Website":"https:\/\/www.seatacra.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"WW7STR",
@@ -2769,7 +2922,8 @@
         "Website":"https:\/\/www.seatacra.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7EAT",
@@ -2787,7 +2941,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"W7EAT",
@@ -2805,7 +2960,8 @@
         "Website":"https:\/\/www.qrz.com\/db\/W7EAT",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     },
     {
         "Callsign":"K7DK",
@@ -2823,6 +2979,7 @@
         "Website":"https:\/\/www.qrz.com\/db\/K7DK",
         "Status":"response_needed",
         "RepeaterBook ID":null,
-        "RepeaterBook State ID":null
+        "RepeaterBook State ID":null,
+        "Internet Access":null
     }
 ]
