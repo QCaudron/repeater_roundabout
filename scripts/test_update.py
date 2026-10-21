@@ -1,5 +1,6 @@
 import json
 from datetime import datetime
+from types import SimpleNamespace
 
 import pandas as pd
 import pytest
@@ -9,6 +10,7 @@ from update import (
     apply_repeater_csv,
     apply_status_csv,
     drop_missing_coordinates,
+    generate_repeater_df,
     looks_like_internet_id,
     merge_repeaters,
     parse_repeater_lines,
@@ -21,6 +23,19 @@ from update import (
     update_status_and_fields,
     update_status_and_fields_for_callsign,
 )
+
+
+def make_args(**overrides):
+    """Build a generate_repeater_df argument namespace with sensible defaults."""
+    args = {
+        "name": None, "loc": None, "state_id": None, "id": None,
+        "wwara_csv": None, "prior_json": None, "call": None, "freq": None,
+        "offset": None, "tone": None, "mode": None, "lat": None, "lon": None,
+        "long_name": None, "url": None, "internet_contacts": None,
+        "internet_access": None, "regen": False, "score": False,
+    }
+    args.update(overrides)
+    return SimpleNamespace(**args)
 
 
 def make_site(root):
@@ -50,6 +65,39 @@ def test_drop_missing_coordinates_removes_rows_without_lat_lon(capsys):
 
     assert got["Callsign"].tolist() == ["W7A"]
     assert "W7B 146.500" in capsys.readouterr().err
+
+
+def test_generate_repeater_df_updates_existing_repeater_in_place(tmp_path, monkeypatch):
+    """A matching callsign+frequency updates the existing repeater instead of adding a duplicate."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets").mkdir()
+    (tmp_path / "assets" / "repeaters.json").write_text(json.dumps([
+        {"Callsign": "W7ABC", "Output (MHz)": "146.9000", "Group Name": "Old Name",
+         "Status": STATUS_IN, "RepeaterBook ID": None},
+    ]))
+
+    args = make_args(call="W7ABC", freq="146.900", name="New Name")
+    df = generate_repeater_df(args)
+
+    assert len(df) == 1
+    assert df.iloc[0]["Group Name"] == "New Name"
+    assert df.iloc[0]["Status"] == STATUS_IN
+
+
+def test_generate_repeater_df_adds_new_repeater_when_no_match(tmp_path, monkeypatch):
+    """A callsign+frequency with no existing match is appended as a new repeater."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets").mkdir()
+    (tmp_path / "assets" / "repeaters.json").write_text(json.dumps([
+        {"Callsign": "W7ABC", "Output (MHz)": "146.9000", "Group Name": "Old Name",
+         "Status": STATUS_IN, "RepeaterBook ID": None},
+    ]))
+
+    args = make_args(call="W7XYZ", freq="147.000", name="New Club")
+    df = generate_repeater_df(args)
+
+    assert len(df) == 2
+    assert sorted(df["Callsign"]) == ["W7ABC", "W7XYZ"]
 
 
 def test_rollover_archives_last_contest(tmp_path, monkeypatch):

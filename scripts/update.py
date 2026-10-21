@@ -652,7 +652,28 @@ def generate_repeater_df(
 
     df["RepeaterBook State ID"] = df.apply(init_state_id, axis=1)
 
-    df = pd.concat([df, repeaters], ignore_index=True)
+    # Update existing repeaters in place by callsign+frequency; only add a new
+    # row when no existing repeater matches. Status is left as-is on an update
+    # so re-running update.py doesn't un-confirm an already-confirmed repeater.
+    df = df.reset_index(drop=True)
+    new_rows = []
+    for _, r in repeaters.iterrows():
+        record = strip_empty(r.to_dict())
+        call, freq = record.get("Callsign"), record.get("Output (MHz)")
+        match = pd.Series(False, index=df.index)
+        if call and freq:
+            match = (df["Callsign"].str.upper() == call.upper()) & \
+                df["Output (MHz)"].map(lambda f: freq_match(freq, f))
+        if match.any():
+            i = df.index[match][0]
+            for col, val in record.items():
+                if col != "Status":
+                    df.at[i, col] = val
+        else:
+            new_rows.append(record)
+
+    if new_rows:
+        df = pd.concat([df, pd.DataFrame.from_records(new_rows)], ignore_index=True)
 
     # Save a new known repeaters file
     df = df.reset_index(drop=True)
