@@ -965,7 +965,7 @@ def apply_repeater_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, l
                     raise ValueError(f"multiple existing repeaters match {call} {freq}")
                 elif match.sum() == 1:
                     i = df.index[match][0]
-                    fields = {k: v for k, v in repeater.items() if k not in ("Callsign", "Output (MHz)")}
+                    fields = {k: v for k, v in repeater.items() if k not in ("Callsign", "Output (MHz)", "Group Name")}
                     if fields:
                         df = update_fields(df, call, freq, fields)
                 else:

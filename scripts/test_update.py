@@ -435,6 +435,27 @@ def test_apply_repeater_csv_edits_existing_repeater(tmp_path):
     assert got.loc[0, "Coordinates"] == [47.67459, -122.05393]
 
 
+def test_apply_repeater_csv_does_not_change_group_name_of_existing_repeater(tmp_path):
+    """Editing an existing repeater never overwrites its Group Name from the CSV."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7DX", "Output (MHz)": "147.0000", "Offset (MHz)": "-0.6", "Tone (Hz)": "100.0",
+         "Group Name": "WWDXC", "Status": STATUS_IN},
+    ])
+    csv_file = tmp_path / "repeater.csv"
+    csv_file.write_text(
+        "Club / Group Name,Repeater Callsign,Output Frequency (MHz),Offset (MHz),"
+        "Tone (Hz or Dnnn for DCS),Club / Group Website,Link to repeater on RepeaterBook,"
+        "Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info (if applicable),"
+        '"Approximate Location (e.g. Capitol Hill, Seattle, WA)","Approximate Coordinates (e.g. 47.6395, -122.3693)"\n'
+        "Some Other Club,W7DX,147,-0.6,103.5,https://www.wwdxc.org/,,No,,Redmond,\n"
+    )
+
+    got, errors = apply_repeater_csv(df, str(csv_file))
+
+    assert errors == []
+    assert got.loc[0, "Group Name"] == "WWDXC"
+
+
 def test_apply_repeater_csv_clears_internet_access_when_answer_is_no(tmp_path):
     """Editing an existing repeater to answer "No" clears a previously-set Internet Access value."""
     df = pd.DataFrame.from_records([
