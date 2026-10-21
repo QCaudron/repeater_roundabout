@@ -744,6 +744,24 @@ def update_status_and_fields(
     return df
 
 
+def update_status_and_fields_for_callsign(
+    df: pd.DataFrame, call: str, freq: str | None, status: str, fields: dict
+) -> pd.DataFrame:
+    """
+    Like update_status_and_fields, but if freq is None, updates every repeater with that callsign.
+
+    Raises ValueError if no repeater matches.
+    """
+    if freq:
+        return update_status_and_fields(df, call, freq, status, fields)
+    freqs = df.loc[df["Callsign"].str.upper() == call.upper(), "Output (MHz)"].tolist()
+    if not freqs:
+        raise ValueError(f"No repeaters match callsign {call}")
+    for f in freqs:
+        df = update_status_and_fields(df, call, f, status, fields)
+    return df
+
+
 def find_col(fieldnames: list[str], *keywords: str) -> str:
     """
     Return the first fieldname matching all keywords (case-insensitive). A keyword
@@ -977,7 +995,7 @@ if __name__ == "__main__":
     if args.status:
         repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
         try:
-            repeaters = update_status_and_fields(
+            repeaters = update_status_and_fields_for_callsign(
                 repeaters, args.call or "", args.freq, args.status, repeater_from_args(args)
             )
         except ValueError as e:

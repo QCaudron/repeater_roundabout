@@ -17,6 +17,7 @@ from update import (
     update_all_repeaters,
     update_fields,
     update_status_and_fields,
+    update_status_and_fields_for_callsign,
 )
 
 
@@ -182,6 +183,39 @@ def test_update_status_and_fields_ignores_match_keys_in_fields():
 
     assert got["Callsign"].tolist() == ["W7A"]
     assert got["Output (MHz)"].tolist() == ["146.000"]
+
+
+def test_update_status_and_fields_for_callsign_updates_all_matches():
+    """With no frequency given, every repeater with the callsign is updated."""
+    df = pd.DataFrame([
+        {"Callsign": "W7A", "Output (MHz)": "146.000", "Status": STATUS_RESPONSE_NEEDED},
+        {"Callsign": "W7A", "Output (MHz)": "147.000", "Status": STATUS_RESPONSE_NEEDED},
+        {"Callsign": "W7B", "Output (MHz)": "148.000", "Status": STATUS_RESPONSE_NEEDED},
+    ])
+
+    got = update_status_and_fields_for_callsign(df, "w7a", None, STATUS_IN, {})
+
+    assert got["Status"].tolist() == [STATUS_IN, STATUS_IN, STATUS_RESPONSE_NEEDED]
+
+
+def test_update_status_and_fields_for_callsign_with_freq_updates_one():
+    """A given frequency still narrows the match to a single repeater, as before."""
+    df = pd.DataFrame([
+        {"Callsign": "W7A", "Output (MHz)": "146.000", "Status": STATUS_RESPONSE_NEEDED},
+        {"Callsign": "W7A", "Output (MHz)": "147.000", "Status": STATUS_RESPONSE_NEEDED},
+    ])
+
+    got = update_status_and_fields_for_callsign(df, "W7A", "146.000", STATUS_IN, {})
+
+    assert got["Status"].tolist() == [STATUS_IN, STATUS_RESPONSE_NEEDED]
+
+
+def test_update_status_and_fields_for_callsign_requires_a_match():
+    """An unknown callsign with no frequency raises instead of silently doing nothing."""
+    df = pd.DataFrame([{"Callsign": "W7A", "Output (MHz)": "146.000", "Status": STATUS_RESPONSE_NEEDED}])
+
+    with pytest.raises(ValueError):
+        update_status_and_fields_for_callsign(df, "W7Z", None, STATUS_IN, {})
 
 
 def test_merge_repeaters_starts_as_response_needed():
