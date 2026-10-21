@@ -208,6 +208,9 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
         Repeaters are combined into a single pin if less
         than this distance apart, by default 0.03.
     """
+    # Repeaters without known coordinates (e.g. imported without lat/long) can't be placed on the map
+    df = df.loc[df["Coordinates"].map(has_coordinates)]
+
     # Hierarchically cluster repeater lat / long pairs; clustering needs at least two
     if len(df) > 1:
         coords = np.array(df["Coordinates"].to_list())
@@ -255,6 +258,11 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
         f.write(maps_md)
     with open("demo_map.html", "w") as f:
         f.write(maps_html)
+
+
+def has_coordinates(value) -> bool:
+    """Return whether value is a usable [lat, lon] Coordinates pair."""
+    return isinstance(value, list) and len(value) == 2
 
 
 def text(value) -> str:

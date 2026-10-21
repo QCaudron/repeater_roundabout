@@ -213,6 +213,25 @@ def test_write_map_md_with_no_repeaters(tmp_path, monkeypatch):
     assert (tmp_path / "map.md").read_text() == "pins: "
 
 
+def test_write_map_md_skips_repeater_with_missing_coordinates(tmp_path, monkeypatch):
+    """A confirmed repeater with no Coordinates (e.g. imported without lat/long) shouldn't crash the map build."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets" / "templates").mkdir(parents=True)
+    (tmp_path / "assets" / "templates" / "map.md").write_text("pins: {{ repeater_pins }}")
+    (tmp_path / "assets" / "templates" / "map.html").write_text("{{ repeater_pins }}")
+
+    df = pd.DataFrame([
+        {"Callsign": "WW7PSR", "Output (MHz)": "146.960", "Coordinates": [47.6395, -122.3693], "RR#": 1},
+        {"Callsign": "WA7SAR", "Output (MHz)": "145.2700", "Coordinates": None, "RR#": 2},
+    ])
+
+    write_map_md(df)
+
+    pins = (tmp_path / "map.md").read_text()
+    assert "RR# 1" in pins
+    assert "RR# 2" not in pins
+
+
 def test_write_repeaters_md_with_no_repeaters(tmp_path, monkeypatch):
     """write_repeaters_md shows a holding message instead of crashing when nothing is confirmed yet."""
     monkeypatch.chdir(tmp_path)

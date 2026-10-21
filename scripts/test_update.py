@@ -8,6 +8,7 @@ from markdown_files import STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED
 from update import (
     apply_repeater_csv,
     apply_status_csv,
+    drop_missing_coordinates,
     looks_like_internet_id,
     merge_repeaters,
     parse_repeater_lines,
@@ -28,6 +29,19 @@ def make_site(root):
     (root / "results").mkdir()
     (root / "results" / "W7ABC.csv").write_text("log")
     (root / "results" / "W7ABC.md").write_text("page")
+
+
+def test_drop_missing_coordinates_removes_rows_without_lat_lon(capsys):
+    """A repeater confirmed 'in' without a [lat, lon] pair is dropped and reported, not left to crash downstream."""
+    df = pd.DataFrame([
+        {"Callsign": "W7A", "Output (MHz)": "146.000", "Coordinates": [47.0, -122.0]},
+        {"Callsign": "W7B", "Output (MHz)": "146.500", "Coordinates": None},
+    ])
+
+    got = drop_missing_coordinates(df)
+
+    assert got["Callsign"].tolist() == ["W7A"]
+    assert "W7B 146.500" in capsys.readouterr().err
 
 
 def test_rollover_archives_last_contest(tmp_path, monkeypatch):

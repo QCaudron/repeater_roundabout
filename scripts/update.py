@@ -17,6 +17,7 @@ from markdown_files import (
     STATUS_IN,
     STATUS_OUT,
     STATUS_RESPONSE_NEEDED,
+    has_coordinates,
     write_group_pages,
     write_index_md,
     write_map_md,
@@ -378,6 +379,26 @@ def filter_freq(df: pd.DataFrame, freq: float) -> pd.DataFrame:
         Records from df matching freq.
     """
     return df.loc[df["Output (MHz)"].map(lambda f: freq_match(freq, f))]
+
+def drop_missing_coordinates(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Return df with any repeater missing a [lat, lon] Coordinates pair removed,
+    warning on stderr about each one dropped.
+
+    Map, CSV, and programming-file generation all assume every repeater has
+    coordinates; without this, a confirmed repeater missing them crashes
+    whichever of those runs first instead of being reported.
+    """
+    has_coords = df["Coordinates"].map(has_coordinates)
+    if (~has_coords).any():
+        missing = df.loc[~has_coords, ["Callsign", "Output (MHz)"]].to_records(index=False)
+        print(
+            "Skipping repeater(s) confirmed as 'in' but missing Coordinates: "
+            + ", ".join(f"{call} {freq}" for call, freq in missing),
+            file=sys.stderr,
+        )
+    return df.loc[has_coords]
+
 
 def first_dict(df: pd.DataFrame) -> dict:
     """
@@ -1038,6 +1059,7 @@ if __name__ == "__main__":
 
     # Only publish repeaters confirmed for this contest
     df = df.loc[df["Status"] == STATUS_IN]
+    df = drop_missing_coordinates(df)
 
     # Set tone to the empty string for toneless repeaters.  Downstream
     # code assumes tone is always a string.
