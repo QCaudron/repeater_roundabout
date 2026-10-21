@@ -13,6 +13,7 @@ from update import (
     merge_repeaters,
     parse_repeater_lines,
     refresh_repeater,
+    repeaters_from_wwara,
     rollover,
     set_status,
     update_all_repeaters,
@@ -29,6 +30,13 @@ def make_site(root):
     (root / "results").mkdir()
     (root / "results" / "W7ABC.csv").write_text("log")
     (root / "results" / "W7ABC.md").write_text("page")
+
+
+def test_repeaters_from_wwara_returns_empty_dataframe_without_csv():
+    """No --wwara_csv means no WWARA data, but callers expect a DataFrame, not a list."""
+    result = repeaters_from_wwara(None, "W7ABC")
+    assert isinstance(result, pd.DataFrame)
+    assert result.empty
 
 
 def test_drop_missing_coordinates_removes_rows_without_lat_lon(capsys):

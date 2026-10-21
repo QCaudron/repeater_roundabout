@@ -141,7 +141,7 @@ def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
         A dataframe of repeaters matching the call found in the CSV file.
     """
     if csv_file is None or call is None:
-      return []
+      return pd.DataFrame(columns=["Output (MHz)"])
 
     with open(csv_file, 'r') as f:
         lines = f.readlines()
