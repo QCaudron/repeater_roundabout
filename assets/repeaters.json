@@ -1360,26 +1360,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"W7AUX",
-        "Output (MHz)":"927.6375",
-        "Offset (MHz)":"-25.0",
-        "Tone (Hz)":"114.8",
-        "Coordinates":[
-            47.75619,
-            -122.34575
-        ],
-        "Group Name":"Shoreline ACS",
-        "Location":"Shoreline, WA",
-        "Mode":"FM",
-        "Long Name":"Shoreline ACS",
-        "Website":"https:\/\/shorelineacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"K7CH",
         "Output (MHz)":"444.450",
         "Offset (MHz)":"5.0",
@@ -3134,6 +3114,26 @@
         "Long Name":"Mark K7DK's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/K7DK",
         "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"W7AUX",
+        "Output (MHz)":"927.6375",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            47.75619,
+            -122.34575
+        ],
+        "Group Name":"Shoreline ACS",
+        "Location":"Shoreline, WA",
+        "Mode":"FM",
+        "Long Name":"Shoreline ACS",
+        "Website":"https:\/\/shorelineacs.org\/",
+        "Status":"out",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
