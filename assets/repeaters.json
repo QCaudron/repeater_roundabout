@@ -43,7 +43,7 @@
         "Callsign":"WA7SAR",
         "Output (MHz)":"146.860",
         "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"123.0",
+        "Tone (Hz)":"123",
         "Coordinates":[
             46.51390076,
             -121.20800018
@@ -63,7 +63,7 @@
         "Callsign":"WA7SAR",
         "Output (MHz)":"147.080",
         "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"123.0",
+        "Tone (Hz)":"123",
         "Coordinates":[
             46.06330109,
             -121.4240036
@@ -83,7 +83,7 @@
         "Callsign":"WA7SAR",
         "Output (MHz)":"444.600",
         "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"123.0",
+        "Tone (Hz)":"123",
         "Coordinates":[
             46.52220154,
             -120.33300018
@@ -202,14 +202,14 @@
     {
         "Callsign":"N7OEP",
         "Output (MHz)":"440.0750",
-        "Offset (MHz)":"5.0",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
             47.21944,
             -121.84194
         ],
         "Group Name":"N7OEP",
-        "Location":"Enumclaw",
+        "Location":"Enumclaw, WA",
         "Mode":"FM",
         "Long Name":"Tom N7OEP's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/n7oep",
@@ -262,7 +262,7 @@
     {
         "Callsign":"W7MIR",
         "Output (MHz)":"147.1600",
-        "Offset (MHz)":"0.6",
+        "Offset (MHz)":"+0.6",
         "Tone (Hz)":"146.2",
         "Coordinates":[
             47.56838,
@@ -282,7 +282,7 @@
     {
         "Callsign":"W7MIR",
         "Output (MHz)":"440.1500",
-        "Offset (MHz)":"5.0",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
             47.56838,
@@ -383,7 +383,7 @@
         "Callsign":"K7SWI",
         "Output (MHz)":"224.940",
         "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"100.0",
+        "Tone (Hz)":"100",
         "Coordinates":[
             43.9760521,
             -116.4074505
@@ -500,6 +500,46 @@
         "Allow Internet Contacts":""
     },
     {
+        "Callsign":"WA7SAR",
+        "Output (MHz)":"145.270",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.9965144,
+            -120.5478474
+        ],
+        "Group Name":"YCRA",
+        "Location":"Ellensburg, WA",
+        "Mode":"FM",
+        "Long Name":"Yakima County Radio Amateurs",
+        "Website":null,
+        "Status":"in",
+        "RepeaterBook ID":"23223",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"W7DX",
+        "Output (MHz)":"147.0000",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.67459,
+            -122.05393
+        ],
+        "Group Name":"WWDXC",
+        "Location":"Redmond",
+        "Mode":"FM",
+        "Long Name":"Western Washington DX Club",
+        "Website":"https:\/\/www.wwdxc.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
         "Callsign":"W7PFR",
         "Output (MHz)":"53.4100",
         "Offset (MHz)":"-1.7",
@@ -513,16 +553,16 @@
         "Mode":"FM",
         "Long Name":"Gobblers Knob Repeater Group",
         "Website":"https:\/\/www.qrz.com\/db\/W7PFR",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
+        "Internet Access":"",
         "Allow Internet Contacts":""
     },
     {
         "Callsign":"W7PFR",
         "Output (MHz)":"443.9750",
-        "Offset (MHz)":"5.0",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
             46.8354,
@@ -533,11 +573,268 @@
         "Mode":"FM",
         "Long Name":"Gobblers Knob Repeater Group",
         "Website":"https:\/\/www.qrz.com\/db\/W7PFR",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
+        "Internet Access":"",
         "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"K7BEL",
+        "Output (MHz)":"441.1000",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            47.55447,
+            -122.13239
+        ],
+        "Group Name":"BCS",
+        "Location":"Bellevue, WA",
+        "Mode":"FM",
+        "Long Name":"Bellevue Communication Support",
+        "Website":"https:\/\/bellevuewa.gov\/volunteering\/bellevue-communications-support",
+        "Status":"in",
+        "RepeaterBook ID":"489",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"WA7SAR",
+        "Output (MHz)":"147.060",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"85.4",
+        "Coordinates":[
+            46.5929985,
+            -120.53800201
+        ],
+        "Group Name":"YCRA",
+        "Location":"Yakima, WA",
+        "Mode":"FM",
+        "Long Name":null,
+        "Website":null,
+        "Status":"in",
+        "RepeaterBook ID":"161",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"KB7ARA",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            45.99373,
+            -118.18053
+        ],
+        "Group Name":"KBARA",
+        "Location":"Pikes Peak",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"80",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"KA7FVV",
+        "Output (MHz)":"147.320",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.73239899,
+            -117.0
+        ],
+        "Group Name":"KBARA",
+        "Location":"West Twin",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"17271",
+        "RepeaterBook State ID":"16",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"N7WRR",
+        "Output (MHz)":"147.360",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            48.18139,
+            -117.98917
+        ],
+        "Group Name":"KBARA",
+        "Location":"Stensgar Mtn.",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"366",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"N7WRQ",
+        "Output (MHz)":"147.380",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.57495,
+            -117.08113
+        ],
+        "Group Name":"KBARA",
+        "Location":"Mica Peak",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"78",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"KB7ARA",
+        "Output (MHz)":"147.020",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"107.2",
+        "Coordinates":[
+            46.00389862,
+            -112.53399658
+        ],
+        "Group Name":"KBARA",
+        "Location":"Lookout Pass, MT",
+        "Mode":"FM",
+        "Long Name":"Kamiak Butte Amateur Repeater Association",
+        "Website":"https:\/\/kbara.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"31",
+        "RepeaterBook State ID":"30",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"W6TQF",
+        "Output (MHz)":"440.325",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            45.74150848,
+            -121.68618774
+        ],
+        "Group Name":"Skamania Co. ARES",
+        "Location":"Augspurger Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Skamania County ARES",
+        "Website":"https:\/\/w6tqf.radio",
+        "Status":"in",
+        "RepeaterBook ID":"18543",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"K7CST",
+        "Output (MHz)":"147.3200",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.38199997,
+            -122.22699738
+        ],
+        "Group Name":"KCST",
+        "Location":"Kent East Hill, WA",
+        "Mode":"FM",
+        "Long Name":"Kent Communications Support Team",
+        "Website":"https:\/\/pugetsoundfire.org\/emergency-management\/communications-support-team-ham-radio\/",
+        "Status":"in",
+        "RepeaterBook ID":"9852",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"N7GDE",
+        "Output (MHz)":"145.1900",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.594746,
+            -122.15942
+        ],
+        "Group Name":"RASC",
+        "Location":"Lyman Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Radio Amateurs of Skagit County",
+        "Website":"https:\/\/rasconline.net\/",
+        "Status":"in",
+        "RepeaterBook ID":"176",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"N7YRC",
+        "Output (MHz)":"444.750",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"131.8",
+        "Coordinates":[
+            46.63059998,
+            -120.53500366
+        ],
+        "Group Name":"N7YRC",
+        "Location":"Lookout Point, Selah, WA",
+        "Mode":"FM",
+        "Long Name":"N7YRC Group",
+        "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
+        "Status":"in",
+        "RepeaterBook ID":"17413",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"N7YRC",
+        "Output (MHz)":"147.2400",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"192.8",
+        "Coordinates":null,
+        "Group Name":"N7YRC",
+        "Location":"Baldy, Ellensburg, WA",
+        "Mode":"FM",
+        "Long Name":"N7YRC Group",
+        "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"N7YRC",
+        "Output (MHz)":"442.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            46.62680054,
+            -120.73899841
+        ],
+        "Group Name":"N7YRC",
+        "Location":"Cowiche Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"N7YRC Group",
+        "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
+        "Status":"in",
+        "RepeaterBook ID":"7099",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
     },
     {
         "Callsign":"WW7SEA",
@@ -573,26 +870,6 @@
         "Mode":"FM",
         "Long Name":"Barry K7PAL's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7DX",
-        "Output (MHz)":"147.0000",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.67459,
-            -122.05393
-        ],
-        "Group Name":"WWDXC",
-        "Location":"Redmond",
-        "Mode":"FM",
-        "Long Name":"Western Washington DX Club",
-        "Website":"https:\/\/www.wwdxc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
@@ -1440,26 +1717,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"N7GDE",
-        "Output (MHz)":"145.1900",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"127.3",
-        "Coordinates":[
-            48.594746,
-            -122.15942
-        ],
-        "Group Name":"RASC",
-        "Location":"Lyman Mtn, WA",
-        "Mode":"FM",
-        "Long Name":"Radio Amateurs of Skagit County",
-        "Website":"https:\/\/rasconline.net\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"N7SK",
         "Output (MHz)":"146.7200",
         "Offset (MHz)":"-0.6",
@@ -1895,26 +2152,6 @@
         "Website":"https:\/\/www.qrz.com\/db\/KC7VQR",
         "Status":"response_needed",
         "RepeaterBook ID":"181",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W6TQF",
-        "Output (MHz)":"440.325",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
-            45.74150848,
-            -121.68618774
-        ],
-        "Group Name":"SCARES",
-        "Location":"Augspurger Mtn, WA",
-        "Mode":"FM",
-        "Long Name":"Skamania County ARES",
-        "Website":"http:\/\/skamania-prepare.org\/ares\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"18543",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":""
@@ -2480,86 +2717,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"KB7ARA",
-        "Output (MHz)":"147.280",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            45.99373,
-            -118.18053
-        ],
-        "Group Name":"KBARA",
-        "Location":"Pikes Peak",
-        "Mode":"FM",
-        "Long Name":"Kamiak Butte Amateur Repeater Association",
-        "Website":"https:\/\/kbara.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"80",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"KA7FVV",
-        "Output (MHz)":"147.320",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            46.73239899,
-            -117.0
-        ],
-        "Group Name":"KBARA",
-        "Location":"West Twin",
-        "Mode":"FM",
-        "Long Name":"Kamiak Butte Amateur Repeater Association",
-        "Website":"https:\/\/kbara.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"17271",
-        "RepeaterBook State ID":"16",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"N7WRR",
-        "Output (MHz)":"147.360",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"",
-        "Coordinates":[
-            48.18139,
-            -117.98917
-        ],
-        "Group Name":"KBARA",
-        "Location":"Stensgar Mtn.",
-        "Mode":"FM",
-        "Long Name":"Kamiak Butte Amateur Repeater Association",
-        "Website":"https:\/\/kbara.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"366",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"N7WRQ",
-        "Output (MHz)":"147.380",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
-            47.57495,
-            -117.08113
-        ],
-        "Group Name":"KBARA",
-        "Location":"Mica Peak",
-        "Mode":"FM",
-        "Long Name":"Kamiak Butte Amateur Repeater Association",
-        "Website":"https:\/\/kbara.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"78",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"AB7F",
         "Output (MHz)":"145.250",
         "Offset (MHz)":"-0.6",
@@ -2596,46 +2753,6 @@
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"N7YRC",
-        "Output (MHz)":"442.725",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"127.3",
-        "Coordinates":[
-            46.62680054,
-            -120.73899841
-        ],
-        "Group Name":"N7YRC",
-        "Location":"Cowiche Mtn.",
-        "Mode":"FM",
-        "Long Name":"N7YRC Group",
-        "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
-        "Status":"response_needed",
-        "RepeaterBook ID":"7099",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"N7YRC",
-        "Output (MHz)":"444.750",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"131.8",
-        "Coordinates":[
-            46.63059998,
-            -120.53500366
-        ],
-        "Group Name":"N7YRC",
-        "Location":"Lookout Point",
-        "Mode":"FM",
-        "Long Name":"N7YRC Group",
-        "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
-        "Status":"response_needed",
-        "RepeaterBook ID":"17413",
-        "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":""
     },
@@ -2875,46 +2992,6 @@
         "Website":"https:\/\/www.w7avm.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":"345",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"KB7ARA",
-        "Output (MHz)":"147.020",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"107.2",
-        "Coordinates":[
-            46.00389862,
-            -112.53399658
-        ],
-        "Group Name":"KBARA",
-        "Location":"Lookout Pass, MT",
-        "Mode":"FM",
-        "Long Name":"Kamiak Butte Amateur Repeater Association",
-        "Website":"https:\/\/kbara.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"31",
-        "RepeaterBook State ID":"30",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"K7BEL",
-        "Output (MHz)":"441.1000",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"156.7",
-        "Coordinates":[
-            47.55447,
-            -122.13239
-        ],
-        "Group Name":"BCS",
-        "Location":"Bellevue, WA",
-        "Mode":"FM",
-        "Long Name":"Bellevue Communication Support",
-        "Website":"https:\/\/bellevuewa.gov\/volunteering\/bellevue-communications-support",
-        "Status":"response_needed",
-        "RepeaterBook ID":"489",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":""

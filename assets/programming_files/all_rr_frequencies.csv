@@ -1,26 +1,42 @@
 RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,RepeaterBook ID,RepeaterBook State ID,Internet Access,Allow Internet Contacts,Latitude,Longitude
 1,WW7PSR,146.9600,-0.6,103.5,"Capitol Hill, Seattle, WA",FM,Puget Sound Repeater Group,https://web.psrg.org/,,,,,47.6395,-122.3693
 2,WW7PSR,52.8700,-1.7,103.5,Seattle,FM,Puget Sound Repeater Group,https://web.psrg.org/,,,,,47.62384,-122.31519
-3,WA7SAR,146.860,-0.6,123.0,Darland Mtn.,FM,Yakima County Radio Amateurs,,106,53,,No,46.51390076,-121.20800018
-4,WA7SAR,147.080,+0.6,123.0,King Mtn.,FM,Yakima County Radio Amateurs,,95,53,,No,46.06330109,-121.4240036
-5,WA7SAR,444.600,+5.0,123.0,Yakima,FM,Yakima County Radio Amateurs,,476,53,,No,46.52220154,-120.33300018
+3,WA7SAR,146.860,-0.6,123,Darland Mtn.,FM,Yakima County Radio Amateurs,,106,53,,No,46.51390076,-121.20800018
+4,WA7SAR,147.080,+0.6,123,King Mtn.,FM,Yakima County Radio Amateurs,,95,53,,No,46.06330109,-121.4240036
+5,WA7SAR,444.600,+5.0,123,Yakima,FM,Yakima County Radio Amateurs,,476,53,,No,46.52220154,-120.33300018
 6,K7NWS,145.3300,-0.6,179.9,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,,AllStarLink: 580850,Yes,47.50875,-121.98519
 7,K7NWS,224.3400,-1.6,110.9,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,,SVX Link: http://pnw220.net,Yes,47.50875,-121.98519
 8,K7NWS,442.0750,5.0,110.9,"Tiger Mtn West, WA",FM,Boeing Employees Amateur Radio Society,https://sites.google.com/site/k7nwsbears/,,,AllStarLink: 580852,Yes,47.51,-121.99
 9,K6RFK,147.3400,0.6,100,"Woodinville, WA",FM,K6RFK's repeater system,https://www.qrz.com/db/K6RFK,,,,No,47.7253,-122.1189
 10,K6RFK,442.7750,5.0,100,"Woodinville, WA",FM,K6RFK's repeater system,https://www.qrz.com/db/K6RFK,,,,No,47.7433,-122.1259
-11,N7OEP,440.0750,5.0,103.5,Enumclaw,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,9876,53,,,47.21944,-121.84194
+11,N7OEP,440.0750,+5.0,103.5,"Enumclaw, WA",FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,9876,53,,,47.21944,-121.84194
 12,N7OEP,443.1750,5.0,107.2,Enumclaw,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,9912,53,,,47.21944,-121.84195
 13,N7OEP,53.3300,-1.7,100,Baldi Mtn.,FM,Tom N7OEP's repeater system,https://www.qrz.com/db/n7oep,375,53,,,47.2192,-121.84288
-14,W7MIR,147.1600,0.6,146.2,"Mercer Island, WA",NBFM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,,,,47.56838,-122.22078
-15,W7MIR,440.1500,5.0,103.5,"Mercer Island, WA",NBFM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,,,,47.56838,-122.22078
+14,W7MIR,147.1600,+0.6,146.2,"Mercer Island, WA",NBFM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,,,,47.56838,-122.22078
+15,W7MIR,440.1500,+5.0,103.5,"Mercer Island, WA",NBFM,Mercer Island Radio Operators,https://miro.cmivolunteers.org/,,,,,47.56838,-122.22078
 16,K7PP,147.2800,0.6,123,"Mt Octopus, WA",FM,Peter Policani's K7PP repeater system,http://www.k7pp.itgo.com,,,,,47.75,-124.17666
 17,K7PP,441.2000,5.0,123,"Gold Mtn, WA",FM,Peter Policani's K7PP repeater system,http://www.k7pp.itgo.com,,,,,47.549167,-122.78388
 18,K7PP,441.3000,5.0,123,"Ko Peak, WA",FM,Peter Policani's K7PP repeater system,http://www.k7pp.itgo.com,,,,,46.46143,-123.5462
 19,K7PP,443.4000,5.0,123,"Cougar Mtn, WA",FM,Peter Policani's K7PP repeater system,http://www.k7pp.itgo.com,,,,,47.5414,-122.1092
-20,K7SWI,224.940,-1.6,100.0,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,21198,16,,No,43.9760521,-116.4074505
+20,K7SWI,224.940,-1.6,100,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,21198,16,,No,43.9760521,-116.4074505
 21,K7SWI,444.375,+5.0,100.0,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,21386,16,,No,43.9761,-116.4077
 22,N7UBO,146.740,-0.6,100.0,"Squaw Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,19067,16,,No,43.97606,-116.40751
 23,KI7PWR,146.920,-0.6,100.0,"Hat Butte, ID",FM,South West Idaho Amateur Radio Club,https://www.k7swi.org/,21717,16,,No,43.410919,-116.589569
 24,K7LED,146.8200,-0.6,103.5,"Tiger Mtn East, WA",FM,Mike & Key Amateur Radio Club,https://www.mikeandkey.org/,,,No,,47.48805,-121.94694
 25,K7LED,224.1200,-1.6,103.5,"Tiger Mtn East, WA",FM,Mike & Key Amateur Radio Club,https://www.mikeandkey.org/,,,No,,47.48805,-121.94694
+26,WA7SAR,145.270,-0.6,123.0,"Ellensburg, WA",FM,Yakima County Radio Amateurs,,23223,53,,No,46.9965144,-120.5478474
+27,W7DX,147.0000,-0.6,103.5,Redmond,FM,Western Washington DX Club,https://www.wwdxc.org/,,,,,47.67459,-122.05393
+28,W7PFR,53.4100,-1.7,100,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,,,,46.8354,-122.2878
+29,W7PFR,443.9750,+5.0,103.5,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,,,,46.8354,-122.2878
+30,K7BEL,441.1000,+5.0,156.7,"Bellevue, WA",FM,Bellevue Communication Support,https://bellevuewa.gov/volunteering/bellevue-communications-support,489,53,,Yes,47.55447,-122.13239
+31,WA7SAR,147.060,+0.6,85.4,"Yakima, WA",FM,,,161,53,,No,46.5929985,-120.53800201
+32,KB7ARA,147.280,+0.6,103.5,Pikes Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,80,53,,Yes,45.99373,-118.18053
+33,KA7FVV,147.320,+0.6,103.5,West Twin,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,17271,16,,Yes,46.73239899,-117.0
+34,N7WRR,147.360,+0.6,,Stensgar Mtn.,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,366,53,,Yes,48.18139,-117.98917
+35,N7WRQ,147.380,+0.6,100,Mica Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,78,53,,Yes,47.57495,-117.08113
+36,KB7ARA,147.020,+0.6,107.2,"Lookout Pass, MT",FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,31,30,,Yes,46.00389862,-112.53399658
+37,W6TQF,440.325,+5.0,100,"Augspurger Mtn, WA",FM,Skamania County ARES,https://w6tqf.radio,18543,53,,,45.74150848,-121.68618774
+38,K7CST,147.3200,+0.6,103.5,"Kent East Hill, WA",FM,Kent Communications Support Team,https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/,9852,53,,No,47.38199997,-122.22699738
+39,N7GDE,145.1900,-0.6,127.3,"Lyman Mtn, WA",FM,Radio Amateurs of Skagit County,https://rasconline.net/,176,53,,Yes,48.594746,-122.15942
+40,N7YRC,444.750,+5.0,131.8,"Lookout Point, Selah, WA",FM,N7YRC Group,https://www.qrz.com/db/N7YRC,17413,53,,No,46.63059998,-120.53500366
+42,N7YRC,442.725,+5.0,127.3,"Cowiche Mtn, WA",FM,N7YRC Group,https://www.qrz.com/db/N7YRC,7099,53,,No,46.62680054,-120.73899841
