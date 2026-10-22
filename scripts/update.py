@@ -304,7 +304,25 @@ def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
         "RepeaterBook ID": id_code,
     }
 
+    location = parse_repeaterbook_location(source.text)
+    if location:
+        repeater["Location"] = location
+
     return repeater
+
+
+def parse_repeaterbook_location(html: str) -> str | None:
+    """
+    Extract "City, State" from a RepeaterBook details page's
+    "City • County • State" line, or None if not present.
+    """
+    match = re.search(r'MHz.*?<p class="mb-0 text-body-secondary">(.*?)</p>', html, re.DOTALL)
+    if not match:
+        return None
+    parts = [p.strip() for p in match.group(1).split("•")]
+    if len(parts) < 2:
+        return None
+    return f"{parts[0]}, {parts[-1]}"
 
 def strip_empty(d: dict) -> dict:
     """

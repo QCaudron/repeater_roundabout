@@ -14,6 +14,7 @@ from update import (
     looks_like_internet_id,
     merge_repeaters,
     parse_repeater_lines,
+    parse_repeaterbook_location,
     refresh_repeater,
     repeaters_from_wwara,
     rollover,
@@ -422,6 +423,30 @@ def test_parse_repeater_lines_toneless_and_blank():
     got = parse_repeater_lines("- W7XYZ 146.520\n\n")
 
     assert got == [{"Callsign": "W7XYZ", "Output (MHz)": "146.520", "Tone (Hz)": None}]
+
+
+def test_parse_repeaterbook_location_extracts_city_and_state():
+    """parse_repeaterbook_location pulls "City, State" out of the City • County • State line."""
+    html = """
+    <p class="mb-1 text-body-secondary fw-normal">
+                      <i class="bi bi-broadcast-pin" aria-hidden="true"></i>
+                                            <span class="ms-1">
+                        147.06000                                                  (+)
+                                                MHz
+                      </span>
+                                              <span class="ms-1">85.4</span>
+                                          </p>
+
+    <p class="mb-0 text-body-secondary">
+                        Ellensburg                                                 • Kittitas County                         • Washington                      </p>
+    """
+
+    assert parse_repeaterbook_location(html) == "Ellensburg, Washington"
+
+
+def test_parse_repeaterbook_location_missing_returns_none():
+    """parse_repeaterbook_location returns None when the page has no location line."""
+    assert parse_repeaterbook_location("<p>nothing here</p>") is None
 
 
 def test_looks_like_internet_id():
