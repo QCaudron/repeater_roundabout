@@ -33,7 +33,7 @@ def make_args(**overrides):
         "wwara_csv": None, "prior_json": None, "call": None, "freq": None,
         "offset": None, "tone": None, "mode": None, "lat": None, "lon": None,
         "long_name": None, "url": None, "internet_contacts": None,
-        "internet_access": None, "regen": False, "score": False,
+        "internet_access": None, "regen": False, "score": False, "status": None,
     }
     args.update(overrides)
     return SimpleNamespace(**args)
@@ -99,6 +99,37 @@ def test_generate_repeater_df_adds_new_repeater_when_no_match(tmp_path, monkeypa
 
     assert len(df) == 2
     assert sorted(df["Callsign"]) == ["W7ABC", "W7XYZ"]
+
+
+def test_generate_repeater_df_sets_status_on_existing_repeater(tmp_path, monkeypatch):
+    """--status overrides an existing repeater's status even though a plain update normally leaves it alone."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets").mkdir()
+    (tmp_path / "assets" / "repeaters.json").write_text(json.dumps([
+        {"Callsign": "W7ABC", "Output (MHz)": "146.9000", "Group Name": "Old Name",
+         "Status": STATUS_IN, "RepeaterBook ID": None},
+    ]))
+
+    args = make_args(call="W7ABC", freq="146.900", status=STATUS_OUT)
+    df = generate_repeater_df(args)
+
+    assert df.iloc[0]["Status"] == STATUS_OUT
+
+
+def test_generate_repeater_df_sets_status_on_new_repeater(tmp_path, monkeypatch):
+    """--status sets the status of a brand-new repeater instead of the response-needed default."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets").mkdir()
+    (tmp_path / "assets" / "repeaters.json").write_text(json.dumps([
+        {"Callsign": "W7ABC", "Output (MHz)": "146.9000", "Group Name": "Old Name",
+         "Status": STATUS_OUT, "RepeaterBook ID": None},
+    ]))
+
+    args = make_args(call="W7XYZ", freq="147.000", name="New Club", status=STATUS_IN)
+    df = generate_repeater_df(args)
+
+    new = df.loc[df["Callsign"] == "W7XYZ"].iloc[0]
+    assert new["Status"] == STATUS_IN
 
 
 def test_rollover_archives_last_contest(tmp_path, monkeypatch):
@@ -572,6 +603,28 @@ def test_apply_repeater_csv_clears_internet_access_when_answer_is_no(tmp_path):
     assert errors == []
     assert got.loc[0, "Allow Internet Contacts"] == "No"
     assert got.loc[0, "Internet Access"] == ""
+
+
+def test_apply_repeater_csv_sets_status_on_existing_and_new_repeaters(tmp_path):
+    """Passing status= to apply_repeater_csv overwrites existing status and sets new rows' status."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7DX", "Output (MHz)": "147.0000", "Group Name": "WWDXC", "Status": STATUS_IN},
+    ])
+    csv_file = tmp_path / "repeater.csv"
+    csv_file.write_text(
+        "Club / Group Name,Repeater Callsign,Output Frequency (MHz),Offset (MHz),"
+        "Tone (Hz or Dnnn for DCS),Club / Group Website,Link to repeater on RepeaterBook,"
+        "Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info (if applicable),"
+        '"Approximate Location (e.g. Capitol Hill, Seattle, WA)","Approximate Coordinates (e.g. 47.6395, -122.3693)"\n'
+        "WWDXC,W7DX,147,-0.6,103.5,https://www.wwdxc.org/,,No,,Redmond,\n"
+        "WWDXC,W7NEW,440.000,5.0,DCS123,https://www.wwdxc.org/,,No,,Somewhere,\n"
+    )
+
+    got, errors = apply_repeater_csv(df, str(csv_file), status=STATUS_OUT)
+
+    assert errors == []
+    assert got.loc[got["Callsign"] == "W7DX", "Status"].iloc[0] == STATUS_OUT
+    assert got.loc[got["Callsign"] == "W7NEW", "Status"].iloc[0] == STATUS_OUT
 
 
 def test_apply_repeater_csv_adds_new_repeater(tmp_path):

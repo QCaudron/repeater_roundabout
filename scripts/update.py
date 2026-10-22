@@ -112,16 +112,21 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--internet_contacts", type=str, default=None)
     parser.add_argument("--internet_access", type=str, default=None)
     parser.add_argument("--regen", action="store_true")
+    parser.add_argument("--status", choices=[STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED],
+                         help="Set status on the repeater(s) touched by this run "
+                              "(single repeater, or every row of --repeater_csv)")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--score", action="store_true")
     mode.add_argument("--rollover", action="store_true")
-    mode.add_argument("--status", choices=[STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED])
     mode.add_argument("--update_all", action="store_true")
     mode.add_argument("--status_csv", type=str, default=None,
                        help="Club survey CSV: bulk-update status/callsign/tone/internet-access")
     mode.add_argument("--repeater_csv", type=str, default=None,
                        help="Single-repeater submission CSV: add or edit one repeater per row")
-    return parser.parse_args()
+    args = parser.parse_args()
+    if args.status and (args.score or args.rollover or args.update_all or args.status_csv):
+        parser.error("--status cannot be combined with --score/--rollover/--update_all/--status_csv")
+    return args
 
 def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
     """
@@ -357,6 +362,7 @@ def repeater_from_args(args: argparse.Namespace | SimpleNamespace) -> dict:
         "Website": args.url,
         "Allow Internet Contacts": args.internet_contacts,
         "Internet Access": args.internet_access,
+        "Status": args.status,
     }
 
     # Remove any empty values
@@ -479,9 +485,10 @@ def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, 
     # Default to FM when no source specifies a mode.
     r["Mode"] = r.get("Mode") or "FM"
 
-    # A newly added repeater hasn't been confirmed for this year, whatever its prior status
+    # A newly added repeater hasn't been confirmed for this year, whatever its prior status,
+    # unless the caller explicitly set one (e.g. --status).
     r.pop("Exclude", None)
-    r["Status"] = STATUS_RESPONSE_NEEDED
+    r["Status"] = args.get("Status") or STATUS_RESPONSE_NEEDED
 
     return r
 
@@ -687,6 +694,8 @@ def generate_repeater_df(
             for col, val in record.items():
                 if col != "Status":
                     df.at[i, col] = val
+            if args.status:
+                df = set_status(df, call, freq, args.status)
         else:
             new_rows.append(record)
 
@@ -983,13 +992,17 @@ def repeater_from_csv_row(row: dict, cols: dict) -> dict:
     return repeater
 
 
-def apply_repeater_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, list[str]]:
+def apply_repeater_csv(
+    df: pd.DataFrame, csv_file: str, status: str | None = None
+) -> tuple[pd.DataFrame, list[str]]:
     """
     Add or edit repeaters from a single-repeater submission CSV (one row per repeater,
     with full details: callsign, frequency, offset, tone, location, etc).
 
     A row matching an existing repeater's callsign and frequency updates it in place;
-    otherwise a new repeater is added with Status set to response-needed.
+    otherwise a new repeater is added. If status is given, every row (matched or new)
+    is set to that status; otherwise a matched row's status is left as-is and a new
+    row's status is set to response-needed.
 
     Returns the updated DataFrame and a list of error messages (one per row that could
     not be parsed; such rows are left unapplied).
@@ -1028,9 +1041,11 @@ def apply_repeater_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, l
                     fields = {k: v for k, v in repeater.items() if k not in ("Callsign", "Output (MHz)", "Group Name")}
                     if fields:
                         df = update_fields(df, call, freq, fields)
+                    if status:
+                        df = set_status(df, call, freq, status)
                 else:
                     repeater["Mode"] = repeater.get("Mode") or "FM"
-                    repeater["Status"] = STATUS_RESPONSE_NEEDED
+                    repeater["Status"] = status or STATUS_RESPONSE_NEEDED
                     new_rows.append(strip_empty(repeater))
             except Exception as e:
                 errors.append(f"{row}: {e}")
@@ -1052,16 +1067,22 @@ if __name__ == "__main__":
     if args.rollover:
         rollover()
         args.regen = True
-    if args.status:
+    if args.status and not args.repeater_csv:
         repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
-        try:
-            repeaters = update_status_and_fields_for_callsign(
-                repeaters, args.call or "", args.freq, args.status, repeater_from_args(args)
-            )
-        except ValueError as e:
-            sys.exit(str(e))
-        repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
-        args.regen = True
+        # Only attempt the update if the callsign is already known; otherwise this is a
+        # brand-new repeater and generate_repeater_df below will add it with this status.
+        # Checking existence directly (rather than swallowing ValueError whenever
+        # --wwara_csv/--id happen to be set) keeps a genuine typo'd callsign from being
+        # silently dropped when those flags are also present.
+        if args.call and (repeaters["Callsign"].str.upper() == args.call.upper()).any():
+            try:
+                repeaters = update_status_and_fields_for_callsign(
+                    repeaters, args.call, args.freq, args.status, repeater_from_args(args)
+                )
+            except ValueError as e:
+                sys.exit(str(e))
+            repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+            args.regen = True
     if args.update_all:
         repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
         repeaters, errors = update_all_repeaters(repeaters, args.wwara_csv)
@@ -1082,7 +1103,7 @@ if __name__ == "__main__":
         args.regen = True
     if args.repeater_csv:
         repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
-        repeaters, errors = apply_repeater_csv(repeaters, args.repeater_csv)
+        repeaters, errors = apply_repeater_csv(repeaters, args.repeater_csv, status=args.status)
         repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
         if errors:
             print(f"{len(errors)} row(s) failed to apply:", file=sys.stderr)
