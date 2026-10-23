@@ -164,6 +164,17 @@ Note that Python version 3.12 or higher is required. We recommend using `uv`. Af
 uv sync
 ```
 
+### Running Tests
+
+Tests live alongside the scripts in `scripts/`. Run them with:
+
+```bash
+cd scripts
+uv run python -m pytest
+```
+
+Note `python -m pytest`, not the `pytest` command directly -- the modules under test (`markdown_files`, `programming_files`, etc.) are only importable when `scripts/` is on `sys.path`, which `python -m` adds automatically.
+
 
 ## Typescript Development Environment
 
