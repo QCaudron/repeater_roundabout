@@ -39,5 +39,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 38,K7CST,147.3200,+0.6,103.5,"Kent East Hill, WA",FM,Kent Communications Support Team,https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/,9852,53,,No,47.38199997,-122.22699738
 39,N7GDE,145.1900,-0.6,127.3,"Lyman Mtn, WA",FM,Radio Amateurs of Skagit County,https://rasconline.net/,176,53,,Yes,48.594746,-122.15942
 40,N7YRC,444.750,+5.0,131.8,"Lookout Point, Selah, WA",FM,N7YRC Group,https://www.qrz.com/db/N7YRC,17413,53,,No,46.63059998,-120.53500366
-42,N7YRC,442.725,+5.0,127.3,"Cowiche Mtn, WA",FM,N7YRC Group,https://www.qrz.com/db/N7YRC,7099,53,,No,46.62680054,-120.73899841
+41,N7YRC,442.725,+5.0,127.3,"Cowiche Mtn, WA",FM,N7YRC Group,https://www.qrz.com/db/N7YRC,7099,53,,No,46.62680054,-120.73899841
+42,KC7VQR,147.240,+0.6,192.8,"Baldy, Ellensburg, WA",FM,N7YRC Group,https://www.qrz.com/db/KC7VQR,181,53,,,46.65399933,-120.52999878
 43,KJ7GWR,440.5750,5.0,123,"Indianola, WA",FM,Suquamish Tribe Office EM,https://suquamish.nsn.us/home/department,,,,,47.75977,-122.51764

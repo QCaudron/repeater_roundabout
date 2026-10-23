@@ -66,8 +66,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 38    | KCST              | K7CST      | Kent East Hill, WA        | FM          |       147.3200 |           +0.6 |       103.5 |
 | 39    | RASC              | N7GDE      | Lyman Mtn, WA             | FM          |       145.1900 |           -0.6 |       127.3 |
 | 40    | N7YRC             | N7YRC      | Lookout Point, Selah, WA  | FM          |        444.750 |           +5.0 |       131.8 |
-| 41    | N7YRC             | N7YRC      | Baldy, Ellensburg, WA     | FM          |       147.2400 |           +0.6 |       192.8 |
-| 42    | N7YRC             | N7YRC      | Cowiche Mtn, WA           | FM          |        442.725 |           +5.0 |       127.3 |
+| 41    | N7YRC             | N7YRC      | Cowiche Mtn, WA           | FM          |        442.725 |           +5.0 |       127.3 |
+| 42    | N7YRC             | KC7VQR     | Baldy, Ellensburg, WA     | FM          |        147.240 |           +0.6 |       192.8 |
 | 43    | Suquamish Tribe   | KJ7GWR     | Indianola, WA             | FM          |       440.5750 |            5.0 |         123 |
 
 ---

@@ -801,23 +801,6 @@
     },
     {
         "Callsign":"N7YRC",
-        "Output (MHz)":"147.2400",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"192.8",
-        "Coordinates":null,
-        "Group Name":"N7YRC",
-        "Location":"Baldy, Ellensburg, WA",
-        "Mode":"FM",
-        "Long Name":"N7YRC Group",
-        "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
-        "Status":"in",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":"No"
-    },
-    {
-        "Callsign":"N7YRC",
         "Output (MHz)":"442.725",
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"127.3",
@@ -835,6 +818,26 @@
         "RepeaterBook State ID":"53",
         "Internet Access":"",
         "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"KC7VQR",
+        "Output (MHz)":"147.240",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"192.8",
+        "Coordinates":[
+            46.65399933,
+            -120.52999878
+        ],
+        "Group Name":"N7YRC",
+        "Location":"Baldy, Ellensburg, WA",
+        "Mode":"FM",
+        "Long Name":"N7YRC Group",
+        "Website":"https:\/\/www.qrz.com\/db\/KC7VQR",
+        "Status":"in",
+        "RepeaterBook ID":"181",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":""
     },
     {
         "Callsign":"KJ7GWR",
@@ -2152,26 +2155,6 @@
         "Website":"https:\/\/www.qrz.com\/db\/K7RHT",
         "Status":"response_needed",
         "RepeaterBook ID":"17115",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"KC7VQR",
-        "Output (MHz)":"147.240",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"192.8",
-        "Coordinates":[
-            46.65399933,
-            -120.52999878
-        ],
-        "Group Name":"N7YRC",
-        "Location":"Yakima Canyon",
-        "Mode":"FM",
-        "Long Name":"N7YRC Group",
-        "Website":"https:\/\/www.qrz.com\/db\/KC7VQR",
-        "Status":"response_needed",
-        "RepeaterBook ID":"181",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":""
