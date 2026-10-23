@@ -40,3 +40,4 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 39,N7GDE,145.1900,-0.6,127.3,"Lyman Mtn, WA",FM,Radio Amateurs of Skagit County,https://rasconline.net/,176,53,,Yes,48.594746,-122.15942
 40,N7YRC,444.750,+5.0,131.8,"Lookout Point, Selah, WA",FM,N7YRC Group,https://www.qrz.com/db/N7YRC,17413,53,,No,46.63059998,-120.53500366
 42,N7YRC,442.725,+5.0,127.3,"Cowiche Mtn, WA",FM,N7YRC Group,https://www.qrz.com/db/N7YRC,7099,53,,No,46.62680054,-120.73899841
+43,KJ7GWR,440.5750,5.0,123,"Indianola, WA",FM,Suquamish Tribe Office EM,https://suquamish.nsn.us/home/department,,,,,47.75977,-122.51764

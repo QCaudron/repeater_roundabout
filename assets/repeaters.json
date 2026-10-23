@@ -837,6 +837,26 @@
         "Allow Internet Contacts":"No"
     },
     {
+        "Callsign":"KJ7GWR",
+        "Output (MHz)":"440.5750",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"123",
+        "Coordinates":[
+            47.75977,
+            -122.51764
+        ],
+        "Group Name":"Suquamish Tribe",
+        "Location":"Indianola, WA",
+        "Mode":"FM",
+        "Long Name":"Suquamish Tribe Office EM",
+        "Website":"https:\/\/suquamish.nsn.us\/home\/department",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
         "Callsign":"WW7SEA",
         "Output (MHz)":"444.4250",
         "Offset (MHz)":"5.0",

@@ -67,6 +67,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 39    | RASC              | N7GDE      | Lyman Mtn, WA             | FM          |       145.1900 |           -0.6 |       127.3 |
 | 40    | N7YRC             | N7YRC      | Lookout Point, Selah, WA  | FM          |        444.750 |           +5.0 |       131.8 |
 | 42    | N7YRC             | N7YRC      | Cowiche Mtn, WA           | FM          |        442.725 |           +5.0 |       127.3 |
+| 43    | Suquamish Tribe   | KJ7GWR     | Indianola, WA             | FM          |       440.5750 |            5.0 |         123 |
 
 ---
 
@@ -116,6 +117,9 @@ SWI-ARC
 
 Skamania Co. ARES
 : [Skamania County ARES](https://w6tqf.radio)
+
+Suquamish Tribe
+: [Suquamish Tribe Office EM](https://suquamish.nsn.us/home/department)
 
 WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org/)
