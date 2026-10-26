@@ -860,43 +860,83 @@
         "Allow Internet Contacts":null
     },
     {
-        "Callsign":"WW7SEA",
-        "Output (MHz)":"444.4250",
+        "Callsign":"N7KN",
+        "Output (MHz)":"441.4250",
         "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
+        "Tone (Hz)":"110.9",
         "Coordinates":[
-            47.6322,
-            -122.3539
+            48.069702,
+            -122.58033
         ],
-        "Group Name":"WW7SEA",
-        "Location":"Seattle",
+        "Group Name":"N7KN",
+        "Location":"Whidbey Isl.",
         "Mode":"FM",
-        "Long Name":"Barry K7PAL's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
-        "Status":"response_needed",
+        "Long Name":"Charlie N7KN's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/N7KN",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
     },
     {
-        "Callsign":"WW7SEA",
-        "Output (MHz)":"444.7000",
+        "Callsign":"W7NPC",
+        "Output (MHz)":"444.4750",
         "Offset (MHz)":"5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            47.63701,
-            -122.3488
+            47.6558,
+            -122.5475
         ],
-        "Group Name":"WW7SEA",
-        "Location":"Seattle",
+        "Group Name":"BARC",
+        "Location":"Bainbridge Isl.",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Bainbridge Amateur Radio Club",
+        "Website":"https:\/\/w7npc.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"480",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WA6PMX",
+        "Output (MHz)":"224.4200",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.3922,
+            -122.3251
+        ],
+        "Group Name":"BARC",
+        "Location":"Bainbridge Isl.",
         "Mode":"FM",
-        "Long Name":"Barry K7PAL's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
-        "Status":"response_needed",
+        "Long Name":"Bainbridge Amateur Radio Club",
+        "Website":"https:\/\/w7npc.org\/",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WA6PMX",
+        "Output (MHz)":"442.2000",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.76606,
+            -122.6599
+        ],
+        "Group Name":"BARC",
+        "Location":"Bainbridge Isl.",
+        "Mode":"FM",
+        "Long Name":"Bainbridge Amateur Radio Club",
+        "Website":"https:\/\/w7npc.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
         "Allow Internet Contacts":""
     },
     {
@@ -913,10 +953,10 @@
         "Mode":"FM",
         "Long Name":"Jefferson County Amateur Radio Club",
         "Website":"https:\/\/w7jcr.wordpress.com\/",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
+        "Internet Access":"",
         "Allow Internet Contacts":""
     },
     {
@@ -933,6 +973,386 @@
         "Mode":"FM",
         "Long Name":"Marrowstone Island Amateur Radio Club",
         "Website":"https:\/\/qrz.com\/db\/AA7MI",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"145.1700",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.38661,
+            -122.86099
+        ],
+        "Group Name":"NMARESC",
+        "Location":"Belfair, WA",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"NM7E",
+        "Output (MHz)":"224.2600",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.3866,
+            -122.86099
+        ],
+        "Group Name":"NMARESC",
+        "Location":"Belfair, WA",
+        "Mode":"FM",
+        "Long Name":"North Mason Amateur Radio Emergency Service Club",
+        "Website":"https:\/\/nmaresc.wordpress.com\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"W7AVM",
+        "Output (MHz)":"147.2200",
+        "Offset (MHz)":"0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            47.9744,
+            -122.3976
+        ],
+        "Group Name":"ICARC",
+        "Location":"Whidbey Isl.",
+        "Mode":"FM",
+        "Long Name":"Island County ARC",
+        "Website":"https:\/\/www.w7avm.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"345",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"N3KPU",
+        "Output (MHz)":"145.2300",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"146.2",
+        "Coordinates":[
+            47.0289,
+            -122.2995
+        ],
+        "Group Name":"N3KPU",
+        "Location":"Graham",
+        "Mode":"FM",
+        "Long Name":"Michael N3KPU's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/N3KPU",
+        "Status":"in",
+        "RepeaterBook ID":"9851",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"146.880",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.57889938,
+            -117.29599762
+        ],
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"283",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"147.340",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.65879822,
+            -117.4260025
+        ],
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"290",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"WR7VHF",
+        "Output (MHz)":"444.600",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.91939926,
+            -117.11399841
+        ],
+        "Group Name":"IEVHFRA",
+        "Location":"Spokane",
+        "Mode":"FM",
+        "Long Name":"Inland Empire VHF Radio Amateurs",
+        "Website":"https:\/\/www.vhfclub.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"17283",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"KC7Z",
+        "Output (MHz)":"146.6200",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54788,
+            -122.8073
+        ],
+        "Group Name":"KCARC",
+        "Location":"Gold Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Kitsap County Amateur Radio Club",
+        "Website":"https:\/\/kcarc.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"KC7Z",
+        "Output (MHz)":"442.6500",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54788,
+            -122.8073
+        ],
+        "Group Name":"KCARC",
+        "Location":"Gold Mtn, WA",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Kitsap County Amateur Radio Club",
+        "Website":"https:\/\/kcarc.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"KC7Z",
+        "Output (MHz)":"444.0750",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.60212,
+            -122.61746
+        ],
+        "Group Name":"KCARC",
+        "Location":"Bremerton, WA",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Kitsap County Amateur Radio Club",
+        "Website":"https:\/\/kcarc.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"N7MHE",
+        "Output (MHz)":"145.350",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.81000137,
+            -119.88200378
+        ],
+        "Group Name":"N7MHE",
+        "Location":"Saddle Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Craig Morrison's N7MHE repeater",
+        "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
+        "Status":"in",
+        "RepeaterBook ID":"390",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"N7MHE",
+        "Output (MHz)":"146.70",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.20861,
+            -119.31917
+        ],
+        "Group Name":"N7MHE",
+        "Location":"Moses Lake, WA",
+        "Mode":"FM",
+        "Long Name":"Craig Morrison's N7MHE repeater",
+        "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WW7SEA",
+        "Output (MHz)":"444.7000",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.63701,
+            -122.3488
+        ],
+        "Group Name":"WW7SEA",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Barry K7PAL's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"147.875",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.54029846,
+            -122.09999847
+        ],
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"SeaTac Rptr Assoc",
+        "Website":"https:\/\/www.seatacra.com\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"224.440",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54029846,
+            -122.09999847
+        ],
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/www.seatacra.com\/",
+        "Status":"in",
+        "RepeaterBook ID":"16503",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"442.1500",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.46833,
+            -121.82222
+        ],
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/www.seatacra.com\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"444.8500",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.54192,
+            -122.1095
+        ],
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/www.seatacra.com\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WW7STR",
+        "Output (MHz)":"927.2125",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            47.54192,
+            -122.1095
+        ],
+        "Group Name":"SeaTac",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"SeaTac Repeater Association",
+        "Website":"https:\/\/www.seatacra.com\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WW7SEA",
+        "Output (MHz)":"444.4250",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6322,
+            -122.3539
+        ],
+        "Group Name":"WW7SEA",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Barry K7PAL's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
@@ -1333,66 +1753,6 @@
         "Mode":"FM",
         "Long Name":"Matt KC7EQO's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/KC7EQO\/R",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"KC7Z",
-        "Output (MHz)":"146.6200",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.54788,
-            -122.8073
-        ],
-        "Group Name":"KCARC",
-        "Location":"Gold Mtn, WA",
-        "Mode":"FM",
-        "Long Name":"Kitsap County Amateur Radio Club",
-        "Website":"https:\/\/kcarc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"KC7Z",
-        "Output (MHz)":"442.6500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.54788,
-            -122.8073
-        ],
-        "Group Name":"KCARC",
-        "Location":"Gold Mtn, WA",
-        "Mode":"NBFM[^nbfm]",
-        "Long Name":"Kitsap County Amateur Radio Club",
-        "Website":"https:\/\/kcarc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"KC7Z",
-        "Output (MHz)":"444.0750",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.60212,
-            -122.61746
-        ],
-        "Group Name":"KCARC",
-        "Location":"Bremerton, WA",
-        "Mode":"NBFM[^nbfm]",
-        "Long Name":"Kitsap County Amateur Radio Club",
-        "Website":"https:\/\/kcarc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
@@ -2020,66 +2380,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"WR7VHF",
-        "Output (MHz)":"146.880",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
-            47.57889938,
-            -117.29599762
-        ],
-        "Group Name":"IEVHFRA",
-        "Location":"Spokane",
-        "Mode":"FM",
-        "Long Name":"Inland Empire VHF Radio Amateurs",
-        "Website":"https:\/\/www.vhfclub.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"283",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WR7VHF",
-        "Output (MHz)":"147.340",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
-            47.65879822,
-            -117.4260025
-        ],
-        "Group Name":"IEVHFRA",
-        "Location":"Spokane",
-        "Mode":"FM",
-        "Long Name":"Inland Empire VHF Radio Amateurs",
-        "Website":"https:\/\/www.vhfclub.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"290",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WR7VHF",
-        "Output (MHz)":"444.600",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"123.0",
-        "Coordinates":[
-            47.91939926,
-            -117.11399841
-        ],
-        "Group Name":"IEVHFRA",
-        "Location":"Spokane",
-        "Mode":"FM",
-        "Long Name":"Inland Empire VHF Radio Amateurs",
-        "Website":"https:\/\/www.vhfclub.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"17283",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"K7JEP",
         "Output (MHz)":"145.490",
         "Offset (MHz)":"-0.6",
@@ -2180,26 +2480,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"N7MHE",
-        "Output (MHz)":"145.350",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
-            46.81000137,
-            -119.88200378
-        ],
-        "Group Name":"N7MHE",
-        "Location":"Saddle Mtn, WA",
-        "Mode":"FM",
-        "Long Name":"Craig Morrison's N7MHE repeater",
-        "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
-        "Status":"response_needed",
-        "RepeaterBook ID":"390",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"NE7MC",
         "Output (MHz)":"442.0000",
         "Offset (MHz)":"5.0",
@@ -2216,46 +2496,6 @@
         "Status":"response_needed",
         "RepeaterBook ID":"19962",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"NM7E",
-        "Output (MHz)":"145.1700",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.38661,
-            -122.86099
-        ],
-        "Group Name":"NMARESC",
-        "Location":"Belfair, WA",
-        "Mode":"FM",
-        "Long Name":"North Mason Amateur Radio Emergency Service Club",
-        "Website":"https:\/\/nmaresc.wordpress.com\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"NM7E",
-        "Output (MHz)":"224.2600",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.3866,
-            -122.86099
-        ],
-        "Group Name":"NMARESC",
-        "Location":"Belfair, WA",
-        "Mode":"FM",
-        "Long Name":"North Mason Amateur Radio Emergency Service Club",
-        "Website":"https:\/\/nmaresc.wordpress.com\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
         "Internet Access":null,
         "Allow Internet Contacts":""
     },
@@ -2640,86 +2880,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"N7MHE",
-        "Output (MHz)":"146.70",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
-            47.20861,
-            -119.31917
-        ],
-        "Group Name":"N7MHE",
-        "Location":"Moses Lake, WA",
-        "Mode":"FM",
-        "Long Name":"Craig Morrison's N7MHE repeater",
-        "Website":"https:\/\/www.qrz.com\/db\/N7MHE",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7NPC",
-        "Output (MHz)":"444.4750",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.6558,
-            -122.5475
-        ],
-        "Group Name":"BARC",
-        "Location":"Bainbridge Isl.",
-        "Mode":"NBFM[^nbfm]",
-        "Long Name":"Bainbridge Amateur Radio Club",
-        "Website":"https:\/\/w7npc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"480",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WA6PMX",
-        "Output (MHz)":"224.4200",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"88.5",
-        "Coordinates":[
-            47.3922,
-            -122.3251
-        ],
-        "Group Name":"BARC",
-        "Location":"Bainbridge Isl.",
-        "Mode":"FM",
-        "Long Name":"Bainbridge Amateur Radio Club",
-        "Website":"https:\/\/w7npc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WA6PMX",
-        "Output (MHz)":"442.2000",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.76606,
-            -122.6599
-        ],
-        "Group Name":"BARC",
-        "Location":"Bainbridge Isl.",
-        "Mode":"FM",
-        "Long Name":"Bainbridge Amateur Radio Club",
-        "Website":"https:\/\/w7npc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"AB7F",
         "Output (MHz)":"145.250",
         "Offset (MHz)":"-0.6",
@@ -2740,26 +2900,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"N7KN",
-        "Output (MHz)":"441.4250",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"110.9",
-        "Coordinates":[
-            48.069702,
-            -122.58033
-        ],
-        "Group Name":"N7KN",
-        "Location":"Whidbey Isl.",
-        "Mode":"FM",
-        "Long Name":"Charlie N7KN's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/N7KN",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"N7YRC",
         "Output (MHz)":"53.930",
         "Offset (MHz)":"-1.7",
@@ -2775,26 +2915,6 @@
         "Website":"https:\/\/www.qrz.com\/db\/N7YRC",
         "Status":"response_needed",
         "RepeaterBook ID":"21604",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"N3KPU",
-        "Output (MHz)":"145.2300",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"146.2",
-        "Coordinates":[
-            47.0289,
-            -122.2995
-        ],
-        "Group Name":"N3KPU",
-        "Location":"Graham",
-        "Mode":"FM",
-        "Long Name":"Michael N3KPU's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/N3KPU",
-        "Status":"response_needed",
-        "RepeaterBook ID":"9851",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":""
@@ -2980,26 +3100,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"W7AVM",
-        "Output (MHz)":"147.2200",
-        "Offset (MHz)":"0.6",
-        "Tone (Hz)":"127.3",
-        "Coordinates":[
-            47.9744,
-            -122.3976
-        ],
-        "Group Name":"ICARC",
-        "Location":"Whidbey Isl.",
-        "Mode":"FM",
-        "Long Name":"Island County ARC",
-        "Website":"https:\/\/www.w7avm.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"345",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"WW7ATS",
         "Output (MHz)":"147.080",
         "Offset (MHz)":"0.6",
@@ -3020,46 +3120,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"WW7STR",
-        "Output (MHz)":"147.875",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"88.5",
-        "Coordinates":[
-            47.54029846,
-            -122.09999847
-        ],
-        "Group Name":"SeaTac",
-        "Location":"Cougar Mtn, WA",
-        "Mode":"NBFM[^nbfm]",
-        "Long Name":"SeaTac Rptr Assoc",
-        "Website":"https:\/\/www.seatacra.com\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WW7STR",
-        "Output (MHz)":"224.440",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.54029846,
-            -122.09999847
-        ],
-        "Group Name":"SeaTac",
-        "Location":"Cougar Mtn, WA",
-        "Mode":"FM",
-        "Long Name":"SeaTac Repeater Association",
-        "Website":"https:\/\/www.seatacra.com\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"16503",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"WW7ATS",
         "Output (MHz)":"441.550",
         "Offset (MHz)":"+5.0",
@@ -3076,66 +3136,6 @@
         "Status":"response_needed",
         "RepeaterBook ID":"601",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WW7STR",
-        "Output (MHz)":"442.1500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.46833,
-            -121.82222
-        ],
-        "Group Name":"SeaTac",
-        "Location":"Cougar Mtn, WA",
-        "Mode":"FM",
-        "Long Name":"SeaTac Repeater Association",
-        "Website":"https:\/\/www.seatacra.com\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WW7STR",
-        "Output (MHz)":"444.8500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.54192,
-            -122.1095
-        ],
-        "Group Name":"SeaTac",
-        "Location":"Cougar Mtn, WA",
-        "Mode":"FM",
-        "Long Name":"SeaTac Repeater Association",
-        "Website":"https:\/\/www.seatacra.com\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WW7STR",
-        "Output (MHz)":"927.2125",
-        "Offset (MHz)":"-25.0",
-        "Tone (Hz)":"114.8",
-        "Coordinates":[
-            47.54192,
-            -122.1095
-        ],
-        "Group Name":"SeaTac",
-        "Location":"Cougar Mtn, WA",
-        "Mode":"NBFM[^nbfm]",
-        "Long Name":"SeaTac Repeater Association",
-        "Website":"https:\/\/www.seatacra.com\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
         "Internet Access":null,
         "Allow Internet Contacts":""
     },

@@ -69,10 +69,37 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 41    | N7YRC             | N7YRC      | Cowiche Mtn, WA           | FM          |        442.725 |           +5.0 |       127.3 |
 | 42    | N7YRC             | KC7VQR     | Baldy, Ellensburg, WA     | FM          |        147.240 |           +0.6 |       192.8 |
 | 43    | Suquamish Tribe   | KJ7GWR     | Indianola, WA             | FM          |       440.5750 |            5.0 |         123 |
+| 44    | N7KN              | N7KN       | Whidbey Isl.              | FM          |       441.4250 |            5.0 |       110.9 |
+| 45    | BARC              | W7NPC      | Bainbridge Isl.           | NBFM[^nbfm] |       444.4750 |            5.0 |       103.5 |
+| 46    | BARC              | WA6PMX     | Bainbridge Isl.           | FM          |       224.4200 |           -1.6 |        88.5 |
+| 47    | BARC              | WA6PMX     | Bainbridge Isl.           | FM          |       442.2000 |            5.0 |       103.5 |
+| 48    | JCARC             | W7JCR      | Port Townsend             | FM          |       145.1500 |           -0.6 |       114.8 |
+| 49    | Marrowstone       | AA7MI      | Marrowstone Isl.          | FM          |       440.7250 |            5.0 |       114.8 |
+| 50    | NMARESC           | NM7E       | Belfair, WA               | FM          |       145.1700 |           -0.6 |       103.5 |
+| 51    | NMARESC           | NM7E       | Belfair, WA               | FM          |       224.2600 |           -1.6 |       103.5 |
+| 52    | ICARC             | W7AVM      | Whidbey Isl.              | FM          |       147.2200 |            0.6 |       127.3 |
+| 53    | N3KPU             | N3KPU      | Graham                    | FM          |       145.2300 |           -0.6 |       146.2 |
+| 54    | IEVHFRA           | WR7VHF     | Spokane                   | FM          |        146.880 |           -0.6 |       123.0 |
+| 55    | IEVHFRA           | WR7VHF     | Spokane                   | FM          |        147.340 |           +0.6 |       123.0 |
+| 56    | IEVHFRA           | WR7VHF     | Spokane                   | FM          |        444.600 |           +5.0 |       123.0 |
+| 57    | KCARC             | KC7Z       | Gold Mtn, WA              | FM          |       146.6200 |           -0.6 |       103.5 |
+| 58    | KCARC             | KC7Z       | Gold Mtn, WA              | NBFM[^nbfm] |       442.6500 |            5.0 |       103.5 |
+| 59    | KCARC             | KC7Z       | Bremerton, WA             | NBFM[^nbfm] |       444.0750 |            5.0 |       103.5 |
+| 60    | N7MHE             | N7MHE      | Saddle Mtn, WA            | FM          |        145.350 |           -0.6 |       100.0 |
+| 61    | N7MHE             | N7MHE      | Moses Lake, WA            | FM          |         146.70 |           -0.6 |       100.0 |
+| 62    | WW7SEA            | WW7SEA     | Seattle                   | FM          |       444.7000 |            5.0 |       103.5 |
+| 63    | SeaTac            | WW7STR     | Cougar Mtn, WA            | NBFM[^nbfm] |        147.875 |           -0.6 |        88.5 |
+| 64    | SeaTac            | WW7STR     | Cougar Mtn, WA            | FM          |        224.440 |           -1.6 |       103.5 |
+| 65    | SeaTac            | WW7STR     | Cougar Mtn, WA            | FM          |       442.1500 |            5.0 |       103.5 |
+| 66    | SeaTac            | WW7STR     | Cougar Mtn, WA            | FM          |       444.8500 |            5.0 |       103.5 |
+| 67    | SeaTac            | WW7STR     | Cougar Mtn, WA            | NBFM[^nbfm] |       927.2125 |          -25.0 |       114.8 |
 
 ---
 
 ### Clubs and repeater associations
+
+BARC
+: [Bainbridge Amateur Radio Club](https://w7npc.org/)
 
 BCS
 : [Bellevue Communication Support](https://bellevuewa.gov/volunteering/bellevue-communications-support)
@@ -83,6 +110,15 @@ BEARS
 GKRG
 : [Gobblers Knob Repeater Group](https://www.qrz.com/db/W7PFR)
 
+ICARC
+: [Island County ARC](https://www.w7avm.org/)
+
+IEVHFRA
+: [Inland Empire VHF Radio Amateurs](https://www.vhfclub.org/)
+
+JCARC
+: [Jefferson County Amateur Radio Club](https://w7jcr.wordpress.com/)
+
 K6RFK
 : [K6RFK's repeater system](https://www.qrz.com/db/K6RFK)
 
@@ -92,20 +128,38 @@ K7PP
 KBARA
 : [Kamiak Butte Amateur Repeater Association](https://kbara.org/)
 
+KCARC
+: [Kitsap County Amateur Radio Club](https://kcarc.org/)
+
 KCST
 : [Kent Communications Support Team](https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/)
 
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
 
+Marrowstone
+: [Marrowstone Island Amateur Radio Club](https://qrz.com/db/AA7MI)
+
 Mike & Key
 : [Mike & Key Amateur Radio Club](https://www.mikeandkey.org/)
+
+N3KPU
+: [Michael N3KPU's repeater system](https://www.qrz.com/db/N3KPU)
+
+N7KN
+: [Charlie N7KN's repeater system](https://www.qrz.com/db/N7KN)
+
+N7MHE
+: [Craig Morrison's N7MHE repeater](https://www.qrz.com/db/N7MHE)
 
 N7OEP
 : [Tom N7OEP's repeater system](https://www.qrz.com/db/n7oep)
 
 N7YRC
 : [N7YRC Group](https://www.qrz.com/db/N7YRC)
+
+NMARESC
+: [North Mason Amateur Radio Emergency Service Club](https://nmaresc.wordpress.com/)
 
 PSRG
 : [Puget Sound Repeater Group](https://web.psrg.org/)
@@ -116,11 +170,17 @@ RASC
 SWI-ARC
 : [South West Idaho Amateur Radio Club](https://www.k7swi.org/)
 
+SeaTac
+: [SeaTac Rptr Assoc](https://www.seatacra.com/)
+
 Skamania Co. ARES
 : [Skamania County ARES](https://w6tqf.radio)
 
 Suquamish Tribe
 : [Suquamish Tribe Office EM](https://suquamish.nsn.us/home/department)
+
+WW7SEA
+: [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)
 
 WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org/)

@@ -42,3 +42,27 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 41,N7YRC,442.725,+5.0,127.3,"Cowiche Mtn, WA",FM,N7YRC Group,https://www.qrz.com/db/N7YRC,7099,53,,No,46.62680054,-120.73899841
 42,KC7VQR,147.240,+0.6,192.8,"Baldy, Ellensburg, WA",FM,N7YRC Group,https://www.qrz.com/db/KC7VQR,181,53,,,46.65399933,-120.52999878
 43,KJ7GWR,440.5750,5.0,123,"Indianola, WA",FM,Suquamish Tribe Office EM,https://suquamish.nsn.us/home/department,,,,,47.75977,-122.51764
+44,N7KN,441.4250,5.0,110.9,Whidbey Isl.,FM,Charlie N7KN's repeater system,https://www.qrz.com/db/N7KN,,,,No,48.069702,-122.58033
+45,W7NPC,444.4750,5.0,103.5,Bainbridge Isl.,NBFM,Bainbridge Amateur Radio Club,https://w7npc.org/,480,53,,,47.6558,-122.5475
+46,WA6PMX,224.4200,-1.6,88.5,Bainbridge Isl.,FM,Bainbridge Amateur Radio Club,https://w7npc.org/,,,,,47.3922,-122.3251
+47,WA6PMX,442.2000,5.0,103.5,Bainbridge Isl.,FM,Bainbridge Amateur Radio Club,https://w7npc.org/,,,,,47.76606,-122.6599
+48,W7JCR,145.1500,-0.6,114.8,Port Townsend,FM,Jefferson County Amateur Radio Club,https://w7jcr.wordpress.com/,,,,,48.1247,-122.7651
+49,AA7MI,440.7250,5.0,114.8,Marrowstone Isl.,FM,Marrowstone Island Amateur Radio Club,https://qrz.com/db/AA7MI,,,,,48.04026,-122.68775
+50,NM7E,145.1700,-0.6,103.5,"Belfair, WA",FM,North Mason Amateur Radio Emergency Service Club,https://nmaresc.wordpress.com/,,,,,47.38661,-122.86099
+51,NM7E,224.2600,-1.6,103.5,"Belfair, WA",FM,North Mason Amateur Radio Emergency Service Club,https://nmaresc.wordpress.com/,,,,,47.3866,-122.86099
+52,W7AVM,147.2200,0.6,127.3,Whidbey Isl.,FM,Island County ARC,https://www.w7avm.org/,345,53,,,47.9744,-122.3976
+53,N3KPU,145.2300,-0.6,146.2,Graham,FM,Michael N3KPU's repeater system,https://www.qrz.com/db/N3KPU,9851,53,,,47.0289,-122.2995
+54,WR7VHF,146.880,-0.6,123.0,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,283,53,,Yes,47.57889938,-117.29599762
+55,WR7VHF,147.340,+0.6,123.0,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,290,53,,Yes,47.65879822,-117.4260025
+56,WR7VHF,444.600,+5.0,123.0,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,17283,53,,Yes,47.91939926,-117.11399841
+57,KC7Z,146.6200,-0.6,103.5,"Gold Mtn, WA",FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,,,Yes,47.54788,-122.8073
+58,KC7Z,442.6500,5.0,103.5,"Gold Mtn, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,,,Yes,47.54788,-122.8073
+59,KC7Z,444.0750,5.0,103.5,"Bremerton, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,,,Yes,47.60212,-122.61746
+60,N7MHE,145.350,-0.6,100.0,"Saddle Mtn, WA",FM,Craig Morrison's N7MHE repeater,https://www.qrz.com/db/N7MHE,390,53,,,46.81000137,-119.88200378
+61,N7MHE,146.70,-0.6,100.0,"Moses Lake, WA",FM,Craig Morrison's N7MHE repeater,https://www.qrz.com/db/N7MHE,,,,,47.20861,-119.31917
+62,WW7SEA,444.7000,5.0,103.5,Seattle,FM,Barry K7PAL's repeater system,https://www.qrz.com/db/WW7SEA,,,,,47.637010000000004,-122.3488
+63,WW7STR,147.875,-0.6,88.5,"Cougar Mtn, WA",NBFM,SeaTac Rptr Assoc,https://www.seatacra.com/,,,,,47.54029846,-122.09999847
+64,WW7STR,224.440,-1.6,103.5,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://www.seatacra.com/,16503,53,,,47.54029846,-122.09999847
+65,WW7STR,442.1500,5.0,103.5,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://www.seatacra.com/,,53,,,47.46833,-121.82222
+66,WW7STR,444.8500,5.0,103.5,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://www.seatacra.com/,,,,,47.54192,-122.1095
+67,WW7STR,927.2125,-25.0,114.8,"Cougar Mtn, WA",NBFM,SeaTac Repeater Association,https://www.seatacra.com/,,,,,47.54192,-122.1095
