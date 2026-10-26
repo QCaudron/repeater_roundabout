@@ -62,6 +62,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
         url = input("Website: ") or None
         internet_contacts = input("Allow Internet Contacts: ") or None
         internet_access = input("Internet Access: ") or None
+        repeaters_file = input("Repeaters file (one 'CALL 146.860- T123.0' per line): ") or None
 
         args = {
             "name": name,
@@ -81,6 +82,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
             "url": url,
             "internet_contacts": internet_contacts,
             "internet_access": internet_access,
+            "repeaters": None,
+            "repeaters_file": repeaters_file,
             "regen": False,
             "status": None,
             "score": False,
@@ -111,6 +114,11 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser.add_argument("--url", type=str, default=None)
     parser.add_argument("--internet_contacts", type=str, default=None)
     parser.add_argument("--internet_access", type=str, default=None)
+    parser.add_argument("--repeaters", type=str, default=None,
+                        help="Batch-add repeaters, one per line, e.g. '- WA7SAR 146.860- T123.0'; "
+                             "other flags (--name, --wwara_csv, ...) apply to each")
+    parser.add_argument("--repeaters_file", type=str, default=None,
+                        help="Like --repeaters, but read the lines from a file")
     parser.add_argument("--regen", action="store_true")
     parser.add_argument("--status", choices=[STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED],
                          help="Set status on the repeater(s) touched by this run "
@@ -944,6 +952,22 @@ def apply_status_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, lis
     return df, errors
 
 
+def batch_args(args: argparse.Namespace | SimpleNamespace) -> list[SimpleNamespace]:
+    """
+    Expand --repeaters / --repeaters_file into one args namespace per listed repeater,
+    each inheriting the other flags with call, freq, and tone filled in.
+    """
+    text = args.repeaters or ""
+    if args.repeaters_file:
+        text += "\n" + Path(args.repeaters_file).read_text()
+    return [
+        SimpleNamespace(**{**vars(args), "call": r["Callsign"], "freq": r["Output (MHz)"], "tone": r["Tone (Hz)"],
+                           # Earlier steps set regen to reload the df; that would skip adding this repeater.
+                           "regen": False, "score": False})
+        for r in parse_repeater_lines(text)
+    ]
+
+
 def parse_repeaterbook_link(url: str) -> tuple[str | None, str | None]:
     """Extract (state_id, id) from a RepeaterBook details URL, or (None, None) if absent."""
     state_match = re.search(r"state_id=(\d+)", url or "")
@@ -1111,7 +1135,15 @@ if __name__ == "__main__":
                 print(f"  - {e}", file=sys.stderr)
         args.regen = True
 
-    df = generate_repeater_df(args)
+    batch = batch_args(args)
+    if (args.repeaters or args.repeaters_file) and not batch:
+        sys.exit("--repeaters/--repeaters_file contained no parseable repeater lines")
+    if batch:
+        # Each call persists to REPEATERS_JSON, so the last df includes every repeater.
+        for a in batch:
+            df = generate_repeater_df(a)
+    else:
+        df = generate_repeater_df(args)
     ensure_col(df, "Status", STATUS_RESPONSE_NEEDED)
     df["Status"] = df["Status"].fillna(STATUS_RESPONSE_NEEDED)
     with open(FORMS_JSON) as f:

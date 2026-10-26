@@ -9,6 +9,7 @@ from markdown_files import STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED
 from update import (
     apply_repeater_csv,
     apply_status_csv,
+    batch_args,
     drop_missing_coordinates,
     generate_repeater_df,
     looks_like_internet_id,
@@ -33,7 +34,7 @@ def make_args(**overrides):
         "wwara_csv": None, "prior_json": None, "call": None, "freq": None,
         "offset": None, "tone": None, "mode": None, "lat": None, "lon": None,
         "long_name": None, "url": None, "internet_contacts": None,
-        "internet_access": None, "regen": False, "score": False, "status": None,
+        "internet_access": None, "repeaters": None, "repeaters_file": None, "regen": False, "score": False, "status": None,
     }
     args.update(overrides)
     return SimpleNamespace(**args)
@@ -454,6 +455,31 @@ def test_parse_repeater_lines_toneless_and_blank():
     got = parse_repeater_lines("- W7XYZ 146.520\n\n")
 
     assert got == [{"Callsign": "W7XYZ", "Output (MHz)": "146.520", "Tone (Hz)": None}]
+
+
+def test_batch_args_expands_one_namespace_per_repeater(tmp_path):
+    """batch_args clones the shared flags per repeater, reading lines from --repeaters and --repeaters_file."""
+    f = tmp_path / "r.txt"
+    f.write_text("- N7ABC 444.600+ D023N\n")
+    args = make_args(name="Club", repeaters="- WA7SAR 146.860- T123.0", repeaters_file=str(f))
+
+    got = batch_args(args)
+
+    assert [(a.name, a.call, a.freq, a.tone) for a in got] == [
+        ("Club", "WA7SAR", "146.860", "123.0"),
+        ("Club", "N7ABC", "444.600", "D023N"),
+    ]
+
+
+def test_batch_args_clears_regen_and_score():
+    """A prior regen (set by --status_csv etc.) must not make the batch skip adding repeaters."""
+    got = batch_args(make_args(repeaters="W7XYZ 146.520", regen=True, score=True))
+
+    assert [(a.regen, a.score) for a in got] == [(False, False)]
+
+
+def test_batch_args_without_flags_is_empty():
+    assert batch_args(make_args()) == []
 
 
 def test_parse_repeaterbook_location_extracts_city_and_state():
