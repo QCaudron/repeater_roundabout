@@ -1022,17 +1022,17 @@
     {
         "Callsign":"W7AVM",
         "Output (MHz)":"147.2200",
-        "Offset (MHz)":"0.6",
+        "Offset (MHz)":"+0.6",
         "Tone (Hz)":"127.3",
         "Coordinates":[
             47.9744,
             -122.3976
         ],
         "Group Name":"ICARC",
-        "Location":"Whidbey Isl.",
+        "Location":"Clinton, WA",
         "Mode":"FM",
         "Long Name":"Island County ARC",
-        "Website":"https:\/\/www.w7avm.org\/",
+        "Website":"http:\/\/www.w7avm.org",
         "Status":"in",
         "RepeaterBook ID":"345",
         "RepeaterBook State ID":"53",
@@ -1340,6 +1340,143 @@
         "Allow Internet Contacts":""
     },
     {
+        "Callsign":"W7AVM",
+        "Output (MHz)":"146.8625",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            48.2135,
+            -122.7062
+        ],
+        "Group Name":"ICARC",
+        "Location":"Whidbey Isl.",
+        "Mode":"FM",
+        "Long Name":"Island County ARC",
+        "Website":"https:\/\/www.w7avm.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"W7AAO",
+        "Output (MHz)":"145.3700",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            47.20387,
+            -122.79564
+        ],
+        "Group Name":"Pierce",
+        "Location":"Enumclaw, WA",
+        "Mode":"FM",
+        "Long Name":"Pierce County ARES",
+        "Website":"http:\/\/www.piercecountyares.net",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"W7AAO",
+        "Output (MHz)":"146.6400",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.2136,
+            -122.2653
+        ],
+        "Group Name":"Pierce",
+        "Location":"Edgewood, WA",
+        "Mode":"FM",
+        "Long Name":"Pierce County ARES",
+        "Website":"http:\/\/piercecountyares.net",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"W7AAO",
+        "Output (MHz)":"927.8500",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            47.1167,
+            -121.8925
+        ],
+        "Group Name":"Pierce",
+        "Location":"Buckley, WA",
+        "Mode":"FM",
+        "Long Name":"Pierce County ARES",
+        "Website":"http:\/\/www.piercecountyares.net",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"K7DKK",
+        "Output (MHz)":"53.670",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            46.730958,
+            -120.699516
+        ],
+        "Group Name":"Pierce",
+        "Location":"Naches, Washington",
+        "Mode":"FM",
+        "Long Name":"Pierce County ARES",
+        "Website":null,
+        "Status":"in",
+        "RepeaterBook ID":"23249",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"K7DKK",
+        "Output (MHz)":"224.560",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":null,
+        "Group Name":"Pierce",
+        "Location":null,
+        "Mode":"FM",
+        "Long Name":"Pierce County ARES",
+        "Website":null,
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"KE7YYD",
+        "Output (MHz)":"442.7500",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.10947,
+            -122.55148
+        ],
+        "Group Name":"Madigan AMC",
+        "Location":"Madigan Army Med Ctr, WA",
+        "Mode":"FM",
+        "Long Name":"Madigan Army Medical Center",
+        "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
+        "Status":"in",
+        "RepeaterBook ID":"13889",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":""
+    },
+    {
         "Callsign":"WW7SEA",
         "Output (MHz)":"444.4250",
         "Offset (MHz)":"5.0",
@@ -1593,66 +1730,6 @@
         "Mode":"FM",
         "Long Name":"Lower Columbia Amateur Radio Association",
         "Website":"https:\/\/www.w7dg.com\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7AAO",
-        "Output (MHz)":"145.3700",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"136.5",
-        "Coordinates":[
-            47.20387,
-            -122.79564
-        ],
-        "Group Name":"Pierce",
-        "Location":"Enumclaw, WA",
-        "Mode":"FM",
-        "Long Name":"Pierce County ARES",
-        "Website":"https:\/\/piercecountyares.net\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7AAO",
-        "Output (MHz)":"146.6400",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.2136,
-            -122.2653
-        ],
-        "Group Name":"Pierce",
-        "Location":"Edgewood, WA",
-        "Mode":"FM",
-        "Long Name":"Pierce County DEM",
-        "Website":"https:\/\/piercecountyares.net\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7AAO",
-        "Output (MHz)":"927.8500",
-        "Offset (MHz)":"-25.0",
-        "Tone (Hz)":"114.8",
-        "Coordinates":[
-            47.1167,
-            -121.8925
-        ],
-        "Group Name":"Pierce",
-        "Location":"Buckley, WA",
-        "Mode":"FM",
-        "Long Name":"District 5 ARES",
-        "Website":"https:\/\/piercecountyares.net\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
@@ -2920,26 +2997,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"KE7YYD",
-        "Output (MHz)":"442.7500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"100",
-        "Coordinates":[
-            47.10947,
-            -122.55148
-        ],
-        "Group Name":"Madigan Army",
-        "Location":"JBLM",
-        "Mode":"FM",
-        "Long Name":"Madigan Army Medical Center",
-        "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
-        "Status":"response_needed",
-        "RepeaterBook ID":"13889",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"N7RHE",
         "Output (MHz)":"147.320",
         "Offset (MHz)":"+0.6",
@@ -3076,26 +3133,6 @@
         "Status":"response_needed",
         "RepeaterBook ID":"7100",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7AVM",
-        "Output (MHz)":"146.860",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"127.3",
-        "Coordinates":[
-            48.2135,
-            -122.7062
-        ],
-        "Group Name":"ICARC",
-        "Location":"Whidbey Isl.",
-        "Mode":"FM",
-        "Long Name":"Island County ARC",
-        "Website":"https:\/\/www.w7avm.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
         "Internet Access":null,
         "Allow Internet Contacts":""
     },

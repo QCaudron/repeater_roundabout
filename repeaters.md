@@ -77,7 +77,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 49    | Marrowstone       | AA7MI      | Marrowstone Isl.          | FM          |       440.7250 |            5.0 |       114.8 |
 | 50    | NMARESC           | NM7E       | Belfair, WA               | FM          |       145.1700 |           -0.6 |       103.5 |
 | 51    | NMARESC           | NM7E       | Belfair, WA               | FM          |       224.2600 |           -1.6 |       103.5 |
-| 52    | ICARC             | W7AVM      | Whidbey Isl.              | FM          |       147.2200 |            0.6 |       127.3 |
+| 52    | ICARC             | W7AVM      | Clinton, WA               | FM          |       147.2200 |           +0.6 |       127.3 |
 | 53    | N3KPU             | N3KPU      | Graham                    | FM          |       145.2300 |           -0.6 |       146.2 |
 | 54    | IEVHFRA           | WR7VHF     | Spokane                   | FM          |        146.880 |           -0.6 |       123.0 |
 | 55    | IEVHFRA           | WR7VHF     | Spokane                   | FM          |        147.340 |           +0.6 |       123.0 |
@@ -93,6 +93,13 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 65    | SeaTac            | WW7STR     | Cougar Mtn, WA            | FM          |       442.1500 |            5.0 |       103.5 |
 | 66    | SeaTac            | WW7STR     | Cougar Mtn, WA            | FM          |       444.8500 |            5.0 |       103.5 |
 | 67    | SeaTac            | WW7STR     | Cougar Mtn, WA            | NBFM[^nbfm] |       927.2125 |          -25.0 |       114.8 |
+| 68    | ICARC             | W7AVM      | Whidbey Isl.              | FM          |       146.8625 |           -0.6 |       114.8 |
+| 69    | Pierce            | W7AAO      | Enumclaw, WA              | FM          |       145.3700 |           -0.6 |       136.5 |
+| 70    | Pierce            | W7AAO      | Edgewood, WA              | FM          |       146.6400 |           -0.6 |       103.5 |
+| 71    | Pierce            | W7AAO      | Buckley, WA               | FM          |       927.8500 |          -25.0 |       114.8 |
+| 72    | Pierce            | K7DKK      | Naches, Washington        | FM          |         53.670 |           -1.7 |       136.5 |
+| 73    | Pierce            | K7DKK      | nan                       | FM          |        224.560 |           -1.6 |       103.5 |
+| 74    | Madigan AMC       | KE7YYD     | Madigan Army Med Ctr, WA  | FM          |       442.7500 |            5.0 |         100 |
 
 ---
 
@@ -111,7 +118,7 @@ GKRG
 : [Gobblers Knob Repeater Group](https://www.qrz.com/db/W7PFR)
 
 ICARC
-: [Island County ARC](https://www.w7avm.org/)
+: [Island County ARC](http://www.w7avm.org)
 
 IEVHFRA
 : [Inland Empire VHF Radio Amateurs](https://www.vhfclub.org/)
@@ -136,6 +143,9 @@ KCST
 
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
+
+Madigan AMC
+: [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
 
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://qrz.com/db/AA7MI)
@@ -163,6 +173,9 @@ NMARESC
 
 PSRG
 : [Puget Sound Repeater Group](https://web.psrg.org/)
+
+Pierce
+: [Pierce County ARES](http://www.piercecountyares.net)
 
 RASC
 : [Radio Amateurs of Skagit County](https://rasconline.net/)

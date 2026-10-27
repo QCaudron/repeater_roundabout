@@ -85,5 +85,11 @@ L.marker([47.2086100000, -119.3191700000], {icon: L.divIcon({className: 'custom-
 L.marker([47.6370100000, -122.3488000000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>62</div>", iconSize: [25, 25]}) }).bindPopup('RR# 62 - WW7SEA (444.7000)<br>').addTo(map);
 L.marker([47.5402984600, -122.0999984700], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 63 - WW7STR (147.875)<br>RR# 64 - WW7STR (224.440)<br>').addTo(map);
 L.marker([47.4683300000, -121.8222200000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>65</div>", iconSize: [25, 25]}) }).bindPopup('RR# 65 - WW7STR (442.1500)<br>').addTo(map);
+L.marker([48.2135000000, -122.7062000000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>68</div>", iconSize: [25, 25]}) }).bindPopup('RR# 68 - W7AVM (146.8625)<br>').addTo(map);
+L.marker([47.2038700000, -122.7956400000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>69</div>", iconSize: [25, 25]}) }).bindPopup('RR# 69 - W7AAO (145.3700)<br>').addTo(map);
+L.marker([47.2136000000, -122.2653000000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>70</div>", iconSize: [25, 25]}) }).bindPopup('RR# 70 - W7AAO (146.6400)<br>').addTo(map);
+L.marker([47.1167000000, -121.8925000000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>71</div>", iconSize: [25, 25]}) }).bindPopup('RR# 71 - W7AAO (927.8500)<br>').addTo(map);
+L.marker([46.7309580000, -120.6995160000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>72</div>", iconSize: [25, 25]}) }).bindPopup('RR# 72 - K7DKK (53.670)<br>').addTo(map);
+L.marker([47.1094700000, -122.5514800000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>74</div>", iconSize: [25, 25]}) }).bindPopup('RR# 74 - KE7YYD (442.7500)<br>').addTo(map);
 
 </script>
