@@ -444,9 +444,9 @@ def test_parse_repeater_lines_ctcss_and_dcs():
     got = parse_repeater_lines(text)
 
     assert got == [
-        {"Callsign": "WA7SAR", "Output (MHz)": "146.860", "Tone (Hz)": "123.0"},
-        {"Callsign": "WA7SAR", "Output (MHz)": "147.080", "Tone (Hz)": "123.0"},
-        {"Callsign": "N7ABC", "Output (MHz)": "444.600", "Tone (Hz)": "D023N"},
+        {"Callsign": "WA7SAR", "Output (MHz)": "146.860", "Tone (Hz)": "123.0", "Offset Sign": "-"},
+        {"Callsign": "WA7SAR", "Output (MHz)": "147.080", "Tone (Hz)": "123.0", "Offset Sign": "+"},
+        {"Callsign": "N7ABC", "Output (MHz)": "444.600", "Tone (Hz)": "D023N", "Offset Sign": "+"},
     ]
 
 
@@ -454,7 +454,7 @@ def test_parse_repeater_lines_toneless_and_blank():
     """A toneless repeater parses with Tone (Hz) None; blank lines are skipped."""
     got = parse_repeater_lines("- W7XYZ 146.520\n\n")
 
-    assert got == [{"Callsign": "W7XYZ", "Output (MHz)": "146.520", "Tone (Hz)": None}]
+    assert got == [{"Callsign": "W7XYZ", "Output (MHz)": "146.520", "Tone (Hz)": None, "Offset Sign": None}]
 
 
 def test_batch_args_expands_one_namespace_per_repeater(tmp_path):
@@ -476,6 +476,19 @@ def test_batch_args_clears_regen_and_score():
     got = batch_args(make_args(repeaters="W7XYZ 146.520", regen=True, score=True))
 
     assert [(a.regen, a.score) for a in got] == [(False, False)]
+
+
+def test_batch_args_offset_direction_applies_to_known_magnitude():
+    """The +/- after the frequency is kept; magnitude comes from WWARA/prior data, else the band default."""
+    a = batch_args(make_args(repeaters="- WA7SAR 146.860- T123.0\n- N7ABC 444.600+"))
+    assert [x.offset for x in a] == ["-", "+"]
+
+    got = merge_repeaters(args={"Offset (MHz)": "-"}, wwara={"Offset (MHz)": "+0.6"})
+    assert got["Offset (MHz)"] == "-0.6"
+    assert merge_repeaters(args={"Offset (MHz)": "-", "Output (MHz)": "53.670"})["Offset (MHz)"] == "-1.7"
+    assert merge_repeaters(args={"Offset (MHz)": "+", "Output (MHz)": "145.370"})["Offset (MHz)"] == "+0.6"
+    assert merge_repeaters(args={"Offset (MHz)": "+", "Output (MHz)": "444.600"})["Offset (MHz)"] == "+5.0"
+    assert merge_repeaters(args={"Offset (MHz)": "-0.6"})["Offset (MHz)"] == "-0.6"
 
 
 def test_batch_args_without_flags_is_empty():

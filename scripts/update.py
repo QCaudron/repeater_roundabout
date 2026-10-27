@@ -451,6 +451,19 @@ def first_dict(df: pd.DataFrame) -> dict:
         return {}
     return df.iloc[0].to_dict()
 
+# ponytail: US band-plan defaults only; coordination exceptions need an explicit offset
+BAND_OFFSETS = [(50, 54, 1.7), (144, 148, 0.6), (222, 225, 1.6), (420, 450, 5.0), (902, 928, 25.0)]
+
+
+def default_offset(freq) -> float | None:
+    """Standard repeater offset magnitude (MHz) for the band containing freq, or None."""
+    try:
+        f = float(freq)
+    except (TypeError, ValueError):
+        return None
+    return next((o for lo, hi, o in BAND_OFFSETS if lo <= f < hi), None)
+
+
 def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, prior: dict = {}) -> dict:
     """
     Merges repeater information from multiple sources. If a field is specified by more than
@@ -485,6 +498,14 @@ def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, 
     prior = strip_empty(prior)
 
     r = {**prior, **repeaterbook, **wwara, **args}
+
+    # A bare "+"/"-" (from --repeaters lines) gives only the direction: take the magnitude
+    # from the other sources, else the usual offset for the band.
+    if args.get("Offset (MHz)") in ("+", "-"):
+        known = next((o for o in (wwara.get("Offset (MHz)"), repeaterbook.get("Offset (MHz)"),
+                                  prior.get("Offset (MHz)")) if o), None)
+        magnitude = abs(float(known)) if known else default_offset(args.get("Output (MHz)"))
+        r["Offset (MHz)"] = f"{args['Offset (MHz)']}{magnitude:.1f}" if magnitude else None
 
     # Prioritize past data for specific fields.
     for f in ["Group Name", "Location", "Long Name", "Website"]:
@@ -869,7 +890,7 @@ def looks_like_internet_id(s: str | None) -> bool:
 
 
 REPEATER_LINE_RE = re.compile(
-    r"(?P<call>[A-Za-z][A-Za-z0-9]{2,6})\s+(?P<freq>\d{2,4}\.\d{1,4})\s*[+-]?\s*"
+    r"(?P<call>[A-Za-z][A-Za-z0-9]{2,6})\s+(?P<freq>\d{2,4}\.\d{1,4})\s*(?P<sign>[+-])?\s*"
     r"(?:T\s*(?P<tone>\d{2,3}(?:\.\d)?)|(?P<dcs>D\d{2,3}[NI]?))?"
 )
 
@@ -890,6 +911,7 @@ def parse_repeater_lines(text: str) -> list[dict]:
             "Callsign": m.group("call").upper(),
             "Output (MHz)": m.group("freq"),
             "Tone (Hz)": tone,
+            "Offset Sign": m.group("sign"),
         })
     return repeaters
 
@@ -955,13 +977,14 @@ def apply_status_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, lis
 def batch_args(args: argparse.Namespace | SimpleNamespace) -> list[SimpleNamespace]:
     """
     Expand --repeaters / --repeaters_file into one args namespace per listed repeater,
-    each inheriting the other flags with call, freq, and tone filled in.
+    each inheriting the other flags with call, freq, tone, and offset direction filled in.
     """
     text = args.repeaters or ""
     if args.repeaters_file:
         text += "\n" + Path(args.repeaters_file).read_text()
     return [
         SimpleNamespace(**{**vars(args), "call": r["Callsign"], "freq": r["Output (MHz)"], "tone": r["Tone (Hz)"],
+                           "offset": r["Offset Sign"],
                            # Earlier steps set regen to reload the df; that would skip adding this repeater.
                            "regen": False, "score": False})
         for r in parse_repeater_lines(text)
