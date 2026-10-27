@@ -89,6 +89,7 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
             "score": False,
             "rollover": False,
             "update_all": False,
+            "check": False,
             "status_csv": None,
             "repeater_csv": None,
         }
@@ -127,13 +128,15 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     mode.add_argument("--score", action="store_true")
     mode.add_argument("--rollover", action="store_true")
     mode.add_argument("--update_all", action="store_true")
+    mode.add_argument("--check", action="store_true",
+                      help="Report data inconsistencies in repeaters.json (read-only)")
     mode.add_argument("--status_csv", type=str, default=None,
                        help="Club survey CSV: bulk-update status/callsign/tone/internet-access")
     mode.add_argument("--repeater_csv", type=str, default=None,
                        help="Single-repeater submission CSV: add or edit one repeater per row")
     args = parser.parse_args()
-    if args.status and (args.score or args.rollover or args.update_all or args.status_csv):
-        parser.error("--status cannot be combined with --score/--rollover/--update_all/--status_csv")
+    if args.status and (args.score or args.rollover or args.update_all or args.status_csv or args.check):
+        parser.error("--status cannot be combined with --score/--rollover/--update_all/--status_csv/--check")
     return args
 
 def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
@@ -771,6 +774,22 @@ def rollover(now: datetime | None = None) -> None:
     df.to_json(REPEATERS_JSON, orient="records", indent=4)
 
 
+def check_consistency(df: pd.DataFrame) -> list[str]:
+    """
+    Return a message for each group (by Group Name) where some repeaters are in/out
+    but others still need a response. A missing status counts as response needed.
+    """
+    status = df["Status"].fillna(STATUS_RESPONSE_NEEDED)
+    problems = []
+    for name, g in df.groupby("Group Name"):
+        s = status.loc[g.index]
+        pending = g.loc[s == STATUS_RESPONSE_NEEDED, "Callsign"]
+        if len(pending) and len(pending) < len(g):
+            decided = ", ".join(sorted(g.loc[s != STATUS_RESPONSE_NEEDED, "Callsign"]))
+            problems.append(f"{name}: response_needed for {', '.join(sorted(pending))}; decided: {decided}")
+    return problems
+
+
 def find_repeater(df: pd.DataFrame, call: str, freq: str | None) -> int:
     """
     Return the index of the repeater matching call (and freq, if given).
@@ -1111,6 +1130,10 @@ def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
     args = parse_args()
+    if args.check:
+        problems = check_consistency(pd.read_json(REPEATERS_JSON, dtype=False))
+        print("\n".join(problems) or "No inconsistencies found.")
+        sys.exit(1 if problems else 0)
     if args.rollover:
         rollover()
         args.regen = True

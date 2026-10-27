@@ -10,6 +10,7 @@ from update import (
     apply_repeater_csv,
     apply_status_csv,
     batch_args,
+    check_consistency,
     drop_missing_coordinates,
     generate_repeater_df,
     looks_like_internet_id,
@@ -689,3 +690,14 @@ def test_apply_repeater_csv_adds_new_repeater(tmp_path):
     assert new["Offset (MHz)"] == "+5.0"
     assert new["Status"] == STATUS_RESPONSE_NEEDED
     assert new["Mode"] == "FM"
+
+
+def test_check_consistency_reports_groups_mixing_decided_and_response_needed():
+    df = pd.DataFrame({
+        "Callsign": ["A", "B", "C", "D", "E"],
+        "Group Name": ["G1", "G1", "G2", "G2", "G3"],
+        "Status": [STATUS_IN, STATUS_RESPONSE_NEEDED, STATUS_OUT, STATUS_IN, None],
+    })
+    problems = check_consistency(df)
+    assert len(problems) == 1
+    assert "G1" in problems[0] and "B" in problems[0]
