@@ -17,7 +17,6 @@ from markdown_files import (
     STATUS_IN,
     STATUS_OUT,
     STATUS_RESPONSE_NEEDED,
-    has_coordinates,
     write_group_pages,
     write_index_md,
     write_map_md,
@@ -415,26 +414,6 @@ def filter_freq(df: pd.DataFrame, freq: float) -> pd.DataFrame:
     """
     return df.loc[df["Output (MHz)"].map(lambda f: freq_match(freq, f))]
 
-def drop_missing_coordinates(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Return df with any repeater missing a [lat, lon] Coordinates pair removed,
-    warning on stderr about each one dropped.
-
-    Map, CSV, and programming-file generation all assume every repeater has
-    coordinates; without this, a confirmed repeater missing them crashes
-    whichever of those runs first instead of being reported.
-    """
-    has_coords = df["Coordinates"].map(has_coordinates)
-    if (~has_coords).any():
-        missing = df.loc[~has_coords, ["Callsign", "Output (MHz)"]].to_records(index=False)
-        print(
-            "Skipping repeater(s) confirmed as 'in' but missing Coordinates: "
-            + ", ".join(f"{call} {freq}" for call, freq in missing),
-            file=sys.stderr,
-        )
-    return df.loc[has_coords]
-
-
 def first_dict(df: pd.DataFrame) -> dict:
     """
     A convenience function to return the first record (if any) as a dictionary.
@@ -776,17 +755,59 @@ def rollover(now: datetime | None = None) -> None:
 
 def check_consistency(df: pd.DataFrame) -> list[str]:
     """
-    Return a message for each group (by Group Name) where some repeaters are in/out
-    but others still need a response. A missing status counts as response needed.
+    Return a message for each inconsistency in the repeater list:
+
+    - no Group Name, or Group Names differing only in case/whitespace
+    - a group where some repeaters are in/out but others still need a response
+    - duplicate callsign + output frequency
+    - missing offset or mode, or an offset that isn't the band's standard
+    - an "in" repeater listed after a "response needed" one (RR# is list position)
+    - a Status that isn't in, out or response_needed
+
+    A missing Status counts as response needed.
     """
-    status = df["Status"].fillna(STATUS_RESPONSE_NEEDED)
     problems = []
-    for name, g in df.groupby("Group Name"):
-        s = status.loc[g.index]
-        pending = g.loc[s == STATUS_RESPONSE_NEEDED, "Callsign"]
-        if len(pending) and len(pending) < len(g):
-            decided = ", ".join(sorted(g.loc[s != STATUS_RESPONSE_NEEDED, "Callsign"]))
-            problems.append(f"{name}: response_needed for {', '.join(sorted(pending))}; decided: {decided}")
+    name = df["Group Name"].map(lambda n: n.strip() if isinstance(n, str) else "")
+    status = df["Status"].fillna(STATUS_RESPONSE_NEEDED)
+    label = df["Callsign"].astype(str) + " " + df["Output (MHz)"].astype(str)
+
+    for lbl in label[name == ""]:
+        problems.append(f"{lbl}: no Group Name")
+
+    named = name != ""
+    variants = df.loc[named, "Group Name"].groupby(name[named].str.casefold()).agg(lambda s: sorted(set(s)))
+    for names in variants:
+        if len(names) > 1:
+            problems.append(f"Group Names differ only by case/whitespace: {names}")
+
+    for g, rows in df[name != ""].groupby(name):
+        s = status.loc[rows.index]
+        pending = rows.loc[s == STATUS_RESPONSE_NEEDED, "Callsign"]
+        if len(pending) and len(pending) < len(rows):
+            decided = ", ".join(sorted(rows.loc[s != STATUS_RESPONSE_NEEDED, "Callsign"]))
+            problems.append(f"{g}: response_needed for {', '.join(sorted(pending))}; decided: {decided}")
+
+    freq = pd.to_numeric(df["Output (MHz)"], errors="coerce")
+    key = df["Callsign"].astype(str).str.upper() + " " + freq.astype(str)
+    for k in key[key.duplicated(keep=False)].unique():
+        problems.append(f"duplicate repeater: {k}")
+
+    for i, row in df.iterrows():
+        if not str(row.get("Mode") or "").strip():
+            problems.append(f"{label[i]}: no mode")
+        offset = pd.to_numeric(row.get("Offset (MHz)"), errors="coerce")
+        if pd.isna(offset):
+            problems.append(f"{label[i]}: no offset")
+        elif (expected := default_offset(row["Output (MHz)"])) is not None and abs(offset) != expected:
+            problems.append(f"{label[i]}: odd offset {row['Offset (MHz)']} (band standard is {expected})")
+
+    seen_pending = False
+    for i, st in status.items():
+        seen_pending |= st == STATUS_RESPONSE_NEEDED
+        if st == STATUS_IN and seen_pending:
+            problems.append(f"{label[i]}: out of order, 'in' listed after a repeater that needs a response")
+        if st not in (STATUS_IN, STATUS_OUT, STATUS_RESPONSE_NEEDED):
+            problems.append(f"{label[i]}: invalid status {st!r}")
     return problems
 
 
@@ -1197,7 +1218,6 @@ if __name__ == "__main__":
 
     # Only publish repeaters confirmed for this contest
     df = df.loc[df["Status"] == STATUS_IN]
-    df = drop_missing_coordinates(df)
 
     # Set tone to the empty string for toneless repeaters.  Downstream
     # code assumes tone is always a string.

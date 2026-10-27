@@ -11,6 +11,7 @@ import pandas as pd
 from scipy.cluster.hierarchy import fcluster, linkage
 from scipy.spatial.distance import pdist
 
+from programming_files import has_coordinates
 from score import score_competition
 
 STATUS_RESPONSE_NEEDED = "response_needed"
@@ -260,11 +261,6 @@ def write_map_md(df: pd.DataFrame, threshold: float = 0.003) -> None:
         f.write(maps_html)
 
 
-def has_coordinates(value) -> bool:
-    """Return whether value is a usable [lat, lon] Coordinates pair."""
-    return isinstance(value, list) and len(value) == 2
-
-
 def text(value) -> str:
     """Return value as a string, or "" if it is missing."""
     return "" if value is None or (np.isscalar(value) and pd.isna(value)) else str(value)
@@ -346,6 +342,12 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
             if len(values) > 1:
                 conflicts += f"> **Please check:** we have more than one of your group's {field}: "
                 conflicts += "; ".join(cell(v) for v in values) + "\n\n"
+
+        no_coords = group.loc[~group["Coordinates"].map(has_coordinates), ["Callsign", "Output (MHz)"]]
+        if len(no_coords):
+            conflicts += "> **Please check:** we don't have the location (coordinates) of: "
+            conflicts += "; ".join(cell(f"{c} {f}") for c, f in no_coords.to_records(index=False))
+            conflicts += ". Use the **Update** link to send it; until then it won't appear on the map.\n\n"
 
         rows = []
         for _, r in group.iterrows():

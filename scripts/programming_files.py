@@ -66,6 +66,11 @@ def filter_by_mode(df: pd.DataFrame, modes: list[str]) -> pd.DataFrame:
     return df.loc[df["Mode"].isin(modes)].sort_index().copy()
 
 
+def has_coordinates(value) -> bool:
+    """Return whether value is a usable [lat, lon] Coordinates pair."""
+    return isinstance(value, list) and len(value) == 2
+
+
 def distance_between(p1: tuple[float, float], p2: tuple[float, float]) -> float:
     """
     Calculate the distance between two points.
@@ -254,12 +259,14 @@ def format_df_for_d878(df: pd.DataFrame) -> pd.DataFrame:
     df_878.loc[is_dmr, "Color Code"] = pd.to_numeric(dmr_codes["color"])
     df_878.loc[is_dmr, "Slot"] = dmr_codes["slot"]
 
-    is_metro = df.apply(
-        lambda x: distance_between(x["Coordinates"], DOWNTOWN_SEATTLE) < METRO_DISTANCE,
+    # ponytail: repeaters without coordinates go on the Metro scan list; refine if they become common
+    located = df["Coordinates"].map(has_coordinates)
+    is_metro = ~located | df.apply(
+        lambda x: located[x.name] and distance_between(x["Coordinates"], DOWNTOWN_SEATTLE) < METRO_DISTANCE,
         axis=1,
     )
     df_878.loc[is_metro, "Scan List"] = "Metro"
-    is_north = df.apply(lambda x: x["Coordinates"][0] > DOWNTOWN_SEATTLE[0], axis=1)
+    is_north = df.apply(lambda x: located[x.name] and x["Coordinates"][0] > DOWNTOWN_SEATTLE[0], axis=1)
     df_878.loc[~is_metro & is_north, "Scan List"] = "North"
     df_878.loc[~is_metro & ~is_north, "Scan List"] = "South"
 
@@ -503,8 +510,8 @@ def write_generic_csv(df: pd.DataFrame) -> None:
 
     df = (
         df.copy()
-        .assign(Latitude=df["Coordinates"].apply(lambda x: x[0]))
-        .assign(Longitude=df["Coordinates"].apply(lambda x: x[1]))
+        .assign(Latitude=df["Coordinates"].apply(lambda x: x[0] if has_coordinates(x) else None))
+        .assign(Longitude=df["Coordinates"].apply(lambda x: x[1] if has_coordinates(x) else None))
         .drop(columns=["Group Name", "Coordinates", "Status"])
         .rename(columns={"Long Name": "Group"})
         .set_index("RR#")

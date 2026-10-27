@@ -25,6 +25,30 @@ def test_format_df_for_d878_with_no_dmr_repeaters():
     assert (result["Color Code"] == 1).all()
 
 
+def test_formatters_cope_with_missing_coordinates(tmp_path, monkeypatch):
+    """A repeater without coordinates still gets a channel and a CSV row, with a blank location."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets" / "programming_files").mkdir(parents=True)
+    df = pd.DataFrame(
+        {
+            "RR#": [1],
+            "Callsign": ["W7ABC"],
+            "Mode": ["FM"],
+            "Output (MHz)": ["146.0"],
+            "Offset (MHz)": ["-0.6"],
+            "Tone (Hz)": ["100.0"],
+            "Coordinates": [None],
+            "Group Name": ["G"],
+            "Long Name": ["Group"],
+            "Status": ["in"],
+        }
+    )
+
+    assert len(format_df_for_d878(df)) == 1
+    write_generic_csv(df)
+    assert (tmp_path / "assets" / "programming_files" / "all_rr_frequencies.csv").exists()
+
+
 def test_formatters_with_no_compatible_repeaters():
     """The D878 and Icom formatters return empty channel lists rather than crashing when no repeater suits the radio."""
     df = pd.DataFrame(

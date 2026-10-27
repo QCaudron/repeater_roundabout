@@ -187,6 +187,19 @@ def test_write_group_pages_flags_conflicting_club_details(tmp_path, monkeypatch)
     assert "PSRG Inc" in page
 
 
+def test_write_group_pages_flags_missing_coordinates(tmp_path, monkeypatch):
+    """A repeater without coordinates is listed on the group page so the trustee can supply them."""
+    site(tmp_path, monkeypatch)
+    df = pd.DataFrame([repeater("W7A", "146.960", STATUS_IN), repeater("W7B", "147.000", STATUS_IN, Coordinates=None)])
+    df["RR#"] = df.index + 1
+
+    write_group_pages(df, FORMS)
+    page = (tmp_path / "groups" / "psrg.md").read_text()
+
+    assert "location (coordinates)" in page and "W7B 147.000" in page
+    assert "W7A 146.960" not in page
+
+
 def test_write_group_pages_escapes_html(tmp_path, monkeypatch):
     """Repeater fields containing HTML or table delimiters are escaped rather than rendered."""
     site(tmp_path, monkeypatch)

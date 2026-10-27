@@ -8,7 +8,7 @@ from scipy.spatial import ConvexHull
 from scipy.spatial.distance import pdist, squareform
 from shapely.geometry import Polygon
 
-from programming_files import band
+from programming_files import band, has_coordinates
 from update import generate_repeater_df
 
 args = SimpleNamespace(regen=True)
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     statistics["Band stats"] = df["Band"].value_counts()
 
     # Find the center of mass of the repeater locations
-    repeater_coords = np.array(df["Coordinates"].tolist())
+    repeater_coords = np.array(df.loc[df["Coordinates"].map(has_coordinates), "Coordinates"].tolist())
     center_of_mass = repeater_coords.mean(0)
     statistics["Center of mass"] = center_of_mass
 

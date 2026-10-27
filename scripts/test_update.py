@@ -11,7 +11,6 @@ from update import (
     apply_status_csv,
     batch_args,
     check_consistency,
-    drop_missing_coordinates,
     generate_repeater_df,
     looks_like_internet_id,
     merge_repeaters,
@@ -55,19 +54,6 @@ def test_repeaters_from_wwara_returns_empty_dataframe_without_csv():
     result = repeaters_from_wwara(None, "W7ABC")
     assert isinstance(result, pd.DataFrame)
     assert result.empty
-
-
-def test_drop_missing_coordinates_removes_rows_without_lat_lon(capsys):
-    """A repeater confirmed 'in' without a [lat, lon] pair is dropped and reported, not left to crash downstream."""
-    df = pd.DataFrame([
-        {"Callsign": "W7A", "Output (MHz)": "146.000", "Coordinates": [47.0, -122.0]},
-        {"Callsign": "W7B", "Output (MHz)": "146.500", "Coordinates": None},
-    ])
-
-    got = drop_missing_coordinates(df)
-
-    assert got["Callsign"].tolist() == ["W7A"]
-    assert "W7B 146.500" in capsys.readouterr().err
 
 
 def test_generate_repeater_df_updates_existing_repeater_in_place(tmp_path, monkeypatch):
@@ -692,12 +678,63 @@ def test_apply_repeater_csv_adds_new_repeater(tmp_path):
     assert new["Mode"] == "FM"
 
 
+def rr(call="A", freq="146.960", **kw):
+    """One consistent repeater row; override fields with kwargs."""
+    return {"Callsign": call, "Output (MHz)": freq, "Offset (MHz)": "-0.6", "Mode": "FM",
+            "Group Name": "G1", "Status": STATUS_IN, **kw}
+
+
+def problems_for(*rows):
+    return check_consistency(pd.DataFrame(list(rows)))
+
+
+def test_check_consistency_clean():
+    assert problems_for(rr("A"), rr("B", "147.000")) == []
+
+
 def test_check_consistency_reports_groups_mixing_decided_and_response_needed():
-    df = pd.DataFrame({
-        "Callsign": ["A", "B", "C", "D", "E"],
-        "Group Name": ["G1", "G1", "G2", "G2", "G3"],
-        "Status": [STATUS_IN, STATUS_RESPONSE_NEEDED, STATUS_OUT, STATUS_IN, None],
-    })
-    problems = check_consistency(df)
-    assert len(problems) == 1
-    assert "G1" in problems[0] and "B" in problems[0]
+    got = problems_for(
+        rr("A"), rr("C", "147.100", **{"Group Name": "G2"}), rr("D", "147.200", Status=STATUS_OUT, **{"Group Name": "G2"}),
+        rr("B", "147.000", Status=STATUS_RESPONSE_NEEDED),
+        rr("E", "147.300", Status=None, **{"Group Name": "G3"}),
+    )
+    assert len(got) == 1
+    assert "G1" in got[0] and "B" in got[0]
+
+
+def test_check_consistency_reports_missing_group_name():
+    got = problems_for(rr("A", **{"Group Name": None}), rr("B", "147.000", **{"Group Name": " "}))
+    assert len(got) == 2 and all("Group Name" in p for p in got)
+
+
+def test_check_consistency_reports_duplicates():
+    got = problems_for(rr("a", "146.96"), rr("A", "146.960"))
+    assert len(got) == 1 and "duplicate" in got[0]
+
+
+def test_check_consistency_reports_missing_offset_and_mode():
+    got = problems_for(rr("A", **{"Offset (MHz)": None}), rr("B", "147.000", Mode=""))
+    assert len(got) == 2
+    assert "offset" in got[0] and "mode" in got[1]
+
+
+def test_check_consistency_reports_odd_offsets():
+    got = problems_for(rr("A", **{"Offset (MHz)": "-5"}), rr("B", "147.000", **{"Offset (MHz)": "+0.6"}),
+                       rr("C", "10.000", **{"Offset (MHz)": "-1"}))
+    assert len(got) == 1 and "A" in got[0] and "offset" in got[0]
+
+
+def test_check_consistency_reports_group_name_case():
+    got = problems_for(rr("A", **{"Group Name": "PSRG"}), rr("B", "147.000", **{"Group Name": "psrg "}))
+    assert len(got) == 1 and "PSRG" in got[0]
+
+
+def test_check_consistency_reports_in_after_response_needed():
+    got = problems_for(rr("A", Status=STATUS_RESPONSE_NEEDED, **{"Group Name": "G2"}), rr("B", "147.000"),
+                       rr("C", "147.100", Status=STATUS_OUT))
+    assert len(got) == 1 and "B" in got[0] and "order" in got[0]
+
+
+def test_check_consistency_reports_invalid_status():
+    got = problems_for(rr("A", Status="maybe"))
+    assert len(got) == 1 and "maybe" in got[0]
