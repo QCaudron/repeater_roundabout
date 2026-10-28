@@ -100,6 +100,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 72    | Pierce            | K7DKK      | Naches, WA                | FM          |         53.670 |           -1.7 |       136.5 |
 | 73    | Pierce            | K7DKK      | Naches, WA                | FM          |        224.560 |           -1.6 |       103.5 |
 | 74    | Madigan AMC       | KE7YYD     | JBLM                      | FM          |       442.7500 |           +5.0 |         100 |
+| 75    | Shoreline ACS     | W7AUX      | Shoreline, WA             | FM          |       224.0200 |           -1.6 |       103.5 |
+| 76    | Shoreline ACS     | W7AUX      | Shoreline, WA             | FM          |       440.3000 |           +5.0 |       103.5 |
+| 77    | Shoreline ACS     | W7AUX      | Shoreline, WA             | FM          |       442.8250 |           +5.0 |       103.5 |
 
 ---
 
@@ -185,6 +188,9 @@ SWI-ARC
 
 SeaTac
 : [SeaTac Rptr Assoc](https://www.seatacra.com/)
+
+Shoreline ACS
+: [Shoreline ACS](https://shorelineacs.org/)
 
 Skamania Co. ARES
 : [Skamania County ARES](https://w6tqf.radio)

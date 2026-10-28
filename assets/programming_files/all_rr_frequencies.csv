@@ -73,3 +73,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 72,K7DKK,53.670,-1.7,136.5,"Naches, WA",FM,Pierce County ARES,,23249,53,,,46.730958,-120.699516
 73,K7DKK,224.560,-1.6,103.5,"Naches, WA",FM,Pierce County ARES,,,,,,,
 74,KE7YYD,442.7500,+5.0,100,JBLM,FM,Madigan Army Medical Center,https://www.qrz.com/db/KE7YYD,13889,53,,,47.10947,-122.55148
+75,W7AUX,224.0200,-1.6,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.76,-122.35
+76,W7AUX,440.3000,+5.0,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.75619,-122.34575
+77,W7AUX,442.8250,+5.0,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.768,-122.3531
