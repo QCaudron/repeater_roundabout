@@ -1477,26 +1477,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"WW7SEA",
-        "Output (MHz)":"444.4250",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.6322,
-            -122.3539
-        ],
-        "Group Name":"WW7SEA",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Long Name":"Barry K7PAL's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"WA7DEM",
         "Output (MHz)":"146.7750",
         "Offset (MHz)":"-0.6",
@@ -2559,7 +2539,7 @@
     {
         "Callsign":"W7ACS",
         "Output (MHz)":"440.5250",
-        "Offset (MHz)":"0.0",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"123",
         "Coordinates":[
             47.58878,
@@ -2567,7 +2547,7 @@
         ],
         "Group Name":"Seattle ACS",
         "Location":"Seattle",
-        "Mode":"NBFM[^nbfm]",
+        "Mode":"FM",
         "Long Name":"Seattle Auxiliary Communications Service",
         "Website":"https:\/\/www.seattleacs.org\/",
         "Status":"response_needed",
@@ -2937,26 +2917,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"AB7F",
-        "Output (MHz)":"145.250",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"186.2",
-        "Coordinates":[
-            45.93479919,
-            -121.81999969
-        ],
-        "Group Name":"SCARES",
-        "Location":"Red Mountain",
-        "Mode":"FM",
-        "Long Name":"Skamania County ARES",
-        "Website":"http:\/\/skamania-prepare.org\/ares\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"16535",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"N7YRC",
         "Output (MHz)":"53.930",
         "Offset (MHz)":"-1.7",
@@ -3230,6 +3190,26 @@
         "Mode":"FM",
         "Long Name":"Shoreline ACS",
         "Website":"https:\/\/shorelineacs.org\/",
+        "Status":"out",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WW7SEA",
+        "Output (MHz)":"444.4250",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6322,
+            -122.3539
+        ],
+        "Group Name":"WW7SEA",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Barry K7PAL's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WW7SEA",
         "Status":"out",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
