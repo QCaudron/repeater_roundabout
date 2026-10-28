@@ -93,7 +93,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 65    | SeaTac            | WW7STR     | Cougar Mtn, WA            | FM          |       442.1500 |            5.0 |       103.5 |
 | 66    | SeaTac            | WW7STR     | Cougar Mtn, WA            | FM          |       444.8500 |            5.0 |       103.5 |
 | 67    | SeaTac            | WW7STR     | Cougar Mtn, WA            | NBFM[^nbfm] |       927.2125 |          -25.0 |       114.8 |
-| 68    | ICARC             | W7AVM      | Whidbey Isl.              | FM          |       146.8625 |           -0.6 |       114.8 |
+| 68    | ICARC             | W7AVM      | Whidbey Isl.              | NBFM[^nbfm] |       146.8625 |           -0.6 |       114.8 |
 | 69    | Pierce            | W7AAO      | Enumclaw, WA              | FM          |       145.3700 |           -0.6 |       136.5 |
 | 70    | Pierce            | W7AAO      | Edgewood, WA              | FM          |       146.6400 |           -0.6 |       103.5 |
 | 71    | Pierce            | W7AAO      | Buckley, WA               | FM          |       927.8500 |          -25.0 |       114.8 |

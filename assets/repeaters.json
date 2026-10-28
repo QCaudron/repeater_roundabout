@@ -1350,7 +1350,7 @@
         ],
         "Group Name":"ICARC",
         "Location":"Whidbey Isl.",
-        "Mode":"FM",
+        "Mode":"NBFM[^nbfm]",
         "Long Name":"Island County ARC",
         "Website":"https:\/\/www.w7avm.org\/",
         "Status":"in",

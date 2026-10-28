@@ -66,7 +66,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 65,WW7STR,442.1500,5.0,103.5,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://www.seatacra.com/,,53,,,47.46833,-121.82222
 66,WW7STR,444.8500,5.0,103.5,"Cougar Mtn, WA",FM,SeaTac Repeater Association,https://www.seatacra.com/,,,,,47.54192,-122.1095
 67,WW7STR,927.2125,-25.0,114.8,"Cougar Mtn, WA",NBFM,SeaTac Repeater Association,https://www.seatacra.com/,,,,,47.54192,-122.1095
-68,W7AVM,146.8625,-0.6,114.8,Whidbey Isl.,FM,Island County ARC,https://www.w7avm.org/,,,,,48.2135,-122.7062
+68,W7AVM,146.8625,-0.6,114.8,Whidbey Isl.,NBFM,Island County ARC,https://www.w7avm.org/,,,,,48.2135,-122.7062
 69,W7AAO,145.3700,-0.6,136.5,"Enumclaw, WA",FM,Pierce County ARES,http://www.piercecountyares.net,,,,,47.20387,-122.79564
 70,W7AAO,146.6400,-0.6,103.5,"Edgewood, WA",FM,Pierce County ARES,http://piercecountyares.net,,,,,47.2136,-122.2653
 71,W7AAO,927.8500,-25.0,114.8,"Buckley, WA",FM,Pierce County ARES,http://www.piercecountyares.net,,,,,47.1167,-121.8925
