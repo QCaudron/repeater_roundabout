@@ -1063,7 +1063,7 @@
         "Callsign":"WR7VHF",
         "Output (MHz)":"146.880",
         "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"123.0",
+        "Tone (Hz)":"123",
         "Coordinates":[
             47.57889938,
             -117.29599762
@@ -1137,12 +1137,12 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":"",
-        "Allow Internet Contacts":"Yes"
+        "Allow Internet Contacts":""
     },
     {
         "Callsign":"KC7Z",
         "Output (MHz)":"442.6500",
-        "Offset (MHz)":"5.0",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
             47.54788,
@@ -1356,7 +1356,7 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
+        "Internet Access":"",
         "Allow Internet Contacts":""
     },
     {
@@ -1429,7 +1429,7 @@
             -120.699516
         ],
         "Group Name":"Pierce",
-        "Location":"Naches, Washington",
+        "Location":"Naches, WA",
         "Mode":"FM",
         "Long Name":"Pierce County ARES",
         "Website":null,
@@ -1446,7 +1446,7 @@
         "Tone (Hz)":"103.5",
         "Coordinates":null,
         "Group Name":"Pierce",
-        "Location":null,
+        "Location":"Naches, WA",
         "Mode":"FM",
         "Long Name":"Pierce County ARES",
         "Website":null,
@@ -1459,21 +1459,21 @@
     {
         "Callsign":"KE7YYD",
         "Output (MHz)":"442.7500",
-        "Offset (MHz)":"5.0",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"100",
         "Coordinates":[
             47.10947,
             -122.55148
         ],
         "Group Name":"Madigan AMC",
-        "Location":"Madigan Army Med Ctr, WA",
+        "Location":"JBLM",
         "Mode":"FM",
         "Long Name":"Madigan Army Medical Center",
         "Website":"https:\/\/www.qrz.com\/db\/KE7YYD",
         "Status":"in",
         "RepeaterBook ID":"13889",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
+        "Internet Access":"",
         "Allow Internet Contacts":""
     },
     {
@@ -2270,26 +2270,6 @@
         "Mode":"FM",
         "Long Name":"Snohomish County Hams Club",
         "Website":"http:\/\/www.wa7law.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"KC7Z",
-        "Output (MHz)":"441.175",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.54935,
-            -122.78356
-        ],
-        "Group Name":"KCARC",
-        "Location":"Gold Mtn, WA",
-        "Mode":"NBFM[^nbfm]",
-        "Long Name":"Kitsap County Amateur Radio Club",
-        "Website":"https:\/\/kcarc.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,

@@ -79,11 +79,11 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 51    | NMARESC           | NM7E       | Belfair, WA               | FM          |       224.2600 |           -1.6 |       103.5 |
 | 52    | ICARC             | W7AVM      | Clinton, WA               | FM          |       147.2200 |           +0.6 |       127.3 |
 | 53    | N3KPU             | N3KPU      | Graham                    | FM          |       145.2300 |           -0.6 |       146.2 |
-| 54    | IEVHFRA           | WR7VHF     | Spokane                   | FM          |        146.880 |           -0.6 |       123.0 |
+| 54    | IEVHFRA           | WR7VHF     | Spokane                   | FM          |        146.880 |           -0.6 |         123 |
 | 55    | IEVHFRA           | WR7VHF     | Spokane                   | FM          |        147.340 |           +0.6 |       123.0 |
 | 56    | IEVHFRA           | WR7VHF     | Spokane                   | FM          |        444.600 |           +5.0 |       123.0 |
 | 57    | KCARC             | KC7Z       | Gold Mtn, WA              | FM          |       146.6200 |           -0.6 |       103.5 |
-| 58    | KCARC             | KC7Z       | Gold Mtn, WA              | NBFM[^nbfm] |       442.6500 |            5.0 |       103.5 |
+| 58    | KCARC             | KC7Z       | Gold Mtn, WA              | NBFM[^nbfm] |       442.6500 |           +5.0 |       103.5 |
 | 59    | KCARC             | KC7Z       | Bremerton, WA             | NBFM[^nbfm] |       444.0750 |            5.0 |       103.5 |
 | 60    | N7MHE             | N7MHE      | Saddle Mtn, WA            | FM          |        145.350 |           -0.6 |       100.0 |
 | 61    | N7MHE             | N7MHE      | Moses Lake, WA            | FM          |         146.70 |           -0.6 |       100.0 |
@@ -97,9 +97,9 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 69    | Pierce            | W7AAO      | Enumclaw, WA              | FM          |       145.3700 |           -0.6 |       136.5 |
 | 70    | Pierce            | W7AAO      | Edgewood, WA              | FM          |       146.6400 |           -0.6 |       103.5 |
 | 71    | Pierce            | W7AAO      | Buckley, WA               | FM          |       927.8500 |          -25.0 |       114.8 |
-| 72    | Pierce            | K7DKK      | Naches, Washington        | FM          |         53.670 |           -1.7 |       136.5 |
-| 73    | Pierce            | K7DKK      | nan                       | FM          |        224.560 |           -1.6 |       103.5 |
-| 74    | Madigan AMC       | KE7YYD     | Madigan Army Med Ctr, WA  | FM          |       442.7500 |            5.0 |         100 |
+| 72    | Pierce            | K7DKK      | Naches, WA                | FM          |         53.670 |           -1.7 |       136.5 |
+| 73    | Pierce            | K7DKK      | Naches, WA                | FM          |        224.560 |           -1.6 |       103.5 |
+| 74    | Madigan AMC       | KE7YYD     | JBLM                      | FM          |       442.7500 |           +5.0 |         100 |
 
 ---
 

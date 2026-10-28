@@ -52,11 +52,11 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 51,NM7E,224.2600,-1.6,103.5,"Belfair, WA",FM,North Mason Amateur Radio Emergency Service Club,https://nmaresc.wordpress.com/,,,,,47.3866,-122.86099
 52,W7AVM,147.2200,+0.6,127.3,"Clinton, WA",FM,Island County ARC,http://www.w7avm.org,345,53,,,47.9744,-122.3976
 53,N3KPU,145.2300,-0.6,146.2,Graham,FM,Michael N3KPU's repeater system,https://www.qrz.com/db/N3KPU,9851,53,,,47.0289,-122.2995
-54,WR7VHF,146.880,-0.6,123.0,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,283,53,,Yes,47.57889938,-117.29599762
+54,WR7VHF,146.880,-0.6,123,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,283,53,,Yes,47.57889938,-117.29599762
 55,WR7VHF,147.340,+0.6,123.0,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,290,53,,Yes,47.65879822,-117.4260025
 56,WR7VHF,444.600,+5.0,123.0,Spokane,FM,Inland Empire VHF Radio Amateurs,https://www.vhfclub.org/,17283,53,,Yes,47.91939926,-117.11399841
-57,KC7Z,146.6200,-0.6,103.5,"Gold Mtn, WA",FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,,,Yes,47.54788,-122.8073
-58,KC7Z,442.6500,5.0,103.5,"Gold Mtn, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,,,Yes,47.54788,-122.8073
+57,KC7Z,146.6200,-0.6,103.5,"Gold Mtn, WA",FM,Kitsap County Amateur Radio Club,https://kcarc.org/,,,,,47.54788,-122.8073
+58,KC7Z,442.6500,+5.0,103.5,"Gold Mtn, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,,,Yes,47.54788,-122.8073
 59,KC7Z,444.0750,5.0,103.5,"Bremerton, WA",NBFM,Kitsap County Amateur Radio Club,https://kcarc.org/,,,,Yes,47.60212,-122.61746
 60,N7MHE,145.350,-0.6,100.0,"Saddle Mtn, WA",FM,Craig Morrison's N7MHE repeater,https://www.qrz.com/db/N7MHE,390,53,,,46.81000137,-119.88200378
 61,N7MHE,146.70,-0.6,100.0,"Moses Lake, WA",FM,Craig Morrison's N7MHE repeater,https://www.qrz.com/db/N7MHE,,,,,47.20861,-119.31917
@@ -70,6 +70,6 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 69,W7AAO,145.3700,-0.6,136.5,"Enumclaw, WA",FM,Pierce County ARES,http://www.piercecountyares.net,,,,,47.20387,-122.79564
 70,W7AAO,146.6400,-0.6,103.5,"Edgewood, WA",FM,Pierce County ARES,http://piercecountyares.net,,,,,47.2136,-122.2653
 71,W7AAO,927.8500,-25.0,114.8,"Buckley, WA",FM,Pierce County ARES,http://www.piercecountyares.net,,,,,47.1167,-121.8925
-72,K7DKK,53.670,-1.7,136.5,"Naches, Washington",FM,Pierce County ARES,,23249,53,,,46.730958,-120.699516
-73,K7DKK,224.560,-1.6,103.5,,FM,Pierce County ARES,,,,,,,
-74,KE7YYD,442.7500,5.0,100,"Madigan Army Med Ctr, WA",FM,Madigan Army Medical Center,https://www.qrz.com/db/KE7YYD,13889,53,,,47.10947,-122.55148
+72,K7DKK,53.670,-1.7,136.5,"Naches, WA",FM,Pierce County ARES,,23249,53,,,46.730958,-120.699516
+73,K7DKK,224.560,-1.6,103.5,"Naches, WA",FM,Pierce County ARES,,,,,,,
+74,KE7YYD,442.7500,+5.0,100,JBLM,FM,Madigan Army Medical Center,https://www.qrz.com/db/KE7YYD,13889,53,,,47.10947,-122.55148
