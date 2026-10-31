@@ -17,6 +17,7 @@ from update import (
     parse_coords,
     parse_repeater_lines,
     parse_repeaterbook_location,
+    parse_repeaterbook_nodes,
     refresh_repeater,
     repeater_from_csv_row,
     repeaters_from_wwara,
@@ -609,6 +610,21 @@ def test_parse_repeaterbook_location_extracts_city_and_state():
 def test_parse_repeaterbook_location_missing_returns_none():
     """parse_repeaterbook_location returns None when the page has no location line."""
     assert parse_repeaterbook_location("<p>nothing here</p>") is None
+
+
+def test_parse_repeaterbook_nodes_extracts_allstar_and_echolink():
+    """Node numbers come from the AllStar and EchoLink panes; absent panes yield None."""
+    html = """
+    <a class="link-primary" target="_blank" rel="noopener"
+       href="https://stats.allstarlink.org/nodeinfo.cgi?node=2462">
+       2462 <i class="fas"></i></a>
+    <a href="/repeaters/echolink/node_status.php?node=447770&type=search"
+       target="_blank" class="link-primary">
+       447770 </a>
+    """
+    assert parse_repeaterbook_nodes(html) == "AllStarLink: 2462, EchoLink: 447770"
+    assert parse_repeaterbook_nodes(html.split("<a href=\"/rep")[0]) == "AllStarLink: 2462"
+    assert parse_repeaterbook_nodes("<p>nothing</p>") is None
 
 
 def test_looks_like_internet_id():

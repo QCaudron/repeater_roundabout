@@ -340,7 +340,24 @@ def repeater_from_repeaterbook(state_id_code: str, id_code: str) -> dict:
     if location:
         repeater["Location"] = location
 
+    nodes = parse_repeaterbook_nodes(source.text)
+    if nodes:
+        repeater["Internet Access"] = nodes
+
     return repeater
+
+
+def parse_repeaterbook_nodes(html: str) -> str | None:
+    """
+    Extract AllStar and EchoLink node numbers from a RepeaterBook details page, formatted like
+    "AllStarLink: 2462, EchoLink: 447770", or None if the page lists neither.
+    """
+    found = []
+    for label, pattern in (("AllStarLink", r"nodeinfo\.cgi\?node=\d+\"[^>]*>\s*(\d+)"),
+                           ("EchoLink", r"node_status\.php\?node=\d+[^\"]*\"[^>]*>\s*(\d+)")):
+        if m := re.search(pattern, html):
+            found.append(f"{label}: {m.group(1)}")
+    return ", ".join(found) or None
 
 
 def parse_repeaterbook_location(html: str) -> str | None:
