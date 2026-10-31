@@ -782,6 +782,36 @@ def test_apply_repeater_csv_new_repeater_fills_from_repeaterbook_link(tmp_path, 
     assert new["Status"] == STATUS_RESPONSE_NEEDED
 
 
+STATUS_CSV = (
+    "Club / Repeater Group,Can Repeater Roundabout participants make contacts on your repeaters?,"
+    "Repeaters,Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info\n"
+    '"YCRA","Yes","- WA7SAR 146.860- T123.0","No",\n'
+)
+
+
+def raise_connection_error(state_id, id_code):
+    raise ConnectionError("no route to host")
+
+
+@pytest.mark.parametrize("fetch", [lambda s, i: {}, raise_connection_error,
+                                   lambda s, i: dict(RB_RECORD, **{"Output (MHz)": "147.3"})])
+def test_apply_status_csv_applies_status_and_reports_when_repeaterbook_fails(tmp_path, monkeypatch, fetch):
+    """A failed or mismatched RepeaterBook fetch is reported but doesn't stop the status update."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "WA7SAR", "Output (MHz)": "146.8600", "Group Name": "YCRA", "Tone (Hz)": "100.0",
+         "Status": STATUS_RESPONSE_NEEDED, "RepeaterBook ID": "123", "RepeaterBook State ID": "16"},
+    ])
+    monkeypatch.setattr("update.repeater_from_repeaterbook", fetch)
+    csv_file = tmp_path / "status.csv"
+    csv_file.write_text(STATUS_CSV)
+
+    got, errors = apply_status_csv(df, str(csv_file))
+
+    assert got.loc[0, "Status"] == STATUS_IN
+    assert got.loc[0, "Tone (Hz)"] == "123.0"
+    assert len(errors) == 1 and "RepeaterBook" in errors[0] and "WA7SAR" in errors[0]
+
+
 def test_apply_repeater_csv_rejects_repeaterbook_frequency_mismatch(tmp_path, monkeypatch):
     df = pd.DataFrame.from_records([
         {"Callsign": "W7ABC", "Output (MHz)": "146.9000", "Group Name": "X", "Status": STATUS_IN},

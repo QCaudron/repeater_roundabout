@@ -989,24 +989,38 @@ def parse_repeater_lines(text: str) -> list[dict]:
     return repeaters
 
 
-def merge_update(existing: dict, csv_fields: dict, freq: str, wwara_lines: list[str] | None) -> dict:
+def merge_update(
+    existing: dict, csv_fields: dict, freq: str, wwara_lines: list[str] | None, rb_problems: list[str] | None = None
+) -> dict:
     """
     Layer a bulk-CSV row over WWARA, RepeaterBook and the existing record (if any), with the
     same priorities as command line flags: the CSV row wins, and `existing` is the lowest.
 
     WWARA is looked up by the row's callsign and freq; RepeaterBook by the row's ID/state
-    (else the existing record's). Raises ValueError if RepeaterBook can't be read or lists a
-    different frequency. Fields no source has are None; the "Internet" fields are kept as given
+    (else the existing record's). If RepeaterBook can't be read or lists a different frequency,
+    raises ValueError, or, when rb_problems is given, appends a message to it and goes on
+    without RepeaterBook. Fields no source has are None; the "Internet" fields are kept as given
     so an empty answer still clears the stored value.
     """
     existing = strip_empty(existing)
     rb_id = csv_fields.get("RepeaterBook ID") or existing.get("RepeaterBook ID")
     state_id = csv_fields.get("RepeaterBook State ID") or existing.get("RepeaterBook State ID") or "53"
-    repeaterbook = repeater_from_repeaterbook(str(state_id), str(rb_id)) if rb_id else {}
-    if rb_id and not repeaterbook:
-        raise ValueError(f"RepeaterBook lookup failed for state_id={state_id} id={rb_id}")
-    if repeaterbook and not freq_match(freq, repeaterbook["Output (MHz)"]):
-        raise ValueError(f"frequency mismatch: csv={freq}, repeaterbook={repeaterbook['Output (MHz)']}")
+    repeaterbook = {}
+    if rb_id:
+        try:
+            try:
+                repeaterbook = repeater_from_repeaterbook(str(state_id), str(rb_id))
+            except Exception as e:
+                raise ValueError(f"RepeaterBook fetch failed for state_id={state_id} id={rb_id}: {e}") from e
+            if not repeaterbook:
+                raise ValueError(f"RepeaterBook lookup failed for state_id={state_id} id={rb_id}")
+            if not freq_match(freq, repeaterbook["Output (MHz)"]):
+                raise ValueError(f"RepeaterBook frequency mismatch: csv={freq}, repeaterbook={repeaterbook['Output (MHz)']}")
+        except ValueError as e:
+            if rb_problems is None:
+                raise
+            repeaterbook = {}
+            rb_problems.append(str(e))
 
     wwara = {}
     call = csv_fields.get("Callsign") or existing.get("Callsign")
@@ -1081,11 +1095,15 @@ def apply_status_csv(
                 if tone is not None:
                     fields["Tone (Hz)"] = tone
 
+                # RepeaterBook is optional here: report a failed fetch, but still apply the status.
+                rb_problems = []
                 try:
-                    fields = merged_fields(merge_update(df.loc[i].to_dict(), {**fields, "Callsign": call}, freq, wwara_lines))
+                    fields = merged_fields(merge_update(
+                        df.loc[i].to_dict(), {**fields, "Callsign": call}, freq, wwara_lines, rb_problems))
                 except Exception as e:
                     errors.append(f"{group} {call} {freq}: {e}")
                     continue
+                errors.extend(f"{group} {call} {freq}: {p}" for p in rb_problems)
 
                 df = set_status(df, old_call, freq, status)
                 for col in fields:
@@ -1337,7 +1355,7 @@ if __name__ == "__main__":
         repeaters, errors = apply_status_csv(repeaters, args.status_csv, read_wwara_lines(args.wwara_csv))
         repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
         if errors:
-            print(f"{len(errors)} repeater(s) failed to update:", file=sys.stderr)
+            print(f"{len(errors)} problem(s) updating repeaters (a RepeaterBook failure still lets the status update apply):", file=sys.stderr)
             for e in errors:
                 print(f"  - {e}", file=sys.stderr)
         args.regen = True
