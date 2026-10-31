@@ -1040,7 +1040,8 @@ def parse_repeaterbook_link(url: str) -> tuple[str | None, str | None]:
 
 def format_offset(offset: str) -> str:
     """Format an offset in MHz the way the rest of the data does: "+0.6" or "-0.6"."""
-    val = f"{float(offset):.1f}"
+    val = f"{float(offset):.4f}".rstrip("0")
+    val += "0" if val.endswith(".") else ""
     return val if val.startswith("-") else f"+{val}"
 
 

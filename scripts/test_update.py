@@ -753,6 +753,8 @@ COLS = {k: k for k in ("freq", "offset", "tone", "group", "call", "website", "rb
     ("146.94", "-600 kHz", "", "146.9400", "-0.6", ""),
     ("146.94", "+600khz", "", "146.9400", "+0.6", ""),
     ("146.94", "-0.6 Mhz", "", "146.9400", "-0.6", ""),
+    ("146.94", "-250 kHz", "", "146.9400", "-0.25", ""),
+    ("146.94", "+20kHz", "", "146.9400", "+0.02", ""),
     ("146.94", "-600", "", "146.9400", "-600.0", ""),  # no suffix: MHz, taken literally
 ])
 def test_repeater_from_csv_row_parses_units_and_standard_offsets(freq, offset, tone, want_freq, want_offset, want_tone):
