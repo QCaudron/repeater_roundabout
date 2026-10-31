@@ -639,6 +639,137 @@ def test_apply_status_csv_reports_unmatched_repeater(tmp_path):
     assert got.loc[0, "Status"] == STATUS_RESPONSE_NEEDED
 
 
+WWARA_HEADER = "CALL,FM_WIDE,FM_NARROW,OUTPUT_FREQ,INPUT_FREQ,SPONSOR,CITY,STATE,CTCSS_IN,LATITUDE,LONGITUDE,URL\n"
+
+
+def wwara_lines(call, freq, tone="88.5", lat="47.5", lon="-122.5", city="Wwara City"):
+    row = f"{call},Y,N,{freq},{float(freq) - 0.6:.4f},WWARA Sponsor,{city},WA,{tone},{lat},{lon},http://wwara.example\n"
+    return (WWARA_HEADER + row).splitlines(keepends=True)
+
+
+def test_apply_status_csv_fills_from_wwara_but_csv_values_win(tmp_path):
+    """--wwara_csv fills the row's missing coordinates; the survey's tone beats WWARA's."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "WA7SAR", "Output (MHz)": "146.8600", "Tone (Hz)": "100.0", "Location": "Home Town",
+         "Group Name": "YCRA", "Status": STATUS_RESPONSE_NEEDED, "Coordinates": None},
+    ])
+    csv_file = tmp_path / "status.csv"
+    csv_file.write_text(
+        "Club / Repeater Group,Can Repeater Roundabout participants make contacts on your repeaters?,"
+        "Repeaters,Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info\n"
+        '"YCRA","Yes","- WA7SAR 146.860- T123.0","No",\n'
+    )
+
+    got, errors = apply_status_csv(df, str(csv_file), wwara_lines=wwara_lines("WA7SAR", "146.8600"))
+
+    assert errors == []
+    assert got.loc[0, "Status"] == STATUS_IN
+    assert got.loc[0, "Tone (Hz)"] == "123.0"
+    assert got.loc[0, "Coordinates"] == [47.5, -122.5]
+    assert got.loc[0, "Location"] == "Home Town"
+
+
+def test_apply_status_csv_fills_from_repeaterbook_id_on_record(tmp_path, monkeypatch):
+    df = pd.DataFrame.from_records([
+        {"Callsign": "WA7SAR", "Output (MHz)": "146.8600", "Group Name": "YCRA", "Coordinates": None, "Tone (Hz)": "100.0",
+         "Status": STATUS_RESPONSE_NEEDED, "RepeaterBook ID": "123", "RepeaterBook State ID": "16"},
+    ])
+    seen = []
+    monkeypatch.setattr("update.repeater_from_repeaterbook", lambda s, i: seen.append((s, i)) or dict(RB_RECORD, **{"Output (MHz)": "146.86"}))
+    csv_file = tmp_path / "status.csv"
+    csv_file.write_text(
+        "Club / Repeater Group,Can Repeater Roundabout participants make contacts on your repeaters?,"
+        "Repeaters,Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info\n"
+        '"YCRA","Yes","- WA7SAR 146.860- T123.0","No",\n'
+    )
+
+    got, errors = apply_status_csv(df, str(csv_file))
+
+    assert errors == []
+    assert seen == [("16", "123")]
+    assert got.loc[0, "Coordinates"] == [47.5, -122.5]
+    assert got.loc[0, "Tone (Hz)"] == "123.0"
+
+
+def test_apply_status_csv_survey_tone_beats_wwara_when_equal_to_record(tmp_path):
+    df = pd.DataFrame.from_records([
+        {"Callsign": "WA7SAR", "Output (MHz)": "146.8600", "Tone (Hz)": "123.0", "Group Name": "YCRA",
+         "Status": STATUS_RESPONSE_NEEDED, "Coordinates": None},
+    ])
+    csv_file = tmp_path / "status.csv"
+    csv_file.write_text(
+        "Club / Repeater Group,Can Repeater Roundabout participants make contacts on your repeaters?,"
+        "Repeaters,Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info\n"
+        '"YCRA","Yes","- WA7SAR 146.860- T123.0","No",\n'
+    )
+
+    got, errors = apply_status_csv(df, str(csv_file), wwara_lines=wwara_lines("WA7SAR", "146.8600"))
+
+    assert errors == []
+    assert got.loc[0, "Tone (Hz)"] == "123.0"
+
+
+REPEATER_CSV_HEADER = (
+    "Club / Group Name,Repeater Callsign,Output Frequency (MHz),Offset (MHz),"
+    "Tone (Hz or Dnnn for DCS),Club / Group Website,Link to repeater on RepeaterBook,"
+    "Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info (if applicable),"
+    '"Approximate Location (e.g. Capitol Hill, Seattle, WA)","Approximate Coordinates (e.g. 47.6395, -122.3693)"\n'
+)
+
+
+def test_apply_repeater_csv_fills_from_wwara_but_csv_values_win(tmp_path):
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7DX", "Output (MHz)": "147.0000", "Group Name": "WWDXC", "Status": STATUS_IN,
+         "Location": "Home Town", "Coordinates": None},
+    ])
+    csv_file = tmp_path / "repeater.csv"
+    csv_file.write_text(REPEATER_CSV_HEADER + "WWDXC,W7DX,147,-0.6,103.5,,,No,,,\n")
+
+    got, errors = apply_repeater_csv(df, str(csv_file), wwara_lines=wwara_lines("W7DX", "147.0000"))
+
+    assert errors == []
+    assert got.loc[0, "Tone (Hz)"] == "103.5"
+    assert got.loc[0, "Coordinates"] == [47.5, -122.5]
+    assert got.loc[0, "Location"] == "Home Town"
+    assert got.loc[0, "Status"] == STATUS_IN
+
+
+def test_apply_repeater_csv_new_repeater_fills_from_repeaterbook_link(tmp_path, monkeypatch):
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7OLD", "Output (MHz)": "147.5000", "Group Name": "X", "Status": STATUS_IN},
+    ])
+    seen = []
+    monkeypatch.setattr("update.repeater_from_repeaterbook", lambda s, i: seen.append((s, i)) or dict(RB_RECORD))
+    csv_file = tmp_path / "repeater.csv"
+    link = "https://www.repeaterbook.com/repeaters/details.php?state_id=16&ID=123"
+    csv_file.write_text(REPEATER_CSV_HEADER + f"Club,W7ABC,146.9,,,,{link},No,,Mine,\n")
+
+    got, errors = apply_repeater_csv(df, str(csv_file))
+
+    assert errors == []
+    assert seen == [("16", "123")]
+    new = got.loc[got["Callsign"] == "W7ABC"].iloc[0]
+    assert new["Coordinates"] == [47.5, -122.5]
+    assert new["Offset (MHz)"] == "-0.6"
+    assert new["Location"] == "Mine"
+    assert new["Status"] == STATUS_RESPONSE_NEEDED
+
+
+def test_apply_repeater_csv_rejects_repeaterbook_frequency_mismatch(tmp_path, monkeypatch):
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7ABC", "Output (MHz)": "146.9000", "Group Name": "X", "Status": STATUS_IN},
+    ])
+    monkeypatch.setattr("update.repeater_from_repeaterbook", lambda s, i: dict(RB_RECORD, **{"Output (MHz)": "147.3"}))
+    csv_file = tmp_path / "repeater.csv"
+    link = "https://www.repeaterbook.com/repeaters/details.php?state_id=16&ID=123"
+    csv_file.write_text(REPEATER_CSV_HEADER + f"X,W7ABC,146.9,,,,{link},No,,,\n")
+
+    got, errors = apply_repeater_csv(df, str(csv_file))
+
+    assert len(errors) == 1
+    assert "frequency" in errors[0]
+
+
 def test_apply_repeater_csv_edits_existing_repeater(tmp_path):
     """A row matching an existing callsign/frequency updates it in place rather than adding a new one."""
     df = pd.DataFrame.from_records([

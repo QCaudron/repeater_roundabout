@@ -38,6 +38,8 @@ To add a repeater, you should call `python scripts/update.py`. This script will 
 - WWARA Data Export File (`--wwara_csv`): The path to a [WWARA's repeater CSV file][wwara-data]. All repeaters matching the `--call` and optional `--freq` flags will be imported.
 - Prior Repeater Roundabout `repeaters.json` file (`--prior_json`): The path to prior year's repeater file (for example, `2024/repeaters.json`). All repeaters matching the `--call` and optional `--freq` flags will be imported.
 
+`--status_csv` and `--repeater_csv` take their per-repeater values from the CSV and treat them like command line flags (highest priority). Any field the CSV leaves blank is filled in from `--wwara_csv` (matched by callsign and frequency), from RepeaterBook (the repeater's recorded ID, or the link in a `--repeater_csv` row), and from the existing record, in the priority order described under *Combining Import Sources*.
+
 ### Examples
 
 You can add a repeater using only command line arguments:

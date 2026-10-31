@@ -169,9 +169,15 @@ def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
     if csv_file is None or call is None:
       return pd.DataFrame(columns=["Output (MHz)"])
 
-    with open(csv_file, 'r') as f:
-        lines = f.readlines()
-    return wwara_find(lines, call)
+    return wwara_find(read_wwara_lines(csv_file), call)
+
+def read_wwara_lines(csv_file: str | None) -> list[str] | None:
+    """Contents of a WWARA CSV export, or None if no file was given."""
+    if not csv_file:
+        return None
+    with open(csv_file) as f:
+        return f.readlines()
+
 
 def wwara_find(lines: list[str], call: str) -> pd.DataFrame:
     """
@@ -980,7 +986,46 @@ def parse_repeater_lines(text: str) -> list[dict]:
     return repeaters
 
 
-def apply_status_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, list[str]]:
+def merge_update(existing: dict, csv_fields: dict, freq: str, wwara_lines: list[str] | None) -> dict:
+    """
+    Layer a bulk-CSV row over WWARA, RepeaterBook and the existing record (if any), with the
+    same priorities as command line flags: the CSV row wins, and `existing` is the lowest.
+
+    WWARA is looked up by the row's callsign and freq; RepeaterBook by the row's ID/state
+    (else the existing record's). Raises ValueError if RepeaterBook can't be read or lists a
+    different frequency. Fields no source has are None; the "Internet" fields are kept as given
+    so an empty answer still clears the stored value.
+    """
+    existing = strip_empty(existing)
+    rb_id = csv_fields.get("RepeaterBook ID") or existing.get("RepeaterBook ID")
+    state_id = csv_fields.get("RepeaterBook State ID") or existing.get("RepeaterBook State ID") or "53"
+    repeaterbook = repeater_from_repeaterbook(str(state_id), str(rb_id)) if rb_id else {}
+    if rb_id and not repeaterbook:
+        raise ValueError(f"RepeaterBook lookup failed for state_id={state_id} id={rb_id}")
+    if repeaterbook and not freq_match(freq, repeaterbook["Output (MHz)"]):
+        raise ValueError(f"frequency mismatch: csv={freq}, repeaterbook={repeaterbook['Output (MHz)']}")
+
+    wwara = {}
+    call = csv_fields.get("Callsign") or existing.get("Callsign")
+    if wwara_lines and call:
+        wwaras = wwara_find(wwara_lines, call)
+        ensure_col(wwaras, "Output (MHz)")
+        wwara = first_dict(filter_freq(wwaras, freq))
+
+    merged = merge_repeaters(repeaterbook=repeaterbook, args=csv_fields, wwara=wwara, prior=existing)
+    merged.update({k: v for k, v in csv_fields.items() if k in ("Allow Internet Contacts", "Internet Access")})
+    return merged
+
+
+def merged_fields(merged: dict, *skip: str) -> dict:
+    """The fields of a merge_update result to write to an existing repeater: set, and not a match key, Group Name or Status."""
+    skip = {"Output (MHz)", "Group Name", "Status", "Exclude", *skip}
+    return {k: v for k, v in merged.items() if v is not None and k not in skip}
+
+
+def apply_status_csv(
+    df: pd.DataFrame, csv_file: str, wwara_lines: list[str] | None = None
+) -> tuple[pd.DataFrame, list[str]]:
     """
     Bulk-update repeater status (in/out), callsign, tone, and internet-access fields from
     a club participation survey CSV: one row per club, with a free-form "Repeaters" cell
@@ -989,6 +1034,9 @@ def apply_status_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, lis
     Each listed repeater is matched within its club's existing repeaters by frequency
     (callsigns can drift, so frequency is the stable key). Repeaters that don't match
     exactly one existing entry are reported as errors and left unchanged.
+
+    Missing fields are filled in from wwara_lines (WWARA CSV contents) and from RepeaterBook
+    (via the repeater's recorded ID); values from the survey take priority over both.
 
     Returns the updated DataFrame and a list of error messages.
     """
@@ -1027,8 +1075,14 @@ def apply_status_csv(df: pd.DataFrame, csv_file: str) -> tuple[pd.DataFrame, lis
                 fields = dict(common_fields)
                 if call and call != old_call:
                     fields["Callsign"] = call
-                if tone is not None and tone != df.at[i, "Tone (Hz)"]:
+                if tone is not None:
                     fields["Tone (Hz)"] = tone
+
+                try:
+                    fields = merged_fields(merge_update(df.loc[i].to_dict(), {**fields, "Callsign": call}, freq, wwara_lines))
+                except Exception as e:
+                    errors.append(f"{group} {call} {freq}: {e}")
+                    continue
 
                 df = set_status(df, old_call, freq, status)
                 for col in fields:
@@ -1170,7 +1224,7 @@ def repeater_from_csv_row(row: dict, cols: dict) -> dict:
 
 
 def apply_repeater_csv(
-    df: pd.DataFrame, csv_file: str, status: str | None = None
+    df: pd.DataFrame, csv_file: str, status: str | None = None, wwara_lines: list[str] | None = None
 ) -> tuple[pd.DataFrame, list[str]]:
     """
     Add or edit repeaters from a single-repeater submission CSV (one row per repeater,
@@ -1180,6 +1234,10 @@ def apply_repeater_csv(
     otherwise a new repeater is added. If status is given, every row (matched or new)
     is set to that status; otherwise a matched row's status is left as-is and a new
     row's status is set to response-needed.
+
+    Fields the row leaves blank are filled in from wwara_lines (WWARA CSV contents), from
+    RepeaterBook (via the row's link, else the existing repeater's recorded ID), and from the
+    existing repeater; values from the row take priority.
 
     Returns the updated DataFrame and a list of error messages (one per row that could
     not be parsed; such rows are left unapplied).
@@ -1214,15 +1272,16 @@ def apply_repeater_csv(
                     raise ValueError(f"multiple existing repeaters match {call} {freq}")
                 elif match.sum() == 1:
                     i = df.index[match][0]
-                    fields = {k: v for k, v in repeater.items() if k not in ("Callsign", "Output (MHz)", "Group Name")}
+                    merged = merge_update(df.loc[i].to_dict(), repeater, freq, wwara_lines)
+                    fields = merged_fields(merged, "Callsign")
                     if fields:
                         df = update_fields(df, call, freq, fields)
                     if status:
                         df = set_status(df, call, freq, status)
                 else:
-                    repeater["Mode"] = repeater.get("Mode") or "FM"
-                    repeater["Status"] = STATUS_RESPONSE_NEEDED
-                    df = pd.concat([df, pd.DataFrame.from_records([strip_empty(repeater)])], ignore_index=True)
+                    merged = merge_update({}, repeater, freq, wwara_lines)
+                    new = {k: v for k, v in merged.items() if v is not None}
+                    df = pd.concat([df, pd.DataFrame.from_records([new])], ignore_index=True)
                     if status:
                         df = set_status(df, call, freq, status)
             except Exception as e:
@@ -1272,7 +1331,7 @@ if __name__ == "__main__":
         args.regen = True
     if args.status_csv:
         repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
-        repeaters, errors = apply_status_csv(repeaters, args.status_csv)
+        repeaters, errors = apply_status_csv(repeaters, args.status_csv, read_wwara_lines(args.wwara_csv))
         repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
         if errors:
             print(f"{len(errors)} repeater(s) failed to update:", file=sys.stderr)
@@ -1281,7 +1340,8 @@ if __name__ == "__main__":
         args.regen = True
     if args.repeater_csv:
         repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
-        repeaters, errors = apply_repeater_csv(repeaters, args.repeater_csv, status=args.status)
+        repeaters, errors = apply_repeater_csv(repeaters, args.repeater_csv, status=args.status,
+                                                 wwara_lines=read_wwara_lines(args.wwara_csv))
         repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
         if errors:
             print(f"{len(errors)} row(s) failed to apply:", file=sys.stderr)
