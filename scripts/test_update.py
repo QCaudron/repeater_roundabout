@@ -22,6 +22,7 @@ from update import (
     repeaters_from_wwara,
     rollover,
     set_status,
+    status_only_update,
     update_all_repeaters,
     update_fields,
     update_status_and_fields,
@@ -120,6 +121,81 @@ def test_generate_repeater_df_sets_status_on_new_repeater(tmp_path, monkeypatch)
 
     new = df.loc[df["Callsign"] == "W7XYZ"].iloc[0]
     assert new["Status"] == STATUS_IN
+
+
+RB_RECORD = {
+    "Callsign": "W7ABC", "Output (MHz)": "146.9", "Offset (MHz)": "-0.6", "Tone (Hz)": "100.0",
+    "Coordinates": [47.5, -122.5], "Location": "RB City, WA",
+    "RepeaterBook State ID": "16", "RepeaterBook ID": "123",
+}
+
+
+def write_repeaters(tmp_path, monkeypatch, *rows):
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets").mkdir()
+    (tmp_path / "assets" / "repeaters.json").write_text(json.dumps(list(rows)))
+
+
+def test_generate_repeater_df_fills_missing_fields_from_repeaterbook_but_keeps_curated_ones(tmp_path, monkeypatch):
+    """--id on an existing repeater fills its missing coordinates; Location/Status stay as curated."""
+    write_repeaters(tmp_path, monkeypatch, {
+        "Callsign": "W7ABC", "Output (MHz)": "146.9000", "Group Name": "Club", "Location": "Home Town",
+        "Coordinates": None, "Status": STATUS_IN, "RepeaterBook ID": "123", "RepeaterBook State ID": "16"})
+    monkeypatch.setattr("update.repeater_from_repeaterbook", lambda state_id, id_code: dict(RB_RECORD))
+
+    df = generate_repeater_df(make_args(id="123"))
+
+    row = df.iloc[0]
+    assert row["Coordinates"] == [47.5, -122.5]
+    assert row["Location"] == "Home Town"
+    assert row["Status"] == STATUS_IN
+
+
+def test_generate_repeater_df_status_still_fetches_from_repeaterbook(tmp_path, monkeypatch):
+    write_repeaters(tmp_path, monkeypatch, {
+        "Callsign": "W7ABC", "Output (MHz)": "146.9000", "Group Name": "Club", "Coordinates": None,
+        "Status": STATUS_RESPONSE_NEEDED, "RepeaterBook ID": "123", "RepeaterBook State ID": "16"})
+    monkeypatch.setattr("update.repeater_from_repeaterbook", lambda state_id, id_code: dict(RB_RECORD))
+
+    df = generate_repeater_df(make_args(id="123", status=STATUS_IN))
+
+    assert df.iloc[0]["Status"] == STATUS_IN
+    assert df.iloc[0]["Coordinates"] == [47.5, -122.5]
+
+
+@pytest.mark.parametrize("arg_state, want", [(None, "16"), ("5", "5")])
+def test_generate_repeater_df_resolves_state_id(tmp_path, monkeypatch, arg_state, want):
+    """The recorded state is used when --state_id isn't given; an explicit one wins."""
+    write_repeaters(tmp_path, monkeypatch, {
+        "Callsign": "W7ABC", "Output (MHz)": "146.9000", "Group Name": "Club", "Coordinates": [1.0, 2.0],
+        "Status": STATUS_IN, "RepeaterBook ID": "123", "RepeaterBook State ID": "16"})
+    seen = []
+    monkeypatch.setattr("update.repeater_from_repeaterbook", lambda s, i: seen.append(s) or dict(RB_RECORD))
+
+    generate_repeater_df(make_args(id="123", state_id=arg_state))
+
+    assert seen == [want]
+
+
+def test_generate_repeater_df_state_id_defaults_to_washington(tmp_path, monkeypatch):
+    write_repeaters(tmp_path, monkeypatch, {
+        "Callsign": "W7XYZ", "Output (MHz)": "147.0000", "Group Name": "Other", "Coordinates": [1.0, 2.0],
+        "Status": STATUS_IN, "RepeaterBook ID": None})
+    seen = []
+    monkeypatch.setattr("update.repeater_from_repeaterbook", lambda s, i: seen.append(s) or dict(RB_RECORD))
+
+    generate_repeater_df(make_args(id="999"))
+
+    assert seen == ["53"]
+
+
+def test_status_only_update_skips_sources():
+    df = pd.DataFrame([{"Callsign": "W7ABC"}])
+    assert status_only_update(make_args(call="W7ABC", status=STATUS_IN), df)
+    assert not status_only_update(make_args(call="W7ABC", status=STATUS_IN, id="123"), df)
+    assert not status_only_update(make_args(call="W7ABC", status=STATUS_IN, wwara_csv="w.csv"), df)
+    assert not status_only_update(make_args(call="W7XYZ", status=STATUS_IN), df)
+    assert not status_only_update(make_args(call="W7ABC"), df)
 
 
 def test_rollover_archives_last_contest(tmp_path, monkeypatch):

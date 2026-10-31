@@ -100,7 +100,8 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--name", type=str, default=None)
     parser.add_argument("--loc", type=str, default=None)
-    parser.add_argument("--state_id", type=str, default="53")  # WA
+    parser.add_argument("--state_id", type=str, default=None,
+                        help="RepeaterBook State ID; defaults to the repeater's recorded one, else 53 (WA)")
     parser.add_argument("--id", type=str, default=None)
     parser.add_argument("--wwara_csv", type=str, default=None)
     parser.add_argument("--prior_json", type=str, default=None)
@@ -138,6 +139,15 @@ def parse_args() -> argparse.Namespace | SimpleNamespace:
     if args.status and (args.score or args.rollover or args.update_all or args.status_csv or args.check):
         parser.error("--status cannot be combined with --score/--rollover/--update_all/--status_csv/--check")
     return args
+
+def status_only_update(args: argparse.Namespace | SimpleNamespace, df: pd.DataFrame) -> bool:
+    """
+    True if --status can be applied straight to a known callsign. When --wwara_csv or --id
+    is given, the run must go through generate_repeater_df so missing fields get fetched.
+    """
+    return bool(args.status and args.call and not (args.wwara_csv or args.id)
+                and (df["Callsign"].str.upper() == args.call.upper()).any())
+
 
 def repeaters_from_wwara(csv_file: str, call: str) -> pd.DataFrame:
     """
@@ -447,6 +457,14 @@ def default_offset(freq) -> float | None:
     return next((o for lo, hi, o in BAND_OFFSETS if lo <= f < hi), None)
 
 
+def known_repeater(df: pd.DataFrame, call: str, freq: float) -> dict:
+    """The repeater in df matching call and freq (as a dict), or {}."""
+    if "Callsign" not in df.columns:
+        return {}
+    match = (df["Callsign"].str.upper() == call.upper()) & df["Output (MHz)"].map(lambda f: freq_match(freq, f))
+    return first_dict(df[match])
+
+
 def merge_repeaters(repeaterbook: dict = {}, args: dict = {}, wwara: dict = {}, prior: dict = {}) -> dict:
     """
     Merges repeater information from multiple sources. If a field is specified by more than
@@ -616,23 +634,47 @@ def generate_repeater_df(
         df["RR#"] = df.index + 1
         return df
 
+    # Load known repeaters first: they supply the state ID and fill in fields the sources lack.
+    if not Path(REPEATERS_JSON).exists():
+        with open(REPEATERS_JSON, "w") as f:
+            f.write("{}")
+    df = pd.read_json(REPEATERS_JSON, dtype=False)
+
+    # Initialize records missing state id fields to WA (53).
+    if "RepeaterBook State ID" not in df.columns:
+        df["RepeaterBook State ID"] = None
+
+    def init_state_id(row):
+        if pd.notna(row["RepeaterBook State ID"]):
+            return row["RepeaterBook State ID"]
+        if pd.isna(row["RepeaterBook ID"]):
+            return None
+        return "53"
+
+    df["RepeaterBook State ID"] = df.apply(init_state_id, axis=1)
+
     call = args.call
     freq = float(args.freq) if args.freq else None
 
-    repeaterbook = repeater_from_repeaterbook(args.state_id, args.id)
+    state_id = args.state_id
+    if args.id and not state_id:
+        ensure_col(df, "RepeaterBook ID")
+        known = df.loc[df["RepeaterBook ID"].astype(str) == str(args.id), "RepeaterBook State ID"].dropna()
+        state_id = known.iloc[0] if len(known) else "53"
+    repeaterbook = repeater_from_repeaterbook(state_id, args.id)
     if repeaterbook:
         if call and call != repeaterbook["Callsign"]:
-            raise f"Callsign mismatch: args={args.call}, repeaterbook={repeaterbook["Callsign"]}"
+            raise ValueError(f"Callsign mismatch: args={args.call}, repeaterbook={repeaterbook["Callsign"]}")
         if not call:
             call = repeaterbook["Callsign"]
 
         if freq and not freq_match(freq, float(repeaterbook["Output (MHz)"])):
-            raise f"Frequency mismatch: args={args.freq}, repeaterbook={repeaterbook["Output (MHz)"]}"
+            raise ValueError(f"Frequency mismatch: args={args.freq}, repeaterbook={repeaterbook["Output (MHz)"]}")
         if not freq:
             freq = float(repeaterbook["Output (MHz)"])
 
     if not call:
-        raise "Could not determine callsign!"
+        raise ValueError("Could not determine callsign!")
 
     priors = pd.DataFrame(columns=["Output (MHz)"])
     if args.prior_json:
@@ -666,28 +708,9 @@ def generate_repeater_df(
             merge_repeaters(repeaterbook=repeaterbook,
                             args=repeaterargs,
                             wwara=first_dict(filter_freq(wwaras, f)),
-                            prior=first_dict(filter_freq(priors, f)))
+                            prior={**first_dict(filter_freq(priors, f)), **known_repeater(df, call, f)})
             for f in frequencies
         ])
-
-    # Combine with known repeaters
-    if not Path(REPEATERS_JSON).exists():
-        with open(REPEATERS_JSON, "w") as f:
-            f.write("{}")
-    df = pd.read_json(REPEATERS_JSON, dtype=False)
-
-    # Initialize records missing state id fields to WA (53).
-    if "RepeaterBook State ID" not in df.columns:
-        df["RepeaterBook State ID"] = None
-
-    def init_state_id(row):
-        if pd.notna(row["RepeaterBook State ID"]):
-            return row["RepeaterBook State ID"]
-        if pd.isna(row["RepeaterBook ID"]):
-            return None
-        return "53"
-
-    df["RepeaterBook State ID"] = df.apply(init_state_id, axis=1)
 
     # Update existing repeaters in place by callsign+frequency; only add a new
     # row when no existing repeater matches. Status is left as-is on an update
@@ -1228,10 +1251,8 @@ if __name__ == "__main__":
         repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
         # Only attempt the update if the callsign is already known; otherwise this is a
         # brand-new repeater and generate_repeater_df below will add it with this status.
-        # Checking existence directly (rather than swallowing ValueError whenever
-        # --wwara_csv/--id happen to be set) keeps a genuine typo'd callsign from being
-        # silently dropped when those flags are also present.
-        if args.call and (repeaters["Callsign"].str.upper() == args.call.upper()).any():
+        # See status_only_update: runs with --id/--wwara_csv go through generate_repeater_df instead.
+        if status_only_update(args, repeaters):
             try:
                 repeaters = update_status_and_fields_for_callsign(
                     repeaters, args.call, args.freq, args.status, repeater_from_args(args)
