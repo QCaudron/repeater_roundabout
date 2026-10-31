@@ -1,12 +1,12 @@
 [
     {
         "Callsign":"WW7PSR",
-        "Output (MHz)":"146.9600",
+        "Output (MHz)":"146.960",
         "Offset (MHz)":"-0.6",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            47.6395,
-            -122.3693
+            47.62400055,
+            -122.31500244
         ],
         "Group Name":"PSRG",
         "Location":"Capitol Hill, Seattle, WA",
@@ -14,10 +14,10 @@
         "Long Name":"Puget Sound Repeater Group",
         "Website":"https:\/\/web.psrg.org\/",
         "Status":"in",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
+        "RepeaterBook ID":"62",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"AllStarLink: 2462, EchoLink: 447770",
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7PSR",
@@ -37,13 +37,13 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7SAR",
         "Output (MHz)":"146.860",
         "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"123",
+        "Tone (Hz)":"123.0",
         "Coordinates":[
             46.51390076,
             -121.20800018
@@ -56,14 +56,14 @@
         "Status":"in",
         "RepeaterBook ID":"106",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
         "Callsign":"WA7SAR",
         "Output (MHz)":"147.080",
         "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"123",
+        "Tone (Hz)":"123.0",
         "Coordinates":[
             46.06330109,
             -121.4240036
@@ -76,14 +76,14 @@
         "Status":"in",
         "RepeaterBook ID":"95",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
         "Callsign":"WA7SAR",
         "Output (MHz)":"444.600",
         "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"123",
+        "Tone (Hz)":"123.0",
         "Coordinates":[
             46.52220154,
             -120.33300018
@@ -96,7 +96,7 @@
         "Status":"in",
         "RepeaterBook ID":"476",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -176,7 +176,7 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -196,17 +196,17 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
         "Callsign":"N7OEP",
-        "Output (MHz)":"440.0750",
+        "Output (MHz)":"440.075",
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            47.21944,
-            -121.84194
+            47.20429993,
+            -121.99199677
         ],
         "Group Name":"N7OEP",
         "Location":"Enumclaw, WA",
@@ -216,17 +216,17 @@
         "Status":"in",
         "RepeaterBook ID":"9876",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7OEP",
-        "Output (MHz)":"443.1750",
-        "Offset (MHz)":"5.0",
+        "Output (MHz)":"443.175",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"107.2",
         "Coordinates":[
-            47.21944,
-            -121.84195
+            47.20429993,
+            -121.99199677
         ],
         "Group Name":"N7OEP",
         "Location":"Enumclaw",
@@ -236,17 +236,17 @@
         "Status":"in",
         "RepeaterBook ID":"9912",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7OEP",
-        "Output (MHz)":"53.3300",
+        "Output (MHz)":"53.330",
         "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"100",
+        "Tone (Hz)":"100.0",
         "Coordinates":[
-            47.2192,
-            -121.84288
+            47.22119904,
+            -121.85099792
         ],
         "Group Name":"N7OEP",
         "Location":"Baldi Mtn.",
@@ -256,8 +256,8 @@
         "Status":"in",
         "RepeaterBook ID":"375",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7MIR",
@@ -276,8 +276,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7MIR",
@@ -296,8 +296,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7PP",
@@ -316,8 +316,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7PP",
@@ -336,8 +336,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7PP",
@@ -356,8 +356,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7PP",
@@ -376,14 +376,14 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7SWI",
         "Output (MHz)":"224.940",
         "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"100",
+        "Tone (Hz)":"100.0",
         "Coordinates":[
             43.9760521,
             -116.4074505
@@ -396,7 +396,7 @@
         "Status":"in",
         "RepeaterBook ID":"21198",
         "RepeaterBook State ID":"16",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -416,7 +416,7 @@
         "Status":"in",
         "RepeaterBook ID":"21386",
         "RepeaterBook State ID":"16",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -436,7 +436,7 @@
         "Status":"in",
         "RepeaterBook ID":"19067",
         "RepeaterBook State ID":"16",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -456,7 +456,7 @@
         "Status":"in",
         "RepeaterBook ID":"21717",
         "RepeaterBook State ID":"16",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -477,7 +477,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":"No",
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7LED",
@@ -497,7 +497,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":"No",
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7SAR",
@@ -516,7 +516,7 @@
         "Status":"in",
         "RepeaterBook ID":"23223",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -536,8 +536,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7PFR",
@@ -556,8 +556,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7PFR",
@@ -576,17 +576,17 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7BEL",
-        "Output (MHz)":"441.1000",
+        "Output (MHz)":"441.100",
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"156.7",
         "Coordinates":[
-            47.55447,
-            -122.13239
+            47.55449,
+            -122.13235
         ],
         "Group Name":"BCS",
         "Location":"Bellevue, WA",
@@ -596,7 +596,7 @@
         "Status":"in",
         "RepeaterBook ID":"489",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -616,7 +616,7 @@
         "Status":"in",
         "RepeaterBook ID":"161",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -636,7 +636,7 @@
         "Status":"in",
         "RepeaterBook ID":"80",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -656,7 +656,7 @@
         "Status":"in",
         "RepeaterBook ID":"17271",
         "RepeaterBook State ID":"16",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -676,14 +676,14 @@
         "Status":"in",
         "RepeaterBook ID":"366",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"N7WRQ",
         "Output (MHz)":"147.380",
         "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"100",
+        "Tone (Hz)":"100.0",
         "Coordinates":[
             47.57495,
             -117.08113
@@ -696,7 +696,7 @@
         "Status":"in",
         "RepeaterBook ID":"78",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -716,14 +716,14 @@
         "Status":"in",
         "RepeaterBook ID":"31",
         "RepeaterBook State ID":"30",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"W6TQF",
         "Output (MHz)":"440.325",
         "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"100",
+        "Tone (Hz)":"100.0",
         "Coordinates":[
             45.74150848,
             -121.68618774
@@ -736,12 +736,12 @@
         "Status":"in",
         "RepeaterBook ID":"18543",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
-        "Callsign":"K7CST",
-        "Output (MHz)":"147.3200",
+        "Callsign":"N7RHE",
+        "Output (MHz)":"147.320",
         "Offset (MHz)":"+0.6",
         "Tone (Hz)":"103.5",
         "Coordinates":[
@@ -756,17 +756,17 @@
         "Status":"in",
         "RepeaterBook ID":"9852",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
         "Callsign":"N7GDE",
-        "Output (MHz)":"145.1900",
+        "Output (MHz)":"145.190",
         "Offset (MHz)":"-0.6",
         "Tone (Hz)":"127.3",
         "Coordinates":[
-            48.594746,
-            -122.15942
+            48.5855351,
+            -122.147808
         ],
         "Group Name":"RASC",
         "Location":"Lyman Mtn, WA",
@@ -776,7 +776,7 @@
         "Status":"in",
         "RepeaterBook ID":"176",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -796,7 +796,7 @@
         "Status":"in",
         "RepeaterBook ID":"17413",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -816,7 +816,7 @@
         "Status":"in",
         "RepeaterBook ID":"7099",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
@@ -837,7 +837,7 @@
         "RepeaterBook ID":"181",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"KJ7GWR",
@@ -876,17 +876,17 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"No"
     },
     {
         "Callsign":"W7NPC",
-        "Output (MHz)":"444.4750",
-        "Offset (MHz)":"5.0",
+        "Output (MHz)":"444.475",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            47.6558,
-            -122.5475
+            47.65579987,
+            -122.54799652
         ],
         "Group Name":"BARC",
         "Location":"Bainbridge Isl.",
@@ -896,8 +896,8 @@
         "Status":"in",
         "RepeaterBook ID":"480",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA6PMX",
@@ -916,8 +916,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA6PMX",
@@ -936,8 +936,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7JCR",
@@ -956,8 +956,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"AA7MI",
@@ -976,8 +976,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"NM7E",
@@ -996,8 +996,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"NM7E",
@@ -1016,17 +1016,17 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AVM",
-        "Output (MHz)":"147.2200",
+        "Output (MHz)":"147.220",
         "Offset (MHz)":"+0.6",
         "Tone (Hz)":"127.3",
         "Coordinates":[
-            47.9744,
-            -122.3976
+            47.9784276,
+            -122.3556962
         ],
         "Group Name":"ICARC",
         "Location":"Clinton, WA",
@@ -1036,17 +1036,17 @@
         "Status":"in",
         "RepeaterBook ID":"345",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N3KPU",
-        "Output (MHz)":"145.2300",
+        "Output (MHz)":"145.230",
         "Offset (MHz)":"-0.6",
         "Tone (Hz)":"146.2",
         "Coordinates":[
-            47.0289,
-            -122.2995
+            47.05289841,
+            -122.29399872
         ],
         "Group Name":"N3KPU",
         "Location":"Graham",
@@ -1056,14 +1056,14 @@
         "Status":"in",
         "RepeaterBook ID":"9851",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WR7VHF",
         "Output (MHz)":"146.880",
         "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"123",
+        "Tone (Hz)":"123.0",
         "Coordinates":[
             47.57889938,
             -117.29599762
@@ -1076,7 +1076,7 @@
         "Status":"in",
         "RepeaterBook ID":"283",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":"EchoLink: 265848",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -1096,7 +1096,7 @@
         "Status":"in",
         "RepeaterBook ID":"290",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -1116,7 +1116,7 @@
         "Status":"in",
         "RepeaterBook ID":"17283",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -1136,8 +1136,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"KC7Z",
@@ -1156,7 +1156,7 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -1176,7 +1176,7 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
+        "Internet Access":null,
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -1196,8 +1196,8 @@
         "Status":"in",
         "RepeaterBook ID":"390",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7MHE",
@@ -1216,8 +1216,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7SEA",
@@ -1236,8 +1236,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7STR",
@@ -1256,8 +1256,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7STR",
@@ -1276,8 +1276,8 @@
         "Status":"in",
         "RepeaterBook ID":"16503",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7STR",
@@ -1296,8 +1296,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7STR",
@@ -1316,8 +1316,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7STR",
@@ -1336,8 +1336,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AVM",
@@ -1356,8 +1356,8 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AAO",
@@ -1377,7 +1377,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AAO",
@@ -1397,7 +1397,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AAO",
@@ -1417,13 +1417,13 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7DKK",
         "Output (MHz)":"53.670",
         "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"136.5",
+        "Tone (Hz)":"",
         "Coordinates":[
             46.730958,
             -120.699516
@@ -1458,12 +1458,12 @@
     },
     {
         "Callsign":"KE7YYD",
-        "Output (MHz)":"442.7500",
+        "Output (MHz)":"442.750",
         "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"100",
+        "Tone (Hz)":"146.2",
         "Coordinates":[
-            47.10947,
-            -122.55148
+            47.10910034,
+            -122.5530014
         ],
         "Group Name":"Madigan AMC",
         "Location":"JBLM",
@@ -1473,8 +1473,8 @@
         "Status":"in",
         "RepeaterBook ID":"13889",
         "RepeaterBook State ID":"53",
-        "Internet Access":"",
-        "Allow Internet Contacts":""
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AUX",
@@ -1494,7 +1494,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AUX",
@@ -1514,7 +1514,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AUX",
@@ -1534,7 +1534,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ECG",
@@ -1951,7 +1951,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7DEM",
@@ -1971,7 +1971,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7DEM",
@@ -1991,7 +1991,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7DEM",
@@ -2011,7 +2011,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7DEM",
@@ -2031,7 +2031,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7DEM",
@@ -2051,7 +2051,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7DEM",
@@ -2071,7 +2071,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7DEM",
@@ -2091,7 +2091,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7DG",
@@ -2111,7 +2111,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7DG",
@@ -2131,7 +2131,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7DG",
@@ -2151,7 +2151,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7DG",
@@ -2171,7 +2171,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"KC7EQO",
@@ -2191,7 +2191,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7CH",
@@ -2211,7 +2211,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7CH",
@@ -2231,7 +2231,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7CH",
@@ -2251,7 +2251,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N9VW",
@@ -2271,7 +2271,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"KC7RAS",
@@ -2291,7 +2291,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7PIG",
@@ -2311,7 +2311,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7PIG",
@@ -2331,7 +2331,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7PIG",
@@ -2351,7 +2351,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7TBP",
@@ -2371,7 +2371,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7CH",
@@ -2391,7 +2391,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AW",
@@ -2411,7 +2411,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AW",
@@ -2431,7 +2431,7 @@
         "RepeaterBook ID":"14858",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AW",
@@ -2451,7 +2451,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7SK",
@@ -2471,7 +2471,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7SK",
@@ -2491,7 +2491,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7SK",
@@ -2511,7 +2511,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7LAW",
@@ -2531,7 +2531,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7LAW",
@@ -2551,7 +2551,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7MV",
@@ -2571,7 +2571,7 @@
         "RepeaterBook ID":"206",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7MV",
@@ -2591,7 +2591,7 @@
         "RepeaterBook ID":"400",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WA7MV",
@@ -2611,7 +2611,7 @@
         "RepeaterBook ID":"646",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7JEP",
@@ -2631,7 +2631,7 @@
         "RepeaterBook ID":"43",
         "RepeaterBook State ID":"16",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7JEP",
@@ -2651,7 +2651,7 @@
         "RepeaterBook ID":"23257",
         "RepeaterBook State ID":"16",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7RHT",
@@ -2671,7 +2671,7 @@
         "RepeaterBook ID":"17116",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7RHT",
@@ -2691,7 +2691,7 @@
         "RepeaterBook ID":"17115",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"AB7F",
@@ -2711,16 +2711,16 @@
         "RepeaterBook ID":"16535",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"NE7MC",
-        "Output (MHz)":"442.0000",
-        "Offset (MHz)":"5.0",
+        "Output (MHz)":"442.000",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"141.3",
         "Coordinates":[
-            47.737677,
-            -122.23079
+            47.76737841,
+            -122.2598474
         ],
         "Group Name":"Northshore EMC",
         "Location":"Kenmore",
@@ -2731,7 +2731,7 @@
         "RepeaterBook ID":"19962",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ACS",
@@ -2751,7 +2751,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ACS",
@@ -2771,7 +2771,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ACS",
@@ -2791,7 +2791,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ACS",
@@ -2811,7 +2811,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ACS",
@@ -2831,7 +2831,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ACS",
@@ -2851,7 +2851,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ACS",
@@ -2871,7 +2871,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ACS",
@@ -2891,7 +2891,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7ACS",
@@ -2911,16 +2911,16 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"KK7DFL",
-        "Output (MHz)":"145.2750",
+        "Output (MHz)":"145.275",
         "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"100",
+        "Tone (Hz)":"100.0",
         "Coordinates":[
-            47.000578,
-            -122.94557
+            47.0073187,
+            -122.9093063
         ],
         "Group Name":"K7CH",
         "Location":"Olympia",
@@ -2931,16 +2931,16 @@
         "RepeaterBook ID":"23719",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7DK",
-        "Output (MHz)":"145.2100",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"141.3",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
         "Coordinates":[
-            47.278611,
-            -122.51277
+            47.25289917,
+            -122.44400024
         ],
         "Group Name":"RCTacoma",
         "Location":"Tacoma",
@@ -2950,17 +2950,17 @@
         "Status":"response_needed",
         "RepeaterBook ID":"324",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Internet Access":"AllStarLink: 68688, EchoLink: 515469",
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7DK",
-        "Output (MHz)":"147.2800",
-        "Offset (MHz)":"0.6",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"+0.6",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            47.24833,
-            -122.48456
+            47.25289917,
+            -122.44400024
         ],
         "Group Name":"RCTacoma",
         "Location":"Tacoma",
@@ -2970,17 +2970,17 @@
         "Status":"response_needed",
         "RepeaterBook ID":"324",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Internet Access":"AllStarLink: 68688, EchoLink: 515469",
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7DK",
-        "Output (MHz)":"147.3800",
-        "Offset (MHz)":"0.6",
+        "Output (MHz)":"147.380",
+        "Offset (MHz)":"+0.6",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            46.84258,
-            -122.76406
+            46.8431015,
+            -122.76300049
         ],
         "Group Name":"RCTacoma",
         "Location":"Crawford Mtn.",
@@ -2991,16 +2991,16 @@
         "RepeaterBook ID":"325",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7DK",
-        "Output (MHz)":"440.6250",
-        "Offset (MHz)":"5.0",
+        "Output (MHz)":"440.625",
+        "Offset (MHz)":"+5.0",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            47.24833,
-            -122.48456
+            47.25289917,
+            -122.44400024
         ],
         "Group Name":"RCTacoma",
         "Location":"Tacoma",
@@ -3010,8 +3010,8 @@
         "Status":"response_needed",
         "RepeaterBook ID":"549",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Internet Access":"AllStarLink: 68688, EchoLink: 515469",
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7FLY",
@@ -3031,7 +3031,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7YRC",
@@ -3051,7 +3051,7 @@
         "RepeaterBook ID":"21604",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7RHE",
@@ -3071,16 +3071,16 @@
         "RepeaterBook ID":"9852",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7JN",
-        "Output (MHz)":"146.7000",
+        "Output (MHz)":"146.700",
         "Offset (MHz)":"-0.6",
         "Tone (Hz)":"131.8",
         "Coordinates":[
-            48.56027,
-            -123.11967
+            48.5603981,
+            -123.12000275
         ],
         "Group Name":"SJCARS",
         "Location":"San Juan Isl.",
@@ -3091,16 +3091,16 @@
         "RepeaterBook ID":"6196",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7JN",
-        "Output (MHz)":"224.4800",
+        "Output (MHz)":"224.480",
         "Offset (MHz)":"-1.6",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            48.680278,
-            -122.83472
+            48.67779922,
+            -122.83200073
         ],
         "Group Name":"SJCARS",
         "Location":"Mt. Constitution",
@@ -3111,16 +3111,16 @@
         "RepeaterBook ID":"6394",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"N7JN",
-        "Output (MHz)":"443.4500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"131.8",
+        "Output (MHz)":"443.450",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
         "Coordinates":[
-            48.56027,
-            -123.12027
+            48.67779922,
+            -122.83000183
         ],
         "Group Name":"SJCARS",
         "Location":"Mt. Constitution",
@@ -3131,7 +3131,7 @@
         "RepeaterBook ID":"368",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7ATS",
@@ -3151,7 +3151,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7ATS",
@@ -3170,8 +3170,8 @@
         "Status":"response_needed",
         "RepeaterBook ID":"601",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Internet Access":"AllStarLink: 564563, EchoLink: 512619",
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7EAT",
@@ -3191,7 +3191,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7EAT",
@@ -3211,7 +3211,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"K7DK",
@@ -3231,7 +3231,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"W7AUX",
@@ -3251,7 +3251,7 @@
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
-        "Allow Internet Contacts":""
+        "Allow Internet Contacts":null
     },
     {
         "Callsign":"WW7SEA",
