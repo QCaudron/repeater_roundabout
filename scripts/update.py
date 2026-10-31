@@ -1044,10 +1044,32 @@ def format_offset(offset: str) -> str:
     return val if val.startswith("-") else f"+{val}"
 
 
+def strip_unit(s: str, unit: str) -> str:
+    """Drop a trailing unit suffix (any case, optional space), e.g. "103.5 Hz" -> "103.5"."""
+    return re.sub(rf"\s*{unit}$", "", s.strip(), flags=re.IGNORECASE)
+
+
+def parse_csv_offset(offset: str, freq: str | None) -> str | None:
+    """
+    Parse a submitted offset: "+"/"-" mean the band's standard offset in that direction;
+    otherwise a number in MHz, or in kHz with a "kHz" suffix.
+    """
+    offset = offset.strip()
+    if not offset:
+        return None
+    if offset in ("+", "-"):
+        std = default_offset(freq)
+        if std is None:
+            raise ValueError(f"no standard offset for {freq} MHz; give the offset explicitly")
+        return format_offset(f"{offset}{std}")
+    if offset.lower().endswith("khz"):
+        return format_offset(str(float(strip_unit(offset, "khz")) / 1000))
+    return format_offset(strip_unit(offset, "mhz"))
+
+
 def repeater_from_csv_row(row: dict, cols: dict) -> dict:
     """Build a repeater field dict from one row of the single-repeater submission CSV."""
-    freq = (row.get(cols["freq"]) or "").strip()
-    offset = (row.get(cols["offset"]) or "").strip()
+    freq = strip_unit(row.get(cols["freq"]) or "", "mhz")
     coords = (row.get(cols["coords"]) or "").strip()
     info = (row.get(cols["info"]) or "").strip()
 
@@ -1062,8 +1084,8 @@ def repeater_from_csv_row(row: dict, cols: dict) -> dict:
         "Group Name": (row.get(cols["group"]) or "").strip(),
         "Callsign": (row.get(cols["call"]) or "").strip().upper(),
         "Output (MHz)": f"{float(freq):.4f}" if freq else None,
-        "Offset (MHz)": format_offset(offset) if offset else None,
-        "Tone (Hz)": (row.get(cols["tone"]) or "").strip(),
+        "Offset (MHz)": parse_csv_offset(row.get(cols["offset"]) or "", freq),
+        "Tone (Hz)": strip_unit(row.get(cols["tone"]) or "", "hz"),
         "Website": (row.get(cols["website"]) or "").strip(),
         "Location": (row.get(cols["location"]) or "").strip(),
         "Coordinates": lat_lon,

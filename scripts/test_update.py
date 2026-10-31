@@ -17,6 +17,7 @@ from update import (
     parse_repeater_lines,
     parse_repeaterbook_location,
     refresh_repeater,
+    repeater_from_csv_row,
     repeaters_from_wwara,
     rollover,
     set_status,
@@ -738,3 +739,30 @@ def test_check_consistency_reports_in_after_response_needed():
 def test_check_consistency_reports_invalid_status():
     got = problems_for(rr("A", Status="maybe"))
     assert len(got) == 1 and "maybe" in got[0]
+
+
+COLS = {k: k for k in ("freq", "offset", "tone", "group", "call", "website", "rb_link", "allow", "info",
+                       "location", "coords")}
+
+
+@pytest.mark.parametrize("freq, offset, tone, want_freq, want_offset, want_tone", [
+    ("147.0 MHz", "-0.6", "103.5 Hz", "147.0000", "-0.6", "103.5"),
+    ("147.0mhz", "+", "103.5HZ", "147.0000", "+0.6", "103.5"),
+    ("147.0", "-", "DCS123", "147.0000", "-0.6", "DCS123"),
+    ("442.5", "+", "", "442.5000", "+5.0", ""),
+    ("146.94", "-600 kHz", "", "146.9400", "-0.6", ""),
+    ("146.94", "+600khz", "", "146.9400", "+0.6", ""),
+    ("146.94", "-0.6 Mhz", "", "146.9400", "-0.6", ""),
+    ("146.94", "-600", "", "146.9400", "-600.0", ""),  # no suffix: MHz, taken literally
+])
+def test_repeater_from_csv_row_parses_units_and_standard_offsets(freq, offset, tone, want_freq, want_offset, want_tone):
+    got = repeater_from_csv_row({"freq": freq, "offset": offset, "tone": tone, "call": "w7dx"}, COLS)
+
+    assert got["Output (MHz)"] == want_freq
+    assert got["Offset (MHz)"] == want_offset
+    assert got.get("Tone (Hz)", "") == want_tone
+
+
+def test_repeater_from_csv_row_standard_offset_without_band_default_errors():
+    with pytest.raises(ValueError):
+        repeater_from_csv_row({"freq": "30.0", "offset": "+", "call": "W7DX"}, COLS)
