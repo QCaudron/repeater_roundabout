@@ -14,6 +14,7 @@ from update import (
     generate_repeater_df,
     looks_like_internet_id,
     merge_repeaters,
+    parse_coords,
     parse_repeater_lines,
     parse_repeaterbook_location,
     refresh_repeater,
@@ -677,6 +678,21 @@ def test_apply_repeater_csv_adds_new_repeater(tmp_path):
     assert new["Offset (MHz)"] == "+5.0"
     assert new["Status"] == STATUS_RESPONSE_NEEDED
     assert new["Mode"] == "FM"
+
+
+@pytest.mark.parametrize("text, want", [
+    ("47.6395, -122.3693", [47.6395, -122.3693]),
+    ("47°01'58.40\"N 122°59'19.43\"W", [47.032889, -122.988731]),
+    ("47°01'58.40\"S, 122°59'19.43\"E", [-47.032889, 122.988731]),
+    ("122°59'19.43\"W 47°01'58.40\"N", [47.032889, -122.988731]),
+])
+def test_parse_coords(text, want):
+    assert parse_coords(text) == pytest.approx(want, abs=1e-6)
+
+
+def test_parse_coords_rejects_same_axis():
+    with pytest.raises(ValueError):
+        parse_coords("47°N 122°S")
 
 
 def rr(call="A", freq="146.960", **kw):

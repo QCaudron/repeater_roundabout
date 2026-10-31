@@ -1069,6 +1069,25 @@ def parse_csv_offset(offset: str, freq: str | None) -> str | None:
     return format_offset(strip_unit(offset, "mhz"))
 
 
+def parse_coords(text: str) -> list[float]:
+    """Parse "lat, lon" decimals or DMS like 47°01'58.40"N 122°59'19.43"W."""
+    num = r"(\d+(?:\.\d+)?)"
+    dms = re.findall(rf"""{num}\s*°\s*(?:{num}\s*['′]\s*)?(?:{num}\s*["″]\s*)?([NSEW])""", text, re.I)
+    if len(dms) == 2:
+        vals = []
+        for d, m, s, h in dms:
+            v = float(d) + float(m or 0) / 60 + float(s or 0) / 3600
+            vals.append(-v if h.upper() in "SW" else v)
+        hemis = "".join(h.upper() for *_, h in dms)
+        if hemis[0] in "EW" and hemis[1] in "NS":  # lon listed first
+            vals.reverse()
+        elif not (hemis[0] in "NS" and hemis[1] in "EW"):
+            raise ValueError(f"need one N/S and one E/W coordinate: {text!r}")
+        return vals
+    lat, lon = [p.strip() for p in text.split(",", 1)]
+    return [float(lat), float(lon)]
+
+
 def repeater_from_csv_row(row: dict, cols: dict) -> dict:
     """Build a repeater field dict from one row of the single-repeater submission CSV."""
     freq = strip_unit(row.get(cols["freq"]) or "", "mhz")
@@ -1077,8 +1096,7 @@ def repeater_from_csv_row(row: dict, cols: dict) -> dict:
 
     lat_lon = None
     if coords:
-        lat, lon = [p.strip() for p in coords.split(",", 1)]
-        lat_lon = [float(lat), float(lon)]
+        lat_lon = parse_coords(coords)
 
     rb_link = (row.get(cols["rb_link"]) or "").strip()
     if rb_link and urlparse(rb_link).scheme not in ("http", "https"):
