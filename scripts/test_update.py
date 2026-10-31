@@ -690,6 +690,21 @@ def test_parse_coords(text, want):
     assert parse_coords(text) == pytest.approx(want, abs=1e-6)
 
 
+@pytest.mark.parametrize("text, want", [
+    ("CN87vr", [47.7292, -122.2083]),
+    ("cn87VR", [47.7292, -122.2083]),
+    ("CN87vr55", [47.7313, -122.2042]),
+])
+def test_parse_coords_maidenhead(text, want):
+    assert parse_coords(text) == want
+
+
+@pytest.mark.parametrize("text", ["CN87", "CN87vr5", "CN87vry5", "SA00aa"])
+def test_parse_coords_rejects_bad_maidenhead(text):
+    with pytest.raises(ValueError):
+        parse_coords(text)
+
+
 def test_parse_coords_rejects_same_axis():
     with pytest.raises(ValueError):
         parse_coords("47°N 122°S")

@@ -1069,8 +1069,26 @@ def parse_csv_offset(offset: str, freq: str | None) -> str | None:
     return format_offset(strip_unit(offset, "mhz"))
 
 
+def maidenhead_center(locator: str) -> list[float] | None:
+    """Center [lat, lon] of a 6- or 8-character Maidenhead locator like CN87vr, or None if not one."""
+    m = re.fullmatch(r"([A-R]{2})(\d\d)([A-X]{2})(\d\d)?", locator.strip(), re.IGNORECASE)
+    if not m:
+        return None
+    # Each level subdivides the previous cell: field 20x10 deg, square 2x1, subsquare 1/12x1/24, extended 1/120x1/240.
+    levels = [(m[1], 20, 10), (m[2], 2, 1), (m[3], 1 / 12, 1 / 24), (m[4], 1 / 120, 1 / 240)]
+    lon, lat = -180.0, -90.0
+    for pair, dlon, dlat in levels:
+        if pair:
+            lon += (int(pair[0], 36) - (10 if pair[0].isalpha() else 0)) * dlon  # base 36: A=10
+            lat += (int(pair[1], 36) - (10 if pair[1].isalpha() else 0)) * dlat
+            size = (dlon, dlat)
+    return [round(lat + size[1] / 2, 4), round(lon + size[0] / 2, 4)]
+
+
 def parse_coords(text: str) -> list[float]:
-    """Parse "lat, lon" decimals or DMS like 47°01'58.40"N 122°59'19.43"W."""
+    """Parse "lat, lon" decimals, DMS like 47°01'58.40"N 122°59'19.43"W, or a Maidenhead locator."""
+    if center := maidenhead_center(text):
+        return center
     num = r"(\d+(?:\.\d+)?)"
     dms = re.findall(rf"""{num}\s*°\s*(?:{num}\s*['′]\s*)?(?:{num}\s*["″]\s*)?([NSEW])""", text, re.I)
     if len(dms) == 2:
