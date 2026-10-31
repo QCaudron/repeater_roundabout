@@ -198,6 +198,33 @@ def test_status_only_update_skips_sources():
     assert not status_only_update(make_args(call="W7ABC"), df)
 
 
+def test_generate_repeater_df_call_only_updates_every_repeater_with_that_call(tmp_path, monkeypatch):
+    """--call without --freq applies the flags to all of the callsign's repeaters, not just the first."""
+    row = {"Callsign": "W7ABC", "Group Name": "Club", "Long Name": "Old", "Status": STATUS_IN, "RepeaterBook ID": None,
+           "Coordinates": [1.0, 2.0]}
+    write_repeaters(tmp_path, monkeypatch,
+                    {**row, "Output (MHz)": "146.9000"}, {**row, "Output (MHz)": "444.1000"},
+                    {**row, "Callsign": "W7XYZ", "Output (MHz)": "147.0000"})
+
+    df = generate_repeater_df(make_args(call="W7ABC", long_name="New"))
+
+    assert df["Long Name"].tolist() == ["New", "New", "Old"]
+
+
+def test_generate_repeater_df_call_only_with_wwara_updates_all_known_and_new(tmp_path, monkeypatch):
+    """Frequencies WWARA lists are added alongside the repeaters already known for the callsign."""
+    row = {"Callsign": "W7ABC", "Group Name": "Club", "Long Name": "Old", "Status": STATUS_IN, "RepeaterBook ID": None,
+           "Coordinates": [1.0, 2.0]}
+    write_repeaters(tmp_path, monkeypatch, {**row, "Output (MHz)": "146.9000"}, {**row, "Output (MHz)": "444.1000"})
+    wwara = tmp_path / "wwara.csv"
+    wwara.write_text("".join(wwara_lines("W7ABC", "146.9000") + wwara_lines("W7ABC", "223.9000")[1:]))
+
+    df = generate_repeater_df(make_args(call="W7ABC", long_name="New", wwara_csv=str(wwara)))
+
+    assert sorted(df["Output (MHz)"]) == ["146.9000", "223.9000", "444.1000"]
+    assert set(df["Long Name"]) == {"New"}
+
+
 def test_rollover_archives_last_contest(tmp_path, monkeypatch):
     """rollover copies repeaters.json and moves result CSVs into an archive named for the previous year."""
     monkeypatch.chdir(tmp_path)

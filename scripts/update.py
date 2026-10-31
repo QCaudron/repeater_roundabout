@@ -699,9 +699,12 @@ def generate_repeater_df(
     if freq:
         frequencies = [float(freq)]
     else:
+        known_freqs = df.loc[df["Callsign"].str.upper() == call.upper(), "Output (MHz)"].dropna().to_list() \
+            if "Callsign" in df else []
+        # Without --freq, apply to every repeater with this callsign, wherever we know of it.
         frequencies = list(set([
             float(f) for f in priors["Output (MHz)"].to_list() +
-                 wwaras["Output (MHz)"].to_list() +
+                 wwaras["Output (MHz)"].to_list() + known_freqs +
                  [repeaterargs.get("Output (MHz)")] +
                  [repeaterbook.get("Output (MHz)")]
             if f
