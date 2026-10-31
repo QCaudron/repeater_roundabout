@@ -1102,7 +1102,7 @@ def parse_coords(text: str) -> list[float]:
         elif not (hemis[0] in "NS" and hemis[1] in "EW"):
             raise ValueError(f"need one N/S and one E/W coordinate: {text!r}")
         return vals
-    lat, lon = [p.strip() for p in text.split(",", 1)]
+    lat, lon = re.split(r"\s*,\s*|\s+", text.strip(), maxsplit=1)
     return [float(lat), float(lon)]
 
 
