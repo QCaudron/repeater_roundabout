@@ -768,3 +768,29 @@ def test_repeater_from_csv_row_parses_units_and_standard_offsets(freq, offset, t
 def test_repeater_from_csv_row_standard_offset_without_band_default_errors():
     with pytest.raises(ValueError):
         repeater_from_csv_row({"freq": "30.0", "offset": "+", "call": "W7DX"}, COLS)
+
+
+@pytest.mark.parametrize("website, want", [
+    ("example.org/club", "http://example.org/club"),
+    ("www.example.org", "http://www.example.org"),
+    ("http://example.org", "http://example.org"),
+    ("https://example.org", "https://example.org"),
+    ("", None),
+])
+def test_repeater_from_csv_row_prefixes_scheme_on_website(website, want):
+    got = repeater_from_csv_row({"website": website, "call": "W7DX"}, COLS)
+
+    assert got.get("Website") == want
+
+
+@pytest.mark.parametrize("link", ["N/A", "repeaterbook", "12345", "ftp://repeaterbook.com/x"])
+def test_repeater_from_csv_row_rejects_non_url_repeaterbook_link(link):
+    with pytest.raises(ValueError):
+        repeater_from_csv_row({"rb_link": link, "call": "W7DX"}, COLS)
+
+
+def test_repeater_from_csv_row_parses_repeaterbook_url():
+    link = "https://www.repeaterbook.com/repeaters/details.php?state_id=53&ID=1234"
+    got = repeater_from_csv_row({"rb_link": link, "call": "W7DX"}, COLS)
+
+    assert (got["RepeaterBook State ID"], got["RepeaterBook ID"]) == ("53", "1234")

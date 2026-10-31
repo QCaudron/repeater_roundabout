@@ -8,6 +8,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from types import SimpleNamespace
+from urllib.parse import urlparse
 
 import numpy as np
 import pandas as pd
@@ -1079,7 +1080,14 @@ def repeater_from_csv_row(row: dict, cols: dict) -> dict:
         lat, lon = [p.strip() for p in coords.split(",", 1)]
         lat_lon = [float(lat), float(lon)]
 
-    state_id, rb_id = parse_repeaterbook_link((row.get(cols["rb_link"]) or "").strip())
+    rb_link = (row.get(cols["rb_link"]) or "").strip()
+    if rb_link and urlparse(rb_link).scheme not in ("http", "https"):
+        raise ValueError(f"RepeaterBook link is not a URL: {rb_link}")
+    state_id, rb_id = parse_repeaterbook_link(rb_link)
+
+    website = (row.get(cols["website"]) or "").strip()
+    if website and not re.match(r"[a-z][a-z0-9+.-]*://", website, re.IGNORECASE):
+        website = f"http://{website}"
 
     repeater = {
         "Group Name": (row.get(cols["group"]) or "").strip(),
@@ -1087,7 +1095,7 @@ def repeater_from_csv_row(row: dict, cols: dict) -> dict:
         "Output (MHz)": f"{float(freq):.4f}" if freq else None,
         "Offset (MHz)": parse_csv_offset(row.get(cols["offset"]) or "", freq),
         "Tone (Hz)": strip_unit(row.get(cols["tone"]) or "", "hz"),
-        "Website": (row.get(cols["website"]) or "").strip(),
+        "Website": website,
         "Location": (row.get(cols["location"]) or "").strip(),
         "Coordinates": lat_lon,
         "RepeaterBook State ID": state_id,
