@@ -1537,6 +1537,403 @@
         "Allow Internet Contacts":""
     },
     {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.8250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.5136,
+            -122.3708
+        ],
+        "Group Name":"WECG",
+        "Location":"Ferndale",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"http:\/\/wecg.org",
+        "Status":"in",
+        "RepeaterBook ID":"7100",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"146.450",
+        "Offset (MHz)":"+1.0",
+        "Tone (Hz)":null,
+        "Coordinates":[
+            48.68740082,
+            -122.36199951
+        ],
+        "Group Name":"WECG",
+        "Location":"Bellingham, Washington",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"http:\/\/wecg.org",
+        "Status":"in",
+        "RepeaterBook ID":"12802",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"224.1600",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"156.7",
+        "Coordinates":null,
+        "Group Name":"WECG",
+        "Location":null,
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"http:\/\/wecg.org",
+        "Status":"in",
+        "RepeaterBook ID":"8854",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"440.475",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":null,
+        "Coordinates":[
+            48.68870163,
+            -122.36100006
+        ],
+        "Group Name":"WECG",
+        "Location":"Bellingham, Washington",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"http:\/\/wecg.org",
+        "Status":"in",
+        "RepeaterBook ID":"624",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.2500",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"156.7",
+        "Coordinates":[
+            48.6875,
+            -122.3625
+        ],
+        "Group Name":"WECG",
+        "Location":"Lookout Mtn.",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"http:\/\/wecg.org",
+        "Status":"in",
+        "RepeaterBook ID":"7393",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"W7ECG",
+        "Output (MHz)":"442.300",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            48.7358,
+            -122.48161
+        ],
+        "Group Name":"WECG",
+        "Location":"Bellingham, Washington",
+        "Mode":"FM",
+        "Long Name":"Whatcom Emergency Communications Group",
+        "Website":"http:\/\/wecg.org",
+        "Status":"in",
+        "RepeaterBook ID":"19722",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"NT7H",
+        "Output (MHz)":"147.3600",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.0328888889,
+            -122.9887305556
+        ],
+        "Group Name":"Olyham",
+        "Location":"Downtown Olympia, WA",
+        "Mode":"FM",
+        "Long Name":"The Olympia Amateur Radio Society",
+        "Website":"http:\/\/Olyham.org",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"K7LWH",
+        "Output (MHz)":"224.360",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.7292,
+            -122.2083
+        ],
+        "Group Name":"LWHC",
+        "Location":"Finn Hill, Kirkland, WA",
+        "Mode":"FM",
+        "Long Name":"Lake Washington Ham Club",
+        "Website":"http:\/\/lakewashingtonhamclub.org",
+        "Status":"in",
+        "RepeaterBook ID":"5326",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"147.0400",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.324663,
+            -122.32604
+        ],
+        "Group Name":"FWARC",
+        "Location":"Federal Way, WA",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/repeaters",
+        "Status":"in",
+        "RepeaterBook ID":"136",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"NT7H",
+        "Output (MHz)":"441.4000",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.8424638889,
+            -122.7641305556
+        ],
+        "Group Name":"Olyham",
+        "Location":"Crawford Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"The Olympia Amateur Radio Society",
+        "Website":"http:\/\/Olyham.org",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"146.7600",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.28,
+            -122.29
+        ],
+        "Group Name":"FWARC",
+        "Location":"Federal Way, WA",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/repeaters",
+        "Status":"in",
+        "RepeaterBook ID":"135",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"442.9500",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.32,
+            -122.33
+        ],
+        "Group Name":"FWARC",
+        "Location":"Federal Way, WA",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/repeaters",
+        "Status":"in",
+        "RepeaterBook ID":"14514",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"WA7FW",
+        "Output (MHz)":"442.9250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"D036",
+        "Coordinates":[
+            47.32,
+            -122.33
+        ],
+        "Group Name":"FWARC",
+        "Location":"Federal Way, WA",
+        "Mode":"FM",
+        "Long Name":"Federal Way Amateur Radio Club",
+        "Website":"https:\/\/fwarc.org\/repeaters",
+        "Status":"in",
+        "RepeaterBook ID":"14514",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"NT7H",
+        "Output (MHz)":"224.4000",
+        "Offset (MHz)":"+1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.8425527778,
+            -122.7640055556
+        ],
+        "Group Name":"Olyham",
+        "Location":"Crawford Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"The Olympia Amateur Radio Society",
+        "Website":"http:\/\/Olyham.org",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"K7CH",
+        "Output (MHz)":"53.0300",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            46.4882,
+            -123.2148
+        ],
+        "Group Name":"K7CH",
+        "Location":"Baw Faw Peak, WA",
+        "Mode":"FM",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"NC7G",
+        "Output (MHz)":"146.6600",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.45,
+            -122.29
+        ],
+        "Group Name":"Highline ARC",
+        "Location":"SeaTac",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"http:\/\/highlinearc.org",
+        "Status":"in",
+        "RepeaterBook ID":"2780",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"WA7ST",
+        "Output (MHz)":"443.1000",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.45087,
+            -122.2868
+        ],
+        "Group Name":"Highline ARC",
+        "Location":"SeaTac",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"http:\/\/highlinearc.org",
+        "Status":"in",
+        "RepeaterBook ID":"2779",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"W7BUR",
+        "Output (MHz)":"443.1250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.4727,
+            -122.34545
+        ],
+        "Group Name":"Highline ARC",
+        "Location":"Burien, Washington",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"http:\/\/highlinearc.org",
+        "Status":"in",
+        "RepeaterBook ID":"19061",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"WA7DES",
+        "Output (MHz)":"443.7000",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123",
+        "Coordinates":[
+            47.40233,
+            -122.30356
+        ],
+        "Group Name":"Highline ARC",
+        "Location":"Des Moines",
+        "Mode":"FM",
+        "Long Name":"Highline Amateur Radio Club",
+        "Website":"http:\/\/highlinearc.org",
+        "Status":"in",
+        "RepeaterBook ID":"22114",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"K7CPR",
+        "Output (MHz)":"145.4700",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            46.9731,
+            -123.135
+        ],
+        "Group Name":"Capitol Peak",
+        "Location":"Olympia, WA",
+        "Mode":"FM",
+        "Long Name":"Capitol Peak Repeater Group",
+        "Website":"http:\/\/WWW.47repeater.com",
+        "Status":"in",
+        "RepeaterBook ID":"358",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"Echolink Node# 568330",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
         "Callsign":"WA7DEM",
         "Output (MHz)":"146.7750",
         "Offset (MHz)":"-0.6",
@@ -1777,86 +2174,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"WA7FW",
-        "Output (MHz)":"146.7600",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.28,
-            -122.29
-        ],
-        "Group Name":"FWARC",
-        "Location":"Federal Way, WA",
-        "Mode":"FM",
-        "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"https:\/\/fwarc.org\/repeaters",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WA7FW",
-        "Output (MHz)":"147.0400",
-        "Offset (MHz)":"0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.324663,
-            -122.32604
-        ],
-        "Group Name":"FWARC",
-        "Location":"Federal Way, WA",
-        "Mode":"FM",
-        "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"https:\/\/fwarc.org\/repeaters",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WA7FW",
-        "Output (MHz)":"442.9250",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"D036[^dcs]",
-        "Coordinates":[
-            47.32,
-            -122.33
-        ],
-        "Group Name":"FWARC",
-        "Location":"Federal Way, WA",
-        "Mode":"FM",
-        "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"https:\/\/fwarc.org\/repeaters",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WA7FW",
-        "Output (MHz)":"442.9500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.32,
-            -122.33
-        ],
-        "Group Name":"FWARC",
-        "Location":"Federal Way, WA",
-        "Mode":"FM",
-        "Long Name":"Federal Way Amateur Radio Club",
-        "Website":"https:\/\/fwarc.org\/repeaters",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"KC7EQO",
         "Output (MHz)":"442.1000",
         "Offset (MHz)":"5.0",
@@ -1870,26 +2187,6 @@
         "Mode":"FM",
         "Long Name":"Matt KC7EQO's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/KC7EQO\/R",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"K7CH",
-        "Output (MHz)":"53.0300",
-        "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"114.8",
-        "Coordinates":[
-            46.4882,
-            -123.2148
-        ],
-        "Group Name":"K7CH",
-        "Location":"Baw Faw Peak, WA",
-        "Mode":"FM",
-        "Long Name":"Carl K7CH's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
@@ -2333,26 +2630,6 @@
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"K7LWH",
-        "Output (MHz)":"224.360",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.68149948,
-            -122.20899963
-        ],
-        "Group Name":"LWHC",
-        "Location":"Kirkland",
-        "Mode":"FM",
-        "Long Name":"Lake Washington Ham Club",
-        "Website":"https:\/\/www.lakewashingtonhamclub.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"5326",
-        "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":""
     },
@@ -2837,86 +3114,6 @@
         "Allow Internet Contacts":""
     },
     {
-        "Callsign":"WA7ST",
-        "Output (MHz)":"443.1000",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.45087,
-            -122.2868
-        ],
-        "Group Name":"HARC",
-        "Location":"SeaTac",
-        "Mode":"FM",
-        "Long Name":"Highline Amateur Radio Club",
-        "Website":"https:\/\/www.highlinearc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"2779",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"NC7G",
-        "Output (MHz)":"146.6600",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.45,
-            -122.29
-        ],
-        "Group Name":"HARC",
-        "Location":"SeaTac",
-        "Mode":"FM",
-        "Long Name":"Highline Amateur Radio Club",
-        "Website":"https:\/\/www.highlinearc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"2780",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7BUR",
-        "Output (MHz)":"441.1250",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.4728,
-            -122.3456
-        ],
-        "Group Name":"HARC",
-        "Location":"Burien",
-        "Mode":"FM",
-        "Long Name":"Highline Amateur Radio Club",
-        "Website":"https:\/\/www.highlinearc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"19061",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"WA7DES",
-        "Output (MHz)":"443.7000",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"123",
-        "Coordinates":[
-            47.40233,
-            -122.30356
-        ],
-        "Group Name":"HARC",
-        "Location":"Des Moines",
-        "Mode":"FM",
-        "Long Name":"Highline Amateur Radio Club",
-        "Website":"https:\/\/www.highlinearc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"22114",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
         "Callsign":"N7YRC",
         "Output (MHz)":"53.930",
         "Offset (MHz)":"-1.7",
@@ -3012,66 +3209,6 @@
         "Website":"http:\/\/sjcars.org",
         "Status":"response_needed",
         "RepeaterBook ID":"368",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7ECG",
-        "Output (MHz)":"224.1600",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"156.7",
-        "Coordinates":[
-            48.6875,
-            -122.3625
-        ],
-        "Group Name":"WECG",
-        "Location":"Lookout Mtn.",
-        "Mode":"FM",
-        "Long Name":"Whatcom Emergency Communications Group",
-        "Website":"https:\/\/wecg.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"8854",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7ECG",
-        "Output (MHz)":"442.2500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"156.7",
-        "Coordinates":[
-            48.6875,
-            -122.3625
-        ],
-        "Group Name":"WECG",
-        "Location":"Lookout Mtn.",
-        "Mode":"FM",
-        "Long Name":"Whatcom Emergency Communications Group",
-        "Website":"https:\/\/wecg.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"7393",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":""
-    },
-    {
-        "Callsign":"W7ECG",
-        "Output (MHz)":"442.8250",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"156.7",
-        "Coordinates":[
-            48.5136,
-            -122.3708
-        ],
-        "Group Name":"WECG",
-        "Location":"Ferndale",
-        "Mode":"FM",
-        "Long Name":"Whatcom Emergency Communications Group",
-        "Website":"https:\/\/wecg.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"7100",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":""

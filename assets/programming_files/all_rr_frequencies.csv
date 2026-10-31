@@ -76,3 +76,23 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 75,W7AUX,224.0200,-1.6,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.76,-122.35
 76,W7AUX,440.3000,+5.0,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.75619,-122.34575
 77,W7AUX,442.8250,+5.0,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.768,-122.3531
+78,W7ECG,442.8250,+5.0,156.7,Ferndale,FM,Whatcom Emergency Communications Group,http://wecg.org,7100,53,,Yes,48.5136,-122.3708
+79,W7ECG,146.450,+1.0,,"Bellingham, Washington",FM,Whatcom Emergency Communications Group,http://wecg.org,12802,53,,Yes,48.68740082,-122.36199951
+80,W7ECG,224.1600,-1.6,156.7,,FM,Whatcom Emergency Communications Group,http://wecg.org,8854,53,,No,,
+81,W7ECG,440.475,+5.0,,"Bellingham, Washington",FM,Whatcom Emergency Communications Group,http://wecg.org,624,53,,Yes,48.68870163,-122.36100006
+82,W7ECG,442.2500,+5.0,156.7,Lookout Mtn.,FM,Whatcom Emergency Communications Group,http://wecg.org,7393,53,,,48.6875,-122.3625
+83,W7ECG,442.300,+5.0,88.5,"Bellingham, Washington",FM,Whatcom Emergency Communications Group,http://wecg.org,19722,53,,,48.7358,-122.48161
+84,NT7H,147.3600,+0.6,103.5,"Downtown Olympia, WA",FM,The Olympia Amateur Radio Society,http://Olyham.org,,,,No,47.0328888889,-122.9887305556
+85,K7LWH,224.360,-1.6,103.5,"Finn Hill, Kirkland, WA",FM,Lake Washington Ham Club,http://lakewashingtonhamclub.org,5326,53,,No,47.7292,-122.2083
+86,WA7FW,147.0400,+0.6,103.5,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,136,53,,No,47.324663,-122.32604
+87,NT7H,441.4000,+5.0,103.5,"Crawford Mtn, WA",FM,The Olympia Amateur Radio Society,http://Olyham.org,,,,No,46.8424638889,-122.7641305556
+88,WA7FW,146.7600,-0.6,103.5,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,135,53,,No,47.28,-122.29
+89,WA7FW,442.9500,+5.0,103.5,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,14514,53,,No,47.32,-122.33
+90,WA7FW,442.9250,+5.0,D036,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,14514,53,,No,47.32,-122.33
+91,NT7H,224.4000,+1.6,103.5,"Crawford Mtn, WA",FM,The Olympia Amateur Radio Society,http://Olyham.org,,,,Yes,46.8425527778,-122.7640055556
+92,K7CH,53.0300,-1.7,114.8,"Baw Faw Peak, WA",FM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,,,,No,46.4882,-123.2148
+93,NC7G,146.6600,+0.6,103.5,SeaTac,FM,Highline Amateur Radio Club,http://highlinearc.org,2780,53,,No,47.45,-122.29
+94,WA7ST,443.1000,+5.0,103.5,SeaTac,FM,Highline Amateur Radio Club,http://highlinearc.org,2779,53,,No,47.45087,-122.2868
+95,W7BUR,443.1250,+5.0,103.5,"Burien, Washington",FM,Highline Amateur Radio Club,http://highlinearc.org,19061,53,,No,47.4727,-122.34545
+96,WA7DES,443.7000,+5.0,123,Des Moines,FM,Highline Amateur Radio Club,http://highlinearc.org,22114,53,,No,47.40233,-122.30356
+97,K7CPR,145.4700,-0.6,100,"Olympia, WA",FM,Capitol Peak Repeater Group,http://WWW.47repeater.com,358,53,Echolink Node# 568330,Yes,46.9731,-123.135

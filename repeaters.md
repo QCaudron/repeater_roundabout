@@ -103,6 +103,26 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 75    | Shoreline ACS     | W7AUX      | Shoreline, WA             | FM          |       224.0200 |           -1.6 |       103.5 |
 | 76    | Shoreline ACS     | W7AUX      | Shoreline, WA             | FM          |       440.3000 |           +5.0 |       103.5 |
 | 77    | Shoreline ACS     | W7AUX      | Shoreline, WA             | FM          |       442.8250 |           +5.0 |       103.5 |
+| 78    | WECG              | W7ECG      | Ferndale                  | FM          |       442.8250 |           +5.0 |       156.7 |
+| 79    | WECG              | W7ECG      | Bellingham, Washington    | FM          |        146.450 |           +1.0 |             |
+| 80    | WECG              | W7ECG      | nan                       | FM          |       224.1600 |           -1.6 |       156.7 |
+| 81    | WECG              | W7ECG      | Bellingham, Washington    | FM          |        440.475 |           +5.0 |             |
+| 82    | WECG              | W7ECG      | Lookout Mtn.              | FM          |       442.2500 |           +5.0 |       156.7 |
+| 83    | WECG              | W7ECG      | Bellingham, Washington    | FM          |        442.300 |           +5.0 |        88.5 |
+| 84    | Olyham            | NT7H       | Downtown Olympia, WA      | FM          |       147.3600 |           +0.6 |       103.5 |
+| 85    | LWHC              | K7LWH      | Finn Hill, Kirkland, WA   | FM          |        224.360 |           -1.6 |       103.5 |
+| 86    | FWARC             | WA7FW      | Federal Way, WA           | FM          |       147.0400 |           +0.6 |       103.5 |
+| 87    | Olyham            | NT7H       | Crawford Mtn, WA          | FM          |       441.4000 |           +5.0 |       103.5 |
+| 88    | FWARC             | WA7FW      | Federal Way, WA           | FM          |       146.7600 |           -0.6 |       103.5 |
+| 89    | FWARC             | WA7FW      | Federal Way, WA           | FM          |       442.9500 |           +5.0 |       103.5 |
+| 90    | FWARC             | WA7FW      | Federal Way, WA           | FM          |       442.9250 |           +5.0 |        D036 |
+| 91    | Olyham            | NT7H       | Crawford Mtn, WA          | FM          |       224.4000 |           +1.6 |       103.5 |
+| 92    | K7CH              | K7CH       | Baw Faw Peak, WA          | FM          |        53.0300 |           -1.7 |       114.8 |
+| 93    | Highline ARC      | NC7G       | SeaTac                    | FM          |       146.6600 |           +0.6 |       103.5 |
+| 94    | Highline ARC      | WA7ST      | SeaTac                    | FM          |       443.1000 |           +5.0 |       103.5 |
+| 95    | Highline ARC      | W7BUR      | Burien, Washington        | FM          |       443.1250 |           +5.0 |       103.5 |
+| 96    | Highline ARC      | WA7DES     | Des Moines                | FM          |       443.7000 |           +5.0 |         123 |
+| 97    | Capitol Peak      | K7CPR      | Olympia, WA               | FM          |       145.4700 |           -0.6 |         100 |
 
 ---
 
@@ -117,8 +137,17 @@ BCS
 BEARS
 : [Boeing Employees Amateur Radio Society](https://sites.google.com/site/k7nwsbears/)
 
+Capitol Peak
+: [Capitol Peak Repeater Group](http://WWW.47repeater.com)
+
+FWARC
+: [Federal Way Amateur Radio Club](https://fwarc.org/repeaters)
+
 GKRG
 : [Gobblers Knob Repeater Group](https://www.qrz.com/db/W7PFR)
+
+Highline ARC
+: [Highline Amateur Radio Club](http://highlinearc.org)
 
 ICARC
 : [Island County ARC](http://www.w7avm.org)
@@ -132,6 +161,9 @@ JCARC
 K6RFK
 : [K6RFK's repeater system](https://www.qrz.com/db/K6RFK)
 
+K7CH
+: [Carl K7CH's repeater system](https://www.qrz.com/db/k7ch)
+
 K7PP
 : [Peter Policani's K7PP repeater system](http://www.k7pp.itgo.com)
 
@@ -143,6 +175,9 @@ KCARC
 
 KCST
 : [Kent Communications Support Team](https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/)
+
+LWHC
+: [Lake Washington Ham Club](http://lakewashingtonhamclub.org)
 
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
@@ -174,6 +209,9 @@ N7YRC
 NMARESC
 : [North Mason Amateur Radio Emergency Service Club](https://nmaresc.wordpress.com/)
 
+Olyham
+: [The Olympia Amateur Radio Society](http://Olyham.org)
+
 PSRG
 : [Puget Sound Repeater Group](https://web.psrg.org/)
 
@@ -197,6 +235,9 @@ Skamania Co. ARES
 
 Suquamish Tribe
 : [Suquamish Tribe Office EM](https://suquamish.nsn.us/home/department)
+
+WECG
+: [Whatcom Emergency Communications Group](http://wecg.org)
 
 WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)
