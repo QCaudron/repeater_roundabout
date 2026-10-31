@@ -1163,7 +1163,6 @@ def apply_repeater_csv(
     """
     df = df.reset_index(drop=True)
     errors = []
-    new_rows = []
     with open(csv_file, newline="") as f:
         reader = csv.DictReader(f)
         cols = {
@@ -1199,13 +1198,13 @@ def apply_repeater_csv(
                         df = set_status(df, call, freq, status)
                 else:
                     repeater["Mode"] = repeater.get("Mode") or "FM"
-                    repeater["Status"] = status or STATUS_RESPONSE_NEEDED
-                    new_rows.append(strip_empty(repeater))
+                    repeater["Status"] = STATUS_RESPONSE_NEEDED
+                    df = pd.concat([df, pd.DataFrame.from_records([strip_empty(repeater)])], ignore_index=True)
+                    if status:
+                        df = set_status(df, call, freq, status)
             except Exception as e:
                 errors.append(f"{row}: {e}")
 
-    if new_rows:
-        df = pd.concat([df, pd.DataFrame.from_records(new_rows)], ignore_index=True)
     return df.reset_index(drop=True), errors
 
 

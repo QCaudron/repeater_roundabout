@@ -655,6 +655,27 @@ def test_apply_repeater_csv_sets_status_on_existing_and_new_repeaters(tmp_path):
     assert got.loc[got["Callsign"] == "W7NEW", "Status"].iloc[0] == STATUS_OUT
 
 
+def test_apply_repeater_csv_moves_new_repeater_to_status_position(tmp_path):
+    """A new repeater added with status=in goes after the last 'in' repeater, not at the end."""
+    df = pd.DataFrame.from_records([
+        {"Callsign": "W7DX", "Output (MHz)": "147.0000", "Group Name": "WWDXC", "Status": STATUS_IN},
+        {"Callsign": "W7PEND", "Output (MHz)": "146.0000", "Group Name": "Other", "Status": STATUS_RESPONSE_NEEDED},
+    ])
+    csv_file = tmp_path / "repeater.csv"
+    csv_file.write_text(
+        "Club / Group Name,Repeater Callsign,Output Frequency (MHz),Offset (MHz),"
+        "Tone (Hz or Dnnn for DCS),Club / Group Website,Link to repeater on RepeaterBook,"
+        "Allow contacts via Allstar/Echolink/YSF/D-Star (if applicable)?,Allstar/Echolink info (if applicable),"
+        '"Approximate Location (e.g. Capitol Hill, Seattle, WA)","Approximate Coordinates (e.g. 47.6395, -122.3693)"\n'
+        "WWDXC,W7NEW,440.000,5.0,DCS123,https://www.wwdxc.org/,,No,,Somewhere,\n"
+    )
+
+    got, errors = apply_repeater_csv(df, str(csv_file), status=STATUS_IN)
+
+    assert errors == []
+    assert list(got["Callsign"]) == ["W7DX", "W7NEW", "W7PEND"]
+
+
 def test_apply_repeater_csv_adds_new_repeater(tmp_path):
     """A row with no matching callsign/frequency is added as a new repeater needing a response."""
     df = pd.DataFrame.from_records([
