@@ -2057,6 +2057,186 @@
         "Allow Internet Contacts":"Yes"
     },
     {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"440.5250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.58878,
+            -122.31764
+        ],
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"AllStar node #48841",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"440.6000",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.77193,
+            -122.28099
+        ],
+        "Group Name":"Seattle ACS",
+        "Location":"Lake Forest Park",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"442.3000",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.58878,
+            -122.31765
+        ],
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"442.8750",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.62378,
+            -122.31542
+        ],
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.0250",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.61901,
+            -122.31247
+        ],
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.2000",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.52075,
+            -122.34341
+        ],
+        "Group Name":"Seattle ACS",
+        "Location":"White Center",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.4750",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.65073,
+            -122.39258
+        ],
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"443.6500",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.6909,
+            -122.31963
+        ],
+        "Group Name":"Seattle ACS",
+        "Location":"North Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7ACS",
+        "Output (MHz)":"444.5500",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.604722,
+            -122.33055
+        ],
+        "Group Name":"Seattle ACS",
+        "Location":"Seattle",
+        "Mode":"FM",
+        "Long Name":"Seattle Auxiliary Communications Service",
+        "Website":"https:\/\/www.seattleacs.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
         "Callsign":"WA7DEM",
         "Output (MHz)":"146.7750",
         "Offset (MHz)":"-0.6",
@@ -2833,186 +3013,6 @@
         "Status":"response_needed",
         "RepeaterBook ID":"16535",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7ACS",
-        "Output (MHz)":"440.5250",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"123",
-        "Coordinates":[
-            47.58878,
-            -122.31764
-        ],
-        "Group Name":"Seattle ACS",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7ACS",
-        "Output (MHz)":"440.6000",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.77193,
-            -122.28099
-        ],
-        "Group Name":"Seattle ACS",
-        "Location":"Lake Forest Park",
-        "Mode":"FM",
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7ACS",
-        "Output (MHz)":"442.3000",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.58878,
-            -122.31765
-        ],
-        "Group Name":"Seattle ACS",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7ACS",
-        "Output (MHz)":"442.8750",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.62378,
-            -122.31542
-        ],
-        "Group Name":"Seattle ACS",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7ACS",
-        "Output (MHz)":"443.0250",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"123",
-        "Coordinates":[
-            47.61901,
-            -122.31247
-        ],
-        "Group Name":"Seattle ACS",
-        "Location":"Seattle",
-        "Mode":"NBFM[^nbfm]",
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7ACS",
-        "Output (MHz)":"443.2000",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.52075,
-            -122.34341
-        ],
-        "Group Name":"Seattle ACS",
-        "Location":"White Center",
-        "Mode":"FM",
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7ACS",
-        "Output (MHz)":"443.4750",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.65073,
-            -122.39258
-        ],
-        "Group Name":"Seattle ACS",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7ACS",
-        "Output (MHz)":"443.6500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.6909,
-            -122.31963
-        ],
-        "Group Name":"Seattle ACS",
-        "Location":"North Seattle",
-        "Mode":"FM",
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7ACS",
-        "Output (MHz)":"444.5500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.604722,
-            -122.33055
-        ],
-        "Group Name":"Seattle ACS",
-        "Location":"Seattle",
-        "Mode":"FM",
-        "Long Name":"Seattle Auxiliary Communications Service",
-        "Website":"https:\/\/www.seattleacs.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
         "Internet Access":null,
         "Allow Internet Contacts":null
     },

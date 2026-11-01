@@ -102,3 +102,12 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 101,W7DK,440.625,+5.0,141.3,"Tacoma, WA",FM,Radio Club of Tacoma,https://w7dk.org/,549,53,"AllStarLink: 68688, EchoLink: 515469",Yes,47.25289917,-122.44400024
 102,W7DK,147.380,+0.6,103.5,"Crawford Mtn., WA",FM,Radio Club of Tacoma,https://w7dk.org/,325,53,,No,46.84258,-122.76406
 103,W7DK,147.280,+0.6,103.5,"Tacoma, WA",FM,Radio Club of Tacoma,https://w7dk.org/,324,53,"AllStarLink: 68688, EchoLink: 515469",Yes,47.25289917,-122.44400024
+104,W7ACS,440.5250,+5.0,123.0,Seattle,NBFM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,,AllStar node #48841,Yes,47.58878,-122.31764
+105,W7ACS,440.6000,5.0,141.3,Lake Forest Park,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,,,,47.77193,-122.28099
+106,W7ACS,442.3000,5.0,141.3,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,,,,47.58878,-122.31765
+107,W7ACS,442.8750,5.0,141.3,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,,,,47.62378,-122.31542
+108,W7ACS,443.0250,5.0,123.0,Seattle,NBFM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,,,,47.61901,-122.31247
+109,W7ACS,443.2000,5.0,141.3,White Center,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,,,,47.52075,-122.34341
+110,W7ACS,443.4750,5.0,141.3,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,,,,47.65073,-122.39258
+111,W7ACS,443.6500,5.0,141.3,North Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,,,,47.6909,-122.31963
+112,W7ACS,444.5500,5.0,141.3,Seattle,FM,Seattle Auxiliary Communications Service,https://www.seattleacs.org/,,,,,47.604722,-122.33055

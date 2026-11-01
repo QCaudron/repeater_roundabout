@@ -129,6 +129,15 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 101   | RCTacoma          | W7DK       | Tacoma, WA                          | FM          |        440.625 |           +5.0 |       141.3 |
 | 102   | RCTacoma          | W7DK       | Crawford Mtn., WA                   | FM          |        147.380 |           +0.6 |       103.5 |
 | 103   | RCTacoma          | W7DK       | Tacoma, WA                          | FM          |        147.280 |           +0.6 |       103.5 |
+| 104   | Seattle ACS       | W7ACS      | Seattle                             | NBFM[^nbfm] |       440.5250 |           +5.0 |       123.0 |
+| 105   | Seattle ACS       | W7ACS      | Lake Forest Park                    | FM          |       440.6000 |            5.0 |       141.3 |
+| 106   | Seattle ACS       | W7ACS      | Seattle                             | FM          |       442.3000 |            5.0 |       141.3 |
+| 107   | Seattle ACS       | W7ACS      | Seattle                             | FM          |       442.8750 |            5.0 |       141.3 |
+| 108   | Seattle ACS       | W7ACS      | Seattle                             | NBFM[^nbfm] |       443.0250 |            5.0 |       123.0 |
+| 109   | Seattle ACS       | W7ACS      | White Center                        | FM          |       443.2000 |            5.0 |       141.3 |
+| 110   | Seattle ACS       | W7ACS      | Seattle                             | FM          |       443.4750 |            5.0 |       141.3 |
+| 111   | Seattle ACS       | W7ACS      | North Seattle                       | FM          |       443.6500 |            5.0 |       141.3 |
+| 112   | Seattle ACS       | W7ACS      | Seattle                             | FM          |       444.5500 |            5.0 |       141.3 |
 
 ---
 
@@ -241,6 +250,9 @@ SWI-ARC
 
 SeaTac
 : [SeaTac Repeater Association](https://www.seatacra.com/)
+
+Seattle ACS
+: [Seattle Auxiliary Communications Service](https://www.seattleacs.org/)
 
 Shoreline ACS
 : [Shoreline ACS](https://shorelineacs.org/)

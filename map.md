@@ -31,7 +31,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-L.marker([47.6239202750, -122.3150962200], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 1 - WW7PSR (146.960)<br>RR# 2 - WW7PSR (52.8700)<br>').addTo(map);
+L.marker([47.6238735167, -122.3152041467], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 1 - WW7PSR (146.960)<br>RR# 2 - WW7PSR (52.8700)<br>RR# 107 - W7ACS (442.8750)<br>').addTo(map);
 L.marker([46.5139007600, -121.2080001800], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>3</div>", iconSize: [25, 25]}) }).bindPopup('RR# 3 - WA7SAR (146.860)<br>').addTo(map);
 L.marker([46.0633010900, -121.4240036000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>4</div>", iconSize: [25, 25]}) }).bindPopup('RR# 4 - WA7SAR (147.080)<br>').addTo(map);
 L.marker([46.5222015400, -120.3330001800], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>5</div>", iconSize: [25, 25]}) }).bindPopup('RR# 5 - WA7SAR (444.600)<br>').addTo(map);
@@ -113,5 +113,12 @@ L.marker([42.3258018500, -113.6559982300], {icon: L.divIcon({className: 'custom-
 L.marker([47.7376770000, -122.2307900000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>99</div>", iconSize: [25, 25]}) }).bindPopup('RR# 99 - NE7MC (442.000)<br>').addTo(map);
 L.marker([47.2786110000, -122.5127700000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>100</div>", iconSize: [25, 25]}) }).bindPopup('RR# 100 - W7DK (145.2100)<br>').addTo(map);
 L.marker([47.2528991700, -122.4440002400], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 101 - W7DK (440.625)<br>RR# 103 - W7DK (147.280)<br>').addTo(map);
+L.marker([47.5887800000, -122.3176450000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>...</div>", iconSize: [25, 25]}) }).bindPopup('RR# 104 - W7ACS (440.5250)<br>RR# 106 - W7ACS (442.3000)<br>').addTo(map);
+L.marker([47.7719300000, -122.2809900000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>105</div>", iconSize: [25, 25]}) }).bindPopup('RR# 105 - W7ACS (440.6000)<br>').addTo(map);
+L.marker([47.6190100000, -122.3124700000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>108</div>", iconSize: [25, 25]}) }).bindPopup('RR# 108 - W7ACS (443.0250)<br>').addTo(map);
+L.marker([47.5207500000, -122.3434100000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>109</div>", iconSize: [25, 25]}) }).bindPopup('RR# 109 - W7ACS (443.2000)<br>').addTo(map);
+L.marker([47.6507300000, -122.3925800000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>110</div>", iconSize: [25, 25]}) }).bindPopup('RR# 110 - W7ACS (443.4750)<br>').addTo(map);
+L.marker([47.6909000000, -122.3196300000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>111</div>", iconSize: [25, 25]}) }).bindPopup('RR# 111 - W7ACS (443.6500)<br>').addTo(map);
+L.marker([47.6047220000, -122.3305500000], {icon: L.divIcon({className: 'custom-icon', html: "<div class='icon-label'>112</div>", iconSize: [25, 25]}) }).bindPopup('RR# 112 - W7ACS (444.5500)<br>').addTo(map);
 
 </script>
