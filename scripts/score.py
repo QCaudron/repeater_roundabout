@@ -29,6 +29,15 @@ def at_least_three_decimals(frequency: float) -> str:
     return frequency_str
 
 
+def club_link(name: str, website: str) -> str:
+    """Markdown link for a club, or just its name if it has no website. Blank name gives an empty string."""
+    if pd.isna(name):
+        return ""
+    if pd.isna(website) or not website:
+        return name
+    return f"[{name}]({website})"
+
+
 def signal_report_to_readability(report: str) -> int | None:
     """
     A rough interpretation of signal reports into numerical values.
@@ -305,7 +314,7 @@ def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> tuple[
         print(f"Errors in signal reports : {errors_in}")
 
     # Bring URLs into club names
-    logs_df["Group"] = logs_df.apply(lambda row: f"[{row['Group']}]({row['Website']})", axis=1)
+    logs_df["Group"] = logs_df.apply(lambda row: club_link(row["Group"], row["Website"]), axis=1)
     logs_df = logs_df.drop(columns=["Website"])
 
     # 2024 : merge duplicate repeaters
