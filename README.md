@@ -18,8 +18,6 @@ The files in `assets/templates/` are used to generate the pages on the site.
 
 To add a repeater, you should call `python scripts/update.py`. This script will prompt you for the repeater's information, and will add it to the `assets/repeaters.json` file containing all known repeaters, as well as regenerating the `assets/rr_frequencies.csv` file for CHIRP use.
 
-Club details (Long Name, Website, and the Slug that names the club's `groups/` page) are stored once per club in `assets/clubs.csv`, keyed by Group Name; it is the authoritative source. Every time `update.py` writes `assets/repeaters.json` it copies each club's Long Name and Website onto that club's repeaters, so `repeaters.json` stays self-contained for the website and for next year's `--prior_json` import. To correct a club's details, edit `clubs.csv` and run `python scripts/update.py --regen`; don't edit them in `repeaters.json`. When an import mentions a Group Name that isn't in `clubs.csv`, `update.py` adds the club (with a Slug derived from the Group Name); it never changes an existing club. Renaming a Group Name doesn't change the Slug, so published group page URLs stay the same. `python scripts/update.py --check` reports repeaters whose Group Name has no club, clubs listed twice, and clubs with a missing or shared Slug.
-
 `update.py` has the ability to import repeaters from RepeaterBook, [WWARA data exports][wwara-data], prior Repeater Roundabout `repeaters.json` files, and manually via command line arguments.  If you call the `update.py` without any arguments, it will prompt you for repeater information.  `update.py` accepts the following command line arguments:
 
 - Callsign (`--call`): The repeater's callsign (for example, `WW7PSR`)
@@ -41,6 +39,8 @@ Club details (Long Name, Website, and the Slug that names the club's `groups/` p
 - Prior Repeater Roundabout `repeaters.json` file (`--prior_json`): The path to prior year's repeater file (for example, `2024/repeaters.json`). All repeaters matching the `--call` and optional `--freq` flags will be imported.
 
 `--status_csv` and `--repeater_csv` take their per-repeater values from the CSV and treat them like command line flags (highest priority). Any field the CSV leaves blank is filled in from `--wwara_csv` (matched by callsign and frequency), from RepeaterBook (the repeater's recorded ID, or the link in a `--repeater_csv` row), and from the existing record, in the priority order described under *Combining Import Sources*.
+
+Club details (e.g. Long Name, Website) are stored once per club in `assets/clubs.csv`, keyed by Group Name; it is the authoritative source. Every time `update.py` writes `assets/repeaters.json` it copies each club's Long Name and Website onto that club's repeaters, so `repeaters.json` stays self-contained. To correct a club's details, edit `clubs.csv` and run `python scripts/update.py --regen`; don't edit them in `repeaters.json`.
 
 ### Examples
 
@@ -117,7 +117,6 @@ python scripts/update.py \
 
 If any changes are made to `repeaters.json` or to template files, you can regenerate the website's root `.md` files without adding a new repeater by calling `python scripts/update.py --regen`.
 
-
 ## Confirming repeaters with trustees
 
 Each repeater in `assets/repeaters.json` has a `Status`: `response_needed` (the default, including for newly added repeaters), `in`, or `out`. Only `in` repeaters are published on the repeaters page, map, and programming files.
@@ -137,6 +136,11 @@ python scripts/update.py --status out --call K7DK
 ```
 
 A repeater's RR# is its position in `assets/repeaters.json`, so `--status` keeps published numbers stable: a `response_needed` repeater marked `in` moves to just after the last `in` repeater (taking the next RR#), and one marked `out` moves to the end. Any other change leaves the repeater where it is.
+
+
+## Data Quality Checks
+
+`python scripts/update.py --check` performs checks on data quality, detecting duplicate repeaters, duplicate clubs, missing data, etc.
 
 
 ## Populating the leaderboards
