@@ -15,8 +15,6 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 
 Club website: [https://www.w7dg.com/](https://www.w7dg.com/)
 
-> **Please check:** we have more than one of your group's names: Lower Columbia Amateur Radio Association; N3EG
-
 
 | RR#   | Callsign   | Location     | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status          |                                                                                                                                                                                                                                                                                                                                                              |
 |:------|:-----------|:-------------|:-------|:---------------|:---------------|:------------|:--------------------------|:------------------|:----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

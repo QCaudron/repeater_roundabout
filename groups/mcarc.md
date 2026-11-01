@@ -15,8 +15,6 @@ or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1F
 
 Club website: [https://mc-arc.org/](https://mc-arc.org/)
 
-> **Please check:** we have more than one of your group's names: Mason County Amateur Radio Club; Mason County ARC
-
 
 | RR#   | Callsign   | Location    | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status          |                                                                                                                                                                                                                                                                                                                                                            |
 |:------|:-----------|:------------|:-------|:---------------|:---------------|:------------|:--------------------------|:------------------|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

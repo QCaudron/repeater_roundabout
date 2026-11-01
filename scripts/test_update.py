@@ -12,6 +12,8 @@ from update import (
     batch_args,
     check_consistency,
     generate_repeater_df,
+    load_clubs,
+    load_repeaters,
     looks_like_internet_id,
     merge_repeaters,
     parse_coords,
@@ -22,6 +24,7 @@ from update import (
     repeater_from_csv_row,
     repeaters_from_wwara,
     rollover,
+    save_repeaters,
     set_status,
     status_only_update,
     update_all_repeaters,
@@ -201,29 +204,129 @@ def test_status_only_update_skips_sources():
 
 def test_generate_repeater_df_call_only_updates_every_repeater_with_that_call(tmp_path, monkeypatch):
     """--call without --freq applies the flags to all of the callsign's repeaters, not just the first."""
-    row = {"Callsign": "W7ABC", "Group Name": "Club", "Long Name": "Old", "Status": STATUS_IN, "RepeaterBook ID": None,
+    row = {"Callsign": "W7ABC", "Group Name": "Club", "Status": STATUS_IN, "RepeaterBook ID": None,
            "Coordinates": [1.0, 2.0]}
     write_repeaters(tmp_path, monkeypatch,
                     {**row, "Output (MHz)": "146.9000"}, {**row, "Output (MHz)": "444.1000"},
                     {**row, "Callsign": "W7XYZ", "Output (MHz)": "147.0000"})
 
-    df = generate_repeater_df(make_args(call="W7ABC", long_name="New"))
+    df = generate_repeater_df(make_args(call="W7ABC", internet_contacts="Yes"))
 
-    assert df["Long Name"].tolist() == ["New", "New", "Old"]
+    assert df["Allow Internet Contacts"].tolist()[:2] == ["Yes", "Yes"]
+    assert pd.isna(df["Allow Internet Contacts"].iloc[2])
 
 
 def test_generate_repeater_df_call_only_with_wwara_updates_all_known_and_new(tmp_path, monkeypatch):
     """Frequencies WWARA lists are added alongside the repeaters already known for the callsign."""
-    row = {"Callsign": "W7ABC", "Group Name": "Club", "Long Name": "Old", "Status": STATUS_IN, "RepeaterBook ID": None,
+    row = {"Callsign": "W7ABC", "Group Name": "Club", "Status": STATUS_IN, "RepeaterBook ID": None,
            "Coordinates": [1.0, 2.0]}
     write_repeaters(tmp_path, monkeypatch, {**row, "Output (MHz)": "146.9000"}, {**row, "Output (MHz)": "444.1000"})
     wwara = tmp_path / "wwara.csv"
     wwara.write_text("".join(wwara_lines("W7ABC", "146.9000") + wwara_lines("W7ABC", "223.9000")[1:]))
 
-    df = generate_repeater_df(make_args(call="W7ABC", long_name="New", wwara_csv=str(wwara)))
+    df = generate_repeater_df(make_args(call="W7ABC", internet_contacts="Yes", wwara_csv=str(wwara)))
 
     assert sorted(df["Output (MHz)"]) == ["146.9000", "223.9000", "444.1000"]
-    assert set(df["Long Name"]) == {"New"}
+    assert set(df["Allow Internet Contacts"]) == {"Yes"}
+
+
+CLUBS_HEADER = "Group Name,Long Name,Website,Slug\n"
+
+
+def test_load_repeaters_joins_club_details(tmp_path, monkeypatch):
+    """Club fields live in clubs.csv; loading joins them onto each repeater."""
+    write_repeaters(tmp_path, monkeypatch, {"Callsign": "W7ABC", "Output (MHz)": "146.9", "Group Name": "Club"})
+    (tmp_path / "assets" / "clubs.csv").write_text(CLUBS_HEADER + 'Club,"Club, Inc.",http://club.org,club-page\n')
+
+    row = load_repeaters().iloc[0]
+
+    assert (row["Long Name"], row["Website"], row["Slug"]) == ("Club, Inc.", "http://club.org", "club-page")
+
+
+def test_save_repeaters_adds_missing_clubs_but_never_overwrites(tmp_path, monkeypatch):
+    """Imports add a club the first time its group is seen; an existing club row is left alone and rows don't carry club fields."""
+    write_repeaters(tmp_path, monkeypatch)
+    (tmp_path / "assets" / "clubs.csv").write_text(CLUBS_HEADER + "Old,Old Long,http://old.org,old-slug\n")
+    df = pd.DataFrame([
+        {"Callsign": "W7A", "Output (MHz)": "146.9", "Group Name": "Old", "Long Name": "Changed", "Website": "http://x.org"},
+        {"Callsign": "W7B", "Output (MHz)": "147.0", "Group Name": "New Club", "Long Name": "New Long", "Website": "http://new.org"},
+    ])
+
+    save_repeaters(df)
+
+    clubs = pd.read_csv(tmp_path / "assets" / "clubs.csv", dtype=str).set_index("Group Name")
+    assert clubs.loc["Old"].to_dict() == {"Long Name": "Old Long", "Website": "http://old.org", "Slug": "old-slug"}
+    assert clubs.loc["New Club"].to_dict() == {"Long Name": "New Long", "Website": "http://new.org", "Slug": "new-club"}
+    saved = json.loads((tmp_path / "assets" / "repeaters.json").read_text())
+    # repeaters.json is denormalized from clubs.csv, so --prior_json can import it next year
+    assert [(r["Long Name"], r["Website"], "Slug" in r) for r in saved] == [
+        ("Old Long", "http://old.org", False), ("New Long", "http://new.org", False)]
+
+
+def test_save_repeaters_round_trips_a_loaded_df(tmp_path, monkeypatch):
+    """Saving what load_repeaters returned (as --regen does) rewrites the same file: no Slug, no duplicated columns."""
+    write_repeaters(tmp_path, monkeypatch, {"Callsign": "W7ABC", "Group Name": "Club", "Mode": "FM"})
+    (tmp_path / "assets" / "clubs.csv").write_text(CLUBS_HEADER + "Club,Long,http://club.org,club\n")
+    save_repeaters(load_repeaters())
+    first = (tmp_path / "assets" / "repeaters.json").read_text()
+
+    save_repeaters(load_repeaters())
+
+    assert (tmp_path / "assets" / "repeaters.json").read_text() == first
+    assert list(json.loads(first)[0]) == ["Callsign", "Group Name", "Mode", "Long Name", "Website"]
+
+
+def test_save_repeaters_keeps_details_of_a_group_not_yet_in_clubs(tmp_path, monkeypatch):
+    """Rewriting a file whose group has no club yet (as --regen does) moves its Long Name and Website into the new club."""
+    write_repeaters(tmp_path, monkeypatch, {"Callsign": "W7A", "Group Name": "Fresh", "Long Name": "Fresh Long", "Website": "http://f.org"})
+
+    save_repeaters(load_repeaters())
+
+    clubs = pd.read_csv(tmp_path / "assets" / "clubs.csv", dtype=str).set_index("Group Name")
+    assert clubs.loc["Fresh"].to_dict() == {"Long Name": "Fresh Long", "Website": "http://f.org", "Slug": "fresh"}
+
+
+def test_save_repeaters_rejects_slug_collision(tmp_path, monkeypatch):
+    """A new club whose generated slug is already taken would overwrite another group's page."""
+    write_repeaters(tmp_path, monkeypatch)
+    (tmp_path / "assets" / "clubs.csv").write_text(CLUBS_HEADER + "PSRG,Long,http://p.org,psrg\n")
+
+    with pytest.raises(ValueError, match="psrg"):
+        save_repeaters(pd.DataFrame([{"Callsign": "W7A", "Group Name": "psrg"}]))
+
+
+def club_problems(tmp_path, monkeypatch, clubs_csv):
+    """Return the check_consistency problems for one W7ABC repeater in group Club, given clubs.csv content."""
+    write_repeaters(tmp_path, monkeypatch, {"Callsign": "W7ABC", "Output (MHz)": "146.9", "Group Name": "Club",
+                                            "Status": STATUS_IN, "Mode": "FM", "Offset (MHz)": "-0.6"})
+    (tmp_path / "assets" / "clubs.csv").write_text(CLUBS_HEADER + clubs_csv)
+    return check_consistency(pd.read_json(tmp_path / "assets" / "repeaters.json", dtype=False), load_clubs())
+
+
+def test_check_consistency_flags_group_missing_from_clubs(tmp_path, monkeypatch):
+    """A repeater whose Group Name has no clubs.csv row can't get a page, so --check reports it."""
+    assert any("Club" in p and "not in" in p for p in club_problems(tmp_path, monkeypatch, "Other,Long,,other\n"))
+
+
+def test_check_consistency_flags_blank_slug(tmp_path, monkeypatch):
+    """A club row without a slug can't name its group page; it is reported as missing a slug, not as missing."""
+    problems = club_problems(tmp_path, monkeypatch, "Club,Long,,\n")
+    assert any("Club" in p and "no Slug" in p for p in problems)
+    assert not any("not in" in p for p in problems)
+
+
+def test_check_consistency_flags_duplicate_group_names_in_clubs(tmp_path, monkeypatch):
+    """Two clubs rows with one Group Name are ambiguous, so --check reports them."""
+    assert any("Club" in p and "more than once" in p for p in club_problems(tmp_path, monkeypatch, "Club,A,,a\nClub,B,,b\n"))
+
+
+def test_load_repeaters_rejects_duplicate_group_names_in_clubs(tmp_path, monkeypatch):
+    """A duplicated club would duplicate every one of its repeaters in the join, so loading refuses."""
+    write_repeaters(tmp_path, monkeypatch, {"Callsign": "W7ABC", "Output (MHz)": "146.9", "Group Name": "Club"})
+    (tmp_path / "assets" / "clubs.csv").write_text(CLUBS_HEADER + "Club,A,,a\nClub,B,,b\n")
+
+    with pytest.raises(ValueError, match="Club"):
+        load_repeaters()
 
 
 def test_rollover_archives_last_contest(tmp_path, monkeypatch):
@@ -233,7 +336,7 @@ def test_rollover_archives_last_contest(tmp_path, monkeypatch):
 
     rollover(datetime(2026, 10, 18))
 
-    assert (tmp_path / "2025" / "repeaters.json").read_text() == "[]"
+    assert json.loads((tmp_path / "2025" / "repeaters.json").read_text()) == []
     assert json.loads((tmp_path / "assets" / "repeaters.json").read_text()) == []
     assert (tmp_path / "2025" / "results" / "W7ABC.csv").read_text() == "log"
     assert not (tmp_path / "results" / "W7ABC.csv").exists()
@@ -266,6 +369,21 @@ def test_rollover_resets_statuses(tmp_path, monkeypatch):
     assert got == [STATUS_RESPONSE_NEEDED, STATUS_RESPONSE_NEEDED]
     archived = [r["Status"] for r in json.loads((tmp_path / "2025" / "repeaters.json").read_text())]
     assert archived == [STATUS_IN, STATUS_OUT]
+
+
+def test_rollover_archive_keeps_club_details(tmp_path, monkeypatch):
+    """repeaters.json carries club details from clubs.csv, so the archive is self-contained for next year's --prior_json."""
+    monkeypatch.chdir(tmp_path)
+    make_site(tmp_path)
+    (tmp_path / "assets" / "repeaters.json").write_text(json.dumps(
+        [{"Callsign": "W7A", "Group Name": "Club", "Long Name": "Club Long", "Website": "http://club.org"}]))
+    (tmp_path / "assets" / "clubs.csv").write_text(CLUBS_HEADER + "Club,Club Long,http://club.org,club\n")
+
+    rollover(datetime(2026, 10, 18))
+
+    for path in [tmp_path / "2025" / "repeaters.json", tmp_path / "assets" / "repeaters.json"]:
+        [row] = json.loads(path.read_text())
+        assert (row["Long Name"], row["Website"], "Slug" in row) == ("Club Long", "http://club.org", False)
 
 
 def repeater_list(*statuses):

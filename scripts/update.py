@@ -18,6 +18,7 @@ from markdown_files import (
     STATUS_IN,
     STATUS_OUT,
     STATUS_RESPONSE_NEEDED,
+    group_slug,
     write_group_pages,
     write_index_md,
     write_map_md,
@@ -32,6 +33,8 @@ from programming_files import (
 )
 
 REPEATERS_JSON = "assets/repeaters.json"
+CLUBS_CSV = "assets/clubs.csv"
+CLUB_COLUMNS = ["Group Name", "Long Name", "Website", "Slug"]
 FORMS_JSON = "assets/forms.json"
 
 def parse_args() -> argparse.Namespace | SimpleNamespace:
@@ -634,6 +637,61 @@ def ensure_col(df: pd.DataFrame, name: str, default=np.nan) -> pd.DataFrame:
     if name not in df.columns:
         df[name] = default
 
+def load_repeaters() -> pd.DataFrame:
+    """Return the repeaters in REPEATERS_JSON with their club's Long Name, Website and Slug from CLUBS_CSV."""
+    return join_clubs(pd.read_json(REPEATERS_JSON, dtype=False), load_clubs())
+
+
+def load_clubs() -> pd.DataFrame:
+    """Return the clubs in CLUBS_CSV (empty if there is none yet)."""
+    if not Path(CLUBS_CSV).exists():
+        return pd.DataFrame(columns=CLUB_COLUMNS)
+    return pd.read_csv(CLUBS_CSV, dtype=str, keep_default_na=False, na_values=[""])
+
+
+def join_clubs(df: pd.DataFrame, clubs: pd.DataFrame) -> pd.DataFrame:
+    """Replace df's club fields with those of the club named by its Group Name; clubs.csv is authoritative."""
+    if "Group Name" not in df:
+        return df
+    dupes = clubs.loc[clubs["Group Name"].duplicated(), "Group Name"]
+    if len(dupes):
+        raise ValueError(f"{CLUBS_CSV} lists {dupes.iloc[0]!r} more than once")
+    old = df.reindex(columns=["Long Name", "Website"]).reset_index(drop=True)
+    df = df.drop(columns=["Long Name", "Website", "Slug"], errors="ignore").merge(clubs, on="Group Name", how="left")
+    # A group with no club yet keeps its own details, so save_repeaters can move them into a new club
+    unknown = ~df["Group Name"].isin(clubs["Group Name"])
+    for c in ("Long Name", "Website"):
+        df.loc[unknown, c] = old.loc[unknown, c]
+    # Keep the columns where they were before clubs.csv, so generated files keep their column order
+    cols = [c for c in df if c not in ("Long Name", "Website")]
+    i = cols.index("Mode") + 1 if "Mode" in cols else len(cols)
+    return df[cols[:i] + ["Long Name", "Website"] + cols[i:]]
+
+
+def save_repeaters(df: pd.DataFrame) -> None:
+    """
+    Write df to REPEATERS_JSON, adding a CLUBS_CSV row for each group not already there.
+
+    Existing clubs are never changed, so an import can't overwrite curated club details; the saved
+    Long Name and Website are always the club's. They are kept in REPEATERS_JSON (but not the Slug)
+    so the file stays self-contained for the browser and for next year's --prior_json.
+    A new club's Slug (its group page name) is fixed here and survives later renames of Group Name.
+    """
+    clubs = load_clubs()
+    if "Group Name" in df:
+        new = df.reindex(columns=CLUB_COLUMNS)
+        new = new[new["Group Name"].notna() & ~new["Group Name"].isin(clubs["Group Name"])]
+        new = new.groupby("Group Name", sort=False, as_index=False).first()  # first non-blank Long Name/Website
+        new["Slug"] = new["Group Name"].map(group_slug)
+        clash = new.loc[new["Slug"].isin(clubs["Slug"]) | new["Slug"].duplicated(keep=False), "Slug"]
+        if len(clash):
+            raise ValueError(f"Slug {clash.iloc[0]!r} is already used by another club; add the club to {CLUBS_CSV} by hand")
+        if len(new):
+            clubs = pd.concat([clubs, new], ignore_index=True)
+            clubs.to_csv(CLUBS_CSV, index=False)
+    join_clubs(df, clubs).drop(columns="Slug", errors="ignore").to_json(REPEATERS_JSON, orient="records", indent=4)
+
+
 def generate_repeater_df(
     args: argparse.Namespace | SimpleNamespace,
 ) -> pd.DataFrame:
@@ -652,8 +710,8 @@ def generate_repeater_df(
         combined with a new repeater taken from user input.
     """
     if args.regen or args.score:
-        df = pd.read_json(REPEATERS_JSON, dtype=False)
-        df.to_json(REPEATERS_JSON, orient="records", indent=4)
+        df = load_repeaters()
+        save_repeaters(df)
         df["RR#"] = df.index + 1
         return df
 
@@ -661,7 +719,7 @@ def generate_repeater_df(
     if not Path(REPEATERS_JSON).exists():
         with open(REPEATERS_JSON, "w") as f:
             f.write("{}")
-    df = pd.read_json(REPEATERS_JSON, dtype=False)
+    df = load_repeaters()
 
     # Initialize records missing state id fields to WA (53).
     if "RepeaterBook State ID" not in df.columns:
@@ -765,7 +823,8 @@ def generate_repeater_df(
 
     # Save a new known repeaters file
     df = df.reset_index(drop=True)
-    df.to_json(REPEATERS_JSON, orient="records", indent=4)
+    save_repeaters(df)
+    df = load_repeaters()  # so imports that differ from an existing club's details don't show up this run
 
     # Assign a Repeater Roundabout number to each repeater
     # This shouldn't be in the .json because it's not a repeater attribute
@@ -798,16 +857,17 @@ def rollover(now: datetime | None = None) -> None:
         shutil.move(file, archive / "results" / file.name)
 
     # Every repeater must be confirmed again for the new contest
-    df = pd.read_json(REPEATERS_JSON, dtype=False)
+    df = load_repeaters()
     df["Status"] = STATUS_RESPONSE_NEEDED
-    df.to_json(REPEATERS_JSON, orient="records", indent=4)
+    save_repeaters(df)
 
 
-def check_consistency(df: pd.DataFrame) -> list[str]:
+def check_consistency(df: pd.DataFrame, clubs: pd.DataFrame | None = None) -> list[str]:
     """
     Return a message for each inconsistency in the repeater list:
 
     - no Group Name, or Group Names differing only in case/whitespace
+    - with `clubs`: a Group Name with no club, a club listed twice, or a club with no Slug or a Slug shared with another
     - a group where some repeaters are in/out but others still need a response
     - duplicate callsign + output frequency
     - missing offset or mode, or an offset that isn't the band's standard
@@ -836,6 +896,17 @@ def check_consistency(df: pd.DataFrame) -> list[str]:
         if len(pending) and len(pending) < len(rows):
             decided = ", ".join(sorted(rows.loc[s != STATUS_RESPONSE_NEEDED, "Callsign"]))
             problems.append(f"{g}: response_needed for {', '.join(sorted(pending))}; decided: {decided}")
+
+    if clubs is not None:
+        for g in df.loc[named & ~df["Group Name"].isin(clubs["Group Name"]), "Group Name"].unique():
+            problems.append(f"{g}: not in {CLUBS_CSV}")
+        for g in clubs.loc[clubs["Group Name"].duplicated(), "Group Name"].unique():
+            problems.append(f"{g}: listed more than once in {CLUBS_CSV}")
+        for g in clubs.loc[clubs["Slug"].isna(), "Group Name"]:
+            problems.append(f"{g}: no Slug in {CLUBS_CSV}")
+        for slug, names in clubs.dropna(subset=["Slug"]).groupby("Slug")["Group Name"]:
+            if len(names) > 1:
+                problems.append(f"Slug {slug!r} is shared by {', '.join(names)}")
 
     freq = pd.to_numeric(df["Output (MHz)"], errors="coerce")
     key = df["Callsign"].astype(str).str.upper() + " " + freq.astype(str)
@@ -1338,14 +1409,14 @@ def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
 if __name__ == "__main__":
     args = parse_args()
     if args.check:
-        problems = check_consistency(pd.read_json(REPEATERS_JSON, dtype=False))
+        problems = check_consistency(pd.read_json(REPEATERS_JSON, dtype=False), load_clubs())
         print("\n".join(problems) or "No inconsistencies found.")
         sys.exit(1 if problems else 0)
     if args.rollover:
         rollover()
         args.regen = True
     if args.status and not args.repeater_csv:
-        repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
+        repeaters = load_repeaters()
         # Only attempt the update if the callsign is already known; otherwise this is a
         # brand-new repeater and generate_repeater_df below will add it with this status.
         # See status_only_update: runs with --id/--wwara_csv go through generate_repeater_df instead.
@@ -1356,31 +1427,31 @@ if __name__ == "__main__":
                 )
             except ValueError as e:
                 sys.exit(str(e))
-            repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+            save_repeaters(repeaters)
             args.regen = True
     if args.update_all:
-        repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
+        repeaters = load_repeaters()
         repeaters, errors = update_all_repeaters(repeaters, args.wwara_csv)
-        repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+        save_repeaters(repeaters)
         if errors:
             print(f"{len(errors)} repeater(s) failed to update:", file=sys.stderr)
             for e in errors:
                 print(f"  - {e}", file=sys.stderr)
         args.regen = True
     if args.status_csv:
-        repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
+        repeaters = load_repeaters()
         repeaters, errors = apply_status_csv(repeaters, args.status_csv, read_wwara_lines(args.wwara_csv))
-        repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+        save_repeaters(repeaters)
         if errors:
             print(f"{len(errors)} problem(s) updating repeaters (a RepeaterBook failure still lets the status update apply):", file=sys.stderr)
             for e in errors:
                 print(f"  - {e}", file=sys.stderr)
         args.regen = True
     if args.repeater_csv:
-        repeaters = pd.read_json(REPEATERS_JSON, dtype=False)
+        repeaters = load_repeaters()
         repeaters, errors = apply_repeater_csv(repeaters, args.repeater_csv, status=args.status,
                                                  wwara_lines=read_wwara_lines(args.wwara_csv))
-        repeaters.to_json(REPEATERS_JSON, orient="records", indent=4)
+        save_repeaters(repeaters)
         if errors:
             print(f"{len(errors)} row(s) failed to apply:", file=sys.stderr)
             for e in errors:

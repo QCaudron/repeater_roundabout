@@ -1,5 +1,5 @@
 ---
-title: "SeaTac Rptr Assoc"
+title: "SeaTac Repeater Association"
 subtitle: "Status of SeaTac repeaters"
 head-extra: group-head-extra.html
 full-width: true
@@ -14,8 +14,6 @@ Is something wrong? Use the **Update** link next to a repeater to send us update
 or [tell us about a repeater we're missing](https://docs.google.com/forms/d/e/1FAIpQLScekJqWTF09gUByW6csXSNbdktwYw5zN9V_CiGyyTMbk7Cfig/viewform?usp=pp_url&entry.697760071=SeaTac&entry.1398317811=https%3A%2F%2Fwww.seatacra.com%2F).
 
 Club website: [https://www.seatacra.com/](https://www.seatacra.com/)
-
-> **Please check:** we have more than one of your group's names: SeaTac Rptr Assoc; SeaTac Repeater Association
 
 
 | RR#   | Callsign   | Location       | Mode   | Output (MHz)   | Offset (MHz)   | Tone (Hz)   | Allow Internet Contacts   | Internet Access   | Status   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |

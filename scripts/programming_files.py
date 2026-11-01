@@ -512,7 +512,7 @@ def write_generic_csv(df: pd.DataFrame) -> None:
         df.copy()
         .assign(Latitude=df["Coordinates"].apply(lambda x: x[0] if has_coordinates(x) else None))
         .assign(Longitude=df["Coordinates"].apply(lambda x: x[1] if has_coordinates(x) else None))
-        .drop(columns=["Group Name", "Coordinates", "Status"])
+        .drop(columns=["Group Name", "Coordinates", "Status", "Slug"], errors="ignore")
         .rename(columns={"Long Name": "Group"})
         .set_index("RR#")
     )

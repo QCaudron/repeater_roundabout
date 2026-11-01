@@ -52,6 +52,7 @@ def repeater(call, freq, status, **extra):
         "Mode": "FM",
         "Long Name": "Puget Sound Repeater Group",
         "Website": "http://psrg.org",
+        "Slug": "psrg",
         "Status": status,
         **extra,
     }
@@ -79,7 +80,7 @@ def test_write_group_pages_one_page_per_group(tmp_path, monkeypatch):
     site(tmp_path, monkeypatch)
     (tmp_path / "groups").mkdir()
     (tmp_path / "groups" / "gone.md").write_text("stale")
-    df = pd.DataFrame([repeater("WW7PSR", "146.960", STATUS_IN), repeater("K7X", "147.000", STATUS_IN, **{"Group Name": "Shoreline ACS"})])
+    df = pd.DataFrame([repeater("WW7PSR", "146.960", STATUS_IN), repeater("K7X", "147.000", STATUS_IN, **{"Group Name": "Shoreline ACS", "Slug": "shoreline-acs"})])
     df["RR#"] = df.index + 1
 
     write_group_pages(df, FORMS)
@@ -175,16 +176,15 @@ def test_write_group_pages_strips_dcs_footnote_from_prefilled_tone(tmp_path, mon
     assert correction["entry.14"] == "D036"
 
 
-def test_write_group_pages_flags_conflicting_club_details(tmp_path, monkeypatch):
-    """When a group's repeaters disagree on its long name, the page lists every variant for the trustee to check."""
+def test_write_group_pages_uses_stored_slug_not_group_name(tmp_path, monkeypatch):
+    """Renaming a group must not move its published page: the page name comes from the club's Slug."""
     site(tmp_path, monkeypatch)
-    df = pd.DataFrame([repeater("W7A", "146.960", STATUS_IN), repeater("W7B", "147.000", STATUS_IN, **{"Long Name": "PSRG Inc"})])
+    df = pd.DataFrame([repeater("W7A", "146.960", STATUS_IN, **{"Group Name": "Renamed PSRG"})])
     df["RR#"] = df.index + 1
 
     write_group_pages(df, FORMS)
-    page = (tmp_path / "groups" / "psrg.md").read_text()
 
-    assert "PSRG Inc" in page
+    assert [p.name for p in (tmp_path / "groups").iterdir()] == ["psrg.md"]
 
 
 def test_write_group_pages_flags_missing_coordinates(tmp_path, monkeypatch):
@@ -285,3 +285,18 @@ def test_write_group_pages_shows_internet_access(tmp_path, monkeypatch):
 
     assert "| No " in row
     assert "Echolink W7A-R" in row
+
+
+def test_write_repeaters_md_omits_link_for_club_without_website(tmp_path, monkeypatch):
+    """A club with no website is listed by name, not as a link to 'nan'."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets" / "templates").mkdir(parents=True)
+    (tmp_path / "assets" / "templates" / "repeaters.md").write_text("{{ table }}\n{{ associations }}")
+    df = pd.DataFrame([repeater("W7A", "146.960", STATUS_IN, Website=float("nan"))])
+    df["RR#"] = df.index + 1
+
+    write_repeaters_md(df)
+
+    page = (tmp_path / "repeaters.md").read_text()
+    assert "PSRG\n: Puget Sound Repeater Group\n" in page
+    assert "nan" not in page

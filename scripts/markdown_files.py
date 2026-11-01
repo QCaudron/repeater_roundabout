@@ -186,7 +186,8 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
     association_text = ""
     associations = df.groupby("Group Name")[["Long Name", "Website"]].first()
     for short, long, url in associations.to_records():
-        association_text += f"{short}\n: [{long}]({url})\n\n"
+        link = f"[{text(long) or short}]({text(url)})" if text(url) else text(long) or short
+        association_text += f"{short}\n: {link}\n\n"
 
     # Write the markdown file from template
     with open("assets/templates/repeaters.md") as f:
@@ -328,21 +329,17 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
 
     pages, output = {}, {}
     for name, group in df.groupby("Group Name", sort=False):
-        slug = group_slug(name)
+        slug = group["Slug"].iloc[0]
+        if not isinstance(slug, str):
+            raise ValueError(f"Group {name!r} has no Slug; add it to assets/clubs.csv")
         if slug in pages:
             raise ValueError(f"Groups {pages[slug]!r} and {name!r} would share the page groups/{slug}.md")
         pages[slug] = name
 
-        long_names = group["Long Name"].map(text).loc[lambda s: s != ""].unique()
-        websites = group["Website"].map(text).loc[lambda s: s != ""].unique()
-        website = websites[0] if len(websites) else ""
+        long_name = text(group["Long Name"].iloc[0])
+        website = text(group["Website"].iloc[0])
 
         conflicts = ""
-        for field, values in [("names", long_names), ("websites", websites)]:
-            if len(values) > 1:
-                conflicts += f"> **Please check:** we have more than one of your group's {field}: "
-                conflicts += "; ".join(cell(v) for v in values) + "\n\n"
-
         no_coords = group.loc[~group["Coordinates"].map(has_coordinates), ["Callsign", "Output (MHz)"]]
         if len(no_coords):
             conflicts += "> **Please check:** we don't have the location (coordinates) of: "
@@ -375,7 +372,7 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
             )
 
         page = (
-            template.replace("{{ title }}", json.dumps(long_names[0] if len(long_names) else name))
+            template.replace("{{ title }}", json.dumps(long_name or name))
             .replace("{{ subtitle }}", json.dumps(f"Status of {name} repeaters"))
             .replace("{{ website }}", f"[{cell(website)}]({website})" if website else "")
             .replace("{{ conflicts }}", conflicts)

@@ -178,7 +178,7 @@ KCST
 : [Kent Communications Support Team](https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/)
 
 LWHC
-: [Lake Washington Ham Club](http://lakewashingtonhamclub.org)
+: [Lake Washington Ham Club](https://www.lakewashingtonhamclub.org/)
 
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
@@ -229,7 +229,7 @@ SWI-ARC
 : [South West Idaho Amateur Radio Club](https://www.k7swi.org/)
 
 SeaTac
-: [SeaTac Rptr Assoc](https://www.seatacra.com/)
+: [SeaTac Repeater Association](https://www.seatacra.com/)
 
 Shoreline ACS
 : [Shoreline ACS](https://shorelineacs.org/)
@@ -250,7 +250,7 @@ WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org/)
 
 YCRA
-: [Yakima County Radio Amateurs](None)
+: Yakima County Radio Amateurs
 
 
 
