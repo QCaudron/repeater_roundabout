@@ -76,7 +76,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 75,W7AUX,224.0200,-1.6,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.76,-122.35
 76,W7AUX,440.3000,+5.0,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.75619,-122.34575
 77,W7AUX,442.8250,+5.0,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.768,-122.3531
-78,W7ECG,442.8250,+5.0,156.7,Ferndale,FM,Whatcom Emergency Communications Group,http://wecg.org,7100,53,,Yes,48.5136,-122.3708
+78,W7ECG,442.825,+5.0,156.7,Ferndale,FM,Whatcom Emergency Communications Group,http://wecg.org,7100,53,,Yes,48.8614006,-122.61799622
 79,W7ECG,146.450,+1.0,,"Bellingham, Washington",FM,Whatcom Emergency Communications Group,http://wecg.org,12802,53,,Yes,48.68740082,-122.36199951
 80,W7ECG,224.1600,-1.6,156.7,,FM,Whatcom Emergency Communications Group,http://wecg.org,8854,53,,No,,
 81,W7ECG,440.475,+5.0,,"Bellingham, Washington",FM,Whatcom Emergency Communications Group,http://wecg.org,624,53,,Yes,48.68870163,-122.36100006

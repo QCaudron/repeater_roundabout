@@ -103,7 +103,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 75    | Shoreline ACS     | W7AUX      | Shoreline, WA             | FM          |       224.0200 |           -1.6 |       103.5 |
 | 76    | Shoreline ACS     | W7AUX      | Shoreline, WA             | FM          |       440.3000 |           +5.0 |       103.5 |
 | 77    | Shoreline ACS     | W7AUX      | Shoreline, WA             | FM          |       442.8250 |           +5.0 |       103.5 |
-| 78    | WECG              | W7ECG      | Ferndale                  | FM          |       442.8250 |           +5.0 |       156.7 |
+| 78    | WECG              | W7ECG      | Ferndale                  | FM          |        442.825 |           +5.0 |       156.7 |
 | 79    | WECG              | W7ECG      | Bellingham, Washington    | FM          |        146.450 |           +1.0 |             |
 | 80    | WECG              | W7ECG      | nan                       | FM          |       224.1600 |           -1.6 |       156.7 |
 | 81    | WECG              | W7ECG      | Bellingham, Washington    | FM          |        440.475 |           +5.0 |             |

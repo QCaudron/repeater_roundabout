@@ -1538,12 +1538,12 @@
     },
     {
         "Callsign":"W7ECG",
-        "Output (MHz)":"442.8250",
+        "Output (MHz)":"442.825",
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"156.7",
         "Coordinates":[
-            48.5136,
-            -122.3708
+            48.8614006,
+            -122.61799622
         ],
         "Group Name":"WECG",
         "Location":"Ferndale",
