@@ -1194,7 +1194,7 @@ def test_check_consistency_reports_invalid_status():
 
 
 COLS = {k: k for k in ("freq", "offset", "tone", "group", "call", "website", "rb_link", "allow", "info",
-                       "location", "coords")}
+                       "location", "coords", "mode")}
 
 
 @pytest.mark.parametrize("freq, offset, tone, want_freq, want_offset, want_tone", [
@@ -1220,6 +1220,23 @@ def test_repeater_from_csv_row_parses_units_and_standard_offsets(freq, offset, t
 def test_repeater_from_csv_row_standard_offset_without_band_default_errors():
     with pytest.raises(ValueError):
         repeater_from_csv_row({"freq": "30.0", "offset": "+", "call": "W7DX"}, COLS)
+
+
+@pytest.mark.parametrize("mode, want", [
+    ("NBFM", "NBFM[^nbfm]"),
+    ("nbfm", "NBFM[^nbfm]"),
+    ("FM", "FM"),
+    ("", None),
+])
+def test_repeater_from_csv_row_appends_nbfm_footnote(mode, want):
+    got = repeater_from_csv_row({"mode": mode, "call": "W7DX"}, COLS)
+
+    assert got.get("Mode") == want
+
+
+def test_repeater_from_csv_row_rejects_unknown_mode():
+    with pytest.raises(ValueError):
+        repeater_from_csv_row({"mode": "Narrow FM", "call": "W7DX"}, COLS)
 
 
 @pytest.mark.parametrize("website, want", [

@@ -32,6 +32,7 @@ FORMS = {
             "Coordinates": "entry.18",
             "Allow Internet Contacts": "entry.19",
             "Internet Access": "entry.20",
+            "Mode": "entry.21",
         },
     },
 }
@@ -181,6 +182,7 @@ def test_write_group_pages_prefills_forms(tmp_path, monkeypatch):
         "entry.18": "47.6395, -122.3693",
         "entry.19": "Yes",
         "entry.20": "Allstar node 1234",
+        "entry.21": "FM",
     }
     assert got == want
     add = [q for q in found["/repeater/viewform"] if "entry.11" not in q]

@@ -1297,6 +1297,9 @@ def repeater_from_csv_row(row: dict, cols: dict) -> dict:
     freq = strip_unit(row.get(cols["freq"]) or "", "mhz")
     coords = (row.get(cols["coords"]) or "").strip()
     info = (row.get(cols["info"]) or "").strip()
+    mode = (row.get(cols["mode"]) or "").strip().upper()
+    if mode not in ("", "FM", "NBFM"):
+        raise ValueError(f"Mode must be FM or NBFM: {mode}")
 
     lat_lon = None
     if coords:
@@ -1317,6 +1320,7 @@ def repeater_from_csv_row(row: dict, cols: dict) -> dict:
         "Output (MHz)": f"{float(freq):.4f}" if freq else None,
         "Offset (MHz)": parse_csv_offset(row.get(cols["offset"]) or "", freq),
         "Tone (Hz)": strip_unit(row.get(cols["tone"]) or "", "hz"),
+        "Mode": "NBFM[^nbfm]" if mode == "NBFM" else mode,
         "Website": website,
         "Location": (row.get(cols["location"]) or "").strip(),
         "Coordinates": lat_lon,
@@ -1367,6 +1371,7 @@ def apply_repeater_csv(
             "info": find_col(reader.fieldnames, "echolink", "info"),
             "location": find_col(reader.fieldnames, "location"),
             "coords": find_col(reader.fieldnames, "coordinates"),
+            "mode": next((n for n in reader.fieldnames if n.lower().startswith("mode")), None),  # optional
         }
 
         for row in reader:

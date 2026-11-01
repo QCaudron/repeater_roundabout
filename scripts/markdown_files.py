@@ -365,6 +365,7 @@ def write_group_pages(df: pd.DataFrame, forms: dict, clubs: pd.DataFrame | None 
                     "Tone (Hz)": plain_tone(r["Tone (Hz)"]),
                     **{k: text(r.get(k)) for k in INTERNET_FIELDS},
                     "Group Name": name,
+                    "Mode": text(r["Mode"]),
                     "Website": text(r["Website"]),
                     "RepeaterBook": repeaterbook_url(r),
                     "Coordinates": ", ".join(str(c) for c in r["Coordinates"]) if isinstance(r["Coordinates"], list) else "",
