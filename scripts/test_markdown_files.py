@@ -64,6 +64,8 @@ def site(tmp_path, monkeypatch):
     (tmp_path / "assets" / "templates").mkdir(parents=True)
     template = (Path(__file__).parent.parent / "assets" / "templates" / "group.md").read_text()
     (tmp_path / "assets" / "templates" / "group.md").write_text(template)
+    empty = (Path(__file__).parent.parent / "assets" / "templates" / "group_empty.md").read_text()
+    (tmp_path / "assets" / "templates" / "group_empty.md").write_text(empty)
 
 
 def links(page):
@@ -87,6 +89,29 @@ def test_write_group_pages_one_page_per_group(tmp_path, monkeypatch):
 
     got = sorted(p.name for p in (tmp_path / "groups").iterdir())
     assert got == ["psrg.md", "shoreline-acs.md"]
+
+
+def test_write_group_pages_empty_page_for_club_without_repeaters(tmp_path, monkeypatch):
+    """A club in clubs.csv with no repeaters gets a page saying so, with a link to tell us about one."""
+    site(tmp_path, monkeypatch)
+    df = pd.DataFrame([repeater("WW7PSR", "146.960", STATUS_IN)])
+    df["RR#"] = 1
+    clubs = pd.DataFrame(
+        {
+            "Group Name": ["PSRG", "YCRA"],
+            "Long Name": ["Puget Sound Repeater Group", "Yakima County Radio Amateurs"],
+            "Website": ["http://psrg.org", None],
+            "Slug": ["psrg", "ycra"],
+        }
+    )
+
+    write_group_pages(df, FORMS, clubs)
+
+    page = (tmp_path / "groups" / "ycra.md").read_text()
+    assert "Yakima County Radio Amateurs" in page
+    assert "don't have any repeaters" in page
+    assert links(page)["/repeater/viewform"][0]["entry.10"] == "YCRA"
+    assert "don't have any repeaters" not in (tmp_path / "groups" / "psrg.md").read_text()
 
 
 def test_write_group_pages_content(tmp_path, monkeypatch):

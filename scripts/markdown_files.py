@@ -309,7 +309,17 @@ def repeaterbook_url(r: pd.Series) -> str:
     return f"https://www.repeaterbook.com/repeaters/details.php?state_id={state}&ID={text(r['RepeaterBook ID'])}"
 
 
-def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
+def claim_slug(pages: dict, name: str, slug) -> str:
+    """Record that group `name` owns page `slug` in `pages`, raising if it has none or another group has it."""
+    if not isinstance(slug, str):
+        raise ValueError(f"Group {name!r} has no Slug; add it to assets/clubs.csv")
+    if slug in pages:
+        raise ValueError(f"Groups {pages[slug]!r} and {name!r} would share the page groups/{slug}.md")
+    pages[slug] = name
+    return slug
+
+
+def write_group_pages(df: pd.DataFrame, forms: dict, clubs: pd.DataFrame | None = None) -> None:
     """
     Write groups/<group>.md for each group, replacing any existing group pages.
 
@@ -323,18 +333,18 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
         All repeaters, whatever their status, with RR# assigned.
     forms : dict
         The "group" and "repeater" forms, as accepted by prefill_url.
+    clubs : pd.DataFrame, optional
+        The clubs (Group Name, Long Name, Website, Slug). A club with no repeaters in df gets
+        a page saying we don't have any for it yet.
     """
     with open("assets/templates/group.md") as f:
         template = f.read()
+    with open("assets/templates/group_empty.md") as f:
+        empty_template = f.read()
 
     pages, output = {}, {}
     for name, group in df.groupby("Group Name", sort=False):
-        slug = group["Slug"].iloc[0]
-        if not isinstance(slug, str):
-            raise ValueError(f"Group {name!r} has no Slug; add it to assets/clubs.csv")
-        if slug in pages:
-            raise ValueError(f"Groups {pages[slug]!r} and {name!r} would share the page groups/{slug}.md")
-        pages[slug] = name
+        slug = claim_slug(pages, name, group["Slug"].iloc[0])
 
         long_name = text(group["Long Name"].iloc[0])
         website = text(group["Website"].iloc[0])
@@ -384,6 +394,18 @@ def write_group_pages(df: pd.DataFrame, forms: dict) -> None:
             .replace("{{ add_form }}", prefill_url(forms["repeater"], {"Group Name": name, "Website": website}))
         )
         output[slug] = page
+
+    if clubs is not None:
+        for _, club in clubs[~clubs["Group Name"].isin(df["Group Name"])].iterrows():
+            name = club["Group Name"]
+            slug = claim_slug(pages, name, club["Slug"])
+            website = text(club["Website"])
+            output[slug] = (
+                empty_template.replace("{{ title }}", json.dumps(text(club["Long Name"]) or name))
+                .replace("{{ subtitle }}", json.dumps(f"Status of {name} repeaters"))
+                .replace("{{ website }}", f"[{cell(website)}]({website})" if website else "")
+                .replace("{{ add_form }}", prefill_url(forms["repeater"], {"Group Name": name, "Website": website}))
+            )
 
     # Only replace the old pages once every new page has been built
     groups_dir = Path("groups")

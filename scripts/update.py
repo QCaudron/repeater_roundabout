@@ -1470,7 +1470,7 @@ if __name__ == "__main__":
     ensure_col(df, "Status", STATUS_RESPONSE_NEEDED)
     df["Status"] = df["Status"].fillna(STATUS_RESPONSE_NEEDED)
     with open(FORMS_JSON) as f:
-        write_group_pages(remove_df_footnotes(df), json.load(f))
+        write_group_pages(remove_df_footnotes(df), json.load(f), load_clubs())
 
     # Only publish repeaters confirmed for this contest
     df = df.loc[df["Status"] == STATUS_IN]
