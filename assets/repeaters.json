@@ -3372,5 +3372,785 @@
         "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":""
+    },
+    {
+        "Callsign":"WA7ROY",
+        "Output (MHz)":"444.175",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.97937,
+            -122.43997
+        ],
+        "Group Name":"Roy",
+        "Location":"Roy",
+        "Mode":"FM",
+        "Long Name":"Roy Area Communications Network",
+        "Website":"https:\/\/www.qrz.com\/db\/WA7ROY",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7RNK",
+        "Output (MHz)":"147.995",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"",
+        "Coordinates":[
+            47.540297,
+            -122.099856
+        ],
+        "Group Name":"Newcastle DMR",
+        "Location":"Cougar Mtn.",
+        "Mode":"DSTAR",
+        "Long Name":"Newcastle DSTAR Club",
+        "Website":"http:\/\/newcastle-dstar.com\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":"18524",
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"KE7GFZ",
+        "Output (MHz)":"441.850",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.648945,
+            -121.91607
+        ],
+        "Group Name":"SnoVARC",
+        "Location":"Carnation",
+        "Mode":"FM",
+        "Long Name":"Snoqualmie Valley Amateur Radio Club",
+        "Website":"https:\/\/snovarc.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":"22211",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"KE7GFZ",
+        "Output (MHz)":"443.250",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.76499939,
+            -121.93900299
+        ],
+        "Group Name":"SnoVARC",
+        "Location":"Duvall",
+        "Mode":"FM",
+        "Long Name":"Snoqualmie Valley Amateur Radio Club",
+        "Website":"https:\/\/snovarc.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":"647",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IG",
+        "Output (MHz)":"145.390",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.54040146,
+            -122.63600159
+        ],
+        "Group Name":"West Sound",
+        "Location":"Port Orchard",
+        "Mode":"FM",
+        "Long Name":"West Sound Amateur Radio Club",
+        "Website":"http:\/\/www.n7ig.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7SIX",
+        "Output (MHz)":"53.570",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.97309875,
+            -123.13500214
+        ],
+        "Group Name":"WWRG",
+        "Location":"Capitol Peak",
+        "Mode":"FM",
+        "Long Name":"Western Washington Repeater Group",
+        "Website":"https:\/\/www.qrz.com\/db\/W7SIX",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7SIX",
+        "Output (MHz)":"53.870",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.20000076,
+            -121.75499725
+        ],
+        "Group Name":"WWRG",
+        "Location":"Grass Mtn.",
+        "Mode":"FM",
+        "Long Name":"Western Washington Repeater Group",
+        "Website":"https:\/\/www.qrz.com\/db\/W7SIX",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7SIX",
+        "Output (MHz)":"927.300",
+        "Offset (MHz)":"-25.0",
+        "Tone (Hz)":"114.8",
+        "Coordinates":[
+            46.97309875,
+            -123.13500214
+        ],
+        "Group Name":"WWRG",
+        "Location":"Capitol Peak",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Western Washington Repeater Group",
+        "Website":"https:\/\/www.qrz.com\/db\/W7SIX",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7RIG",
+        "Output (MHz)":"224.780",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            48.5945015,
+            -122.16000366
+        ],
+        "Group Name":"PNW220",
+        "Location":"Lyman Hill",
+        "Mode":"FM",
+        "Long Name":"Pacific Northwest 220Mhz Repeater Network",
+        "Website":"http:\/\/pnw220.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WA7FUS",
+        "Output (MHz)":"224.220",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.75659943,
+            -122.28099823
+        ],
+        "Group Name":"PNW220",
+        "Location":"Lake Forest Park",
+        "Mode":"FM",
+        "Long Name":"Pacific Northwest 220Mhz Repeater Network",
+        "Website":"http:\/\/pnw220.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7WRG",
+        "Output (MHz)":"224.880",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.20406,
+            -121.795688
+        ],
+        "Group Name":"W7WRG",
+        "Location":"Grass Mtn.",
+        "Mode":"FM",
+        "Long Name":"Western Washington Radio Group",
+        "Website":"http:\/\/pnw220.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7WRG",
+        "Output (MHz)":"224.080",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            46.48789978,
+            -123.21399689
+        ],
+        "Group Name":"W7WRG",
+        "Location":"Baw Faw Peak",
+        "Mode":"FM",
+        "Long Name":"Western Washington Radio Group",
+        "Website":"http:\/\/pnw220.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7TJL",
+        "Output (MHz)":"224.200",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.3946,
+            -122.5966
+        ],
+        "Group Name":"W7TJL",
+        "Location":"Gig Harbor",
+        "Mode":"FM",
+        "Long Name":"Tom W7TJL's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/W7TJL",
+        "Status":"response_needed",
+        "RepeaterBook ID":"19795",
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"KA7EOC",
+        "Output (MHz)":"145.350",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.39107,
+            -122.6079
+        ],
+        "Group Name":"PARET",
+        "Location":"Gig Harbor",
+        "Mode":"FM",
+        "Long Name":"Peninsula Amateur Radio Emergency Team",
+        "Website":"https:\/\/www.gigharbornow.org\/event\/amateur-radio-emergency-service-ares-peninsula-team-radio-net-visitors-welcome",
+        "Status":"response_needed",
+        "RepeaterBook ID":"279",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7FEL",
+        "Output (MHz)":"146.760",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.14429855,
+            -123.67500305
+        ],
+        "Group Name":"CCARC",
+        "Location":"Striped Peak",
+        "Mode":"FM",
+        "Long Name":"Clallam County Amateur Radio Club",
+        "Website":"https:\/\/www.olyham.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":"214",
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7ZA",
+        "Output (MHz)":"146.900",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            46.93,
+            -123.73
+        ],
+        "Group Name":"GHARC",
+        "Location":"Aberdeen",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Grays Harbor Amateur Radio Club",
+        "Website":"http:\/\/gharc.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7ZA",
+        "Output (MHz)":"147.160",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            46.9542,
+            -123.8086
+        ],
+        "Group Name":"GHARC",
+        "Location":"Aberdeen",
+        "Mode":"FM",
+        "Long Name":"Grays Harbor Amateur Radio Club",
+        "Website":"http:\/\/gharc.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"K7GKR",
+        "Output (MHz)":"444.725",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.84397,
+            -122.54275
+        ],
+        "Group Name":"GKRC",
+        "Location":"Kingston",
+        "Mode":"FM",
+        "Long Name":"Greater Kingston Radio Club",
+        "Website":"https:\/\/gkrc.groups.io\/g\/main",
+        "Status":"response_needed",
+        "RepeaterBook ID":12885,
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"145.410",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"162.2",
+        "Coordinates":[
+            46.93799973,
+            -121.5
+        ],
+        "Group Name":"WB7DOB",
+        "Location":"Crystal Mtn.",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Status":"response_needed",
+        "RepeaterBook ID":"18070",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"147.140",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            47.21900177,
+            -122.84300232
+        ],
+        "Group Name":"WB7DOB",
+        "Location":"Baldi Mtn.",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Status":"response_needed",
+        "RepeaterBook ID":"145",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"147.300",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"88.5",
+        "Coordinates":[
+            47.11669922,
+            -121.89299774
+        ],
+        "Group Name":"WB7DOB",
+        "Location":"Three Sisters Peak",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Status":"response_needed",
+        "RepeaterBook ID":"5355",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"223.920",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.10179901,
+            -121.87799835
+        ],
+        "Group Name":"WB7DOB",
+        "Location":"Three Sisters Peak",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Status":"response_needed",
+        "RepeaterBook ID":"9868",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"224.760",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.22119904,
+            -121.85099792
+        ],
+        "Group Name":"WB7DOB",
+        "Location":"Baldi Mtn.",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Status":"response_needed",
+        "RepeaterBook ID":"231",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"441.375",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"173.8",
+        "Coordinates":[
+            47.42990112,
+            -122.14499664
+        ],
+        "Group Name":"WB7DOB",
+        "Location":"Lake Youngs",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Status":"response_needed",
+        "RepeaterBook ID":"275",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"442.625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.21900177,
+            -121.84300232
+        ],
+        "Group Name":"WB7DOB",
+        "Location":"Baldi Mtn.",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Status":"response_needed",
+        "RepeaterBook ID":"3711",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WB7DOB",
+        "Output (MHz)":"444.675",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            47.10240173,
+            -121.8730011
+        ],
+        "Group Name":"WB7DOB",
+        "Location":"Three Sisters Peak",
+        "Mode":"FM",
+        "Long Name":"Bruce WB7DOB's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/WB7DOB",
+        "Status":"response_needed",
+        "RepeaterBook ID":"3103",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"K7YR",
+        "Output (MHz)":"146.820",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.88470078,
+            -120.15699768
+        ],
+        "Group Name":"LCARC",
+        "Location":"Slide Ridge",
+        "Mode":"FM",
+        "Long Name":"Lake Chelan Amateur Radio Club",
+        "Website":"https:\/\/lcarc.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":"6843",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"K7SMX",
+        "Output (MHz)":"147.100",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"94.8",
+        "Coordinates":[
+            47.85359955,
+            -119.8730011
+        ],
+        "Group Name":"LCARC",
+        "Location":"McNeal Canyon",
+        "Mode":"FM",
+        "Long Name":"Lake Chelan Amateur Radio Club",
+        "Website":"https:\/\/lcarc.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":"73",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"K7SMX",
+        "Output (MHz)":"444.525",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"94.8",
+        "Coordinates":[
+            47.85359955,
+            -119.8730011
+        ],
+        "Group Name":"LCARC",
+        "Location":"McNeal Canyon",
+        "Mode":"FM",
+        "Long Name":"Lake Chelan Amateur Radio Club",
+        "Website":"https:\/\/lcarc.net\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":"72",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"K7YLM",
+        "Output (MHz)":"440.200",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            46.9392751,
+            -122.604919
+        ],
+        "Group Name":"YARG",
+        "Location":"Yelm",
+        "Mode":"FM",
+        "Long Name":"Yelm Amateur Radio Group",
+        "Website":"http:\/\/yelmamateurradiogroup.org",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"53.390",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.6576742,
+            -116.9684792
+        ],
+        "Group Name":"NIRG",
+        "Location":"Blossom Peak",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.6576742,
+            -116.9684792
+        ],
+        "Group Name":"NIRG",
+        "Location":"Blossom Peak",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"442.950",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.6576742,
+            -116.9684792
+        ],
+        "Group Name":"NIRG",
+        "Location":"Blossom Peak",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"147.260",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"186.2",
+        "Coordinates":[
+            47.3634565,
+            -116.412255
+        ],
+        "Group Name":"NIRG",
+        "Location":"Baldy St. Joe",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"147.180",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"118.8",
+        "Coordinates":[
+            47.5642862,
+            -115.85211
+        ],
+        "Group Name":"NIRG",
+        "Location":"Goose Peak",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"145.490",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"136.5",
+        "Coordinates":[
+            48.0787224,
+            -116.9537798
+        ],
+        "Group Name":"NIRG",
+        "Location":"Hoodoo Mtn.",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"444.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            48.0787224,
+            -116.9537798
+        ],
+        "Group Name":"NIRG",
+        "Location":"Hoodoo Mtn.",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"146.960",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"123.0",
+        "Coordinates":[
+            48.610141,
+            -116.2600576
+        ],
+        "Group Name":"NIRG",
+        "Location":"Black Mtn.",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"N7IRG",
+        "Output (MHz)":"145.410",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"77.0",
+        "Coordinates":[
+            48.6063229,
+            -116.9518883
+        ],
+        "Group Name":"NIRG",
+        "Location":"Priest Lake",
+        "Mode":"FM",
+        "Long Name":"North Idaho Repeater Group",
+        "Website":"https:\/\/www.blossompeak.org\/",
+        "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
     }
 ]
