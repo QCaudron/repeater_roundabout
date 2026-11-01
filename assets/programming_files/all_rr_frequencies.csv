@@ -76,12 +76,12 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 75,W7AUX,224.0200,-1.6,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.76,-122.35
 76,W7AUX,440.3000,+5.0,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.75619,-122.34575
 77,W7AUX,442.8250,+5.0,103.5,"Shoreline, WA",FM,Shoreline ACS,https://shorelineacs.org/,,,,,47.768,-122.3531
-78,W7ECG,442.825,+5.0,156.7,Ferndale,FM,Whatcom Emergency Communications Group,http://wecg.org,7100,53,,Yes,48.8614006,-122.61799622
-79,W7ECG,146.450,+1.0,,"Bellingham, Washington",FM,Whatcom Emergency Communications Group,http://wecg.org,12802,53,,Yes,48.68740082,-122.36199951
-80,W7ECG,224.1600,-1.6,156.7,,FM,Whatcom Emergency Communications Group,http://wecg.org,8854,53,,No,,
-81,W7ECG,440.475,+5.0,,"Bellingham, Washington",FM,Whatcom Emergency Communications Group,http://wecg.org,624,53,,Yes,48.68870163,-122.36100006
-82,W7ECG,442.2500,+5.0,156.7,Lookout Mtn.,FM,Whatcom Emergency Communications Group,http://wecg.org,7393,53,,,48.6875,-122.3625
-83,W7ECG,442.300,+5.0,88.5,"Bellingham, Washington",FM,Whatcom Emergency Communications Group,http://wecg.org,19722,53,,,48.7358,-122.48161
+78,W7ECG,442.825,+5.0,156.7,"Church Road Fire Hall, Ferndale, WA",FM,Whatcom Emergency Communications Group,http://wecg.org,7100,53,,Yes,48.5136,-122.3708
+79,W7ECG,146.450,+1.0,,"Lookout Mtn, Bellingham, WA",FM,Whatcom Emergency Communications Group,http://wecg.org,12802,53,,Yes,48.68740082,-122.36199951
+80,W7ECG,224.1600,-1.6,156.7,"Lookout Mtn, Bellingham, WA",FM,Whatcom Emergency Communications Group,http://wecg.org,8854,53,,No,48.68740082,-122.36199951
+81,W7ECG,440.475,+5.0,,"Lookout Mtn, Bellingham, WA",FM,Whatcom Emergency Communications Group,http://wecg.org,624,53,,Yes,48.68870163,-122.36100006
+82,W7ECG,442.2500,+5.0,156.7,"Lookout Mtn, Bellingham, WA",FM,Whatcom Emergency Communications Group,http://wecg.org,7393,53,,,48.6875,-122.3625
+83,W7ECG,442.300,+5.0,88.5,"Sehome Hill, Bellingham, WA",FM,Whatcom Emergency Communications Group,http://wecg.org,19722,53,,,48.7358,-122.48161
 84,NT7H,147.3600,+0.6,103.5,"Downtown Olympia, WA",FM,The Olympia Amateur Radio Society,http://Olyham.org,,,,No,47.0328888889,-122.9887305556
 85,K7LWH,224.360,-1.6,103.5,"Finn Hill, Kirkland, WA",FM,Lake Washington Ham Club,https://www.lakewashingtonhamclub.org/,5326,53,,No,47.7292,-122.2083
 86,WA7FW,147.0400,+0.6,103.5,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,136,53,,No,47.324663,-122.32604
@@ -98,3 +98,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 97,K7CPR,145.4700,-0.6,100,"Olympia, WA",FM,Capitol Peak Repeater Group,http://WWW.47repeater.com,358,53,Echolink Node# 568330,Yes,46.9731,-123.135
 98,KC7SNN,147.000,-0.6,100.0,Mt. Harrison,FM,Magic Valley Amateur Radio Club,https://www.k7mva.org/,68,16,,,42.32580185,-113.65599823
 99,NE7MC,442.000,5.0,141.3,Kenmore,FM,Northshore Emergency Management Coalition,https://www.northshoreemc.com/,19962,53,,,47.737677,-122.23079
+100,W7DK,145.2100,-0.6,141.3,"Pt. Defiance, Tacoma, WA",FM,Radio Club of Tacoma,https://w7dk.org/,,,,No,47.278611,-122.51277
+101,W7DK,440.625,+5.0,141.3,"Tacoma, WA",FM,Radio Club of Tacoma,https://w7dk.org/,549,53,"AllStarLink: 68688, EchoLink: 515469",Yes,47.25289917,-122.44400024
+102,W7DK,147.380,+0.6,103.5,"Crawford Mtn., WA",FM,Radio Club of Tacoma,https://w7dk.org/,325,53,,No,46.84258,-122.76406
+103,W7DK,147.280,+0.6,103.5,"Tacoma, WA",FM,Radio Club of Tacoma,https://w7dk.org/,324,53,"AllStarLink: 68688, EchoLink: 515469",Yes,47.25289917,-122.44400024

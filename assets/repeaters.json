@@ -1542,11 +1542,11 @@
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"156.7",
         "Coordinates":[
-            48.8614006,
-            -122.61799622
+            48.5136,
+            -122.3708
         ],
         "Group Name":"WECG",
-        "Location":"Ferndale",
+        "Location":"Church Road Fire Hall, Ferndale, WA",
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"http:\/\/wecg.org",
@@ -1566,7 +1566,7 @@
             -122.36199951
         ],
         "Group Name":"WECG",
-        "Location":"Bellingham, Washington",
+        "Location":"Lookout Mtn, Bellingham, WA",
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"http:\/\/wecg.org",
@@ -1581,9 +1581,12 @@
         "Output (MHz)":"224.1600",
         "Offset (MHz)":"-1.6",
         "Tone (Hz)":"156.7",
-        "Coordinates":null,
+        "Coordinates":[
+            48.68740082,
+            -122.36199951
+        ],
         "Group Name":"WECG",
-        "Location":null,
+        "Location":"Lookout Mtn, Bellingham, WA",
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"http:\/\/wecg.org",
@@ -1603,7 +1606,7 @@
             -122.36100006
         ],
         "Group Name":"WECG",
-        "Location":"Bellingham, Washington",
+        "Location":"Lookout Mtn, Bellingham, WA",
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"http:\/\/wecg.org",
@@ -1623,7 +1626,7 @@
             -122.3625
         ],
         "Group Name":"WECG",
-        "Location":"Lookout Mtn.",
+        "Location":"Lookout Mtn, Bellingham, WA",
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"http:\/\/wecg.org",
@@ -1643,7 +1646,7 @@
             -122.48161
         ],
         "Group Name":"WECG",
-        "Location":"Bellingham, Washington",
+        "Location":"Sehome Hill, Bellingham, WA",
         "Mode":"FM",
         "Long Name":"Whatcom Emergency Communications Group",
         "Website":"http:\/\/wecg.org",
@@ -1972,6 +1975,86 @@
         "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"145.2100",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.278611,
+            -122.51277
+        ],
+        "Group Name":"RCTacoma",
+        "Location":"Pt. Defiance, Tacoma, WA",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"440.625",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.25289917,
+            -122.44400024
+        ],
+        "Group Name":"RCTacoma",
+        "Location":"Tacoma, WA",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"549",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"AllStarLink: 68688, EchoLink: 515469",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"147.380",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            46.84258,
+            -122.76406
+        ],
+        "Group Name":"RCTacoma",
+        "Location":"Crawford Mtn., WA",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"325",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"W7DK",
+        "Output (MHz)":"147.280",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.25289917,
+            -122.44400024
+        ],
+        "Group Name":"RCTacoma",
+        "Location":"Tacoma, WA",
+        "Mode":"FM",
+        "Long Name":"Radio Club of Tacoma",
+        "Website":"https:\/\/w7dk.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"324",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"AllStarLink: 68688, EchoLink: 515469",
+        "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"WA7DEM",
@@ -2951,86 +3034,6 @@
         "RepeaterBook ID":"23719",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7DK",
-        "Output (MHz)":"147.280",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.25289917,
-            -122.44400024
-        ],
-        "Group Name":"RCTacoma",
-        "Location":"Tacoma",
-        "Mode":"FM",
-        "Long Name":"Radio Club of Tacoma",
-        "Website":"https:\/\/w7dk.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"324",
-        "RepeaterBook State ID":"53",
-        "Internet Access":"AllStarLink: 68688, EchoLink: 515469",
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7DK",
-        "Output (MHz)":"147.280",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.25289917,
-            -122.44400024
-        ],
-        "Group Name":"RCTacoma",
-        "Location":"Tacoma",
-        "Mode":"FM",
-        "Long Name":"Radio Club of Tacoma",
-        "Website":"https:\/\/w7dk.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"324",
-        "RepeaterBook State ID":"53",
-        "Internet Access":"AllStarLink: 68688, EchoLink: 515469",
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7DK",
-        "Output (MHz)":"147.380",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            46.8431015,
-            -122.76300049
-        ],
-        "Group Name":"RCTacoma",
-        "Location":"Crawford Mtn.",
-        "Mode":"FM",
-        "Long Name":"Radio Club of Tacoma",
-        "Website":"https:\/\/w7dk.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"325",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7DK",
-        "Output (MHz)":"440.625",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.25289917,
-            -122.44400024
-        ],
-        "Group Name":"RCTacoma",
-        "Location":"Tacoma",
-        "Mode":"FM",
-        "Long Name":"Radio Club of Tacoma",
-        "Website":"https:\/\/w7dk.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"549",
-        "RepeaterBook State ID":"53",
-        "Internet Access":"AllStarLink: 68688, EchoLink: 515469",
         "Allow Internet Contacts":null
     },
     {
