@@ -110,13 +110,6 @@ def test_write_generic_csv():
             os.chdir(cwd)
 
 
-if __name__ == "__main__":
-    test_format_df_for_d878_with_no_dmr_repeaters()
-    test_formatters_with_no_compatible_repeaters()
-    test_write_generic_csv()
-    print("OK")
-
-
 def test_nbfm_repeaters_are_narrow():
     """NBFM repeaters (footnotes already stripped by update.py) must be kept and programmed narrow."""
     df = pd.DataFrame(
@@ -134,3 +127,11 @@ def test_nbfm_repeaters_are_narrow():
     d878 = format_df_for_d878(df)
     assert d878["Band Width"].tolist() == ["12.5K", "25K"]
     assert format_df_for_icom(df)["Filter"].tolist() == ["2", "1"]
+
+
+if __name__ == "__main__":
+    test_format_df_for_d878_with_no_dmr_repeaters()
+    test_formatters_with_no_compatible_repeaters()
+    test_write_generic_csv()
+    test_nbfm_repeaters_are_narrow()
+    print("OK")
