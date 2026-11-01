@@ -1934,6 +1934,26 @@
         "Allow Internet Contacts":"Yes"
     },
     {
+        "Callsign":"KC7SNN",
+        "Output (MHz)":"147.000",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            42.32580185,
+            -113.65599823
+        ],
+        "Group Name":"Magic Valley",
+        "Location":"Mt. Harrison",
+        "Mode":"FM",
+        "Long Name":"Magic Valley Amateur Radio Club",
+        "Website":"https:\/\/www.k7mva.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"68",
+        "RepeaterBook State ID":"16",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
         "Callsign":"WA7DEM",
         "Output (MHz)":"146.7750",
         "Offset (MHz)":"-0.6",

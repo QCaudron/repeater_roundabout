@@ -123,6 +123,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 95    | Highline ARC      | W7BUR      | Burien, Washington        | FM          |       443.1250 |           +5.0 |       103.5 |
 | 96    | Highline ARC      | WA7DES     | Des Moines                | FM          |       443.7000 |           +5.0 |         123 |
 | 97    | Capitol Peak      | K7CPR      | Olympia, WA               | FM          |       145.4700 |           -0.6 |         100 |
+| 98    | Magic Valley      | KC7SNN     | Mt. Harrison              | FM          |        147.000 |           -0.6 |       100.0 |
 
 ---
 
@@ -184,6 +185,9 @@ MIRO
 
 Madigan AMC
 : [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
+
+Magic Valley
+: [Magic Valley Amateur Radio Club](https://www.k7mva.org/)
 
 Marrowstone
 : [Marrowstone Island Amateur Radio Club](https://qrz.com/db/AA7MI)
