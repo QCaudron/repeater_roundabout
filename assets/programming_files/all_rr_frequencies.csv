@@ -97,3 +97,4 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 96,WA7DES,443.7000,+5.0,123,Des Moines,FM,Highline Amateur Radio Club,http://highlinearc.org,22114,53,,No,47.40233,-122.30356
 97,K7CPR,145.4700,-0.6,100,"Olympia, WA",FM,Capitol Peak Repeater Group,http://WWW.47repeater.com,358,53,Echolink Node# 568330,Yes,46.9731,-123.135
 98,KC7SNN,147.000,-0.6,100.0,Mt. Harrison,FM,Magic Valley Amateur Radio Club,https://www.k7mva.org/,68,16,,,42.32580185,-113.65599823
+99,NE7MC,442.000,5.0,141.3,Kenmore,FM,Northshore Emergency Management Coalition,https://www.northshoreemc.com/,19962,53,,,47.737677,-122.23079

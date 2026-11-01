@@ -1954,6 +1954,26 @@
         "Allow Internet Contacts":null
     },
     {
+        "Callsign":"NE7MC",
+        "Output (MHz)":"442.000",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.737677,
+            -122.23079
+        ],
+        "Group Name":"Northshore EMC",
+        "Location":"Kenmore",
+        "Mode":"FM",
+        "Long Name":"Northshore Emergency Management Coalition",
+        "Website":"https:\/\/www.northshoreemc.com\/",
+        "Status":"in",
+        "RepeaterBook ID":"19962",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
         "Callsign":"WA7DEM",
         "Output (MHz)":"146.7750",
         "Offset (MHz)":"-0.6",
@@ -2734,26 +2754,6 @@
         "Allow Internet Contacts":null
     },
     {
-        "Callsign":"NE7MC",
-        "Output (MHz)":"442.000",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.76737841,
-            -122.2598474
-        ],
-        "Group Name":"Northshore EMC",
-        "Location":"Kenmore",
-        "Mode":"FM",
-        "Long Name":"Northshore Emergency Management Coalition",
-        "Website":"https:\/\/www.northshoreemc.com\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"19962",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
         "Callsign":"W7ACS",
         "Output (MHz)":"440.5250",
         "Offset (MHz)":"+5.0",
@@ -3409,7 +3409,7 @@
         "Website":"http:\/\/newcastle-dstar.com\/",
         "Status":"response_needed",
         "RepeaterBook ID":"18524",
-        "RepeaterBook State ID":null,
+        "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":null
     },
@@ -3629,7 +3629,7 @@
         "Website":"https:\/\/www.qrz.com\/db\/W7TJL",
         "Status":"response_needed",
         "RepeaterBook ID":"19795",
-        "RepeaterBook State ID":null,
+        "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":null
     },
@@ -3669,7 +3669,7 @@
         "Website":"https:\/\/www.olyham.net\/",
         "Status":"response_needed",
         "RepeaterBook ID":"214",
-        "RepeaterBook State ID":null,
+        "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":null
     },

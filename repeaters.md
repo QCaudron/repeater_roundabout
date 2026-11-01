@@ -124,6 +124,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 96    | Highline ARC      | WA7DES     | Des Moines                | FM          |       443.7000 |           +5.0 |         123 |
 | 97    | Capitol Peak      | K7CPR      | Olympia, WA               | FM          |       145.4700 |           -0.6 |         100 |
 | 98    | Magic Valley      | KC7SNN     | Mt. Harrison              | FM          |        147.000 |           -0.6 |       100.0 |
+| 99    | Northshore EMC    | NE7MC      | Kenmore                   | FM          |        442.000 |            5.0 |       141.3 |
 
 ---
 
@@ -212,6 +213,9 @@ N7YRC
 
 NMARESC
 : [North Mason Amateur Radio Emergency Service Club](https://nmaresc.wordpress.com/)
+
+Northshore EMC
+: [Northshore Emergency Management Coalition](https://www.northshoreemc.com/)
 
 Olyham
 : [The Olympia Amateur Radio Society](http://Olyham.org)
