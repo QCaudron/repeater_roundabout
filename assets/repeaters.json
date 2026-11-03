@@ -2250,11 +2250,11 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"WA7DEM",
@@ -2270,11 +2270,11 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"WA7DEM",
@@ -2290,11 +2290,11 @@
         "Mode":"FM",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"WA7DEM",
@@ -2310,11 +2310,11 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"WA7DEM",
@@ -2330,11 +2330,11 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"WA7DEM",
@@ -2350,11 +2350,11 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"WA7DEM",
@@ -2370,11 +2370,11 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"WA7DEM",
@@ -2390,11 +2390,11 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Snohomish County Auxiliary Communications Service",
         "Website":"https:\/\/www.wa7dem.info",
-        "Status":"response_needed",
+        "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
+        "Internet Access":"",
+        "Allow Internet Contacts":"Yes"
     },
     {
         "Callsign":"W7DG",

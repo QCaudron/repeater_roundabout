@@ -138,6 +138,14 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 110   | Seattle ACS       | W7ACS      | Seattle                             | FM          |       443.4750 |            5.0 |       141.3 |
 | 111   | Seattle ACS       | W7ACS      | North Seattle                       | FM          |       443.6500 |            5.0 |       141.3 |
 | 112   | Seattle ACS       | W7ACS      | Seattle                             | FM          |       444.5500 |            5.0 |       141.3 |
+| 113   | Snohomish ACS     | WA7DEM     | Lynnwood, WA                        | NBFM[^nbfm] |       146.7750 |           -0.6 |       156.7 |
+| 114   | Snohomish ACS     | WA7DEM     | Granite Falls, WA                   | NBFM[^nbfm] |       146.9250 |           -0.6 |       156.7 |
+| 115   | Snohomish ACS     | WA7DEM     | Marysville, WA                      | FM          |       224.3800 |           -1.6 |       103.5 |
+| 116   | Snohomish ACS     | WA7DEM     | Clearview, WA                       | NBFM[^nbfm] |       442.9750 |            5.0 |       156.7 |
+| 117   | Snohomish ACS     | WA7DEM     | Mountlake Terrace, WA               | NBFM[^nbfm] |       443.7250 |            5.0 |       156.7 |
+| 118   | Snohomish ACS     | WA7DEM     | Edmonds, WA                         | NBFM[^nbfm] |       444.0250 |            5.0 |       156.7 |
+| 119   | Snohomish ACS     | WA7DEM     | Marysville, WA                      | NBFM[^nbfm] |       444.2000 |            5.0 |       156.7 |
+| 120   | Snohomish ACS     | WA7DEM     | Darrington, WA                      | NBFM[^nbfm] |       444.3000 |            5.0 |       156.7 |
 
 ---
 
@@ -259,6 +267,9 @@ Shoreline ACS
 
 Skamania Co. ARES
 : [Skamania County ARES](https://w6tqf.radio)
+
+Snohomish ACS
+: [Snohomish County Auxiliary Communications Service](https://www.wa7dem.info)
 
 Suquamish Tribe
 : [Suquamish Tribe Office EM](https://suquamish.nsn.us/home/department)
