@@ -2677,26 +2677,6 @@
         "Allow Internet Contacts":null
     },
     {
-        "Callsign":"K7CH",
-        "Output (MHz)":"444.450",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"100",
-        "Coordinates":[
-            46.4882,
-            -123.2148
-        ],
-        "Group Name":"K7CH",
-        "Location":"Baw Faw Peak, WA",
-        "Mode":"FM",
-        "Long Name":"Carl K7CH's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
         "Callsign":"W7AW",
         "Output (MHz)":"53.2900",
         "Offset (MHz)":"-1.7",
@@ -3012,26 +2992,6 @@
         "Website":"http:\/\/skamania-prepare.org\/ares\/",
         "Status":"response_needed",
         "RepeaterBook ID":"16535",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"KK7DFL",
-        "Output (MHz)":"145.275",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
-            47.0073187,
-            -122.9093063
-        ],
-        "Group Name":"K7CH",
-        "Location":"Olympia",
-        "Mode":"NBFM[^nbfm]",
-        "Long Name":"Carl K7CH's repeater system",
-        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
-        "Status":"response_needed",
-        "RepeaterBook ID":"23719",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":null
@@ -4151,6 +4111,46 @@
         "Long Name":"North Idaho Repeater Group",
         "Website":"https:\/\/www.blossompeak.org\/",
         "Status":"response_needed",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"KK7DFL",
+        "Output (MHz)":"145.275",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"100.0",
+        "Coordinates":[
+            47.0073187,
+            -122.9093063
+        ],
+        "Group Name":"K7CH",
+        "Location":"Olympia",
+        "Mode":"DSTAR",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Status":"out",
+        "RepeaterBook ID":"23719",
+        "RepeaterBook State ID":"53",
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"KK7DFM",
+        "Output (MHz)":"444.450",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            46.4882,
+            -123.2148
+        ],
+        "Group Name":"K7CH",
+        "Location":"Baw Faw Peak, WA",
+        "Mode":"DSTAR",
+        "Long Name":"Carl K7CH's repeater system",
+        "Website":"https:\/\/www.qrz.com\/db\/k7ch",
+        "Status":"out",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
         "Internet Access":null,
