@@ -279,9 +279,9 @@ def cell(value) -> str:
 
 
 def internet_access(r) -> str:
-    """Return "Yes: <details>" when the repeater allows internet contacts and gives details, else its Yes/No answer ("" if unknown)."""
+    """Return the internet access details when the repeater allows internet contacts and gives them, else its Yes/No answer ("" if unknown)."""
     allowed, details = cell(r.get("Allow Internet Contacts")), cell(r.get("Internet Access"))
-    return f"{allowed}: {details}" if allowed == "Yes" and details else allowed
+    return details if allowed == "Yes" and details else allowed
 
 
 def group_slug(name: str) -> str:
