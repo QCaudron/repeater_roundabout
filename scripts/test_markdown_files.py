@@ -330,7 +330,7 @@ def test_write_repeaters_md_omits_link_for_club_without_website(tmp_path, monkey
 
 
 def test_write_repeaters_md_shows_internet_access(tmp_path, monkeypatch):
-    """The repeaters page has an Internet access column: the details alone when internet contacts are allowed, plain Yes without details, or blank/No."""
+    """The repeaters page has an Internet access column: the details alone when internet contacts are allowed, else blank."""
     monkeypatch.chdir(tmp_path)
     (tmp_path / "assets" / "templates").mkdir(parents=True)
     (tmp_path / "assets" / "templates" / "repeaters.md").write_text("{{ table }}\n{{ associations }}")
@@ -350,6 +350,6 @@ def test_write_repeaters_md_shows_internet_access(tmp_path, monkeypatch):
     rows = {r.split("|")[3].strip(): r for r in page.splitlines() if r.startswith("| ")}
     assert "Internet access" in page
     assert rows["W7A"].split("|")[-2].strip() == "Echolink 1234"
-    assert rows["W7B"].split("|")[-2].strip() == "Yes"
-    assert rows["W7C"].split("|")[-2].strip() == "No"
+    assert rows["W7B"].split("|")[-2].strip() == ""
+    assert rows["W7C"].split("|")[-2].strip() == ""
     assert rows["W7D"].split("|")[-2].strip() == ""

@@ -636,7 +636,7 @@
         "Status":"in",
         "RepeaterBook ID":"80",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
+        "Internet Access":"AllStarLink: 53587, EchoLink: 947272",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -656,7 +656,7 @@
         "Status":"in",
         "RepeaterBook ID":"17271",
         "RepeaterBook State ID":"16",
-        "Internet Access":null,
+        "Internet Access":"AllStarLink: 53587, EchoLink: 947272",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -676,7 +676,7 @@
         "Status":"in",
         "RepeaterBook ID":"366",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
+        "Internet Access":"AllStarLink: 53587, EchoLink: 947272",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -696,7 +696,7 @@
         "Status":"in",
         "RepeaterBook ID":"78",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
+        "Internet Access":"AllStarLink: 53587, EchoLink: 947272",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -716,7 +716,7 @@
         "Status":"in",
         "RepeaterBook ID":"31",
         "RepeaterBook State ID":"30",
-        "Internet Access":null,
+        "Internet Access":"AllStarLink: 53587, EchoLink: 947272",
         "Allow Internet Contacts":"Yes"
     },
     {

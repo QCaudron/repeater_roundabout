@@ -30,11 +30,11 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 29,W7PFR,443.9750,+5.0,103.5,Eatonville,FM,Gobblers Knob Repeater Group,https://www.qrz.com/db/W7PFR,,,,,46.8354,-122.2878
 30,K7BEL,441.100,+5.0,156.7,"Bellevue, WA",FM,Bellevue Communication Support,https://bellevuewa.gov/volunteering/bellevue-communications-support,489,53,,Yes,47.55449,-122.13235
 31,WA7SAR,147.060,+0.6,85.4,"Yakima, WA",FM,Yakima County Radio Amateurs,,161,53,,No,46.5929985,-120.53800201
-32,KB7ARA,147.280,+0.6,103.5,Pikes Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,80,53,,Yes,45.99373,-118.18053
-33,KA7FVV,147.320,+0.6,103.5,West Twin,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,17271,16,,Yes,46.73239899,-117.0
-34,N7WRR,147.360,+0.6,,Stensgar Mtn.,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,366,53,,Yes,48.18139,-117.98917
-35,N7WRQ,147.380,+0.6,100.0,Mica Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,78,53,,Yes,47.57495,-117.08113
-36,KB7ARA,147.020,+0.6,107.2,"Lookout Pass, MT",FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,31,30,,Yes,46.00389862,-112.53399658
+32,KB7ARA,147.280,+0.6,103.5,Pikes Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,80,53,"AllStarLink: 53587, EchoLink: 947272",Yes,45.99373,-118.18053
+33,KA7FVV,147.320,+0.6,103.5,West Twin,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,17271,16,"AllStarLink: 53587, EchoLink: 947272",Yes,46.73239899,-117.0
+34,N7WRR,147.360,+0.6,,Stensgar Mtn.,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,366,53,"AllStarLink: 53587, EchoLink: 947272",Yes,48.18139,-117.98917
+35,N7WRQ,147.380,+0.6,100.0,Mica Peak,FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,78,53,"AllStarLink: 53587, EchoLink: 947272",Yes,47.57495,-117.08113
+36,KB7ARA,147.020,+0.6,107.2,"Lookout Pass, MT",FM,Kamiak Butte Amateur Repeater Association,https://kbara.org/,31,30,"AllStarLink: 53587, EchoLink: 947272",Yes,46.00389862,-112.53399658
 37,W6TQF,440.325,+5.0,100.0,"Augspurger Mtn, WA",FM,Skamania County ARES,https://w6tqf.radio,18543,53,,,45.74150848,-121.68618774
 38,N7RHE,147.320,+0.6,103.5,"Kent East Hill, WA",FM,Kent Communications Support Team,https://pugetsoundfire.org/emergency-management/communications-support-team-ham-radio/,9852,53,,No,47.38199997,-122.22699738
 39,N7GDE,145.190,-0.6,127.3,"Lyman Mtn, WA",FM,Radio Amateurs of Skagit County,https://rasconline.net/,176,53,,Yes,48.5855351,-122.147808
