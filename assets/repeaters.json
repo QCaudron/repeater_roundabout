@@ -1542,8 +1542,8 @@
         "Offset (MHz)":"+5.0",
         "Tone (Hz)":"156.7",
         "Coordinates":[
-            48.5136,
-            -122.3708
+            48.8614006,
+            -122.61799622
         ],
         "Group Name":"WECG",
         "Location":"Church Road Fire Hall, Ferndale, WA",
@@ -3362,8 +3362,8 @@
         "Offset (MHz)":"-0.6",
         "Tone (Hz)":"",
         "Coordinates":[
-            47.540297,
-            -122.099856
+            47.54205704,
+            -122.10888672
         ],
         "Group Name":"Newcastle DMR",
         "Location":"Cougar Mtn.",
@@ -3593,7 +3593,7 @@
         "Status":"response_needed",
         "RepeaterBook ID":"19795",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
+        "Internet Access":"EchoLink: 53650",
         "Allow Internet Contacts":null
     },
     {
@@ -3633,7 +3633,7 @@
         "Status":"response_needed",
         "RepeaterBook ID":"214",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
+        "Internet Access":"EchoLink: 557235",
         "Allow Internet Contacts":null
     },
     {
@@ -3733,7 +3733,7 @@
         "Status":"response_needed",
         "RepeaterBook ID":"145",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
+        "Internet Access":"AllStarLink: 46151",
         "Allow Internet Contacts":null
     },
     {
@@ -3833,7 +3833,7 @@
         "Status":"response_needed",
         "RepeaterBook ID":"3711",
         "RepeaterBook State ID":"53",
-        "Internet Access":null,
+        "Internet Access":"AllStarLink: 46151",
         "Allow Internet Contacts":null
     },
     {
