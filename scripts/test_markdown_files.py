@@ -327,3 +327,29 @@ def test_write_repeaters_md_omits_link_for_club_without_website(tmp_path, monkey
     page = (tmp_path / "repeaters.md").read_text()
     assert "PSRG\n: Puget Sound Repeater Group\n" in page
     assert "nan" not in page
+
+
+def test_write_repeaters_md_shows_internet_access(tmp_path, monkeypatch):
+    """The repeaters page has an Internet access column: Yes with details, plain Yes, or blank/No."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets" / "templates").mkdir(parents=True)
+    (tmp_path / "assets" / "templates" / "repeaters.md").write_text("{{ table }}\n{{ associations }}")
+    df = pd.DataFrame(
+        [
+            repeater("W7A", "146.960", STATUS_IN, **{"Allow Internet Contacts": "Yes", "Internet Access": "Echolink 1234"}),
+            repeater("W7B", "147.000", STATUS_IN, **{"Allow Internet Contacts": "Yes", "Internet Access": None}),
+            repeater("W7C", "147.020", STATUS_IN, **{"Allow Internet Contacts": "No", "Internet Access": "Echolink 99"}),
+            repeater("W7D", "147.040", STATUS_IN),
+        ]
+    )
+    df["RR#"] = df.index + 1
+
+    write_repeaters_md(df)
+
+    page = (tmp_path / "repeaters.md").read_text()
+    rows = {r.split("|")[3].strip(): r for r in page.splitlines() if r.startswith("| ")}
+    assert "Internet access" in page
+    assert rows["W7A"].split("|")[-2].strip() == "Yes: Echolink 1234"
+    assert rows["W7B"].split("|")[-2].strip() == "Yes"
+    assert rows["W7C"].split("|")[-2].strip() == "No"
+    assert rows["W7D"].split("|")[-2].strip() == ""

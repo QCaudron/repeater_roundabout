@@ -165,7 +165,12 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
         table = (
             df[table_cols]
             .rename(columns={"Group Name": "Group"})
-            .assign(**{"Tone (Hz)": df["Tone (Hz)"].apply(lambda v: v if pd.notna(v) else "")})
+            .assign(
+                **{
+                    "Tone (Hz)": df["Tone (Hz)"].apply(lambda v: v if pd.notna(v) else ""),
+                    "Internet access": df.apply(internet_access, axis=1),
+                }
+            )
             .to_markdown(
                 index=False,
                 disable_numparse=True,
@@ -178,6 +183,7 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
                     "right",
                     "right",
                     "right",
+                    "left",
                 ],
             )
         )
@@ -270,6 +276,12 @@ def text(value) -> str:
 def cell(value) -> str:
     """Return value escaped for display in a markdown table cell."""
     return html.escape(text(value)).replace("|", "\\|")
+
+
+def internet_access(r) -> str:
+    """Return "Yes: <details>" when the repeater allows internet contacts and gives details, else its Yes/No answer ("" if unknown)."""
+    allowed, details = cell(r.get("Allow Internet Contacts")), cell(r.get("Internet Access"))
+    return f"{allowed}: {details}" if allowed == "Yes" and details else allowed
 
 
 def group_slug(name: str) -> str:
