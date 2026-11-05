@@ -9,7 +9,7 @@ subtitle: Get to know your local repeaters November 14th and 15th, 2026.
 
 The Repeater Roundabout is a weekend-long event held on many of your local repeaters. The goal is to meet new people and work repeaters you might not usually key up. It's also a great way to get started with ham radio contests for folk who are primarily repeater users. 
 
-Last year, we made it into [QST Magazine](assets/RR.pdf). Light up the airwaves and make some noise on the great repeaters in Washington and Idaho ! Anyone with a ham radio license can participate. This is a friendly, collaborative event for all FM users on VHF and UHF.
+Previously, we made it into [QST Magazine](assets/RR.pdf). Light up the airwaves and make some noise on the great repeaters in Washington and Idaho ! Anyone with a ham radio license can participate. This is a friendly, collaborative event for all FM users on VHF and UHF. **New this year :** Echolink, Allstar and other Internet modes now count on repeaters that list their connection details on the [repeaters page](/repeaters) !
 
 
 **The Repeater Roundabout will be held during the weekend of November 14th and 15th, 2026.**

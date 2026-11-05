@@ -15,11 +15,13 @@ The following repeaters are participating in the Repeater Roundabout. Please ens
 interfere** with the repeater's normal operation, including regular nets. If someone on the repeater
 asks you to hold off on making contacts, please come back later.
 
-For 2025, we have an increasing number of narrowband FM repeaters as
+For 2026, we have an increasing number of narrowband FM repeaters as
 Western Washington transitions to narrowband on 2m and 70cm.  There
 are also some mixed mode digital and analog repeaters.  If you hear
 digital traffic, don't interrupt.  But, feel free to come back later
 and make analog contacts when the repeater is not busy.
+
+**New for 2026 :** Internet modes (Echolink, Allstar, and the like) are now allowed ! Where a repeater below lists Internet connection details, you can make contacts through it over the Internet, and so can the station you're talking to. For repeaters with no Internet connection info listed, the old rule still applies : you must be on RF.
 
 Get started by [programming your radio](/files), and check out the repeaters' locations on the
 [repeater map](/map).

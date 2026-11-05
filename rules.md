@@ -12,6 +12,8 @@ Only these [120 participating repeaters from 45 radio groups](/repeaters) are el
 
 Please ensure that there is no ongoing activity on a repeater (such as a net) before you call for contacts. Please ensure you leave some space for others to user the repeater; some of these are used for emergency communications, and we don't want to interfere with that.
 
+**New for 2026 :** Internet modes (Echolink, Allstar, and the like) are now allowed on any repeater that lists connection details on the [repeaters page](/repeaters). On those repeaters, both parties can be connecting via the Internet. On repeaters with no Internet connection info listed, you must still be connecting over RF.
+
 
 # Exchange
 
@@ -55,10 +57,16 @@ Here's an example log file :
 | Nov 12 | 13:16 | K7MCK    |    CM2 | 22   |   X   |
 | Nov 12 | 13:16 | KD7WGN   |    CM5 | 102  |       |
 
-Logs can be submitted [on this page](/logging). After the contest, a leaderboard will be published on this website. Logs must be returned to K7DRQ by December 1st to qualify.
+Logs can be submitted [on this page](/logging). After the contest, a leaderboard will be published on this website. Logs must be submitted by November 22nd to qualify.
 
 
 # FAQ
+
+Can I use Echolink, Allstar, or IRLP ?
+: Yes ! Internet modes are allowed on any repeater that lists connection details on the [repeaters page](/repeaters). As always, be courteous and don't interfere with normal operation of the repeater.
+
+Do Internet contacts count ?
+: Yes ! On repeaters that list Internet connection info on the [repeaters page](/repeaters), both parties can be connecting via the Internet. For repeaters that don't list Internet connection info, the Repeater Roundabout participant must be connecting over RF. We don't want to tie up repeaters in remote locations with lots of non-local traffic unless they have opted in.
 
 Is there a prize ?
 : Fame and fortune await you ! Or at least fame. There might be a trophy too.
@@ -72,9 +80,6 @@ Can we make contacts using linked repeaters ?
 As a participant, can I link repeaters ?
 : No -- We request that you do not change repeater links for the Repeater Roundabout. If the repeater owner chooses to link repeaters, they may do so (see the previous question above). However, we request the Repeater Roundabout participants not change the linking configuration of repeaters.
 
-Do Internet contacts count ?
-: Maybe -- If you are using RF, you can log the contact and get points even if the other station is connected via the Internet. However, because we don't want to tie up repeaters in remote locations with lots of non-local traffic, we only award points for RF and request that participants only call for contacts via RF.
-
 Explain the multipliers to me.
 : Sure ! First, you get double points for any contact made with 5W or less. Then, we do some sleuthing through the log, looking for band activity. Then, if you hit 30 repeaters in either the 2m or 70cm bands, you get double points for all those contacts on that band. Finally, if you activate at least 80 different repeaters, we double your full score. This is a big one, and will be hard to achieve, but well worth it !
 
@@ -83,9 +88,6 @@ Can I stay on the same repeater the whole contest ?
 
 Can I arrange a contact beforehand ?
 : Yes, skeds are perfectly okay ! Arranging your QSO beforehand is perfectly fine. We have a [Discord system](https://discord.com/invite/mqkD4fTjrn) that's a great place to arrange a sked, or see who's around to find you on a repeater.
-
-Can I use Echolink, Allstar, or IRLP ?
-: Not this year. To keep things simple, we are going FM-only.
 
 Will each repeater have a club member monitoring ?
 : Perhaps. This will come down to club strategy. Get on a repeater, ask to chat to someone, and see what happens. If you're lucky, you'll find someone who's also participating in the Repeater Roundabout, and you can share your progress. If they aren't, you can still chat about anything and everything, and the contact still counts.
