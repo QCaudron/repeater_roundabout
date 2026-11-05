@@ -119,3 +119,11 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 118,WA7DEM,444.0250,5.0,156.7,"Edmonds, WA",NBFM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info,,,,Yes,47.8035,-122.3346
 119,WA7DEM,444.2000,5.0,156.7,"Marysville, WA",NBFM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info,,,,Yes,48.122528,-122.24338
 120,WA7DEM,444.3000,5.0,156.7,"Darrington, WA",NBFM,Snohomish County Auxiliary Communications Service,https://www.wa7dem.info,,,,Yes,48.24944,-122.56916
+121,W7AW,53.2900,-1.7,100,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,,,,No,47.5405,-122.3777
+122,W7AW,145.130,-0.6,103.5,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,14858,53,,No,47.540412,-122.378271
+123,W7AW,441.8000,+5.0,141.3,West Seattle,FM,West Seattle Amateur Radio Club,https://w7aw.org/,538,53,,No,47.5405,-122.3777
+124,WW7ATS,147.080,+0.6,103.5,"Cougar Mtn, WA",FM,Western Washington Amateur Television Society,https://www.wwats.net,417,53,"Allstar: 564560, Echolink: 512069",Yes,47.5559,-122.116
+125,WW7ATS,441.550,+5.0,103.5,"Cougar Mtn, WA",FM,Western Washington Amateur Television Society,https://www.wwats.net,601,53,"Allstar: 564563, EchoLink: 512619",Yes,47.5406,-122.098
+126,K7SKW,146.7400,-0.6,103.5,"Mt. Constitution, Orcas Island, WA",FM,Mount Baker ARC,https://mbarc.groups.io,43,53,,No,48.68,-122.84
+127,K7SKW,444.0500,+5.0,103.5,"Mt. Constitution, Orcas Island, WA",FM,Mount Baker ARC,https://mbarc.groups.io,50,53,,No,48.68,-122.84
+128,WA7MV,147.320,+0.6,100,Tunk Mtn.,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,206,53,,,48.54570007,-119.23600006

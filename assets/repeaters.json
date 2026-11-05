@@ -2397,6 +2397,166 @@
         "Allow Internet Contacts":"Yes"
     },
     {
+        "Callsign":"W7AW",
+        "Output (MHz)":"53.2900",
+        "Offset (MHz)":"-1.7",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            47.5405,
+            -122.3777
+        ],
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"145.130",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.540412,
+            -122.378271
+        ],
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"14858",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"W7AW",
+        "Output (MHz)":"441.8000",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"141.3",
+        "Coordinates":[
+            47.5405,
+            -122.3777
+        ],
+        "Group Name":"West Seattle",
+        "Location":"West Seattle",
+        "Mode":"FM",
+        "Long Name":"West Seattle Amateur Radio Club",
+        "Website":"https:\/\/w7aw.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"538",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"WW7ATS",
+        "Output (MHz)":"147.080",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.5559,
+            -122.116
+        ],
+        "Group Name":"WWATS",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Western Washington Amateur Television Society",
+        "Website":"https:\/\/www.wwats.net",
+        "Status":"in",
+        "RepeaterBook ID":"417",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"Allstar: 564560, Echolink: 512069",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"WW7ATS",
+        "Output (MHz)":"441.550",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.5406,
+            -122.098
+        ],
+        "Group Name":"WWATS",
+        "Location":"Cougar Mtn, WA",
+        "Mode":"FM",
+        "Long Name":"Western Washington Amateur Television Society",
+        "Website":"https:\/\/www.wwats.net",
+        "Status":"in",
+        "RepeaterBook ID":"601",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"Allstar: 564563, EchoLink: 512619",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"146.7400",
+        "Offset (MHz)":"-0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.68,
+            -122.84
+        ],
+        "Group Name":"Mount Baker ARC",
+        "Location":"Mt. Constitution, Orcas Island, WA",
+        "Mode":"FM",
+        "Long Name":"Mount Baker ARC",
+        "Website":"https:\/\/mbarc.groups.io",
+        "Status":"in",
+        "RepeaterBook ID":"43",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"K7SKW",
+        "Output (MHz)":"444.0500",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.68,
+            -122.84
+        ],
+        "Group Name":"Mount Baker ARC",
+        "Location":"Mt. Constitution, Orcas Island, WA",
+        "Mode":"FM",
+        "Long Name":"Mount Baker ARC",
+        "Website":"https:\/\/mbarc.groups.io",
+        "Status":"in",
+        "RepeaterBook ID":"50",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"WA7MV",
+        "Output (MHz)":"147.320",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"100",
+        "Coordinates":[
+            48.54570007,
+            -119.23600006
+        ],
+        "Group Name":"MVARC",
+        "Location":"Tunk Mtn.",
+        "Mode":"FM",
+        "Long Name":"Methow Valley Amateur Radio Club",
+        "Website":"https:\/\/www.mvhams.net\/",
+        "Status":"in",
+        "RepeaterBook ID":"206",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":""
+    },
+    {
         "Callsign":"W7DG",
         "Output (MHz)":"147.1000",
         "Offset (MHz)":"0.6",
@@ -2677,66 +2837,6 @@
         "Allow Internet Contacts":null
     },
     {
-        "Callsign":"W7AW",
-        "Output (MHz)":"53.2900",
-        "Offset (MHz)":"-1.7",
-        "Tone (Hz)":"100",
-        "Coordinates":[
-            47.5405,
-            -122.3777
-        ],
-        "Group Name":"West Seattle",
-        "Location":"West Seattle",
-        "Mode":"FM",
-        "Long Name":"West Seattle Amateur Radio Club",
-        "Website":"https:\/\/w7aw.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7AW",
-        "Output (MHz)":"145.130",
-        "Offset (MHz)":"-0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.540412,
-            -122.378271
-        ],
-        "Group Name":"West Seattle",
-        "Location":"West Seattle",
-        "Mode":"FM",
-        "Long Name":"West Seattle Amateur Radio Club",
-        "Website":"https:\/\/w7aw.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"14858",
-        "RepeaterBook State ID":"53",
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7AW",
-        "Output (MHz)":"441.8000",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"141.3",
-        "Coordinates":[
-            47.5405,
-            -122.3777
-        ],
-        "Group Name":"West Seattle",
-        "Location":"West Seattle",
-        "Mode":"FM",
-        "Long Name":"West Seattle Amateur Radio Club",
-        "Website":"https:\/\/w7aw.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
         "Callsign":"N7SK",
         "Output (MHz)":"146.7200",
         "Offset (MHz)":"-0.6",
@@ -2833,26 +2933,6 @@
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"WA7MV",
-        "Output (MHz)":"147.320",
-        "Offset (MHz)":"+0.6",
-        "Tone (Hz)":"100.0",
-        "Coordinates":[
-            48.54570007,
-            -119.23600006
-        ],
-        "Group Name":"MVARC",
-        "Location":"Tunk Mtn.",
-        "Mode":"FM",
-        "Long Name":"Methow Valley Amateur Radio Club",
-        "Website":"https:\/\/www.mvhams.net\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":"206",
-        "RepeaterBook State ID":"53",
         "Internet Access":null,
         "Allow Internet Contacts":null
     },
@@ -3114,46 +3194,6 @@
         "RepeaterBook ID":"368",
         "RepeaterBook State ID":"53",
         "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"WW7ATS",
-        "Output (MHz)":"147.080",
-        "Offset (MHz)":"0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.48844,
-            -121.94705
-        ],
-        "Group Name":"WWATS",
-        "Location":"Cougar Mtn, WA",
-        "Mode":"FM",
-        "Long Name":"Western Washington Amateur Television Society",
-        "Website":"https:\/\/www.wwats.net",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"WW7ATS",
-        "Output (MHz)":"441.550",
-        "Offset (MHz)":"+5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.54059982,
-            -122.09799957
-        ],
-        "Group Name":"WWATS",
-        "Location":"Cougar Mtn, WA",
-        "Mode":"FM",
-        "Long Name":"Western Washington Amateur Television Society",
-        "Website":"https:\/\/www.wwats.net",
-        "Status":"response_needed",
-        "RepeaterBook ID":"601",
-        "RepeaterBook State ID":"53",
-        "Internet Access":"AllStarLink: 564563, EchoLink: 512619",
         "Allow Internet Contacts":null
     },
     {

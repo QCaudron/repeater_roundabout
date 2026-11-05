@@ -148,6 +148,14 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 118   | Snohomish ACS     | WA7DEM     | Edmonds, WA                         | NBFM[^nbfm] |       444.0250 |            5.0 |       156.7 |                                      |
 | 119   | Snohomish ACS     | WA7DEM     | Marysville, WA                      | NBFM[^nbfm] |       444.2000 |            5.0 |       156.7 |                                      |
 | 120   | Snohomish ACS     | WA7DEM     | Darrington, WA                      | NBFM[^nbfm] |       444.3000 |            5.0 |       156.7 |                                      |
+| 121   | West Seattle      | W7AW       | West Seattle                        | FM          |        53.2900 |           -1.7 |         100 |                                      |
+| 122   | West Seattle      | W7AW       | West Seattle                        | FM          |        145.130 |           -0.6 |       103.5 |                                      |
+| 123   | West Seattle      | W7AW       | West Seattle                        | FM          |       441.8000 |           +5.0 |       141.3 |                                      |
+| 124   | WWATS             | WW7ATS     | Cougar Mtn, WA                      | FM          |        147.080 |           +0.6 |       103.5 | Allstar: 564560, Echolink: 512069    |
+| 125   | WWATS             | WW7ATS     | Cougar Mtn, WA                      | FM          |        441.550 |           +5.0 |       103.5 | Allstar: 564563, EchoLink: 512619    |
+| 126   | Mount Baker ARC   | K7SKW      | Mt. Constitution, Orcas Island, WA  | FM          |       146.7400 |           -0.6 |       103.5 |                                      |
+| 127   | Mount Baker ARC   | K7SKW      | Mt. Constitution, Orcas Island, WA  | FM          |       444.0500 |           +5.0 |       103.5 |                                      |
+| 128   | MVARC             | WA7MV      | Tunk Mtn.                           | FM          |        147.320 |           +0.6 |         100 |                                      |
 
 ---
 
@@ -207,6 +215,9 @@ LWHC
 MIRO
 : [Mercer Island Radio Operators](https://miro.cmivolunteers.org/)
 
+MVARC
+: [Methow Valley Amateur Radio Club](https://www.mvhams.net/)
+
 Madigan AMC
 : [Madigan Army Medical Center](https://www.qrz.com/db/KE7YYD)
 
@@ -218,6 +229,9 @@ Marrowstone
 
 Mike & Key
 : [Mike & Key Amateur Radio Club](https://www.mikeandkey.org/)
+
+Mount Baker ARC
+: [Mount Baker ARC](https://mbarc.groups.io)
 
 N3KPU
 : [Michael N3KPU's repeater system](https://www.qrz.com/db/N3KPU)
@@ -282,8 +296,14 @@ WECG
 WW7SEA
 : [Barry K7PAL's repeater system](https://www.qrz.com/db/WW7SEA)
 
+WWATS
+: [Western Washington Amateur Television Society](https://www.wwats.net)
+
 WWDXC
 : [Western Washington DX Club](https://www.wwdxc.org/)
+
+West Seattle
+: [West Seattle Amateur Radio Club](https://w7aw.org/)
 
 YCRA
 : Yakima County Radio Amateurs
