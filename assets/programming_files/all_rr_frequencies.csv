@@ -127,3 +127,5 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 126,K7SKW,146.7400,-0.6,103.5,"Mt. Constitution, Orcas Island, WA",FM,Mount Baker ARC,https://mbarc.groups.io,43,53,,No,48.68,-122.84
 127,K7SKW,444.0500,+5.0,103.5,"Mt. Constitution, Orcas Island, WA",FM,Mount Baker ARC,https://mbarc.groups.io,50,53,,No,48.68,-122.84
 128,WA7MV,147.320,+0.6,100,Tunk Mtn.,FM,Methow Valley Amateur Radio Club,https://www.mvhams.net/,206,53,,,48.54570007,-119.23600006
+129,KK7DFL,145.275,-0.6,100.0,Olympia,NBFM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,23719,53,,,47.0073187,-122.9093063
+130,KK7DFM,444.450,5.0,100,"Baw Faw Peak, WA",NBFM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,,,,,46.4882,-123.2148

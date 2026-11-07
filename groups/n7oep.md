@@ -26,3 +26,5 @@ Club website: [https://www.qrz.com/db/n7oep](https://www.qrz.com/db/n7oep)
 - Repeaters marked **Response needed** are not published until we hear from you.
 
 </div>
+
+[^nbfm]: This repeater operates in *narrow-band* FM mode; please use the 12.5 KHz deviation setting on your radio.

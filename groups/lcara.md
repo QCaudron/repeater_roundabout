@@ -27,3 +27,5 @@ Club website: [https://www.w7dg.com/](https://www.w7dg.com/)
 - Repeaters marked **Response needed** are not published until we hear from you.
 
 </div>
+
+[^nbfm]: This repeater operates in *narrow-band* FM mode; please use the 12.5 KHz deviation setting on your radio.
