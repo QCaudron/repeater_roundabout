@@ -161,6 +161,8 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 131   | SCARC             | W7PIG      | Camano Island, WA                   | NBFM[^nbfm]         |       147.0125 |           +0.6 |       127.3 | AllStarLink: 66945                    |
 | 132   | SCARC             | W7PIG      | Camano Island, WA                   | FM                  |         223.88 |           -1.6 |       103.5 |                                       |
 | 133   | SCARC             | W7PIG      | Camano Island, WA                   | FM                  |        441.050 |           +5.0 |       127.3 | AllStarLink: 66945                    |
+| 134   | SCHC              | WA7LAW     | Everett, WA                         | FM                  |       147.1800 |            0.6 |       103.5 |                                       |
+| 135   | SCHC              | WA7LAW     | Everett, WA                         | FM                  |       444.5750 |            5.0 |       103.5 |                                       |
 
 ---
 
@@ -276,6 +278,9 @@ RCTacoma
 
 SCARC
 : [Stanwood-Camano Amateur Radio Club](https://www.scarcwa.org/)
+
+SCHC
+: [Snohomish County Hams Club](http://www.wa7law.org/)
 
 SWI-ARC
 : [South West Idaho Amateur Radio Club](https://www.k7swi.org/)

@@ -2657,6 +2657,46 @@
         "Allow Internet Contacts":"Yes"
     },
     {
+        "Callsign":"WA7LAW",
+        "Output (MHz)":"147.1800",
+        "Offset (MHz)":"0.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.998014,
+            -122.19456
+        ],
+        "Group Name":"SCHC",
+        "Location":"Everett, WA",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Hams Club",
+        "Website":"http:\/\/www.wa7law.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
+        "Callsign":"WA7LAW",
+        "Output (MHz)":"444.5750",
+        "Offset (MHz)":"5.0",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            47.99801,
+            -122.19456
+        ],
+        "Group Name":"SCHC",
+        "Location":"Everett, WA",
+        "Mode":"FM",
+        "Long Name":"Snohomish County Hams Club",
+        "Website":"http:\/\/www.wa7law.org\/",
+        "Status":"in",
+        "RepeaterBook ID":null,
+        "RepeaterBook State ID":null,
+        "Internet Access":null,
+        "Allow Internet Contacts":null
+    },
+    {
         "Callsign":"W7DG",
         "Output (MHz)":"147.1000",
         "Offset (MHz)":"0.6",
@@ -2930,46 +2970,6 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Mason County Amateur Radio Club",
         "Website":"https:\/\/mc-arc.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"WA7LAW",
-        "Output (MHz)":"147.1800",
-        "Offset (MHz)":"0.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.998014,
-            -122.19456
-        ],
-        "Group Name":"SCHC",
-        "Location":"Everett, WA",
-        "Mode":"FM",
-        "Long Name":"Snohomish County Hams Club",
-        "Website":"http:\/\/www.wa7law.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"WA7LAW",
-        "Output (MHz)":"444.5750",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            47.99801,
-            -122.19456
-        ],
-        "Group Name":"SCHC",
-        "Location":"Everett, WA",
-        "Mode":"FM",
-        "Long Name":"Snohomish County Hams Club",
-        "Website":"http:\/\/www.wa7law.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,

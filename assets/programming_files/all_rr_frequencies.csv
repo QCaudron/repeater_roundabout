@@ -132,3 +132,5 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 131,W7PIG,147.0125,+0.6,127.3,"Camano Island, WA",NBFM,Stanwood-Camano Amateur Radio Club,https://www.scarcwa.org/,6948,53,AllStarLink: 66945,Yes,48.22499847,-122.5
 132,W7PIG,223.88,-1.6,103.5,"Camano Island, WA",FM,Stanwood-Camano Amateur Radio Club,https://www.scarcwa.org/,4586,53,,No,48.19150162,-122.51499939
 133,W7PIG,441.050,+5.0,127.3,"Camano Island, WA",FM,Stanwood-Camano Amateur Radio Club,https://www.scarcwa.org/,484,53,AllStarLink: 66945,Yes,48.22499847,-122.5
+134,WA7LAW,147.1800,0.6,103.5,"Everett, WA",FM,Snohomish County Hams Club,http://www.wa7law.org/,,,,,47.998014,-122.19456
+135,WA7LAW,444.5750,5.0,103.5,"Everett, WA",FM,Snohomish County Hams Club,http://www.wa7law.org/,,,,,47.99801,-122.19456
