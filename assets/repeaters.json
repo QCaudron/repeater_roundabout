@@ -136,7 +136,7 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"SVX Link: http:\/\/pnw220.net",
+        "Internet Access":"SvxLink: http:\/\/pnw220.net",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -476,7 +476,7 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"No",
+        "Internet Access":"",
         "Allow Internet Contacts":null
     },
     {
@@ -496,7 +496,7 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"No",
+        "Internet Access":"",
         "Allow Internet Contacts":null
     },
     {
@@ -1933,7 +1933,7 @@
         "Status":"in",
         "RepeaterBook ID":"358",
         "RepeaterBook State ID":"53",
-        "Internet Access":"Echolink Node# 568330",
+        "Internet Access":"EchoLink: 568330",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -2073,7 +2073,7 @@
         "Status":"in",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
-        "Internet Access":"AllStar node #48841",
+        "Internet Access":"AllStarLink: 48841",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -2473,7 +2473,7 @@
         "Status":"in",
         "RepeaterBook ID":"417",
         "RepeaterBook State ID":"53",
-        "Internet Access":"Allstar: 564560, Echolink: 512069",
+        "Internet Access":"AllStarLink: 564560, EchoLink: 512069",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -2493,7 +2493,7 @@
         "Status":"in",
         "RepeaterBook ID":"601",
         "RepeaterBook State ID":"53",
-        "Internet Access":"Allstar: 564563, EchoLink: 512619",
+        "Internet Access":"AllStarLink: 564563, EchoLink: 512619",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -2613,7 +2613,7 @@
         "Status":"in",
         "RepeaterBook ID":"6948",
         "RepeaterBook State ID":"53",
-        "Internet Access":"Allstar #66945",
+        "Internet Access":"AllStarLink: 66945",
         "Allow Internet Contacts":"Yes"
     },
     {
@@ -2653,7 +2653,7 @@
         "Status":"in",
         "RepeaterBook ID":"484",
         "RepeaterBook State ID":"53",
-        "Internet Access":"Allstar #66945  Is also linked to our 2m repeater.",
+        "Internet Access":"AllStarLink: 66945",
         "Allow Internet Contacts":"Yes"
     },
     {
