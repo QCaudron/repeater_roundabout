@@ -2597,6 +2597,66 @@
         "Allow Internet Contacts":null
     },
     {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"147.0125",
+        "Offset (MHz)":"+0.6",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.22499847,
+            -122.5
+        ],
+        "Group Name":"SCARC",
+        "Location":"Camano Island, WA",
+        "Mode":"NBFM[^nbfm]",
+        "Long Name":"Stanwood-Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"6948",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"Allstar #66945",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"223.88",
+        "Offset (MHz)":"-1.6",
+        "Tone (Hz)":"103.5",
+        "Coordinates":[
+            48.19150162,
+            -122.51499939
+        ],
+        "Group Name":"SCARC",
+        "Location":"Camano Island, WA",
+        "Mode":"FM",
+        "Long Name":"Stanwood-Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"4586",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"",
+        "Allow Internet Contacts":"No"
+    },
+    {
+        "Callsign":"W7PIG",
+        "Output (MHz)":"441.050",
+        "Offset (MHz)":"+5.0",
+        "Tone (Hz)":"127.3",
+        "Coordinates":[
+            48.22499847,
+            -122.5
+        ],
+        "Group Name":"SCARC",
+        "Location":"Camano Island, WA",
+        "Mode":"FM",
+        "Long Name":"Stanwood-Camano Amateur Radio Club",
+        "Website":"https:\/\/www.scarcwa.org\/",
+        "Status":"in",
+        "RepeaterBook ID":"484",
+        "RepeaterBook State ID":"53",
+        "Internet Access":"Allstar #66945  Is also linked to our 2m repeater.",
+        "Allow Internet Contacts":"Yes"
+    },
+    {
         "Callsign":"W7DG",
         "Output (MHz)":"147.1000",
         "Offset (MHz)":"0.6",
@@ -2790,66 +2850,6 @@
         "Mode":"NBFM[^nbfm]",
         "Long Name":"Steve N9VW's repeater system",
         "Website":"https:\/\/www.qrz.com\/db\/n9vw",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7PIG",
-        "Output (MHz)":"147.3600",
-        "Offset (MHz)":"0.6",
-        "Tone (Hz)":"127.3",
-        "Coordinates":[
-            48.225,
-            -122.4996
-        ],
-        "Group Name":"SCARC",
-        "Location":"Camano Island, WA",
-        "Mode":"FM",
-        "Long Name":"Stanwood-Camano Amateur Radio Club",
-        "Website":"https:\/\/www.scarcwa.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7PIG",
-        "Output (MHz)":"223.8800",
-        "Offset (MHz)":"-1.6",
-        "Tone (Hz)":"103.5",
-        "Coordinates":[
-            48.2247,
-            -122.4989
-        ],
-        "Group Name":"SCARC",
-        "Location":"Camano Island, WA",
-        "Mode":"FM",
-        "Long Name":"Stanwood-Camano Amateur Radio Club",
-        "Website":"https:\/\/www.scarcwa.org\/",
-        "Status":"response_needed",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
-        "Internet Access":null,
-        "Allow Internet Contacts":null
-    },
-    {
-        "Callsign":"W7PIG",
-        "Output (MHz)":"441.0500",
-        "Offset (MHz)":"5.0",
-        "Tone (Hz)":"127.3",
-        "Coordinates":[
-            48.08,
-            -122.3775
-        ],
-        "Group Name":"SCARC",
-        "Location":"Camano Island, WA",
-        "Mode":"FM",
-        "Long Name":"Stanwood-Camano Amateur Radio Club",
-        "Website":"https:\/\/www.scarcwa.org\/",
         "Status":"response_needed",
         "RepeaterBook ID":null,
         "RepeaterBook State ID":null,
