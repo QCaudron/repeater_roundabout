@@ -314,6 +314,46 @@ def test_write_group_pages_shows_internet_access(tmp_path, monkeypatch):
     assert "Echolink W7A-R" in row
 
 
+def test_write_group_pages_shows_combined_dstar_label_with_footnote(tmp_path, monkeypatch):
+    """A group page shows DSTAR repeaters as the configured label plus DSTAR, keeping its footnote marker."""
+    site(tmp_path, monkeypatch)
+    df = pd.DataFrame([repeater("W7A", "146.960", STATUS_IN, Mode="DSTAR")])
+    df["RR#"] = df.index + 1
+
+    write_group_pages(df, FORMS, config={"dstar_mode_label": "NBFM[^nbfm]"})
+
+    page = (tmp_path / "groups" / "psrg.md").read_text()
+    assert "NBFM[^nbfm] + DSTAR" in page
+
+
+def test_write_group_pages_update_link_sends_real_mode_for_dstar(tmp_path, monkeypatch):
+    """The Update link's prefilled Mode is "DSTAR" itself, not the display label with its footnote/suffix."""
+    site(tmp_path, monkeypatch)
+    df = pd.DataFrame([repeater("W7A", "146.960", STATUS_IN, Mode="DSTAR")])
+    df["RR#"] = df.index + 1
+
+    write_group_pages(df, FORMS, config={"dstar_mode_label": "NBFM[^nbfm]"})
+
+    page = (tmp_path / "groups" / "psrg.md").read_text()
+    row = next(line for line in page.splitlines() if line.startswith("| 1 "))
+    update_link = re.search(r"\[Update\]\((\S+)\)", row).group(1)
+    assert "entry.21=DSTAR" in update_link
+    assert "nbfm" not in update_link.lower()
+
+
+def test_write_group_pages_still_strips_footnote_from_genuine_nbfm(tmp_path, monkeypatch):
+    """A group page still strips the footnote from a repeater that's genuinely NBFM (not relabeled DSTAR)."""
+    site(tmp_path, monkeypatch)
+    df = pd.DataFrame([repeater("W7A", "146.960", STATUS_IN, Mode="NBFM[^nbfm]")])
+    df["RR#"] = df.index + 1
+
+    write_group_pages(df, FORMS, config={"dstar_mode_label": "NBFM[^nbfm]"})
+
+    row = next(line for line in (tmp_path / "groups" / "psrg.md").read_text().splitlines() if line.startswith("| 1 "))
+    assert "| NBFM " in row
+    assert "[^nbfm]" not in row
+
+
 def test_write_repeaters_md_omits_link_for_club_without_website(tmp_path, monkeypatch):
     """A club with no website is listed by name, not as a link to 'nan'."""
     monkeypatch.chdir(tmp_path)
@@ -327,6 +367,35 @@ def test_write_repeaters_md_omits_link_for_club_without_website(tmp_path, monkey
     page = (tmp_path / "repeaters.md").read_text()
     assert "PSRG\n: Puget Sound Repeater Group\n" in page
     assert "nan" not in page
+
+
+def test_write_repeaters_md_shows_plain_dstar_with_no_config(tmp_path, monkeypatch):
+    """With no dstar_mode_label configured, DSTAR repeaters are listed as plain DSTAR."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets" / "templates").mkdir(parents=True)
+    (tmp_path / "assets" / "templates" / "repeaters.md").write_text("{{ table }}\n{{ associations }}")
+    df = pd.DataFrame([repeater("W7A", "146.960", STATUS_IN, Mode="DSTAR")])
+    df["RR#"] = df.index + 1
+
+    write_repeaters_md(df)
+
+    page = (tmp_path / "repeaters.md").read_text()
+    assert "| DSTAR " in page
+    assert "NBFM" not in page
+
+
+def test_write_repeaters_md_shows_combined_dstar_label_from_config(tmp_path, monkeypatch):
+    """When the config relabels DSTAR as NBFM, repeaters.md lists it as both, e.g. "NBFM[^nbfm] + DSTAR"."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets" / "templates").mkdir(parents=True)
+    (tmp_path / "assets" / "templates" / "repeaters.md").write_text("{{ table }}\n{{ associations }}")
+    df = pd.DataFrame([repeater("W7A", "146.960", STATUS_IN, Mode="DSTAR")])
+    df["RR#"] = df.index + 1
+
+    write_repeaters_md(df, {"dstar_mode_label": "NBFM[^nbfm]"})
+
+    page = (tmp_path / "repeaters.md").read_text()
+    assert "NBFM[^nbfm] + DSTAR" in page
 
 
 def test_write_repeaters_md_shows_internet_access(tmp_path, monkeypatch):

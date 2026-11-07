@@ -19,6 +19,7 @@ from markdown_files import (
     STATUS_OUT,
     STATUS_RESPONSE_NEEDED,
     group_slug,
+    remove_df_footnotes,
     write_group_pages,
     write_index_md,
     write_map_md,
@@ -36,6 +37,26 @@ REPEATERS_JSON = "assets/repeaters.json"
 CLUBS_CSV = "assets/clubs.csv"
 CLUB_COLUMNS = ["Group Name", "Long Name", "Website", "Slug"]
 FORMS_JSON = "assets/forms.json"
+CONFIG_JSON = "assets/config.json"
+
+
+def load_config() -> dict:
+    """Return settings from CONFIG_JSON, or {} if it doesn't exist."""
+    path = Path(CONFIG_JSON)
+    return json.loads(path.read_text()) if path.exists() else {}
+
+
+def relabel_dstar(df: pd.DataFrame, config: dict) -> pd.DataFrame:
+    """
+    Return df with DSTAR repeaters' Mode fully replaced by config's "dstar_mode_label", if set.
+
+    Unlike markdown_files.dstar_display_mode (which adds "+ DSTAR" for display), this is a
+    straight relabeling: radio programming files should program these repeaters as whatever
+    mode the label names (e.g. plain NBFM), not as DSTAR.
+    """
+    label = config.get("dstar_mode_label", "DSTAR")
+    return df.assign(Mode=df["Mode"].replace("DSTAR", label))
+
 
 def parse_args() -> argparse.Namespace | SimpleNamespace:
     """
@@ -1404,13 +1425,6 @@ def apply_repeater_csv(
     return df.reset_index(drop=True), errors
 
 
-def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Return dataframe with Mode column footnotes removed.
-    """
-    return df.assign(Mode=df["Mode"].str.replace(r"\[.+\]", "", regex=True))
-
-
 if __name__ == "__main__":
     args = parse_args()
     if args.check:
@@ -1474,8 +1488,9 @@ if __name__ == "__main__":
         df = generate_repeater_df(args)
     ensure_col(df, "Status", STATUS_RESPONSE_NEEDED)
     df["Status"] = df["Status"].fillna(STATUS_RESPONSE_NEEDED)
+    config = load_config()
     with open(FORMS_JSON) as f:
-        write_group_pages(remove_df_footnotes(df), json.load(f), load_clubs())
+        write_group_pages(df, json.load(f), load_clubs(), config)
 
     # Only publish repeaters confirmed for this contest
     df = df.loc[df["Status"] == STATUS_IN]
@@ -1486,11 +1501,12 @@ if __name__ == "__main__":
     df.loc[no_tone, "Tone (Hz)"] = ""
 
     write_index_md(df, args.score)
-    write_repeaters_md(df)
+    write_repeaters_md(df, config)
     write_rules_md(df)
     write_map_md(df)
 
-    df = remove_df_footnotes(df)
+    # Radio programming files set these to whatever the config says to program, not DSTAR itself.
+    df = remove_df_footnotes(relabel_dstar(df, config))
     write_chirp_csv(df)
     write_icom_csv(df)
     write_d878_zip(df)

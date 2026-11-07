@@ -138,7 +138,29 @@ def write_rules_md(df: pd.DataFrame) -> None:
         f.write(rules)
 
 
-def write_repeaters_md(df: pd.DataFrame) -> None:
+def remove_df_footnotes(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Return dataframe with Mode column footnotes removed.
+    """
+    return df.assign(Mode=df["Mode"].str.replace(r"\[.+\]", "", regex=True))
+
+
+def dstar_display_mode(config: dict | None) -> str:
+    """
+    Return how a DSTAR repeater's Mode should read on a markdown page.
+
+    Parameters
+    ----------
+    config : dict, optional
+        Settings loaded from assets/config.json. If "dstar_mode_label" names a different
+        mode, DSTAR repeaters are shown as that label plus "DSTAR", e.g. "NBFM[^nbfm] + DSTAR".
+        Otherwise they're shown as plain "DSTAR".
+    """
+    label = (config or {}).get("dstar_mode_label", "DSTAR")
+    return f"{label} + DSTAR" if label != "DSTAR" else "DSTAR"
+
+
+def write_repeaters_md(df: pd.DataFrame, config: dict | None = None) -> None:
     """
     Write the repeaters.md file.
 
@@ -146,7 +168,11 @@ def write_repeaters_md(df: pd.DataFrame) -> None:
     ----------
     df : pd.DataFrame
         All of the repeaters.
+    config : dict, optional
+        Settings loaded from assets/config.json; see dstar_display_mode.
     """
+    df = df.assign(Mode=df["Mode"].replace("DSTAR", dstar_display_mode(config)))
+
     # Create the main markdown table
     table_cols = [
         "RR#",
@@ -331,7 +357,9 @@ def claim_slug(pages: dict, name: str, slug) -> str:
     return slug
 
 
-def write_group_pages(df: pd.DataFrame, forms: dict, clubs: pd.DataFrame | None = None) -> None:
+def write_group_pages(
+    df: pd.DataFrame, forms: dict, clubs: pd.DataFrame | None = None, config: dict | None = None
+) -> None:
     """
     Write groups/<group>.md for each group, replacing any existing group pages.
 
@@ -348,7 +376,14 @@ def write_group_pages(df: pd.DataFrame, forms: dict, clubs: pd.DataFrame | None 
     clubs : pd.DataFrame, optional
         The clubs (Group Name, Long Name, Website, Slug). A club with no repeaters in df gets
         a page saying we don't have any for it yet.
+    config : dict, optional
+        Settings loaded from assets/config.json; see dstar_display_mode.
     """
+    is_dstar = df["Mode"] == "DSTAR"
+    df = df.assign(Mode=df["Mode"].replace("DSTAR", dstar_display_mode(config)))
+    # Strip footnotes from genuine modes, but keep the DSTAR label's footnote (if any) intact.
+    df.loc[~is_dstar, "Mode"] = remove_df_footnotes(df.loc[~is_dstar])["Mode"]
+
     with open("assets/templates/group.md") as f:
         template = f.read()
     with open("assets/templates/group_empty.md") as f:
@@ -377,7 +412,9 @@ def write_group_pages(df: pd.DataFrame, forms: dict, clubs: pd.DataFrame | None 
                     "Tone (Hz)": plain_tone(r["Tone (Hz)"]),
                     **{k: text(r.get(k)) for k in INTERNET_FIELDS},
                     "Group Name": name,
-                    "Mode": text(r["Mode"]),
+                    # Send the real mode, not the display label (which may carry a footnote
+                    # marker and/or a "+ DSTAR" suffix for DSTAR repeaters).
+                    "Mode": "DSTAR" if is_dstar.loc[r.name] else text(r["Mode"]),
                     "Website": text(r["Website"]),
                     "RepeaterBook": repeaterbook_url(r),
                     "Coordinates": ", ".join(str(c) for c in r["Coordinates"]) if isinstance(r["Coordinates"], list) else "",

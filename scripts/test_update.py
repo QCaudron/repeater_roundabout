@@ -13,6 +13,7 @@ from update import (
     check_consistency,
     generate_repeater_df,
     load_clubs,
+    load_config,
     load_repeaters,
     looks_like_internet_id,
     merge_repeaters,
@@ -21,6 +22,7 @@ from update import (
     parse_repeaterbook_location,
     parse_repeaterbook_nodes,
     refresh_repeater,
+    relabel_dstar,
     repeater_from_csv_row,
     repeaters_from_wwara,
     rollover,
@@ -1263,3 +1265,33 @@ def test_repeater_from_csv_row_parses_repeaterbook_url():
     got = repeater_from_csv_row({"rb_link": link, "call": "W7DX"}, COLS)
 
     assert (got["RepeaterBook State ID"], got["RepeaterBook ID"]) == ("53", "1234")
+
+
+def test_load_config_returns_empty_dict_when_file_missing(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+
+    assert load_config() == {}
+
+
+def test_load_config_reads_json_file(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets").mkdir()
+    (tmp_path / "assets" / "config.json").write_text(json.dumps({"dstar_mode_label": "NBFM[^nbfm]"}))
+
+    assert load_config() == {"dstar_mode_label": "NBFM[^nbfm]"}
+
+
+def test_relabel_dstar_leaves_mode_alone_by_default():
+    df = pd.DataFrame({"Mode": ["DSTAR", "FM"]})
+
+    got = relabel_dstar(df, {})
+
+    assert got["Mode"].tolist() == ["DSTAR", "FM"]
+
+
+def test_relabel_dstar_replaces_mode_per_config():
+    df = pd.DataFrame({"Mode": ["DSTAR", "FM"]})
+
+    got = relabel_dstar(df, {"dstar_mode_label": "NBFM[^nbfm]"})
+
+    assert got["Mode"].tolist() == ["NBFM[^nbfm]", "FM"]
