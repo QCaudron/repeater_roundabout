@@ -89,7 +89,7 @@ RR#,Callsign,Output (MHz),Offset (MHz),Tone (Hz),Location,Mode,Group,Website,Rep
 88,WA7FW,146.7600,-0.6,103.5,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,135,53,,No,47.28,-122.29
 89,WA7FW,442.9500,+5.0,103.5,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,14514,53,,No,47.32,-122.33
 90,WA7FW,442.9250,+5.0,D036,"Federal Way, WA",FM,Federal Way Amateur Radio Club,https://fwarc.org/repeaters,14514,53,,No,47.32,-122.33
-91,NT7H,224.4000,+1.6,103.5,"Crawford Mtn, WA",FM,The Olympia Amateur Radio Society,http://Olyham.org,,,,Yes,46.8425527778,-122.7640055556
+91,NT7H,224.460,-1.6,103.5,"Crawford Mtn, WA",FM,The Olympia Amateur Radio Society,http://Olyham.org,433,53,,Yes,46.84280014,-122.76499939
 92,K7CH,53.0300,-1.7,114.8,"Baw Faw Peak, WA",FM,Carl K7CH's repeater system,https://www.qrz.com/db/k7ch,,,,No,46.4882,-123.2148
 93,NC7G,146.6600,+0.6,103.5,SeaTac,FM,Highline Amateur Radio Club,http://highlinearc.org,2780,53,,No,47.45,-122.29
 94,WA7ST,443.1000,+5.0,103.5,SeaTac,FM,Highline Amateur Radio Club,http://highlinearc.org,2779,53,,No,47.45087,-122.2868

@@ -1798,12 +1798,12 @@
     },
     {
         "Callsign":"NT7H",
-        "Output (MHz)":"224.4000",
-        "Offset (MHz)":"+1.6",
+        "Output (MHz)":"224.460",
+        "Offset (MHz)":"-1.6",
         "Tone (Hz)":"103.5",
         "Coordinates":[
-            46.8425527778,
-            -122.7640055556
+            46.84280014,
+            -122.76499939
         ],
         "Group Name":"Olyham",
         "Location":"Crawford Mtn, WA",
@@ -1811,8 +1811,8 @@
         "Long Name":"The Olympia Amateur Radio Society",
         "Website":"http:\/\/Olyham.org",
         "Status":"in",
-        "RepeaterBook ID":null,
-        "RepeaterBook State ID":null,
+        "RepeaterBook ID":"433",
+        "RepeaterBook State ID":"53",
         "Internet Access":"",
         "Allow Internet Contacts":"Yes"
     },

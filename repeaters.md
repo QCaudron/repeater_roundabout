@@ -118,7 +118,7 @@ Get started by [programming your radio](/files), and check out the repeaters' lo
 | 88    | FWARC             | WA7FW      | Federal Way, WA                     | FM                  |       146.7600 |           -0.6 |       103.5 |                                       |
 | 89    | FWARC             | WA7FW      | Federal Way, WA                     | FM                  |       442.9500 |           +5.0 |       103.5 |                                       |
 | 90    | FWARC             | WA7FW      | Federal Way, WA                     | FM                  |       442.9250 |           +5.0 |        D036 |                                       |
-| 91    | Olyham            | NT7H       | Crawford Mtn, WA                    | FM                  |       224.4000 |           +1.6 |       103.5 |                                       |
+| 91    | Olyham            | NT7H       | Crawford Mtn, WA                    | FM                  |        224.460 |           -1.6 |       103.5 |                                       |
 | 92    | K7CH              | K7CH       | Baw Faw Peak, WA                    | FM                  |        53.0300 |           -1.7 |       114.8 |                                       |
 | 93    | Highline ARC      | NC7G       | SeaTac                              | FM                  |       146.6600 |           +0.6 |       103.5 |                                       |
 | 94    | Highline ARC      | WA7ST      | SeaTac                              | FM                  |       443.1000 |           +5.0 |       103.5 |                                       |
