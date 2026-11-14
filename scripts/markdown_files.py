@@ -45,7 +45,7 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 
 {{ stats }}
 
-Please don't hesitate to send us your thoughts and feedback, either by email at [quentincaudron@gmail.com](mailto:quentincaudron@gmail.com) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
+Please don't hesitate to send us your thoughts and feedback, either by email (<span id="contact-email">enable JavaScript to see our email</span><script>document.getElementById("contact-email").innerHTML='<a href="mailto:'+["singlethink.net","matt"].reverse().join("@")+'">'+["singlethink.net","matt"].reverse().join("@")+'</a>';</script>) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
 
 <br />
 
