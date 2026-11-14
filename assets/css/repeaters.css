@@ -1,0 +1,9 @@
+/* Widen the repeaters table beyond its narrow content column so the
+   rightmost column isn't cut off, but only where there's room to spare. */
+@media (min-width: 750px) {
+    table {
+        width: calc(100% + 140px);
+        margin-left: -70px;
+        margin-right: -70px;
+    }
+}

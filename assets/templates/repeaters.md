@@ -1,6 +1,8 @@
 ---
 title: Participating Repeaters
 subtitle: Repeaters joining in the Repeater Roundabout fun.
+page-css:
+  - assets/css/repeaters.css
 ---
 
 <div id="spectra"></div>
