@@ -5,6 +5,30 @@ import pandas as pd
 
 from programming_files import band
 
+# Known log column header variants, keyed by stripped/lowercased header text.
+LOG_COLUMN_ALIASES = {
+    "contact's callsign": "Callsign",
+    "callsign": "Callsign",
+    "signal report": "Report",
+    "report": "Report",
+    "date": "Date",
+    "time": "Time",
+    "rr#": "RR#",
+    "qrp": "QRP",
+}
+
+REQUIRED_LOG_COLUMNS = ["Callsign", "Report", "RR#"]
+
+
+def normalize_log_columns(logs: pd.DataFrame) -> pd.DataFrame:
+    """Rename log columns to their canonical names, tolerating case and whitespace differences."""
+    rename_map = {
+        col: LOG_COLUMN_ALIASES[col.strip().lower()]
+        for col in logs.columns
+        if col.strip().lower() in LOG_COLUMN_ALIASES
+    }
+    return logs.rename(columns=rename_map)
+
 
 def at_least_three_decimals(frequency: float) -> str:
     """
@@ -55,7 +79,11 @@ def signal_report_to_readability(report: str) -> int | None:
     Optional[int]
         The readability of a signal report, or None if it couldn't be interpreted.
     """
-    report = report.upper().strip().replace("?", "")
+    # A previously-unparseable report can come back as NaN (e.g. after a pandas astype(str)
+    # round-trip, which leaves NaN as-is instead of stringifying it). Treat that as already-reported.
+    if pd.isna(report):
+        return None
+    report = str(report).upper().strip().replace("?", "")
 
     # Will match CM4, CM5+, CM3.5, CM4.5+
     is_cm = re.fullmatch(
@@ -181,8 +209,12 @@ def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> tuple[
     for file in logs_files:
         callsign = file.stem.split(" ")[0].split(",")[0].split("-")[0].upper()
         logs = pd.read_csv(file, index_col=None)
-        logs = logs.rename(columns={"Contact's Callsign": "Callsign", "Signal Report": "Report"})
-        logs = logs.dropna(subset=["Callsign", "Report", "RR#"])
+        logs = normalize_log_columns(logs)
+        missing_cols = [col for col in REQUIRED_LOG_COLUMNS if col not in logs.columns]
+        if missing_cols:
+            print(f"Skipping '{file.name}': missing required column(s) {missing_cols}.")
+            continue
+        logs = logs.dropna(subset=REQUIRED_LOG_COLUMNS)
         logs["QRP"] = logs["QRP"].notna() * logs["QRP"].astype(bool)
         logs["Logger"] = callsign
         logs["Ordering"] = range(len(logs))
