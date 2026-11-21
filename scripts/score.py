@@ -83,7 +83,10 @@ def signal_report_to_readability(report: str) -> int | None:
     # round-trip, which leaves NaN as-is instead of stringifying it). Treat that as already-reported.
     if pd.isna(report):
         return None
-    report = str(report).upper().strip().replace("?", "")
+    report = str(report).upper().strip()
+    # Strip stray typo'd characters (e.g. a backtick or stray punctuation) that carry no
+    # meaning in a signal report, so a report like "CM5`" is still recognized as "CM5".
+    report = re.sub(r"[^A-Z0-9+\-./ ]", "", report)
 
     # Will match CM4, CM5+, CM3.5, CM4.5+
     is_cm = re.fullmatch(

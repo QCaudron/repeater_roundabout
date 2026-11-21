@@ -20,6 +20,13 @@ def test_signal_report_to_readability_tolerates_nan():
     assert signal_report_to_readability(pd.NA) is None
 
 
+def test_signal_report_to_readability_strips_stray_characters():
+    """A stray typo'd character (e.g. a backtick) shouldn't prevent an otherwise-valid report from parsing."""
+    assert signal_report_to_readability("CM5`") == 5
+    assert signal_report_to_readability("5'9") == 5
+    assert signal_report_to_readability("!59") == 5
+
+
 def _repeaters_df() -> pd.DataFrame:
     return pd.DataFrame(
         {
