@@ -30,7 +30,7 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 - Number of repeaters activated : 77
 - Number of participants who submitted logs : 16
 
-Please don't hesitate to send us your thoughts and feedback, either by email (<span id="contact-email">enable JavaScript to see our email</span><script>document.getElementById("contact-email").innerHTML='<a href="mailto:'+["singlethink.net","matt"].reverse().join("@")+'">'+["singlethink.net","matt"].reverse().join("@")+'</a>';</script>) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
+Please don't hesitate to send us your thoughts and feedback, either by email (<span id="contact-email">enable JavaScript to see our email</span><script>(function(){var addr=["singlethink.net","matt"].reverse().join("@");var a=document.createElement("a");a.href="mailto:"+addr;a.textContent=addr;document.getElementById("contact-email").replaceWith(a);})();</script>) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
 
 <br />
 
