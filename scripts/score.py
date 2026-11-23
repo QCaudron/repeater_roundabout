@@ -123,7 +123,6 @@ def signal_report_to_readability(report: str) -> int | None:
     if is_rst:
         return int(is_rst.group(1))
 
-    print(f"Unable to parse '{report}'.")
     return None  # if no match, return None
 
 
@@ -210,19 +209,27 @@ def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> tuple[
     contest_scores = {}
 
     for file in logs_files:
+        # Line 1 is the header; row N of the parsed CSV (0-indexed) is file line N + 2.
+        raw_lines = file.read_text().splitlines()
         callsign = file.stem.split(" ")[0].split(",")[0].split("-")[0].upper()
         logs = pd.read_csv(file, index_col=None)
         logs = normalize_log_columns(logs)
         missing_cols = [col for col in REQUIRED_LOG_COLUMNS if col not in logs.columns]
         if missing_cols:
-            print(f"Skipping '{file.name}': missing required column(s) {missing_cols}.")
+            header = raw_lines[0] if raw_lines else ""
+            print(f"Skipping '{file.name}': missing required column(s) {missing_cols}. Line 1: {header}")
             continue
         logs = logs.dropna(subset=REQUIRED_LOG_COLUMNS)
         logs["QRP"] = logs["QRP"].notna() * logs["QRP"].astype(bool)
         logs["Logger"] = callsign
         logs["Ordering"] = range(len(logs))
         logs["Callsign"] = logs["Callsign"].str.upper()
-        logs["Report"] = logs["Report"].astype(str).apply(signal_report_to_readability)
+        parsed_reports = logs["Report"].astype(str).apply(signal_report_to_readability)
+        for idx in logs.index[parsed_reports.isna()]:
+            line_no = idx + 2
+            raw_line = raw_lines[idx + 1] if idx + 1 < len(raw_lines) else ""
+            print(f"Unable to parse signal report in '{file.name}' line {line_no}: {raw_line}")
+        logs["Report"] = parsed_reports
         n_entries = len(logs)
 
         # Clean up the log sheet

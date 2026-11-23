@@ -105,4 +105,5 @@ def test_score_competition_reports_unparseable_signal_report_without_crashing(tm
 
     assert leaderboard["Callsign"].str.contains("GOOD").any()
     captured = capsys.readouterr()
-    assert "Unable to parse 'NOT-A-REPORT'." in captured.out
+    assert "line 3" in captured.out
+    assert "2026-01-01,1201,N7ITU,not-a-report,2," in captured.out
