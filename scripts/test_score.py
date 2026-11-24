@@ -123,7 +123,10 @@ def test_score_competition_returns_contacts(tmp_path, monkeypatch):
 
     *_, contacts = score_competition(_repeaters_df(), logs_dir=str(logs_dir))
 
-    assert contacts.to_numpy().tolist() == [["KI6KTE", "KJ7EXM", 1], ["KI6KTE", "N7ITU", 2]]
+    assert contacts[["Logger", "Callsign", "RR#"]].to_numpy().tolist() == [
+        ["KI6KTE", "KJ7EXM", 1],
+        ["KI6KTE", "N7ITU", 2],
+    ]
 
 
 def test_score_competition_contacts_use_merged_repeater_numbers(tmp_path, monkeypatch):
@@ -139,4 +142,4 @@ def test_score_competition_contacts_use_merged_repeater_numbers(tmp_path, monkey
 
     *_, contacts = score_competition(_repeaters_df(), logs_dir=str(logs_dir))
 
-    assert contacts.to_numpy().tolist() == [["KI6KTE", "KJ7EXM", 25]]
+    assert contacts[["Logger", "Callsign", "RR#"]].to_numpy().tolist() == [["KI6KTE", "KJ7EXM", 25]]

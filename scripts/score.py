@@ -368,7 +368,8 @@ def score_competition(
     for primary, secondary in dupe_rrs:
         logs_df.loc[logs_df["RR#"] == secondary, "RR#"] = primary
 
-    contacts = logs_df[["Logger", "Callsign", "RR#"]].copy()
+    time_cols = [c for c in ("Date", "Time") if c in logs_df.columns]
+    contacts = logs_df[["Logger", "Callsign", "RR#", *time_cols]].copy()
 
     # Calculate the number of activations per repeater
     agg_cols = {

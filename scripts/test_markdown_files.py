@@ -447,6 +447,36 @@ def test_pew_pew_data_links_located_stations_to_repeaters():
     assert data["links"] == [["K7DRQ", 1, 2], ["KI6KTE", 1, 3]]
 
 
+def test_pew_pew_data_times_events_from_date_and_time_columns():
+    df = pd.DataFrame([repeater("WW7PSR", "146.960", STATUS_IN, **{"RR#": 1})])
+    contacts = pd.DataFrame({
+        "Logger": ["KI6KTE", "KI6KTE"],
+        "Callsign": ["K7DRQ", "K7DRQ"],
+        "RR#": [1, 1],
+        "Date": ["November 14", "November 15"],
+        "Time": ["0:30", "12:00"],
+    })
+    locations = {"KI6KTE": [47.0, -122.0], "K7DRQ": [48.0, -121.0]}
+
+    data = pew_pew_data(df, contacts, locations)
+
+    # November 14 00:30 is 30 minutes into the contest; November 15 12:00 is 1 day 12 hours in.
+    assert sorted(data["events"]) == sorted(
+        [["K7DRQ", 1, 30], ["KI6KTE", 1, 30], ["K7DRQ", 1, 1440 + 720], ["KI6KTE", 1, 1440 + 720]]
+    )
+    assert data["contest_minutes"] == 48 * 60
+
+
+def test_pew_pew_data_defaults_events_to_minute_zero_without_date_time():
+    df = pd.DataFrame([repeater("WW7PSR", "146.960", STATUS_IN, **{"RR#": 1})])
+    contacts = pd.DataFrame({"Logger": ["KI6KTE"], "Callsign": ["K7DRQ"], "RR#": [1]})
+    locations = {"KI6KTE": [47.0, -122.0], "K7DRQ": [48.0, -121.0]}
+
+    data = pew_pew_data(df, contacts, locations)
+
+    assert sorted(data["events"]) == [["K7DRQ", 1, 0], ["KI6KTE", 1, 0]]
+
+
 def test_pew_pew_map_escapes_html(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     (tmp_path / "assets" / "templates").mkdir(parents=True)

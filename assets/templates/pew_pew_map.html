@@ -1,13 +1,18 @@
 {% include leaflet.html %}
 
-Each line is a station's contacts through a <span style="color: #165a0a">repeater (green)</span>; thicker lines mean more contacts. <span style="color: #c92a2a">Red</span> stations submitted logs; <span style="color: #1c7ed6">blue</span> stations were contacted. Stations are placed at the center of the ZIP code on their FCC license.
+This map replays the contest: each flash is a station's contact through a <span style="color: #165a0a">repeater (green)</span>, timed to when it happened. <span style="color: #c92a2a">Red</span> stations submitted logs; <span style="color: #1c7ed6">blue</span> stations were contacted. Stations are placed at the center of the ZIP code on their FCC license. Add <code>?duration=</code> (seconds) to the page URL to replay faster or slower than the default.
 
-<div id="pew-pew-map" style="height: 600px;" role="img" aria-label="Map of contacts between stations through the repeaters"></div>
+<div id="pew-pew-map" style="height: 600px;" role="img" aria-label="Replay of contacts between stations through the repeaters over the course of the contest"></div>
 
 <style>
-    .pew { stroke-dasharray: 4 8; animation: pew 1.2s linear infinite; }
-    @keyframes pew { to { stroke-dashoffset: -12; } }
-    @media (prefers-reduced-motion: reduce) { .pew { animation: none; } }
+    .pew-clock {
+        background: rgba(0, 0, 0, 0.75);
+        color: #0f0;
+        font-family: "SF Mono", "Courier New", monospace;
+        font-size: 1.1em;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
 </style>
 
 <script>
@@ -37,11 +42,6 @@ Each line is a station's contacts through a <span style="color: #165a0a">repeate
     for (const [rr, , lat, lon] of data.repeaters) repeaters[rr] = [lat, lon];
     for (const [call, lat, lon] of data.stations) stations[call] = [lat, lon];
 
-    for (const [call, rr, n] of data.links) {
-        L.polyline(arc(stations[call], repeaters[rr]), {
-            className: "pew", color: "#e8590c", weight: 1 + Math.log2(n), opacity: 0.7
-        }).bindTooltip(text(call + " via RR# " + rr + ": " + n + (n === 1 ? " contact" : " contacts"))).addTo(map);
-    }
     for (const [call, lat, lon, participant] of data.stations) {
         L.circleMarker([lat, lon], {
             radius: participant ? 5 : 3, color: participant ? "#c92a2a" : "#1c7ed6", fillOpacity: 0.9
@@ -53,5 +53,57 @@ Each line is a station's contacts through a <span style="color: #165a0a">repeate
 
     // Frame the repeaters; far-off Internet contacts would otherwise zoom out to the whole country
     map.fitBounds(data.repeaters.map(r => [r[2], r[3]]), { padding: [20, 20] });
+
+    // Replay the contest: the virtual clock runs 48 contest-hours in `duration` real seconds (default ~2min).
+    const totalMinutes = data.contest_minutes;
+    const duration = Number(new URLSearchParams(location.search).get("duration")) || 120;
+    const msPerMinute = duration * 1000 / totalMinutes;
+
+    const eventsByMinute = new Map();
+    for (const [call, rr, minute] of data.events) {
+        if (!eventsByMinute.has(minute)) eventsByMinute.set(minute, []);
+        eventsByMinute.get(minute).push([call, rr]);
+    }
+
+    // Respect reduced motion by skipping the fade instead of hiding the flash entirely.
+    const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function flash(call, rr) {
+        if (!(call in stations) || !(rr in repeaters)) return;
+        const line = L.polyline(arc(stations[call], repeaters[rr]), {
+            className: "pew-flash", color: "#e8590c", weight: 2, opacity: 0.9
+        }).addTo(map);
+        const el = line.getElement();
+        if (el && !reducedMotion) {
+            el.style.transition = "opacity 100ms linear";
+            requestAnimationFrame(() => requestAnimationFrame(() => { el.style.opacity = 0; }));
+        }
+        setTimeout(() => map.removeLayer(line), 150);
+    }
+
+    const clock = L.control({ position: "bottomleft" });
+    clock.onAdd = () => L.DomUtil.create("div", "pew-clock leaflet-bar");
+    clock.addTo(map);
+    const clockEl = document.querySelector(".pew-clock");
+
+    function formatClock(minute) {
+        const day = minute < 1440 ? 14 : 15;
+        const h = String(Math.floor((minute % 1440) / 60)).padStart(2, "0");
+        const m = String(minute % 60).padStart(2, "0");
+        return `Nov ${day}, ${h}:${m}`;
+    }
+
+    let startTime = null, lastMinute = -1;
+    function tick(now) {
+        if (startTime === null) startTime = now;
+        const minute = Math.min(totalMinutes - 1, Math.floor((now - startTime) / msPerMinute));
+        for (let m = lastMinute + 1; m <= minute; m++) {
+            for (const [call, rr] of eventsByMinute.get(m) || []) flash(call, rr);
+        }
+        lastMinute = minute;
+        clockEl.textContent = formatClock(minute);
+        if (minute < totalMinutes - 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
 })();
 </script>

@@ -131,6 +131,19 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
         f.write(index)
 
 
+CONTEST_MINUTES = 48 * 60  # the Roundabout runs for 48 hours, Nov 14 00:00 to Nov 15 23:59
+
+
+def _contact_minutes(contacts: pd.DataFrame) -> pd.Series:
+    """Minutes into the contest (from its Nov 14 00:00 start) each contact happened, or 0 if undated."""
+    if "Date" not in contacts.columns or "Time" not in contacts.columns:
+        return pd.Series(0, index=contacts.index)
+    start = pd.Timestamp("1900-11-14")
+    parsed = pd.to_datetime(contacts["Date"] + " " + contacts["Time"], format="%B %d %H:%M", errors="coerce")
+    minutes = (parsed - start).dt.total_seconds() // 60
+    return minutes.fillna(0).clip(0, CONTEST_MINUTES - 1).astype(int)
+
+
 def pew_pew_data(df: pd.DataFrame, contacts: pd.DataFrame, locations: dict[str, list[float]]) -> dict:
     """
     Build the pew pew map's data: every located station's legs to the repeaters it made contacts through.
@@ -140,7 +153,7 @@ def pew_pew_data(df: pd.DataFrame, contacts: pd.DataFrame, locations: dict[str, 
     df : pd.DataFrame
         All of the repeaters.
     contacts : pd.DataFrame
-        Every contact's Logger, contacted Callsign, and RR#.
+        Every contact's Logger, contacted Callsign, and RR#, and optionally its Date and Time.
     locations : dict[str, list[float]]
         [lat, lon] of each located station, keyed by base callsign.
 
@@ -148,27 +161,33 @@ def pew_pew_data(df: pd.DataFrame, contacts: pd.DataFrame, locations: dict[str, 
     -------
     dict
         "repeaters" as [RR#, label, lat, lon], "stations" as [callsign, lat, lon, is participant],
-        and "links" as [callsign, RR#, number of contacts].
+        "links" as [callsign, RR#, number of contacts], "events" as [callsign, RR#, contest minute]
+        (one per contact leg, for animating the map), and "contest_minutes" (the contest's length).
     """
     repeaters = {
         int(r["RR#"]): [int(r["RR#"]), f"RR# {r['RR#']} {r['Callsign']} ({r['Output (MHz)']})", *r["Coordinates"]]
         for _, r in df.loc[df["Coordinates"].map(has_coordinates)].iterrows()
     }
     # Logs spell the same station several ways ("K7DRQ ", "K7DRQ/M")
-    contacts = contacts[["Logger", "Callsign", "RR#"]].assign(
-        Logger=contacts["Logger"].map(base_callsign), Callsign=contacts["Callsign"].map(base_callsign)
+    contacts = contacts.assign(
+        Logger=contacts["Logger"].map(base_callsign),
+        Callsign=contacts["Callsign"].map(base_callsign),
+        Minute=_contact_minutes(contacts),
     )
-    links = Counter(
-        (station, int(rr))
-        for logger, call, rr in contacts[["Logger", "Callsign", "RR#"]].itertuples(index=False)
+    events = sorted(
+        [station, int(rr), int(minute)]
+        for logger, call, rr, minute in contacts[["Logger", "Callsign", "RR#", "Minute"]].itertuples(index=False)
         for station in (logger, call)
         if station in locations and int(rr) in repeaters
     )
+    links = Counter((station, rr) for station, rr, _ in events)
     participants = set(contacts["Logger"])
     return {
         "repeaters": [repeaters[rr] for rr in sorted({rr for _, rr in links})],
         "stations": [[s, *locations[s], s in participants] for s in sorted({s for s, _ in links})],
         "links": [[s, rr, n] for (s, rr), n in sorted(links.items())],
+        "events": events,
+        "contest_minutes": CONTEST_MINUTES,
     }
 
 
