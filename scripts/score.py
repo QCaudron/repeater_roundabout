@@ -171,7 +171,9 @@ def write_personal_results_md(logs: pd.DataFrame, summary: dict, callsign: str) 
         f.write(template)
 
 
-def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> tuple[pd.DataFrame, str, str, str]:
+def score_competition(
+    repeaters: pd.DataFrame, logs_dir: str = "logs"
+) -> tuple[pd.DataFrame, str, str, str, pd.DataFrame]:
     """
     Score the competition and return the results.
 
@@ -192,6 +194,8 @@ def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> tuple[
         A markdown-formatted table representation of the repeater leaderboard.
     str
         A markdown-formatted bullet list of some statistics about the contest.
+    pd.DataFrame
+        Every scored contact's Logger, contacted Callsign, and RR#.
     """
     logs_dir = Path(logs_dir)
     if not logs_dir.exists():
@@ -364,6 +368,8 @@ def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> tuple[
     for primary, secondary in dupe_rrs:
         logs_df.loc[logs_df["RR#"] == secondary, "RR#"] = primary
 
+    contacts = logs_df[["Logger", "Callsign", "RR#"]].copy()
+
     # Calculate the number of activations per repeater
     agg_cols = {
         "Group": "first",
@@ -410,4 +416,5 @@ def score_competition(repeaters: pd.DataFrame, logs_dir: str = "logs") -> tuple[
         by_repeater.to_markdown(disable_numparse=True, colalign=["right", "left", "right", "right", "right"]),
         by_club.to_markdown(colalign=["right", "left", "right"]),
         stats_msg,
+        contacts,
     )

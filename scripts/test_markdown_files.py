@@ -8,8 +8,11 @@ from markdown_files import (
     STATUS_IN,
     STATUS_OUT,
     STATUS_RESPONSE_NEEDED,
+    pew_pew_data,
+    pew_pew_map,
     write_group_pages,
     write_map_md,
+    write_pew_pew_demo,
     write_repeaters_md,
 )
 
@@ -422,3 +425,50 @@ def test_write_repeaters_md_shows_internet_access(tmp_path, monkeypatch):
     assert rows["W7B"].split("|")[-2].strip() == ""
     assert rows["W7C"].split("|")[-2].strip() == ""
     assert rows["W7D"].split("|")[-2].strip() == ""
+
+
+def test_pew_pew_data_links_located_stations_to_repeaters():
+    df = pd.DataFrame([
+        repeater("WW7PSR", "146.960", STATUS_IN, **{"RR#": 1}),
+        repeater("WA7SAR", "145.270", STATUS_IN, **{"RR#": 2, "Coordinates": None}),
+    ])
+    contacts = pd.DataFrame({
+        "Logger": ["KI6KTE", "KI6KTE", "KI6KTE", "K7DRQ"],
+        "Callsign": ["K7DRQ ", "K7DRQ/M", "N0LOC", "KI6KTE"],  # spelling variants are one station
+        "RR#": [1, 1, 1, 2],
+    })
+    locations = {"KI6KTE": [47.0, -122.0], "K7DRQ": [48.0, -121.0]}
+
+    data = pew_pew_data(df, contacts, locations)
+
+    assert data["repeaters"] == [[1, "RR# 1 WW7PSR (146.960)", 47.6395, -122.3693]]
+    assert data["stations"] == [["K7DRQ", 48.0, -121.0, True], ["KI6KTE", 47.0, -122.0, True]]
+    # RR# 2 has no coordinates and N0LOC has no location, so those legs are dropped
+    assert data["links"] == [["K7DRQ", 1, 2], ["KI6KTE", 1, 3]]
+
+
+def test_pew_pew_map_escapes_html(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets" / "templates").mkdir(parents=True)
+    (tmp_path / "assets" / "templates" / "pew_pew_map.html").write_text("<script>{{ pew_pew_data }}</script>")
+    df = pd.DataFrame([repeater("</script><b>", "146.960", STATUS_IN, **{"RR#": 1})])
+    contacts = pd.DataFrame({"Logger": ["KI6KTE"], "Callsign": ["K7DRQ"], "RR#": [1]})
+
+    html = pew_pew_map(df, contacts, {"KI6KTE": [47.0, -122.0]})
+
+    assert "</script><b>" not in html
+    assert "{{" not in html and "}}" not in html  # Liquid would mangle these
+
+
+def test_write_pew_pew_demo_inlines_leaflet(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "_includes").mkdir()
+    (tmp_path / "_includes" / "leaflet.html").write_text('<script src="leaflet.js"></script>')
+
+    write_pew_pew_demo('{% include leaflet.html %}\n<div id="pew-pew-map"></div>')
+
+    page = (tmp_path / "pew_pew_demo.html").read_text()
+    assert page.startswith("<!DOCTYPE html>")
+    assert '<script src="leaflet.js"></script>' in page
+    assert '<div id="pew-pew-map"></div>' in page
+    assert "{%" not in page  # nothing serves the demo through Jekyll

@@ -1,0 +1,57 @@
+{% include leaflet.html %}
+
+Each line is a station's contacts through a <span style="color: #165a0a">repeater (green)</span>; thicker lines mean more contacts. <span style="color: #c92a2a">Red</span> stations submitted logs; <span style="color: #1c7ed6">blue</span> stations were contacted. Stations are placed at the center of the ZIP code on their FCC license.
+
+<div id="pew-pew-map" style="height: 600px;" role="img" aria-label="Map of contacts between stations through the repeaters"></div>
+
+<style>
+    .pew { stroke-dasharray: 4 8; animation: pew 1.2s linear infinite; }
+    @keyframes pew { to { stroke-dashoffset: -12; } }
+    @media (prefers-reduced-motion: reduce) { .pew { animation: none; } }
+</style>
+
+<script>
+(function () {
+    const data = JSON.parse(atob("{{ pew_pew_data }}"));
+    const map = L.map("pew-pew-map");
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    // Tooltips as text nodes, so callsigns from submitted logs are never parsed as HTML
+    const text = s => document.createTextNode(s);
+
+    // Bow each leg into an arc so legs between nearby points stay distinguishable
+    function arc(a, b) {
+        const mid = [(a[0] + b[0]) / 2 - (b[1] - a[1]) * 0.2, (a[1] + b[1]) / 2 + (b[0] - a[0]) * 0.2];
+        const pts = [];
+        for (let i = 0; i <= 20; i++) {
+            const t = i / 20, u = 1 - t;
+            pts.push([u * u * a[0] + 2 * u * t * mid[0] + t * t * b[0], u * u * a[1] + 2 * u * t * mid[1] + t * t * b[1]]);
+        }
+        return pts;
+    }
+
+    const repeaters = {}, stations = {};
+    for (const [rr, , lat, lon] of data.repeaters) repeaters[rr] = [lat, lon];
+    for (const [call, lat, lon] of data.stations) stations[call] = [lat, lon];
+
+    for (const [call, rr, n] of data.links) {
+        L.polyline(arc(stations[call], repeaters[rr]), {
+            className: "pew", color: "#e8590c", weight: 1 + Math.log2(n), opacity: 0.7
+        }).bindTooltip(text(call + " via RR# " + rr + ": " + n + (n === 1 ? " contact" : " contacts"))).addTo(map);
+    }
+    for (const [call, lat, lon, participant] of data.stations) {
+        L.circleMarker([lat, lon], {
+            radius: participant ? 5 : 3, color: participant ? "#c92a2a" : "#1c7ed6", fillOpacity: 0.9
+        }).bindTooltip(text(call + (participant ? " (submitted a log)" : ""))).addTo(map);
+    }
+    for (const [, label, lat, lon] of data.repeaters) {
+        L.circleMarker([lat, lon], { radius: 4, color: "#165a0a", fillOpacity: 1 }).bindTooltip(text(label)).addTo(map);
+    }
+
+    // Frame the repeaters; far-off Internet contacts would otherwise zoom out to the whole country
+    map.fitBounds(data.repeaters.map(r => [r[2], r[3]]), { padding: [20, 20] });
+})();
+</script>

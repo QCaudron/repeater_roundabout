@@ -1,7 +1,8 @@
+import base64
 import html
 import json
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlencode
@@ -13,6 +14,7 @@ from scipy.spatial.distance import pdist
 
 from programming_files import has_coordinates
 from score import score_competition
+from uls import base_callsign, ham_locations
 
 STATUS_RESPONSE_NEEDED = "response_needed"
 STATUS_IN = "in"
@@ -46,6 +48,12 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 {{ stats }}
 
 Please don't hesitate to send us your thoughts and feedback, either by email (<span id="contact-email">enable JavaScript to see our email</span><script>(function(){var addr=["singlethink.net","matt"].reverse().join("@");var a=document.createElement("a");a.href="mailto:"+addr;a.textContent=addr;document.getElementById("contact-email").replaceWith(a);})();</script>) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
+
+<br />
+
+## Contact Map
+
+{{ pew_pew_map }}
 
 <br />
 
@@ -89,13 +97,17 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
     df = df.copy()
 
     if score_results:
-        leaderboard, by_repeater, by_club, stats = score_competition(df)
+        leaderboard, by_repeater, by_club, stats, contacts = score_competition(df)
+        locations = ham_locations(set(contacts["Logger"]) | set(contacts["Callsign"]))
+        contact_map = pew_pew_map(df, contacts, locations)
+        if contact_map:
+            write_pew_pew_demo(contact_map)
         index_content = results_index_content  # write the results data to the index
     else:
         for file in Path("results").glob("*.md"):
             file.unlink()
         leaderboard = pd.DataFrame([0])
-        by_club, by_repeater, stats = "", "", ""
+        by_club, by_repeater, stats, contact_map = "", "", "", ""
         index_content = ongoing_index_content  # write the ongoing contest text to the index
 
     now = datetime.now().strftime("%A %B %d at %H:%M")
@@ -113,9 +125,72 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
     index = index.replace("{{ repeater_standings }}", by_repeater)
     index = index.replace("{{ winning_station }}", str(leaderboard.iloc[0].get("Callsign")))
     index = index.replace("{{ stats }}", stats)
+    index = index.replace("{{ pew_pew_map }}", contact_map)
 
     with open("index.md", "w") as f:
         f.write(index)
+
+
+def pew_pew_data(df: pd.DataFrame, contacts: pd.DataFrame, locations: dict[str, list[float]]) -> dict:
+    """
+    Build the pew pew map's data: every located station's legs to the repeaters it made contacts through.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        All of the repeaters.
+    contacts : pd.DataFrame
+        Every contact's Logger, contacted Callsign, and RR#.
+    locations : dict[str, list[float]]
+        [lat, lon] of each located station, keyed by base callsign.
+
+    Returns
+    -------
+    dict
+        "repeaters" as [RR#, label, lat, lon], "stations" as [callsign, lat, lon, is participant],
+        and "links" as [callsign, RR#, number of contacts].
+    """
+    repeaters = {
+        int(r["RR#"]): [int(r["RR#"]), f"RR# {r['RR#']} {r['Callsign']} ({r['Output (MHz)']})", *r["Coordinates"]]
+        for _, r in df.loc[df["Coordinates"].map(has_coordinates)].iterrows()
+    }
+    # Logs spell the same station several ways ("K7DRQ ", "K7DRQ/M")
+    contacts = contacts[["Logger", "Callsign", "RR#"]].assign(
+        Logger=contacts["Logger"].map(base_callsign), Callsign=contacts["Callsign"].map(base_callsign)
+    )
+    links = Counter(
+        (station, int(rr))
+        for logger, call, rr in contacts[["Logger", "Callsign", "RR#"]].itertuples(index=False)
+        for station in (logger, call)
+        if station in locations and int(rr) in repeaters
+    )
+    participants = set(contacts["Logger"])
+    return {
+        "repeaters": [repeaters[rr] for rr in sorted({rr for _, rr in links})],
+        "stations": [[s, *locations[s], s in participants] for s in sorted({s for s, _ in links})],
+        "links": [[s, rr, n] for (s, rr), n in sorted(links.items())],
+    }
+
+
+def pew_pew_map(df: pd.DataFrame, contacts: pd.DataFrame, locations: dict[str, list[float]]) -> str:
+    """HTML for the pew pew map of contacts through repeaters, or an empty string if there's nothing to map."""
+    data = pew_pew_data(df, contacts, locations)
+    if not data["links"]:
+        return ""
+    # Base64 keeps log-sourced text from breaking out of the <script> or being read as Liquid/Markdown.
+    encoded = base64.b64encode(json.dumps(data).encode()).decode()
+    with open("assets/templates/pew_pew_map.html") as f:
+        return f.read().replace("{{ pew_pew_data }}", encoded)
+
+
+def write_pew_pew_demo(contact_map: str) -> None:
+    """Write pew_pew_demo.html, a standalone page to preview the pew pew map in a browser without Jekyll."""
+    leaflet = Path("_includes/leaflet.html").read_text()
+    body = contact_map.replace("{% include leaflet.html %}", leaflet)
+    Path("pew_pew_demo.html").write_text(
+        f'<!DOCTYPE html>\n<html>\n<head><meta charset="utf-8"><title>Contact Map</title></head>\n'
+        f"<body>\n{body}\n</body>\n</html>\n"
+    )
 
 
 def write_rules_md(df: pd.DataFrame) -> None:

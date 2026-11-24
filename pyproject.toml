@@ -50,5 +50,5 @@ select = [
 convention = "numpy"
 
 [tool.ruff.lint.isort]
-known-first-party = ["markdown_files", "programming_files", "score", "stats", "update"]
+known-first-party = ["markdown_files", "programming_files", "score", "stats", "uls", "update"]
 from-first = false
