@@ -52,11 +52,12 @@ This map replays the contest: each flash is a station's contact through a <span 
     }
 
     // Frame the repeaters; far-off Internet contacts would otherwise zoom out to the whole country
-    map.fitBounds(data.repeaters.map(r => [r[2], r[3]]), { padding: [20, 20] });
+    map.fitBounds(data.repeaters.map(r => [r[2], r[3]]), { padding: [20, 20], maxZoom: 12 });
 
     // Replay the contest: the virtual clock runs 48 contest-hours in `duration` real seconds (default ~2min).
     const totalMinutes = data.contest_minutes;
-    const duration = Number(new URLSearchParams(location.search).get("duration")) || 120;
+    const requested = Number(new URLSearchParams(location.search).get("duration"));
+    const duration = requested > 0 && isFinite(requested) ? requested : 120;
     const msPerMinute = duration * 1000 / totalMinutes;
 
     const eventsByMinute = new Map();

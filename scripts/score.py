@@ -195,7 +195,7 @@ def score_competition(
     str
         A markdown-formatted bullet list of some statistics about the contest.
     pd.DataFrame
-        Every scored contact's Logger, contacted Callsign, and RR#.
+        Every scored contact's Logger, contacted Callsign, and RR#, plus its raw Date and Time if logged.
     """
     logs_dir = Path(logs_dir)
     if not logs_dir.exists():

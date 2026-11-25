@@ -2,6 +2,7 @@ import base64
 import html
 import json
 import re
+import zipfile
 from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -98,7 +99,11 @@ def write_index_md(df: pd.DataFrame, score_results: bool = False) -> None:
 
     if score_results:
         leaderboard, by_repeater, by_club, stats, contacts = score_competition(df)
-        locations = ham_locations(set(contacts["Logger"]) | set(contacts["Callsign"]))
+        try:
+            locations = ham_locations(set(contacts["Logger"]) | set(contacts["Callsign"]))
+        except (OSError, zipfile.BadZipFile) as e:  # requests' errors are OSErrors too
+            print(f"Skipping the contact map, couldn't look up station locations: {e}")
+            locations = {}
         contact_map = pew_pew_map(df, contacts, locations)
         if contact_map:
             write_pew_pew_demo(contact_map)
@@ -138,9 +143,12 @@ def _contact_minutes(contacts: pd.DataFrame) -> pd.Series:
     """Minutes into the contest (from its Nov 14 00:00 start) each contact happened, or 0 if undated."""
     if "Date" not in contacts.columns or "Time" not in contacts.columns:
         return pd.Series(0, index=contacts.index)
-    start = pd.Timestamp("1900-11-14")
-    parsed = pd.to_datetime(contacts["Date"] + " " + contacts["Time"], format="%B %d %H:%M", errors="coerce")
-    minutes = (parsed - start).dt.total_seconds() // 60
+    # Logs mix "Nov 14"/"11/14/2026"/"14-Nov"/... dates and "0:00"/"1128"/"12:00 AM" times;
+    # all-digit times come in as ints, so stringify and give HHMM a colon before parsing.
+    time = contacts["Time"].astype(str).str.strip().str.replace(r"^(\d{1,2})(\d{2})$", r"\1:\2", regex=True)
+    parsed = pd.to_datetime(contacts["Date"].astype(str) + " " + time, format="mixed", errors="coerce")
+    # Count from Nov 14 of whatever year (if any) the log gave
+    minutes = ((parsed.dt.day - 14) * 1440 + parsed.dt.hour * 60 + parsed.dt.minute).where(parsed.dt.month == 11)
     return minutes.fillna(0).clip(0, CONTEST_MINUTES - 1).astype(int)
 
 

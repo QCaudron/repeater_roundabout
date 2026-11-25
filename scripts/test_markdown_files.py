@@ -3,7 +3,9 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 
 import pandas as pd
+import requests
 
+import markdown_files
 from markdown_files import (
     STATUS_IN,
     STATUS_OUT,
@@ -467,6 +469,26 @@ def test_pew_pew_data_times_events_from_date_and_time_columns():
     assert data["contest_minutes"] == 48 * 60
 
 
+def test_pew_pew_data_times_events_in_the_date_and_time_formats_logs_use():
+    """Real logs mix date/time formats, and pandas reads all-digit times like 1128 as ints."""
+    df = pd.DataFrame([repeater("WW7PSR", "146.960", STATUS_IN, **{"RR#": 1})])
+    dates = ["2026-11-14", "Nov 14", "11-14-26", "11/14/2026", "14-Nov", "November 15", "11/14/2026"]
+    times = ["00:01", 1128, 1201, "0:00", "8:44", 1255, "12:30 PM"]
+    contacts = pd.DataFrame({
+        "Logger": ["KI6KTE"] * len(dates),
+        "Callsign": ["N0CALL"] * len(dates),  # not located, so one event per contact
+        "RR#": [1] * len(dates),
+        "Date": dates,
+        "Time": pd.Series(times, dtype=object),
+    })
+
+    data = pew_pew_data(df, contacts, {"KI6KTE": [47.0, -122.0]})
+
+    assert [minute for _, _, minute in data["events"]] == sorted(
+        [1, 11 * 60 + 28, 12 * 60 + 1, 0, 8 * 60 + 44, 1440 + 12 * 60 + 55, 12 * 60 + 30]
+    )
+
+
 def test_pew_pew_data_defaults_events_to_minute_zero_without_date_time():
     df = pd.DataFrame([repeater("WW7PSR", "146.960", STATUS_IN, **{"RR#": 1})])
     contacts = pd.DataFrame({"Logger": ["KI6KTE"], "Callsign": ["K7DRQ"], "RR#": [1]})
@@ -475,6 +497,28 @@ def test_pew_pew_data_defaults_events_to_minute_zero_without_date_time():
     data = pew_pew_data(df, contacts, locations)
 
     assert sorted(data["events"]) == [["K7DRQ", 1, 0], ["KI6KTE", 1, 0]]
+
+
+def test_write_index_md_skips_the_map_when_location_lookup_fails(tmp_path, monkeypatch):
+    """An FCC/Census download failure shouldn't stop the results from being published."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "assets" / "templates").mkdir(parents=True)
+    (tmp_path / "assets" / "templates" / "index.md").write_text("{{ index_content }}")
+    contacts = pd.DataFrame({"Logger": ["KI6KTE"], "Callsign": ["K7DRQ"], "RR#": [1]})
+    leaderboard = pd.DataFrame({"Callsign": ["KI6KTE"]})
+    monkeypatch.setattr(markdown_files, "score_competition", lambda df: (leaderboard, "", "", "", contacts))
+
+    def offline(calls):
+        raise requests.ConnectionError("no network")
+
+    monkeypatch.setattr(markdown_files, "ham_locations", offline)
+
+    df = pd.DataFrame([repeater("WW7PSR", "146.960", STATUS_IN, **{"RR#": 1})])
+    markdown_files.write_index_md(df, score_results=True)
+
+    index = (tmp_path / "index.md").read_text()
+    assert "## Leaderboard" in index
+    assert "pew-pew-map" not in index
 
 
 def test_pew_pew_map_escapes_html(tmp_path, monkeypatch):
