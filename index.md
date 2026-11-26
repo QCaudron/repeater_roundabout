@@ -14,7 +14,7 @@ Previously, we made it into [QST Magazine](assets/RR.pdf). Light up the airwaves
 
 **The Repeater Roundabout will be held during the weekend of November 14th and 15th, 2026.**
 
-> This page was last updated on Thursday November 26 at 17:54.
+> This page was last updated on Thursday November 26 at 18:04.
 
 ---
 
@@ -29,12 +29,6 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 - Number of unique operators contacted : 190
 - Number of repeaters activated : 77
 - Number of participants who submitted logs : 16
-
-<br />
-
-## Contact Map
-
-What does that look like?
 
 {% include leaflet.html %}
 
@@ -269,7 +263,7 @@ Legend: <span style="color: #165a0a">repeaters (green)</span>, <span style="colo
 </script>
 
 
-<br />
+Please don't hesitate to send us your thoughts and feedback, either by email (<span id="contact-email">enable JavaScript to see our email</span><script>(function(){var addr=["singlethink.net","matt"].reverse().join("@");var a=document.createElement("a");a.href="mailto:"+addr;a.textContent=addr;document.getElementById("contact-email").replaceWith(a);})();</script>) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
 
 ## Leaderboard
 
@@ -424,13 +418,6 @@ This table shows how many contacts were made on each repeater, including duplica
 |     69 | [Mount Baker ARC](https://mbarc.groups.io)                                                                                 |     146.740 |             1 |           3.0 |
 |     69 | [Pierce County ARES](http://www.piercecountyares.net)                                                                      |      53.670 |             1 |           2.0 |
 |     69 | [West Seattle Amateur Radio Club](https://w7aw.org/)                                                                       |      53.290 |             1 |           3.0 |
-
-----
-
-Please don't hesitate to send us your thoughts and feedback, either by email (<span id="contact-email">enable JavaScript to see our email</span><script>(function(){var addr=["singlethink.net","matt"].reverse().join("@");var a=document.createElement("a");a.href="mailto:"+addr;a.textContent=addr;document.getElementById("contact-email").replaceWith(a);})();</script>) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
-
-<br />
-
 
 
 ---
