@@ -66,6 +66,31 @@ This map replays the contest: each flash is a station's contact through a <span 
         eventsByMinute.get(minute).push([call, rr]);
     }
 
+    // Dead air (no contacts) plays at a flat 1s per idle stretch instead of real time,
+    // so overnight gaps don't sit there at full pace. Active minutes keep msPerMinute pace.
+    // minuteStart[m] is the cumulative wall-clock ms at which minute m begins.
+    const minuteStart = new Array(totalMinutes + 1);
+    minuteStart[0] = 0;
+    for (let m = 0; m < totalMinutes;) {
+        const active = eventsByMinute.has(m);
+        let runEnd = m + 1;
+        while (runEnd < totalMinutes && eventsByMinute.has(runEnd) === active) runEnd++;
+        const runLength = runEnd - m;
+        const runMs = active ? runLength * msPerMinute : 1000;
+        for (let i = 0; i < runLength; i++) minuteStart[m + i + 1] = minuteStart[m + i] + runMs / runLength;
+        m = runEnd;
+    }
+
+    // minuteStart is monotonic but not evenly spaced, so find the current minute by binary search.
+    function minuteAt(elapsed) {
+        let lo = 0, hi = totalMinutes - 1;
+        while (lo < hi) {
+            const mid = (lo + hi + 1) >> 1;
+            if (minuteStart[mid] <= elapsed) lo = mid; else hi = mid - 1;
+        }
+        return lo;
+    }
+
     // Respect reduced motion by skipping the fade instead of hiding the flash entirely.
     const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -97,7 +122,7 @@ This map replays the contest: each flash is a station's contact through a <span 
     let startTime = null, lastMinute = -1;
     function tick(now) {
         if (startTime === null) startTime = now;
-        const minute = Math.min(totalMinutes - 1, Math.floor((now - startTime) / msPerMinute));
+        const minute = minuteAt(now - startTime);
         for (let m = lastMinute + 1; m <= minute; m++) {
             for (const [call, rr] of eventsByMinute.get(m) || []) flash(call, rr);
         }
