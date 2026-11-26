@@ -13,6 +13,29 @@ This map replays the contest: each flash is a station's contact through a <span 
         padding: 4px 8px;
         border-radius: 4px;
     }
+
+    .pew-controls {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 4px 8px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .pew-play-btn {
+        background: none;
+        border: none;
+        color: #0f0;
+        font-family: "SF Mono", "Courier New", monospace;
+        font-size: 1.1em;
+        cursor: pointer;
+        padding: 0 4px;
+    }
+
+    .pew-scrubber {
+        width: 240px;
+    }
 </style>
 
 <script>
@@ -112,6 +135,27 @@ This map replays the contest: each flash is a station's contact through a <span 
     clock.addTo(map);
     const clockEl = document.querySelector(".pew-clock");
 
+    const controls = L.control({ position: "bottomright" });
+    controls.onAdd = () => {
+        const container = L.DomUtil.create("div", "pew-controls leaflet-bar");
+        const btn = L.DomUtil.create("button", "pew-play-btn", container);
+        btn.type = "button";
+        const range = L.DomUtil.create("input", "pew-scrubber", container);
+        range.type = "range";
+        range.min = 0;
+        range.max = totalMinutes - 1;
+        range.step = 1;
+        range.value = 0;
+        range.setAttribute("aria-label", "Seek contest replay");
+        // Prevent dragging the slider or clicking the button from panning/zooming the map underneath.
+        L.DomEvent.disableClickPropagation(container);
+        L.DomEvent.disableScrollPropagation(container);
+        return container;
+    };
+    controls.addTo(map);
+    const playBtn = document.querySelector(".pew-play-btn");
+    const range = document.querySelector(".pew-scrubber");
+
     function formatClock(minute) {
         const day = minute < 1440 ? 14 : 15;
         const h = String(Math.floor((minute % 1440) / 60)).padStart(2, "0");
@@ -119,17 +163,68 @@ This map replays the contest: each flash is a station's contact through a <span 
         return `Nov ${day}, ${h}:${m}`;
     }
 
-    let startTime = null, lastMinute = -1;
+    // playing/frozenElapsed track the pause state explicitly so resume continues from
+    // where it left off instead of jumping ahead by however long the tab sat paused.
+    let playing = true, startTime = null, frozenElapsed = 0, lastMinute = -1, rafId = null, dragging = false;
+
+    function setPlayButton() {
+        playBtn.textContent = playing ? "⏸" : "▶";
+        playBtn.setAttribute("aria-label", playing ? "Pause replay" : "Play replay");
+    }
+    setPlayButton();
+
     function tick(now) {
         if (startTime === null) startTime = now;
-        const minute = minuteAt(now - startTime);
+        const elapsed = now - startTime;
+        const minute = minuteAt(elapsed);
         for (let m = lastMinute + 1; m <= minute; m++) {
             for (const [call, rr] of eventsByMinute.get(m) || []) flash(call, rr);
         }
         lastMinute = minute;
         clockEl.textContent = formatClock(minute);
-        if (minute < totalMinutes - 1) requestAnimationFrame(tick);
+        if (!dragging) range.value = minute;
+        if (minute >= totalMinutes - 1) {
+            // Dead loop at the end: make sure the button stops claiming to be playing,
+            // and freeze elapsed so a later scrub-back + play doesn't resume from a stale time.
+            playing = false;
+            frozenElapsed = elapsed;
+            setPlayButton();
+            return;
+        }
+        rafId = requestAnimationFrame(tick);
     }
-    requestAnimationFrame(tick);
+
+    function play() {
+        if (playing) return;
+        playing = true;
+        startTime = performance.now() - frozenElapsed;
+        setPlayButton();
+        rafId = requestAnimationFrame(tick);
+    }
+
+    function pause() {
+        if (!playing) return;
+        playing = false;
+        if (rafId !== null) cancelAnimationFrame(rafId);
+        frozenElapsed = performance.now() - startTime;
+        setPlayButton();
+    }
+
+    // Seeking jumps lastMinute straight to the target minute rather than replaying every
+    // flash in between, which would flood the map across a 48-hour contest's worth of contacts.
+    function seekTo(minute) {
+        minute = Math.max(0, Math.min(totalMinutes - 1, minute));
+        lastMinute = minute;
+        frozenElapsed = minuteStart[minute];
+        if (playing) startTime = performance.now() - frozenElapsed;
+        clockEl.textContent = formatClock(minute);
+    }
+
+    playBtn.addEventListener("click", () => { if (playing) pause(); else play(); });
+    range.addEventListener("pointerdown", () => { dragging = true; });
+    range.addEventListener("pointerup", () => { dragging = false; });
+    range.addEventListener("input", () => seekTo(Number(range.value)));
+
+    rafId = requestAnimationFrame(tick);
 })();
 </script>
