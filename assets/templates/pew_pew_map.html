@@ -89,8 +89,8 @@ This map replays the contest: each flash is a station's contact through a <span 
         eventsByMinute.get(minute).push([call, rr]);
     }
 
-    // Dead air (no contacts) plays at a flat 1s per idle stretch instead of real time,
-    // so overnight gaps don't sit there at full pace. Active minutes keep msPerMinute pace.
+    // Dead air (no contacts) plays at a flat one-minute pace per idle stretch instead of
+    // real time, so overnight gaps don't sit there at full pace. Active minutes keep msPerMinute pace.
     // minuteStart[m] is the cumulative wall-clock ms at which minute m begins.
     const minuteStart = new Array(totalMinutes + 1);
     minuteStart[0] = 0;
@@ -99,7 +99,7 @@ This map replays the contest: each flash is a station's contact through a <span 
         let runEnd = m + 1;
         while (runEnd < totalMinutes && eventsByMinute.has(runEnd) === active) runEnd++;
         const runLength = runEnd - m;
-        const runMs = active ? runLength * msPerMinute : 1000;
+        const runMs = active ? runLength * msPerMinute : msPerMinute;
         for (let i = 0; i < runLength; i++) minuteStart[m + i + 1] = minuteStart[m + i] + runMs / runLength;
         m = runEnd;
     }
