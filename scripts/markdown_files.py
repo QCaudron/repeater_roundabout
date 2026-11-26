@@ -48,11 +48,11 @@ Here are some stats on the contest, based on the logs received. These numbers ar
 
 {{ stats }}
 
-Please don't hesitate to send us your thoughts and feedback, either by email (<span id="contact-email">enable JavaScript to see our email</span><script>(function(){var addr=["singlethink.net","matt"].reverse().join("@");var a=document.createElement("a");a.href="mailto:"+addr;a.textContent=addr;document.getElementById("contact-email").replaceWith(a);})();</script>) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
-
 <br />
 
 ## Contact Map
+
+What does that look like?
 
 {{ pew_pew_map }}
 
@@ -79,6 +79,12 @@ These are the total number of activations on the repeaters belonging to each clu
 This table shows how many contacts were made on each repeater, including duplicates. The Readability score is the average signal report across all reports for that repeater -- it's the number of the CM report, or the R in an RS(T) report.
 
 {{ repeater_standings }}
+
+----
+
+Please don't hesitate to send us your thoughts and feedback, either by email (<span id="contact-email">enable JavaScript to see our email</span><script>(function(){var addr=["singlethink.net","matt"].reverse().join("@");var a=document.createElement("a");a.href="mailto:"+addr;a.textContent=addr;document.getElementById("contact-email").replaceWith(a);})();</script>) or on our [Discord server](https://discord.com/invite/mqkD4fTjrn).
+
+<br />
 
 """  # noqa: E501
 
