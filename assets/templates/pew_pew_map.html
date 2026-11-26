@@ -184,12 +184,13 @@ This map replays the contest: each flash is a station's contact through a <span 
         clockEl.textContent = formatClock(minute);
         if (!dragging) range.value = minute;
         if (minute >= totalMinutes - 1) {
-            // Dead loop at the end: make sure the button stops claiming to be playing,
-            // and freeze elapsed so a later scrub-back + play doesn't resume from a stale time.
-            playing = false;
-            frozenElapsed = elapsed;
-            setPlayButton();
-            return;
+            // Loop back to the start instead of stopping dead; next tick's for-loop above
+            // will fire minute 0's events exactly once since lastMinute resets to -1.
+            lastMinute = -1;
+            startTime = now;
+            frozenElapsed = 0;
+            range.value = 0;
+            clockEl.textContent = formatClock(0);
         }
         rafId = requestAnimationFrame(tick);
     }
